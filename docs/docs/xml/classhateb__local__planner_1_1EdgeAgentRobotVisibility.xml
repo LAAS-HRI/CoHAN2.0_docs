@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="59" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="59" bodyend="59"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="59" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeAgentRobotVisibility_1aac9dd7c85923efa1e8507d1cbddf15ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="67" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="67" bodyend="95"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="67" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="67" bodyend="95"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -76,7 +76,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="54" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="54" bodyend="102"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" line="54" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h" bodystart="54" bodyend="102"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebBinaryEdge_1af5ba7be337a1f51e8f000255ffd40e71" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeAgentRobotVisibility</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeAgentRobotVisibility_1aac9dd7c85923efa1e8507d1cbddf15ef" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeAgentRobotVisibility</scope><name>computeError</name></member>

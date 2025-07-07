@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="602" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="602" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="602" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="602" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TimedElasticBand_1a899eeb7fd9c03157610519a338cddb40" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2" kindref="member">TimeDiffSequence</ref></type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="603" column="20" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="603" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="603" column="20" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="603" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a7d3b7b55f87d538b6b61275aae6a7117" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="516" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="378" bodyend="399"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="516" column="7" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="378" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1aaa09d18e5408b21d3e5eb38e81869401" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="528" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="401" bodyend="418"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="528" column="7" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="401" bodyend="418"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a5b60e3f3ab7e79f0efa9d03d06a4b8cd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -188,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="540" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="420" bodyend="452"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="540" column="7" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="420" bodyend="452"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a58edf6f82626b1641ed29222b10b6c54" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="553" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="454" bodyend="471"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="553" column="7" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="454" bodyend="471"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1af129042cb95fb6e6b31b237a216e92a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -246,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="558" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="558" bodyend="558"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="558" column="7" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="558" bodyend="558"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a65d3e3334d2633d2f91bf31912c6fa74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -260,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="563" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="563" bodyend="563"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="563" column="7" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="563" bodyend="563"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1aeb156e89b12145e5f5fd3baf7f420229" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="568" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="568" bodyend="568"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="568" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="568" bodyend="568"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a565d7369bc06660ef38fdd780cedf9a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="573" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="214" bodyend="221"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="573" column="10" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="214" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a7e838ee5e6e3c39b4b36585245e730fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -318,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="580" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="223" bodyend="233"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="580" column="10" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="223" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a49a3df8215ea4bc1f2fbcf5995457aef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="585" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="235" bodyend="242"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="585" column="10" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="235" bodyend="242"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a15a0f4902db31ab005e61cb826829704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="597" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="511" bodyend="536"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="597" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="511" bodyend="536"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="96" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="96" bodyend="96"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="96" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="96" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a81f6f54884c074e6e28bb4f0b27aefea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="namespacehateb__local__planner_1adb0456022df4079e7f827f10ee64981a" kindref="member">PoseSequence</ref> &amp;</type>
@@ -425,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="102" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="102" bodyend="102"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="102" column="22" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="102" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1ac97dc3b90ea9512a5afa8c6f48f0136e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2" kindref="member">TimeDiffSequence</ref> &amp;</type>
@@ -442,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="108" column="20" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="108" bodyend="108"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="108" column="20" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="108" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a03d7376cb444adc850930d112583a5bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2" kindref="member">TimeDiffSequence</ref> &amp;</type>
@@ -459,7 +459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="114" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="114" bodyend="114"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="114" column="26" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="114" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a09a14db7568744389d5a93db03808e0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -489,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="121" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="121" bodyend="124"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="121" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="121" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1ae2a4d90f430654d80afdfd9426131b00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -519,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="131" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="131" bodyend="134"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="131" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="131" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a512b98c5681038804b31d9747f1c149a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -549,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="141" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="141" bodyend="144"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="141" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="141" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a297390580f3a675921a2915d98f6b597" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -579,7 +579,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="151" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="151" bodyend="154"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="151" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="151" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a754e0c2cae23952c0dd7bb8b6ea55214" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -593,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="159" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="159" bodyend="159"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="159" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="159" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a7eabda2810a1939193cc6f661f18b601" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -607,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="164" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="164" bodyend="164"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="164" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="164" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a1db36891f18451fb3404745affc6b5c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -621,7 +621,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="169" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="169" bodyend="169"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="169" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="169" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1ab190b1f66f3c210b6d8969b56ed33a84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -635,7 +635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="174" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="174" bodyend="174"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="174" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="174" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1adb4522408e61e4d061b7140cdbfb186e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1VertexPose" kindref="compound">VertexPose</ref> *</type>
@@ -665,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="181" column="14" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="181" bodyend="184"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="181" column="14" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="181" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1aa48013a5132fd88a0822499be5287642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1VertexTimeDiff" kindref="compound">VertexTimeDiff</ref> *</type>
@@ -695,7 +695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="191" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="191" bodyend="194"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="191" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="191" bodyend="194"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -739,7 +739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="206" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="71" bodyend="74"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="206" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="71" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1aacdd67f4e874513f1496639099d76207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -792,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="214" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="76" bodyend="79"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="214" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="76" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1ac00a9f7b6bdafa86c7c325db69e413b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -857,7 +857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="223" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="81" bodyend="84"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="223" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="81" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1ad3b961f0890e7cd873ec61e680c6b2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -898,7 +898,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="230" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="86" bodyend="90"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="230" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="86" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a89b8dd681f1417e1e50863e5365cbb54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -940,7 +940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="240" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="100" bodyend="106"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="240" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="100" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a0ae610ac110261b82ac574a9616f3e21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -994,7 +994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="249" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="108" bodyend="114"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="249" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="108" bodyend="114"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a105a18339bc26b24f743e051740d855a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1060,7 +1060,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="259" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="92" bodyend="98"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="259" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="92" bodyend="98"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1103,7 +1103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="271" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="140" bodyend="143"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="271" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="140" bodyend="143"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1aa02be220017a9ea07e0c2c436e624981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1155,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="279" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="145" bodyend="148"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="279" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="145" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a85bae7b6407c1e41eb516bd0fca5cd83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1219,7 +1219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="288" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="150" bodyend="153"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="288" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="150" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a6b74ce9d742268151c0626438099cf0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1259,7 +1259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="295" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="155" bodyend="158"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="295" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="155" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a36d2b9295e1e8314d57a8232e2e18ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1287,7 +1287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="301" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="116" bodyend="120"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="301" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="116" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a12f6ffe38c80d5e45abfee192a38dd93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1327,7 +1327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="308" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="122" bodyend="126"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="308" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="122" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a13a7d4d29c13fbc96e70c35ba8dc736e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1355,7 +1355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="314" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="128" bodyend="132"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="314" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="128" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a0fa4471c08f1271d95e885b8a53a40dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1395,7 +1395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="321" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="134" bodyend="138"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="321" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="134" bodyend="138"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1494,7 +1494,7 @@ If the <computeroutput>diststep</computeroutput> is chosen to be zero, the resul
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="346" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="244" bodyend="306"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="346" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="244" bodyend="306"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a4e07b7fde0d57e3c7274f53b6fa7efb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1680,7 +1680,7 @@ The orientation along the trajectory will be determined using the connection vec
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="383" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp" bodystart="44" bodyend="155"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="383" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp" bodystart="44" bodyend="155"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1af6365e0b31a7199ba115657a4044494a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1779,7 +1779,7 @@ The initial time difference between two consecutive poses can be uniformly set v
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="404" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="308" bodyend="376"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="404" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="308" bodyend="376"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a90e4e78ffbbaab507e418faa2bb87a80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ROS_DEPRECATED bool</type>
@@ -1820,7 +1820,7 @@ The initial time difference between two consecutive poses can be uniformly set v
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="407" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="407" bodyend="412"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="407" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="407" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1acf68150143d9ca9038d3dcfd00c56196" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1887,7 +1887,7 @@ The initial time difference between two consecutive poses can be uniformly set v
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="415" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="415" bodyend="420"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="415" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="415" bodyend="420"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a50a1fc48e616f6219b6ec3169f752308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ROS_DEPRECATED bool</type>
@@ -1923,7 +1923,7 @@ The initial time difference between two consecutive poses can be uniformly set v
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="422" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="422" bodyend="427"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="422" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="422" bodyend="427"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1983,7 +1983,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="447" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="473" bodyend="509"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="447" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="473" bodyend="509"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a3576adcaec45103edd7e1d0da6b97a7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2076,7 +2076,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         <inbodydescription>
 <para>iterate through all TEB states only once and add/remove states!</para>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="478" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="182" bodyend="212"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="478" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="182" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1abf2497da9c5e1c9f83ceba296e5a0117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2116,7 +2116,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="485" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="172" bodyend="175"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="485" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="172" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a59b9b853592805800d26fcf43b66b64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2156,7 +2156,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="492" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="177" bodyend="180"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="492" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="177" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1a17ecd326ce62af3ac2254f5fb87c8bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2170,7 +2170,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="498" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="160" bodyend="170"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="498" column="8" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="160" bodyend="170"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -2186,7 +2186,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="82" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="82" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TimedElasticBand_1afc52a84ae6d0e596b91d9a7ff5a5eacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -2200,7 +2200,7 @@ Afterwards the start and goal pose are replaced by the new ones. The resulting d
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="87" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" bodystart="66" bodyend="69"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="87" column="11" bodyfile="hateb_local_planner/src/timed_elastic_band.cpp" bodystart="66" bodyend="69"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2216,7 +2216,7 @@ Each time interval (time diff) denotes the time that the robot requires to trans
 <para>Poses and time differences are wrapped into a g2o::Vertex class in order to enable the efficient optimization in <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref>. <linebreak/>
 <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> utilizes this Timed_Elastic_band class for representing an optimizable trajectory. </para>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="77" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="77" bodyend="607"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="77" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="77" bodyend="607"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1TimedElasticBand_1a532b60e492520918cfc1942d5f94aac5" prot="public" virt="non-virtual"><scope>hateb_local_planner::TimedElasticBand</scope><name>addPose</name></member>
       <member refid="classhateb__local__planner_1_1TimedElasticBand_1aacdd67f4e874513f1496639099d76207" prot="public" virt="non-virtual"><scope>hateb_local_planner::TimedElasticBand</scope><name>addPose</name></member>

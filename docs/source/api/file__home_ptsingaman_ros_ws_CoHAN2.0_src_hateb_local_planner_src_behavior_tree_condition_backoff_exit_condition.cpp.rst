@@ -4,7 +4,7 @@
 File backoff_exit_condition.cpp
 ===============================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_behavior_tree_condition>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_behavior_tree_condition>` (``/hateb_local_planner/src/behavior_tree/condition``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File backoff_exit_condition.cpp
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/backoff_exit_condition.cpp``)
+Definition (``/hateb_local_planner/src/behavior_tree/condition/backoff_exit_condition.cpp``)
 --------------------------------------------------------------------------------------------------------------------------------
 
 

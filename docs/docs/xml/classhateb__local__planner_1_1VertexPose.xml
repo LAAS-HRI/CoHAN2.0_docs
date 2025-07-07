@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="67" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="67" bodyend="70"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="67" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="67" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1aa2cb97657c4ef6f3d9f39024b9ebcffe" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="77" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="77" bodyend="80"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="77" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="77" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a3790350ad3c4053e48308e696c7dca75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="88" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="88" bodyend="92"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="88" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="88" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1abb64e66a070d3ec7570111fc66f85173" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -191,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="101" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="101" bodyend="106"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="101" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="101" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a34b3e9fccdf596f380ef27af15361507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="111" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="111" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1ac2479e5a8f47def9b9ce2539a02572d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="118" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="118" bodyend="118"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="118" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="118" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1af13a86535fedba2e45ab3f3005b19fff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="125" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="125" bodyend="125"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="125" column="24" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="125" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a2a7cd5148c462bb89fe82f56cef2d174" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Eigen::Vector2d &amp;</type>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="132" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="132" bodyend="132"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="132" column="26" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="132" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a354d3686506b585b425eecd257488bf5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const Eigen::Vector2d &amp;</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="139" column="32" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="139" bodyend="139"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="139" column="32" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="139" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a6ea7be173e321f3a50dd004c4fa24a0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="145" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="145" bodyend="145"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="145" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="145" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a7b0ede1783842f12caf6010c67c03a44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -315,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="151" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="151" bodyend="151"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="151" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="151" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1abd720a20e0db25efa5da1013217ffbae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="157" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="157" bodyend="157"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="157" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="157" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a92bb5107157dfff083ccab99b76b360c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -349,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="163" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="163" bodyend="163"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="163" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="163" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1af47bc2c186c2e14fff2f4f13376a59b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="169" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="169" bodyend="169"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="169" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="169" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1af857c33468e3cb2bdfc2200e8a3dc2be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -383,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="175" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="175" bodyend="175"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="175" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="175" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a5843d3c5cbc79b06dda39a1b7f9c3d86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -397,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="180" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="180" bodyend="180"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="180" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="180" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a6d3eca3f08eed8dda6d7152aee3f3e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -425,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="189" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="189" bodyend="189"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="189" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="189" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1ac8892984a1f51aae5dd2e45a8af04449" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="197" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="197" bodyend="200"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="197" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="197" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1VertexPose_1a0eda61ecac01fcce72227769e8bc9440" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -485,7 +485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="208" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="208" bodyend="211"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="208" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="208" bodyend="211"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -520,7 +520,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="61" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="61" bodyend="214"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" line="61" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/vertex_pose.h" bodystart="61" bodyend="214"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1VertexPose_1a6d3eca3f08eed8dda6d7152aee3f3e3a" prot="public" virt="non-virtual"><scope>hateb_local_planner::VertexPose</scope><name>oplusImpl</name></member>
       <member refid="classhateb__local__planner_1_1VertexPose_1ac2479e5a8f47def9b9ce2539a02572d6" prot="public" virt="non-virtual"><scope>hateb_local_planner::VertexPose</scope><name>pose</name></member>

@@ -3,7 +3,7 @@
 Class TimedElasticBand
 ======================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_timed_elastic_band.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_timed_elastic_band.h`
 
 
 Class Documentation

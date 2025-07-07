@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="486" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="486" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="486" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="486" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1CircularObstacle_1adedb198019942cd2fbd0389512c91fb1" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="487" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="487" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="487" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="487" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="388" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="388" bodyend="388"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="388" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="388" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1af2efd02ccd06d8bb3fe58b3a49d3338f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="395" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="395" bodyend="395"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="395" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="395" bodyend="395"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a2d7e9c7d4ff804095a1c3f379740aa93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="403" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="403" bodyend="403"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="403" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="403" bodyend="403"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a8d07c6c4b981c66c8985fcb2039f65cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="406" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="406" bodyend="406"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="406" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="406" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a5a4924bb4cac2ddd9abf56ff5f0df310" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="409" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="409" bodyend="431"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="409" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="409" bodyend="431"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1af714cb2cdf7c3696de8313c6c4ac3b3e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="434" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="434" bodyend="434"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="434" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="434" bodyend="434"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a4215cf7bb77b91f092b136b4d357809c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -313,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="437" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="437" bodyend="437"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="437" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="437" bodyend="437"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a7d140ef93b5e016f61cddac50fe23879" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -344,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="440" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="440" bodyend="440"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="440" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="440" bodyend="440"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a9a8394c65ac93ce789ebb4534ac3d2b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>Eigen::Vector2d</type>
@@ -375,7 +375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="443" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="443" bodyend="443"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="443" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="443" bodyend="443"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1aa17eef1135001604127b2ad4e372b59e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -418,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="446" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="446" bodyend="446"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="446" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="446" bodyend="446"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a1d83ddadd32a5bb152c37b2772b8f53f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -473,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="449" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="449" bodyend="451"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="449" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="449" bodyend="451"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a8b3a85f579c9a30634fba14c5a1e36f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -516,7 +516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="454" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="454" bodyend="454"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="454" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="454" bodyend="454"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1ac4a12b0492daa57a2aadfb381924671a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -557,7 +557,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="457" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="457" bodyend="457"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="457" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="457" bodyend="457"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a0a029d82c1bfdd33a260002a1995f5e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>const Eigen::Vector2d &amp;</type>
@@ -575,7 +575,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="460" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="460" bodyend="460"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="460" column="25" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="460" bodyend="460"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a3049d47b9084ca57814949f5a9c40eb5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::complex&lt; double &gt;</type>
@@ -593,7 +593,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="463" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="463" bodyend="463"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="463" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="463" bodyend="463"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a7cbac98fd7eb24abf698374fd1ab01c3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const Eigen::Vector2d &amp;</type>
@@ -607,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="466" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="466" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="466" column="25" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="466" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a4db1ee4ee4e19dad681aa5c85803babc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Eigen::Vector2d &amp;</type>
@@ -621,7 +621,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="467" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="467" bodyend="466"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="467" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="467" bodyend="466"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1af15daa0dc791973370ccb81bf406f0b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -635,7 +635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="468" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="468" bodyend="467"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="468" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="468" bodyend="467"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1ac61549f6cb1189514617620e9b518877" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -649,7 +649,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="469" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="469" bodyend="468"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="469" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="469" bodyend="468"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1adf7884356b07042411e5f9b6387e5a37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -663,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="470" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="470" bodyend="469"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="470" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="470" bodyend="469"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a946b3bd28a8666e868d39ee3c229c1c0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -677,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="471" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="471" bodyend="470"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="471" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="471" bodyend="470"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1ab4f803620790fa5fbf16d6c5ac1d48b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -691,7 +691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="472" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="472" bodyend="471"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="472" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="472" bodyend="471"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a581e9ce0a99e94fe7a6acdf617e874e6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -705,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="473" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="473" bodyend="472"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="473" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="473" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a653e20732dd2897b7009d21749651154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -734,7 +734,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="476" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="476" bodyend="483"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="476" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="476" bodyend="483"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularObstacle_1a67af71dac7f1bdeb34a756f1299e9e77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -755,7 +755,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="490" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="490" bodyend="493"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="490" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="490" bodyend="493"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -787,7 +787,7 @@
         <link refid="classhateb__local__planner_1_1Obstacle"/>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="383" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="383" bodyend="496"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/obstacles.h" line="383" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="383" bodyend="496"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1Obstacle_1afbd1eb180519b1c034ad99012052dde3" prot="protected" virt="non-virtual"><scope>hateb_local_planner::CircularObstacle</scope><name>centroid_velocity_</name></member>
       <member refid="classhateb__local__planner_1_1CircularObstacle_1a8d07c6c4b981c66c8985fcb2039f65cd" prot="public" virt="virtual"><scope>hateb_local_planner::CircularObstacle</scope><name>checkCollision</name></member>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="109" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="109" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="109" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a1ffb21820a3e383e07a4a3d981fd25d0" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="110" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="110" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="110" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1ae4290c19f597dd22035eb716c46ea133" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="111" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="111" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="111" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a98dd299c1de726c8db8aeda92299b18f" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="112" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="112" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="112" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1accde96d3ff2b9e40fbd922f45e29d977" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="113" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="113" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="113" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="64" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="64" bodyend="64"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="64" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="64" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a7fc17014c36caa15880dab3327629c19" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="70" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="70" bodyend="70"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="70" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1ae9bc096aa9a102bbc47215d356b5b715" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="78" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="78" bodyend="96"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="78" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="78" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a8d0dff3e60efa0c82b45a545bef4c54d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="104" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="104" bodyend="107"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="104" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="104" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -223,7 +223,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="59" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="59" bodyend="120"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" line="59" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_invisible_human.h" bodystart="59" bodyend="120"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1EdgeInvisibleHuman_1accde96d3ff2b9e40fbd922f45e29d977" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeInvisibleHuman</scope><name>a_max_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeInvisibleHuman_1ae4290c19f597dd22035eb716c46ea133" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeInvisibleHuman</scope><name>a_min_</name></member>

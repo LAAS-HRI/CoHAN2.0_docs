@@ -3,7 +3,7 @@
 Class AgentPathPrediction
 =========================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h`
+- Defined in :ref:`file_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h`
 
 
 Nested Relationships

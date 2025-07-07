@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="273" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="273" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="273" column="28" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeVelocityHolonomic_1a79c3799e62907397dbdce9ed42823365" prot="protected" static="no" mutable="no">
         <type><ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> *</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="274" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="274" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="274" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1EdgeVelocityHolonomic_1ae892444578fdb42507776b64b3153936" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="275" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="275" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="275" column="7" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="222" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="222" bodyend="224"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="222" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="222" bodyend="224"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeVelocityHolonomic_1af50c01c3dc3a14f2eb9a642f39f6f6d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="229" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="229" bodyend="264"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="229" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="229" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeVelocityHolonomic_1a3d31cf4f9ac23df47cc1f4f9fb688989" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="266" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="266" bodyend="270"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="266" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="266" bodyend="270"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -167,7 +167,7 @@ The dimension of the error / cost vector is 3: the first component represents th
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="217" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="217" bodyend="279"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" line="217" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_velocity.h" bodystart="217" bodyend="279"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebMultiEdge_1a405cc9e1660f62eee29fa73880eaa508" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeVelocityHolonomic</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeVelocityHolonomic_1af50c01c3dc3a14f2eb9a642f39f6f6d5" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeVelocityHolonomic</scope><name>computeError</name></member>

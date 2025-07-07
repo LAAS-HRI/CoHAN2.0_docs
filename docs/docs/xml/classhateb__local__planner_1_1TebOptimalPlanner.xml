@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="815" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="815" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="815" column="21" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="815" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1ad51a6e60f6fe04294738dc457c7da274" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref> *</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="816" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="816" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="816" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="816" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a9c7d7580f44b6fe694077bf37e746ac9" prot="protected" static="no" mutable="no">
         <type>const <ref refid="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" kindref="member">ViaPointContainer</ref> *</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="817" column="27" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="817" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="817" column="27" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="817" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1af44d6e2ddac97306ad0f182321451b0d" prot="protected" static="no" mutable="no">
         <type>const std::map&lt; uint64_t, <ref refid="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" kindref="member">ViaPointContainer</ref> &gt; *</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="818" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="818" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="818" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="818" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8142463fe70a9bff9e074c19c992848a" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1a189cd7a87216df6bcfef993ad267dd11" kindref="member">TebVisualizationPtr</ref></type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="821" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="821" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="821" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="821" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1ace92d0665c002c8621ec11ace0c47b24" prot="protected" static="no" mutable="no">
         <type><ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref></type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="822" column="20" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="822" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="822" column="20" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="822" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a33d5e38ed7f95f0924fc607bac41756a" prot="protected" static="no" mutable="no">
         <type>std::map&lt; uint64_t, <ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref> &gt;</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="823" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="823" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="823" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="823" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a52b08b9d6e873e779327d6a42fe00114" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491" kindref="member">FootprintModelPtr</ref></type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="824" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="824" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="824" column="21" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="824" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a952cbdd8979cc17fc7e98b9f180c404a" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1a96f5d84de31cd8eeeffbbf5341bac099" kindref="member">CircularFootprintPtr</ref></type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="825" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="825" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="825" column="24" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="825" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a64cf586227584f0c198e9472ed947124" prot="protected" static="no" mutable="no">
         <type>boost::shared_ptr&lt; g2o::SparseOptimizer &gt;</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="826" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="826" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="826" column="21" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="826" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a4b07cf964d0d8364197e0081470213bb" prot="protected" static="no" mutable="no">
         <type>std::map&lt; uint64_t, std::pair&lt; bool, geometry_msgs::Twist &gt; &gt;</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="828" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="828" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="828" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="828" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a117c3f2fffb806daef219d80f1937539" prot="protected" static="no" mutable="no">
         <type>std::map&lt; uint64_t, std::pair&lt; bool, geometry_msgs::Twist &gt; &gt;</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="829" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="829" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="829" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="829" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1aa210497f3e6af552c4928d7c092620c5" prot="protected" static="no" mutable="no">
         <type>std::pair&lt; bool, geometry_msgs::Twist &gt;</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="830" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="830" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="830" column="13" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="830" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1ab2cd55c7ba11881ad5db9a2283b89934" prot="protected" static="no" mutable="no">
         <type>std::pair&lt; bool, geometry_msgs::Twist &gt;</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="831" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="831" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="831" column="13" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="831" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a09b5d2c3f6c651a1b6d9983d6c2d9e81" prot="protected" static="no" mutable="no">
         <type>std::vector&lt; geometry_msgs::Pose &gt;</type>
@@ -214,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="832" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="832" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="832" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="832" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1ab1e6b47afbdddd72f4a989d8b8354b08" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -228,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="833" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="833" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="833" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="833" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a4d9a257275f24978ca8e228ba515fbb2" prot="protected" static="no" mutable="no">
         <type>bool</type>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="834" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="834" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="834" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="834" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1aea6400f6fb4a92f40bf9d643b76f2bcf" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="835" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="835" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="835" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="835" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1abd20c5c60c6066d7ff1022dcf69dc8a9" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="836" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="836" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="836" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="836" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1aed52b08f563713ce69eaac77023c6766" prot="protected" static="no" mutable="no">
         <type>int</type>
@@ -284,7 +284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="837" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="837" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="837" column="7" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="837" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac91b322e1d8d1e39286b0be9f956ea51" prot="protected" static="no" mutable="no">
         <type>std::vector&lt; double &gt;</type>
@@ -298,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="838" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="838" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="838" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="838" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a7050b3136dd36dd78c46cf787cf1ee48" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="839" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="839" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="839" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="839" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a7ba7a2159f87949c2d326a26928b52a0" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="840" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="840" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="840" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="840" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1TebOptimalPlanner_1a953a0e6660c94cac119eddc00d805db4" prot="protected" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0" kindref="member">RotType</ref></type>
@@ -340,7 +340,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="841" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="841" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="841" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="841" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac638a5706acf601acbbc7e4583600323" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -376,7 +376,7 @@ For more details refer to the literature cited in the <ref refid="classhateb__lo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="532" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="493" bodyend="573"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="532" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="493" bodyend="573"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8114b570a5a36cb5e9e922a958729b7c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -424,7 +424,7 @@ The current implementation calls a non-constrained sparse Levenberg-Marquardt al
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="546" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="575" bodyend="612"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="546" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="575" bodyend="612"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ad30a68e2dcf7ae8f2246cb4e83212189" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -443,7 +443,7 @@ The current implementation calls a non-constrained sparse Levenberg-Marquardt al
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="553" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="614" bodyend="626"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="553" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="614" bodyend="626"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1abb871a3666c6c162bf13826912d6c682" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -468,7 +468,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="567" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="628" bodyend="661"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="567" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="628" bodyend="661"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a9e66de71f2e136a715296dda5286fa92" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -489,7 +489,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="575" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1092" bodyend="1138"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="575" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1092" bodyend="1138"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a7bd944f8d39cb4e2bef171c9e1276f34" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -510,7 +510,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="583" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1140" bodyend="1199"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="583" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1140" bodyend="1199"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ae56d9d6b2080734e948b9e7d21af8551" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -535,7 +535,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="593" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1201" bodyend="1296"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="593" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1201" bodyend="1296"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a2310b1e815a2cc8c400c231fda34c659" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -560,7 +560,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="603" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1298" bodyend="1401"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="603" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1298" bodyend="1401"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a2ec83c6e8e9459b7d0fb9daf764888c4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -581,7 +581,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="611" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1403" bodyend="1418"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="611" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1403" bodyend="1418"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a4b06134de8d274a75dcd582e7d4220f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -602,7 +602,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="619" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1420" bodyend="1440"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="619" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1420" bodyend="1440"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a81df95911b309937169f8a58d2cdc01e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -623,7 +623,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="627" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1442" bodyend="1458"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="627" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1442" bodyend="1458"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1aa3343a30796dd331151e617584c62e50" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -660,7 +660,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="637" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="663" bodyend="774"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="637" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="663" bodyend="774"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac7ce3bd03cf3cc29a1b9f4a21963a89f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -697,7 +697,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="647" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="776" bodyend="860"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="647" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="776" bodyend="860"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac1983bbafe462e79f30786632cd034c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -718,7 +718,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="659" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="863" bodyend="916"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="659" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="863" bodyend="916"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a69bb902b27e36c8b28c4dbc6c9fd4009" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -739,7 +739,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="667" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1005" bodyend="1047"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="667" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1005" bodyend="1047"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1abbcab2e75f41d0da7bcaf3144e0dea90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -760,7 +760,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="675" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1049" bodyend="1090"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="675" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1049" bodyend="1090"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a1e2de6f5b024cadd4ea0ba7e65ab6fb6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -795,7 +795,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="684" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="918" bodyend="944"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="684" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="918" bodyend="944"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a78ddfdcb28ed218af26b8c43c3c38fed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -830,7 +830,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="693" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="975" bodyend="1003"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="693" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="975" bodyend="1003"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1afd4450aa795e5f89c0efbc59294217f0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -865,7 +865,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="706" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="946" bodyend="973"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="706" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="946" bodyend="973"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ab044b20d3bbcb9c95abed920bfbf6cfe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -886,7 +886,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="715" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1680" bodyend="1698"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="715" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1680" bodyend="1698"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a4d5d01b4db85b827e4c719e014ed60ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -909,7 +909,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="724" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1460" bodyend="1480"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="724" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1460" bodyend="1480"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8edc5b0029aa28739803bd9127bd8e87" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -932,7 +932,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="733" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1482" bodyend="1504"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="733" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1482" bodyend="1504"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a9959ed52d6b8f4066e86fc9f16791b41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -955,7 +955,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="742" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1506" bodyend="1526"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="742" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1506" bodyend="1526"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8ade0d2d1bdc5274ba3e5b2e48e167e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -978,7 +978,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="751" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1528" bodyend="1551"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="751" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1528" bodyend="1551"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a17cd71f01a09b38e3d7b5a5ea2bd91d2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -997,7 +997,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="757" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1553" bodyend="1593"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="757" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1553" bodyend="1593"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a49d2bfe46aa01efaa91131effd1fb578" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1018,7 +1018,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="768" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1595" bodyend="1614"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="768" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1595" bodyend="1614"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1abf991d67b7c8c6c637e4ab4411e6ac78" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1039,7 +1039,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="779" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1616" bodyend="1634"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="779" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1616" bodyend="1634"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8ffc5ca6ebfffd7f194b722ce6403c55" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1060,7 +1060,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="792" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1636" bodyend="1658"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="792" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1636" bodyend="1658"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ace57ea9d0185fc851db21cdf4bd2c14c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1081,7 +1081,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="804" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1660" bodyend="1678"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="804" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1660" bodyend="1678"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a9aa2ce0ddb8fef62607def2381356383" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>boost::shared_ptr&lt; g2o::SparseOptimizer &gt;</type>
@@ -1098,7 +1098,7 @@ The order of insertion of vertices (to the graph) is important for efficiency, s
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="812" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="178" bodyend="196"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="812" column="28" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="178" bodyend="196"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1190,7 +1190,7 @@ The method supports hot-starting from previous solutions, if avaiable: <linebrea
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="165" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="258" bodyend="424"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="165" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="258" bodyend="424"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ad8526644ac8d76a91afd3909bfad3a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1288,7 +1288,7 @@ The method supports hot-starting from previous solutions, if avaiable: <linebrea
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="185" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="426" bodyend="436"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="185" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="426" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1af54b613fc63f7386338911ebc988e453" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1393,7 +1393,7 @@ The method supports hot-starting from previous solutions, if avaiable: <linebrea
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="204" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="438" bodyend="491"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="204" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="438" bodyend="491"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a005e0f7192ea5ebb6b74f3ef2c933fb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -1458,7 +1458,7 @@ The method supports hot-starting from previous solutions, if avaiable: <linebrea
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="215" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1784" bodyend="1818"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="215" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1784" bodyend="1818"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a8da0bf1d43d59b6e1225687c24bc873b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1578,7 +1578,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="244" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="205" bodyend="244"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="244" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="205" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a852d1bc329c4098614c268da81ddb85e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1624,7 +1624,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="247" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="198" bodyend="203"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="247" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="198" bodyend="203"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1657,7 +1657,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="261" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="246" bodyend="251"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="261" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="246" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a255f3d596ec6dc4ee5ce86f65eb65520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1687,7 +1687,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="268" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="253" bodyend="256"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="268" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="253" bodyend="256"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac5504eee9026e2000c0f85ddacc3f4d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1704,7 +1704,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="274" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="274" bodyend="274"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="274" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="274" bodyend="274"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1737,7 +1737,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="286" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="286" bodyend="286"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="286" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="286" bodyend="286"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1af0d499cf5cdfe8dc3a0c7c8ab8fbc128" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref> &amp;</type>
@@ -1754,7 +1754,7 @@ Optionally, the cost vector can be calculated by specifying <computeroutput>comp
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="292" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="292" bodyend="292"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="292" column="23" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="292" bodyend="292"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1785,7 +1785,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="304" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="304" bodyend="304"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="304" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="304" bodyend="304"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a7b0f7d57647482300be8f01e2a3d91f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" kindref="member">ViaPointContainer</ref> &amp;</type>
@@ -1802,7 +1802,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="310" column="27" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="310" bodyend="310"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="310" column="27" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="310" bodyend="310"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1835,7 +1835,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="322" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="111" bodyend="111"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="322" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="111" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a4585cb586dc1cbf1194843868b60e8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1853,7 +1853,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="330" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="113" bodyend="135"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="330" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="113" bodyend="135"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1871,7 +1871,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="340" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="340" bodyend="346"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="340" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="340" bodyend="346"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a2ce41fa5830735c10cc96bb95b12a7b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -1900,7 +1900,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="356" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="356" bodyend="356"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="356" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="356" bodyend="356"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ab017ee3df54520ff900b74ffa25305f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref> &amp;</type>
@@ -1919,7 +1919,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="371" column="20" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="371" bodyend="371"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="371" column="20" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="371" bodyend="371"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a35eb7521494e328b0dab77b8baddda6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref> &amp;</type>
@@ -1936,7 +1936,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="377" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="377" bodyend="377"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="377" column="26" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="377" bodyend="377"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a054e0ebddcb9d09be34c9ad350aee100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>boost::shared_ptr&lt; g2o::SparseOptimizer &gt;</type>
@@ -1955,7 +1955,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="384" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="384" bodyend="384"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="384" column="21" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="384" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a707e4da47e72d554fcd260bee581572d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>boost::shared_ptr&lt; const g2o::SparseOptimizer &gt;</type>
@@ -1972,7 +1972,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="390" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="390" bodyend="390"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="390" column="21" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="390" bodyend="390"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a219b36a893a99d4ed3893e4f6f097f2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1989,7 +1989,7 @@ Any previously set container will be overwritten. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="397" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="397" bodyend="397"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="397" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="397" bodyend="397"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1aa55295bf6fe8b04a4bda0575d1babe6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2059,7 +2059,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="417" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1700" bodyend="1745"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="417" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1700" bodyend="1745"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1aa1686a692dedc3f7d1aac627e028bfb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -2125,7 +2125,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="427" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="427" bodyend="430"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="427" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="427" bodyend="430"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a967863b8064782d23e3e78f4714243dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2142,7 +2142,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="439" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="439" bodyend="439"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="439" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="439" bodyend="439"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ac8627e934f47df48df7c1f86e5908f35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2230,7 +2230,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="453" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1747" bodyend="1782"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="453" column="15" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1747" bodyend="1782"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ad7e220472dd5755a74fca06af0dbe569" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2258,7 +2258,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="473" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1820" bodyend="1843"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="473" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1820" bodyend="1843"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ab620a549c6ed5a462bd3fc6d6d463d7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>cohan_msgs::Trajectory</type>
@@ -2283,7 +2283,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="485" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1845" bodyend="1902"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="485" column="26" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1845" bodyend="1902"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1ad4f03a12bed54ae68f062bdb947e0b2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>cohan_msgs::Trajectory</type>
@@ -2314,7 +2314,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="496" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1904" bodyend="1963"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="496" column="26" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1904" bodyend="1963"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a93e4efa3fe4ab6e8716875e84184fdd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>bool</type>
@@ -2396,7 +2396,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="511" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="1964" bodyend="2000"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="511" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="1964" bodyend="2000"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a92efa06e92650e10e4a5004b2f0b7caf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2411,7 +2411,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="364" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="140" bodyend="172"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="364" column="15" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="140" bodyend="172"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -2427,7 +2427,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="114" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="57" bodyend="66"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="114" column="3" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="57" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1aace5b058d2ba554c7baf34b316ac0d30" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
         <type></type>
@@ -2517,7 +2517,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="124" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="68" bodyend="71"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="124" column="12" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="68" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1aac129050e8c23c3f6600e530b399e03a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -2531,7 +2531,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="131" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="73" bodyend="80"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="131" column="3" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="73" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1TebOptimalPlanner_1a183c70cf7d4dcfe626d157348b5b84cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2621,7 +2621,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="141" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp" bodystart="82" bodyend="109"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="141" column="8" bodyfile="hateb_local_planner/src/optimal_planner.cpp" bodystart="82" bodyend="109"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2736,7 +2736,7 @@ Set <computeroutput>alternative_time_cost</computeroutput> to true in order to g
         <link refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb"/>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="109" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="109" bodyend="845"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="109" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="109" bodyend="845"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1TebOptimalPlanner_1ae56d9d6b2080734e948b9e7d21af8551" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebOptimalPlanner</scope><name>AddEdgesAcceleration</name></member>
       <member refid="classhateb__local__planner_1_1TebOptimalPlanner_1a2310b1e815a2cc8c400c231fda34c659" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebOptimalPlanner</scope><name>AddEdgesAccelerationForAgents</name></member>

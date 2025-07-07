@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="143" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="143" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="143" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a5b0f10420f4f81eed5ee696006c6dc7f" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="144" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="144" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="144" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a44df64b7e60c65e2eb45e8f48361d479" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="145" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="145" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="145" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a716446c070d3705e2fa0a76cf88fa22e" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="146" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="146" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="146" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a78955338aef0c40e9b09fbf5c26385a6" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="148" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="148" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="148" column="9" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a8d985194dc49845e1cd0d2bc84d0cd33" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="149" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="149" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="149" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a898fa849ace5bbb71fd1a7399f9acf75" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="151" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="151" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="151" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ac1043ccf4982cf10f46f71fe99ade034" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="152" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="152" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="152" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1af10fd59f8f3fb7b03654c07c34026a10" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="153" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="153" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="153" column="9" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1acec534d847de268247f57a1ebe6c94f4" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="154" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="154" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="154" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ae4f4beab91c9f3ced3c321a416d4b3b5" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="156" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="156" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="156" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a6c928e3d03ba02fb1867cd6bb91c67a3" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="159" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="159" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="159" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a17d946b2065e9590908da70dcd15b404" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="161" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="161" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="161" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a1725d0e6b9b4371776964a70c378c0e3" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="162" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="162" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="162" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a642b51a012a21993004c6a0bc925247b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="163" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="163" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="163" column="9" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -218,7 +218,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="142" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="142" bodyend="164"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="142" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="142" bodyend="164"/>
     <listofallmembers>
       <member refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a17d946b2065e9590908da70dcd15b404" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig::Obstacles</scope><name>costmap_converter_plugin</name></member>
       <member refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a642b51a012a21993004c6a0bc925247b" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig::Obstacles</scope><name>costmap_converter_rate</name></member>

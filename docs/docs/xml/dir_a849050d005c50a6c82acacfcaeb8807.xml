@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a849050d005c50a6c82acacfcaeb8807" kind="dir">
+    <compoundname>rviz_path_array</compoundname>
+    <innerdir refid="dir_20214d89bf40effb803b68fd2fba9352">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/phani/ros_ws/CoHAN2.0/src/rviz_path_array/"/>
+  </compounddef>
+</doxygen>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="166" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="166" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="166" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a2f5e6d28a06357c31b4ba16623287c30" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="167" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="167" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="167" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a0133d675df43274872289cb8cee3d4cb" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="168" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="168" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="168" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a40cb7798ffbf5b60fbde3d95d9a4d72c" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="169" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="169" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="169" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a3df9e7bce0c874cf05cd94bee7a05783" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="170" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="170" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="170" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1ae87a3ea7ef10faa0f304dd2681645627" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="171" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="171" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="171" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1ae8d020f6014756b22345da190a15aba0" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="172" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="172" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="172" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a09f975fea345e1d812ce160ed932b7fd" prot="private" static="no" mutable="no">
         <type>geometry_msgs::PoseStamped</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="174" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="174" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="174" column="30" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a37cb0419cee8434376af2bc9ca9444f3" prot="private" static="no" mutable="no">
         <type>geometry_msgs::PoseStamped</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="175" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="175" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="175" column="30" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a015d7d7038d9e24e540bcc2ca6ebea7e" prot="private" static="no" mutable="no">
         <type>tf::TransformListener</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="177" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="177" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="177" column="25" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1aa4a08359e24385f0ad5d99a283f3ce06" prot="private" static="no" mutable="no">
         <type>costmap_2d::Costmap2DROS *</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="179" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="179" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="179" column="28" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a1980f1e27353de21de5b7bfc272fe8a3" prot="private" static="no" mutable="no">
         <type>costmap_2d::Costmap2D *</type>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="180" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="180" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="180" column="25" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1aa2b1e9ce809aa4a440398bda0966a01d" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -184,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="181" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="181" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="181" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a57ec518687eeb87f0657772388912d23" prot="private" static="no" mutable="no">
         <type>ros::Publisher</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="184" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="184" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="184" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="184" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a2e39cb348c2f0bdd6957fc0d529f42ae" prot="private" static="no" mutable="no">
         <type>ros::Publisher</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="185" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="185" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="185" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a7ab9b6993a738ba15e6f3f59def5f6f2" prot="private" static="no" mutable="no">
         <type>ros::Publisher</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="186" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="186" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="186" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1ac5f627cc15fc3be0bdeb38f4a3e5b8a7" prot="private" static="no" mutable="no">
         <type>ros::Subscriber</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="187" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="187" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="187" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="187" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a4871ce4d8a7842fff729401a06bcecda" prot="private" static="no" mutable="no">
         <type>ros::ServiceClient</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="188" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="188" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="188" column="22" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a0f2b4a4d1af57a2bdd3aa47c8899195e" prot="private" static="no" mutable="no">
         <type>geometry_msgs::Transform</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="190" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="190" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="190" column="28" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="190" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1ae0a2834237dda5874e23df3e7f5cbb60" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -282,7 +282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="191" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="191" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="191" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="191" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a0599baffb33b80d2ea6c06099b7f7bdc" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="192" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="192" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="192" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a537320f7f1cdfacd9dc3f78ccda5f9c7" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="193" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="193" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="193" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="193" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1aaa56fcbf92fb3841e071a8b37e517ace" prot="private" static="no" mutable="no">
         <type>ros::Time</type>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="195" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="195" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="195" column="13" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="195" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a4c62469cdc8b0f17255087c204eaf304" prot="private" static="no" mutable="no">
         <type>tf::Transform</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="199" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="199" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="199" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a928b39830276d2e77bc2016b0ebe6614" prot="private" static="no" mutable="no">
         <type>tf::StampedTransform</type>
@@ -352,7 +352,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="200" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="200" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="200" column="24" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a6ca8b3f21c05f5b0a8389fe95af5b1e1" prot="private" static="no" mutable="no">
         <type>std::shared_ptr&lt; base_local_planner::CostmapModel &gt;</type>
@@ -366,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="202" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="202" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="202" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a22a87e217d510cdcd61bb1681ba70b46" prot="private" static="no" mutable="no">
         <type>geometry_msgs::PoseStamped</type>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="203" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="203" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="203" column="30" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a8075b0060a5381eb4a2b4f9c2882561b" prot="private" static="no" mutable="no">
         <type>std::vector&lt; geometry_msgs::Point &gt;</type>
@@ -394,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="205" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="205" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="205" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1Backoff_1a9f8d5aa440ba6a4877359231cd646253" prot="private" static="no" mutable="no">
         <type>std::vector&lt; geometry_msgs::Point &gt;</type>
@@ -408,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="206" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="206" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="206" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="206" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -428,7 +428,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="67" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="52" bodyend="55"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="67" column="3" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a5aa081921f7cef80153ac65992556294" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -442,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="72" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="72" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a1c63f2df553d3b604d38bd55b990c0c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -470,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="78" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="59" bodyend="92"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="78" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="59" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a96e56515fc60bc8188ce7627e28b3ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -500,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="85" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="305" bodyend="313"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="85" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="305" bodyend="313"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1acf9478b64a2d64fe6944ac93fce0d03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -517,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="91" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="315" bodyend="318"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="91" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="315" bodyend="318"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1afede89f07e3bdd06f9cdb8281138b548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -534,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="97" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="104" bodyend="303"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="97" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="104" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a4e3f4b56ee4a83fdda7dd58f294d51d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -551,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="103" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="103" bodyend="103"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="103" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="103" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a2d60edaa11d945aab08e3e843f50ae9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -581,7 +581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="110" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="320" bodyend="326"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="110" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="320" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a9c10ac17d8496089658e7810c3e0c9ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -610,7 +610,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="120" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="120" bodyend="140"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="120" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="120" bodyend="140"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -640,7 +640,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="147" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="94" bodyend="102"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="147" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="94" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1Backoff_1a443e7a131dfd8276a459513452176ad6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -668,7 +668,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="164" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp" bodystart="328" bodyend="337"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="164" column="8" bodyfile="hateb_local_planner/src/backoff.cpp" bodystart="328" bodyend="337"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -700,7 +700,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="154" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="154" bodyend="158"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="154" column="17" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="154" bodyend="158"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -709,7 +709,7 @@
     <detaileddescription>
 <para>The <ref refid="classhateb__local__planner_1_1Backoff" kindref="compound">Backoff</ref> class provides recovery behavior when the robot encounters a human in a place where both agents (human and robot) get stuck without any progress towards to goal. It implements methods to calculate and execute backoff maneuvers to help the robot recover from such situations. </para>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="62" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="62" bodyend="207"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/backoff.h" line="62" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/backoff.h" bodystart="62" bodyend="207"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1Backoff_1a0cbd0914494f6fcd5de277b517133f24" prot="public" virt="non-virtual"><scope>hateb_local_planner::Backoff</scope><name>Backoff</name></member>
       <member refid="classhateb__local__planner_1_1Backoff_1a22a87e217d510cdcd61bb1681ba70b46" prot="private" virt="non-virtual"><scope>hateb_local_planner::Backoff</scope><name>backoff_goal_</name></member>

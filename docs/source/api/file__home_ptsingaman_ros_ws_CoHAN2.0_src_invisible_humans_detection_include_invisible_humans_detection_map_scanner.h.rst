@@ -4,7 +4,7 @@
 File map_scanner.h
 ==================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_include_invisible_humans_detection>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/include/invisible_humans_detection``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_include_invisible_humans_detection>` (``/invisible_humans_detection/include/invisible_humans_detection``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File map_scanner.h
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/include/invisible_humans_detection/map_scanner.h``)
+Definition (``/invisible_humans_detection/include/invisible_humans_detection/map_scanner.h``)
 ---------------------------------------------------------------------------------------------------------------------------------
 
 

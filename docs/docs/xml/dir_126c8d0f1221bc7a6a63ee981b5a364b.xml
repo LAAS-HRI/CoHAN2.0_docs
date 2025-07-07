@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_126c8d0f1221bc7a6a63ee981b5a364b" kind="dir">
+    <compoundname>hateb_local_planner</compoundname>
+    <innerdir refid="dir_628c43b321281a2a03928fafd98a94fb">behavior_tree</innerdir>
+    <innerdir refid="dir_4d1b0f575731cb8e93a8035d5a4b9b92">g2o_types</innerdir>
+    <innerfile refid="backoff_8h">backoff.h</innerfile>
+    <innerfile refid="distance__calculations_8h">distance_calculations.h</innerfile>
+    <innerfile refid="footprint__model_8h">footprint_model.h</innerfile>
+    <innerfile refid="hateb__config_8h">hateb_config.h</innerfile>
+    <innerfile refid="hateb__local__planner__ros_8h">hateb_local_planner_ros.h</innerfile>
+    <innerfile refid="misc_8h">misc.h</innerfile>
+    <innerfile refid="mode__switch_8h">mode_switch.h</innerfile>
+    <innerfile refid="obstacles_8h">obstacles.h</innerfile>
+    <innerfile refid="optimal__planner_8h">optimal_planner.h</innerfile>
+    <innerfile refid="planner__interface_8h">planner_interface.h</innerfile>
+    <innerfile refid="pose__se2_8h">pose_se2.h</innerfile>
+    <innerfile refid="recovery__behaviors_8h">recovery_behaviors.h</innerfile>
+    <innerfile refid="timed__elastic__band_8h">timed_elastic_band.h</innerfile>
+    <innerfile refid="timed__elastic__band_8hpp">timed_elastic_band.hpp</innerfile>
+    <innerfile refid="visualization_8h">visualization.h</innerfile>
+    <innerfile refid="visualization_8hpp">visualization.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/phani/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/"/>
+  </compounddef>
+</doxygen>

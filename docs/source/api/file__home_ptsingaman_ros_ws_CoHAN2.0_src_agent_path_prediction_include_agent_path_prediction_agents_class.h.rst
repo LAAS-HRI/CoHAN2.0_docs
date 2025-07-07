@@ -4,7 +4,7 @@
 File agents_class.h
 ===================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_include_agent_path_prediction>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_include_agent_path_prediction>` (``/agent_path_prediction/include/agent_path_prediction``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File agents_class.h
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agents_class.h``)
+Definition (``/agent_path_prediction/include/agent_path_prediction/agents_class.h``)
 ------------------------------------------------------------------------------------------------------------------------
 
 

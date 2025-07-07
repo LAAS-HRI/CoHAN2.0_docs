@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="164" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="164" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="164" column="7" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="73" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="73" bodyend="73"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="73" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeObstacle_1a2f7e984297faa3ae9bcb0d7904ffd8f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="78" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="78" bodyend="106"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="78" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="78" bodyend="106"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeObstacle_1a8c66eea558a3e1282d5e19b414891c60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="157" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="157" bodyend="161"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="157" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="157" bodyend="161"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -150,7 +150,7 @@
         <label>g2o::BaseUnaryEdge&lt; D, const Obstacle *, VertexPose &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="68" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="68" bodyend="168"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" line="68" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_obstacle.h" bodystart="68" bodyend="168"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebUnaryEdge_1aa1485afb0fdfc42fc331165a7d5c8b30" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeObstacle</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeObstacle_1a2f7e984297faa3ae9bcb0d7904ffd8f2" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeObstacle</scope><name>computeError</name></member>

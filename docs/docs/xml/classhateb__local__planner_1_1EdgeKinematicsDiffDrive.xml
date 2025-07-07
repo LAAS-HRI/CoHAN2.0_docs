@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="77" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="77" bodyend="77"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="77" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="77" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeKinematicsDiffDrive_1a4ee5a8e0e3146c3e4d2c4361f6d361c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="82" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="82" bodyend="98"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="82" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="82" bodyend="98"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -85,7 +85,7 @@ The dimension of the error / cost vector is 2: the first component represents th
         <label>g2o::BaseBinaryEdge&lt; D, double, VertexPose, VertexPose &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="72" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="72" bodyend="146"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="72" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="72" bodyend="146"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebBinaryEdge_1af5ba7be337a1f51e8f000255ffd40e71" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeKinematicsDiffDrive</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeKinematicsDiffDrive_1a4ee5a8e0e3146c3e4d2c4361f6d361c4" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeKinematicsDiffDrive</scope><name>computeError</name></member>

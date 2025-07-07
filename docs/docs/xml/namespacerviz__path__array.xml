@@ -19,13 +19,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp" line="315" column="6" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp" bodystart="315" bodyend="321"/>
+        <location file="rviz_path_array/src/patharray_display.cpp" line="315" column="6" bodyfile="rviz_path_array/src/patharray_display.cpp" bodystart="315" bodyend="321"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp" line="59" column="1"/>
+    <location file="rviz_path_array/src/patharray_display.cpp" line="59" column="1"/>
   </compounddef>
 </doxygen>

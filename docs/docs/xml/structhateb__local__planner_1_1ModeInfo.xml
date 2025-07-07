@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="201" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="201" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="201" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1ModeInfo_1aea93e9ebc8ca2ab3cb21eff38583d383" prot="public" static="no" mutable="no">
         <type><ref refid="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8a" kindref="member">PREDICTION</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="202" column="14" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="202" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="202" column="14" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -38,7 +38,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="200" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="200" bodyend="203"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="200" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="200" bodyend="203"/>
     <listofallmembers>
       <member refid="structhateb__local__planner_1_1ModeInfo_1a10f7775493e4a6f904d26d4d62ff7758" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeInfo</scope><name>plan</name></member>
       <member refid="structhateb__local__planner_1_1ModeInfo_1aea93e9ebc8ca2ab3cb21eff38583d383" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeInfo</scope><name>predict</name></member>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="591" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="591" bodyend="594"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="591" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="591" bodyend="594"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal_1a4a5b72290db7d938bd5e37168e657dce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="599" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="599" bodyend="637"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="599" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="599" bodyend="637"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal_1ad7e309f2268e6a7a4b057c8633a07ecc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="643" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="643" bodyend="643"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="643" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="643" bodyend="643"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -119,7 +119,7 @@ The dimension of the error / cost vector is 3: the first component represents th
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="586" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="586" bodyend="647"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" line="586" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h" bodystart="586" bodyend="647"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebMultiEdge_1a405cc9e1660f62eee29fa73880eaa508" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeAccelerationHolonomicGoal</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal_1a4a5b72290db7d938bd5e37168e657dce" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeAccelerationHolonomicGoal</scope><name>computeError</name></member>

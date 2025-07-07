@@ -3,7 +3,7 @@
 Typedef hateb_local_planner::PlanStartVelGoalVel
 ================================================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_planner_interface.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_planner_interface.h`
 
 
 Typedef Documentation

@@ -3,7 +3,7 @@
 Template Function hateb_local_planner::calc_distance_point_to_segment
 =====================================================================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_distance_calculations.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_distance_calculations.h`
 
 
 Function Documentation

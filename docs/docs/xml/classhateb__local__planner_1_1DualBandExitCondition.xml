@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="97" column="37" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="97" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="97" column="37" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1DualBandExitCondition_1af0adcb4262a54512ef44ce2de6ed2adb" prot="private" static="no" mutable="no">
         <type>geometry_msgs::PoseStamped</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="98" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="98" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="98" column="30" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1DualBandExitCondition_1a480cda58b3f0887f53840c8b148a1c39" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="99" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="99" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="99" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1DualBandExitCondition_1ae4ba96e9e96e9fd3d227164d70fea140" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="102" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="102" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="102" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1DualBandExitCondition_1a09dab56d5718c22309b5a27a68d491b0" prot="private" static="no" mutable="no">
         <type>ros::Time</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="103" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="103" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="103" column="13" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1DualBandExitCondition_1a2b2b003e330a5f4bb12fd90d08375e9b" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="105" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="105" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="105" column="15" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="62" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="5" bodyend="10"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="62" column="3" bodyfile="hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="5" bodyend="10"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1DualBandExitCondition_1a72a8b3be8ce0b15a1eca4835fd2a8b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="67" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="67" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1DualBandExitCondition_1a995f71a8602c49e10479975bb094eaf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="72" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="12" bodyend="15"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="72" column="3" bodyfile="hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="12" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1DualBandExitCondition_1a63bd7b5d5680677d9dd5844393ee6e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>BT::NodeStatus</type>
@@ -174,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="78" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="17" bodyend="45"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="78" column="18" bodyfile="hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="17" bodyend="45"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="84" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="84" bodyend="87"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="84" column="24" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="84" bodyend="87"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="94" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="47" bodyend="71"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="94" column="8" bodyfile="hateb_local_planner/src/behavior_tree/condition/dual_band_exit_condition.cpp" bodystart="47" bodyend="71"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -243,7 +243,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="55" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="55" bodyend="106"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" line="55" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h" bodystart="55" bodyend="106"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1DualBandExitCondition_1a8fb13f77c046ff214d05fc8c48d4585e" prot="private" virt="non-virtual"><scope>hateb_local_planner::DualBandExitCondition</scope><name>agents_info_</name></member>
       <member refid="classhateb__local__planner_1_1DualBandExitCondition_1a480cda58b3f0887f53840c8b148a1c39" prot="private" virt="non-virtual"><scope>hateb_local_planner::DualBandExitCondition</scope><name>dist_threshold_</name></member>

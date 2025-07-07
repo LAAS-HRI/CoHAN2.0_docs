@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="293" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="293" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="293" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="293" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="232" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="232" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1a13c3918fe5d9abc5f6400bd26e30ad2f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="233" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="233" bodyend="233"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="233" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="233" bodyend="233"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1a1142ce145fa274a7ad7aa1ffdfc25d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="238" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="238" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1adbcc838f0afb3626fd4349157cc8f420" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="244" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="244" bodyend="244"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="244" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="244" bodyend="244"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1ad4b70e4c164ca53b89cee335a535d113" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -144,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="252" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="252" bodyend="252"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="252" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="252" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1a3ed2b580fc92bc83532a6686dd018dc4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="261" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="261" bodyend="263"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="261" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="261" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1a3a8237233b58ea88aa322f39254e81a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="274" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="274" bodyend="282"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="274" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="274" bodyend="282"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1aef9298fb380d871f9a489b40e89734f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="288" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="288" bodyend="288"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="288" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="288" bodyend="288"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1CircularFootprint_1a9531970c9a3c0aa35376ba56081bb7da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
@@ -288,7 +288,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="290" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="290" bodyend="290"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="290" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="290" bodyend="290"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -320,7 +320,7 @@
         <link refid="classhateb__local__planner_1_1BaseFootprintModel"/>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="226" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="226" bodyend="294"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="226" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="226" bodyend="294"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseFootprintModel_1a23994e2593de8cedf5f839058407d8ec" prot="public" virt="non-virtual"><scope>hateb_local_planner::CircularFootprint</scope><name>BaseFootprintModel</name></member>
       <member refid="classhateb__local__planner_1_1CircularFootprint_1ad4b70e4c164ca53b89cee335a535d113" prot="public" virt="virtual"><scope>hateb_local_planner::CircularFootprint</scope><name>calculateDistance</name></member>

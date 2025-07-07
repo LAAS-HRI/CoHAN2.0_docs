@@ -11,7 +11,7 @@
         <label>tf2/utils.h</label>
       </node>
       <node id="1">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/action/set_mode.cpp</label>
+        <label>set_mode.cpp</label>
         <link refid="set__mode_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -126,6 +126,6 @@
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hateb_local_planner</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/action/set_mode.cpp"/>
+    <location file="hateb_local_planner/src/behavior_tree/action/set_mode.cpp"/>
   </compounddef>
 </doxygen>

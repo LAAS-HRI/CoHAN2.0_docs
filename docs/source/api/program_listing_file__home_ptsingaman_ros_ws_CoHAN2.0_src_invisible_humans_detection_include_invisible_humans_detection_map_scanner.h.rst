@@ -4,7 +4,7 @@
 Program Listing for File map_scanner.h
 ======================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_include_invisible_humans_detection_map_scanner.h>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/include/invisible_humans_detection/map_scanner.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_include_invisible_humans_detection_map_scanner.h>` (``/invisible_humans_detection/include/invisible_humans_detection/map_scanner.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

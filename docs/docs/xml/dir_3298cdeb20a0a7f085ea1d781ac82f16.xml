@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_3298cdeb20a0a7f085ea1d781ac82f16" kind="dir">
+    <compoundname>hateb_local_planner</compoundname>
+    <innerdir refid="dir_289e42f72b2b5e731bc38f5247da0415">include</innerdir>
+    <innerdir refid="dir_2e2d9b87a0222cfc8c84ca52edbb4ac5">src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/phani/ros_ws/CoHAN2.0/src/hateb_local_planner/"/>
+  </compounddef>
+</doxygen>

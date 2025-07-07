@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="135" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="135" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="135" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a02265fb691f79a74c7b22e0500b78406" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="136" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="136" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="136" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a962382f59597834440ea1409304756aa" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="137" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="137" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="137" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1ab13dfdeb274b41496cb697aac87965fc" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="138" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="138" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="138" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -65,7 +65,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="134" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="134" bodyend="139"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="134" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="134" bodyend="139"/>
     <listofallmembers>
       <member refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1ab13dfdeb274b41496cb697aac87965fc" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig::GoalTolerance</scope><name>complete_global_plan</name></member>
       <member refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a962382f59597834440ea1409304756aa" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig::GoalTolerance</scope><name>free_goal_vel</name></member>

@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="120" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="120" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="120" column="26" bodyfile="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="120" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1FailureDetector_1af3edca7b777154883f021245c6522277" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="121" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="121" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="121" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="62" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="62" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1FailureDetector_1a0f642e879016d0727e2b64c9d0b4f153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="67" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="67" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1FailureDetector_1a5aa234fe397d92b44d2b3315a18201f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="73" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="73" bodyend="73"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="73" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1FailureDetector_1ae02b20b7e651b1fb62b149b6fe743547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="84" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/recovery_behaviors.cpp" bodystart="47" bodyend="69"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="84" column="8" bodyfile="hateb_local_planner/src/recovery_behaviors.cpp" bodystart="47" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1FailureDetector_1ad4e41d460c9792324f7887d019a978c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="93" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/recovery_behaviors.cpp" bodystart="76" bodyend="76"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="93" column="8" bodyfile="hateb_local_planner/src/recovery_behaviors.cpp" bodystart="76" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1FailureDetector_1af4b9660b75ee24276a1cfbc3fa7dcc6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="100" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/recovery_behaviors.cpp" bodystart="71" bodyend="74"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="100" column="8" bodyfile="hateb_local_planner/src/recovery_behaviors.cpp" bodystart="71" bodyend="74"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -257,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="117" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/recovery_behaviors.cpp" bodystart="78" bodyend="106"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="117" column="8" bodyfile="hateb_local_planner/src/recovery_behaviors.cpp" bodystart="78" bodyend="106"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -266,7 +266,7 @@
     <detaileddescription>
 <para>The StuckDetector analyzes the last N commanded velocities in order to detect whether the robot might got stucked or oscillates between left/right/forward/backwards motions. </para>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="57" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="57" bodyend="122"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" line="57" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/recovery_behaviors.h" bodystart="57" bodyend="122"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1FailureDetector_1a91af318e44eb3143ca3a0de91ae1d67a" prot="private" virt="non-virtual"><scope>hateb_local_planner::FailureDetector</scope><name>buffer_</name></member>
       <member refid="classhateb__local__planner_1_1FailureDetector_1af4b9660b75ee24276a1cfbc3fa7dcc6f" prot="public" virt="non-virtual"><scope>hateb_local_planner::FailureDetector</scope><name>clear</name></member>

@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp" line="45" column="1"/>
+    <location file="hateb_local_planner/src/timed_elastic_band.cpp" line="45" column="1"/>
   </compounddef>
 </doxygen>

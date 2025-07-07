@@ -62,7 +62,7 @@ breathe_default_project = "CoHAN2.0"
 #     "containmentFolder": "./api",
 #     "rootFileName": "library_root.rst",
 #     "rootFileTitle": "API Reference",
-#     "doxygenStripFromPath": "..",
+#     "doxygenStripFromPath": "/home/phani/ros_ws/CoHAN2.0/src/",
 #     "createTreeView": True,
 # # "customSpecificationsMapping": makeCustomSpecificationsMapping(customSpec),
 #     }

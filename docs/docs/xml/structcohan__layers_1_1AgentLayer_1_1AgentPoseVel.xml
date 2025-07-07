@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="103" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="103" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="103" column="9" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a8fe631617b2f0ed56f81b90939d0fe71" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="104" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="104" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="104" column="9" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a2ee76c0dcdaf9c4c4c9291279c1fdfaa" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="105" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="105" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="105" column="9" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a088c5a789de753b0216ce7c62d0af3a2" prot="public" static="no" mutable="no">
         <type>std_msgs::Header</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="106" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="106" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="106" column="22" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a813024623d94fe2b153615adb4b43f23" prot="public" static="no" mutable="no">
         <type>geometry_msgs::Pose</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="107" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="107" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="107" column="25" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a38812a572f5705fe9c19379dcc237aec" prot="public" static="no" mutable="no">
         <type>geometry_msgs::Twist</type>
@@ -83,14 +83,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="108" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="108" bodyend="-1"/>
+        <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="108" column="26" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="108" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" line="102" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_layer.h" bodystart="102" bodyend="109"/>
+    <location file="cohan_layers/include/cohan_layers/agent_layer.h" line="102" column="3" bodyfile="cohan_layers/include/cohan_layers/agent_layer.h" bodystart="102" bodyend="109"/>
     <listofallmembers>
       <member refid="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a088c5a789de753b0216ce7c62d0af3a2" prot="public" virt="non-virtual"><scope>cohan_layers::AgentLayer::AgentPoseVel</scope><name>header</name></member>
       <member refid="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a813024623d94fe2b153615adb4b43f23" prot="public" virt="non-virtual"><scope>cohan_layers::AgentLayer::AgentPoseVel</scope><name>pose</name></member>

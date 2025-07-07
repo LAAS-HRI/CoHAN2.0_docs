@@ -53,13 +53,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agents_class.h" line="79" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agents_class.h" bodystart="79" bodyend="79"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/agents_class.h" line="79" column="1" bodyfile="agent_path_prediction/include/agent_path_prediction/agents_class.h" bodystart="79" bodyend="79"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agent_path_prediction.h" line="73" column="1"/>
+    <location file="agent_path_prediction/include/agent_path_prediction/agent_path_prediction.h" line="73" column="1"/>
   </compounddef>
 </doxygen>

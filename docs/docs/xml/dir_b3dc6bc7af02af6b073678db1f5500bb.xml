@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b3dc6bc7af02af6b073678db1f5500bb" kind="dir">
+    <compoundname>src</compoundname>
+    <innerdir refid="dir_e0951e9e0df39789ec76783d8e2f3034">agent_path_prediction</innerdir>
+    <innerdir refid="dir_45d4c965f4997aa79eabf1a1ee2a573e">cohan_layers</innerdir>
+    <innerdir refid="dir_3298cdeb20a0a7f085ea1d781ac82f16">hateb_local_planner</innerdir>
+    <innerdir refid="dir_3379f938f4987fdef85683eb08f99cb6">invisible_humans_detection</innerdir>
+    <innerdir refid="dir_a849050d005c50a6c82acacfcaeb8807">rviz_path_array</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/phani/ros_ws/CoHAN2.0/src/"/>
+  </compounddef>
+</doxygen>

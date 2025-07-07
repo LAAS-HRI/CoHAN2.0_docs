@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="66" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="66" bodyend="66"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="66" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="66" bodyend="66"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a2cb6143e00b4289aff2176ffcab86a88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="73" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="73" bodyend="76"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="73" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1ac6050ed193f8adfc596aeb04d6bf789f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="84" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="84" bodyend="88"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="84" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="84" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1afb1fa5af97ae74e782687a8c1f3ef99b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="94" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="94" bodyend="98"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="94" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="94" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1aeb680422e63d5142b08173069324adac" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="104" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="104" bodyend="108"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="104" column="12" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="104" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a48e2c5341c054a1e44c52a3f36258d84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="114" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="114" bodyend="117"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="114" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="114" bodyend="117"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="134" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="134" bodyend="134"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="134" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="134" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1acded92644006dbcb6c6af26dce52d525" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const Eigen::Vector2d &amp;</type>
@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="141" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="141" bodyend="141"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="141" column="25" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a99d2afaf99bdfff1075be7cfe8771169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="147" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="147" bodyend="147"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="147" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="147" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1aa545f58b57097c8cd3e9e3e8195c8721" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="153" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="153" bodyend="153"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="153" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="153" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1adb4b866a4f3ec291adf26f60b420344e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="159" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="159" bodyend="159"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="159" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="159" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a21633eb2abfbdf4ca85df52fc3f90079" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -302,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="165" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="165" bodyend="165"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="165" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="165" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a9745f5e8d91068a96152bb66b4569466" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double &amp;</type>
@@ -319,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="171" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="171" bodyend="171"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="171" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="171" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a5df3cb1b56aa36da64b949d07b28590b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const double &amp;</type>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="177" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="177" bodyend="177"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="177" column="16" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="177" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a8d1cfc7888f317b09e50d8f8a326ea01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="182" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="182" bodyend="185"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="182" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="182" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a7be676198c07fb5601a7c1cc0fe96631" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="191" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="191" bodyend="196"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="191" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="191" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a4fe1aba76e94d618fdde90d74a803dda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>Eigen::Vector2d</type>
@@ -395,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="202" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="202" bodyend="202"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="202" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="202" bodyend="202"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -426,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="215" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="215" bodyend="218"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="215" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="215" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1aca9458a22d12bdf43ec145c7a02d677e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -454,7 +454,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="225" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="225" bodyend="229"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="225" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="225" bodyend="229"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a61963b1c44530ad051a65b1a45e98b9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -494,7 +494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="238" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="238" bodyend="241"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="238" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="238" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1ae7d75e6f0b83f6e16c737af3432cb1bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -535,7 +535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="261" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="261" bodyend="267"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="261" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="261" bodyend="267"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a50ff3bf8419e65c4589af65715a5efdb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
@@ -577,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="251" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="251" bodyend="251"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="251" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="251" bodyend="251"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -608,7 +608,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="278" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="278" bodyend="284"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="278" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="278" bodyend="284"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a5ecd5e51151f87a992d685cff00ec8fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -636,7 +636,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="290" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="290" bodyend="294"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="290" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="290" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1PoseSE2_1a16f2475d4a9d1c9d33e63eabf0a86b88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
@@ -664,7 +664,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="307" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="307" bodyend="311"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="307" column="11" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="307" bodyend="311"/>
       </memberdef>
       <memberdef kind="friend" id="classhateb__local__planner_1_1PoseSE2_1ad2feff1efe471ef77a28a95463ccfd21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
@@ -704,7 +704,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="301" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="301" bodyend="301"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="301" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="301" bodyend="301"/>
       </memberdef>
       <memberdef kind="friend" id="classhateb__local__planner_1_1PoseSE2_1aa796492e15f987b1968b2baf8ac677a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
@@ -744,7 +744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="318" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="318" bodyend="318"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="318" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="318" bodyend="318"/>
       </memberdef>
       <memberdef kind="friend" id="classhateb__local__planner_1_1PoseSE2_1a8a35a58b7adbc796b3de8eabd2b47323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
@@ -786,7 +786,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="327" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="327" bodyend="331"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="327" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="327" bodyend="331"/>
       </memberdef>
       <memberdef kind="friend" id="classhateb__local__planner_1_1PoseSE2_1adc5f91393ae2f50311bb6a950fc4bf98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
@@ -828,7 +828,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="340" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="340" bodyend="344"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="340" column="18" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="340" bodyend="344"/>
       </memberdef>
       <memberdef kind="friend" id="classhateb__local__planner_1_1PoseSE2_1a2c487bf5a6b472f7109a1cd12300e653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::ostream &amp;</type>
@@ -868,7 +868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="351" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="351" bodyend="354"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="351" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="351" bodyend="354"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -883,7 +883,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="359" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="359" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="359" column="19" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classhateb__local__planner_1_1PoseSE2_1acac297aae0a3ee9e945ccb56dd668a4e" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -896,7 +896,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="360" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="360" bodyend="-1"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="360" column="10" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="360" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -912,7 +912,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="124" column="3"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="124" column="3"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -920,7 +920,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="58" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="58" bodyend="364"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/pose_se2.h" line="58" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/pose_se2.h" bodystart="58" bodyend="364"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1PoseSE2_1a50ff3bf8419e65c4589af65715a5efdb" prot="public" virt="non-virtual"><scope>hateb_local_planner::PoseSE2</scope><name>average</name></member>
       <member refid="classhateb__local__planner_1_1PoseSE2_1a61963b1c44530ad051a65b1a45e98b9b" prot="public" virt="non-virtual"><scope>hateb_local_planner::PoseSE2</scope><name>averageInPlace</name></member>

@@ -1625,28 +1625,12 @@
   <compound refid="namespacerviz__path__array" kind="namespace"><name>rviz_path_array</name>
     <member refid="namespacerviz__path__array_1a7e2872e32001ad1e325ec8ace1428c66" kind="function"><name>validateFloats</name></member>
   </compound>
-  <compound refid="agent__path__prediction_8h" kind="file"><name>agent_path_prediction.h</name>
-    <member refid="agent__path__prediction_8h_1af331ec1c592c921393cc8e9e1b75c33f" kind="define"><name>ANG_VEL_EPS</name></member>
-    <member refid="agent__path__prediction_8h_1af894f6c65704c92b68ed56dadb9afd02" kind="define"><name>MAX_AGENT_MARKERS</name></member>
-    <member refid="agent__path__prediction_8h_1a16e1bbd9c734c79d0a08824bf14036f7" kind="define"><name>MIN_MARKER_LIFETIME</name></member>
-    <member refid="agent__path__prediction_8h_1a33f9de4ddabe0c954c7be6d7d593e00e" kind="define"><name>MINIMUM_COVARIANCE_MARKERS</name></member>
-    <member refid="agent__path__prediction_8h_1a70d5ea5ea8c43ed32d3d28e41567b81e" kind="define"><name>RECALC_DIST</name></member>
-    <member refid="agent__path__prediction_8h_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
-    <member refid="agent__path__prediction_8h_1a8cc8d559acdd2f74085b20977182d5b7" kind="define"><name>NODE_NAME</name></member>
+  <compound refid="agent__layer_8cpp" kind="file"><name>agent_layer.cpp</name>
+    <member refid="agent__layer_8cpp_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
+    <member refid="agent__layer_8cpp_1ab11c2b6087ea76911944279ff5a6d65e" kind="define"><name>TRACKED_AGENTS_SUB</name></member>
+    <member refid="agent__layer_8cpp_1a64524ba317a33d6069bb960e1eb8c133" kind="define"><name>AGENTS_STATES_SUB</name></member>
   </compound>
-  <compound refid="agents__class_8h" kind="file"><name>agents_class.h</name>
-    <member refid="agents__class_8h_1afcae8c2a5021b396c0a659ee6dea0466" kind="define"><name>CALC_EPS</name></member>
-    <member refid="agents__class_8h_1aca429eece4b2ed55d2f38a84031ca6b5" kind="define"><name>COST_MIN</name></member>
-    <member refid="agents__class_8h_1afe3f51fbc354670e6c61f8e6f9c9b949" kind="define"><name>COST_OBS</name></member>
-    <member refid="agents__class_8h_1aee924ef71b44dac1501d13e25ac2743f" kind="define"><name>MAX_PTS</name></member>
-    <member refid="agents__class_8h_1ad575de5af7bcfae345fddc8d769e560a" kind="define"><name>MIN_PTS</name></member>
-    <member refid="agents__class_8h_1ae24ae7fb28a32df195a4ae13f734c26c" kind="define"><name>AGENT_NUM_TH</name></member>
-    <member refid="agents__class_8h_1a191e5a424a0b478c977515d5694610a8" kind="define"><name>DEFAULT_AGENT_SEGMENT</name></member>
-  </compound>
-  <compound refid="predict__goal_8h" kind="file"><name>predict_goal.h</name>
-    <member refid="predict__goal_8h_1a1b0fda8ba947077492614595b1371c99" kind="define"><name>COV</name></member>
-  </compound>
-  <compound refid="predict__goal__ros_8h" kind="file"><name>predict_goal_ros.h</name>
+  <compound refid="agent__layer_8h" kind="file"><name>agent_layer.h</name>
   </compound>
   <compound refid="agent__path__prediction_8cpp" kind="file"><name>agent_path_prediction.cpp</name>
     <member refid="agent__path__prediction_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" kind="define"><name>AGENTS_SUB_TOPIC</name></member>
@@ -1659,6 +1643,20 @@
     <member refid="agent__path__prediction_8cpp_1af0e126bb83c684d0b97a1a66834d78c5" kind="define"><name>AGENT_ANGLE_BEHIND_ROBOT</name></member>
     <member refid="agent__path__prediction_8cpp_1a458379afdbad052bb3077d6b425d2fee" kind="function"><name>sigintHandler</name></member>
   </compound>
+  <compound refid="agent__path__prediction_8h" kind="file"><name>agent_path_prediction.h</name>
+    <member refid="agent__path__prediction_8h_1af331ec1c592c921393cc8e9e1b75c33f" kind="define"><name>ANG_VEL_EPS</name></member>
+    <member refid="agent__path__prediction_8h_1af894f6c65704c92b68ed56dadb9afd02" kind="define"><name>MAX_AGENT_MARKERS</name></member>
+    <member refid="agent__path__prediction_8h_1a16e1bbd9c734c79d0a08824bf14036f7" kind="define"><name>MIN_MARKER_LIFETIME</name></member>
+    <member refid="agent__path__prediction_8h_1a33f9de4ddabe0c954c7be6d7d593e00e" kind="define"><name>MINIMUM_COVARIANCE_MARKERS</name></member>
+    <member refid="agent__path__prediction_8h_1a70d5ea5ea8c43ed32d3d28e41567b81e" kind="define"><name>RECALC_DIST</name></member>
+    <member refid="agent__path__prediction_8h_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
+    <member refid="agent__path__prediction_8h_1a8cc8d559acdd2f74085b20977182d5b7" kind="define"><name>NODE_NAME</name></member>
+  </compound>
+  <compound refid="agent__visibility__layer_8cpp" kind="file"><name>agent_visibility_layer.cpp</name>
+    <member refid="agent__visibility__layer_8cpp_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
+  </compound>
+  <compound refid="agent__visibility__layer_8h" kind="file"><name>agent_visibility_layer.h</name>
+  </compound>
   <compound refid="agents__class_8cpp" kind="file"><name>agents_class.cpp</name>
     <member refid="agents__class_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" kind="define"><name>AGENTS_SUB_TOPIC</name></member>
     <member refid="agents__class_8cpp_1acbe55d0dbd24b495220a3325ad2e545c" kind="define"><name>WINDOW_MOVING_AVG</name></member>
@@ -1669,28 +1667,30 @@
     <member refid="agents__class_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kind="define"><name>MAP_FRAME</name></member>
     <member refid="agents__class_8cpp_1af254bb642d35915f7d834ab136458263" kind="define"><name>ODOM_FRAME</name></member>
   </compound>
-  <compound refid="predict__goal__ros_8cpp" kind="file"><name>predict_goal_ros.cpp</name>
-    <member refid="predict__goal__ros_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" kind="define"><name>AGENTS_SUB_TOPIC</name></member>
+  <compound refid="agents__class_8h" kind="file"><name>agents_class.h</name>
+    <member refid="agents__class_8h_1afcae8c2a5021b396c0a659ee6dea0466" kind="define"><name>CALC_EPS</name></member>
+    <member refid="agents__class_8h_1aca429eece4b2ed55d2f38a84031ca6b5" kind="define"><name>COST_MIN</name></member>
+    <member refid="agents__class_8h_1afe3f51fbc354670e6c61f8e6f9c9b949" kind="define"><name>COST_OBS</name></member>
+    <member refid="agents__class_8h_1aee924ef71b44dac1501d13e25ac2743f" kind="define"><name>MAX_PTS</name></member>
+    <member refid="agents__class_8h_1ad575de5af7bcfae345fddc8d769e560a" kind="define"><name>MIN_PTS</name></member>
+    <member refid="agents__class_8h_1ae24ae7fb28a32df195a4ae13f734c26c" kind="define"><name>AGENT_NUM_TH</name></member>
+    <member refid="agents__class_8h_1a191e5a424a0b478c977515d5694610a8" kind="define"><name>DEFAULT_AGENT_SEGMENT</name></member>
   </compound>
-  <compound refid="agent__layer_8h" kind="file"><name>agent_layer.h</name>
-  </compound>
-  <compound refid="agent__visibility__layer_8h" kind="file"><name>agent_visibility_layer.h</name>
-  </compound>
-  <compound refid="static__agent__layer_8h" kind="file"><name>static_agent_layer.h</name>
-  </compound>
-  <compound refid="agent__layer_8cpp" kind="file"><name>agent_layer.cpp</name>
-    <member refid="agent__layer_8cpp_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
-    <member refid="agent__layer_8cpp_1ab11c2b6087ea76911944279ff5a6d65e" kind="define"><name>TRACKED_AGENTS_SUB</name></member>
-    <member refid="agent__layer_8cpp_1a64524ba317a33d6069bb960e1eb8c133" kind="define"><name>AGENTS_STATES_SUB</name></member>
-  </compound>
-  <compound refid="agent__visibility__layer_8cpp" kind="file"><name>agent_visibility_layer.cpp</name>
-    <member refid="agent__visibility__layer_8cpp_1a345d218c9cd83bb04fdb7749d8f5bca8" kind="define"><name>DEFAULT_AGENT_PART</name></member>
-  </compound>
-  <compound refid="static__agent__layer_8cpp" kind="file"><name>static_agent_layer.cpp</name>
+  <compound refid="backoff_8cpp" kind="file"><name>backoff.cpp</name>
+    <member refid="backoff_8cpp_1a8cc8d559acdd2f74085b20977182d5b7" kind="define"><name>NODE_NAME</name></member>
+    <member refid="backoff_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kind="define"><name>MAP_FRAME</name></member>
+    <member refid="backoff_8cpp_1a30d0bb104c2d03680e5eb1a59fd4c311" kind="define"><name>FOOTPRINT_FRAME</name></member>
+    <member refid="backoff_8cpp_1a5114cbe841af1bf20b7917782c7397cf" kind="define"><name>PUBLISH_GOAL_TOPIC</name></member>
+    <member refid="backoff_8cpp_1a28505835e5427c2308453f69c4bffa07" kind="define"><name>GET_PLAN_SRV_NAME</name></member>
+    <member refid="backoff_8cpp_1ad2f69313d4b8d6b83cc168d873ec656e" kind="define"><name>CURRENT_GOAL_TOPIC_NAME</name></member>
   </compound>
   <compound refid="backoff_8h" kind="file"><name>backoff.h</name>
   </compound>
-  <compound refid="set__mode_8h" kind="file"><name>set_mode.h</name>
+  <compound refid="backoff__exit__condition_8cpp" kind="file"><name>backoff_exit_condition.cpp</name>
+  </compound>
+  <compound refid="backoff__exit__condition_8h" kind="file"><name>backoff_exit_condition.h</name>
+  </compound>
+  <compound refid="base__teb__edges_8h" kind="file"><name>base_teb_edges.h</name>
   </compound>
   <compound refid="bt__core_8h" kind="file"><name>bt_core.h</name>
     <member refid="bt__core_8h_1a6ebf6899d6c1c8b7b9d09be872c05aae" kind="define"><name>EPS</name></member>
@@ -1701,25 +1701,11 @@
     <member refid="bt__core_8h_1a17a6d4e925afade9a4ea0f7662bab72e" kind="define"><name>BT_ERROR</name></member>
     <member refid="bt__core_8h_1a443d59f71cd917451eb358a9d1e5c6c1" kind="function"><name>normalize_angle</name></member>
   </compound>
-  <compound refid="backoff__exit__condition_8h" kind="file"><name>backoff_exit_condition.h</name>
-  </compound>
-  <compound refid="dual__band__exit__condition_8h" kind="file"><name>dual_band_exit_condition.h</name>
-  </compound>
-  <compound refid="is__goal__reached_8h" kind="file"><name>is_goal_reached.h</name>
-  </compound>
-  <compound refid="is__goal__updated_8h" kind="file"><name>is_goal_updated.h</name>
-  </compound>
-  <compound refid="passthrough__condition_8h" kind="file"><name>passthrough_condition.h</name>
-  </compound>
-  <compound refid="single__band__exit__condition_8h" kind="file"><name>single_band_exit_condition.h</name>
-  </compound>
-  <compound refid="vel__obs__exit__condition_8h" kind="file"><name>vel_obs_exit_condition.h</name>
-  </compound>
   <compound refid="distance__calculations_8h" kind="file"><name>distance_calculations.h</name>
   </compound>
-  <compound refid="footprint__model_8h" kind="file"><name>footprint_model.h</name>
+  <compound refid="dual__band__exit__condition_8cpp" kind="file"><name>dual_band_exit_condition.cpp</name>
   </compound>
-  <compound refid="base__teb__edges_8h" kind="file"><name>base_teb_edges.h</name>
+  <compound refid="dual__band__exit__condition_8h" kind="file"><name>dual_band_exit_condition.h</name>
   </compound>
   <compound refid="edge__acceleration_8h" kind="file"><name>edge_acceleration.h</name>
   </compound>
@@ -1751,65 +1737,12 @@
   </compound>
   <compound refid="edge__via__point_8h" kind="file"><name>edge_via_point.h</name>
   </compound>
-  <compound refid="penalties_8h" kind="file"><name>penalties.h</name>
+  <compound refid="footprint__model_8h" kind="file"><name>footprint_model.h</name>
   </compound>
-  <compound refid="vertex__pose_8h" kind="file"><name>vertex_pose.h</name>
-  </compound>
-  <compound refid="vertex__timediff_8h" kind="file"><name>vertex_timediff.h</name>
+  <compound refid="hateb__config_8cpp" kind="file"><name>hateb_config.cpp</name>
   </compound>
   <compound refid="hateb__config_8h" kind="file"><name>hateb_config.h</name>
     <member refid="hateb__config_8h_1a4661cfc4be068735f3bf5f601a943088" kind="define"><name>USE_ANALYTIC_JACOBI</name></member>
-  </compound>
-  <compound refid="hateb__local__planner__ros_8h" kind="file"><name>hateb_local_planner_ros.h</name>
-  </compound>
-  <compound refid="misc_8h" kind="file"><name>misc.h</name>
-    <member refid="misc_8h_1a63e45eaf93729d5707b89a5340d68334" kind="define"><name>SMALL_NUM</name></member>
-  </compound>
-  <compound refid="mode__switch_8h" kind="file"><name>mode_switch.h</name>
-  </compound>
-  <compound refid="obstacles_8h" kind="file"><name>obstacles.h</name>
-  </compound>
-  <compound refid="optimal__planner_8h" kind="file"><name>optimal_planner.h</name>
-  </compound>
-  <compound refid="planner__interface_8h" kind="file"><name>planner_interface.h</name>
-  </compound>
-  <compound refid="pose__se2_8h" kind="file"><name>pose_se2.h</name>
-  </compound>
-  <compound refid="recovery__behaviors_8h" kind="file"><name>recovery_behaviors.h</name>
-  </compound>
-  <compound refid="timed__elastic__band_8h" kind="file"><name>timed_elastic_band.h</name>
-  </compound>
-  <compound refid="timed__elastic__band_8hpp" kind="file"><name>timed_elastic_band.hpp</name>
-  </compound>
-  <compound refid="visualization_8h" kind="file"><name>visualization.h</name>
-  </compound>
-  <compound refid="visualization_8hpp" kind="file"><name>visualization.hpp</name>
-  </compound>
-  <compound refid="backoff_8cpp" kind="file"><name>backoff.cpp</name>
-    <member refid="backoff_8cpp_1a8cc8d559acdd2f74085b20977182d5b7" kind="define"><name>NODE_NAME</name></member>
-    <member refid="backoff_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kind="define"><name>MAP_FRAME</name></member>
-    <member refid="backoff_8cpp_1a30d0bb104c2d03680e5eb1a59fd4c311" kind="define"><name>FOOTPRINT_FRAME</name></member>
-    <member refid="backoff_8cpp_1a5114cbe841af1bf20b7917782c7397cf" kind="define"><name>PUBLISH_GOAL_TOPIC</name></member>
-    <member refid="backoff_8cpp_1a28505835e5427c2308453f69c4bffa07" kind="define"><name>GET_PLAN_SRV_NAME</name></member>
-    <member refid="backoff_8cpp_1ad2f69313d4b8d6b83cc168d873ec656e" kind="define"><name>CURRENT_GOAL_TOPIC_NAME</name></member>
-  </compound>
-  <compound refid="set__mode_8cpp" kind="file"><name>set_mode.cpp</name>
-  </compound>
-  <compound refid="backoff__exit__condition_8cpp" kind="file"><name>backoff_exit_condition.cpp</name>
-  </compound>
-  <compound refid="dual__band__exit__condition_8cpp" kind="file"><name>dual_band_exit_condition.cpp</name>
-  </compound>
-  <compound refid="is__goal__reached_8cpp" kind="file"><name>is_goal_reached.cpp</name>
-  </compound>
-  <compound refid="is__goal__updated_8cpp" kind="file"><name>is_goal_updated.cpp</name>
-  </compound>
-  <compound refid="passthrough__condition_8cpp" kind="file"><name>passthrough_condition.cpp</name>
-  </compound>
-  <compound refid="single__band__exit__condition_8cpp" kind="file"><name>single_band_exit_condition.cpp</name>
-  </compound>
-  <compound refid="vel__obs__exit__condition_8cpp" kind="file"><name>vel_obs_exit_condition.cpp</name>
-  </compound>
-  <compound refid="hateb__config_8cpp" kind="file"><name>hateb_config.cpp</name>
   </compound>
   <compound refid="hateb__local__planner__ros_8cpp" kind="file"><name>hateb_local_planner_ros.cpp</name>
     <member refid="hateb__local__planner__ros_8cpp_1a3ec7c3d2ff68ebe5cccbf5d3af53f43e" kind="define"><name>PREDICT_SERVICE_NAME</name></member>
@@ -1823,20 +1756,93 @@
     <member refid="hateb__local__planner__ros_8cpp_1a191e5a424a0b478c977515d5694610a8" kind="define"><name>DEFAULT_AGENT_SEGMENT</name></member>
     <member refid="hateb__local__planner__ros_8cpp_1ac8e179e7ade35b9594ba65a297d058b7" kind="define"><name>THROTTLE_RATE</name></member>
   </compound>
+  <compound refid="hateb__local__planner__ros_8h" kind="file"><name>hateb_local_planner_ros.h</name>
+  </compound>
+  <compound refid="invisible__humans__detection_8cpp" kind="file"><name>invisible_humans_detection.cpp</name>
+    <member refid="invisible__humans__detection_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kind="define"><name>MAP_FRAME</name></member>
+    <member refid="invisible__humans__detection_8cpp_1a30d0bb104c2d03680e5eb1a59fd4c311" kind="define"><name>FOOTPRINT_FRAME</name></member>
+  </compound>
+  <compound refid="is__goal__reached_8cpp" kind="file"><name>is_goal_reached.cpp</name>
+  </compound>
+  <compound refid="is__goal__reached_8h" kind="file"><name>is_goal_reached.h</name>
+  </compound>
+  <compound refid="is__goal__updated_8cpp" kind="file"><name>is_goal_updated.cpp</name>
+  </compound>
+  <compound refid="is__goal__updated_8h" kind="file"><name>is_goal_updated.h</name>
+  </compound>
+  <compound refid="map__scanner_8h" kind="file"><name>map_scanner.h</name>
+  </compound>
+  <compound refid="misc_8h" kind="file"><name>misc.h</name>
+    <member refid="misc_8h_1a63e45eaf93729d5707b89a5340d68334" kind="define"><name>SMALL_NUM</name></member>
+  </compound>
   <compound refid="mode__switch_8cpp" kind="file"><name>mode_switch.cpp</name>
     <member refid="mode__switch_8cpp_1a66f2f37cdf3657d29e74687d9a2046b0" kind="define"><name>AGENTS_INFO_SUB</name></member>
     <member refid="mode__switch_8cpp_1a76055c8382ad9ee46976af9ea2e3eb80" kind="define"><name>GOAL_SUB</name></member>
     <member refid="mode__switch_8cpp_1a0e4ef5be2241fcfa5b490bd147edab57" kind="define"><name>RESULT_SUB</name></member>
     <member refid="mode__switch_8cpp_1a4992aa0dea2b825aeba9f3b2ba12569a" kind="define"><name>PASSAGE_SUB</name></member>
   </compound>
+  <compound refid="mode__switch_8h" kind="file"><name>mode_switch.h</name>
+  </compound>
   <compound refid="obstacles_8cpp" kind="file"><name>obstacles.cpp</name>
+  </compound>
+  <compound refid="obstacles_8h" kind="file"><name>obstacles.h</name>
   </compound>
   <compound refid="optimal__planner_8cpp" kind="file"><name>optimal_planner.cpp</name>
     <member refid="optimal__planner_8cpp_1ac8e179e7ade35b9594ba65a297d058b7" kind="define"><name>THROTTLE_RATE</name></member>
   </compound>
+  <compound refid="optimal__planner_8h" kind="file"><name>optimal_planner.h</name>
+  </compound>
+  <compound refid="passthrough__condition_8cpp" kind="file"><name>passthrough_condition.cpp</name>
+  </compound>
+  <compound refid="passthrough__condition_8h" kind="file"><name>passthrough_condition.h</name>
+  </compound>
+  <compound refid="patharray__display_8cpp" kind="file"><name>patharray_display.cpp</name>
+  </compound>
+  <compound refid="patharray__display_8h" kind="file"><name>patharray_display.h</name>
+  </compound>
+  <compound refid="penalties_8h" kind="file"><name>penalties.h</name>
+  </compound>
+  <compound refid="planner__interface_8h" kind="file"><name>planner_interface.h</name>
+  </compound>
+  <compound refid="pose__se2_8h" kind="file"><name>pose_se2.h</name>
+  </compound>
+  <compound refid="predict__goal_8h" kind="file"><name>predict_goal.h</name>
+    <member refid="predict__goal_8h_1a1b0fda8ba947077492614595b1371c99" kind="define"><name>COV</name></member>
+  </compound>
+  <compound refid="predict__goal__ros_8cpp" kind="file"><name>predict_goal_ros.cpp</name>
+    <member refid="predict__goal__ros_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" kind="define"><name>AGENTS_SUB_TOPIC</name></member>
+  </compound>
+  <compound refid="predict__goal__ros_8h" kind="file"><name>predict_goal_ros.h</name>
+  </compound>
   <compound refid="recovery__behaviors_8cpp" kind="file"><name>recovery_behaviors.cpp</name>
   </compound>
+  <compound refid="recovery__behaviors_8h" kind="file"><name>recovery_behaviors.h</name>
+  </compound>
+  <compound refid="set__mode_8cpp" kind="file"><name>set_mode.cpp</name>
+  </compound>
+  <compound refid="set__mode_8h" kind="file"><name>set_mode.h</name>
+  </compound>
+  <compound refid="single__band__exit__condition_8cpp" kind="file"><name>single_band_exit_condition.cpp</name>
+  </compound>
+  <compound refid="single__band__exit__condition_8h" kind="file"><name>single_band_exit_condition.h</name>
+  </compound>
+  <compound refid="static__agent__layer_8cpp" kind="file"><name>static_agent_layer.cpp</name>
+  </compound>
+  <compound refid="static__agent__layer_8h" kind="file"><name>static_agent_layer.h</name>
+  </compound>
   <compound refid="timed__elastic__band_8cpp" kind="file"><name>timed_elastic_band.cpp</name>
+  </compound>
+  <compound refid="timed__elastic__band_8h" kind="file"><name>timed_elastic_band.h</name>
+  </compound>
+  <compound refid="timed__elastic__band_8hpp" kind="file"><name>timed_elastic_band.hpp</name>
+  </compound>
+  <compound refid="vel__obs__exit__condition_8cpp" kind="file"><name>vel_obs_exit_condition.cpp</name>
+  </compound>
+  <compound refid="vel__obs__exit__condition_8h" kind="file"><name>vel_obs_exit_condition.h</name>
+  </compound>
+  <compound refid="vertex__pose_8h" kind="file"><name>vertex_pose.h</name>
+  </compound>
+  <compound refid="vertex__timediff_8h" kind="file"><name>vertex_timediff.h</name>
   </compound>
   <compound refid="visualization_8cpp" kind="file"><name>visualization.cpp</name>
     <member refid="visualization_8cpp_1a87fb60abbdea44501569200652c77a62" kind="define"><name>GLOBAL_PLAN_TOPIC</name></member>
@@ -1866,68 +1872,58 @@
     <member refid="visualization_8cpp_1ab11c2b6087ea76911944279ff5a6d65e" kind="define"><name>TRACKED_AGENTS_SUB</name></member>
     <member refid="visualization_8cpp_1ab83b5f67f4eb6ff332347da5a681208a" kind="define"><name>CLEARING_TIMER_DURATION</name></member>
   </compound>
-  <compound refid="map__scanner_8h" kind="file"><name>map_scanner.h</name>
+  <compound refid="visualization_8h" kind="file"><name>visualization.h</name>
   </compound>
-  <compound refid="invisible__humans__detection_8cpp" kind="file"><name>invisible_humans_detection.cpp</name>
-    <member refid="invisible__humans__detection_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kind="define"><name>MAP_FRAME</name></member>
-    <member refid="invisible__humans__detection_8cpp_1a30d0bb104c2d03680e5eb1a59fd4c311" kind="define"><name>FOOTPRINT_FRAME</name></member>
+  <compound refid="visualization_8hpp" kind="file"><name>visualization.hpp</name>
   </compound>
-  <compound refid="patharray__display_8cpp" kind="file"><name>patharray_display.cpp</name>
+  <compound refid="dir_48e9b71d7d854c440544f450c3726af6" kind="dir"><name>action</name>
   </compound>
-  <compound refid="patharray__display_8h" kind="file"><name>patharray_display.h</name>
+  <compound refid="dir_5780353a2e84725b7b4f764e5220cb69" kind="dir"><name>action</name>
   </compound>
-  <compound refid="dir_185ea75ee3597f7ad103721381e71c96" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/action</name>
+  <compound refid="dir_f8dcef7c33bcf85ec897ff1e67434dce" kind="dir"><name>agent_path_prediction</name>
   </compound>
-  <compound refid="dir_ff3155300332f238ebe49d99a360d23d" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/action</name>
+  <compound refid="dir_eb5302ad8d2a63392c5da16ace767f7e" kind="dir"><name>agent_path_prediction</name>
   </compound>
-  <compound refid="dir_d6b9a670e8114a7626bb8013eb2a3ac2" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction</name>
+  <compound refid="dir_78662ddf189d111717d37a60f5d7209c" kind="dir"><name>behavior_tree</name>
   </compound>
-  <compound refid="dir_b78b52c84147d0214ea36f707194f243" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction</name>
+  <compound refid="dir_0fe1cbd59a03f8dfb7b2f8f7d4b04b58" kind="dir"><name>behavior_tree</name>
   </compound>
-  <compound refid="dir_2dfcd6d8c09fbad2bd64b675cae804dc" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree</name>
+  <compound refid="dir_19995209f2ea3c2e0d0a3c6c9457aeeb" kind="dir"><name>cohan_layers</name>
   </compound>
-  <compound refid="dir_6ce81133a6b0dbbdd78d034c60ab5c7f" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree</name>
+  <compound refid="dir_a8e3bb89a129734a0c61c386bd2bc2f0" kind="dir"><name>cohan_layers</name>
   </compound>
-  <compound refid="dir_93e77b72dca52f339d380f38efa5edd0" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0</name>
+  <compound refid="dir_7d74e7506267b85b28f38d362f93ff90" kind="dir"><name>condition</name>
   </compound>
-  <compound refid="dir_72dde95032b0ddc48690e3e511a565ed" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers</name>
+  <compound refid="dir_30515ee430052bfad4e2eeb3da20bbf4" kind="dir"><name>condition</name>
   </compound>
-  <compound refid="dir_d40f0fbdc3d215cf6fbc82e93f86ced5" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers</name>
+  <compound refid="dir_e1f18391171a62395bb327dee6b2ae22" kind="dir"><name>g2o_types</name>
   </compound>
-  <compound refid="dir_2b3586dce5b2b989e12d12d43dcd8b02" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition</name>
+  <compound refid="dir_aee39cedca37375437d91d9e9645438f" kind="dir"><name>hateb_local_planner</name>
   </compound>
-  <compound refid="dir_0bc0453c7c460f72af2c3f1684e8af70" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition</name>
+  <compound refid="dir_b299645c5bac397bf09e80918e071f0e" kind="dir"><name>hateb_local_planner</name>
   </compound>
-  <compound refid="dir_5529409567443e862e9da1253de20fb7" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types</name>
+  <compound refid="dir_19b1c7ecbfa3968de7cbe23176ccfd17" kind="dir"><name>include</name>
   </compound>
-  <compound refid="dir_8c8bc5f3d0880c17523774d5389b7441" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner</name>
+  <compound refid="dir_3a47e67455ca1b272c769d9ef23039b1" kind="dir"><name>include</name>
   </compound>
-  <compound refid="dir_f4d1add8d30c97758c73772df5057cbe" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner</name>
+  <compound refid="dir_e07473fcfd17dd1ea80787646940ad86" kind="dir"><name>include</name>
   </compound>
-  <compound refid="dir_d3e032b4eccf1d1287fc56235db909ca" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/include</name>
+  <compound refid="dir_fed679653b0aa7bb5435a406c67c8553" kind="dir"><name>include</name>
   </compound>
-  <compound refid="dir_0c1db463107cbbe985a9ff8a693eae82" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include</name>
+  <compound refid="dir_a360442b5c1e10f75d733f402d53f91c" kind="dir"><name>invisible_humans_detection</name>
   </compound>
-  <compound refid="dir_c15aa3e481dd03d2cde89ea55937d101" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include</name>
+  <compound refid="dir_8fe3b07657284b014863e901a58113a5" kind="dir"><name>invisible_humans_detection</name>
   </compound>
-  <compound refid="dir_ff604c12455ba4e97d3a7ed12445cbfd" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include</name>
+  <compound refid="dir_5de9b0ef5f18ec9f3d5c68f86694fd90" kind="dir"><name>rviz_path_array</name>
   </compound>
-  <compound refid="dir_8e4aa079a43b4cc63e1f6ae9862433b0" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/include/invisible_humans_detection</name>
+  <compound refid="dir_a8815f71ddd5302a5e5946b2722a89c9" kind="dir"><name>src</name>
   </compound>
-  <compound refid="dir_791d380041cd8eae9be0c858861caa0c" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection</name>
+  <compound refid="dir_9bb6ca16fd2604f26fb74026fe2baeef" kind="dir"><name>src</name>
   </compound>
-  <compound refid="dir_cf846cc469fce6ebd650243ef2ad6bff" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array</name>
+  <compound refid="dir_705ab453c193ce580148cb5def76f83d" kind="dir"><name>src</name>
   </compound>
-  <compound refid="dir_955c0708acae729a51dba8a2c502c1ba" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/src</name>
+  <compound refid="dir_00a6b79c548d88feb70ed72105d167f3" kind="dir"><name>src</name>
   </compound>
-  <compound refid="dir_dc90beb7ae294239e4120098cfd82df5" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src</name>
-  </compound>
-  <compound refid="dir_6fb4b0579731921df4f9f28ef9c17cb9" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src</name>
-  </compound>
-  <compound refid="dir_5fdd8ca3e0c6294cc7a283e90ec5ab4a" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/src</name>
-  </compound>
-  <compound refid="dir_4073762706cd66b478135dea57ee6aab" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src</name>
-  </compound>
-  <compound refid="dir_b39c93fdd1e744dd7c0e92cd95b3761f" kind="dir"><name>/home/ptsingaman/ros_ws/CoHAN2.0/src</name>
+  <compound refid="dir_fb93ed3c2fe05328328a192747b956c5" kind="dir"><name>src</name>
   </compound>
 </doxygenindex>

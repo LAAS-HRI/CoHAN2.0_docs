@@ -36,14 +36,8 @@
       <node id="19">
         <label>rviz/properties/float_property.h</label>
       </node>
-      <node id="22">
-        <label>rviz/validate_floats.h</label>
-      </node>
-      <node id="8">
-        <label>OgreBillboardSet.h</label>
-      </node>
       <node id="1">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp</label>
+        <label>patharray_display.cpp</label>
         <link refid="patharray__display_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -82,6 +76,12 @@
         <childnode refid="24" relation="include">
         </childnode>
       </node>
+      <node id="22">
+        <label>rviz/validate_floats.h</label>
+      </node>
+      <node id="8">
+        <label>OgreBillboardSet.h</label>
+      </node>
       <node id="9">
         <label>OgreManualObject.h</label>
       </node>
@@ -99,6 +99,20 @@
       </node>
       <node id="18">
         <label>rviz/properties/enum_property.h</label>
+      </node>
+      <node id="2">
+        <label>patharray_display.h</label>
+        <link refid="patharray__display_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="21">
         <label>rviz/properties/vector_property.h</label>
@@ -123,20 +137,6 @@
       </node>
       <node id="5">
         <label>rviz/ogre_helpers/arrow.h</label>
-      </node>
-      <node id="2">
-        <label>patharray_display.h</label>
-        <link refid="patharray__display_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
       </node>
       <node id="3">
         <label>cohan_msgs/AgentPath.h</label>
@@ -608,6 +608,6 @@
 <codeline lineno="458"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pluginlib/class_list_macros.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="459"><highlight class="normal">PLUGINLIB_EXPORT_CLASS(<ref refid="classrviz__path__array_1_1AgentPathArrayDisplay" kindref="compound">rviz_path_array::AgentPathArrayDisplay</ref>,<sp/>rviz::Display)</highlight></codeline>
     </programlisting>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp"/>
+    <location file="rviz_path_array/src/patharray_display.cpp"/>
   </compounddef>
 </doxygen>

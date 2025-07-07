@@ -3,7 +3,7 @@
 Class EdgeDynamicObstacle
 =========================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_dynamic_obstacle.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_dynamic_obstacle.h`
 
 
 Inheritance Relationships

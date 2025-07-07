@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="175" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="175" bodyend="175"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="175" column="3" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="175" bodyend="175"/>
       </memberdef>
       <memberdef kind="function" id="classhateb__local__planner_1_1EdgeKinematicsCarlike_1abbffb31ef8aafbc2c1f82a1ab37789b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="180" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="180" bodyend="201"/>
+        <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="180" column="8" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="180" bodyend="201"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -87,7 +87,7 @@ The dimension of the error / cost vector is 3: the first component represents th
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="170" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="170" bodyend="205"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" line="170" column="1" bodyfile="hateb_local_planner/include/hateb_local_planner/g2o_types/edge_kinematics.h" bodystart="170" bodyend="205"/>
     <listofallmembers>
       <member refid="classhateb__local__planner_1_1BaseTebBinaryEdge_1af5ba7be337a1f51e8f000255ffd40e71" prot="protected" virt="non-virtual"><scope>hateb_local_planner::EdgeKinematicsCarlike</scope><name>cfg_</name></member>
       <member refid="classhateb__local__planner_1_1EdgeKinematicsCarlike_1abbffb31ef8aafbc2c1f82a1ab37789b2" prot="public" virt="non-virtual"><scope>hateb_local_planner::EdgeKinematicsCarlike</scope><name>computeError</name></member>

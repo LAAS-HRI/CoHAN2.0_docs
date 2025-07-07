@@ -9,7 +9,7 @@
     <detaileddescription>
 <para>Instead of using a CircularFootprint this class might be utitilzed and the robot/human radius can be added to the mininum distance parameter. This avoids a subtraction of zero each time a distance is calculated. </para>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="121" column="1"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="121" column="1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

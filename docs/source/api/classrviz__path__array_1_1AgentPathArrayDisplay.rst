@@ -3,7 +3,7 @@
 Class AgentPathArrayDisplay
 ===========================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h`
+- Defined in :ref:`file_rviz_path_array_src_patharray_display.h`
 
 
 Inheritance Relationships

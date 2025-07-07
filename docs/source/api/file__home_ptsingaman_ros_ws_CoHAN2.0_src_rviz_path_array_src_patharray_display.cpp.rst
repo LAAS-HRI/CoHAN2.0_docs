@@ -4,7 +4,7 @@
 File patharray_display.cpp
 ==========================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src>` (``/rviz_path_array/src``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File patharray_display.cpp
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp``)
+Definition (``/rviz_path_array/src/patharray_display.cpp``)
 -----------------------------------------------------------------------------------------------
 
 

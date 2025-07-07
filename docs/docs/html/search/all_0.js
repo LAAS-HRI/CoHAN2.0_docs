@@ -60,7 +60,7 @@ var searchData=
   ['agent_5fmodel_5f_57',['agent_model_',['../classhateb__local__planner_1_1TebOptimalPlanner.html#a952cbdd8979cc17fc7e98b9f180c404a',1,'hateb_local_planner::TebOptimalPlanner']]],
   ['agent_5fnext_5fpose_5fpub_5f_58',['agent_next_pose_pub_',['../classhateb__local__planner_1_1TebVisualization.html#ae16a9eb03ae282ad18f8207d3cc86d01',1,'hateb_local_planner::TebVisualization']]],
   ['agent_5fnext_5fpose_5ftopic_59',['AGENT_NEXT_POSE_TOPIC',['../visualization_8cpp.html#a48c33c093011f94ee0d1a37c55745df9',1,'visualization.cpp']]],
-  ['agent_5fnominal_5fvels_5f_60',['agent_nominal_vels_',['../classagents_1_1Agents.html#ad195b8f5b68b8f8f3a4aecf007964ea4',1,'agents::Agents::agent_nominal_vels_()'],['../classhateb__local__planner_1_1TebOptimalPlanner.html#ac91b322e1d8d1e39286b0be9f956ea51',1,'hateb_local_planner::TebOptimalPlanner::agent_nominal_vels_()']]],
+  ['agent_5fnominal_5fvels_5f_60',['agent_nominal_vels_',['../classhateb__local__planner_1_1TebOptimalPlanner.html#ac91b322e1d8d1e39286b0be9f956ea51',1,'hateb_local_planner::TebOptimalPlanner::agent_nominal_vels_()'],['../classagents_1_1Agents.html#ad195b8f5b68b8f8f3a4aecf007964ea4',1,'agents::Agents::agent_nominal_vels_()']]],
   ['agent_5fnum_5fth_61',['AGENT_NUM_TH',['../agents__class_8h.html#ae24ae7fb28a32df195a4ae13f734c26c',1,'agents_class.h']]],
   ['agent_5fpath_5fprediction_2ecpp_62',['agent_path_prediction.cpp',['../agent__path__prediction_8cpp.html',1,'']]],
   ['agent_5fpath_5fprediction_2eh_63',['agent_path_prediction.h',['../agent__path__prediction_8h.html',1,'']]],

@@ -3,7 +3,7 @@
 Struct AgentLayer::AgentPoseVel
 ===============================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_cohan_layers_include_cohan_layers_agent_layer.h`
+- Defined in :ref:`file_cohan_layers_include_cohan_layers_agent_layer.h`
 
 
 Nested Relationships

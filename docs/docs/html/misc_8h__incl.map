@@ -1,7 +1,7 @@
-<map id="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" name="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h">
-<area shape="rect" id="node1" title=" " alt="" coords="184,5,388,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,124,97,151"/>
-<area shape="rect" id="node3" title=" " alt="" coords="122,124,282,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="307,124,433,151"/>
-<area shape="rect" id="node5" title=" " alt="" coords="457,124,520,151"/>
+<map id="misc.h" name="misc.h">
+<area shape="rect" id="node1" title=" " alt="" coords="253,5,319,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="122,80,282,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="307,80,433,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="457,80,520,107"/>
 </map>

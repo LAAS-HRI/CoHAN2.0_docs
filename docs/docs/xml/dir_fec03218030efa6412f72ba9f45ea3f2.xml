@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_fec03218030efa6412f72ba9f45ea3f2" kind="dir">
+    <compoundname>behavior_tree</compoundname>
+    <innerdir refid="dir_e63b97ef5c72ec9e1ffebf55a46fec9d">action</innerdir>
+    <innerdir refid="dir_a73ea6d29e767eb561ca8c44b452dd76">condition</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/phani/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/"/>
+  </compounddef>
+</doxygen>

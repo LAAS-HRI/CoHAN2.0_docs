@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="89" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="89" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="89" column="3" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="212" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="212" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="212" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1a0ef4c8ea79a85843d3b46194d545fe23" prot="private" static="no" mutable="no">
         <type>std::vector&lt; Eigen::Vector2d &gt;</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="213" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="213" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="213" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1abb9f3d90b8afaa46674624f50139ab55" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="214" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="214" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="214" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1ac965a785b6e56d3ec7a620af1df1b102" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, <ref refid="classagents_1_1BayesianGoalPrediction_1a2e6f78552d73bfc207d75877bee93b1e" kindref="member">Trajectory</ref> &gt;</type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="215" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="215" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="215" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1ace62112d5d93296c1eee7a3baf5b9d5a" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, std::vector&lt; double &gt; &gt;</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="216" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="216" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="216" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1a276756764ddfcec9b1ae2a000e76716f" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, std::vector&lt; double &gt; &gt;</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="217" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="217" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="217" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1BayesianGoalPrediction_1a8f394e49041a2ec75a3456bfbd7606f8" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="218" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="218" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="218" column="7" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="218" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="94" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="94" bodyend="94"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="94" column="3" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="94" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1BayesianGoalPrediction_1a8e6cf4bfedee186b6128c83e1499aa93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="99" column="3"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="99" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1BayesianGoalPrediction_1a825aa3dc7367c470f3011061f35e1d00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="106" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="106" bodyend="112"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="106" column="8" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="106" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1BayesianGoalPrediction_1ae6ce341f459f073f44fc8daafe4856fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="120" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="120" bodyend="132"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="120" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="120" bodyend="132"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -269,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="141" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="141" bodyend="146"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="141" column="8" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="141" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1BayesianGoalPrediction_1a18d606a44b2cab66b9259e0ba3fd2b2a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="153" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="153" bodyend="210"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="153" column="8" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="153" bodyend="210"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -318,7 +318,7 @@
         <link refid="classagents_1_1Gaussian"/>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="87" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="87" bodyend="219"/>
+    <location file="agent_path_prediction/include/agent_path_prediction/predict_goal.h" line="87" column="1" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal.h" bodystart="87" bodyend="219"/>
     <listofallmembers>
       <member refid="classagents_1_1BayesianGoalPrediction_1ae5bb7f8d62d99f01b4cba3897fb91b39" prot="private" virt="non-virtual"><scope>agents::BayesianGoalPrediction</scope><name>addPosition</name></member>
       <member refid="classagents_1_1BayesianGoalPrediction_1a276756764ddfcec9b1ae2a000e76716f" prot="private" virt="non-virtual"><scope>agents::BayesianGoalPrediction</scope><name>agent_probs_</name></member>

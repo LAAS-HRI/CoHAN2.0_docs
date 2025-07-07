@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="86" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="86" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="86" column="19" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1a98e2194e92cfcd0f9448de4b772fca9a" prot="private" static="no" mutable="no">
         <type>ros::Publisher</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="87" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="87" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="87" column="18" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1ab96ad9139ef5922ee0042c6d8105009b" prot="private" static="no" mutable="no">
         <type><ref refid="classagents_1_1BayesianGoalPrediction" kindref="compound">agents::BayesianGoalPrediction</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="90" column="34" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="90" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="90" column="34" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1a4f176eca70c34256d1e5d5a7229f5065" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, Eigen::Vector2d &gt;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="93" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="93" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="93" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1aedc938f4e507fa4c5b3b088ed9977bd5" prot="private" static="no" mutable="no">
         <type>std::map&lt; int, std::string &gt;</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="94" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="94" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="94" column="12" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1ad6c43b7c6b94133825e30d3da4b7cded" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="97" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="97" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="97" column="7" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="97" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1a65b1bb4b8ad2ecdad4b16d292bbf7841" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="99" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="99" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="99" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1a927fbf61043549810e19b38de7b4ddfd" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="99" column="41" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="99" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="99" column="41" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1a8a7198ef45914bd749c083cc3a768347" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="100" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="100" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="100" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classagents_1_1PredictGoalROS_1aac29d0622fc1bf274e544f13e146871f" prot="private" static="no" mutable="no">
         <type>std::string</type>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="101" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="101" bodyend="-1"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="101" column="15" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="57" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/predict_goal_ros.cpp" bodystart="7" bodyend="32"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="57" column="3" bodyfile="agent_path_prediction/src/predict_goal_ros.cpp" bodystart="7" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1PredictGoalROS_1a18a1a8a0b7e13f1c14567f9431382b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="62" column="3"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="62" column="3"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="69" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/predict_goal_ros.cpp" bodystart="34" bodyend="70"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="69" column="8" bodyfile="agent_path_prediction/src/predict_goal_ros.cpp" bodystart="34" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1PredictGoalROS_1a5dba384076d3792d1917a1e54dcd8839" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="76" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/predict_goal_ros.cpp" bodystart="72" bodyend="93"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="76" column="8" bodyfile="agent_path_prediction/src/predict_goal_ros.cpp" bodystart="72" bodyend="93"/>
       </memberdef>
       <memberdef kind="function" id="classagents_1_1PredictGoalROS_1aeb1405942c953193ec9ccbffa3c17117" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -259,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="83" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/predict_goal_ros.cpp" bodystart="95" bodyend="99"/>
+        <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="83" column="8" bodyfile="agent_path_prediction/src/predict_goal_ros.cpp" bodystart="95" bodyend="99"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -287,7 +287,7 @@
         <link refid="classagents_1_1Gaussian"/>
       </node>
     </collaborationgraph>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="52" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="52" bodyend="102"/>
+    <location file="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" line="52" column="1" bodyfile="agent_path_prediction/include/agent_path_prediction/predict_goal_ros.h" bodystart="52" bodyend="102"/>
     <listofallmembers>
       <member refid="classagents_1_1PredictGoalROS_1aedc938f4e507fa4c5b3b088ed9977bd5" prot="private" virt="non-virtual"><scope>agents::PredictGoalROS</scope><name>agent_goal_predicts_</name></member>
       <member refid="classagents_1_1PredictGoalROS_1a35f7f84fc103593a9e34b33dae8de146" prot="private" virt="non-virtual"><scope>agents::PredictGoalROS</scope><name>agents_sub_</name></member>

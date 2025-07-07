@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.h" line="49" column="1"/>
+    <location file="rviz_path_array/src/patharray_display.h" line="49" column="1"/>
   </compounddef>
 </doxygen>

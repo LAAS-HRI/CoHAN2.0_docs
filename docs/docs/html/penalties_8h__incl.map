@@ -1,6 +1,6 @@
-<map id="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" name="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h">
-<area shape="rect" id="node1" title=" " alt="" coords="109,5,295,91"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,139,132,165"/>
-<area shape="rect" id="node3" title=" " alt="" coords="156,139,248,165"/>
-<area shape="rect" id="node4" title=" " alt="" coords="272,139,335,165"/>
+<map id="penalties.h" name="penalties.h">
+<area shape="rect" id="node1" title=" " alt="" coords="155,5,249,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="156,80,248,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="272,80,335,107"/>
 </map>

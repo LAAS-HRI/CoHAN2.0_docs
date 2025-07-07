@@ -3,7 +3,7 @@
   <compounddef id="timed__elastic__band_8hpp" kind="file" language="C++">
     <compoundname>timed_elastic_band.hpp</compoundname>
     <includes refid="timed__elastic__band_8h" local="no">hateb_local_planner/timed_elastic_band.h</includes>
-    <includedby refid="timed__elastic__band_8h" local="no">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h</includedby>
+    <includedby refid="timed__elastic__band_8h" local="no">timed_elastic_band.h</includedby>
     <incdepgraph>
       <node id="23">
         <label>ros/assert.h</label>
@@ -25,6 +25,80 @@
       </node>
       <node id="11">
         <label>Eigen/Core</label>
+      </node>
+      <node id="33">
+        <label>hateb_local_planner/g2o_types/vertex_timediff.h</label>
+        <link refid="vertex__timediff_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>hateb_local_planner/g2o_types/vertex_pose.h</label>
+        <link refid="vertex__pose_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>tf/tf.h</label>
+      </node>
+      <node id="1">
+        <label>timed_elastic_band.hpp</label>
+        <link refid="timed__elastic__band_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hateb_local_planner/timed_elastic_band.h</label>
+        <link refid="timed__elastic__band_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>g2o/core/base_vertex.h</label>
+      </node>
+      <node id="10">
+        <label>hateb_local_planner/misc.h</label>
+        <link refid="misc_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>g2o/config.h</label>
+      </node>
+      <node id="18">
+        <label>Eigen/StdVector</label>
       </node>
       <node id="5">
         <label>hateb_local_planner/obstacles.h</label>
@@ -54,37 +128,11 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="16">
-        <label>tf/tf.h</label>
-      </node>
-      <node id="33">
-        <label>hateb_local_planner/g2o_types/vertex_timediff.h</label>
-        <link refid="vertex__timediff_8h"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>g2o/core/base_vertex.h</label>
-      </node>
-      <node id="26">
-        <label>g2o/config.h</label>
-      </node>
-      <node id="18">
-        <label>Eigen/StdVector</label>
-      </node>
       <node id="32">
         <label>tf/transform_datatypes.h</label>
       </node>
       <node id="4">
         <label>geometry_msgs/PoseStamped.h</label>
-      </node>
-      <node id="1">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp</label>
-        <link refid="timed__elastic__band_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
       </node>
       <node id="7">
         <label>geometry_msgs/QuaternionStamped.h</label>
@@ -107,57 +155,8 @@
       <node id="24">
         <label>ros/ros.h</label>
       </node>
-      <node id="2">
-        <label>hateb_local_planner/timed_elastic_band.h</label>
-        <link refid="timed__elastic__band_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="1" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>hateb_local_planner/distance_calculations.h</label>
-        <link refid="distance__calculations_8h"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
       <node id="8">
         <label>geometry_msgs/TwistWithCovariance.h</label>
-      </node>
-      <node id="29">
-        <label>g2o/stuff/misc.h</label>
-      </node>
-      <node id="25">
-        <label>hateb_local_planner/g2o_types/vertex_pose.h</label>
-        <link refid="vertex__pose_8h"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
       </node>
       <node id="30">
         <label>hateb_local_planner/pose_se2.h</label>
@@ -173,17 +172,8 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>hateb_local_planner/misc.h</label>
-        <link refid="misc_8h"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
+      <node id="29">
+        <label>g2o/stuff/misc.h</label>
       </node>
       <node id="21">
         <label>complex</label>
@@ -191,63 +181,41 @@
       <node id="15">
         <label>algorithm</label>
       </node>
+      <node id="9">
+        <label>hateb_local_planner/distance_calculations.h</label>
+        <link refid="distance__calculations_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
       <node id="12">
         <label>boost/type_traits.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="6">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/optimal_planner.cpp</label>
-        <link refid="optimal__planner_8cpp"/>
-      </node>
-      <node id="3">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h</label>
-        <link refid="optimal__planner_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/timed_elastic_band.cpp</label>
-        <link refid="timed__elastic__band_8cpp"/>
-      </node>
       <node id="7">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp</label>
+        <label>visualization.cpp</label>
         <link refid="visualization_8cpp"/>
       </node>
       <node id="5">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp</label>
+        <label>hateb_local_planner_ros.cpp</label>
         <link refid="hateb__local__planner__ros_8cpp"/>
       </node>
+      <node id="10">
+        <label>timed_elastic_band.cpp</label>
+        <link refid="timed__elastic__band_8cpp"/>
+      </node>
       <node id="1">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp</label>
+        <label>timed_elastic_band.hpp</label>
         <link refid="timed__elastic__band_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h</label>
-        <link refid="hateb__local__planner__ros_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h</label>
-        <link refid="visualization_8h"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
       <node id="2">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h</label>
+        <label>timed_elastic_band.h</label>
         <link refid="timed__elastic__band_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -258,10 +226,42 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
+      <node id="4">
+        <label>hateb_local_planner_ros.h</label>
+        <link refid="hateb__local__planner__ros_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>optimal_planner.h</label>
+        <link refid="optimal__planner_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>optimal_planner.cpp</label>
+        <link refid="optimal__planner_8cpp"/>
+      </node>
       <node id="9">
-        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.hpp</label>
+        <label>visualization.hpp</label>
         <link refid="visualization_8hpp"/>
         <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>visualization.h</label>
+        <link refid="visualization_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -429,6 +429,6 @@
 <codeline lineno="156"><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hateb_local_planner</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp"/>
+    <location file="hateb_local_planner/include/hateb_local_planner/timed_elastic_band.hpp"/>
   </compounddef>
 </doxygen>
