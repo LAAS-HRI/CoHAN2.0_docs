@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File patharray_display.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File patharray_display.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-patharray-display-h">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-rviz-path-array-src-patharray-display-h"></span><h1>Program Listing for File patharray_display.h<a class="headerlink" href="#program-listing-for-file-patharray-display-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-rviz-path-array-src-patharray-display-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> * Copyright (c) 2025 LAAS/CNRS</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Author: Phani Teja Singamaneni (email:ptsingaman@laas.fr)</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#ifndef AGENT_PATHARRAY_DISPLAY_H</span>
+<span class="cp">#define AGENT_PATHARRAY_DISPLAY_H</span>
+
+<span class="c1">// #include &lt;nav_msgs/Path.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cohan_msgs/AgentPath.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cohan_msgs/AgentPathArray.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rviz/ogre_helpers/arrow.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;rviz/ogre_helpers/axes.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/message_filter_display.h&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">Ogre</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ManualObject</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">rviz</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ColorProperty</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">FloatProperty</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">IntProperty</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">EnumProperty</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">BillboardLine</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">VectorProperty</span><span class="p">;</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace rviz</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">rviz_path_array</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">AgentPathArrayDisplay</span><span class="p">;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">AgentPathArrayDisplay</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">MessageFilterDisplay</span><span class="o">&lt;</span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Q_OBJECT</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">AgentPathArrayDisplay</span><span class="p">();</span>
+<span class="w">  </span><span class="o">~</span><span class="n">AgentPathArrayDisplay</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">reset</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w"> </span><span class="k">protected</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">onInitialize</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">processMessage</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">::</span><span class="n">ConstPtr</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="n">Q_SLOTS</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">updateBufferLength</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateStyle</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateLineWidth</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateOffset</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updatePoseStyle</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updatePoseAxisGeometry</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updatePoseArrowColor</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updatePoseArrowGeometry</span><span class="p">();</span>
+
+<span class="w"> </span><span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">destroyObjects</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">allocateArrowVector</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Arrow</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">allocateAxesVector</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Axes</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroyPoseAxesChain</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">destroyPoseArrowChain</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Ogre</span><span class="o">::</span><span class="n">ManualObject</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">manual_objects_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">BillboardLine</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">billboard_lines_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Axes</span><span class="o">*&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">axes_chain_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Arrow</span><span class="o">*&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrow_chain_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">EnumProperty</span><span class="o">*</span><span class="w"> </span><span class="n">style_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">ColorProperty</span><span class="o">*</span><span class="w"> </span><span class="n">color_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">alpha_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">line_width_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">IntProperty</span><span class="o">*</span><span class="w"> </span><span class="n">buffer_length_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">VectorProperty</span><span class="o">*</span><span class="w"> </span><span class="n">offset_property_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">enum</span><span class="w"> </span><span class="nc">LineStyle</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">LINES</span><span class="p">,</span><span class="w"> </span><span class="n">BILLBOARDS</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">  </span><span class="c1">// pose marker property</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">EnumProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_style_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_axes_length_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_axes_radius_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">ColorProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_arrow_color_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_arrow_shaft_length_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_arrow_head_length_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="o">*</span><span class="w"> </span><span class="n">pose_arrow_head_diameter_property_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">enum</span><span class="w"> </span><span class="nc">PoseStyle</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">NONE</span><span class="p">,</span>
+<span class="w">    </span><span class="n">AXES</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ARROWS</span><span class="p">,</span>
+<span class="w">  </span><span class="p">};</span>
+<span class="p">};</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace rviz_path_array</span>
+
+<span class="cp">#endif </span><span class="cm">/* AGENT_PATHARRAY_DISPLAY_H */</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

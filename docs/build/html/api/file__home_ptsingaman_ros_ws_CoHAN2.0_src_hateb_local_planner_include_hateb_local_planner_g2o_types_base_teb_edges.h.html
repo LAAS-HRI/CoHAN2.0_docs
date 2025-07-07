@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File base_teb_edges.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_base_teb_edges.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File base_teb_edges.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_base_teb_edges.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-base-teb-edges-h">
+<span id="file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-base-teb-edges-h"></span><h1>File base_teb_edges.h<a class="headerlink" href="#file-base-teb-edges-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types.html#dir-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types</span></code>)</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-base-teb-edges-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/base_teb_edges.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+</ul>
+</nav>
+<section id="definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-base-teb-edges-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/base_teb_edges.h</span></code>)<a class="headerlink" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-base-teb-edges-h" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_base_teb_edges.h.html">Program Listing for File base_teb_edges.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">g2o/core/base_binary_edge.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g2o/core/base_multi_edge.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g2o/core/base_unary_edge.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hateb_local_planner/hateb_config.h</span></code> (<a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_hateb_config.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-hateb-config-h"><span class="std std-ref">File hateb_config.h</span></a>)</p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_acceleration.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-acceleration-h"><span class="std std-ref">File edge_acceleration.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_agent_safety.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-agent-safety-h"><span class="std std-ref">File edge_agent_agent_safety.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_rel_velocity.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-robot-rel-velocity-h"><span class="std std-ref">File edge_agent_robot_rel_velocity.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_safety.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-robot-safety-h"><span class="std std-ref">File edge_agent_robot_safety.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_visibility.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-robot-visibility-h"><span class="std std-ref">File edge_agent_robot_visibility.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_dynamic_obstacle.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-dynamic-obstacle-h"><span class="std std-ref">File edge_dynamic_obstacle.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_invisible_human.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-invisible-human-h"><span class="std std-ref">File edge_invisible_human.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_kinematics.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-kinematics-h"><span class="std std-ref">File edge_kinematics.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_obstacle.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-obstacle-h"><span class="std std-ref">File edge_obstacle.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_prefer_rotdir.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-prefer-rotdir-h"><span class="std std-ref">File edge_prefer_rotdir.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_shortest_path.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-shortest-path-h"><span class="std std-ref">File edge_shortest_path.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_static_agent_visibility.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-static-agent-visibility-h"><span class="std std-ref">File edge_static_agent_visibility.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_time_optimal.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-time-optimal-h"><span class="std std-ref">File edge_time_optimal.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_velocity.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-velocity-h"><span class="std std-ref">File edge_velocity.h</span></a></p></li>
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_via_point.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-via-point-h"><span class="std std-ref">File edge_via_point.h</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_hateb_local_planner.html#namespace-hateb-local-planner"><span class="std std-ref">Namespace hateb_local_planner</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#exhale-class-classhateb-local-planner-1-1basetebbinaryedge"><span class="std std-ref">Template Class BaseTebBinaryEdge</span></a></p></li>
+<li><p><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#exhale-class-classhateb-local-planner-1-1basetebmultiedge"><span class="std std-ref">Template Class BaseTebMultiEdge</span></a></p></li>
+<li><p><a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#exhale-class-classhateb-local-planner-1-1basetebunaryedge"><span class="std std-ref">Template Class BaseTebUnaryEdge</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

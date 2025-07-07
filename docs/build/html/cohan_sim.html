@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoHAN Sim &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/cohan_sim.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api/library_root.html" />
+    <link rel="prev" title="Mode Switching and Behavior Trees" href="mode_switching.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CoHAN Sim</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-robot-and-map-to-the-simulator">Adding robot and map to the simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-humans-or-more-robots">Adding humans or more robots</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CoHAN Sim</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/cohan_sim.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cohan-sim">
+<h1>CoHAN Sim<a class="headerlink" href="#cohan-sim" title="Link to this heading"></a></h1>
+<p>CoHAN Sim is a simple 2D robot simulator aimed to support ROS1 and ROS2 versions. The current implementation is simple and uses SDL2 library to build simulation from an .yaml file using similar notations as ROS. It is very simple and straight-forward to use as you just have to modify your existing map (.yaml) files that are used by map_server.</p>
+<section id="adding-robot-and-map-to-the-simulator">
+<h2>Adding robot and map to the simulator<a class="headerlink" href="#adding-robot-and-map-to-the-simulator" title="Link to this heading"></a></h2>
+<p>Suppose your current map.yaml (used by map_server) looks like this:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">map.pgm</span>
+<span class="nt">resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.050000</span>
+<span class="nt">origin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.000000</span><span class="p p-Indicator">]</span>
+<span class="nt">negate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">occupied_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.65</span>
+<span class="nt">free_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.196</span>
+</pre></div>
+</div>
+<p>To simulate a robot in the current map add the following and save it. It will simulate the environment using the map and omni directional robot with a laser and keyboard control.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">map.pgm</span>
+<span class="nt">resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.050000</span>
+<span class="nt">origin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.000000</span><span class="p p-Indicator">]</span>
+<span class="nt">negate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">occupied_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.65</span>
+<span class="nt">free_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.196</span>
+
+
+<span class="c1">## CoHAN Sim Part</span>
+<span class="c1"># The following are set to move the robot if a keyboard is attached (Adjust them as needed)</span>
+<span class="nt">speed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.0</span><span class="w">              </span><span class="c1"># Keyboard linear speed (m/s)</span>
+<span class="nt">angular_speed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5708</span><span class="w">   </span><span class="c1"># Keyboard angular speed (rad/s), default pi/2</span>
+
+
+<span class="nt">entities</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">robot</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">start_x</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w">                  </span><span class="c1"># Start position of robot in x</span>
+<span class="w">    </span><span class="nt">start_y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w">                  </span><span class="c1"># Start position of robot in y</span>
+<span class="w">    </span><span class="nt">start_theta</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">              </span><span class="c1"># Start orientation of robot</span>
+<span class="w">    </span><span class="nt">radius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.25</span><span class="w">                </span><span class="c1"># Radius of the robot</span>
+<span class="w">    </span><span class="nt">color</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">100</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">]</span><span class="w">   </span><span class="c1"># Color of the robot in the simulator</span>
+<span class="w">    </span><span class="nt">use_keyboard</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">          </span><span class="c1"># Attach keyboard control, if true, you can move the robot with keyboard</span>
+<span class="w">    </span><span class="nt">use_differential</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">     </span><span class="c1"># If true, differential kinematics are used to move, otherwise holonomic motion is simulated</span>
+<span class="w">    </span><span class="nt">use_laser</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">             </span><span class="c1"># Add a laser scanner or not</span>
+<span class="w">    </span><span class="nt">laser_range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span><span class="w">              </span><span class="c1"># Maximum range of the laser</span>
+<span class="w">    </span><span class="nt">laser_resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1081</span><span class="w">      </span><span class="c1"># Maximum number of laser points</span>
+<span class="w">    </span><span class="nt">laser_angle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.71239</span><span class="w">        </span><span class="c1"># Angular spread of the laser</span>
+</pre></div>
+</div>
+<p>Now you can run the simulator and move the robot.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In Terminal 1</span>
+roscore
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In Terminal 2</span>
+rosrun<span class="w">  </span>cohan_sim<span class="w"> </span>simros_node<span class="w"> </span>-g<span class="w"> </span>path/to/map/map.yaml
+
+<span class="c1"># DO NOT Forget to run roscore if you are using rosrun</span>
+<span class="c1"># Errors (if no roscore): Error in XmlRpcClient::writeRequest: write error (Connection refused).</span>
+<span class="c1">#                        Error in XmlRpcDispatch::work: couldn&#39;t find source iterator</span>
+
+<span class="c1">## You can control the robot using the following keys.</span>
+<span class="c1">#######################################################################</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1"># The simulator have the following GUI support.                       #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1"># Pressing r or R - Resets the Simulation                             #</span>
+<span class="c1"># Pressing z or Z - Resets the Zoom and Pan to default                #</span>
+<span class="c1"># Scroll Key - Zoom in/out                                            #</span>
+<span class="c1"># Hold left mouse button - Pan                                        #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1"># For moving the robot to which keyboard is attached,                 #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1">#                       Move Forward                                  #</span>
+<span class="c1">#                           ^                                         #</span>
+<span class="c1">#                          i/I                                        #</span>
+<span class="c1">#  Move Left        &lt; j/J       l/L &gt;    Move Right                   #</span>
+<span class="c1"># (only holonomic)                      (only holonomic)              #</span>
+<span class="c1">#                          k/K                                        #</span>
+<span class="c1">#                           v                                         #</span>
+<span class="c1">#                      Move Backward                                 #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1"># For turnings,                                                       #</span>
+<span class="c1">#              Turn Left   &lt;&lt; a/A   d/D &gt;&gt;   Turn right               #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1"># Turn Head Left   &lt;&lt; Shift + a/A   Shift + d/D &gt;&gt;   Turn Head right  #</span>
+<span class="c1">#                                                                     #</span>
+<span class="c1">#######################################################################</span>
+</pre></div>
+</div>
+</section>
+<section id="adding-humans-or-more-robots">
+<h2>Adding humans or more robots<a class="headerlink" href="#adding-humans-or-more-robots" title="Link to this heading"></a></h2>
+<p>We can add more than one entity to the simulator. Although the entity is treated like a robot, it can have different features than the first one (the main robot). This feature lets us simulate different kinds of robots or humans. To add two humans along with a robot, do the following:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">map.pgm</span>
+<span class="nt">resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.050000</span>
+<span class="nt">origin</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">-20.000000</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0.000000</span><span class="p p-Indicator">]</span>
+<span class="nt">negate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="nt">occupied_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.65</span>
+<span class="nt">free_thresh</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.196</span>
+
+
+<span class="c1">## CoHAN Sim Part</span>
+<span class="c1"># The following are set to move the robot if a keyboard is attached (Adjust them as needed)</span>
+<span class="nt">speed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.0</span><span class="w">              </span><span class="c1"># Keyboard linear speed (m/s)</span>
+<span class="nt">angular_speed</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.5708</span><span class="w">   </span><span class="c1"># Keyboard angular speed (rad/s), default pi/2</span>
+
+
+<span class="nt">entities</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">robot</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">start_x</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w">                  </span><span class="c1"># Start position of robot in x</span>
+<span class="w">    </span><span class="nt">start_y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w">                  </span><span class="c1"># Start position of robot in y</span>
+<span class="w">    </span><span class="nt">start_theta</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">              </span><span class="c1"># Start orientation of robot</span>
+<span class="w">    </span><span class="nt">radius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.25</span><span class="w">                </span><span class="c1"># Radius of the robot</span>
+<span class="w">    </span><span class="nt">color</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">100</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">]</span><span class="w">   </span><span class="c1"># Color of the robot in the simulator</span>
+<span class="w">    </span><span class="nt">use_keyboard</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">          </span><span class="c1"># Attach keyboard control, if true, you can move the robot with keyboard</span>
+<span class="w">    </span><span class="nt">use_differential</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">     </span><span class="c1"># If true, differential kinematics are used to move, otherwise holonomic motion is simulated</span>
+<span class="w">    </span><span class="nt">use_laser</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">             </span><span class="c1"># Add a laser scanner or not</span>
+<span class="w">    </span><span class="nt">laser_range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span><span class="w">              </span><span class="c1"># Maximum range of the laser</span>
+<span class="w">    </span><span class="nt">laser_resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1081</span><span class="w">      </span><span class="c1"># Maximum number of laser points</span>
+<span class="w">    </span><span class="nt">laser_angle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.71239</span><span class="w">        </span><span class="c1"># Angular spread of the laser</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">human1</span>
+<span class="w">    </span><span class="nt">start_x</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<span class="w">    </span><span class="nt">start_y</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.1</span>
+<span class="w">    </span><span class="nt">start_theta</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.14</span>
+<span class="w">    </span><span class="nt">radius</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.3</span>
+<span class="w">    </span><span class="nt">color</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">150</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">75</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">use_keyboard</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">use_differential</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">use_laser</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">laser_range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span>
+<span class="w">    </span><span class="nt">laser_resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1081</span>
+<span class="w">    </span><span class="nt">laser_angle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.71239</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">human2</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">start_x</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7.5</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">start_y</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5.0</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">start_theta</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.57</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">radius</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.3</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">color</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">150</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">75</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">0</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">255</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">use_keyboard</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">use_differential</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">use_laser</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">laser_range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span>
+<span class="w">    </span><span class="nt">laser_resolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1081</span>
+<span class="w">    </span><span class="nt">laser_angle</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4.71239</span>
+</pre></div>
+</div>
+<p>You can add more robots in a similar way. However, keyboard can only be attached to a single robot. Only the first one in the list gets the keyboard control, if multiple robots have it enabled.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mode_switching.html" class="btn btn-neutral float-left" title="Mode Switching and Behavior Trees" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api/library_root.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

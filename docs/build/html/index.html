@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoHAN2.0 &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/index.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CoHAN2.0" href="home.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CoHAN2.0</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cohan2-0">
+<h1>CoHAN2.0<a class="headerlink" href="#cohan2-0" title="Link to this heading"></a></h1>
+<p><strong>Enhanced Human-Aware Navigation with Behavior Tree Mode Switching</strong></p>
+<p>CoHAN 2.0 is an enhanced version of the Cooperative Human-Aware Navigation framework, building on the foundations of the original <a class="reference external" href="https://github.com/sphanit/cohan_planner_multi">CoHAN</a> system <a class="reference external" href="https://ieeexplore.ieee.org/document/9636613">[Singamaneni et al., IROS 2021]</a>. This new iteration significantly improves the stability and robustness of the navigation pipeline in dynamic human environments. A key advancement in CoHAN 2.0 is the integration of behavior trees for context-aware mode switching, enabling more structured and scalable decision-making during navigation.</p>
+<p>The system maintains tight integration with the ROS navigation stack and leverages the <a class="reference external" href="https://hal.laas.fr/hal-02922029/file/Ro_Man_2020.pdf">Human-Aware Timed Elastic Band (HATEB)</a> planner for trajectory generation, while the newly introduced behavior-based layer allows the robot to seamlessly adapt between social contexts and allows easier integration of new behaviors.</p>
+<p>In addition to behavior-based mode switching, CoHAN 2.0 incorporates reasoning about invisible humans in the environment, as introduced in <a class="reference external" href="https://ieeexplore.ieee.org/document/9982186">[Singamaneni et al., IROS 2022]</a>. By fusing observed human motion with static map information, the system infers the presence of humans who may be occluded or temporarily out of sensor range. This allows the planner to proactively account for hidden human activity—enhancing safety and social compliance in complex, cluttered spaces.</p>
+<a class="reference internal image-reference" href="_images/cohan2.png"><img alt="CoHAN diagram" class="align-center" src="_images/cohan2.png" style="width: 95%;" />
+</a>
+<br><section id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Singamaneni, P.-T., Favier, A., &amp; Alami, R. (2022). <em>Watch out! There may be a Human. Addressing Invisible Humans in Social Navigation</em>. In Proceedings of the 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 11344–11351. IEEE.</p></li>
+<li><p>Singamaneni, P. T., Favier, A., &amp; Alami, R. (2021). <em>Human-Aware Navigation Planner for Diverse Human-Robot Interaction Contexts</em>. In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</p></li>
+<li><p>Singamaneni, P. T., &amp; Alami, R. (2020). <em>HATEB-2: Reactive Planning and Decision Making in Human-Robot Co-navigation</em>. In Proceedings of the International Conference on Robot &amp; Human Interactive Communication (RO-MAN).</p></li>
+</ul>
+</section>
+<section id="bibtex">
+<h2>Bibtex<a class="headerlink" href="#bibtex" title="Link to this heading"></a></h2>
+<div class="highlight-bibtex notranslate"><div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">singamaneni2022watch</span><span class="p">,</span>
+<span class="na">title</span><span class="p">=</span><span class="s">{Watch out! There may be a Human. Addressing Invisible Humans in Social Navigation}</span><span class="p">,</span>
+<span class="na">author</span><span class="p">=</span><span class="s">{Singamaneni, Phani-Teja and Favier, Anthony and Alami, Rachid}</span><span class="p">,</span>
+<span class="na">booktitle</span><span class="p">=</span><span class="s">{2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}</span><span class="p">,</span>
+<span class="na">pages</span><span class="p">=</span><span class="s">{11344--11351}</span><span class="p">,</span>
+<span class="na">year</span><span class="p">=</span><span class="s">{2022}</span><span class="p">,</span>
+<span class="na">organization</span><span class="p">=</span><span class="s">{IEEE}</span>
+<span class="p">}</span>
+
+<span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">singamaneni2021human</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Singamaneni, Phani Teja and Favier, Anthony and Alami, Rachid}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Human-Aware Navigation Planner for Diverse Human-Robot Ineraction Contexts}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2021}</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">singamaneni2020hateb</span><span class="p">,</span>
+<span class="w">  </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Singamaneni, Phani Teja and Alami, Rachid}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{HATEB-2: Reactive Planning and Decision making in Human-Robot Co-navigation}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{International Conference on Robot \&amp; Human Interactive Communication}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2020}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{10.1109/RO-MAN47096.2020.9223463}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<style>.toctree-wrapper { display: none; }</style><div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="home.html">CoHAN2.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="home.html#citation">Citation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home.html#bibtex">Bibtex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#preparing-things-native">Preparing things (Native)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#using-docker">Using Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#building-cohan-and-running-examples">Building Cohan and Running Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Usage Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#configuring-costmaps">Configuring Costmaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#configuring-move-base-and-hateblocalplanner">Configuring move_base and HATEBLocalPlanner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#required-topics">Required Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#launch-file-for-visible-and-invisible-agents-in-cohan2-0">Launch file for Visible and Invisible Agents in CoHAN2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#launch-file-for-move-base-node-with-cohan2-0">Launch file for move_base node with CoHAN2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#putting-everything-together-using-a-simulated-robot">Putting everything together (using a simulated robot)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.html#run-cohan2-0-on-the-simulated-robot">Run CoHAN2.0 on the simulated robot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mode_switching.html">Mode Switching and Behavior Trees</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mode_switching.html#cohan2-0-behavior-tree">CoHAN2.0 Behavior Tree</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cohan_sim.html">CoHAN Sim</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cohan_sim.html#adding-robot-and-map-to-the-simulator">Adding robot and map to the simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohan_sim.html#adding-humans-or-more-robots">Adding humans or more robots</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/library_root.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/library_root.html#full-api">Full API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cohan_msgs.html">CoHAN_Msgs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cohan_msgs.html#message-types">Message Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cohan_msgs.html#service-types">Service Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="versions.html">Version History</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="versions.html#id1">1.0.0</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="home.html" class="btn btn-neutral float-right" title="CoHAN2.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

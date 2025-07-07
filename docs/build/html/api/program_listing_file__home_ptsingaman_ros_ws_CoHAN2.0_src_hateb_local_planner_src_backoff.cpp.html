@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File backoff.cpp &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_backoff.cpp.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File backoff.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_backoff.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-backoff-cpp">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-backoff-cpp"></span><h1>Program Listing for File backoff.cpp<a class="headerlink" href="#program-listing-for-file-backoff-cpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_backoff.cpp.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-backoff-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/backoff.cpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> * Copyright (c) 2025 LAAS/CNRS</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Author: Phani Teja Singamaneni (email:ptsingaman@laas.fr)</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/backoff.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ros/time.h&quot;</span>
+
+<span class="cp">#define NODE_NAME &quot;BackoffRecovery&quot;</span>
+<span class="c1">// Configuarable parameters</span>
+<span class="cp">#define MAP_FRAME &quot;map&quot;</span>
+<span class="cp">#define FOOTPRINT_FRAME &quot;base_footprint&quot;</span>
+<span class="cp">#define PUBLISH_GOAL_TOPIC &quot;/move_base_simple/goal&quot;</span>
+<span class="cp">#define GET_PLAN_SRV_NAME &quot;/move_base/GlobalPlanner/make_plan&quot;</span>
+<span class="cp">#define CURRENT_GOAL_TOPIC_NAME &quot;/move_base/current_goal&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">hateb_local_planner</span><span class="w"> </span><span class="p">{</span>
+<span class="c1">// empty constructor and destructor</span>
+<span class="n">Backoff</span><span class="o">::</span><span class="n">Backoff</span><span class="p">(</span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Initialize the backoff recovery behavior</span>
+<span class="w">  </span><span class="n">initialize</span><span class="p">(</span><span class="n">costmap_ros</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">Backoff</span><span class="o">::~</span><span class="n">Backoff</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">Backoff::initialize</span><span class="p">(</span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// get private node handle</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="n">nh</span><span class="p">(</span><span class="s">&quot;~&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Load the parameters from the ros handle</span>
+<span class="w">  </span><span class="n">loadRosParamFromNodeHandle</span><span class="p">(</span><span class="n">nh</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// If a namespace is associated update some topics accordingly</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ns_</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">footprint_frame_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">footprint_frame_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">current_goal_topic_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">current_goal_topic_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">publish_goal_topic_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">publish_goal_topic_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">get_plan_srv_name_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">get_plan_srv_name_</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Get costmap</span>
+<span class="w">  </span><span class="n">costmap_ros_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_ros</span><span class="p">;</span>
+<span class="w">  </span><span class="n">costmap_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_ros_</span><span class="o">-&gt;</span><span class="n">getCostmap</span><span class="p">();</span>
+<span class="w">  </span><span class="n">costmap_model_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">base_local_planner</span><span class="o">::</span><span class="n">CostmapModel</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span><span class="n">costmap_</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Initialize ros topics, services and subscribers</span>
+<span class="w">  </span><span class="n">goal_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">current_goal_topic_</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Backoff</span><span class="o">::</span><span class="n">goalCB</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">);</span>
+<span class="w">  </span><span class="n">goal_pub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">advertise</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="p">(</span><span class="n">publish_goal_topic_</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">get_plan_client_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">serviceClient</span><span class="o">&lt;</span><span class="n">nav_msgs</span><span class="o">::</span><span class="n">GetPlan</span><span class="o">&gt;</span><span class="p">(</span><span class="n">get_plan_srv_name_</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">  </span><span class="n">poly_pub_l_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">advertise</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PolygonStamped</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;left_polygon&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+<span class="w">  </span><span class="n">poly_pub_r_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">advertise</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PolygonStamped</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;right_polygon&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Initialize the variables</span>
+<span class="w">  </span><span class="n">self_published_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">  </span><span class="n">new_goal_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">  </span><span class="n">last_time_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">ROS_DEBUG_NAMED</span><span class="p">(</span><span class="n">NODE_NAME</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;node %s initialized&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">NODE_NAME</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">Backoff::goalCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">goal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Skip if a new goal is published by this</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self_published_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">self_published_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="n">new_goal_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">new_goal_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="nf">Backoff::startRecovery</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">transform_found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_circumscribed_radius_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Get the transform from robot frame to map frame</span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">tf_</span><span class="p">.</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">map_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">footprint_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">robot_to_map_tf_</span><span class="p">);</span>
+<span class="w">    </span><span class="n">transform_found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">LookupException</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ERROR_NAMED</span><span class="p">(</span><span class="n">NODE_NAME</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;No Transform available Error: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ex</span><span class="p">.</span><span class="n">what</span><span class="p">());</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">ConnectivityException</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ERROR_NAMED</span><span class="p">(</span><span class="n">NODE_NAME</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Connectivity Error: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ex</span><span class="p">.</span><span class="n">what</span><span class="p">());</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">ExtrapolationException</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ERROR_NAMED</span><span class="p">(</span><span class="n">NODE_NAME</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Extrapolation Error: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ex</span><span class="p">.</span><span class="n">what</span><span class="p">());</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="n">backoff_goal</span><span class="p">;</span>
+<span class="w">  </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<span class="w">  </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">transform_found</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">get_plan_client_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point32</span><span class="o">&gt;</span><span class="w"> </span><span class="n">right_grid_vis</span><span class="p">;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point32</span><span class="o">&gt;</span><span class="w"> </span><span class="n">left_grid_vis</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Set the polygons for searching (we assume square)</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">right_grid_offsets_vis</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{{</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mi">-3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mi">-3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="p">}};</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">left_grid_offsets_vis</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{{</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">r</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">}};</span>
+
+<span class="w">    </span><span class="c1">// Initialize the necessary</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">back_dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">robot_theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">search_angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">angle_increment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.174</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">flipped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="n">goals</span><span class="p">;</span>
+<span class="w">    </span><span class="n">nav_msgs</span><span class="o">::</span><span class="n">GetPlan</span><span class="w"> </span><span class="n">get_plan_srv</span><span class="p">;</span>
+<span class="w">    </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">start</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf</span><span class="o">::</span><span class="n">poseTFToMsg</span><span class="p">(</span><span class="n">robot_to_map_tf_</span><span class="p">,</span><span class="w"> </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">start</span><span class="p">.</span><span class="n">pose</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Start the search</span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">start_pose_tr_</span><span class="p">.</span><span class="n">setOrigin</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">));</span>
+<span class="w">      </span><span class="n">start_pose_tr_</span><span class="p">.</span><span class="n">setRotation</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">createQuaternionFromYaw</span><span class="p">(</span><span class="n">search_angle</span><span class="p">));</span>
+<span class="w">      </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_to_map_tf_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="p">;</span>
+<span class="w">      </span><span class="n">tf</span><span class="o">::</span><span class="n">transformTFToMsg</span><span class="p">(</span><span class="n">start_pose_tr_</span><span class="p">,</span><span class="w"> </span><span class="n">start_pose_</span><span class="p">);</span>
+<span class="w">      </span><span class="n">robot_theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf2</span><span class="o">::</span><span class="n">getYaw</span><span class="p">(</span><span class="n">start_pose_</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span>
+<span class="w">      </span><span class="c1">// Clearing visualizes only the lastest search angle.</span>
+<span class="w">      </span><span class="c1">// left_grid_vis.clear();</span>
+<span class="w">      </span><span class="c1">// right_grid_vis.clear();</span>
+
+<span class="w">      </span><span class="c1">// Search upto 50 configurations for each angle</span>
+<span class="w">      </span><span class="c1">// TODO: Needs to configure or adjust this number</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">visualize_backoff_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">tf</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">point_tf</span><span class="p">;</span>
+<span class="w">          </span><span class="n">point_tf</span><span class="p">.</span><span class="n">setZero</span><span class="p">();</span>
+
+<span class="w">          </span><span class="c1">// Get the configuration on right</span>
+<span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">offset</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">right_grid_offsets_vis</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">point_tf</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">back_dist</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">            </span><span class="n">point_tf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">point_tf</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point32</span><span class="w"> </span><span class="n">p32</span><span class="p">;</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point_tf</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point_tf</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">right_grid_vis</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">p32</span><span class="p">);</span>
+<span class="w">          </span><span class="p">}</span>
+
+<span class="w">          </span><span class="c1">// Get the configuration on left</span>
+<span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">offset</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">left_grid_offsets_vis</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">point_tf</span><span class="p">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">offset</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">back_dist</span><span class="p">,</span><span class="w"> </span><span class="n">offset</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">            </span><span class="n">point_tf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">point_tf</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point32</span><span class="w"> </span><span class="n">p32</span><span class="p">;</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point_tf</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point_tf</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">            </span><span class="n">p32</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">left_grid_vis</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">p32</span><span class="p">);</span>
+<span class="w">          </span><span class="p">}</span>
+
+<span class="w">          </span><span class="c1">// Publish the Left and Right polygons</span>
+<span class="w">          </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PolygonStamped</span><span class="w"> </span><span class="n">r_polygon</span><span class="p">;</span>
+<span class="w">          </span><span class="n">r_polygon</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+<span class="w">          </span><span class="n">r_polygon</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<span class="w">          </span><span class="n">r_polygon</span><span class="p">.</span><span class="n">polygon</span><span class="p">.</span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">right_grid_vis</span><span class="p">;</span>
+<span class="w">          </span><span class="n">poly_pub_r_</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">r_polygon</span><span class="p">);</span>
+
+<span class="w">          </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PolygonStamped</span><span class="w"> </span><span class="n">l_polygon</span><span class="p">;</span>
+<span class="w">          </span><span class="n">l_polygon</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+<span class="w">          </span><span class="n">l_polygon</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<span class="w">          </span><span class="n">l_polygon</span><span class="p">.</span><span class="n">polygon</span><span class="p">.</span><span class="n">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">left_grid_vis</span><span class="p">;</span>
+<span class="w">          </span><span class="n">poly_pub_l_</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">l_polygon</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Find the polygon center on right</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">r_center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="o">-</span><span class="n">back_dist</span><span class="p">,</span><span class="w"> </span><span class="mi">-2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">r_center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r_center</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// FInd the polygon center on left</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">l_center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="o">-</span><span class="n">back_dist</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">        </span><span class="n">l_center</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">l_center</span><span class="p">;</span>
+
+<span class="w">        </span><span class="c1">// Check overlap with costmap (right)</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">costmap_model_</span><span class="o">-&gt;</span><span class="n">footprintCost</span><span class="p">(</span><span class="n">r_center</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span><span class="w"> </span><span class="n">r_center</span><span class="p">.</span><span class="n">y</span><span class="p">(),</span><span class="w"> </span><span class="n">robot_theta</span><span class="p">,</span><span class="w"> </span><span class="n">right_grid_</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// ROS_INFO(&quot;Found safe spot on right&quot;);</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">r_center</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">r_center</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_</span><span class="p">.</span><span class="n">rotation</span><span class="p">;</span>
+<span class="w">          </span><span class="n">goals</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">backoff_goal</span><span class="p">);</span>
+<span class="w">          </span><span class="n">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">          </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Check overlap with costmap (left)</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">costmap_model_</span><span class="o">-&gt;</span><span class="n">footprintCost</span><span class="p">(</span><span class="n">l_center</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span><span class="w"> </span><span class="n">l_center</span><span class="p">.</span><span class="n">y</span><span class="p">(),</span><span class="w"> </span><span class="n">robot_theta</span><span class="p">,</span><span class="w"> </span><span class="n">left_grid_</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// ROS_INFO(&quot;Found safe spot on left&quot;);</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">l_center</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">l_center</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">          </span><span class="n">backoff_goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start_pose_</span><span class="p">.</span><span class="n">rotation</span><span class="p">;</span>
+<span class="w">          </span><span class="n">goals</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">backoff_goal</span><span class="p">);</span>
+<span class="w">          </span><span class="n">found</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">          </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Increment the distance and repeat</span>
+<span class="w">        </span><span class="n">back_dist</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">0.5</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="c1">// Reset the distance for new angle</span>
+<span class="w">      </span><span class="n">back_dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// increase the angle to continue search</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">flipped</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">search_angle</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">angle_increment</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">search_angle</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// Flip when positive limit is reached</span>
+<span class="w">          </span><span class="n">search_angle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.175</span><span class="p">;</span>
+<span class="w">          </span><span class="n">flipped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">search_angle</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">angle_increment</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// Break when negative limit is reached</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">search_angle</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">-</span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">found</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">ROS_INFO</span><span class="p">(</span><span class="s">&quot;No safespot found with the current search range!&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">length_idx_map</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Interate through the positions and get the length of global plans.</span>
+<span class="w">    </span><span class="c1">// The global plan lengths are then used to determine the backoff goal.</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">count</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">start</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">goals</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">goals</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">goal</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">goals</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">;</span>
+<span class="w">      </span><span class="n">get_plan_client_</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="n">get_plan_srv</span><span class="p">);</span>
+
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">response</span><span class="p">.</span><span class="n">plan</span><span class="p">.</span><span class="n">poses</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">length_idx_map</span><span class="p">[</span><span class="n">get_plan_srv</span><span class="p">.</span><span class="n">response</span><span class="p">.</span><span class="n">plan</span><span class="p">.</span><span class="n">poses</span><span class="p">.</span><span class="n">size</span><span class="p">()]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Map arranges the distances sorted according to length.</span>
+<span class="w">    </span><span class="c1">// Select the one with shortest length for backoff.</span>
+<span class="w">    </span><span class="n">backoff_goal_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">goals</span><span class="p">[</span><span class="n">length_idx_map</span><span class="p">.</span><span class="n">begin</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">];</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Finally publish the backoff goal</span>
+<span class="w">  </span><span class="n">self_published_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="n">start_pose_tr_</span><span class="p">.</span><span class="n">setOrigin</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">));</span>
+<span class="w">  </span><span class="n">start_pose_tr_</span><span class="p">.</span><span class="n">setRotation</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">createQuaternionFromYaw</span><span class="p">(</span><span class="mf">0.0</span><span class="p">));</span>
+<span class="w">  </span><span class="n">start_pose_tr_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_to_map_tf_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">start_pose_tr_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">tf</span><span class="o">::</span><span class="n">transformTFToMsg</span><span class="p">(</span><span class="n">start_pose_tr_</span><span class="p">,</span><span class="w"> </span><span class="n">start_pose_</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">goal_pub_</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">backoff_goal_</span><span class="p">);</span>
+<span class="w">  </span><span class="n">last_time_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="nf">Backoff::setbackGoal</span><span class="p">(</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="n">goal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Set back the goal that is existing before recovery</span>
+<span class="w">  </span><span class="n">ROS_INFO</span><span class="p">(</span><span class="s">&quot;Setting back the goal !!&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">stamp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">();</span>
+<span class="w">  </span><span class="n">goal</span><span class="p">.</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;map&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="n">goal_pub_</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">goal</span><span class="p">);</span>
+<span class="w">  </span><span class="n">ROS_INFO</span><span class="p">(</span><span class="s">&quot;Goal set back success&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="nf">Backoff::timeOut</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Return TRUE after a given timeout</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="o">::</span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">last_time_</span><span class="p">).</span><span class="n">toSec</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">backoff_timeout_</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="nf">Backoff::isBackoffGoalReached</span><span class="p">(</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose2D</span><span class="w"> </span><span class="o">&amp;</span><span class="n">robot_pose</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// True if Backoff goal is reached</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">delta_orient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">normalize_angle</span><span class="p">(</span><span class="n">tf2</span><span class="o">::</span><span class="n">getYaw</span><span class="p">(</span><span class="n">backoff_goal_</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">theta</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">dg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">backoff_goal_</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">backoff_goal_</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">dg</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">delta_orient</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">Backoff::loadRosParamFromNodeHandle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="o">&amp;</span><span class="n">private_nh</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;ns&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ns_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;get_plan_srv_name&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">get_plan_srv_name_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">GET_PLAN_SRV_NAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;current_goal_topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">current_goal_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">CURRENT_GOAL_TOPIC_NAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;publish_goal_topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">publish_goal_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">PUBLISH_GOAL_TOPIC</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;footprint_frame&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">footprint_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">FOOTPRINT_FRAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;map_frame&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">map_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">MAP_FRAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;visualize_backoff&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">visualize_backoff_</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;backoff_timeout&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">backoff_timeout_</span><span class="p">,</span><span class="w"> </span><span class="mf">30.0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace hateb_local_planner</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

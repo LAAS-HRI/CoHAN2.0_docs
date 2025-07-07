@@ -1,0 +1,14 @@
+.. _exhale_typedef_namespaceinvisible__humans__detection_1ac0e57bfc66ce6a431f5c889b6b1bd52c:
+
+Typedef invisible_humans_detection::Point
+=========================================
+
+- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_include_invisible_humans_detection_map_scanner.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: invisible_humans_detection::Point
+   :project: CoHAN2.0

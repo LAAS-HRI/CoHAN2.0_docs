@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File patharray_display.cpp &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.cpp.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File patharray_display.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-patharray-display-cpp">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-rviz-path-array-src-patharray-display-cpp"></span><h1>Program Listing for File patharray_display.cpp<a class="headerlink" href="#program-listing-for-file-patharray-display-cpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.cpp.html#file-home-ptsingaman-ros-ws-cohan2-0-src-rviz-path-array-src-patharray-display-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.cpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> * Copyright (c) 2020 LAAS/CNRS</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Author: Phani Teja Singamaneni (email:ptsingaman@laas.fr)</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;patharray_display.h&quot;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OgreBillboardSet.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OgreManualObject.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OgreMatrix4.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OgreSceneManager.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;OgreSceneNode.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/bind.hpp&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/display_context.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/frame_manager.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/ogre_helpers/billboard_line.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/properties/color_property.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/properties/enum_property.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/properties/float_property.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/properties/int_property.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/properties/vector_property.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/validate_floats.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rviz/validate_quaternions.h&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">rviz_path_array</span><span class="w"> </span><span class="p">{</span>
+<span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">AgentPathArrayDisplay</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">style_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">EnumProperty</span><span class="p">(</span><span class="s">&quot;Line Style&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The rendering operation to use to draw the grid lines.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updateStyle</span><span class="p">()));</span>
+
+<span class="w">  </span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">addOption</span><span class="p">(</span><span class="s">&quot;Lines&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">LINES</span><span class="p">);</span>
+<span class="w">  </span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">addOption</span><span class="p">(</span><span class="s">&quot;Billboards&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">BILLBOARDS</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">line_width_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Line Width&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.03</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="s">&quot;The width, in meters, of each path line.&quot;</span>
+<span class="w">                                                 </span><span class="s">&quot;Only works with the &#39;Billboards&#39; style.&quot;</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updateLineWidth</span><span class="p">()),</span><span class="w"> </span><span class="k">this</span><span class="p">);</span>
+<span class="w">  </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">setMin</span><span class="p">(</span><span class="mf">0.001</span><span class="p">);</span>
+<span class="w">  </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">color_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">ColorProperty</span><span class="p">(</span><span class="s">&quot;Color&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">QColor</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Color to draw the path.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">alpha_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Alpha&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Amount of transparency to apply to the path.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">buffer_length_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">IntProperty</span><span class="p">(</span><span class="s">&quot;Buffer Length&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Number of paths to display.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updateBufferLength</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">buffer_length_property_</span><span class="o">-&gt;</span><span class="n">setMin</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">offset_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">VectorProperty</span><span class="p">(</span><span class="s">&quot;Offset&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="o">::</span><span class="n">ZERO</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Allows you to offset the path from the origin of the reference frame.  In meters.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updateOffset</span><span class="p">()));</span>
+
+<span class="w">  </span><span class="n">pose_style_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">EnumProperty</span><span class="p">(</span><span class="s">&quot;Pose Style&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;None&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Shape to display the pose as.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseStyle</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_style_property_</span><span class="o">-&gt;</span><span class="n">addOption</span><span class="p">(</span><span class="s">&quot;None&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">NONE</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pose_style_property_</span><span class="o">-&gt;</span><span class="n">addOption</span><span class="p">(</span><span class="s">&quot;Axes&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">AXES</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pose_style_property_</span><span class="o">-&gt;</span><span class="n">addOption</span><span class="p">(</span><span class="s">&quot;Arrows&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ARROWS</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">pose_axes_length_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Length&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Length of the axes.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseAxisGeometry</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_axes_radius_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.03</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Radius of the axes.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseAxisGeometry</span><span class="p">()));</span>
+
+<span class="w">  </span><span class="n">pose_arrow_color_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">ColorProperty</span><span class="p">(</span><span class="s">&quot;Pose Color&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">QColor</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">85</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Color to draw the poses.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseArrowColor</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_arrow_shaft_length_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Shaft Length&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Length of the arrow shaft.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseArrowGeometry</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_arrow_head_length_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Head Length&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Length of the arrow head.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseArrowGeometry</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Shaft Diameter&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Diameter of the arrow shaft.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseArrowGeometry</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_arrow_head_diameter_property_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">FloatProperty</span><span class="p">(</span><span class="s">&quot;Head Diameter&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Diameter of the arrow head.&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">SLOT</span><span class="p">(</span><span class="n">updatePoseArrowGeometry</span><span class="p">()));</span>
+<span class="w">  </span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="n">AgentPathArrayDisplay</span><span class="o">::~</span><span class="n">AgentPathArrayDisplay</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">destroyObjects</span><span class="p">();</span>
+<span class="w">  </span><span class="n">destroyPoseAxesChain</span><span class="p">();</span>
+<span class="w">  </span><span class="n">destroyPoseArrowChain</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">onInitialize</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">MFDClass</span><span class="o">::</span><span class="n">onInitialize</span><span class="p">();</span>
+<span class="w">  </span><span class="n">updateBufferLength</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">reset</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">MFDClass</span><span class="o">::</span><span class="n">reset</span><span class="p">();</span>
+<span class="w">  </span><span class="n">updateBufferLength</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">allocateAxesVector</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Axes</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">axes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">Axes</span><span class="p">(</span><span class="n">scene_manager_</span><span class="p">,</span><span class="w"> </span><span class="n">scene_node_</span><span class="p">,</span><span class="w"> </span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">());</span>
+<span class="w">      </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">axes</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">delete</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">axes_vect</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">allocateArrowVector</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Arrow</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">arrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">Arrow</span><span class="p">(</span><span class="n">scene_manager_</span><span class="p">,</span><span class="w"> </span><span class="n">scene_node_</span><span class="p">);</span>
+<span class="w">      </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">arrow</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">num</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">delete</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">arrow_vect</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">destroyPoseAxesChain</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">axes_chain_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">allocateAxesVector</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">axes_chain_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">destroyPoseArrowChain</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arrow_chain_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">allocateArrowVector</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">arrow_chain_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updateStyle</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">LineStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">LINES</span><span class="p">:</span>
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">      </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">BILLBOARDS</span><span class="p">:</span>
+<span class="w">      </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">updateBufferLength</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updateLineWidth</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">LineStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">line_width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">style</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">BILLBOARDS</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">billboard_lines_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">billboard_line</span><span class="p">)</span><span class="w"> </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">setLineWidth</span><span class="p">(</span><span class="n">line_width</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updateOffset</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">scene_node_</span><span class="o">-&gt;</span><span class="n">setPosition</span><span class="p">(</span><span class="n">offset_property_</span><span class="o">-&gt;</span><span class="n">getVector</span><span class="p">());</span>
+<span class="w">  </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updatePoseStyle</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">pose_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">PoseStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">pose_style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">pose_style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">AXES</span><span class="p">:</span>
+<span class="w">      </span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">ARROWS</span><span class="p">:</span>
+<span class="w">      </span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">show</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">      </span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">      </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">hide</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">updateBufferLength</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updatePoseAxisGeometry</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">axes_vect</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">axes_chain_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">axes_vect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">j</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">pose_axes_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_axes_radius_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updatePoseArrowColor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">QColor</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">getColor</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arrow_chain_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">j</span><span class="o">-&gt;</span><span class="n">setColor</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="n">redF</span><span class="p">(),</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="n">greenF</span><span class="p">(),</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="n">blueF</span><span class="p">(),</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updatePoseArrowGeometry</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arrow_chain_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">arrow_vect</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">j</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span>
+<span class="w">             </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">destroyObjects</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Destroy all simple lines, if any</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">manual_object</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">manual_objects_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">manual_object</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">      </span><span class="n">scene_manager_</span><span class="o">-&gt;</span><span class="n">destroyManualObject</span><span class="p">(</span><span class="n">manual_object</span><span class="p">);</span>
+<span class="w">      </span><span class="n">manual_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w">  </span><span class="c1">// ensure it doesn&#39;t get destroyed again</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Destroy all billboards, if any</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">billboard_lines_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">billboard_line</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">delete</span><span class="w"> </span><span class="n">billboard_line</span><span class="p">;</span><span class="w">     </span><span class="c1">// also destroys the corresponding scene node</span>
+<span class="w">      </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span><span class="w">  </span><span class="c1">// ensure it doesn&#39;t get destroyed again</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">updateBufferLength</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Delete old path objects</span>
+<span class="w">  </span><span class="n">destroyObjects</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Destroy all axes and arrows</span>
+<span class="w">  </span><span class="n">destroyPoseAxesChain</span><span class="p">();</span>
+<span class="w">  </span><span class="n">destroyPoseArrowChain</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// Read options</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">buffer_length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">buffer_length_property_</span><span class="o">-&gt;</span><span class="n">getInt</span><span class="p">();</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">LineStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+
+<span class="w">  </span><span class="c1">// Create new path objects</span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">LINES</span><span class="p">:</span><span class="w">  </span><span class="c1">// simple lines with fixed width of 1px</span>
+<span class="w">      </span><span class="n">manual_objects_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">buffer_length</span><span class="p">);</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">manual_objects_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Ogre</span><span class="o">::</span><span class="n">ManualObject</span><span class="o">*</span><span class="w"> </span><span class="n">manual_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scene_manager_</span><span class="o">-&gt;</span><span class="n">createManualObject</span><span class="p">();</span>
+<span class="w">        </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">setDynamic</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">scene_node_</span><span class="o">-&gt;</span><span class="n">attachObject</span><span class="p">(</span><span class="n">manual_object</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">manual_object</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">BILLBOARDS</span><span class="p">:</span><span class="w">  </span><span class="c1">// billboards with configurable width</span>
+<span class="w">      </span><span class="n">billboard_lines_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">buffer_length</span><span class="p">);</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">billboard_lines_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">BillboardLine</span><span class="p">(</span><span class="n">scene_manager_</span><span class="p">,</span><span class="w"> </span><span class="n">scene_node_</span><span class="p">);</span>
+<span class="w">        </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">billboard_line</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">axes_chain_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">buffer_length</span><span class="p">);</span>
+<span class="w">  </span><span class="n">arrow_chain_</span><span class="p">.</span><span class="n">resize</span><span class="p">(</span><span class="n">buffer_length</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">validateFloats</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">valid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">msg</span><span class="p">.</span><span class="n">paths</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">valid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valid</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">validateFloats</span><span class="p">(</span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">valid</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">AgentPathArrayDisplay</span><span class="o">::</span><span class="n">processMessage</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">::</span><span class="n">ConstPtr</span><span class="o">&amp;</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Calculate index of oldest element in cyclic buffer</span>
+<span class="w">  </span><span class="kt">size_t</span><span class="w"> </span><span class="n">buffer_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">messages_received_</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">buffer_length_property_</span><span class="o">-&gt;</span><span class="n">getInt</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">LineStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+<span class="w">  </span><span class="n">Ogre</span><span class="o">::</span><span class="n">ManualObject</span><span class="o">*</span><span class="w"> </span><span class="n">manual_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rviz</span><span class="o">::</span><span class="n">BillboardLine</span><span class="o">*</span><span class="w"> </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Delete oldest element</span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">LINES</span><span class="p">:</span>
+<span class="w">      </span><span class="n">manual_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">manual_objects_</span><span class="p">[</span><span class="n">buffer_index</span><span class="p">];</span>
+<span class="w">      </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">BILLBOARDS</span><span class="p">:</span>
+<span class="w">      </span><span class="n">billboard_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">billboard_lines_</span><span class="p">[</span><span class="n">buffer_index</span><span class="p">];</span>
+<span class="w">      </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Check if path contains invalid coordinate values</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">validateFloats</span><span class="p">(</span><span class="o">*</span><span class="n">msg</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">setStatus</span><span class="p">(</span><span class="n">rviz</span><span class="o">::</span><span class="n">StatusProperty</span><span class="o">::</span><span class="n">Error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Message contained invalid floating point values (nans or infs)&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">val_quat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">paths</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">val_quat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val_quat</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">validateQuaternions</span><span class="p">(</span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">val_quat</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_WARN_ONCE_NAMED</span><span class="p">(</span><span class="s">&quot;quaternions&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s">&quot;Path &#39;%s&#39; contains unnormalized quaternions. &quot;</span>
+<span class="w">                        </span><span class="s">&quot;This warning will only be output once but may be true for others; &quot;</span>
+<span class="w">                        </span><span class="s">&quot;enable DEBUG messages for ros.rviz.quaternions to see more details.&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">qPrintable</span><span class="p">(</span><span class="n">getName</span><span class="p">()));</span>
+<span class="w">    </span><span class="n">ROS_DEBUG_NAMED</span><span class="p">(</span><span class="s">&quot;quaternions&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Path &#39;%s&#39; contains unnormalized quaternions.&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">qPrintable</span><span class="p">(</span><span class="n">getName</span><span class="p">()));</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Lookup transform into fixed frame</span>
+<span class="w">  </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">position</span><span class="p">;</span>
+<span class="w">  </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Quaternion</span><span class="w"> </span><span class="n">orientation</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">getFrameManager</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">getTransform</span><span class="p">(</span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">header</span><span class="p">,</span><span class="w"> </span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">orientation</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_DEBUG</span><span class="p">(</span><span class="s">&quot;Error transforming from frame &#39;%s&#39; to frame &#39;%s&#39;&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">header</span><span class="p">.</span><span class="n">frame_id</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">qPrintable</span><span class="p">(</span><span class="n">fixed_frame_</span><span class="p">));</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Matrix4</span><span class="w"> </span><span class="n">transform</span><span class="p">(</span><span class="n">orientation</span><span class="p">);</span>
+<span class="w">  </span><span class="n">transform</span><span class="p">.</span><span class="n">setTrans</span><span class="p">(</span><span class="n">position</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">//  scene_node_-&gt;setPosition( position );</span>
+<span class="w">  </span><span class="c1">//  scene_node_-&gt;setOrientation( orientation );</span>
+
+<span class="w">  </span><span class="n">Ogre</span><span class="o">::</span><span class="n">ColourValue</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">color_property_</span><span class="o">-&gt;</span><span class="n">getOgreColor</span><span class="p">();</span>
+<span class="w">  </span><span class="n">color</span><span class="p">.</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alpha_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">float</span><span class="w"> </span><span class="n">line_width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">line_width_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">msg</span><span class="o">-&gt;</span><span class="n">paths</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">num_points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="no">LINES</span><span class="p">:</span>
+<span class="w">        </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">estimateVertexCount</span><span class="p">(</span><span class="n">num_points</span><span class="p">);</span>
+<span class="w">        </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">begin</span><span class="p">(</span><span class="s">&quot;BaseWhiteNoLighting&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">RenderOperation</span><span class="o">::</span><span class="n">OT_LINE_STRIP</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_points</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">(</span><span class="n">xpos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">xpos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">xpos</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">colour</span><span class="p">(</span><span class="n">color</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">manual_object</span><span class="o">-&gt;</span><span class="n">end</span><span class="p">();</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="no">BILLBOARDS</span><span class="p">:</span>
+<span class="w">        </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">setNumLines</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">        </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">setMaxPointsPerLine</span><span class="p">(</span><span class="n">num_points</span><span class="p">);</span>
+<span class="w">        </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">setLineWidth</span><span class="p">(</span><span class="n">line_width</span><span class="p">);</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_points</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">billboard_line</span><span class="o">-&gt;</span><span class="n">addPoint</span><span class="p">(</span><span class="n">xpos</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// process pose markers</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">pose_style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">PoseStyle</span><span class="o">&gt;</span><span class="p">(</span><span class="n">pose_style_property_</span><span class="o">-&gt;</span><span class="n">getOptionInt</span><span class="p">());</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Arrow</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">arrow_vect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">arrow_chain_</span><span class="p">[</span><span class="n">buffer_index</span><span class="p">];</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rviz</span><span class="o">::</span><span class="n">Axes</span><span class="o">*&gt;&amp;</span><span class="w"> </span><span class="n">axes_vect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">axes_chain_</span><span class="p">[</span><span class="n">buffer_index</span><span class="p">];</span>
+
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">pose_style</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="no">AXES</span><span class="p">:</span>
+<span class="w">        </span><span class="n">allocateAxesVector</span><span class="p">(</span><span class="n">axes_vect</span><span class="p">,</span><span class="w"> </span><span class="n">num_points</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_points</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Quaternion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">quat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">;</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Quaternion</span><span class="w"> </span><span class="n">xquat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">orientation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Quaternion</span><span class="p">(</span><span class="n">quat</span><span class="p">.</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">axes_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">setPosition</span><span class="p">(</span><span class="n">xpos</span><span class="p">);</span>
+<span class="w">          </span><span class="n">axes_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">setOrientation</span><span class="p">(</span><span class="n">xquat</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">      </span><span class="k">case</span><span class="w"> </span><span class="no">ARROWS</span><span class="p">:</span>
+<span class="w">        </span><span class="n">allocateArrowVector</span><span class="p">(</span><span class="n">arrow_vect</span><span class="p">,</span><span class="w"> </span><span class="n">num_points</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">num_points</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&amp;</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+<span class="w">          </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Quaternion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">quat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">path</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">poses</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pose</span><span class="p">.</span><span class="n">orientation</span><span class="p">;</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+<span class="w">          </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Quaternion</span><span class="w"> </span><span class="n">xquat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">orientation</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Quaternion</span><span class="p">(</span><span class="n">quat</span><span class="p">.</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">quat</span><span class="p">.</span><span class="n">z</span><span class="p">);</span>
+
+<span class="w">          </span><span class="n">QColor</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose_arrow_color_property_</span><span class="o">-&gt;</span><span class="n">getColor</span><span class="p">();</span>
+<span class="w">          </span><span class="n">arrow_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">setColor</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="n">redF</span><span class="p">(),</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="n">greenF</span><span class="p">(),</span><span class="w"> </span><span class="n">color</span><span class="p">.</span><span class="n">blueF</span><span class="p">(),</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">);</span>
+
+<span class="w">          </span><span class="n">arrow_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">set</span><span class="p">(</span><span class="n">pose_arrow_shaft_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_arrow_shaft_diameter_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span><span class="w"> </span><span class="n">pose_arrow_head_length_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">(),</span>
+<span class="w">                             </span><span class="n">pose_arrow_head_diameter_property_</span><span class="o">-&gt;</span><span class="n">getFloat</span><span class="p">());</span>
+<span class="w">          </span><span class="n">arrow_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">setPosition</span><span class="p">(</span><span class="n">xpos</span><span class="p">);</span>
+<span class="w">          </span><span class="n">arrow_vect</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-&gt;</span><span class="n">setDirection</span><span class="p">(</span><span class="n">xquat</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">Ogre</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">      </span><span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">context_</span><span class="o">-&gt;</span><span class="n">queueRender</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace rviz_path_array</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pluginlib/class_list_macros.hpp&gt;</span>
+<span class="n">PLUGINLIB_EXPORT_CLASS</span><span class="p">(</span><span class="n">rviz_path_array</span><span class="o">::</span><span class="n">AgentPathArrayDisplay</span><span class="p">,</span><span class="w"> </span><span class="n">rviz</span><span class="o">::</span><span class="n">Display</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

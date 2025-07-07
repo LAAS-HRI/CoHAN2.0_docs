@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File hateb_local_planner_ros.cpp &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_hateb_local_planner_ros.cpp.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File hateb_local_planner_ros.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_hateb_local_planner_ros.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-hateb-local-planner-ros-cpp">
+<span id="file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-hateb-local-planner-ros-cpp"></span><h1>File hateb_local_planner_ros.cpp<a class="headerlink" href="#file-hateb-local-planner-ros-cpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src.html#dir-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src</span></code>)</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-hateb-local-planner-ros-cpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id4">Defines</a></p></li>
+</ul>
+</nav>
+<section id="definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-hateb-local-planner-ros-cpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp</span></code>)<a class="headerlink" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-src-hateb-local-planner-ros-cpp" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_hateb_local_planner_ros.cpp.html">Program Listing for File hateb_local_planner_ros.cpp</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">boost/algorithm/string.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hateb_local_planner/hateb_local_planner_ros.h</span></code> (<a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_hateb_local_planner_ros.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-hateb-local-planner-ros-h"><span class="std std-ref">File hateb_local_planner_ros.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mbf_msgs/ExePathResult.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pluginlib/class_list_macros.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">std_msgs/Float64.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tf2_eigen/tf2_eigen.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tf2_geometry_msgs/tf2_geometry_msgs.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">utility</span></code></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_hateb_local_planner.html#namespace-hateb-local-planner"><span class="std std-ref">Namespace hateb_local_planner</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a5b13e988b1d9265a044c2968760ed9c3.html#exhale-define-hateb-local-planner-ros-8cpp-1a5b13e988b1d9265a044c2968760ed9c3"><span class="std std-ref">Define APPROACH_SRV_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a191e5a424a0b478c977515d5694610a8.html#exhale-define-hateb-local-planner-ros-8cpp-1a191e5a424a0b478c977515d5694610a8"><span class="std std-ref">Define DEFAULT_AGENT_SEGMENT</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1ab2b7497bf4afbd51fdbfc97538e8cbb0.html#exhale-define-hateb-local-planner-ros-8cpp-1ab2b7497bf4afbd51fdbfc97538e8cbb0"><span class="std std-ref">Define GET_PLANNING_SRV_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1ac53c02939aa80f0026d8cf9cd3a3350e.html#exhale-define-hateb-local-planner-ros-8cpp-1ac53c02939aa80f0026d8cf9cd3a3350e"><span class="std std-ref">Define HATEB_LOG</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1ae9556bcf7f2719a094e2473706c7ad64.html#exhale-define-hateb-local-planner-ros-8cpp-1ae9556bcf7f2719a094e2473706c7ad64"><span class="std std-ref">Define INVISIBLE_HUMANS_TOPIC</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a5bb0259636cc695c1021411779d623f2.html#exhale-define-hateb-local-planner-ros-8cpp-1a5bb0259636cc695c1021411779d623f2"><span class="std std-ref">Define OPTIMIZE_SRV_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a717e4b5ca7a9056f11e12ac5407733d4.html#exhale-define-hateb-local-planner-ros-8cpp-1a717e4b5ca7a9056f11e12ac5407733d4"><span class="std std-ref">Define PLANNING_SRV_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a3ec7c3d2ff68ebe5cccbf5d3af53f43e.html#exhale-define-hateb-local-planner-ros-8cpp-1a3ec7c3d2ff68ebe5cccbf5d3af53f43e"><span class="std std-ref">Define PREDICT_SERVICE_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1a2ec5e78e5a59b86d13dba63897efac28.html#exhale-define-hateb-local-planner-ros-8cpp-1a2ec5e78e5a59b86d13dba63897efac28"><span class="std std-ref">Define RESET_PREDICTION_SERVICE_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_hateb__local__planner__ros_8cpp_1ac8e179e7ade35b9594ba65a297d058b7.html#exhale-define-hateb-local-planner-ros-8cpp-1ac8e179e7ade35b9594ba65a297d058b7"><span class="std std-ref">Define THROTTLE_RATE</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

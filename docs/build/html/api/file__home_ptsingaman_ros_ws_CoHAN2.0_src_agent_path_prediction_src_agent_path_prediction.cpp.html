@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File agent_path_prediction.cpp &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agent_path_prediction.cpp.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File agent_path_prediction.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agent_path_prediction.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-agent-path-prediction-cpp">
+<span id="file-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agent-path-prediction-cpp"></span><h1>File agent_path_prediction.cpp<a class="headerlink" href="#file-agent-path-prediction-cpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="dir__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src.html#dir-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src</span></code>)</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agent-path-prediction-cpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agent_path_prediction.cpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id4">Functions</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
+</ul>
+</nav>
+<section id="definition-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agent-path-prediction-cpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agent_path_prediction.cpp</span></code>)<a class="headerlink" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agent-path-prediction-cpp" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agent_path_prediction.cpp.html">Program Listing for File agent_path_prediction.cpp</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">agent_path_prediction/agent_path_prediction.h</span></code> (<a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-include-agent-path-prediction-agent-path-prediction-h"><span class="std std-ref">File agent_path_prediction.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">agent_path_prediction/predict_goal_ros.h</span></code> (<a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_include_agent_path_prediction_predict_goal_ros.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-include-agent-path-prediction-predict-goal-ros-h"><span class="std std-ref">File predict_goal_ros.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">csignal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">utility</span></code></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_agents.html#namespace-agents"><span class="std std-ref">Namespace agents</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_agent__path__prediction_8cpp_1a458379afdbad052bb3077d6b425d2fee.html#exhale-function-agent-path-prediction-8cpp-1a458379afdbad052bb3077d6b425d2fee"><span class="std std-ref">Function sigintHandler</span></a></p></li>
+</ul>
+</section>
+<section id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1af0e126bb83c684d0b97a1a66834d78c5.html#exhale-define-agent-path-prediction-8cpp-1af0e126bb83c684d0b97a1a66834d78c5"><span class="std std-ref">Define AGENT_ANGLE_BEHIND_ROBOT</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1a0e63830df919f825d5d9ce05f5bac840.html#exhale-define-agent-path-prediction-8cpp-1a0e63830df919f825d5d9ce05f5bac840"><span class="std std-ref">Define AGENT_DIST_BEHIND_ROBOT</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1.html#exhale-define-agent-path-prediction-8cpp-1aa289a35d77148ac0299dea3bd75fc4d1"><span class="std std-ref">Define AGENTS_SUB_TOPIC</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1a2783b6a2ea72933997aed59b59ae3f7f.html#exhale-define-agent-path-prediction-8cpp-1a2783b6a2ea72933997aed59b59ae3f7f"><span class="std std-ref">Define EXTERNAL_PATHS_SUB_TOPIC</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1a28505835e5427c2308453f69c4bffa07.html#exhale-define-agent-path-prediction-8cpp-1a28505835e5427c2308453f69c4bffa07"><span class="std std-ref">Define GET_PLAN_SRV_NAME</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1a3923a3ded552ac37bea50521f4c0e19f.html#exhale-define-agent-path-prediction-8cpp-1a3923a3ded552ac37bea50521f4c0e19f"><span class="std std-ref">Define MAP_FRAME_ID</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1ac9a459e1cc25dd40b2d3e50d421c4e9d.html#exhale-define-agent-path-prediction-8cpp-1ac9a459e1cc25dd40b2d3e50d421c4e9d"><span class="std std-ref">Define PREDICTED_GOAL_SUB_TOPIC</span></a></p></li>
+<li><p><a class="reference internal" href="define_agent__path__prediction_8cpp_1ab68760c2385d64dcd75083f587cb32f2.html#exhale-define-agent-path-prediction-8cpp-1ab68760c2385d64dcd75083f587cb32f2"><span class="std std-ref">Define ROBOT_FRAME_ID</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
