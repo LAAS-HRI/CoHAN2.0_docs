@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -190,10 +191,419 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2E">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2E"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2E"></span><span id="hateb_local_planner::PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="Link to this definition"></a><br /></dt>
+<dd><p>This class implements a pose in the domain SE2: <span class="math notranslate nohighlight">\( \mathbb{R}^2 \times S^1 \)</span> The pose consist of the position x and y and an orientation given as angle theta [-pi, pi]. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-construct-posese2-instances">Construct PoseSE2 instances</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2Ev">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2Ev"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2Ev"></span><span id="hateb_local_planner::PoseSE2::PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1ab2beb866bbbecea92257d3495bcaf246"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN5Eigen3RefIKN5Eigen8Vector2dEEEd">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2ERKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2ERKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="hateb_local_planner::PoseSE2::PoseSE2__Eigen::Ref:Eigen::Vector2dC:CR.double"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a2cb6143e00b4289aff2176ffcab86a88"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN5Eigen3RefIKN5Eigen8Vector2dEEEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose given a position vector and an angle theta. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D position vector </p></li>
+<li><p><strong>theta</strong> – angle given in rad </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2Eddd">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2Eddd"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2Eddd"></span><span id="hateb_local_planner::PoseSE2::PoseSE2__double.double.double"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1ac6050ed193f8adfc596aeb04d6bf789f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2Eddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using single components x, y, and the yaw angle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate </p></li>
+<li><p><strong>y</strong> – y-coordinate </p></li>
+<li><p><strong>theta</strong> – yaw angle in rad </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN13geometry_msgs4PoseE">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2ERKN13geometry_msgs4PoseE"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2ERKN13geometry_msgs4PoseE"></span><span id="hateb_local_planner::PoseSE2::PoseSE2__geometry_msgs::PoseCR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1afb1fa5af97ae74e782687a8c1f3ef99b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN13geometry_msgs4PoseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using a geometry_msgs::Pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pose</strong> – geometry_msgs::Pose object </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN2tf4PoseE">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2ERKN2tf4PoseE"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2ERKN2tf4PoseE"></span><span id="hateb_local_planner::PoseSE2::PoseSE2__tf::PoseCR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1aeb680422e63d5142b08173069324adac"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERKN2tf4PoseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using a tf::Pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pose</strong> – tf::Pose object </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27PoseSE2ERK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27PoseSE2ERK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::PoseSE2__PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a48e2c5341c054a1e44c52a3f36258d84"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PoseSE2</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERK7PoseSE2" title="hateb_local_planner::PoseSE2::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27PoseSE2ERK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pose</strong> – <a class="reference internal" href="#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> instance </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-access-and-modify-values">Access and modify values</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE28positionEv">
+<span id="_CPPv3N19hateb_local_planner7PoseSE28positionEv"></span><span id="_CPPv2N19hateb_local_planner7PoseSE28positionEv"></span><span id="hateb_local_planner::PoseSE2::position"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1abbe2946db8fad126b7762b5bc2ffb537"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE28positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the 2D position part. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the 2D position part </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE28positionEv">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE28positionEv"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE28positionEv"></span><span id="hateb_local_planner::PoseSE2::positionC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1acded92644006dbcb6c6af26dce52d525"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE28positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the 2D position part (read-only) </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the 2D position part </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE21xEv">
+<span id="_CPPv3N19hateb_local_planner7PoseSE21xEv"></span><span id="_CPPv2N19hateb_local_planner7PoseSE21xEv"></span><span id="hateb_local_planner::PoseSE2::x"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a99d2afaf99bdfff1075be7cfe8771169"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE21xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the x-coordinate the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the x-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE21xEv">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE21xEv"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE21xEv"></span><span id="hateb_local_planner::PoseSE2::xC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1aa545f58b57097c8cd3e9e3e8195c8721"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE21xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the x-coordinate the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the x-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE21yEv">
+<span id="_CPPv3N19hateb_local_planner7PoseSE21yEv"></span><span id="_CPPv2N19hateb_local_planner7PoseSE21yEv"></span><span id="hateb_local_planner::PoseSE2::y"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1adb4b866a4f3ec291adf26f60b420344e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE21yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the y-coordinate the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the y-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE21yEv">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE21yEv"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE21yEv"></span><span id="hateb_local_planner::PoseSE2::yC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a21633eb2abfbdf4ca85df52fc3f90079"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE21yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the y-coordinate the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the y-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE25thetaEv">
+<span id="_CPPv3N19hateb_local_planner7PoseSE25thetaEv"></span><span id="_CPPv2N19hateb_local_planner7PoseSE25thetaEv"></span><span id="hateb_local_planner::PoseSE2::theta"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a9745f5e8d91068a96152bb66b4569466"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">theta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE25thetaEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the orientation part (yaw angle) of the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the yaw angle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE25thetaEv">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE25thetaEv"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE25thetaEv"></span><span id="hateb_local_planner::PoseSE2::thetaC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a5df3cb1b56aa36da64b949d07b28590b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">theta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE25thetaEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the orientation part (yaw angle) of the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the yaw angle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27setZeroEv">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27setZeroEv"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27setZeroEv"></span><span id="hateb_local_planner::PoseSE2::setZero"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a8d1cfc7888f317b09e50d8f8a326ea01"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setZero</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27setZeroEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Set pose to [0,0,0]. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE29toPoseMsgERN13geometry_msgs4PoseE">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE29toPoseMsgERN13geometry_msgs4PoseE"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE29toPoseMsgERN13geometry_msgs4PoseE"></span><span id="hateb_local_planner::PoseSE2::toPoseMsg__geometry_msgs::PoseRC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a7be676198c07fb5601a7c1cc0fe96631"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toPoseMsg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE29toPoseMsgERN13geometry_msgs4PoseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert <a class="reference internal" href="#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> to a geometry_msgs::Pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pose</strong> – <strong>[out]</strong> Pose message </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7PoseSE218orientationUnitVecEv">
+<span id="_CPPv3NK19hateb_local_planner7PoseSE218orientationUnitVecEv"></span><span id="_CPPv2NK19hateb_local_planner7PoseSE218orientationUnitVecEv"></span><span id="hateb_local_planner::PoseSE2::orientationUnitVecC"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a4fe1aba76e94d618fdde90d74a803dda"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orientationUnitVec</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7PoseSE218orientationUnitVecEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the unit vector of the current orientation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>[cos(theta), sin(theta))]^T </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-arithmetic-operations-for-which-operators-are-not-always-reasonable">Arithmetic operations for which operators are not always reasonable</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE25scaleEd">
+<span id="_CPPv3N19hateb_local_planner7PoseSE25scaleEd"></span><span id="_CPPv2N19hateb_local_planner7PoseSE25scaleEd"></span><span id="hateb_local_planner::PoseSE2::scale__double"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a68a45affe0ca347e1209931e9e815b4c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scale</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">factor</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE25scaleEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Scale all SE2 components (x,y,theta) and normalize theta afterwards to [-pi, pi]. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>factor</strong> – scale factor </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE24plusEPKd">
+<span id="_CPPv3N19hateb_local_planner7PoseSE24plusEPKd"></span><span id="_CPPv2N19hateb_local_planner7PoseSE24plusEPKd"></span><span id="hateb_local_planner::PoseSE2::plus__doubleCP"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1aca9458a22d12bdf43ec145c7a02d677e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">plus</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pose_as_array</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE24plusEPKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Increment the pose by adding a double[3] array The angle is normalized afterwards. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pose_as_array</strong> – 3D double array [x, y, theta] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE214averageInPlaceERK7PoseSE2RK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE214averageInPlaceERK7PoseSE2RK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE214averageInPlaceERK7PoseSE2RK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::averageInPlace__PoseSE2CR.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a61963b1c44530ad051a65b1a45e98b9b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">averageInPlace</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE214averageInPlaceERK7PoseSE2RK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the mean / average of two poses and store it in the caller class For the position part: 0.5*(x1+x2) For the angle: take the angle of the mean direction vector. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose1</strong> – first pose to consider </p></li>
+<li><p><strong>pose2</strong> – second pose to consider </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE212rotateGlobalEdb">
+<span id="_CPPv3N19hateb_local_planner7PoseSE212rotateGlobalEdb"></span><span id="_CPPv2N19hateb_local_planner7PoseSE212rotateGlobalEdb"></span><span id="hateb_local_planner::PoseSE2::rotateGlobal__double.b"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1ae7d75e6f0b83f6e16c737af3432cb1bc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rotateGlobal</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">angle</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">adjust_theta</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE212rotateGlobalEdb" title="Link to this definition"></a><br /></dt>
+<dd><p>Rotate pose globally. </p>
+<p>Compute [pose_x, pose_y] = Rot(<code class="docutils literal notranslate"><span class="pre">angle</span></code>) * [pose_x, pose_y]. if <code class="docutils literal notranslate"><span class="pre">adjust_theta</span></code>, pose_theta is also rotated by <code class="docutils literal notranslate"><span class="pre">angle</span></code> </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>angle</strong> – the angle defining the 2d rotation </p></li>
+<li><p><strong>adjust_theta</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, the orientation theta is also rotated </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE27averageERK7PoseSE2RK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE27averageERK7PoseSE2RK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE27averageERK7PoseSE2RK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::average__PoseSE2CR.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a50ff3bf8419e65c4589af65715a5efdb"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">average</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE27averageERK7PoseSE2RK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the mean / average of two poses and return the result (static) For the position part: 0.5*(x1+x2) For the angle: take the angle of the mean direction vector. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose1</strong> – first pose to consider </p></li>
+<li><p><strong>pose2</strong> – second pose to consider </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>mean / average of <code class="docutils literal notranslate"><span class="pre">pose1</span></code> and <code class="docutils literal notranslate"><span class="pre">pose2</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-operator-overloads-/-allow-some-arithmetic-operations">Operator overloads / Allow some arithmetic operations</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2aSERK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2aSERK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2aSERK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::assign-operator__PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a958542a91b9e69709a38ab49d00cf200"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2aSERK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Asignment operator. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rhs</strong> – <a class="reference internal" href="#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> instance </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2pLERK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2pLERK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2pLERK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::add-assign-operator__PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a5ecd5e51151f87a992d685cff00ec8fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2pLERK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Compound assignment operator (addition) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rhs</strong> – addend </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2mIERK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2mIERK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2mIERK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::sub-assign-operator__PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a16f2475d4a9d1c9d33e63eabf0a86b88"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2mIERK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Compound assignment operator (subtraction) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rhs</strong> – value to subtract </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2plE7PoseSE2RK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2plE7PoseSE2RK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2plE7PoseSE2RK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::add-operator__PoseSE2.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1ad2feff1efe471ef77a28a95463ccfd21"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">lhs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2plE7PoseSE2RK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Arithmetic operator overload for additions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lhs</strong> – First addend </p></li>
+<li><p><strong>rhs</strong> – Second addend </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2miE7PoseSE2RK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2miE7PoseSE2RK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2miE7PoseSE2RK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::sub-operator__PoseSE2.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1aa796492e15f987b1968b2baf8ac677a0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">lhs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2miE7PoseSE2RK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Arithmetic operator overload for subtractions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lhs</strong> – First term </p></li>
+<li><p><strong>rhs</strong> – Second term </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2mlE7PoseSE2d">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2mlE7PoseSE2d"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2mlE7PoseSE2d"></span><span id="hateb_local_planner::PoseSE2::mul-operator__PoseSE2.double"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a8a35a58b7adbc796b3de8eabd2b47323"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">pose</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scalar</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2mlE7PoseSE2d" title="Link to this definition"></a><br /></dt>
+<dd><p>Multiply pose with scalar and return copy without normalizing theta This operator is useful for calculating velocities … </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<p>theta is not normalized after multiplying </p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> – pose to scale </p></li>
+<li><p><strong>scalar</strong> – factor to multiply with </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2mlEd7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2mlEd7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2mlEd7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::mul-operator__double.PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1adc5f91393ae2f50311bb6a950fc4bf98"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scalar</span></span>, <a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2mlEd7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Multiply pose with scalar and return copy without normalizing theta This operator is useful for calculating velocities … </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>theta is not normalized after multiplying </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scalar</strong> – factor to multiply with </p></li>
+<li><p><strong>pose</strong> – pose to scale </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2lsERNSt7ostreamERK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2lsERNSt7ostreamERK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2lsERNSt7ostreamERK7PoseSE2"></span><span id="hateb_local_planner::PoseSE2::lshift-operator__osR.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a2c487bf5a6b472f7109a1cd12300e653"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">friend</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;&lt;</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stream</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2lsERNSt7ostreamERK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Output stream operator. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>stream</strong> – output stream </p></li>
+<li><p><strong>pose</strong> – to be used </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE2D0Ev">
+<span id="_CPPv3N19hateb_local_planner7PoseSE2D0Ev"></span><span id="_CPPv2N19hateb_local_planner7PoseSE2D0Ev"></span><span id="hateb_local_planner::PoseSE2::~PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1af80acf3973984a57588cb4d862eb2392"></span><span class="sig-name descname"><span class="n"><span class="pre">~PoseSE2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE2D0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructs the <a class="reference internal" href="#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a>. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE29position_E">
+<span id="_CPPv3N19hateb_local_planner7PoseSE29position_E"></span><span id="_CPPv2N19hateb_local_planner7PoseSE29position_E"></span><span id="hateb_local_planner::PoseSE2::position___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1a225aa4607eae5c99a40e4d6b5ebc08ce"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">position_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE29position_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7PoseSE26theta_E">
+<span id="_CPPv3N19hateb_local_planner7PoseSE26theta_E"></span><span id="_CPPv2N19hateb_local_planner7PoseSE26theta_E"></span><span id="hateb_local_planner::PoseSE2::theta___double"></span><span class="target" id="classhateb__local__planner_1_1PoseSE2_1acac297aae0a3ee9e945ccb56dd668a4e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">theta_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7PoseSE26theta_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

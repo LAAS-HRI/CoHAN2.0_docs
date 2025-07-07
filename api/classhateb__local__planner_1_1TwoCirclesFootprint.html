@@ -199,10 +199,149 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprintE">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprintE"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprintE"></span><span id="hateb_local_planner::TwoCirclesFootprint"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TwoCirclesFootprint</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseFootprintModel.html#_CPPv4N19hateb_local_planner18BaseFootprintModelE" title="hateb_local_planner::BaseFootprintModel"><span class="n"><span class="pre">BaseFootprintModel</span></span></a><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprintE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class that approximates the robot/human with two shifted circles. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint19TwoCirclesFootprintEdddd">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint19TwoCirclesFootprintEdddd"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint19TwoCirclesFootprintEdddd"></span><span id="hateb_local_planner::TwoCirclesFootprint::TwoCirclesFootprint__double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a52a711f7a293606d6970dc565c3c357f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TwoCirclesFootprint</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">front_offset</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">front_radius</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rear_offset</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rear_radius</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint19TwoCirclesFootprintEdddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the abstract obstacle class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>front_offset</strong> – shift the center of the front circle along the robot/human orientation starting from the center at the rear axis (in meters) </p></li>
+<li><p><strong>front_radius</strong> – radius of the front circle </p></li>
+<li><p><strong>rear_offset</strong> – shift the center of the rear circle along the opposite robot/human orientation starting from the center at the rear axis (in meters) </p></li>
+<li><p><strong>rear_radius</strong> – radius of the front circle </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprintD0Ev">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprintD0Ev"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprintD0Ev"></span><span id="hateb_local_planner::TwoCirclesFootprint::~TwoCirclesFootprint"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a67f1eb546fd4a9e75fd933c068b0a86d"></span><span class="sig-name descname"><span class="n"><span class="pre">~TwoCirclesFootprint</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprintD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint13setParametersEdddd">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint13setParametersEdddd"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint13setParametersEdddd"></span><span id="hateb_local_planner::TwoCirclesFootprint::setParameters__double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a72df33bba245087610a54eacc02a3023"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParameters</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">front_offset</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">front_radius</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rear_offset</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rear_radius</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint13setParametersEdddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Set parameters of the contour/footprint. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>front_offset</strong> – shift the center of the front circle along the robot/human orientation starting from the center at the rear axis (in meters) </p></li>
+<li><p><strong>front_radius</strong> – radius of the front circle </p></li>
+<li><p><strong>rear_offset</strong> – shift the center of the rear circle along the opposite robot/human orientation starting from the center at the rear axis (in meters) </p></li>
+<li><p><strong>rear_radius</strong> – radius of the front circle </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner19TwoCirclesFootprint17calculateDistanceERK7PoseSE2PK8Obstacle">
+<span id="_CPPv3NK19hateb_local_planner19TwoCirclesFootprint17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="_CPPv2NK19hateb_local_planner19TwoCirclesFootprint17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="hateb_local_planner::TwoCirclesFootprint::calculateDistance__PoseSE2CR.ObstacleCPC"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a47e95f9896cfe76f474d8557281b44a2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner19TwoCirclesFootprint17calculateDistanceERK7PoseSE2PK8Obstacle" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the distance between the robot/human and an obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the obstacle </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner19TwoCirclesFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled">
+<span id="_CPPv3NK19hateb_local_planner19TwoCirclesFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="_CPPv2NK19hateb_local_planner19TwoCirclesFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="hateb_local_planner::TwoCirclesFootprint::estimateSpatioTemporalDistance__PoseSE2CR.ObstacleCP.doubleC"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1abb28f17e4749f4688515c76bb7e01155"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">estimateSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner19TwoCirclesFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled" title="Link to this definition"></a><br /></dt>
+<dd><p>Estimate the distance between the robot/human and the predicted location of an obstacle at time t. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – robot/human pose, from which the distance to the obstacle is estimated </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the dynamic obstacle (constant velocity model is assumed) </p></li>
+<li><p><strong>t</strong> – time, for which the predicted distance to the obstacle is calculated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner19TwoCirclesFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE">
+<span id="_CPPv3NK19hateb_local_planner19TwoCirclesFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="_CPPv2NK19hateb_local_planner19TwoCirclesFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="hateb_local_planner::TwoCirclesFootprint::visualizeModel__PoseSE2CR.std::vector:visualization_msgs::Marker:R.std_msgs::ColorRGBACRC"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1ae2fec0613da3d22357b5db57aa9a90ab"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualizeModel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">visualization_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Marker</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">markers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ColorRGBA</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">color</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner19TwoCirclesFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE" title="Link to this definition"></a><br /></dt>
+<dd><p>Visualize the robot/human using a markers. </p>
+<p>Fill a marker message with all necessary information (type, pose, scale and color). The header, namespace, id and marker lifetime will be overwritten. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>markers</strong> – <strong>[out]</strong> container of marker messages describing the robot/human shape </p></li>
+<li><p><strong>color</strong> – Color of the footprint </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint18getInscribedRadiusEv">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint18getInscribedRadiusEv"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint18getInscribedRadiusEv"></span><span id="hateb_local_planner::TwoCirclesFootprint::getInscribedRadius"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a36e51ac27b5a5c66c7c60af8b4b3359b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint18getInscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the inscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>inscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner19TwoCirclesFootprint22getCircumscribedRadiusEv">
+<span id="_CPPv3NK19hateb_local_planner19TwoCirclesFootprint22getCircumscribedRadiusEv"></span><span id="_CPPv2NK19hateb_local_planner19TwoCirclesFootprint22getCircumscribedRadiusEv"></span><span id="hateb_local_planner::TwoCirclesFootprint::getCircumscribedRadiusC"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1ad693423391752cedefb9164097ba9f08"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCircumscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner19TwoCirclesFootprint22getCircumscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the circumscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>circumscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint13front_offset_E">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint13front_offset_E"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint13front_offset_E"></span><span id="hateb_local_planner::TwoCirclesFootprint::front_offset___double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a6c76683827fba99ade12f0a3bed0260f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">front_offset_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint13front_offset_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint13front_radius_E">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint13front_radius_E"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint13front_radius_E"></span><span id="hateb_local_planner::TwoCirclesFootprint::front_radius___double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a9dbeb3854023c56930a92e08263c3b47"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">front_radius_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint13front_radius_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint12rear_offset_E">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint12rear_offset_E"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint12rear_offset_E"></span><span id="hateb_local_planner::TwoCirclesFootprint::rear_offset___double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a5e82c07f18a5fe13d77498a10aad6c85"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rear_offset_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint12rear_offset_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19TwoCirclesFootprint12rear_radius_E">
+<span id="_CPPv3N19hateb_local_planner19TwoCirclesFootprint12rear_radius_E"></span><span id="_CPPv2N19hateb_local_planner19TwoCirclesFootprint12rear_radius_E"></span><span id="hateb_local_planner::TwoCirclesFootprint::rear_radius___double"></span><span class="target" id="classhateb__local__planner_1_1TwoCirclesFootprint_1a4ae4f3a70ffece9eba44e7f27467f8ee"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rear_radius_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19TwoCirclesFootprint12rear_radius_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

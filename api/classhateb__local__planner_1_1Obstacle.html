@@ -202,10 +202,337 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8ObstacleE">
+<span id="_CPPv3N19hateb_local_planner8ObstacleE"></span><span id="_CPPv2N19hateb_local_planner8ObstacleE"></span><span id="hateb_local_planner::Obstacle"></span><span class="target" id="classhateb__local__planner_1_1Obstacle"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Obstacle</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8ObstacleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Abstract class that defines the interface for modelling obstacles. </p>
+<p>Subclassed by <a class="reference internal" href="classhateb__local__planner_1_1CircularObstacle.html#classhateb__local__planner_1_1CircularObstacle"><span class="std std-ref">hateb_local_planner::CircularObstacle</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1LineObstacle.html#classhateb__local__planner_1_1LineObstacle"><span class="std std-ref">hateb_local_planner::LineObstacle</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1PointObstacle.html#classhateb__local__planner_1_1PointObstacle"><span class="std std-ref">hateb_local_planner::PointObstacle</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1PolygonObstacle.html#classhateb__local__planner_1_1PolygonObstacle"><span class="std std-ref">hateb_local_planner::PolygonObstacle</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-helper-functions">Helper Functions</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle8dynamic_E">
+<span id="_CPPv3N19hateb_local_planner8Obstacle8dynamic_E"></span><span id="_CPPv2N19hateb_local_planner8Obstacle8dynamic_E"></span><span id="hateb_local_planner::Obstacle::dynamic___b"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1acdfb0788d21baee220600b1e3ebc32c4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dynamic_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle8dynamic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store flag if obstacle is dynamic (resp. a moving obstacle) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle6human_E">
+<span id="_CPPv3N19hateb_local_planner8Obstacle6human_E"></span><span id="_CPPv2N19hateb_local_planner8Obstacle6human_E"></span><span id="hateb_local_planner::Obstacle::human___b"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a2cac9cad218278cfa1f11b7345f24624"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">human_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle6human_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle18centroid_velocity_E">
+<span id="_CPPv3N19hateb_local_planner8Obstacle18centroid_velocity_E"></span><span id="_CPPv2N19hateb_local_planner8Obstacle18centroid_velocity_E"></span><span id="hateb_local_planner::Obstacle::centroid_velocity___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1afbd1eb180519b1c034ad99012052dde3"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">centroid_velocity_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle18centroid_velocity_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the corresponding velocity (vx, vy) of the centroid (zero, if _dynamic is <code class="docutils literal notranslate"><span class="pre">true</span></code>) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle12toPolygonMsgERN13geometry_msgs7PolygonE">
+<span id="_CPPv3N19hateb_local_planner8Obstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="_CPPv2N19hateb_local_planner8Obstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="hateb_local_planner::Obstacle::toPolygonMsg__geometry_msgs::PolygonR"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1ab22dd73538d93b0797cdcf3b483d4366"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toPolygonMsg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Polygon</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle12toPolygonMsgERN13geometry_msgs7PolygonE" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert the obstacle to a polygon message. </p>
+<p>Convert the obstacle to a corresponding polygon msg. Point obstacles have one vertex, lines have two vertices and polygons might are implictly closed such that the start vertex must not be repeated. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – <strong>[out]</strong> the polygon message </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle24toTwistWithCovarianceMsgERN13geometry_msgs19TwistWithCovarianceE">
+<span id="_CPPv3N19hateb_local_planner8Obstacle24toTwistWithCovarianceMsgERN13geometry_msgs19TwistWithCovarianceE"></span><span id="_CPPv2N19hateb_local_planner8Obstacle24toTwistWithCovarianceMsgERN13geometry_msgs19TwistWithCovarianceE"></span><span id="hateb_local_planner::Obstacle::toTwistWithCovarianceMsg__geometry_msgs::TwistWithCovarianceR"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a2ce341af1038397af977fa899f939c5f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toTwistWithCovarianceMsg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistWithCovariance</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">twistWithCovariance</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle24toTwistWithCovarianceMsgERN13geometry_msgs19TwistWithCovarianceE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-centroid-coordinates-(abstract,-obstacle-type-depending)">Centroid coordinates (abstract, obstacle type depending)</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle11getCentroidEv">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle11getCentroidEv"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle11getCentroidEv"></span><span id="hateb_local_planner::Obstacle::getCentroidC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a5c68d148062159714a51d3ed808eb0ac"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCentroid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle11getCentroidEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Eigen::Vector2d containing the centroid </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle15getCentroidCplxEv">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle15getCentroidCplxEv"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle15getCentroidCplxEv"></span><span id="hateb_local_planner::Obstacle::getCentroidCplxC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a0a0d0832da9806649e6d5a1f4134e3b7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">complex</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCentroidCplx</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle15getCentroidCplxEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle as complex number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>std::complex containing the centroid coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-collision-checking-and-distance-calculations-(abstract,-obstacle-type-depending)">Collision checking and distance calculations (abstract, obstacle type depending)</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle14checkCollisionERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::Obstacle::checkCollision__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1adb830893b528f4497e64aaa208d2d25f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkCollision</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle14checkCollisionERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given point collides with the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D reference position that should be checked </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if position is inside the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::Obstacle::checkLineIntersection__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1ae75ac3277ce87e0e6886b6ee278ae4c9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkLineIntersection</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given line segment between two points intersects with the obstacle (and additionally keeps a safty distance <code class="docutils literal notranslate"><span class="pre">min_dist</span></code>) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision/intersection free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if given line intersects the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::Obstacle::getMinimumDistance__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a7fbc6d91807721ecf7bf0d3545215d7e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – 2d reference position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::Obstacle::getMinimumDistance__Eigen::Vector2dCR.Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a0171d2258c8a5802a285a0e10493f70f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERK16Point2dContainer">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="hateb_local_planner::Obstacle::getMinimumDistance__Point2dContainerCRC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a17efb3c82dd851ca791293f839f738af"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle18getMinimumDistanceERK16Point2dContainer" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle15getClosestPointERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::Obstacle::getClosestPoint__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a3c5f4b2d64c073f88acd7f07b0f3f892"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getClosestPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle15getClosestPointERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the closest point on the boundary of the obstacle w.r.t. a specified reference position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – reference 2d position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>closest point on the obstacle boundary </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-velocity-related-methods-for-non-static,-moving-obstacles">Velocity related methods for non-static, moving obstacles</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::Obstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a5823384ad8772f10a996c1ff95b6c1c2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2d reference position </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::Obstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1abee2e494d966a29d0fc702e8e05f7d0c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="hateb_local_planner::Obstacle::getMinimumSpatioTemporalDistance__Point2dContainerCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1ab58503d35f43e72ba48c7fb99209dddd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE"></span><span id="hateb_local_planner::Obstacle::predictCentroidConstantVelocity__double.Eigen::Ref:Eigen::Vector2d:C"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1ad2f78dc815bba56a5a887b5584a95995"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predictCentroidConstantVelocity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Predict position of the centroid assuming a constant velocity model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> – <strong>[in]</strong> time in seconds for the prediction (t&gt;=0) </p></li>
+<li><p><strong>position</strong> – <strong>[out]</strong> predicted 2d position of the centroid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle9isDynamicEv">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle9isDynamicEv"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle9isDynamicEv"></span><span id="hateb_local_planner::Obstacle::isDynamicC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a16a676db30495218f7feab593b59b8ad"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isDynamic</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle9isDynamicEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the obstacle is a moving with a (non-zero) velocity. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the obstacle is not marked as static, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle7isHumanEv">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle7isHumanEv"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle7isHumanEv"></span><span id="hateb_local_planner::Obstacle::isHumanC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1ae337b4f2f70248cb4450d95d6e88a669"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isHuman</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle7isHumanEv" title="Link to this definition"></a><br /></dt>
+<dd><p>returns true if the obstacle is marked as invisible human </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle8setHumanEv">
+<span id="_CPPv3N19hateb_local_planner8Obstacle8setHumanEv"></span><span id="_CPPv2N19hateb_local_planner8Obstacle8setHumanEv"></span><span id="hateb_local_planner::Obstacle::setHuman"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1aec2259a8f61ff463e6ce168578486b4b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setHuman</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle8setHumanEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN5Eigen3RefIKN5Eigen8Vector2dEEE">
+<span id="_CPPv3N19hateb_local_planner8Obstacle19setCentroidVelocityERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="_CPPv2N19hateb_local_planner8Obstacle19setCentroidVelocityERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="hateb_local_planner::Obstacle::setCentroidVelocity__Eigen::Ref:Eigen::Vector2dC:CR"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a0a51ecc56df3aef6ed291e24cf3dfd2c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCentroidVelocity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN5Eigen3RefIKN5Eigen8Vector2dEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the 2d velocity (vx, vy) of the obstacle w.r.t to the centroid. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Setting the velocity using this function marks the obstacle as dynamic (</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1Obstacle_1a16a676db30495218f7feab593b59b8ad"><span class="std std-ref">isDynamic</span></a>) </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vel</strong> – 2D vector containing the velocities of the centroid in x and y directions </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs10QuaternionE">
+<span id="_CPPv3N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs10QuaternionE"></span><span id="_CPPv2N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs10QuaternionE"></span><span id="hateb_local_planner::Obstacle::setCentroidVelocity__geometry_msgs::TwistWithCovarianceCR.geometry_msgs::QuaternionCR"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a5b6b4fd55f4f92c6f1ef7f82830f2a94"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCentroidVelocity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistWithCovariance</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">velocity</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaternion</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orientation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs10QuaternionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the 2d velocity (vx, vy) of the obstacle w.r.t to the centroid. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Setting the velocity using this function marks the obstacle as dynamic (</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1Obstacle_1a16a676db30495218f7feab593b59b8ad"><span class="std std-ref">isDynamic</span></a>) </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>velocity</strong> – geometry_msgs::TwistWithCovariance containing the velocity of the obstacle </p></li>
+<li><p><strong>orientation</strong> – geometry_msgs::QuaternionStamped containing the orientation of the obstacle </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs17QuaternionStampedE">
+<span id="_CPPv3N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs17QuaternionStampedE"></span><span id="_CPPv2N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs17QuaternionStampedE"></span><span id="hateb_local_planner::Obstacle::setCentroidVelocity__geometry_msgs::TwistWithCovarianceCR.geometry_msgs::QuaternionStampedCR"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a9fd6aa04d48d7a4ce388ec7b7da99ba9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCentroidVelocity</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistWithCovariance</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">velocity</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">QuaternionStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orientation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle19setCentroidVelocityERKN13geometry_msgs19TwistWithCovarianceERKN13geometry_msgs17QuaternionStampedE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner8Obstacle19getCentroidVelocityEv">
+<span id="_CPPv3NK19hateb_local_planner8Obstacle19getCentroidVelocityEv"></span><span id="_CPPv2NK19hateb_local_planner8Obstacle19getCentroidVelocityEv"></span><span id="hateb_local_planner::Obstacle::getCentroidVelocityC"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1aacb584daa9d0a2c89aaf3bdf50d679dc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCentroidVelocity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner8Obstacle19getCentroidVelocityEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the obstacle velocity (vx, vy) (w.r.t. to the centroid) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>2D vector containing the velocities of the centroid in x and y directions </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8Obstacle8ObstacleEv">
+<span id="_CPPv3N19hateb_local_planner8Obstacle8ObstacleEv"></span><span id="_CPPv2N19hateb_local_planner8Obstacle8ObstacleEv"></span><span id="hateb_local_planner::Obstacle::Obstacle"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1afdba0c06271d9ad57547650b82f10c3e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Obstacle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8Obstacle8ObstacleEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the abstract obstacle class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner8ObstacleD0Ev">
+<span id="_CPPv3N19hateb_local_planner8ObstacleD0Ev"></span><span id="_CPPv2N19hateb_local_planner8ObstacleD0Ev"></span><span id="hateb_local_planner::Obstacle::~Obstacle"></span><span class="target" id="classhateb__local__planner_1_1Obstacle_1a1a01b732948c4d7478da12cc7335594d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Obstacle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner8ObstacleD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

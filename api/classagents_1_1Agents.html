@@ -190,10 +190,333 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6AgentsE">
+<span id="_CPPv3N6agents6AgentsE"></span><span id="_CPPv2N6agents6AgentsE"></span><span id="agents::Agents"></span><span class="target" id="classagents_1_1Agents"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Agents</span></span></span><a class="headerlink" href="#_CPPv4N6agents6AgentsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class representing agents and their states. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents6AgentsEv">
+<span id="_CPPv3N6agents6Agents6AgentsEv"></span><span id="_CPPv2N6agents6Agents6AgentsEv"></span><span id="agents::Agents::Agents"></span><span class="target" id="classagents_1_1Agents_1ac2aee2f5846eaa0a8eaeb9a4c4da00ef"></span><span class="sig-name descname"><span class="n"><span class="pre">Agents</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents6AgentsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor for <a class="reference internal" href="#classagents_1_1Agents"><span class="std std-ref">Agents</span></a> class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents6AgentsEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE">
+<span id="_CPPv3N6agents6Agents6AgentsEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="_CPPv2N6agents6Agents6AgentsEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="agents::Agents::Agents__tf2_ros::BufferP.costmap_2d::Costmap2DROSP"></span><span class="target" id="classagents_1_1Agents_1a498e4199a641b75775c60f38a7154682"></span><span class="sig-name descname"><span class="n"><span class="pre">Agents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tf</span></span>, <span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">costmap_ros</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents6AgentsEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with parameters for tf buffer and costmap. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tf</strong> – Pointer to tf buffer </p></li>
+<li><p><strong>costmap_ros</strong> – Pointer to costmap </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6AgentsD0Ev">
+<span id="_CPPv3N6agents6AgentsD0Ev"></span><span id="_CPPv2N6agents6AgentsD0Ev"></span><span id="agents::Agents::~Agents"></span><span class="target" id="classagents_1_1Agents_1a560fd5e09e83beaa800af1e958a25bdd"></span><span class="sig-name descname"><span class="n"><span class="pre">~Agents</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N6agents6AgentsD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor of the class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents8setStateE10AgentStatei">
+<span id="_CPPv3N6agents6Agents8setStateE10AgentStatei"></span><span id="_CPPv2N6agents6Agents8setStateE10AgentStatei"></span><span id="agents::Agents::setState__AgentState.i"></span><span class="target" id="classagents_1_1Agents_1a61a2801747706259f9260cc0e274074a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setState</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="enum_namespaceagents_1a11caf48a935369da9fb37768e769738f.html#_CPPv4N6agents10AgentStateE" title="agents::AgentState"><span class="n"><span class="pre">AgentState</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">state</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents8setStateE10AgentStatei" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the state of an agent. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>state</strong> – The state to set </p></li>
+<li><p><strong>id</strong> – The ID of the agent </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents11resetAgentsEv">
+<span id="_CPPv3N6agents6Agents11resetAgentsEv"></span><span id="_CPPv2N6agents6Agents11resetAgentsEv"></span><span id="agents::Agents::resetAgents"></span><span class="target" id="classagents_1_1Agents_1a7e6feb8e444ca53d21266e91bd499514"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetAgents</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents11resetAgentsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Reset all agent states. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6agents6Agents12isAgentStuckEv">
+<span id="_CPPv3NK6agents6Agents12isAgentStuckEv"></span><span id="_CPPv2NK6agents6Agents12isAgentStuckEv"></span><span id="agents::Agents::isAgentStuckC"></span><span class="target" id="classagents_1_1Agents_1a25ea4e9cfe0dcbd657d628bd52c4780b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isAgentStuck</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6agents6Agents12isAgentStuckEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if any agent is stuck. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if an agent is stuck, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents15resetStuckAgentEv">
+<span id="_CPPv3N6agents6Agents15resetStuckAgentEv"></span><span id="_CPPv2N6agents6Agents15resetStuckAgentEv"></span><span id="agents::Agents::resetStuckAgent"></span><span class="target" id="classagents_1_1Agents_1af82e3c1f375b6a17f3ac4c6ac2ee2565"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetStuckAgent</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents15resetStuckAgentEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Reset the stuck agent ID. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents9getAgentsEv">
+<span id="_CPPv3N6agents6Agents9getAgentsEv"></span><span id="_CPPv2N6agents6Agents9getAgentsEv"></span><span id="agents::Agents::getAgents"></span><span class="target" id="classagents_1_1Agents_1a4abeee4283efcd50b6b6dc42a164dab0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAgents</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents9getAgentsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the poses of all agents. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Map of agent IDs to their poses </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents10agentStateEi">
+<span id="_CPPv3N6agents6Agents10agentStateEi"></span><span id="_CPPv2N6agents6Agents10agentStateEi"></span><span id="agents::Agents::agentState__i"></span><span class="target" id="classagents_1_1Agents_1aa9fbe7ec2b525ecd4ff0808030651146"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceagents_1a11caf48a935369da9fb37768e769738f.html#_CPPv4N6agents10AgentStateE" title="agents::AgentState"><span class="n"><span class="pre">AgentState</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agentState</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents10agentStateEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the state of the agent. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> – The index of agent whose state is required </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>State of the given agent </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents14getNominalVelsEv">
+<span id="_CPPv3N6agents6Agents14getNominalVelsEv"></span><span id="_CPPv2N6agents6Agents14getNominalVelsEv"></span><span id="agents::Agents::getNominalVels"></span><span class="target" id="classagents_1_1Agents_1acaf62825882658898f0af9e2c017e7c7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNominalVels</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents14getNominalVelsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get nominal velocities of all agents based on a moving average filter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Map of agent IDs to their nominal velocities </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents15trackedAgentsCBERKN10cohan_msgs13TrackedAgentsE">
+<span id="_CPPv3N6agents6Agents15trackedAgentsCBERKN10cohan_msgs13TrackedAgentsE"></span><span id="_CPPv2N6agents6Agents15trackedAgentsCBERKN10cohan_msgs13TrackedAgentsE"></span><span id="agents::Agents::trackedAgentsCB__cohan_msgs::TrackedAgentsCR"></span><span class="target" id="classagents_1_1Agents_1a2f161af7481a5c95026bba736dbe2317"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">trackedAgentsCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TrackedAgents</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tracked_agents</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents15trackedAgentsCBERKN10cohan_msgs13TrackedAgentsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for tracked agents updates. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tracked_agents</strong> – The tracked agents message containing agent states </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents19filterVisibleAgentsENSt3mapIiN13geometry_msgs4PoseEEENSt6vectorIiEENSt3mapIidEEN13geometry_msgs6Pose2DE">
+<span id="_CPPv3N6agents6Agents19filterVisibleAgentsENSt3mapIiN13geometry_msgs4PoseEEENSt6vectorIiEENSt3mapIidEEN13geometry_msgs6Pose2DE"></span><span id="_CPPv2N6agents6Agents19filterVisibleAgentsENSt3mapIiN13geometry_msgs4PoseEEENSt6vectorIiEENSt3mapIidEEN13geometry_msgs6Pose2DE"></span><span id="agents::Agents::filterVisibleAgents__std::map:i.geometry_msgs::Pose:.std::vector:i:.std::map:i.double:.geometry_msgs::Pose2D"></span><span class="target" id="classagents_1_1Agents_1ac00df3b1726f4f928358fd8af8430e5e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">filterVisibleAgents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tr_agents</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sorted_ids</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">agents_radii</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose2D</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">robot_pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents19filterVisibleAgentsENSt3mapIiN13geometry_msgs4PoseEEENSt6vectorIiEENSt3mapIidEEN13geometry_msgs6Pose2DE" title="Link to this definition"></a><br /></dt>
+<dd><p>Filters agents that are in the FOV of the robot (for e.g., in simulation or mocap) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tr_agents</strong> – Transformed agent poses </p></li>
+<li><p><strong>sorted_ids</strong> – Vector of sorted agent IDs </p></li>
+<li><p><strong>agents_radii</strong> – Agent radii </p></li>
+<li><p><strong>robot_pose</strong> – Current robot pose </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Vector of visible agent IDs in the FOV of the robot </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents26loadRosParamFromNodeHandleERKN3ros10NodeHandleE">
+<span id="_CPPv3N6agents6Agents26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="_CPPv2N6agents6Agents26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="agents::Agents::loadRosParamFromNodeHandle__ros::NodeHandleCR"></span><span class="target" id="classagents_1_1Agents_1aa266185468e053b82b4484952bbe7a04"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadRosParamFromNodeHandle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">private_nh</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents6Agents26loadRosParamFromNodeHandleERKN3ros10NodeHandleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Loads parameters from ROS parameter server. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>private_nh</strong> – Private node handle containing parameters </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents15tracked_agents_E">
+<span id="_CPPv3N6agents6Agents15tracked_agents_E"></span><span id="_CPPv2N6agents6Agents15tracked_agents_E"></span><span id="agents::Agents::tracked_agents___cohan_msgs::TrackedAgents"></span><span class="target" id="classagents_1_1Agents_1a33593b5061a60e9496df03886e73ca73"></span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TrackedAgents</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tracked_agents_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents15tracked_agents_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Latest tracked agents message. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents7agents_E">
+<span id="_CPPv3N6agents6Agents7agents_E"></span><span id="_CPPv2N6agents6Agents7agents_E"></span><span id="agents::Agents::agents___std::map:i.geometry_msgs::Pose:"></span><span class="target" id="classagents_1_1Agents_1a969510bcf09b60b368443e14cbb78ddb"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents7agents_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents12prev_agents_E">
+<span id="_CPPv3N6agents6Agents12prev_agents_E"></span><span id="_CPPv2N6agents6Agents12prev_agents_E"></span><span id="agents::Agents::prev_agents___std::map:i.geometry_msgs::Pose:"></span><span class="target" id="classagents_1_1Agents_1add506c7e0a1db01afc0f062c3493737f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">prev_agents_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents12prev_agents_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current and previous agent poses. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents12agent_still_E">
+<span id="_CPPv3N6agents6Agents12agent_still_E"></span><span id="_CPPv2N6agents6Agents12agent_still_E"></span><span id="agents::Agents::agent_still___std::map:i.b:"></span><span class="target" id="classagents_1_1Agents_1a5c0c2bf2610a50b6c6abb3f8a7474ea2"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_still_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents12agent_still_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Map tracking if agents are stationary. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents11agent_vels_E">
+<span id="_CPPv3N6agents6Agents11agent_vels_E"></span><span id="_CPPv2N6agents6Agents11agent_vels_E"></span><span id="agents::Agents::agent_vels___std::map:i.std::vector:double::"></span><span class="target" id="classagents_1_1Agents_1aea51f1cdb2ab9a97efe8ac5d91b1d134"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_vels_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents11agent_vels_E" title="Link to this definition"></a><br /></dt>
+<dd><p>List of agent velocities over time. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents19agent_nominal_vels_E">
+<span id="_CPPv3N6agents6Agents19agent_nominal_vels_E"></span><span id="_CPPv2N6agents6Agents19agent_nominal_vels_E"></span><span id="agents::Agents::agent_nominal_vels___std::map:i.double:"></span><span class="target" id="classagents_1_1Agents_1ad195b8f5b68b8f8f3a4aecf007964ea4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_nominal_vels_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents19agent_nominal_vels_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Nominal velocities based on moving average. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents14agents_states_E">
+<span id="_CPPv3N6agents6Agents14agents_states_E"></span><span id="_CPPv2N6agents6Agents14agents_states_E"></span><span id="agents::Agents::agents_states___std::map:i.AgentState:"></span><span class="target" id="classagents_1_1Agents_1a13f62fc0a79aa15092548b875ad5b0ec"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceagents_1a11caf48a935369da9fb37768e769738f.html#_CPPv4N6agents10AgentStateE" title="agents::AgentState"><span class="n"><span class="pre">AgentState</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_states_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents14agents_states_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents19prev_agents_states_E">
+<span id="_CPPv3N6agents6Agents19prev_agents_states_E"></span><span id="_CPPv2N6agents6Agents19prev_agents_states_E"></span><span id="agents::Agents::prev_agents_states___std::map:i.AgentState:"></span><span class="target" id="classagents_1_1Agents_1a340449988f759f77a6f292b8a17087a2"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="enum_namespaceagents_1a11caf48a935369da9fb37768e769738f.html#_CPPv4N6agents10AgentStateE" title="agents::AgentState"><span class="n"><span class="pre">AgentState</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">prev_agents_states_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents19prev_agents_states_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current and previous agent states. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents18visible_agent_ids_E">
+<span id="_CPPv3N6agents6Agents18visible_agent_ids_E"></span><span id="_CPPv2N6agents6Agents18visible_agent_ids_E"></span><span id="agents::Agents::visible_agent_ids___std::vector:i:"></span><span class="target" id="classagents_1_1Agents_1ab741b6067a13a40ea536cb16fad35ab6"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visible_agent_ids_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents18visible_agent_ids_E" title="Link to this definition"></a><br /></dt>
+<dd><p>List of visible agent IDs. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents3ns_E">
+<span id="_CPPv3N6agents6Agents3ns_E"></span><span id="_CPPv2N6agents6Agents3ns_E"></span><span id="agents::Agents::ns___ss"></span><span class="target" id="classagents_1_1Agents_1a5f8e96e79d58a1f76848e90e5a0285ef"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace for multiple agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents25tracked_agents_sub_topic_E">
+<span id="_CPPv3N6agents6Agents25tracked_agents_sub_topic_E"></span><span id="_CPPv2N6agents6Agents25tracked_agents_sub_topic_E"></span><span id="agents::Agents::tracked_agents_sub_topic___ss"></span><span class="target" id="classagents_1_1Agents_1a755ce3766cee5a9e8f7d4b696c973504"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tracked_agents_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents25tracked_agents_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic for tracked agents subscription. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents12initialized_E">
+<span id="_CPPv3N6agents6Agents12initialized_E"></span><span id="_CPPv2N6agents6Agents12initialized_E"></span><span id="agents::Agents::initialized___b"></span><span class="target" id="classagents_1_1Agents_1a8688f048cf2e3d4e73351be1fd8127e6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialized_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents12initialized_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialization status flag. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents6stuck_E">
+<span id="_CPPv3N6agents6Agents6stuck_E"></span><span id="_CPPv2N6agents6Agents6stuck_E"></span><span id="agents::Agents::stuck___b"></span><span class="target" id="classagents_1_1Agents_1aa1d7767e6b666170ae78f98174b702a7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stuck_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents6stuck_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if agent is stuck. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents15stuck_agent_id_E">
+<span id="_CPPv3N6agents6Agents15stuck_agent_id_E"></span><span id="_CPPv2N6agents6Agents15stuck_agent_id_E"></span><span id="agents::Agents::stuck_agent_id___i"></span><span class="target" id="classagents_1_1Agents_1adb9eb6a83d2bc934c675d187a35ee544"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stuck_agent_id_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents15stuck_agent_id_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ID of agent blocking robot’s path. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents18window_moving_avg_E">
+<span id="_CPPv3N6agents6Agents18window_moving_avg_E"></span><span id="_CPPv2N6agents6Agents18window_moving_avg_E"></span><span id="agents::Agents::window_moving_avg___i"></span><span class="target" id="classagents_1_1Agents_1aec5fc17556ac8cb242e5ecc45736ed2f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">window_moving_avg_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents18window_moving_avg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Window size for moving average calculation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents14planning_mode_E">
+<span id="_CPPv3N6agents6Agents14planning_mode_E"></span><span id="_CPPv2N6agents6Agents14planning_mode_E"></span><span id="agents::Agents::planning_mode___i"></span><span class="target" id="classagents_1_1Agents_1a0a3847fa6217e921545545526a0df5f5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planning_mode_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents14planning_mode_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mode of planning (different strategies) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents13human_radius_E">
+<span id="_CPPv3N6agents6Agents13human_radius_E"></span><span id="_CPPv2N6agents6Agents13human_radius_E"></span><span id="agents::Agents::human_radius___double"></span><span class="target" id="classagents_1_1Agents_1acd5da82471c4f34c5b7889b6314f7b30"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">human_radius_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents13human_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Radius considered for human agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents13robot_radius_E">
+<span id="_CPPv3N6agents6Agents13robot_radius_E"></span><span id="_CPPv2N6agents6Agents13robot_radius_E"></span><span id="agents::Agents::robot_radius___double"></span><span class="target" id="classagents_1_1Agents_1aa2cf433db2fa536a05063a65d316cd9c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_radius_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents13robot_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Robot’s physical radius. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents16planning_radius_E">
+<span id="_CPPv3N6agents6Agents16planning_radius_E"></span><span id="_CPPv2N6agents6Agents16planning_radius_E"></span><span id="agents::Agents::planning_radius___double"></span><span class="target" id="classagents_1_1Agents_1aaf053c5f2d20abc6af1d407248cb2397"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planning_radius_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents16planning_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Radius used for planning. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents16base_link_frame_E">
+<span id="_CPPv3N6agents6Agents16base_link_frame_E"></span><span id="_CPPv2N6agents6Agents16base_link_frame_E"></span><span id="agents::Agents::base_link_frame___ss"></span><span class="target" id="classagents_1_1Agents_1a023c1644bb448789eee4e8bb424f37a4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_link_frame_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents16base_link_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Robot’s base link frame ID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents10map_frame_E">
+<span id="_CPPv3N6agents6Agents10map_frame_E"></span><span id="_CPPv2N6agents6Agents10map_frame_E"></span><span id="agents::Agents::map_frame___ss"></span><span class="target" id="classagents_1_1Agents_1a77ed0bf5a9d7a6fec25e66fe552fe3ec"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_frame_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents10map_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Map frame ID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents11odom_frame_E">
+<span id="_CPPv3N6agents6Agents11odom_frame_E"></span><span id="_CPPv2N6agents6Agents11odom_frame_E"></span><span id="agents::Agents::odom_frame___ss"></span><span class="target" id="classagents_1_1Agents_1a6012e13583cf56cb84636a7bcdddf8a5"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">odom_frame_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents11odom_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Odometry frame ID. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents18use_simulated_fov_E">
+<span id="_CPPv3N6agents6Agents18use_simulated_fov_E"></span><span id="_CPPv2N6agents6Agents18use_simulated_fov_E"></span><span id="agents::Agents::use_simulated_fov___b"></span><span class="target" id="classagents_1_1Agents_1aceb78c8adf09e996aa9efb089a6b73fc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_simulated_fov_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents18use_simulated_fov_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag for using simulated field of view. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents16agents_info_pub_E">
+<span id="_CPPv3N6agents6Agents16agents_info_pub_E"></span><span id="_CPPv2N6agents6Agents16agents_info_pub_E"></span><span id="agents::Agents::agents_info_pub___ros::Publisher"></span><span class="target" id="classagents_1_1Agents_1a0d234fb90a16110ab843f3e3d58979a4"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_pub_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents16agents_info_pub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for agent information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents19tracked_agents_sub_E">
+<span id="_CPPv3N6agents6Agents19tracked_agents_sub_E"></span><span id="_CPPv2N6agents6Agents19tracked_agents_sub_E"></span><span id="agents::Agents::tracked_agents_sub___ros::Subscriber"></span><span class="target" id="classagents_1_1Agents_1a30c2d917a8dff79200726fbfae5c6ff7"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tracked_agents_sub_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents19tracked_agents_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for tracked agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents3tf_E">
+<span id="_CPPv3N6agents6Agents3tf_E"></span><span id="_CPPv2N6agents6Agents3tf_E"></span><span id="agents::Agents::tf___tf2_ros::BufferP"></span><span class="target" id="classagents_1_1Agents_1a68935e3f52a621e360a635cf22c414d2"></span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">tf_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents3tf_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to tf buffer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents12costmap_ros_E">
+<span id="_CPPv3N6agents6Agents12costmap_ros_E"></span><span id="_CPPv2N6agents6Agents12costmap_ros_E"></span><span id="agents::Agents::costmap_ros___costmap_2d::Costmap2DROSP"></span><span class="target" id="classagents_1_1Agents_1a1cdd9d4b039956ed46c83875e348d50e"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_ros_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents12costmap_ros_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the costmap ros wrapper. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents8costmap_E">
+<span id="_CPPv3N6agents6Agents8costmap_E"></span><span id="_CPPv2N6agents6Agents8costmap_E"></span><span id="agents::Agents::costmap___costmap_2d::Costmap2DP"></span><span class="target" id="classagents_1_1Agents_1a778f0792aac152c239f09f7c9544fd69"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents8costmap_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the 2d costmap. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents6Agents17inflation_radius_E">
+<span id="_CPPv3N6agents6Agents17inflation_radius_E"></span><span id="_CPPv2N6agents6Agents17inflation_radius_E"></span><span id="agents::Agents::inflation_radius___double"></span><span class="target" id="classagents_1_1Agents_1a06c42afc289e80a0a3511f7581ebad49"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inflation_radius_</span></span></span><a class="headerlink" href="#_CPPv4N6agents6Agents17inflation_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Inflation radius for costmap. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

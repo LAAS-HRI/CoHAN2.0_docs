@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,55 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDirE">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDirE"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDirE"></span><span id="hateb_local_planner::EdgePreferRotDir"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgePreferRotDir</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge"><span class="n"><span class="pre">BaseTebBinaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDirE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for penalzing a specified turning direction, in particular left resp. right turns. </p>
+<p>The edge depends on two consecutive vertices <span class="math notranslate nohighlight">\( \mathbf{s}_i, \mathbf{s}_{i+1} \)</span> and penalizes a given rotation direction based on the <em>weight</em> and <em>dir</em> ( <span class="math notranslate nohighlight">\( dir \in \{-1,1\} \)</span>) <em>dir</em> should be +1 to prefer left rotations and -1 to prefer right rotations <em>weight</em> can be set using setInformation(). <div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>TebOptimalPlanner::AddEdgePreferRotDir </p>
 </div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDir16EdgePreferRotDirEv">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDir16EdgePreferRotDirEv"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDir16EdgePreferRotDirEv"></span><span id="hateb_local_planner::EdgePreferRotDir::EdgePreferRotDir"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir_1aa1ffe70a0946f6862f6e35ba933065a3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgePreferRotDir</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDir16EdgePreferRotDirEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDir12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDir12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDir12computeErrorEv"></span><span id="hateb_local_planner::EdgePreferRotDir::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir_1a90b382fbfe5ea582f50191cb959aa4e2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDir12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDir9setRotDirEd">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDir9setRotDirEd"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDir9setRotDirEd"></span><span id="hateb_local_planner::EdgePreferRotDir::setRotDir__double"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir_1a8476b1f865032da0a2d9f046872600a2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRotDir</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dir</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDir9setRotDirEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify the prefered direction of rotation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dir</strong> – +1 to prefer the left side, -1 to prefer the right side </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDir11preferRightEv">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDir11preferRightEv"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDir11preferRightEv"></span><span id="hateb_local_planner::EdgePreferRotDir::preferRight"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir_1acd8a087bcc95d6b7105d0031798d1251"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">preferRight</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDir11preferRightEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Prefer rotations to the right </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16EdgePreferRotDir10preferLeftEv">
+<span id="_CPPv3N19hateb_local_planner16EdgePreferRotDir10preferLeftEv"></span><span id="_CPPv2N19hateb_local_planner16EdgePreferRotDir10preferLeftEv"></span><span id="hateb_local_planner::EdgePreferRotDir::preferLeft"></span><span class="target" id="classhateb__local__planner_1_1EdgePreferRotDir_1a0235ad84dfe724ffbe35ffe17c637ee7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">preferLeft</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16EdgePreferRotDir10preferLeftEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Prefer rotations to the right </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

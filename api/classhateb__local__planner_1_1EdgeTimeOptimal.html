@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,36 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15EdgeTimeOptimalE">
+<span id="_CPPv3N19hateb_local_planner15EdgeTimeOptimalE"></span><span id="_CPPv2N19hateb_local_planner15EdgeTimeOptimalE"></span><span id="hateb_local_planner::EdgeTimeOptimal"></span><span class="target" id="classhateb__local__planner_1_1EdgeTimeOptimal"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeTimeOptimal</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#_CPPv4I_i00EN19hateb_local_planner16BaseTebUnaryEdgeE" title="hateb_local_planner::BaseTebUnaryEdge"><span class="n"><span class="pre">BaseTebUnaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexTimeDiff.html#_CPPv4N19hateb_local_planner14VertexTimeDiffE" title="hateb_local_planner::VertexTimeDiff"><span class="n"><span class="pre">VertexTimeDiff</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15EdgeTimeOptimalE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for minimizing transition time of the trajectory. </p>
+<p>The edge depends on a single vertex <span class="math notranslate nohighlight">\( \Delta T_i \)</span> and minimizes: <span class="math notranslate nohighlight">\( \min \Delta T_i^2 \cdot scale \cdot weight \)</span>. <em>scale</em> is determined using the penaltyEquality() function, since we experiences good convergence speeds with it. <em>weight</em> can be set using setInformation() (something around 1.0 seems to be fine). <div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner_1a2ec83c6e8e9459b7d0fb9daf764888c4"><span class="std std-ref">TebOptimalPlanner::AddEdgesTimeOptimal</span></a></p>
 </div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not forget to call <a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#classhateb__local__planner_1_1BaseTebUnaryEdge_1a5e515f4663cbcfa4942b2d5449d62618"><span class="std std-ref">setHATebConfig()</span></a></p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15EdgeTimeOptimal15EdgeTimeOptimalEv">
+<span id="_CPPv3N19hateb_local_planner15EdgeTimeOptimal15EdgeTimeOptimalEv"></span><span id="_CPPv2N19hateb_local_planner15EdgeTimeOptimal15EdgeTimeOptimalEv"></span><span id="hateb_local_planner::EdgeTimeOptimal::EdgeTimeOptimal"></span><span class="target" id="classhateb__local__planner_1_1EdgeTimeOptimal_1af54e36b50d1a14a91b769f5ba00d277e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeTimeOptimal</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15EdgeTimeOptimal15EdgeTimeOptimalEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15EdgeTimeOptimal12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner15EdgeTimeOptimal12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner15EdgeTimeOptimal12computeErrorEv"></span><span id="hateb_local_planner::EdgeTimeOptimal::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeTimeOptimal_1a2faf03c88425ac665369a2e2e40552a0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15EdgeTimeOptimal12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

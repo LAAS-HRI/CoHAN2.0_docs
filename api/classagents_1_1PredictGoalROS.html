@@ -190,10 +190,128 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROSE">
+<span id="_CPPv3N6agents14PredictGoalROSE"></span><span id="_CPPv2N6agents14PredictGoalROSE"></span><span id="agents::PredictGoalROS"></span><span class="target" id="classagents_1_1PredictGoalROS"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PredictGoalROS</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>ROS wrapper for the Bayesian goal prediction system. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS14PredictGoalROSEv">
+<span id="_CPPv3N6agents14PredictGoalROS14PredictGoalROSEv"></span><span id="_CPPv2N6agents14PredictGoalROS14PredictGoalROSEv"></span><span id="agents::PredictGoalROS::PredictGoalROS"></span><span class="target" id="classagents_1_1PredictGoalROS_1a30d29827d7d6c2095e72e630f6e35102"></span><span class="sig-name descname"><span class="n"><span class="pre">PredictGoalROS</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS14PredictGoalROSEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor, initializes ROS communication. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROSD0Ev">
+<span id="_CPPv3N6agents14PredictGoalROSD0Ev"></span><span id="_CPPv2N6agents14PredictGoalROSD0Ev"></span><span id="agents::PredictGoalROS::~PredictGoalROS"></span><span class="target" id="classagents_1_1PredictGoalROS_1a18a1a8a0b7e13f1c14567f9431382b8e"></span><span class="sig-name descname"><span class="n"><span class="pre">~PredictGoalROS</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROSD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Default destructor. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS15trackedAgentsCBERKN10cohan_msgs13TrackedAgents8ConstPtrE">
+<span id="_CPPv3N6agents14PredictGoalROS15trackedAgentsCBERKN10cohan_msgs13TrackedAgents8ConstPtrE"></span><span id="_CPPv2N6agents14PredictGoalROS15trackedAgentsCBERKN10cohan_msgs13TrackedAgents8ConstPtrE"></span><span id="agents::PredictGoalROS::trackedAgentsCB__cohan_msgs::TrackedAgents::ConstPtrCR"></span><span class="target" id="classagents_1_1PredictGoalROS_1a349665278441e34173f6fbe982e16460"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">trackedAgentsCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TrackedAgents</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS15trackedAgentsCBERKN10cohan_msgs13TrackedAgents8ConstPtrE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for tracked agents updates. This method processes incoming tracked agents data and updates the internal state. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>msg</strong> – Message containing tracked agents data </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS9loadGoalsERKNSt6stringE">
+<span id="_CPPv3N6agents14PredictGoalROS9loadGoalsERKNSt6stringE"></span><span id="_CPPv2N6agents14PredictGoalROS9loadGoalsERKNSt6stringE"></span><span id="agents::PredictGoalROS::loadGoals__ssCR"></span><span class="target" id="classagents_1_1PredictGoalROS_1a5dba384076d3792d1917a1e54dcd8839"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadGoals</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">file</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS9loadGoalsERKNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd><p>Load goal positions from a YAML file. This method reads goal positions from the specified YAML file and populates the goals map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file</strong> – Path to the YAML file containing goals </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if goals were loaded successfully, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS26loadRosParamFromNodeHandleERKN3ros10NodeHandleE">
+<span id="_CPPv3N6agents14PredictGoalROS26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="_CPPv2N6agents14PredictGoalROS26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="agents::PredictGoalROS::loadRosParamFromNodeHandle__ros::NodeHandleCR"></span><span class="target" id="classagents_1_1PredictGoalROS_1aeb1405942c953193ec9ccbffa3c17117"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadRosParamFromNodeHandle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">private_nh</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS26loadRosParamFromNodeHandleERKN3ros10NodeHandleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Loads ROS parameters from the node handle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>private_nh</strong> – Private node handle containing parameters </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS11agents_sub_E">
+<span id="_CPPv3N6agents14PredictGoalROS11agents_sub_E"></span><span id="_CPPv2N6agents14PredictGoalROS11agents_sub_E"></span><span id="agents::PredictGoalROS::agents_sub___ros::Subscriber"></span><span class="target" id="classagents_1_1PredictGoalROS_1a35f7f84fc103593a9e34b33dae8de146"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_sub_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS11agents_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for tracked agents updates. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS9goal_pub_E">
+<span id="_CPPv3N6agents14PredictGoalROS9goal_pub_E"></span><span id="_CPPv2N6agents14PredictGoalROS9goal_pub_E"></span><span id="agents::PredictGoalROS::goal_pub___ros::Publisher"></span><span class="target" id="classagents_1_1PredictGoalROS_1a98e2194e92cfcd0f9448de4b772fca9a"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_pub_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS9goal_pub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for predicted goals. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS10predictor_E">
+<span id="_CPPv3N6agents14PredictGoalROS10predictor_E"></span><span id="_CPPv2N6agents14PredictGoalROS10predictor_E"></span><span id="agents::PredictGoalROS::predictor___agents::BayesianGoalPrediction"></span><span class="target" id="classagents_1_1PredictGoalROS_1ab96ad9139ef5922ee0042c6d8105009b"></span><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classagents_1_1BayesianGoalPrediction.html#_CPPv4N6agents22BayesianGoalPredictionE" title="agents::BayesianGoalPrediction"><span class="n"><span class="pre">BayesianGoalPrediction</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predictor_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS10predictor_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Instance of the Bayesian goal prediction algorithm. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS6goals_E">
+<span id="_CPPv3N6agents14PredictGoalROS6goals_E"></span><span id="_CPPv2N6agents14PredictGoalROS6goals_E"></span><span id="agents::PredictGoalROS::goals___std::map:ss.Eigen::Vector2d:"></span><span class="target" id="classagents_1_1PredictGoalROS_1a4f176eca70c34256d1e5d5a7229f5065"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goals_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS6goals_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Map of goal names to their positions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS20agent_goal_predicts_E">
+<span id="_CPPv3N6agents14PredictGoalROS20agent_goal_predicts_E"></span><span id="_CPPv2N6agents14PredictGoalROS20agent_goal_predicts_E"></span><span id="agents::PredictGoalROS::agent_goal_predicts___std::map:i.ss:"></span><span class="target" id="classagents_1_1PredictGoalROS_1aedc938f4e507fa4c5b3b088ed9977bd5"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_goal_predicts_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS20agent_goal_predicts_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Map of agent IDs to their predicted goals. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS12window_size_E">
+<span id="_CPPv3N6agents14PredictGoalROS12window_size_E"></span><span id="_CPPv2N6agents14PredictGoalROS12window_size_E"></span><span id="agents::PredictGoalROS::window_size___i"></span><span class="target" id="classagents_1_1PredictGoalROS_1ad6c43b7c6b94133825e30d3da4b7cded"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">window_size_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS12window_size_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Size of the sliding window used for predictions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS25tracked_agents_sub_topic_E">
+<span id="_CPPv3N6agents14PredictGoalROS25tracked_agents_sub_topic_E"></span><span id="_CPPv2N6agents14PredictGoalROS25tracked_agents_sub_topic_E"></span><span id="agents::PredictGoalROS::tracked_agents_sub_topic___ss"></span><span class="target" id="classagents_1_1PredictGoalROS_1a65b1bb4b8ad2ecdad4b16d292bbf7841"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tracked_agents_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS25tracked_agents_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS21predicted_goal_topic_E">
+<span id="_CPPv3N6agents14PredictGoalROS21predicted_goal_topic_E"></span><span id="_CPPv2N6agents14PredictGoalROS21predicted_goal_topic_E"></span><span id="agents::PredictGoalROS::predicted_goal_topic___ss"></span><span class="target" id="classagents_1_1PredictGoalROS_1a927fbf61043549810e19b38de7b4ddfd"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predicted_goal_topic_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS21predicted_goal_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ROS topic names for subscribers and publishers. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS3ns_E">
+<span id="_CPPv3N6agents14PredictGoalROS3ns_E"></span><span id="_CPPv2N6agents14PredictGoalROS3ns_E"></span><span id="agents::PredictGoalROS::ns___ss"></span><span class="target" id="classagents_1_1PredictGoalROS_1a8a7198ef45914bd749c083cc3a768347"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace for the node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents14PredictGoalROS11goals_file_E">
+<span id="_CPPv3N6agents14PredictGoalROS11goals_file_E"></span><span id="_CPPv2N6agents14PredictGoalROS11goals_file_E"></span><span id="agents::PredictGoalROS::goals_file___ss"></span><span class="target" id="classagents_1_1PredictGoalROS_1aac29d0622fc1bf274e544f13e146871f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goals_file_</span></span></span><a class="headerlink" href="#_CPPv4N6agents14PredictGoalROS11goals_file_E" title="Link to this definition"></a><br /></dt>
+<dd><p>File name of the env goals. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

@@ -199,10 +199,120 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitConditionE">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitConditionE"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitConditionE"></span><span id="hateb_local_planner::DualBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DualBandExitCondition</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitConditionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing a condition node for dual band exit criteria. </p>
+<p>This class checks conditions to determine when to exit the dual band planning mode. It monitors robot’s progress and agent states to make this decision. It inherits from BT::ConditionNode to integrate with the behavior tree framework. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::DualBandExitCondition::DualBandExitCondition__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a1e6e9ea78a0220c842d5ed116e635aba"></span><span class="sig-name descname"><span class="n"><span class="pre">DualBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with condition name and configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Configuration for the behavior tree node </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionEv">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionEv"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionEv"></span><span id="hateb_local_planner::DualBandExitCondition::DualBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a72a8b3be8ce0b15a1eca4835fd2a8b5a"></span><span class="sig-name descname"><span class="n"><span class="pre">DualBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition21DualBandExitConditionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Deleted default constructor to enforce proper initialization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitConditionD0Ev">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitConditionD0Ev"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitConditionD0Ev"></span><span id="hateb_local_planner::DualBandExitCondition::~DualBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a995f71a8602c49e10479975bb094eaf7"></span><span class="sig-name descname"><span class="n"><span class="pre">~DualBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitConditionD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor for cleanup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition4tickEv">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition4tickEv"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition4tickEv"></span><span id="hateb_local_planner::DualBandExitCondition::tick"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a63bd7b5d5680677d9dd5844393ee6e59"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Method called to evaluate the condition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SUCCESS if dual band mode should be exited, FAILURE otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition13providedPortsEv"></span><span id="hateb_local_planner::DualBandExitCondition::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1ab5357b6ceed00d18348ae39a39d76b28"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines input ports for condition evaluation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ports list containing agents_info, distance threshold and navigation goal as inputs </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition12isRobotStuckEv">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition12isRobotStuckEv"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition12isRobotStuckEv"></span><span id="hateb_local_planner::DualBandExitCondition::isRobotStuck"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a9d7922f98c9b7dd7d0f06f5a0fd0fd9d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isRobotStuck</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition12isRobotStuckEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if the robot has been stuck in place. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if robot hasn’t made progress, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition12agents_info_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition12agents_info_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition12agents_info_E"></span><span id="hateb_local_planner::DualBandExitCondition::agents_info___agent_path_prediction::AgentsInfo"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a8fb13f77c046ff214d05fc8c48d4585e"></span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition12agents_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Information about agents in the environment. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition5goal_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition5goal_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition5goal_E"></span><span id="hateb_local_planner::DualBandExitCondition::goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1af0adcb4262a54512ef44ce2de6ed2adb"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition5goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current navigation goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition15dist_threshold_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition15dist_threshold_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition15dist_threshold_E"></span><span id="hateb_local_planner::DualBandExitCondition::dist_threshold___double"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a480cda58b3f0887f53840c8b148a1c39"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_threshold_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition15dist_threshold_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Distance threshold for dual band mode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition10goal_dist_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition10goal_dist_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition10goal_dist_E"></span><span id="hateb_local_planner::DualBandExitCondition::goal_dist___double"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1ae4ba96e9e96e9fd3d227164d70fea140"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_dist_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition10goal_dist_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Distance to goal for progress tracking. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition13stopped_time_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition13stopped_time_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition13stopped_time_E"></span><span id="hateb_local_planner::DualBandExitCondition::stopped_time___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a09dab56d5718c22309b5a27a68d491b0"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stopped_time_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition13stopped_time_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time when robot was last detected as stopped. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21DualBandExitCondition5name_E">
+<span id="_CPPv3N19hateb_local_planner21DualBandExitCondition5name_E"></span><span id="_CPPv2N19hateb_local_planner21DualBandExitCondition5name_E"></span><span id="hateb_local_planner::DualBandExitCondition::name___ss"></span><span class="target" id="classhateb__local__planner_1_1DualBandExitCondition_1a2b2b003e330a5f4bb12fd90d08375e9b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21DualBandExitCondition5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the node. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

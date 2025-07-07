@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,61 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeViaPointE">
+<span id="_CPPv3N19hateb_local_planner12EdgeViaPointE"></span><span id="_CPPv2N19hateb_local_planner12EdgeViaPointE"></span><span id="hateb_local_planner::EdgeViaPoint"></span><span class="target" id="classhateb__local__planner_1_1EdgeViaPoint"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeViaPoint</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#_CPPv4I_i00EN19hateb_local_planner16BaseTebUnaryEdgeE" title="hateb_local_planner::BaseTebUnaryEdge"><span class="n"><span class="pre">BaseTebUnaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeViaPointE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for pushing a configuration towards a via point. </p>
+<p>The edge depends on a single vertex <span class="math notranslate nohighlight">\( \mathbf{s}_i \)</span> and minimizes: <span class="math notranslate nohighlight">\( \min dist2point \cdot weight \)</span>. <em>dist2point</em> denotes the distance to the via point. <em>weight</em> can be set using setInformation(). <div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner_1a69bb902b27e36c8b28c4dbc6c9fd4009"><span class="std std-ref">TebOptimalPlanner::AddEdgesViaPoints</span></a></p>
 </div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not forget to call <a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#classhateb__local__planner_1_1BaseTebUnaryEdge_1a5e515f4663cbcfa4942b2d5449d62618"><span class="std std-ref">setHATebConfig()</span></a> and <a class="reference internal" href="#classhateb__local__planner_1_1EdgeViaPoint_1aca4b2caa0e8590009f9ee441201587a5"><span class="std std-ref">setViaPoint()</span></a></p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeViaPoint12EdgeViaPointEv">
+<span id="_CPPv3N19hateb_local_planner12EdgeViaPoint12EdgeViaPointEv"></span><span id="_CPPv2N19hateb_local_planner12EdgeViaPoint12EdgeViaPointEv"></span><span id="hateb_local_planner::EdgeViaPoint::EdgeViaPoint"></span><span class="target" id="classhateb__local__planner_1_1EdgeViaPoint_1a76bb4d2fff67c4ca1b322bf0917ad0c9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeViaPoint</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeViaPoint12EdgeViaPointEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeViaPoint12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner12EdgeViaPoint12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner12EdgeViaPoint12computeErrorEv"></span><span id="hateb_local_planner::EdgeViaPoint::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeViaPoint_1ad404a6e50e36245180c080bc3b9d273e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeViaPoint12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeViaPoint11setViaPointEPKN5Eigen8Vector2dE">
+<span id="_CPPv3N19hateb_local_planner12EdgeViaPoint11setViaPointEPKN5Eigen8Vector2dE"></span><span id="_CPPv2N19hateb_local_planner12EdgeViaPoint11setViaPointEPKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::EdgeViaPoint::setViaPoint__Eigen::Vector2dCP"></span><span class="target" id="classhateb__local__planner_1_1EdgeViaPoint_1aca4b2caa0e8590009f9ee441201587a5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setViaPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">via_point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeViaPoint11setViaPointEPKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set pointer to associated via point for the underlying cost function. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>via_point</strong> – 2D position vector containing the position of the via point </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeViaPoint13setParametersERK11HATebConfigPKN5Eigen8Vector2dE">
+<span id="_CPPv3N19hateb_local_planner12EdgeViaPoint13setParametersERK11HATebConfigPKN5Eigen8Vector2dE"></span><span id="_CPPv2N19hateb_local_planner12EdgeViaPoint13setParametersERK11HATebConfigPKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::EdgeViaPoint::setParameters__HATebConfigCR.Eigen::Vector2dCP"></span><span class="target" id="classhateb__local__planner_1_1EdgeViaPoint_1a13e5e6bc21d19005fe9af76cd4c81d2b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParameters</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">via_point</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeViaPoint13setParametersERK11HATebConfigPKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set all parameters at once. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cfg</strong> – <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> class </p></li>
+<li><p><strong>via_point</strong> – 2D position vector containing the position of the via point </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

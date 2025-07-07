@@ -190,10 +190,331 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7BackoffE">
+<span id="_CPPv3N19hateb_local_planner7BackoffE"></span><span id="_CPPv2N19hateb_local_planner7BackoffE"></span><span id="hateb_local_planner::Backoff"></span><span class="target" id="classhateb__local__planner_1_1Backoff"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Backoff</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7BackoffE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing backoff behavior for robot navigation. </p>
+<p>The <a class="reference internal" href="#classhateb__local__planner_1_1Backoff"><span class="std std-ref">Backoff</span></a> class provides recovery behavior when the robot encounters a human in a place where both agents (human and robot) get stuck without any progress towards to goal. It implements methods to calculate and execute backoff maneuvers to help the robot recover from such situations. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff7BackoffEPN10costmap_2d12Costmap2DROSE">
+<span id="_CPPv3N19hateb_local_planner7Backoff7BackoffEPN10costmap_2d12Costmap2DROSE"></span><span id="_CPPv2N19hateb_local_planner7Backoff7BackoffEPN10costmap_2d12Costmap2DROSE"></span><span id="hateb_local_planner::Backoff::Backoff__costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a0cbd0914494f6fcd5de277b517133f24"></span><span class="sig-name descname"><span class="n"><span class="pre">Backoff</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">costmap_ros</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff7BackoffEPN10costmap_2d12Costmap2DROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7BackoffD0Ev">
+<span id="_CPPv3N19hateb_local_planner7BackoffD0Ev"></span><span id="_CPPv2N19hateb_local_planner7BackoffD0Ev"></span><span id="hateb_local_planner::Backoff::~Backoff"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a5aa081921f7cef80153ac65992556294"></span><span class="sig-name descname"><span class="n"><span class="pre">~Backoff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7BackoffD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff10initializeEPN10costmap_2d12Costmap2DROSE">
+<span id="_CPPv3N19hateb_local_planner7Backoff10initializeEPN10costmap_2d12Costmap2DROSE"></span><span id="_CPPv2N19hateb_local_planner7Backoff10initializeEPN10costmap_2d12Costmap2DROSE"></span><span id="hateb_local_planner::Backoff::initialize__costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a1c63f2df553d3b604d38bd55b990c0c8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">costmap_ros</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff10initializeEPN10costmap_2d12Costmap2DROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the backoff behavior with a costmap. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>costmap_ros</strong> – Pointer to the costmap ROS wrapper </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff11setbackGoalEN13geometry_msgs11PoseStampedE">
+<span id="_CPPv3N19hateb_local_planner7Backoff11setbackGoalEN13geometry_msgs11PoseStampedE"></span><span id="_CPPv2N19hateb_local_planner7Backoff11setbackGoalEN13geometry_msgs11PoseStampedE"></span><span id="hateb_local_planner::Backoff::setbackGoal__geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a96e56515fc60bc8188ce7627e28b3ce7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setbackGoal</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">goal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff11setbackGoalEN13geometry_msgs11PoseStampedE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets a new backoff goal position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>goal</strong> – The goal pose to back off to </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if goal was successfully set </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff7timeOutEv">
+<span id="_CPPv3N19hateb_local_planner7Backoff7timeOutEv"></span><span id="_CPPv2N19hateb_local_planner7Backoff7timeOutEv"></span><span id="hateb_local_planner::Backoff::timeOut"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1acf9478b64a2d64fe6944ac93fce0d03b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timeOut</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff7timeOutEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if backoff behavior has timed out. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if timeout occurred </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff13startRecoveryEv">
+<span id="_CPPv3N19hateb_local_planner7Backoff13startRecoveryEv"></span><span id="_CPPv2N19hateb_local_planner7Backoff13startRecoveryEv"></span><span id="hateb_local_planner::Backoff::startRecovery"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1afede89f07e3bdd06f9cdb8281138b548"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">startRecovery</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff13startRecoveryEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initiates the recovery behavior. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if recovery was successfully started </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7Backoff12checkNewGoalEv">
+<span id="_CPPv3NK19hateb_local_planner7Backoff12checkNewGoalEv"></span><span id="_CPPv2NK19hateb_local_planner7Backoff12checkNewGoalEv"></span><span id="hateb_local_planner::Backoff::checkNewGoalC"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a4e3f4b56ee4a83fdda7dd58f294d51d8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkNewGoal</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7Backoff12checkNewGoalEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if a new goal has been received. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if there is a new goal </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner7Backoff20isBackoffGoalReachedERN13geometry_msgs6Pose2DE">
+<span id="_CPPv3NK19hateb_local_planner7Backoff20isBackoffGoalReachedERN13geometry_msgs6Pose2DE"></span><span id="_CPPv2NK19hateb_local_planner7Backoff20isBackoffGoalReachedERN13geometry_msgs6Pose2DE"></span><span id="hateb_local_planner::Backoff::isBackoffGoalReached__geometry_msgs::Pose2DRC"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a2d60edaa11d945aab08e3e843f50ae9f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isBackoffGoalReached</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose2D</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">robot_pose</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner7Backoff20isBackoffGoalReachedERN13geometry_msgs6Pose2DE" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if the backoff goal position has been reached. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>robot_pose</strong> – Current pose of the robot </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if goal has been reached </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff17initializeOffsetsEd">
+<span id="_CPPv3N19hateb_local_planner7Backoff17initializeOffsetsEd"></span><span id="_CPPv2N19hateb_local_planner7Backoff17initializeOffsetsEd"></span><span id="hateb_local_planner::Backoff::initializeOffsets__double"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a9c10ac17d8496089658e7810c3e0c9ad"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initializeOffsets</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff17initializeOffsetsEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the grid offsets for obstacle checking. </p>
+<p>Sets up two grids of points (left and right) around the robot’s circumference used for checking nearby obstacles when planning backoff maneuvers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>r</strong> – Robot’s circumscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff6goalCBERKN13geometry_msgs11PoseStamped8ConstPtrE">
+<span id="_CPPv3N19hateb_local_planner7Backoff6goalCBERKN13geometry_msgs11PoseStamped8ConstPtrE"></span><span id="_CPPv2N19hateb_local_planner7Backoff6goalCBERKN13geometry_msgs11PoseStamped8ConstPtrE"></span><span id="hateb_local_planner::Backoff::goalCB__geometry_msgs::PoseStamped::ConstPtrCR"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a391ce80e9b4ca0c4eb74187a87b44f3a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goalCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">goal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff6goalCBERKN13geometry_msgs11PoseStamped8ConstPtrE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for processing new goal messages. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>goal</strong> – Pointer to the received goal message </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff26loadRosParamFromNodeHandleERKN3ros10NodeHandleE">
+<span id="_CPPv3N19hateb_local_planner7Backoff26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="_CPPv2N19hateb_local_planner7Backoff26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="hateb_local_planner::Backoff::loadRosParamFromNodeHandle__ros::NodeHandleCR"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a443e7a131dfd8276a459513452176ad6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadRosParamFromNodeHandle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">private_nh</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff26loadRosParamFromNodeHandleERKN3ros10NodeHandleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Loads ROS parameters from the node handle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>private_nh</strong> – Private node handle containing parameters </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff10map_frame_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff10map_frame_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff10map_frame_E"></span><span id="hateb_local_planner::Backoff::map_frame___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a9359af47ea9cff80e6389cad795673b4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_frame_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff10map_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the map frame. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff16footprint_frame_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff16footprint_frame_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff16footprint_frame_E"></span><span id="hateb_local_planner::Backoff::footprint_frame___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a2f5e6d28a06357c31b4ba16623287c30"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">footprint_frame_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff16footprint_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the robot’s footprint frame. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff3ns_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff3ns_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff3ns_E"></span><span id="hateb_local_planner::Backoff::ns___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a0133d675df43274872289cb8cee3d4cb"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace for the node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff19publish_goal_topic_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff19publish_goal_topic_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff19publish_goal_topic_E"></span><span id="hateb_local_planner::Backoff::publish_goal_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a40cb7798ffbf5b60fbde3d95d9a4d72c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_goal_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff19publish_goal_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic name for publishing backoff goals. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff19current_goal_topic_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff19current_goal_topic_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff19current_goal_topic_E"></span><span id="hateb_local_planner::Backoff::current_goal_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a3df9e7bce0c874cf05cd94bee7a05783"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_goal_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff19current_goal_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic name for current goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff18get_plan_srv_name_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff18get_plan_srv_name_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff18get_plan_srv_name_E"></span><span id="hateb_local_planner::Backoff::get_plan_srv_name___ss"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1ae87a3ea7ef10faa0f304dd2681645627"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_plan_srv_name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff18get_plan_srv_name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Service name for path planning. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff16backoff_timeout_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff16backoff_timeout_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff16backoff_timeout_E"></span><span id="hateb_local_planner::Backoff::backoff_timeout___double"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1ae8d020f6014756b22345da190a15aba0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_timeout_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff16backoff_timeout_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum allowed time for backoff maneuver. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff5goal_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff5goal_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff5goal_E"></span><span id="hateb_local_planner::Backoff::goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a09f975fea345e1d812ce160ed932b7fd"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff5goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current navigation goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff9old_goal_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff9old_goal_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff9old_goal_E"></span><span id="hateb_local_planner::Backoff::old_goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a37cb0419cee8434376af2bc9ca9444f3"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">old_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff9old_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Previous navigation goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff3tf_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff3tf_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff3tf_E"></span><span id="hateb_local_planner::Backoff::tf___tf::TransformListener"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a015d7d7038d9e24e540bcc2ca6ebea7e"></span><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TransformListener</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tf_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff3tf_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Transform listener for coordinate transformations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff12costmap_ros_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff12costmap_ros_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff12costmap_ros_E"></span><span id="hateb_local_planner::Backoff::costmap_ros___costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1aa4a08359e24385f0ad5d99a283f3ce06"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_ros_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff12costmap_ros_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the costmap ROS wrapper. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff8costmap_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff8costmap_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff8costmap_E"></span><span id="hateb_local_planner::Backoff::costmap___costmap_2d::Costmap2DP"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a1980f1e27353de21de5b7bfc272fe8a3"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff8costmap_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the 2D costmap. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff27robot_circumscribed_radius_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff27robot_circumscribed_radius_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff27robot_circumscribed_radius_E"></span><span id="hateb_local_planner::Backoff::robot_circumscribed_radius___double"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1aa2b1e9ce809aa4a440398bda0966a01d"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_circumscribed_radius_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff27robot_circumscribed_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Radius of circle encompassing the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff9goal_pub_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff9goal_pub_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff9goal_pub_E"></span><span id="hateb_local_planner::Backoff::goal_pub___ros::Publisher"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a57ec518687eeb87f0657772388912d23"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_pub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff9goal_pub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for sending backoff goal poses. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff11poly_pub_l_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff11poly_pub_l_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff11poly_pub_l_E"></span><span id="hateb_local_planner::Backoff::poly_pub_l___ros::Publisher"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a2e39cb348c2f0bdd6957fc0d529f42ae"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">poly_pub_l_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff11poly_pub_l_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for visualizing left grid points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff11poly_pub_r_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff11poly_pub_r_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff11poly_pub_r_E"></span><span id="hateb_local_planner::Backoff::poly_pub_r___ros::Publisher"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a7ab9b6993a738ba15e6f3f59def5f6f2"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">poly_pub_r_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff11poly_pub_r_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for visualizing right grid points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff9goal_sub_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff9goal_sub_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff9goal_sub_E"></span><span id="hateb_local_planner::Backoff::goal_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1ac5f627cc15fc3be0bdeb38f4a3e5b8a7"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff9goal_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for receiving navigation goals. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff16get_plan_client_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff16get_plan_client_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff16get_plan_client_E"></span><span id="hateb_local_planner::Backoff::get_plan_client___ros::ServiceClient"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a4871ce4d8a7842fff729401a06bcecda"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_plan_client_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff16get_plan_client_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Service client for requesting path plans. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff11start_pose_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff11start_pose_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff11start_pose_E"></span><span id="hateb_local_planner::Backoff::start_pose___geometry_msgs::Transform"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a0f2b4a4d1af57a2bdd3aa47c8899195e"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Transform</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_pose_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff11start_pose_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Initial robot pose when backoff maneuver starts. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff18visualize_backoff_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff18visualize_backoff_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff18visualize_backoff_E"></span><span id="hateb_local_planner::Backoff::visualize_backoff___b"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1ae0a2834237dda5874e23df3e7f5cbb60"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualize_backoff_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff18visualize_backoff_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable visualization of backoff grids. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff15self_published_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff15self_published_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff15self_published_E"></span><span id="hateb_local_planner::Backoff::self_published___b"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a0599baffb33b80d2ea6c06099b7f7bdc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">self_published_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff15self_published_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Whether the goal was published by this node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff9new_goal_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff9new_goal_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff9new_goal_E"></span><span id="hateb_local_planner::Backoff::new_goal___b"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a537320f7f1cdfacd9dc3f78ccda5f9c7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">new_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff9new_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Whether a new navigation goal was received. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff10last_time_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff10last_time_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff10last_time_E"></span><span id="hateb_local_planner::Backoff::last_time___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1aaa56fcbf92fb3841e071a8b37e517ace"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_time_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff10last_time_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time of the last update. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff14start_pose_tr_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff14start_pose_tr_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff14start_pose_tr_E"></span><span id="hateb_local_planner::Backoff::start_pose_tr___tf::Transform"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a4c62469cdc8b0f17255087c204eaf304"></span><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Transform</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">start_pose_tr_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff14start_pose_tr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Initial pose stored as transform. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff16robot_to_map_tf_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff16robot_to_map_tf_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff16robot_to_map_tf_E"></span><span id="hateb_local_planner::Backoff::robot_to_map_tf___tf::StampedTransform"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a928b39830276d2e77bc2016b0ebe6614"></span><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">StampedTransform</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_to_map_tf_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff16robot_to_map_tf_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Transform from robot base to map frame. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff14costmap_model_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff14costmap_model_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff14costmap_model_E"></span><span id="hateb_local_planner::Backoff::costmap_model___std::shared_ptr:base_local_planner::CostmapModel:"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a6ca8b3f21c05f5b0a8389fe95af5b1e1"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">base_local_planner</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CostmapModel</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_model_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff14costmap_model_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Model for collision checking with costmap. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff13backoff_goal_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff13backoff_goal_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff13backoff_goal_E"></span><span id="hateb_local_planner::Backoff::backoff_goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a22a87e217d510cdcd61bb1681ba70b46"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff13backoff_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Goal pose for backoff maneuver. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff10left_grid_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff10left_grid_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff10left_grid_E"></span><span id="hateb_local_planner::Backoff::left_grid___std::vector:geometry_msgs::Point:"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a8075b0060a5381eb4a2b4f9c2882561b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">left_grid_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff10left_grid_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Grid points for left obstacle checks. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff11right_grid_E">
+<span id="_CPPv3N19hateb_local_planner7Backoff11right_grid_E"></span><span id="_CPPv2N19hateb_local_planner7Backoff11right_grid_E"></span><span id="hateb_local_planner::Backoff::right_grid___std::vector:geometry_msgs::Point:"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a9f8d5aa440ba6a4877359231cd646253"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">right_grid_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff11right_grid_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Grid points for right obstacle checks. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-functions">Private Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner7Backoff15normalize_angleEd">
+<span id="_CPPv3N19hateb_local_planner7Backoff15normalize_angleEd"></span><span id="_CPPv2N19hateb_local_planner7Backoff15normalize_angleEd"></span><span id="hateb_local_planner::Backoff::normalize_angle__double"></span><span class="target" id="classhateb__local__planner_1_1Backoff_1a40afbef52dea1ff373e969398fdfbd8d"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">normalize_angle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">angle_radians</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner7Backoff15normalize_angleEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Normalizes an angle to the range [-π, π]. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle_radians</strong> – Angle to normalize (in radians) </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Normalized angle in radians </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

@@ -194,10 +194,57 @@
 </section>
 <section id="struct-documentation">
 <h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8RecoveryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8RecoveryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8RecoveryE"></span><span id="hateb_local_planner::HATebConfig::Recovery"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Recovery</span></span></span><br /></dt>
+<dd><p>Recovery/backup related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE"></span><span id="hateb_local_planner::HATebConfig::Recovery::shrink_horizon_backup__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a07a738635944e814d0dd023fade22e15"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shrink_horizon_backup</span></span></span><br /></dt>
+<dd><p>Allows the planner to shrink the horizon temporary (50%) in case of automatically detected issues. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::shrink_horizon_min_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abcf23ec90420639f5cf8f9c6e49dd85e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shrink_horizon_min_duration</span></span></span><br /></dt>
+<dd><p>Specify minimum duration for the reduced horizon in case an infeasible trajectory is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_recovery__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abf6e13307618c5fe4c43a2595a0975fc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_recovery</span></span></span><br /></dt>
+<dd><p>Try to detect and resolve oscillations between multiple solutions in the same equivalence class (robot frequently switches between left/right/forward/backwards) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_v_eps__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a01731934f5b750385a8d0797ff8a0f46"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_v_eps</span></span></span><br /></dt>
+<dd><p>Threshold for the average normalized linear velocity: if oscillation_v_eps and oscillation_omega_eps are not exceeded both, a possible oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_omega_eps__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a79677bedd27b0015893faf8c2df09698"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_omega_eps</span></span></span><br /></dt>
+<dd><p>Threshold for the average normalized angular velocity: if oscillation_v_eps and oscillation_omega_eps are not exceeded both, a possible oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_recovery_min_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a3da9d57c0d6f36a673a5577cb11014b1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_recovery_min_duration</span></span></span><br /></dt>
+<dd><p>Minumum duration [sec] for which the recovery mode is activated after an oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_filter_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abed601287992897d9faf527ddcfe6de5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_filter_duration</span></span></span><br /></dt>
+<dd><p>Filter length/duration [sec] for the detection of oscillations. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

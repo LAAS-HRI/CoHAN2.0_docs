@@ -199,10 +199,31 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentAgentSafetyE">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentAgentSafetyE"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentAgentSafetyE"></span><span id="hateb_local_planner::EdgeAgentAgentSafety"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentAgentSafety"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentAgentSafety</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge"><span class="n"><span class="pre">BaseTebBinaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentAgentSafetyE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining a safety constraint between two agent poses (e.g., humans) in the optimization graph. </p>
+<p>This edge penalizes configurations where two agents come closer than a specified minimum distance. The cost is computed as a quadratic penalty if the distance between the agents (minus their radii) is less than cfg_-&gt;hateb.min_agent_agent_dist. The edge is used to enforce social distancing between agents.</p>
+<p>Inherits from <a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#classhateb__local__planner_1_1BaseTebBinaryEdge"><span class="std std-ref">BaseTebBinaryEdge&lt;1, double, VertexPose, VertexPose&gt;</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentAgentSafety20EdgeAgentAgentSafetyEv">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentAgentSafety20EdgeAgentAgentSafetyEv"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentAgentSafety20EdgeAgentAgentSafetyEv"></span><span id="hateb_local_planner::EdgeAgentAgentSafety::EdgeAgentAgentSafety"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentAgentSafety_1aad47d0fcf0a01457e982db85e05de707"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentAgentSafety</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentAgentSafety20EdgeAgentAgentSafetyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and set measurement to zero (unused). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentAgentSafety12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentAgentSafety12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentAgentSafety12computeErrorEv"></span><span id="hateb_local_planner::EdgeAgentAgentSafety::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentAgentSafety_1a79b3fed9ae67fbf18c9337aaaf1dd388"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentAgentSafety12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the error / cost for the edge. </p>
+<p>Calculates the external distance between two agent poses, subtracts twice the agent radius, and applies a quadratic penalty if the result is below the minimum allowed agent-agent distance.</p>
+<p>The error is stored in _error[0]. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

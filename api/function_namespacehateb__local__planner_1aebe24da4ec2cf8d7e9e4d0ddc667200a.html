@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -137,10 +138,30 @@
 </ul>
 <section id="function-documentation">
 <h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner32penaltyBoundToIntervalDerivativeERKdRKdRKdRKd">
+<span id="_CPPv3N19hateb_local_planner32penaltyBoundToIntervalDerivativeERKdRKdRKdRKd"></span><span id="_CPPv2N19hateb_local_planner32penaltyBoundToIntervalDerivativeERKdRKdRKdRKd"></span><span id="hateb_local_planner::penaltyBoundToIntervalDerivative__doubleCR.doubleCR.doubleCR.doubleCR"></span><span class="target" id="namespacehateb__local__planner_1aebe24da4ec2cf8d7e9e4d0ddc667200a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">penaltyBoundToIntervalDerivative</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">var</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">a</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">b</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">epsilon</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner32penaltyBoundToIntervalDerivativeERKdRKdRKdRKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Derivative of the linear penalty function for bounding <code class="docutils literal notranslate"><span class="pre">var</span></code> to the interval <span class="math notranslate nohighlight">\( a &lt; var &lt; b \)</span>. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="function_namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710.html#namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710"><span class="std std-ref">penaltyBoundToInterval</span></a></p>
 </div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>var</strong> – The scalar that should be bounded </p></li>
+<li><p><strong>a</strong> – lower bound </p></li>
+<li><p><strong>b</strong> – upper bound </p></li>
+<li><p><strong>epsilon</strong> – safty margin (move bound to the interior of the interval) </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Derivative of the penalty function w.r.t. <code class="docutils literal notranslate"><span class="pre">var</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 

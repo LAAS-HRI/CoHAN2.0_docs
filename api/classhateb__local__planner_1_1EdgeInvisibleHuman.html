@@ -199,10 +199,84 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHumanE">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHumanE"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHumanE"></span><span id="hateb_local_planner::EdgeInvisibleHuman"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeInvisibleHuman</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#_CPPv4I_i0EN19hateb_local_planner16BaseTebMultiEdgeE" title="hateb_local_planner::BaseTebMultiEdge"><span class="n"><span class="pre">BaseTebMultiEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHumanE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining a constraint for invisible human agents in the optimization graph. </p>
+<p>This edge penalizes robot configurations that are close to the predicted position of an invisible human agent. The cost is computed based on the agent’s predicted position and the robot’s relative to this prediction, enforcing safe and plausible robot behavior even when the human is not directly observed.</p>
+<p>Inherits from <a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#classhateb__local__planner_1_1BaseTebMultiEdge"><span class="std std-ref">BaseTebMultiEdge&lt;1, const Obstacle*&gt;</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEv">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEv"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEv"></span><span id="hateb_local_planner::EdgeInvisibleHuman::EdgeInvisibleHuman"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a087f896f133cabc0ca819760082542ca"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeInvisibleHuman</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and resize to 3 vertices (agent poses and time diff). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEd">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEd"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEd"></span><span id="hateb_local_planner::EdgeInvisibleHuman::EdgeInvisibleHuman__double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a7fc17014c36caa15880dab3327629c19"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeInvisibleHuman</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman18EdgeInvisibleHumanEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and specify the time for its associated pose (necessary for computeError). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>t</strong> – Estimated time until current pose is reached </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman12computeErrorEv"></span><span id="hateb_local_planner::EdgeInvisibleHuman::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1ae9bc096aa9a102bbc47215d356b5b715"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the error / cost for the edge. </p>
+<p>Calculates the cost associated with the invisible human agent’s predicted state, applying penalties if constraints are violated. The error is stored in _error[0]. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman13setParametersERK11HATebConfigPK8Obstacle">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman13setParametersERK11HATebConfigPK8Obstacle"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman13setParametersERK11HATebConfigPK8Obstacle"></span><span id="hateb_local_planner::EdgeInvisibleHuman::setParameters__HATebConfigCR.ObstacleCP"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a8d0dff3e60efa0c82b45a545bef4c54d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParameters</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman13setParametersERK11HATebConfigPK8Obstacle" title="Link to this definition"></a><br /></dt>
+<dd><p>Set all parameters at once. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cfg</strong> – <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> class </p></li>
+<li><p><strong>robot_model</strong> – Robot model required for distance calculation </p></li>
+<li><p><strong>obstacle</strong> – <a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> msg constaining the invisible human agent’s position and velocity </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman2t_E">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman2t_E"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman2t_E"></span><span id="hateb_local_planner::EdgeInvisibleHuman::t___double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1ac0ac88ea9c34f7b9d7cda2192d67bb13"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">t_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman2t_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman4V_i_E">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman4V_i_E"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman4V_i_E"></span><span id="hateb_local_planner::EdgeInvisibleHuman::V_i___double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a1ffb21820a3e383e07a4a3d981fd25d0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">V_i_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1.5</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman4V_i_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman6a_min_E">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman6a_min_E"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman6a_min_E"></span><span id="hateb_local_planner::EdgeInvisibleHuman::a_min___double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1ae4290c19f597dd22035eb716c46ea133"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">a_min_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.1</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman6a_min_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman7a_norm_E">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman7a_norm_E"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman7a_norm_E"></span><span id="hateb_local_planner::EdgeInvisibleHuman::a_norm___double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1a98dd299c1de726c8db8aeda92299b18f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">a_norm_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.68</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman7a_norm_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18EdgeInvisibleHuman6a_max_E">
+<span id="_CPPv3N19hateb_local_planner18EdgeInvisibleHuman6a_max_E"></span><span id="_CPPv2N19hateb_local_planner18EdgeInvisibleHuman6a_max_E"></span><span id="hateb_local_planner::EdgeInvisibleHuman::a_max___double"></span><span class="target" id="classhateb__local__planner_1_1EdgeInvisibleHuman_1accde96d3ff2b9e40fbd922f45e29d977"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">a_max_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2.94</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18EdgeInvisibleHuman6a_max_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

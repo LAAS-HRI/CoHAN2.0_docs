@@ -199,10 +199,136 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetectorE">
+<span id="_CPPv3N19hateb_local_planner15FailureDetectorE"></span><span id="_CPPv2N19hateb_local_planner15FailureDetectorE"></span><span id="hateb_local_planner::FailureDetector"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FailureDetector</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetectorE" title="Link to this definition"></a><br /></dt>
+<dd><p>This class implements methods in order to detect if the robot got stucked or is oscillating. </p>
+<p>The StuckDetector analyzes the last N commanded velocities in order to detect whether the robot might got stucked or oscillates between left/right/forward/backwards motions. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector15FailureDetectorEv">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector15FailureDetectorEv"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector15FailureDetectorEv"></span><span id="hateb_local_planner::FailureDetector::FailureDetector"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1abffe73939cfb487a96c3908569d0f12d"></span><span class="sig-name descname"><span class="n"><span class="pre">FailureDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector15FailureDetectorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetectorD0Ev">
+<span id="_CPPv3N19hateb_local_planner15FailureDetectorD0Ev"></span><span id="_CPPv2N19hateb_local_planner15FailureDetectorD0Ev"></span><span id="hateb_local_planner::FailureDetector::~FailureDetector"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1a0f642e879016d0727e2b64c9d0b4f153"></span><span class="sig-name descname"><span class="n"><span class="pre">~FailureDetector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetectorD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector15setBufferLengthEi">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector15setBufferLengthEi"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector15setBufferLengthEi"></span><span id="hateb_local_planner::FailureDetector::setBufferLength__i"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1a5aa234fe397d92b44d2b3315a18201f3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setBufferLength</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector15setBufferLengthEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set buffer length (measurement history) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>length</strong> – number of measurements to be kept </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector6updateERKN13geometry_msgs5TwistEddddd">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector6updateERKN13geometry_msgs5TwistEddddd"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector6updateERKN13geometry_msgs5TwistEddddd"></span><span id="hateb_local_planner::FailureDetector::update__geometry_msgs::TwistCR.double.double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1ae02b20b7e651b1fb62b149b6fe743547"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">twist</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_max</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_backwards_max</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">omega_max</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_eps</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">omega_eps</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector6updateERKN13geometry_msgs5TwistEddddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Add a new twist measurement to the internal buffer and compute a new decision. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>twist</strong> – geometry_msgs::Twist velocity information </p></li>
+<li><p><strong>v_max</strong> – maximum forward translational velocity </p></li>
+<li><p><strong>v_backwards_max</strong> – maximum backward translational velocity </p></li>
+<li><p><strong>omega_max</strong> – maximum angular velocity </p></li>
+<li><p><strong>v_eps</strong> – Threshold for the average normalized linear velocity in (0,1) that must not be exceded (e.g. 0.1) </p></li>
+<li><p><strong>omega_eps</strong> – Threshold for the average normalized angular velocity in (0,1) that must not be exceded (e.g. 0.1) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15FailureDetector13isOscillatingEv">
+<span id="_CPPv3NK19hateb_local_planner15FailureDetector13isOscillatingEv"></span><span id="_CPPv2NK19hateb_local_planner15FailureDetector13isOscillatingEv"></span><span id="hateb_local_planner::FailureDetector::isOscillatingC"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1ad4e41d460c9792324f7887d019a978c8"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isOscillating</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15FailureDetector13isOscillatingEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the robot got stucked. </p>
+<p>This call does not compute the actual decision, since it is computed within each <a class="reference internal" href="#classhateb__local__planner_1_1FailureDetector_1ae02b20b7e651b1fb62b149b6fe743547"><span class="std std-ref">update()</span></a> invocation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true if the robot got stucked, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector5clearEv">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector5clearEv"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector5clearEv"></span><span id="hateb_local_planner::FailureDetector::clear"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1af4b9660b75ee24276a1cfbc3fa7dcc6f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector5clearEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Clear the current internal state. </p>
+<p>This call also resets the internal buffer </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector6detectEdd">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector6detectEdd"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector6detectEdd"></span><span id="hateb_local_planner::FailureDetector::detect__double.double"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1ad5f2908e4978f72c4380d881d916dede"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">detect</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v_eps</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">omega_eps</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector6detectEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Detect if the robot got stucked based on the current buffer content. </p>
+<p>Afterwards the status might be checked using gotStucked(); </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v_eps</strong> – Threshold for the average normalized linear velocity in (0,1) that must not be exceded (e.g. 0.1) </p></li>
+<li><p><strong>omega_eps</strong> – Threshold for the average normalized angular velocity in (0,1) that must not be exceded (e.g. 0.1) </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if the robot got stucked, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector7buffer_E">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector7buffer_E"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector7buffer_E"></span><span id="hateb_local_planner::FailureDetector::buffer___boost::circular_buffer:VelMeasurement:"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1a91af318e44eb3143ca3a0de91ae1d67a"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">circular_buffer</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurementE" title="hateb_local_planner::FailureDetector::VelMeasurement"><span class="n"><span class="pre">VelMeasurement</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buffer_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector7buffer_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Circular buffer to store the last measurements. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1FailureDetector_1a5aa234fe397d92b44d2b3315a18201f3"><span class="std std-ref">setBufferLength</span></a></p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector12oscillating_E">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector12oscillating_E"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector12oscillating_E"></span><span id="hateb_local_planner::FailureDetector::oscillating___b"></span><span class="target" id="classhateb__local__planner_1_1FailureDetector_1af3edca7b777154883f021245c6522277"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillating_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector12oscillating_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current state: true if robot is oscillating. </p>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurementE">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector14VelMeasurementE"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector14VelMeasurementE"></span><span id="hateb_local_planner::FailureDetector::VelMeasurement"></span><span class="target" id="structhateb__local__planner_1_1FailureDetector_1_1VelMeasurement"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VelMeasurement</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurementE" title="Link to this definition"></a><br /></dt>
+<dd><p>Variables to be monitored </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurement1vE">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector14VelMeasurement1vE"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector14VelMeasurement1vE"></span><span id="hateb_local_planner::FailureDetector::VelMeasurement::v__double"></span><span class="target" id="structhateb__local__planner_1_1FailureDetector_1_1VelMeasurement_1aa2850459b4bee97645d32f82a0f14e5d"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">v</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurement1vE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurement5omegaE">
+<span id="_CPPv3N19hateb_local_planner15FailureDetector14VelMeasurement5omegaE"></span><span id="_CPPv2N19hateb_local_planner15FailureDetector14VelMeasurement5omegaE"></span><span id="hateb_local_planner::FailureDetector::VelMeasurement::omega__double"></span><span class="target" id="structhateb__local__planner_1_1FailureDetector_1_1VelMeasurement_1af164608b9be8ee9071e415de76c764cd"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">omega</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15FailureDetector14VelMeasurement5omegaE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 

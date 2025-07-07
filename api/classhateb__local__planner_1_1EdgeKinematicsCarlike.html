@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,49 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21EdgeKinematicsCarlikeE">
+<span id="_CPPv3N19hateb_local_planner21EdgeKinematicsCarlikeE"></span><span id="_CPPv2N19hateb_local_planner21EdgeKinematicsCarlikeE"></span><span id="hateb_local_planner::EdgeKinematicsCarlike"></span><span class="target" id="classhateb__local__planner_1_1EdgeKinematicsCarlike"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeKinematicsCarlike</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge"><span class="n"><span class="pre">BaseTebBinaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21EdgeKinematicsCarlikeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for satisfying the non-holonomic kinematics of a carlike mobile robot. </p>
+<p>The edge depends on two vertices <span class="math notranslate nohighlight">\( \mathbf{s}_i, \mathbf{s}_{ip1} \)</span> and minimizes a geometric interpretation of the non-holonomic constraint:<ul class="simple">
+<li><p>C. Rösmann et al.: Trajectory modification considering dynamic constraints of autonomous robots, ROBOTIK, 2012.</p></li>
+</ul>
+</p>
+<p>The definition is identically to the one of the differential drive robot. Additionally, this edge incorporates a minimum turning radius that is required by carlike robots. The turning radius is defined by <span class="math notranslate nohighlight">\( r=v/omega \)</span>.</p>
+<p>The <em>weight</em><p>can be set using setInformation(): Matrix element 1,1: (Choose a very high value: ~1000).</p>
+<p>The second equation enforces a minimum turning radius. The</p>
+<em>weight</em><p>can be set using setInformation(): Matrix element 2,2.</p>
+<p>The dimension of the error / cost vector is 3: the first component represents the nonholonomic constraint cost, the second one backward-drive cost and the third one the minimum turning radius</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>TebOptimalPlanner::AddEdgesKinematics, <a class="reference internal" href="classhateb__local__planner_1_1EdgeKinematicsDiffDrive.html#classhateb__local__planner_1_1EdgeKinematicsDiffDrive"><span class="std std-ref">EdgeKinematicsDiffDrive</span></a></p>
 </div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Bounding the turning radius from below is not affected by the penalty_epsilon parameter, the user might add an extra margin to the min_turning_radius param. </p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not forget to call <a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#classhateb__local__planner_1_1BaseTebBinaryEdge_1abc6ae7a9e1fd02416a4a94cbb785ba19"><span class="std std-ref">setHATebConfig()</span></a></p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21EdgeKinematicsCarlike21EdgeKinematicsCarlikeEv">
+<span id="_CPPv3N19hateb_local_planner21EdgeKinematicsCarlike21EdgeKinematicsCarlikeEv"></span><span id="_CPPv2N19hateb_local_planner21EdgeKinematicsCarlike21EdgeKinematicsCarlikeEv"></span><span id="hateb_local_planner::EdgeKinematicsCarlike::EdgeKinematicsCarlike"></span><span class="target" id="classhateb__local__planner_1_1EdgeKinematicsCarlike_1a4c154dffb647b56daaa44be6960503e4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeKinematicsCarlike</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21EdgeKinematicsCarlike21EdgeKinematicsCarlikeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner21EdgeKinematicsCarlike12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner21EdgeKinematicsCarlike12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner21EdgeKinematicsCarlike12computeErrorEv"></span><span id="hateb_local_planner::EdgeKinematicsCarlike::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeKinematicsCarlike_1abbffb31ef8aafbc2c1f82a1ab37789b2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner21EdgeKinematicsCarlike12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

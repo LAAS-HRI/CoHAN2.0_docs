@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,61 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocityE">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocityE"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocityE"></span><span id="hateb_local_planner::EdgeVelocity"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeVelocity</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#_CPPv4I_i0EN19hateb_local_planner16BaseTebMultiEdgeE" title="hateb_local_planner::BaseTebMultiEdge"><span class="n"><span class="pre">BaseTebMultiEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">2</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocityE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for limiting the translational and rotational velocity. </p>
+<p>The edge depends on three vertices <span class="math notranslate nohighlight">\( \mathbf{s}_i, \mathbf{s}_{ip1}, \Delta T_i \)</span> and minimizes: <span class="math notranslate nohighlight">\( \min \textrm{penaltyInterval}( [v,omega]^T ) \cdot weight \)</span>. <em>v</em> is calculated using the difference quotient and the position parts of both poses. <em>omega</em> is calculated using the difference quotient of both yaw angles followed by a normalization to [-pi, pi]. <em>weight</em> can be set using setInformation(). <em>penaltyInterval</em> denotes the penalty function, see <a class="reference internal" href="function_namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710.html#namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710"><span class="std std-ref">penaltyBoundToInterval()</span></a><p>.</p>
+<p>The dimension of the error / cost vector is 2: the first component represents the translational velocity and the second one the rotational velocity.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner_1a9e66de71f2e136a715296dda5286fa92"><span class="std std-ref">TebOptimalPlanner::AddEdgesVelocity</span></a></p>
 </div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not forget to call <a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#classhateb__local__planner_1_1BaseTebMultiEdge_1ae126de1d25032cf83de82823cdcf74bc"><span class="std std-ref">setHATebConfig()</span></a></p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity12EdgeVelocityEv">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity12EdgeVelocityEv"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity12EdgeVelocityEv"></span><span id="hateb_local_planner::EdgeVelocity::EdgeVelocity"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1ad89ecf6ebc285ddbcaddd7212876baa9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeVelocity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity12EdgeVelocityEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity12computeErrorEv"></span><span id="hateb_local_planner::EdgeVelocity::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1a6fa95bfad91967a3acb1a39ab8f02fac"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity13setParametersERK11HATebConfigPK18BaseFootprintModelKi">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity13setParametersERK11HATebConfigPK18BaseFootprintModelKi"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity13setParametersERK11HATebConfigPK18BaseFootprintModelKi"></span><span id="hateb_local_planner::EdgeVelocity::setParameters__HATebConfigCR.BaseFootprintModelCP.iC"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1a5f4fa6ea85955104b46fcbba16844e41"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParameters</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1BaseFootprintModel.html#_CPPv4N19hateb_local_planner18BaseFootprintModelE" title="hateb_local_planner::BaseFootprintModel"><span class="n"><span class="pre">BaseFootprintModel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">robot_model</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">isMode</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity13setParametersERK11HATebConfigPK18BaseFootprintModelKi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity12robot_model_E">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity12robot_model_E"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity12robot_model_E"></span><span id="hateb_local_planner::EdgeVelocity::robot_model___BaseFootprintModelCP"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1aed34022cba7c9f0a69852a4df14b17b2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1BaseFootprintModel.html#_CPPv4N19hateb_local_planner18BaseFootprintModelE" title="hateb_local_planner::BaseFootprintModel"><span class="n"><span class="pre">BaseFootprintModel</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">robot_model_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity12robot_model_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity4obs_E">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity4obs_E"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity4obs_E"></span><span id="hateb_local_planner::EdgeVelocity::obs___ObstacleP"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1ad2d1146a46048fceda6c05710b650048"></span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">obs_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">new</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PointObstacle.html#_CPPv4N19hateb_local_planner13PointObstacleE" title="hateb_local_planner::PointObstacle"><span class="n"><span class="pre">PointObstacle</span></span></a><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity4obs_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner12EdgeVelocity5mode_E">
+<span id="_CPPv3N19hateb_local_planner12EdgeVelocity5mode_E"></span><span id="_CPPv2N19hateb_local_planner12EdgeVelocity5mode_E"></span><span id="hateb_local_planner::EdgeVelocity::mode___i"></span><span class="target" id="classhateb__local__planner_1_1EdgeVelocity_1a0eb6dc692379db9dace663597fac2f02"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner12EdgeVelocity5mode_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

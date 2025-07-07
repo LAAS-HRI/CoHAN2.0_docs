@@ -199,10 +199,90 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayerE">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayerE"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayerE"></span><span id="cohan_layers::AgentVisibilityLayer"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AgentVisibilityLayer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">cohan_layers</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classcohan__layers_1_1AgentLayer.html#_CPPv4N12cohan_layers10AgentLayerE" title="cohan_layers::AgentLayer"><span class="n"><span class="pre">AgentLayer</span></span></a><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayerE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer20AgentVisibilityLayerEv">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer20AgentVisibilityLayerEv"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer20AgentVisibilityLayerEv"></span><span id="cohan_layers::AgentVisibilityLayer::AgentVisibilityLayer"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a2e0cd1bdaa6f2c31dc848748dd0ec3c1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AgentVisibilityLayer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer20AgentVisibilityLayerEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer12onInitializeEv">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer12onInitializeEv"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer12onInitializeEv"></span><span id="cohan_layers::AgentVisibilityLayer::onInitialize"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a94a1c3b5bce82dc749d9b04ba85050a6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInitialize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer12onInitializeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the <a class="reference internal" href="#classcohan__layers_1_1AgentVisibilityLayer"><span class="std std-ref">AgentVisibilityLayer</span></a> and sets up ROS communication. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer22updateBoundsFromAgentsEPdPdPdPd">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer22updateBoundsFromAgentsEPdPdPdPd"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer22updateBoundsFromAgentsEPdPdPdPd"></span><span id="cohan_layers::AgentVisibilityLayer::updateBoundsFromAgents__doubleP.doubleP.doubleP.doubleP"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1ac06ddf80a829b6ec2c5fde66e6ba4e8e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateBoundsFromAgents</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_y</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer22updateBoundsFromAgentsEPdPdPdPd" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the bounds of the costmap based on agent positions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_x</strong> – Minimum x-coordinate of the bounds </p></li>
+<li><p><strong>min_y</strong> – Minimum y-coordinate of the bounds </p></li>
+<li><p><strong>max_x</strong> – Maximum x-coordinate of the bounds </p></li>
+<li><p><strong>max_y</strong> – Maximum y-coordinate of the bounds </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer11updateCostsERN10costmap_2d9Costmap2DEiiii">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer11updateCostsERN10costmap_2d9Costmap2DEiiii"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer11updateCostsERN10costmap_2d9Costmap2DEiiii"></span><span id="cohan_layers::AgentVisibilityLayer::updateCosts__costmap_2d::Costmap2DR.i.i.i.i"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a8b432ee0d8bb76a05fd430a8874f6acd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateCosts</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">master_grid</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_j</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_j</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer11updateCostsERN10costmap_2d9Costmap2DEiiii" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the costmap with agent visibility information. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>master_grid</strong> – Reference to the master costmap grid </p></li>
+<li><p><strong>min_i</strong> – Minimum i-index of the grid </p></li>
+<li><p><strong>min_j</strong> – Minimum j-index of the grid </p></li>
+<li><p><strong>max_i</strong> – Maximum i-index of the grid </p></li>
+<li><p><strong>max_j</strong> – Maximum j-index of the grid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer9configureER26AgentVisibilityLayerConfig8uint32_t">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer9configureER26AgentVisibilityLayerConfig8uint32_t"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer9configureER26AgentVisibilityLayerConfig8uint32_t"></span><span id="cohan_layers::AgentVisibilityLayer::configure__AgentVisibilityLayerConfigR.uint32_t"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a2a89616bbe86dc910f36407a890542d9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">configure</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">AgentVisibilityLayerConfig</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">config</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer9configureER26AgentVisibilityLayerConfig8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Configures the <a class="reference internal" href="#classcohan__layers_1_1AgentVisibilityLayer"><span class="std std-ref">AgentVisibilityLayer</span></a> using dynamic reconfigure. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> – Configuration parameters for the layer </p></li>
+<li><p><strong>level</strong> – Reconfiguration level </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer7server_E">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer7server_E"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer7server_E"></span><span id="cohan_layers::AgentVisibilityLayer::server___dynamic_reconfigure::Server:AgentVisibilityLayerConfig:P"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a0d6d901a6252604090b12908e1e3e9d7"></span><span class="n"><span class="pre">dynamic_reconfigure</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Server</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">AgentVisibilityLayerConfig</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">server_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer7server_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Dynamic reconfigure server for <a class="reference internal" href="#classcohan__layers_1_1AgentVisibilityLayer"><span class="std std-ref">AgentVisibilityLayer</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers20AgentVisibilityLayer2f_E">
+<span id="_CPPv3N12cohan_layers20AgentVisibilityLayer2f_E"></span><span id="_CPPv2N12cohan_layers20AgentVisibilityLayer2f_E"></span><span id="cohan_layers::AgentVisibilityLayer::f___dynamic_reconfigure::Server:AgentVisibilityLayerConfig:::CallbackType"></span><span class="target" id="classcohan__layers_1_1AgentVisibilityLayer_1a4e47ac1b7a7d3309f87783707987836a"></span><span class="n"><span class="pre">dynamic_reconfigure</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Server</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">AgentVisibilityLayerConfig</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CallbackType</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers20AgentVisibilityLayer2f_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback type for dynamic reconfigure server. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

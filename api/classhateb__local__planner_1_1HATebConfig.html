@@ -207,10 +207,1067 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfigE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfigE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfigE"></span><span id="hateb_local_planner::HATebConfig"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HATebConfig</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="Link to this definition"></a><br /></dt>
+<dd><p>Config class for the hateb_local_planner and its components. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig11HATebConfigEv">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig11HATebConfigEv"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig11HATebConfigEv"></span><span id="hateb_local_planner::HATebConfig::HATebConfig"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a3137cc9fd23e69847512d739f15ac374"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HATebConfig</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig11HATebConfigEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct the <a class="reference internal" href="#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> using default values. </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<p>If the <strong>rosparam</strong> server or/and <strong>dynamic_reconfigure</strong><p>(rqt_reconfigure) node are used, the default variables will be overwritten:</p>
+<p>E.g. if</p>
+<em>base_local_planner</em> is utilized as plugin for the navigation stack, the initialize() method will register a dynamic_reconfigure server. A subset (not all but most) of the parameters are considered for dynamic modifications. All parameters considered by the dynamic_reconfigure server (and their <strong>default</strong> values) are set in <em>PROJECT_SRC/cfg/HATebLocalPlannerReconfigure.cfg</em><p>.</p>
+<p>In addition the rosparam server can be queried to get parameters e.g. defiend in a launch file. The plugin source (or a possible binary source) can call</p>
+<a class="reference internal" href="#classhateb__local__planner_1_1HATebConfig_1a9e2899f20427243b8865c4463d1faff3"><span class="std std-ref">loadRosParamFromNodeHandle()</span></a> to update the parameters. In <em>summary</em>, default parameters are loaded in the following order (the right one overrides the left ones): <strong><a class="reference internal" href="#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> Constructor defaults &lt;&lt; dynamic_reconfigure defaults &lt;&lt; rosparam server defaults</strong></p>
 </div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig26loadRosParamFromNodeHandleERKN3ros10NodeHandleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig26loadRosParamFromNodeHandleERKN3ros10NodeHandleE"></span><span id="hateb_local_planner::HATebConfig::loadRosParamFromNodeHandle__ros::NodeHandleCR"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a9e2899f20427243b8865c4463d1faff3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loadRosParamFromNodeHandle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nh</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig26loadRosParamFromNodeHandleERKN3ros10NodeHandleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Load parmeters from the ros param server. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nh</strong> – const reference to the local ros::NodeHandle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig11reconfigureER34HATebLocalPlannerReconfigureConfig">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig11reconfigureER34HATebLocalPlannerReconfigureConfig"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig11reconfigureER34HATebLocalPlannerReconfigureConfig"></span><span id="hateb_local_planner::HATebConfig::reconfigure__HATebLocalPlannerReconfigureConfigR"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a7db4cf8fa64da1918c96a76350c99b30"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reconfigure</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">HATebLocalPlannerReconfigureConfig</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig11reconfigureER34HATebLocalPlannerReconfigureConfig" title="Link to this definition"></a><br /></dt>
+<dd><p>Reconfigure parameters from the dynamic_reconfigure config. Change parameters dynamically (e.g. with <code class="docutils literal notranslate"><span class="pre">rosrun</span> <span class="pre">rqt_reconfigure</span> <span class="pre">rqt_reconfigure</span></code>). A reconfigure server needs to be instantiated that calls this method in it’s callback. In case of the plugin <em>hateb_local_planner</em> default values are defined in <em>PROJECT_SRC/cfg/HATebLocalPlannerReconfigure.cfg</em>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cfg</strong> – Config class autogenerated by dynamic_reconfigure according to the cfg-file mentioned above. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner11HATebConfig15checkParametersEv">
+<span id="_CPPv3NK19hateb_local_planner11HATebConfig15checkParametersEv"></span><span id="_CPPv2NK19hateb_local_planner11HATebConfig15checkParametersEv"></span><span id="hateb_local_planner::HATebConfig::checkParametersC"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1ac8d6773971b7c23ace6e20581011eaaa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkParameters</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner11HATebConfig15checkParametersEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check parameters and print warnings in case of discrepancies. </p>
+<p>Call this method whenever parameters are changed using public interfaces to inform the user about some improper uses. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner11HATebConfig15checkDeprecatedERKN3ros10NodeHandleE">
+<span id="_CPPv3NK19hateb_local_planner11HATebConfig15checkDeprecatedERKN3ros10NodeHandleE"></span><span id="_CPPv2NK19hateb_local_planner11HATebConfig15checkDeprecatedERKN3ros10NodeHandleE"></span><span id="hateb_local_planner::HATebConfig::checkDeprecated__ros::NodeHandleCRC"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a9642a12072a2cf296475ca9e46c7e429"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkDeprecated</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nh</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner11HATebConfig15checkDeprecatedERKN3ros10NodeHandleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if some deprecated parameters are found and print warnings. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nh</strong> – const reference to the local ros::NodeHandle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig11configMutexEv">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig11configMutexEv"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig11configMutexEv"></span><span id="hateb_local_planner::HATebConfig::configMutex"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a0325419503353c2a700f20c836858dd3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">configMutex</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig11configMutexEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the internal config mutex. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig3ns_E">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig3ns_E"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig3ns_E"></span><span id="hateb_local_planner::HATebConfig::ns___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a2921801e707b0d9214baf48aaf829e50"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace of the planner, used for topic, service and parameter names. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10odom_topicE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10odom_topicE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10odom_topicE"></span><span id="hateb_local_planner::HATebConfig::odom_topic__ss"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a2e0d10775dd34f5326525f5a394ef1a3"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">odom_topic</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10odom_topicE" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic name of the odometry message, provided by the robot driver or simulator. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9map_frameE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9map_frameE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9map_frameE"></span><span id="hateb_local_planner::HATebConfig::map_frame__ss"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1aab837855d879246e75679018ac66655c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">map_frame</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9map_frameE" title="Link to this definition"></a><br /></dt>
+<dd><p>Global planning frame. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig11robot_modelE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig11robot_modelE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig11robot_modelE"></span><span id="hateb_local_planner::HATebConfig::robot_model__FootprintModelPtr"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a4852da2319b1e625f751dc771e35313a"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491.html#_CPPv4N19hateb_local_planner17FootprintModelPtrE" title="hateb_local_planner::FootprintModelPtr"><span class="n"><span class="pre">FootprintModelPtr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_model</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig11robot_modelE" title="Link to this definition"></a><br /></dt>
+<dd><p>model of the robot’s footprint </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig11human_modelE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig11human_modelE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig11human_modelE"></span><span id="hateb_local_planner::HATebConfig::human_model__CircularFootprintPtr"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a1e83960102cc75c1876b830b69a97076"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a96f5d84de31cd8eeeffbbf5341bac099.html#_CPPv4N19hateb_local_planner20CircularFootprintPtrE" title="hateb_local_planner::CircularFootprintPtr"><span class="n"><span class="pre">CircularFootprintPtr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">human_model</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig11human_modelE" title="Link to this definition"></a><br /></dt>
+<dd><p>model of the agent’s footprint </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13planning_modeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13planning_modeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13planning_modeE"></span><span id="hateb_local_planner::HATebConfig::planning_mode__i"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a43510bba0e334b07ae145e289af7363d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planning_mode</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13planning_modeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Planning mode (autonomous vs human-aware) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10trajectoryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10trajectoryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10trajectoryE"></span><span id="hateb_local_planner::HATebConfig::trajectory__hateb_local_planner::HATebConfig::Trajectory"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a66f7d8f18503575290b9e27dc81c9fd1"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig10TrajectoryE" title="hateb_local_planner::HATebConfig::Trajectory"><span class="n"><span class="pre">Trajectory</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">trajectory</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10trajectoryE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5robotE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5robotE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5robotE"></span><span id="hateb_local_planner::HATebConfig::robot__hateb_local_planner::HATebConfig::Robot"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a7453a4721bc6ae407a6a8354c0bada97"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig5RobotE" title="hateb_local_planner::HATebConfig::Robot"><span class="n"><span class="pre">Robot</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5robotE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5agentE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5agentE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5agentE"></span><span id="hateb_local_planner::HATebConfig::agent__hateb_local_planner::HATebConfig::Agent"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a59b5f0b0ce9c78b67f4c0240cdd096a7"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig5AgentE" title="hateb_local_planner::HATebConfig::Agent"><span class="n"><span class="pre">Agent</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5agentE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig14goal_toleranceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig14goal_toleranceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig14goal_toleranceE"></span><span id="hateb_local_planner::HATebConfig::goal_tolerance__hateb_local_planner::HATebConfig::GoalTolerance"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a774f415f6af2158f151285083ecf0129"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalToleranceE" title="hateb_local_planner::HATebConfig::GoalTolerance"><span class="n"><span class="pre">GoalTolerance</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_tolerance</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig14goal_toleranceE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9obstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9obstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9obstaclesE"></span><span id="hateb_local_planner::HATebConfig::obstacles__hateb_local_planner::HATebConfig::Obstacles"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a8c6e938912d08245988e7e9e822bb781"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig9ObstaclesE" title="hateb_local_planner::HATebConfig::Obstacles"><span class="n"><span class="pre">Obstacles</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacles</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9obstaclesE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> related parameters. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5optimE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5optimE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5optimE"></span><span id="hateb_local_planner::HATebConfig::optim__hateb_local_planner::HATebConfig::Optimization"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a162e554b1458c4a47c8f5d93c8285589"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig12OptimizationE" title="hateb_local_planner::HATebConfig::Optimization"><span class="n"><span class="pre">Optimization</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optim</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5optimE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> related parameters. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5hatebE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5hatebE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5hatebE"></span><span id="hateb_local_planner::HATebConfig::hateb__hateb_local_planner::HATebConfig::Hateb"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1af59ebc08ba1da01cb166b76483ac5f89"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig5HatebE" title="hateb_local_planner::HATebConfig::Hateb"><span class="n"><span class="pre">Hateb</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hateb</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5hatebE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8recoveryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8recoveryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8recoveryE"></span><span id="hateb_local_planner::HATebConfig::recovery__hateb_local_planner::HATebConfig::Recovery"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1a50d1daf2f7da03c3b5b48737a924099d"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig8RecoveryE" title="hateb_local_planner::HATebConfig::Recovery"><span class="n"><span class="pre">Recovery</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">recovery</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8recoveryE" title="Link to this definition"></a><br /></dt>
+<dd><p>Parameters related to recovery and backup strategies. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13visualizationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13visualizationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13visualizationE"></span><span id="hateb_local_planner::HATebConfig::visualization__hateb_local_planner::HATebConfig::Visualization"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1aa06ecc9c7cd1340e7ece987a25b18d9b"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv4N19hateb_local_planner11HATebConfig13VisualizationE" title="hateb_local_planner::HATebConfig::Visualization"><span class="n"><span class="pre">Visualization</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualization</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13visualizationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13config_mutex_E">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13config_mutex_E"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13config_mutex_E"></span><span id="hateb_local_planner::HATebConfig::config_mutex___boost::mutex"></span><span class="target" id="classhateb__local__planner_1_1HATebConfig_1ade14e80c40dad843b3e8a56272d359ab"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">config_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13config_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex for config accesses and changes. </p>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5AgentE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5AgentE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5AgentE"></span><span id="hateb_local_planner::HATebConfig::Agent"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Agent</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5AgentE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Agent.html#structhateb__local__planner_1_1HATebConfig_1_1Agent"><span class="std std-ref">Agent</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent6radiusE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent6radiusE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent6radiusE"></span><span id="hateb_local_planner::HATebConfig::Agent::radius__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a3c6003d81f1ba09f7c58c6a907f66329"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">radius</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent6radiusE" title="Link to this definition"></a><br /></dt>
+<dd><p>Radius of the agent for collision checking. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent9max_vel_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent9max_vel_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent9max_vel_xE"></span><span id="hateb_local_planner::HATebConfig::Agent::max_vel_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1acb81cd1baa261a6acb9f89f7b2782b67"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent9max_vel_xE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum translational velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent9max_vel_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent9max_vel_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent9max_vel_yE"></span><span id="hateb_local_planner::HATebConfig::Agent::max_vel_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a56e059255e889c7db50a7c001057da22"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent9max_vel_yE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum strafing velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent19max_vel_x_backwardsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent19max_vel_x_backwardsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent19max_vel_x_backwardsE"></span><span id="hateb_local_planner::HATebConfig::Agent::max_vel_x_backwards__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1ad75f81748f78ca23c5346169b72dcdd7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_x_backwards</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent19max_vel_x_backwardsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum backwards velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent19min_vel_x_backwardsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent19min_vel_x_backwardsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent19min_vel_x_backwardsE"></span><span id="hateb_local_planner::HATebConfig::Agent::min_vel_x_backwards__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1adf69fe7534b502cf0634b5a886162b88"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_vel_x_backwards</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent19min_vel_x_backwardsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum backwards velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent13max_vel_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent13max_vel_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent13max_vel_thetaE"></span><span id="hateb_local_planner::HATebConfig::Agent::max_vel_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1ad7c3a9af8a1a7c4d92c7650cb84079e2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent13max_vel_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum angular velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent13min_vel_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent13min_vel_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent13min_vel_thetaE"></span><span id="hateb_local_planner::HATebConfig::Agent::min_vel_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a2aa56bc12901566c9cc3357ff24297e2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_vel_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent13min_vel_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum angular velocity of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent9acc_lim_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent9acc_lim_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent9acc_lim_xE"></span><span id="hateb_local_planner::HATebConfig::Agent::acc_lim_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1af548b389fa9ead7c880686ef92184b97"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent9acc_lim_xE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum translational acceleration of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent9acc_lim_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent9acc_lim_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent9acc_lim_yE"></span><span id="hateb_local_planner::HATebConfig::Agent::acc_lim_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a7e4709d874e4b37ce65b8aec9dac3130"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent9acc_lim_yE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum strafing acceleration of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent13acc_lim_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent13acc_lim_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent13acc_lim_thetaE"></span><span id="hateb_local_planner::HATebConfig::Agent::acc_lim_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a051b64a96bed9d82866cdf67b570e434"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent13acc_lim_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum angular acceleration of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent3fovE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent3fovE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent3fovE"></span><span id="hateb_local_planner::HATebConfig::Agent::fov__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1a76a18805eecf49b7fb5e4580270ee478"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fov</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent3fovE" title="Link to this definition"></a><br /></dt>
+<dd><p>Field of view angle of the agent in radians. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Agent14num_moving_avgE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Agent14num_moving_avgE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Agent14num_moving_avgE"></span><span id="hateb_local_planner::HATebConfig::Agent::num_moving_avg__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Agent_1abacddb4b8fe4f7818f3e0f5cb1172b65"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">num_moving_avg</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Agent14num_moving_avgE" title="Link to this definition"></a><br /></dt>
+<dd><p>Number of samples for moving average calculation. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13GoalToleranceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13GoalToleranceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13GoalToleranceE"></span><span id="hateb_local_planner::HATebConfig::GoalTolerance"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GoalTolerance</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalToleranceE" title="Link to this definition"></a><br /></dt>
+<dd><p>Goal tolerance related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance18yaw_goal_toleranceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13GoalTolerance18yaw_goal_toleranceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13GoalTolerance18yaw_goal_toleranceE"></span><span id="hateb_local_planner::HATebConfig::GoalTolerance::yaw_goal_tolerance__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a29ad35bee6d79661681cd90bbdb771a4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">yaw_goal_tolerance</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance18yaw_goal_toleranceE" title="Link to this definition"></a><br /></dt>
+<dd><p>Allowed final orientation error. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance17xy_goal_toleranceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13GoalTolerance17xy_goal_toleranceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13GoalTolerance17xy_goal_toleranceE"></span><span id="hateb_local_planner::HATebConfig::GoalTolerance::xy_goal_tolerance__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a02265fb691f79a74c7b22e0500b78406"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">xy_goal_tolerance</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance17xy_goal_toleranceE" title="Link to this definition"></a><br /></dt>
+<dd><p>Allowed final euclidean distance to the goal position. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance13free_goal_velE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13GoalTolerance13free_goal_velE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13GoalTolerance13free_goal_velE"></span><span id="hateb_local_planner::HATebConfig::GoalTolerance::free_goal_vel__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1a962382f59597834440ea1409304756aa"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">free_goal_vel</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance13free_goal_velE" title="Link to this definition"></a><br /></dt>
+<dd><p>Allow the robot’s velocity to be nonzero (usally max_vel) for planning purposes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance20complete_global_planE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13GoalTolerance20complete_global_planE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13GoalTolerance20complete_global_planE"></span><span id="hateb_local_planner::HATebConfig::GoalTolerance::complete_global_plan__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance_1ab13dfdeb274b41496cb697aac87965fc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">complete_global_plan</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13GoalTolerance20complete_global_planE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5HatebE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5HatebE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5HatebE"></span><span id="hateb_local_planner::HATebConfig::Hateb"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Hateb</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5HatebE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb13planning_modeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb13planning_modeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb13planning_modeE"></span><span id="hateb_local_planner::HATebConfig::Hateb::planning_mode__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a9b8681940ebe4f15ca4af2d4d829c462"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planning_mode</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb13planning_modeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Mode of planning (autonomous vs human-aware) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb24use_agent_robot_safety_cE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb24use_agent_robot_safety_cE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb24use_agent_robot_safety_cE"></span><span id="hateb_local_planner::HATebConfig::Hateb::use_agent_robot_safety_c__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1ae661cc4ed14cdd70726c90e3ae378cc4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_agent_robot_safety_c</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb24use_agent_robot_safety_cE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable agent-robot safety constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb24use_agent_agent_safety_cE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb24use_agent_agent_safety_cE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb24use_agent_agent_safety_cE"></span><span id="hateb_local_planner::HATebConfig::Hateb::use_agent_agent_safety_c__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1ae38862558173772c65e05126662abad2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_agent_agent_safety_c</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb24use_agent_agent_safety_cE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable agent-agent safety constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb25use_agent_robot_rel_vel_cE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb25use_agent_robot_rel_vel_cE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb25use_agent_robot_rel_vel_cE"></span><span id="hateb_local_planner::HATebConfig::Hateb::use_agent_robot_rel_vel_c__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1aea87069bac63102858bd580a2ade46f0"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_agent_robot_rel_vel_c</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb25use_agent_robot_rel_vel_cE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable relative velocity constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb20add_invisible_humansE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb20add_invisible_humansE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb20add_invisible_humansE"></span><span id="hateb_local_planner::HATebConfig::Hateb::add_invisible_humans__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a6e38ed67abafe64dc3e7a269817ba345"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_invisible_humans</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb20add_invisible_humansE" title="Link to this definition"></a><br /></dt>
+<dd><p>Include invisible humans in planning. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb22use_agent_robot_visi_cE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb22use_agent_robot_visi_cE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb22use_agent_robot_visi_cE"></span><span id="hateb_local_planner::HATebConfig::Hateb::use_agent_robot_visi_c__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a7eccf723beca67289fe888f39dc25728"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_agent_robot_visi_c</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb22use_agent_robot_visi_cE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable visibility constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb21use_agent_elastic_velE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb21use_agent_elastic_velE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb21use_agent_elastic_velE"></span><span id="hateb_local_planner::HATebConfig::Hateb::use_agent_elastic_vel__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a9791b284ee3899e1fbb04daf44727822"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_agent_elastic_vel</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb21use_agent_elastic_velE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable elastic velocity constraints for agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb26pose_prediction_reset_timeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb26pose_prediction_reset_timeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb26pose_prediction_reset_timeE"></span><span id="hateb_local_planner::HATebConfig::Hateb::pose_prediction_reset_time__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1ac893fe24c018ec17a0476fb577e52097"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pose_prediction_reset_time</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb26pose_prediction_reset_timeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Time after which pose prediction is reset. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb20min_agent_robot_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb20min_agent_robot_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb20min_agent_robot_distE"></span><span id="hateb_local_planner::HATebConfig::Hateb::min_agent_robot_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a5341ada4833a655a43134d7bf064650e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_agent_robot_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb20min_agent_robot_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum distance that should be maintained agent and robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb20min_agent_agent_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb20min_agent_agent_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb20min_agent_agent_distE"></span><span id="hateb_local_planner::HATebConfig::Hateb::min_agent_agent_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1aa93c9f5b6e5786fdda5c2f1cf0f12314"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_agent_agent_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb20min_agent_agent_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum distance that should be maintained between agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb22rel_vel_cost_thresholdE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb22rel_vel_cost_thresholdE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb22rel_vel_cost_thresholdE"></span><span id="hateb_local_planner::HATebConfig::Hateb::rel_vel_cost_threshold__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a468389bdf24aec0362705b837ca74361"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rel_vel_cost_threshold</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb22rel_vel_cost_thresholdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Threshold value for Relative Velocity Constraint (lower means higher reaction) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb25invisible_human_thresholdE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb25invisible_human_thresholdE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb25invisible_human_thresholdE"></span><span id="hateb_local_planner::HATebConfig::Hateb::invisible_human_threshold__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a8f8062a5fd9b16eec2c466a68cc5b9fb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">invisible_human_threshold</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb25invisible_human_thresholdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Threshold value for Invisible Humans Constraint (higher means higher reaction) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Hateb25visibility_cost_thresholdE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Hateb25visibility_cost_thresholdE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Hateb25visibility_cost_thresholdE"></span><span id="hateb_local_planner::HATebConfig::Hateb::visibility_cost_threshold__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Hateb_1a5afcdd266e968dc6bf5cbf899864b6c4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visibility_cost_threshold</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Hateb25visibility_cost_thresholdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Threshold value for Visibility Constraint (lower means higher reaction) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9ObstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9ObstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9ObstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Obstacles</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9ObstaclesE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::min_obstacle_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a9aedd93b32031e773eb90363eb1850c4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_obstacle_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum desired separation from obstacles. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::inflation_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a5b0f10420f4f81eed5ee696006c6dc7f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inflation_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>buffer zone around obstacles with non-zero penalty costs (should be larger than min_obstacle_dist in order to take effect) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::use_nonlinear_obstacle_penalty__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a44df64b7e60c65e2eb45e8f48361d479"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_nonlinear_obstacle_penalty</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_cost_mult__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a716446c070d3705e2fa0a76cf88fa22e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_cost_mult</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::dynamic_obstacle_inflation_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a78955338aef0c40e9b09fbf5c26385a6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dynamic_obstacle_inflation_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Buffer zone around predicted locations of dynamic obstacles with non-zero penalty costs (should be larger than min_obstacle_dist in order to take effect) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::include_dynamic_obstacles__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a8d985194dc49845e1cd0d2bc84d0cd33"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">include_dynamic_obstacles</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify whether the movement of dynamic obstacles should be predicted by a constant velocity model (this also effects homotopy class planning); If false, all obstacles are considered to be static. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::include_costmap_obstacles__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a898fa849ace5bbb71fd1a7399f9acf75"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">include_costmap_obstacles</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify whether the obstacles in the costmap should be taken into account directly. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_obstacles_behind_robot_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ac1043ccf4982cf10f46f71fe99ade034"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_obstacles_behind_robot_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Limit the occupied local costmap obstacles taken into account for planning behind the robot (specify distance in meters) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_poses_affected__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1af10fd59f8f3fb7b03654c07c34026a10"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_poses_affected</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE" title="Link to this definition"></a><br /></dt>
+<dd><p>The obstacle position is attached to the closest pose on the trajectory to reduce computational effort, but take a number of neighbors into account as well. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::legacy_obstacle_association__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1acec534d847de268247f57a1ebe6c94f4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">legacy_obstacle_association</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, the old association strategy is used (for each obstacle, find the nearest TEB pose), otherwise the new one (for each teb pose, find only “relevant” obstacles). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_association_force_inclusion_factor__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ae4f4beab91c9f3ced3c321a416d4b3b5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_association_force_inclusion_factor</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE" title="Link to this definition"></a><br /></dt>
+<dd><p>The non-legacy obstacle association technique tries to connect only relevant obstacles with the discretized trajectory during optimization, all obstacles within a specifed distance are forced to be included (as a multiple of min_obstacle_dist), e.g. choose 2.0 in order to consider obstacles within a radius of 2.0*min_obstacle_dist. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_association_cutoff_factor__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a6c928e3d03ba02fb1867cd6bb91c67a3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_association_cutoff_factor</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE" title="Link to this definition"></a><br /></dt>
+<dd><p>See obstacle_association_force_inclusion_factor, but beyond a multiple of [value]*min_obstacle_dist all obstacles are ignored during optimization. obstacle_association_force_inclusion_factor is processed first. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_plugin__ss"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a17d946b2065e9590908da70dcd15b404"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_plugin</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE" title="Link to this definition"></a><br /></dt>
+<dd><p>Define a plugin name of the costmap_converter package (costmap cells are converted to points/lines/polygons) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_spin_thread__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a1725d0e6b9b4371776964a70c378c0e3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_spin_thread</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE" title="Link to this definition"></a><br /></dt>
+<dd><p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the costmap converter invokes its callback queue in a different thread. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_rate__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a642b51a012a21993004c6a0bc925247b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_rate</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE" title="Link to this definition"></a><br /></dt>
+<dd><p>The rate that defines how often the costmap_converter plugin processes the current costmap (the value should not be much higher than the costmap update rate) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12OptimizationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12OptimizationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12OptimizationE"></span><span id="hateb_local_planner::HATebConfig::Optimization"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optimization</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12OptimizationE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization19no_inner_iterationsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization19no_inner_iterationsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization19no_inner_iterationsE"></span><span id="hateb_local_planner::HATebConfig::Optimization::no_inner_iterations__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a6a5cac0586c8ce97b237d28c7f0087b4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">no_inner_iterations</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization19no_inner_iterationsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Number of solver iterations called in each outerloop iteration. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization19no_outer_iterationsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization19no_outer_iterationsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization19no_outer_iterationsE"></span><span id="hateb_local_planner::HATebConfig::Optimization::no_outer_iterations__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ac9330bc6e7cab4cc01e4a1ee4fa286ae"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">no_outer_iterations</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization19no_outer_iterationsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Each outerloop iteration automatically resizes the trajectory and invokes the internal optimizer with no_inner_iterations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization21optimization_activateE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization21optimization_activateE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization21optimization_activateE"></span><span id="hateb_local_planner::HATebConfig::Optimization::optimization_activate__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1afde3db5ae77195114dd7308306afb215"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimization_activate</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization21optimization_activateE" title="Link to this definition"></a><br /></dt>
+<dd><p>Activate the optimization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20optimization_verboseE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20optimization_verboseE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20optimization_verboseE"></span><span id="hateb_local_planner::HATebConfig::Optimization::optimization_verbose__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a8d05b31717602445dd9201d38b5d5c6e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimization_verbose</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20optimization_verboseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Print verbose information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization15penalty_epsilonE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization15penalty_epsilonE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization15penalty_epsilonE"></span><span id="hateb_local_planner::HATebConfig::Optimization::penalty_epsilon__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a6884f612df14f6f652ca3c7fc2d9b40c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">penalty_epsilon</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization15penalty_epsilonE" title="Link to this definition"></a><br /></dt>
+<dd><p>Add a small safety margin to penalty functions for hard-constraint approximations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20time_penalty_epsilonE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20time_penalty_epsilonE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20time_penalty_epsilonE"></span><span id="hateb_local_planner::HATebConfig::Optimization::time_penalty_epsilon__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1adb150a3fea356d2aac88f302444163c5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">time_penalty_epsilon</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20time_penalty_epsilonE" title="Link to this definition"></a><br /></dt>
+<dd><p>Time safety margin for penalty functions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization23cap_optimaltime_penaltyE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization23cap_optimaltime_penaltyE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization23cap_optimaltime_penaltyE"></span><span id="hateb_local_planner::HATebConfig::Optimization::cap_optimaltime_penalty__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a1ce9b1b42de055ac45a8615a2a13e3c1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cap_optimaltime_penalty</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization23cap_optimaltime_penaltyE" title="Link to this definition"></a><br /></dt>
+<dd><p>Whether to cap the optimal time penalty. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_xE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_vel_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a36f4678b6c37d995ca66c1a3202fb760"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_vel_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_xE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed translational velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_yE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_vel_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a52dd121fdd8ae3f337d9d33315019218"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_vel_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_max_vel_yE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed strafing velocity (in use only for holonomic robots) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_max_vel_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20weight_max_vel_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20weight_max_vel_thetaE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_vel_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1acca9520ec0fc55eb3847bc09493a6da0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_vel_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_max_vel_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed angular velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_xE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_acc_lim_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a06fcdeb6b8bcea4ac93858648f5d3f61"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_acc_lim_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_xE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed translational acceleration. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_yE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_acc_lim_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a3c204045d039120a61531e309bfda0dc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_acc_lim_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_acc_lim_yE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed strafing acceleration (in use only for holonomic robots) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_acc_lim_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20weight_acc_lim_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20weight_acc_lim_thetaE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_acc_lim_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ab280c4f31e89908380c7f14db0a90510"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_acc_lim_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_acc_lim_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the maximum allowed angular acceleration. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_kinematics_nhE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20weight_kinematics_nhE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20weight_kinematics_nhE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_kinematics_nh__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1aef6aa45b1fc0315827dbcc61482486fd"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_kinematics_nh</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_kinematics_nhE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying the non-holonomic kinematics. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization31weight_kinematics_forward_driveE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization31weight_kinematics_forward_driveE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization31weight_kinematics_forward_driveE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_kinematics_forward_drive__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1abfbfc192d0f6f87da37cee83cc893bbc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_kinematics_forward_drive</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization31weight_kinematics_forward_driveE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for forcing the robot to choose only forward directions (positive transl. velocities, only diffdrive robot) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization32weight_kinematics_turning_radiusE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization32weight_kinematics_turning_radiusE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization32weight_kinematics_turning_radiusE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_kinematics_turning_radius__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ac98e28dd981b7ad233fda24320da1126"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_kinematics_turning_radius</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization32weight_kinematics_turning_radiusE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for enforcing a minimum turning radius (carlike robots) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization18weight_optimaltimeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization18weight_optimaltimeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization18weight_optimaltimeE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_optimaltime__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a440f6cf4aa2cd14b4c1d4a42391d94a4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_optimaltime</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization18weight_optimaltimeE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for contracting the trajectory w.r.t. transition time. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_shortest_pathE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20weight_shortest_pathE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20weight_shortest_pathE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_shortest_path__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1af9cad343716a9aff284d5b941d51d038"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_shortest_path</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_shortest_pathE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for contracting the trajectory w.r.t. path length. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization15weight_obstacleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization15weight_obstacleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization15weight_obstacleE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_obstacle__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a4875c5da76c222ac9a46339e429628d1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_obstacle</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization15weight_obstacleE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying a minimum separation from obstacles. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_inflationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization16weight_inflationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization16weight_inflationE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_inflation__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a566ed08b915ffebbc74bdbdad4e2b1c3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_inflation</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization16weight_inflationE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for the inflation penalty (should be small) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization23weight_dynamic_obstacleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization23weight_dynamic_obstacleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization23weight_dynamic_obstacleE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_dynamic_obstacle__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a4c0800059f5eb0d345cc9c11d1f4108f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_dynamic_obstacle</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization23weight_dynamic_obstacleE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying a minimum separation from dynamic obstacles. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization33weight_dynamic_obstacle_inflationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization33weight_dynamic_obstacle_inflationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization33weight_dynamic_obstacle_inflationE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_dynamic_obstacle_inflation__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1add787c741d0fd629ef5f06685ff2a3b0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_dynamic_obstacle_inflation</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization33weight_dynamic_obstacle_inflationE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for the inflation penalty of dynamic obstacles (should be small) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization15weight_viapointE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization15weight_viapointE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization15weight_viapointE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_viapoint__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a97382544660b70aa74ac09d6f51c302c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_viapoint</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization15weight_viapointE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for minimizing the distance to via-points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_prefer_rotdirE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization20weight_prefer_rotdirE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization20weight_prefer_rotdirE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_prefer_rotdir__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a558f19e92fadd1fd85cc426a114bbaae"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_prefer_rotdir</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization20weight_prefer_rotdirE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for preferring a specific turning direction. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization19weight_adapt_factorE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization19weight_adapt_factorE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization19weight_adapt_factorE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_adapt_factor__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a2cfe983868f33a24d1c50404cf3333b7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_adapt_factor</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization19weight_adapt_factorE" title="Link to this definition"></a><br /></dt>
+<dd><p>Some special weights (currently ‘weight_obstacle’) are repeatedly scaled by this factor in each outer TEB iteration (weight_new = weight_old*factor); Increasing weights iteratively instead of setting a huge value a-priori leads to better numerical conditions of the underlying optimization problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22obstacle_cost_exponentE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22obstacle_cost_exponentE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22obstacle_cost_exponentE"></span><span id="hateb_local_planner::HATebConfig::Optimization::obstacle_cost_exponent__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a82801bb44af7ba1b51c7a3e00b2a1657"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_cost_exponent</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22obstacle_cost_exponentE" title="Link to this definition"></a><br /></dt>
+<dd><p>Exponent for nonlinear obstacle cost (cost = linear_cost * obstacle_cost_exponent). Set to 1 to disable nonlinear cost (default) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_xE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_agent_vel_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a8ae16bab161495cd98fed2c26f5e49dc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_agent_vel_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_xE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying maximum agent translational velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_yE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_agent_vel_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a0bc2ed7214441acbc1c8ce14f6463a72"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_agent_vel_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_max_agent_vel_yE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying maximum agent straffing velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_nominal_agent_vel_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization26weight_nominal_agent_vel_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization26weight_nominal_agent_vel_xE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_nominal_agent_vel_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1aaf5a49cd7739cd409d5d0a9b112744b0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_nominal_agent_vel_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_nominal_agent_vel_xE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for maintaining nominal agent velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_max_agent_vel_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization26weight_max_agent_vel_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization26weight_max_agent_vel_thetaE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_max_agent_vel_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ac90cd08baf692358264c515961df6906"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_max_agent_vel_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_max_agent_vel_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying maximum agent angular velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_xE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_acc_lim_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a3ac5e586e0515a109b1ccccbc38a6c75"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_acc_lim_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_xE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying agent translational acceleration limits. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_yE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_acc_lim_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ae8b5569329ce71d676f48cc6e5213ef3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_acc_lim_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_agent_acc_lim_yE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying agent straffing acceleration limits. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_agent_acc_lim_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization26weight_agent_acc_lim_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization26weight_agent_acc_lim_thetaE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_acc_lim_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a36643b4958a3ddb32a8e5047d568025c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_acc_lim_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_agent_acc_lim_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for satisfying agent angular acceleration limits. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization24weight_agent_optimaltimeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization24weight_agent_optimaltimeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization24weight_agent_optimaltimeE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_optimaltime__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a86763f1ee9b18631537203faec89b0ca"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_optimaltime</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization24weight_agent_optimaltimeE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for agent trajectory transition time. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization21weight_agent_viapointE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization21weight_agent_viapointE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization21weight_agent_viapointE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_viapoint__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a8234386135834d17a08d1dbb8aec1cb6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_viapoint</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization21weight_agent_viapointE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for agent via-points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_invisible_humanE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization22weight_invisible_humanE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization22weight_invisible_humanE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_invisible_human__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1ac14c20faf1c0d126066e19f2c1e241d4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_invisible_human</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization22weight_invisible_humanE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for invisible human penalties. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization25weight_agent_robot_safetyE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization25weight_agent_robot_safetyE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization25weight_agent_robot_safetyE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_robot_safety__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a25d00a8297ce2d703e0e263b862cd121"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_robot_safety</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization25weight_agent_robot_safetyE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for agent-robot safety constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization25weight_agent_agent_safetyE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization25weight_agent_agent_safetyE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization25weight_agent_agent_safetyE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_agent_safety__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a7c78f05a7d2b5b57d9e7a151e61f89df"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_agent_safety</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization25weight_agent_agent_safetyE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for agent-agent safety constraints. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_agent_robot_rel_velE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization26weight_agent_robot_rel_velE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization26weight_agent_robot_rel_velE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_robot_rel_vel__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1aa97c9f46727894962aa02b123afbb46e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_robot_rel_vel</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization26weight_agent_robot_rel_velE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for relative velocity constraint between agent and robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization29weight_agent_robot_visibilityE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization29weight_agent_robot_visibilityE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization29weight_agent_robot_visibilityE"></span><span id="hateb_local_planner::HATebConfig::Optimization::weight_agent_robot_visibility__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a23cf240a226e36850632f0a940ef79f2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weight_agent_robot_visibility</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization29weight_agent_robot_visibilityE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Optimization.html#structhateb__local__planner_1_1HATebConfig_1_1Optimization"><span class="std std-ref">Optimization</span></a> weight for agent visibility to robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization18disable_warm_startE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization18disable_warm_startE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization18disable_warm_startE"></span><span id="hateb_local_planner::HATebConfig::Optimization::disable_warm_start__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1aba24f01ec4a9ae6e8ce0e2e3a689314d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disable_warm_start</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization18disable_warm_startE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, disables warm start in optimization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization25disable_rapid_omega_chageE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization25disable_rapid_omega_chageE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization25disable_rapid_omega_chageE"></span><span id="hateb_local_planner::HATebConfig::Optimization::disable_rapid_omega_chage__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1af6e2e762e8685ff5a0fcdb750343f9b6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disable_rapid_omega_chage</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization25disable_rapid_omega_chageE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, prevents rapid changes in angular velocity. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig12Optimization27omega_chage_time_seperationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig12Optimization27omega_chage_time_seperationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig12Optimization27omega_chage_time_seperationE"></span><span id="hateb_local_planner::HATebConfig::Optimization::omega_chage_time_seperation__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Optimization_1a3cd875f8cd2441386426eca95357387e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">omega_chage_time_seperation</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig12Optimization27omega_chage_time_seperationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum time separation for angular velocity changes. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8RecoveryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8RecoveryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8RecoveryE"></span><span id="hateb_local_planner::HATebConfig::Recovery"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Recovery</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8RecoveryE" title="Link to this definition"></a><br /></dt>
+<dd><p>Recovery/backup related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE"></span><span id="hateb_local_planner::HATebConfig::Recovery::shrink_horizon_backup__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a07a738635944e814d0dd023fade22e15"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shrink_horizon_backup</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery21shrink_horizon_backupE" title="Link to this definition"></a><br /></dt>
+<dd><p>Allows the planner to shrink the horizon temporary (50%) in case of automatically detected issues. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::shrink_horizon_min_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abcf23ec90420639f5cf8f9c6e49dd85e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shrink_horizon_min_duration</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery27shrink_horizon_min_durationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify minimum duration for the reduced horizon in case an infeasible trajectory is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_recovery__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abf6e13307618c5fe4c43a2595a0975fc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_recovery</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery20oscillation_recoveryE" title="Link to this definition"></a><br /></dt>
+<dd><p>Try to detect and resolve oscillations between multiple solutions in the same equivalence class (robot frequently switches between left/right/forward/backwards) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_v_eps__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a01731934f5b750385a8d0797ff8a0f46"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_v_eps</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery17oscillation_v_epsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Threshold for the average normalized linear velocity: if oscillation_v_eps and oscillation_omega_eps are not exceeded both, a possible oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_omega_eps__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a79677bedd27b0015893faf8c2df09698"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_omega_eps</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery21oscillation_omega_epsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Threshold for the average normalized angular velocity: if oscillation_v_eps and oscillation_omega_eps are not exceeded both, a possible oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_recovery_min_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1a3da9d57c0d6f36a673a5577cb11014b1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_recovery_min_duration</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery33oscillation_recovery_min_durationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minumum duration [sec] for which the recovery mode is activated after an oscillation is detected. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE"></span><span id="hateb_local_planner::HATebConfig::Recovery::oscillation_filter_duration__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Recovery_1abed601287992897d9faf527ddcfe6de5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oscillation_filter_duration</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig8Recovery27oscillation_filter_durationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Filter length/duration [sec] for the detection of oscillations. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5RobotE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5RobotE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5RobotE"></span><span id="hateb_local_planner::HATebConfig::Robot"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Robot</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5RobotE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Robot.html#structhateb__local__planner_1_1HATebConfig_1_1Robot"><span class="std std-ref">Robot</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot4typeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot4typeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot4typeE"></span><span id="hateb_local_planner::HATebConfig::Robot::type__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1aaa4342171602e5fef8772b35a244e55f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot4typeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot9max_vel_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot9max_vel_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot9max_vel_xE"></span><span id="hateb_local_planner::HATebConfig::Robot::max_vel_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a8fcf3ee4c94f846566279276e681f5f8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot9max_vel_xE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum translational velocity of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot19max_vel_x_backwardsE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot19max_vel_x_backwardsE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot19max_vel_x_backwardsE"></span><span id="hateb_local_planner::HATebConfig::Robot::max_vel_x_backwards__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a2d3cfee88b7b77ee21b8a9ec91de9869"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_x_backwards</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot19max_vel_x_backwardsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum translational velocity of the robot for driving backwards. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot9max_vel_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot9max_vel_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot9max_vel_yE"></span><span id="hateb_local_planner::HATebConfig::Robot::max_vel_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1aac09443d7d4d70b3be7a17ceb04e097e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot9max_vel_yE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum strafing velocity of the robot (should be zero for non-holonomic robots!) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot13max_vel_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot13max_vel_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot13max_vel_thetaE"></span><span id="hateb_local_planner::HATebConfig::Robot::max_vel_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1ac910e6825fec7357488f00e3f9ff6223"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_vel_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot13max_vel_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum angular velocity of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot9acc_lim_xE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot9acc_lim_xE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot9acc_lim_xE"></span><span id="hateb_local_planner::HATebConfig::Robot::acc_lim_x__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1af40f4841ac6f5b5fa7ffadaab7426f74"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_x</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot9acc_lim_xE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum translational acceleration of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot9acc_lim_yE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot9acc_lim_yE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot9acc_lim_yE"></span><span id="hateb_local_planner::HATebConfig::Robot::acc_lim_y__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1aeca1e45a2334d4104b4c55d1a124b70c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_y</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot9acc_lim_yE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum strafing acceleration of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot13acc_lim_thetaE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot13acc_lim_thetaE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot13acc_lim_thetaE"></span><span id="hateb_local_planner::HATebConfig::Robot::acc_lim_theta__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a3bc88eb765e707533710492b82c316b7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">acc_lim_theta</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot13acc_lim_thetaE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum angular acceleration of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot18min_turning_radiusE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot18min_turning_radiusE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot18min_turning_radiusE"></span><span id="hateb_local_planner::HATebConfig::Robot::min_turning_radius__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1ad4d9e23303241c150806adc0a6880994"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_turning_radius</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot18min_turning_radiusE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum turning radius of a carlike robot (diff-drive robot: zero);. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot9wheelbaseE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot9wheelbaseE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot9wheelbaseE"></span><span id="hateb_local_planner::HATebConfig::Robot::wheelbase__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a6c3860f0b6e2c6f0a5b523a079ac98cb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">wheelbase</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot9wheelbaseE" title="Link to this definition"></a><br /></dt>
+<dd><p>The distance between the drive shaft and steering axle (only required for a carlike robot with ‘cmd_angle_instead_rotvel’ enabled); The value might be negative for back-wheeled robots! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot24cmd_angle_instead_rotvelE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot24cmd_angle_instead_rotvelE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot24cmd_angle_instead_rotvelE"></span><span id="hateb_local_planner::HATebConfig::Robot::cmd_angle_instead_rotvel__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a2b01b3144334ac1d0fdbe71014c5937e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cmd_angle_instead_rotvel</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot24cmd_angle_instead_rotvelE" title="Link to this definition"></a><br /></dt>
+<dd><p>Substitute the rotational velocity in the commanded velocity message by the corresponding steering angle (check ‘axles_distance’) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot20is_footprint_dynamicE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot20is_footprint_dynamicE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot20is_footprint_dynamicE"></span><span id="hateb_local_planner::HATebConfig::Robot::is_footprint_dynamic__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1a145dc991eb718e111b850cc8325d2e1f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_footprint_dynamic</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot20is_footprint_dynamicE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig5Robot7is_realE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig5Robot7is_realE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig5Robot7is_realE"></span><span id="hateb_local_planner::HATebConfig::Robot::is_real__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Robot_1aec3474d00bfd80e653efd9079f92e252"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_real</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig5Robot7is_realE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10TrajectoryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10TrajectoryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10TrajectoryE"></span><span id="hateb_local_planner::HATebConfig::Trajectory"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Trajectory</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10TrajectoryE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Trajectory.html#structhateb__local__planner_1_1HATebConfig_1_1Trajectory"><span class="std std-ref">Trajectory</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::teb_autosize__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a60ded29166e97d1129e6200136138f97"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">teb_autosize</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Enable automatic resizing of the trajectory w.r.t to the temporal resolution (recommended) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory6dt_refE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory6dt_refE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory6dt_refE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::dt_ref__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a822390590b5ca082bcf1f9c511fa4e94"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dt_ref</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory6dt_refE" title="Link to this definition"></a><br /></dt>
+<dd><p>Desired temporal resolution of the trajectory (should be in the magniture of the underlying control rate) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::dt_hysteresis__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a89f5d80b8a68a0090bde2a6af9e35ac9"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dt_hysteresis</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE" title="Link to this definition"></a><br /></dt>
+<dd><p>Hysteresis for automatic resizing depending on the current temporal resolution (dt): usually 10% of dt_ref. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::min_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a0a82f2318aec20759ad4e9d8b3d23fda"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_samples</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum number of samples (should be always greater than 2) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::max_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a4f84e93d0bd57dbfd5f32b74b33758c0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum number of samples; Warning: if too small the discretization/resolution might not be sufficient for the given robot model or obstacle avoidance does not work anymore. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::agent_min_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ab70310b774aaf3bd819304445c8f3f75"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_min_samples</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Minimum number of samples for agent’s teb (should be always greater than 2) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_overwrite_orientation__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1add707f9f8389f1885b48fcb9766aacbe"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_overwrite_orientation</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Overwrite orientation of local subgoals provided by the global planner. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::allow_init_with_backwards_motion__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a5427e849ae3ac295862dd25e93ddebef"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">allow_init_with_backwards_motion</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, the underlying trajectories might be initialized with backwards motions in case the goal is behind the start within the local costmap (this is only recommended if the robot is equipped with rear sensors) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_viapoint_sep__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a6d1d0c422d199b2f23b3de02f7a08ecb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_viapoint_sep</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE" title="Link to this definition"></a><br /></dt>
+<dd><p>Min. separation between each two consecutive via-points extracted from the global plan (if negative: disabled) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::via_points_ordered__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ab063790bafec214cea31ebb1d0f07ebe"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">via_points_ordered</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, the planner adheres to the order of via-points in the storage container. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::max_global_plan_lookahead_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae6237665760251a16e15d98ddc9d84b8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_global_plan_lookahead_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify maximum length (cumulative Euclidean distances) of the subset of the global plan taken into account for optimization [if &lt;=0: disabled; the length is also bounded by the local costmap size!] </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_prune_distance__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a108358a4e88df6fb1ebbeda5e1ede6b4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_prune_distance</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE" title="Link to this definition"></a><br /></dt>
+<dd><p>Distance between robot and via_points of global plan which is used for pruning. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::exact_arc_length__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae16c696f6153f59fd62d32b9f814f3da"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">exact_arc_length</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, the planner uses the exact arc length in velocity, acceleration and turning rate computations [-&gt; increased cpu time], otherwise the euclidean approximation is used. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::force_reinit_new_goal_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a88ef7918a8113afe897bfdb5a57263e8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force_reinit_new_goal_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>Reinitialize the trajectory if a previous goal is updated with a seperation of more than the specified value in meters (skip hot-starting) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::force_reinit_new_goal_angular__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1adcff814e94e4dd62c22ab3e948d8fae1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force_reinit_new_goal_angular</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE" title="Link to this definition"></a><br /></dt>
+<dd><p>Reinitialize the trajectory if a previous goal is updated with an angular difference of more than the specified value in radians (skip hot-starting) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::feasibility_check_no_poses__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae7e3146c5eec60002251f2c1ad90e3b2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">feasibility_check_no_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Specify up to which pose on the predicted plan the feasibility should be checked each sampling interval. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::publish_feedback__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1af307d5fdacca37ac1984f2ede23963dc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_feedback</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE" title="Link to this definition"></a><br /></dt>
+<dd><p>Publish planner feedback containing the full trajectory and a list of active obstacles (should be enabled only for evaluation or debugging purposes) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::min_resolution_collision_check_angular__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a759bf64c3c0a01866b2df45c0d187857"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_resolution_collision_check_angular</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE" title="Link to this definition"></a><br /></dt>
+<dd><p>Min angular resolution used during the costmap collision check. If not respected, intermediate samples are added. [rad]. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::control_look_ahead_poses__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a0aed4a0e9e478c89960f99f37c56de37"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">control_look_ahead_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>Index of the pose used to extract the velocity command. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::teb_init_skip_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a729af3b58173ea548eb2ec8cba8cd4d2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">teb_init_skip_dist</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE" title="Link to this definition"></a><br /></dt>
+<dd><p>How much distance needs to be skipped before calculating the plan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::visualize_with_time_as_z_axis_scale__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a5e2fa58cf68db42a2a44ca4e855e6319"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualize_with_time_as_z_axis_scale</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Scaling factor for visualizing the trajectory in 3D with time as z-axis. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13VisualizationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13VisualizationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13VisualizationE"></span><span id="hateb_local_planner::HATebConfig::Visualization"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Visualization</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13VisualizationE" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="structhateb__local__planner_1_1HATebConfig_1_1Visualization.html#structhateb__local__planner_1_1HATebConfig_1_1Visualization"><span class="std std-ref">Visualization</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization25publish_robot_global_planE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization25publish_robot_global_planE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization25publish_robot_global_planE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_robot_global_plan__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a6ba3616e236cad82d784f7e234917c14"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_robot_global_plan</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization25publish_robot_global_planE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish the global plan for the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization24publish_robot_local_planE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization24publish_robot_local_planE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization24publish_robot_local_planE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_robot_local_plan__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1ad17dce6140e70822f6c4a400b5ccf7e3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_robot_local_plan</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization24publish_robot_local_planE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish the local plan for the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization30publish_robot_local_plan_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization30publish_robot_local_plan_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization30publish_robot_local_plan_posesE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_robot_local_plan_poses__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a42701e249dbd9d949b8901b8148bdb71"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_robot_local_plan_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization30publish_robot_local_plan_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish poses from the robot’s local plan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization33publish_robot_local_plan_fp_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization33publish_robot_local_plan_fp_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization33publish_robot_local_plan_fp_posesE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_robot_local_plan_fp_poses__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a44d85f91082c4ef901ff0cd271d0e857"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_robot_local_plan_fp_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization33publish_robot_local_plan_fp_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish footprint (time colored and vel scaled) poses from the robot’s local plan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization27publish_agents_global_plansE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization27publish_agents_global_plansE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization27publish_agents_global_plansE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_agents_global_plans__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1ae58e761a16057128b5e872c33f91416e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_agents_global_plans</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization27publish_agents_global_plansE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish the global plans for all agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization26publish_agents_local_plansE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization26publish_agents_local_plansE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization26publish_agents_local_plansE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_agents_local_plans__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a4c9007da428aaffa63aa2a2f34d9dace"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_agents_local_plans</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization26publish_agents_local_plansE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish the local plans for all agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization31publish_agents_local_plan_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization31publish_agents_local_plan_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization31publish_agents_local_plan_posesE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_agents_local_plan_poses__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a953ab1775496b31b4cb3e073f7b4c16c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_agents_local_plan_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization31publish_agents_local_plan_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish poses from agents’ local plans. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization34publish_agents_local_plan_fp_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization34publish_agents_local_plan_fp_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization34publish_agents_local_plan_fp_posesE"></span><span id="hateb_local_planner::HATebConfig::Visualization::publish_agents_local_plan_fp_poses__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1afb12da31049f9370c1159238927ab75e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_agents_local_plan_fp_poses</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization34publish_agents_local_plan_fp_posesE" title="Link to this definition"></a><br /></dt>
+<dd><p>If true, publish footprint (time colored and vel scaled) poses from agents’ local plans. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig13Visualization18pose_array_z_scaleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig13Visualization18pose_array_z_scaleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig13Visualization18pose_array_z_scaleE"></span><span id="hateb_local_planner::HATebConfig::Visualization::pose_array_z_scale__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Visualization_1a4b45cb61c6452b54f01c825804aa0ced"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pose_array_z_scale</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner11HATebConfig13Visualization18pose_array_z_scaleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Multiplier to show time on z value of pose array for agents and robot. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 

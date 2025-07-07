@@ -194,10 +194,141 @@
 </section>
 <section id="struct-documentation">
 <h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10TrajectoryE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10TrajectoryE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10TrajectoryE"></span><span id="hateb_local_planner::HATebConfig::Trajectory"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Trajectory</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="#structhateb__local__planner_1_1HATebConfig_1_1Trajectory"><span class="std std-ref">Trajectory</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory12teb_autosizeE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::teb_autosize__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a60ded29166e97d1129e6200136138f97"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">teb_autosize</span></span></span><br /></dt>
+<dd><p>Enable automatic resizing of the trajectory w.r.t to the temporal resolution (recommended) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory6dt_refE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory6dt_refE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory6dt_refE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::dt_ref__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a822390590b5ca082bcf1f9c511fa4e94"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dt_ref</span></span></span><br /></dt>
+<dd><p>Desired temporal resolution of the trajectory (should be in the magniture of the underlying control rate) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory13dt_hysteresisE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::dt_hysteresis__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a89f5d80b8a68a0090bde2a6af9e35ac9"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dt_hysteresis</span></span></span><br /></dt>
+<dd><p>Hysteresis for automatic resizing depending on the current temporal resolution (dt): usually 10% of dt_ref. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory11min_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::min_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a0a82f2318aec20759ad4e9d8b3d23fda"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_samples</span></span></span><br /></dt>
+<dd><p>Minimum number of samples (should be always greater than 2) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory11max_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::max_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a4f84e93d0bd57dbfd5f32b74b33758c0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_samples</span></span></span><br /></dt>
+<dd><p>Maximum number of samples; Warning: if too small the discretization/resolution might not be sufficient for the given robot model or obstacle avoidance does not work anymore. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory17agent_min_samplesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::agent_min_samples__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ab70310b774aaf3bd819304445c8f3f75"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_min_samples</span></span></span><br /></dt>
+<dd><p>Minimum number of samples for agent’s teb (should be always greater than 2) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory33global_plan_overwrite_orientationE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_overwrite_orientation__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1add707f9f8389f1885b48fcb9766aacbe"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_overwrite_orientation</span></span></span><br /></dt>
+<dd><p>Overwrite orientation of local subgoals provided by the global planner. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory32allow_init_with_backwards_motionE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::allow_init_with_backwards_motion__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a5427e849ae3ac295862dd25e93ddebef"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">allow_init_with_backwards_motion</span></span></span><br /></dt>
+<dd><p>If true, the underlying trajectories might be initialized with backwards motions in case the goal is behind the start within the local costmap (this is only recommended if the robot is equipped with rear sensors) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory24global_plan_viapoint_sepE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_viapoint_sep__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a6d1d0c422d199b2f23b3de02f7a08ecb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_viapoint_sep</span></span></span><br /></dt>
+<dd><p>Min. separation between each two consecutive via-points extracted from the global plan (if negative: disabled) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory18via_points_orderedE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::via_points_ordered__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ab063790bafec214cea31ebb1d0f07ebe"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">via_points_ordered</span></span></span><br /></dt>
+<dd><p>If true, the planner adheres to the order of via-points in the storage container. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory30max_global_plan_lookahead_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::max_global_plan_lookahead_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae6237665760251a16e15d98ddc9d84b8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_global_plan_lookahead_dist</span></span></span><br /></dt>
+<dd><p>Specify maximum length (cumulative Euclidean distances) of the subset of the global plan taken into account for optimization [if &lt;=0: disabled; the length is also bounded by the local costmap size!] </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26global_plan_prune_distanceE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::global_plan_prune_distance__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a108358a4e88df6fb1ebbeda5e1ede6b4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_prune_distance</span></span></span><br /></dt>
+<dd><p>Distance between robot and via_points of global plan which is used for pruning. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory16exact_arc_lengthE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::exact_arc_length__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae16c696f6153f59fd62d32b9f814f3da"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">exact_arc_length</span></span></span><br /></dt>
+<dd><p>If true, the planner uses the exact arc length in velocity, acceleration and turning rate computations [-&gt; increased cpu time], otherwise the euclidean approximation is used. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26force_reinit_new_goal_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::force_reinit_new_goal_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a88ef7918a8113afe897bfdb5a57263e8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force_reinit_new_goal_dist</span></span></span><br /></dt>
+<dd><p>Reinitialize the trajectory if a previous goal is updated with a seperation of more than the specified value in meters (skip hot-starting) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory29force_reinit_new_goal_angularE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::force_reinit_new_goal_angular__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1adcff814e94e4dd62c22ab3e948d8fae1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force_reinit_new_goal_angular</span></span></span><br /></dt>
+<dd><p>Reinitialize the trajectory if a previous goal is updated with an angular difference of more than the specified value in radians (skip hot-starting) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory26feasibility_check_no_posesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::feasibility_check_no_poses__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1ae7e3146c5eec60002251f2c1ad90e3b2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">feasibility_check_no_poses</span></span></span><br /></dt>
+<dd><p>Specify up to which pose on the predicted plan the feasibility should be checked each sampling interval. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory16publish_feedbackE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::publish_feedback__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1af307d5fdacca37ac1984f2ede23963dc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_feedback</span></span></span><br /></dt>
+<dd><p>Publish planner feedback containing the full trajectory and a list of active obstacles (should be enabled only for evaluation or debugging purposes) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory38min_resolution_collision_check_angularE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::min_resolution_collision_check_angular__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a759bf64c3c0a01866b2df45c0d187857"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_resolution_collision_check_angular</span></span></span><br /></dt>
+<dd><p>Min angular resolution used during the costmap collision check. If not respected, intermediate samples are added. [rad]. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory24control_look_ahead_posesE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::control_look_ahead_poses__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a0aed4a0e9e478c89960f99f37c56de37"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">control_look_ahead_poses</span></span></span><br /></dt>
+<dd><p>Index of the pose used to extract the velocity command. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory18teb_init_skip_distE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::teb_init_skip_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a729af3b58173ea548eb2ec8cba8cd4d2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">teb_init_skip_dist</span></span></span><br /></dt>
+<dd><p>How much distance needs to be skipped before calculating the plan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig10Trajectory35visualize_with_time_as_z_axis_scaleE"></span><span id="hateb_local_planner::HATebConfig::Trajectory::visualize_with_time_as_z_axis_scale__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Trajectory_1a5e2fa58cf68db42a2a44ca4e855e6319"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualize_with_time_as_z_axis_scale</span></span></span><br /></dt>
+<dd><p>Scaling factor for visualizing the trajectory in 3D with time as z-axis. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

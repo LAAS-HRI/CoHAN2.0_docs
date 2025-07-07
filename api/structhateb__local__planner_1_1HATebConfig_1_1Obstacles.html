@@ -194,10 +194,103 @@
 </section>
 <section id="struct-documentation">
 <h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenstruct: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9ObstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9ObstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9ObstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Obstacles</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> related parameters. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles17min_obstacle_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::min_obstacle_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a9aedd93b32031e773eb90363eb1850c4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_obstacle_dist</span></span></span><br /></dt>
+<dd><p>Minimum desired separation from obstacles. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles14inflation_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::inflation_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a5b0f10420f4f81eed5ee696006c6dc7f"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inflation_dist</span></span></span><br /></dt>
+<dd><p>buffer zone around obstacles with non-zero penalty costs (should be larger than min_obstacle_dist in order to take effect) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles30use_nonlinear_obstacle_penaltyE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::use_nonlinear_obstacle_penalty__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a44df64b7e60c65e2eb45e8f48361d479"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_nonlinear_obstacle_penalty</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles18obstacle_cost_multE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_cost_mult__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a716446c070d3705e2fa0a76cf88fa22e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_cost_mult</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles31dynamic_obstacle_inflation_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::dynamic_obstacle_inflation_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a78955338aef0c40e9b09fbf5c26385a6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dynamic_obstacle_inflation_dist</span></span></span><br /></dt>
+<dd><p>Buffer zone around predicted locations of dynamic obstacles with non-zero penalty costs (should be larger than min_obstacle_dist in order to take effect) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles25include_dynamic_obstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::include_dynamic_obstacles__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a8d985194dc49845e1cd0d2bc84d0cd33"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">include_dynamic_obstacles</span></span></span><br /></dt>
+<dd><p>Specify whether the movement of dynamic obstacles should be predicted by a constant velocity model (this also effects homotopy class planning); If false, all obstacles are considered to be static. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles25include_costmap_obstaclesE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::include_costmap_obstacles__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a898fa849ace5bbb71fd1a7399f9acf75"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">include_costmap_obstacles</span></span></span><br /></dt>
+<dd><p>Specify whether the obstacles in the costmap should be taken into account directly. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles35costmap_obstacles_behind_robot_distE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_obstacles_behind_robot_dist__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ac1043ccf4982cf10f46f71fe99ade034"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_obstacles_behind_robot_dist</span></span></span><br /></dt>
+<dd><p>Limit the occupied local costmap obstacles taken into account for planning behind the robot (specify distance in meters) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles23obstacle_poses_affectedE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_poses_affected__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1af10fd59f8f3fb7b03654c07c34026a10"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_poses_affected</span></span></span><br /></dt>
+<dd><p>The obstacle position is attached to the closest pose on the trajectory to reduce computational effort, but take a number of neighbors into account as well. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles27legacy_obstacle_associationE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::legacy_obstacle_association__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1acec534d847de268247f57a1ebe6c94f4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">legacy_obstacle_association</span></span></span><br /></dt>
+<dd><p>If true, the old association strategy is used (for each obstacle, find the nearest TEB pose), otherwise the new one (for each teb pose, find only “relevant” obstacles). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles43obstacle_association_force_inclusion_factorE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_association_force_inclusion_factor__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1ae4f4beab91c9f3ced3c321a416d4b3b5"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_association_force_inclusion_factor</span></span></span><br /></dt>
+<dd><p>The non-legacy obstacle association technique tries to connect only relevant obstacles with the discretized trajectory during optimization, all obstacles within a specifed distance are forced to be included (as a multiple of min_obstacle_dist), e.g. choose 2.0 in order to consider obstacles within a radius of 2.0*min_obstacle_dist. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles34obstacle_association_cutoff_factorE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::obstacle_association_cutoff_factor__double"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a6c928e3d03ba02fb1867cd6bb91c67a3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacle_association_cutoff_factor</span></span></span><br /></dt>
+<dd><p>See obstacle_association_force_inclusion_factor, but beyond a multiple of [value]*min_obstacle_dist all obstacles are ignored during optimization. obstacle_association_force_inclusion_factor is processed first. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles24costmap_converter_pluginE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_plugin__ss"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a17d946b2065e9590908da70dcd15b404"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_plugin</span></span></span><br /></dt>
+<dd><p>Define a plugin name of the costmap_converter package (costmap cells are converted to points/lines/polygons) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles29costmap_converter_spin_threadE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_spin_thread__b"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a1725d0e6b9b4371776964a70c378c0e3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_spin_thread</span></span></span><br /></dt>
+<dd><p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, the costmap converter invokes its callback queue in a different thread. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE">
+<span id="_CPPv3N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE"></span><span id="_CPPv2N19hateb_local_planner11HATebConfig9Obstacles22costmap_converter_rateE"></span><span id="hateb_local_planner::HATebConfig::Obstacles::costmap_converter_rate__i"></span><span class="target" id="structhateb__local__planner_1_1HATebConfig_1_1Obstacles_1a642b51a012a21993004c6a0bc925247b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_rate</span></span></span><br /></dt>
+<dd><p>The rate that defines how often the costmap_converter plugin processes the current costmap (the value should not be much higher than the costmap update rate) </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

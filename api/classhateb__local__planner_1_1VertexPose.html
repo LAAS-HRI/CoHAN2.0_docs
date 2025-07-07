@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,261 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPoseE">
+<span id="_CPPv3N19hateb_local_planner10VertexPoseE"></span><span id="_CPPv2N19hateb_local_planner10VertexPoseE"></span><span id="hateb_local_planner::VertexPose"></span><span class="target" id="classhateb__local__planner_1_1VertexPose"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexPose</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">g2o</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseVertex</span></span><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPoseE" title="Link to this definition"></a><br /></dt>
+<dd><p>This class stores and wraps a SE2 pose (position and orientation) into a vertex that can be optimized via g2o. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a></p>
 </div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1VertexTimeDiff.html#classhateb__local__planner_1_1VertexTimeDiff"><span class="std std-ref">VertexTimeDiff</span></a></p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose10VertexPoseEb">
+<span id="_CPPv3N19hateb_local_planner10VertexPose10VertexPoseEb"></span><span id="_CPPv2N19hateb_local_planner10VertexPose10VertexPoseEb"></span><span id="hateb_local_planner::VertexPose::VertexPose__b"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1af67663535d30d6844ff31519277ca713"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose10VertexPoseEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose10VertexPoseERK7PoseSE2b">
+<span id="_CPPv3N19hateb_local_planner10VertexPose10VertexPoseERK7PoseSE2b"></span><span id="_CPPv2N19hateb_local_planner10VertexPose10VertexPoseERK7PoseSE2b"></span><span id="hateb_local_planner::VertexPose::VertexPose__PoseSE2CR.b"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1aa2cb97657c4ef6f3d9f39024b9ebcffe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose10VertexPoseERK7PoseSE2b" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using a given <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> defining the pose [x, y, angle_rad] </p></li>
+<li><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose10VertexPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb">
+<span id="_CPPv3N19hateb_local_planner10VertexPose10VertexPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb"></span><span id="_CPPv2N19hateb_local_planner10VertexPose10VertexPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb"></span><span id="hateb_local_planner::VertexPose::VertexPose__Eigen::Ref:Eigen::Vector2dC:CR.double.b"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a3790350ad3c4053e48308e696c7dca75"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose10VertexPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using a given 2D position vector and orientation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – Eigen::Vector2d containing x and y coordinates </p></li>
+<li><p><strong>theta</strong> – yaw-angle </p></li>
+<li><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose10VertexPoseEdddb">
+<span id="_CPPv3N19hateb_local_planner10VertexPose10VertexPoseEdddb"></span><span id="_CPPv2N19hateb_local_planner10VertexPose10VertexPoseEdddb"></span><span id="hateb_local_planner::VertexPose::VertexPose__double.double.double.b"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1abb64e66a070d3ec7570111fc66f85173"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose10VertexPoseEdddb" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct pose using single components x, y, and the yaw angle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate </p></li>
+<li><p><strong>y</strong> – y-coordinate </p></li>
+<li><p><strong>theta</strong> – yaw angle in rad </p></li>
+<li><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPoseD0Ev">
+<span id="_CPPv3N19hateb_local_planner10VertexPoseD0Ev"></span><span id="_CPPv2N19hateb_local_planner10VertexPoseD0Ev"></span><span id="hateb_local_planner::VertexPose::~VertexPose"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a34b3e9fccdf596f380ef27af15361507"></span><span class="sig-name descname"><span class="n"><span class="pre">~VertexPose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPoseD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructs the <a class="reference internal" href="#classhateb__local__planner_1_1VertexPose"><span class="std std-ref">VertexPose</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose4poseEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose4poseEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose4poseEv"></span><span id="hateb_local_planner::VertexPose::pose"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1ac2479e5a8f47def9b9ce2539a02572d6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">pose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose4poseEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the pose. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> estimate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose4poseEv">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose4poseEv"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose4poseEv"></span><span id="hateb_local_planner::VertexPose::poseC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1af13a86535fedba2e45ab3f3005b19fff"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">pose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose4poseEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the pose (read-only) </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> estimate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose8positionEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose8positionEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose8positionEv"></span><span id="hateb_local_planner::VertexPose::position"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a2a7cd5148c462bb89fe82f56cef2d174"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose8positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the 2D position part. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the 2D position part </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose8positionEv">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose8positionEv"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose8positionEv"></span><span id="hateb_local_planner::VertexPose::positionC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a354d3686506b585b425eecd257488bf5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose8positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the 2D position part (read-only) </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the 2D position part </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose1xEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose1xEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose1xEv"></span><span id="hateb_local_planner::VertexPose::x"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a6ea7be173e321f3a50dd004c4fa24a0b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose1xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the x-coordinate the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the x-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose1xEv">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose1xEv"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose1xEv"></span><span id="hateb_local_planner::VertexPose::xC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a7b0ede1783842f12caf6010c67c03a44"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose1xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the x-coordinate the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the x-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose1yEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose1yEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose1yEv"></span><span id="hateb_local_planner::VertexPose::y"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1abd720a20e0db25efa5da1013217ffbae"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose1yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the y-coordinate the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the y-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose1yEv">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose1yEv"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose1yEv"></span><span id="hateb_local_planner::VertexPose::yC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a92bb5107157dfff083ccab99b76b360c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose1yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the y-coordinate the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the y-coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose5thetaEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose5thetaEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose5thetaEv"></span><span id="hateb_local_planner::VertexPose::theta"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1af47bc2c186c2e14fff2f4f13376a59b2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">theta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose5thetaEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the orientation part (yaw angle) of the pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the yaw angle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose5thetaEv">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose5thetaEv"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose5thetaEv"></span><span id="hateb_local_planner::VertexPose::thetaC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1af857c33468e3cb2bdfc2200e8a3dc2be"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">theta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose5thetaEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the orientation part (yaw angle) of the pose (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the yaw angle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose15setToOriginImplEv">
+<span id="_CPPv3N19hateb_local_planner10VertexPose15setToOriginImplEv"></span><span id="_CPPv2N19hateb_local_planner10VertexPose15setToOriginImplEv"></span><span id="hateb_local_planner::VertexPose::setToOriginImpl"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a5843d3c5cbc79b06dda39a1b7f9c3d86"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setToOriginImpl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose15setToOriginImplEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the underlying estimate (2D vector) to zero. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose9oplusImplEPKd">
+<span id="_CPPv3N19hateb_local_planner10VertexPose9oplusImplEPKd"></span><span id="_CPPv2N19hateb_local_planner10VertexPose9oplusImplEPKd"></span><span id="hateb_local_planner::VertexPose::oplusImpl__doubleCP"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a6d3eca3f08eed8dda6d7152aee3f3e3a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oplusImpl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">update</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose9oplusImplEPKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Define the update increment <span class="math notranslate nohighlight">\( \mathbf{x}_{k+1} = \mathbf{x}_k + \Delta \mathbf{x} \)</span>. A simple addition for the position. The angle is first added to the previous estimated angle and afterwards normalized to the interval <span class="math notranslate nohighlight">\( [-\pi \pi] \)</span>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>update</strong> – increment that should be added to the previous esimate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10VertexPose4readERNSt7istreamE">
+<span id="_CPPv3N19hateb_local_planner10VertexPose4readERNSt7istreamE"></span><span id="_CPPv2N19hateb_local_planner10VertexPose4readERNSt7istreamE"></span><span id="hateb_local_planner::VertexPose::read__isR"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1ac8892984a1f51aae5dd2e45a8af04449"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">istream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10VertexPose4readERNSt7istreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Read an estimate from an input stream. First the x-coordinate followed by y and the yaw angle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>is</strong> – input stream </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>always <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner10VertexPose5writeERNSt7ostreamE">
+<span id="_CPPv3NK19hateb_local_planner10VertexPose5writeERNSt7ostreamE"></span><span id="_CPPv2NK19hateb_local_planner10VertexPose5writeERNSt7ostreamE"></span><span id="hateb_local_planner::VertexPose::write__osRC"></span><span class="target" id="classhateb__local__planner_1_1VertexPose_1a0eda61ecac01fcce72227769e8bc9440"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">write</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner10VertexPose5writeERNSt7ostreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Write the estimate to an output stream First the x-coordinate followed by y and the yaw angle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>os</strong> – output stream </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the export was successful, otherwise <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

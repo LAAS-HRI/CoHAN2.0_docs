@@ -215,10 +215,376 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayerE">
+<span id="_CPPv3N12cohan_layers10AgentLayerE"></span><span id="_CPPv2N12cohan_layers10AgentLayerE"></span><span id="cohan_layers::AgentLayer"></span><span class="target" id="classcohan__layers_1_1AgentLayer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AgentLayer</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Layer</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayerE" title="Link to this definition"></a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="classcohan__layers_1_1AgentVisibilityLayer.html#classcohan__layers_1_1AgentVisibilityLayer"><span class="std std-ref">cohan_layers::AgentVisibilityLayer</span></a>, <a class="reference internal" href="classcohan__layers_1_1StaticAgentLayer.html#classcohan__layers_1_1StaticAgentLayer"><span class="std std-ref">cohan_layers::StaticAgentLayer</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10AgentLayerEv">
+<span id="_CPPv3N12cohan_layers10AgentLayer10AgentLayerEv"></span><span id="_CPPv2N12cohan_layers10AgentLayer10AgentLayerEv"></span><span id="cohan_layers::AgentLayer::AgentLayer"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1afdd328a134b53a8758ebc49c60829b14"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AgentLayer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10AgentLayerEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12onInitializeEv">
+<span id="_CPPv3N12cohan_layers10AgentLayer12onInitializeEv"></span><span id="_CPPv2N12cohan_layers10AgentLayer12onInitializeEv"></span><span id="cohan_layers::AgentLayer::onInitialize"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a1af29e63306b94ae450c66916c2d364c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">onInitialize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12onInitializeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the agent layer. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12updateBoundsEdddPdPdPdPd">
+<span id="_CPPv3N12cohan_layers10AgentLayer12updateBoundsEdddPdPdPdPd"></span><span id="_CPPv2N12cohan_layers10AgentLayer12updateBoundsEdddPdPdPdPd"></span><span id="cohan_layers::AgentLayer::updateBounds__double.double.double.doubleP.doubleP.doubleP.doubleP"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1afecded3910ae8f847b22a2818b6d33f0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateBounds</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">origin_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">origin_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">origin_yaw</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_y</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12updateBoundsEdddPdPdPdPd" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the bounds of the costmap based on agent positions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin_x</strong> – Origin x-coordinate of the costmap </p></li>
+<li><p><strong>origin_y</strong> – Origin y-coordinate of the costmap </p></li>
+<li><p><strong>origin_yaw</strong> – Rotation angle of the costmap origin </p></li>
+<li><p><strong>min_x</strong> – Pointer to the minimum x-coordinate of the bounds </p></li>
+<li><p><strong>min_y</strong> – Pointer to the minimum y-coordinate of the bounds </p></li>
+<li><p><strong>max_x</strong> – Pointer to the maximum x-coordinate of the bounds </p></li>
+<li><p><strong>max_y</strong> – Pointer to the maximum y-coordinate of the bounds </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11updateCostsERN10costmap_2d9Costmap2DEiiii">
+<span id="_CPPv3N12cohan_layers10AgentLayer11updateCostsERN10costmap_2d9Costmap2DEiiii"></span><span id="_CPPv2N12cohan_layers10AgentLayer11updateCostsERN10costmap_2d9Costmap2DEiiii"></span><span id="cohan_layers::AgentLayer::updateCosts__costmap_2d::Costmap2DR.i.i.i.i"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a162247110cac9ed0f9b2aabac4bbf635"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateCosts</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">master_grid</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_j</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_j</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11updateCostsERN10costmap_2d9Costmap2DEiiii" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the cost values in the costmap based on agent positions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>master_grid</strong> – Reference to the master costmap grid. </p></li>
+<li><p><strong>min_i</strong> – Minimum index in the i-direction defining the region to update. </p></li>
+<li><p><strong>min_j</strong> – Minimum index in the j-direction defining the region to update. </p></li>
+<li><p><strong>max_i</strong> – Maximum index in the i-direction defining the region to update. </p></li>
+<li><p><strong>max_j</strong> – Maximum index in the j-direction defining the region to update. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer22updateBoundsFromAgentsEPdPdPdPd">
+<span id="_CPPv3N12cohan_layers10AgentLayer22updateBoundsFromAgentsEPdPdPdPd"></span><span id="_CPPv2N12cohan_layers10AgentLayer22updateBoundsFromAgentsEPdPdPdPd"></span><span id="cohan_layers::AgentLayer::updateBoundsFromAgents__doubleP.doubleP.doubleP.doubleP"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a2cd68deeadaae0160ac6aee736d92e37"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateBoundsFromAgents</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">min_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">max_y</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer22updateBoundsFromAgentsEPdPdPdPd" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the bounds from agent positions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_x</strong> – Pointer to the minimum x-coordinate of the bounds </p></li>
+<li><p><strong>min_y</strong> – Pointer to the minimum y-coordinate of the bounds </p></li>
+<li><p><strong>max_x</strong> – Pointer to the maximum x-coordinate of the bounds </p></li>
+<li><p><strong>max_y</strong> – Pointer to the maximum y-coordinate of the bounds </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer13isDiscretizedEv">
+<span id="_CPPv3N12cohan_layers10AgentLayer13isDiscretizedEv"></span><span id="_CPPv2N12cohan_layers10AgentLayer13isDiscretizedEv"></span><span id="cohan_layers::AgentLayer::isDiscretized"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a6fb9d22b880b9479d842b3cc5fb38fb4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isDiscretized</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer13isDiscretizedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Indicates whether the layer is discretized. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Always returns false as this layer is not discretized </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer8agentsCBERKN10cohan_msgs13TrackedAgentsE">
+<span id="_CPPv3N12cohan_layers10AgentLayer8agentsCBERKN10cohan_msgs13TrackedAgentsE"></span><span id="_CPPv2N12cohan_layers10AgentLayer8agentsCBERKN10cohan_msgs13TrackedAgentsE"></span><span id="cohan_layers::AgentLayer::agentsCB__cohan_msgs::TrackedAgentsCR"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a97d205e3e4669c0cc810409dc24bbacf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agentsCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TrackedAgents</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">agents</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer8agentsCBERKN10cohan_msgs13TrackedAgentsE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for TrackedAgents. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>agents</strong> – - Tracked agents data received from the topic Updates the agents_ member variable with the received data. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer8statesCBERKN21agent_path_prediction10AgentsInfoE">
+<span id="_CPPv3N12cohan_layers10AgentLayer8statesCBERKN21agent_path_prediction10AgentsInfoE"></span><span id="_CPPv2N12cohan_layers10AgentLayer8statesCBERKN21agent_path_prediction10AgentsInfoE"></span><span id="cohan_layers::AgentLayer::statesCB__agent_path_prediction::AgentsInfoCR"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a4693da13a11bb1325806ce4c4870605d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">statesCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">agents_info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer8statesCBERKN21agent_path_prediction10AgentsInfoE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for AgentsInfo to get the agent states. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>agents_info</strong> – - Information about agents including their states Updates the states_ member variable with the received data. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10shutdownCBERN8std_srvs14SetBoolRequestERN8std_srvs15SetBoolResponseE">
+<span id="_CPPv3N12cohan_layers10AgentLayer10shutdownCBERN8std_srvs14SetBoolRequestERN8std_srvs15SetBoolResponseE"></span><span id="_CPPv2N12cohan_layers10AgentLayer10shutdownCBERN8std_srvs14SetBoolRequestERN8std_srvs15SetBoolResponseE"></span><span id="cohan_layers::AgentLayer::shutdownCB__std_srvs::SetBoolRequestR.std_srvs::SetBoolResponseR"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1aa5b6cb410c3b4b5460ea00cde95770be"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shutdownCB</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std_srvs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SetBoolRequest</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">req</span></span>, <span class="n"><span class="pre">std_srvs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SetBoolResponse</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">res</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10shutdownCBERN8std_srvs14SetBoolRequestERN8std_srvs15SetBoolResponseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for shutdown service. Handles the shutdown of the agent layer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>req</strong> – Service request containing the shutdown flag </p></li>
+<li><p><strong>res</strong> – Service response indicating success or failure </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if shutdown successful, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11agents_sub_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11agents_sub_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11agents_sub_E"></span><span id="cohan_layers::AgentLayer::agents_sub___ros::Subscriber"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a0c0e51373cda788f482c103074e9fea5"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_sub_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11agents_sub_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer18agents_states_sub_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer18agents_states_sub_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer18agents_states_sub_E"></span><span id="cohan_layers::AgentLayer::agents_states_sub___ros::Subscriber"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a042352308736e3f8d468791738d3bce0"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_states_sub_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer18agents_states_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ros subscribers </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12stopmap_srv_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer12stopmap_srv_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer12stopmap_srv_E"></span><span id="cohan_layers::AgentLayer::stopmap_srv___ros::ServiceServer"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a7af012616752697af0c11b63044dde17"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceServer</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stopmap_srv_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12stopmap_srv_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ros services </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer7agents_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer7agents_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer7agents_E"></span><span id="cohan_layers::AgentLayer::agents___cohan_msgs::TrackedAgents"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1abbc559fdf12e15242c7c0852b8d269f8"></span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TrackedAgents</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer7agents_E" title="Link to this definition"></a><br /></dt>
+<dd><p>agents </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer7states_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer7states_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer7states_E"></span><span id="cohan_layers::AgentLayer::states___std::map:i.i:"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a9277b94d9450bf969edaf84c8beb408c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">states_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer7states_E" title="Link to this definition"></a><br /></dt>
+<dd><p>agent_states </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer19transformed_agents_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer19transformed_agents_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer19transformed_agents_E"></span><span id="cohan_layers::AgentLayer::transformed_agents___std::vector:AgentPoseVel:"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a1b9df0ba8009c991432124692fbf37ed"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVelE" title="cohan_layers::AgentLayer::AgentPoseVel"><span class="n"><span class="pre">AgentPoseVel</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformed_agents_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer19transformed_agents_E" title="Link to this definition"></a><br /></dt>
+<dd><p>transformed agents </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer5lock_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer5lock_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer5lock_E"></span><span id="cohan_layers::AgentLayer::lock___boost::recursive_mutex"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a32383038b520594beb56f9bbad4c8082"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">recursive_mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lock_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer5lock_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11first_time_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11first_time_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11first_time_E"></span><span id="cohan_layers::AgentLayer::first_time___b"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a358ed2716ba140c39dd85357bbf54b40"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">first_time_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11first_time_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer6reset_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer6reset_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer6reset_E"></span><span id="cohan_layers::AgentLayer::reset___b"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a8892ad59c63a48ad948bdf5f79a91ca2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer6reset_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer9shutdown_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer9shutdown_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer9shutdown_E"></span><span id="cohan_layers::AgentLayer::shutdown___b"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a0b31b0736d9ab8c8d2ac46458f530463"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shutdown_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer9shutdown_E" title="Link to this definition"></a><br /></dt>
+<dd><p>flags </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10last_time_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer10last_time_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer10last_time_E"></span><span id="cohan_layers::AgentLayer::last_time___ros::Time"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1aa579695e49019d2acdba9456379128c9"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_time_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10last_time_E" title="Link to this definition"></a><br /></dt>
+<dd><p>time checks </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11last_min_x_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11last_min_x_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11last_min_x_E"></span><span id="cohan_layers::AgentLayer::last_min_x___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1ac7bdd6029e6c3c088e8dc6b0eefc2395"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_min_x_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11last_min_x_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11last_min_y_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11last_min_y_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11last_min_y_E"></span><span id="cohan_layers::AgentLayer::last_min_y___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a92f24d94dd0b1283b35384438a9368da"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_min_y_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11last_min_y_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11last_max_x_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11last_max_x_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11last_max_x_E"></span><span id="cohan_layers::AgentLayer::last_max_x___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1af90964373c6d6be5f4f6593d7537d5cb"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_max_x_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11last_max_x_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer11last_max_y_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer11last_max_y_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer11last_max_y_E"></span><span id="cohan_layers::AgentLayer::last_max_y___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a455b625eb20bc1c98500dbdb0228d176"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_max_y_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer11last_max_y_E" title="Link to this definition"></a><br /></dt>
+<dd><p>min and max x and y values for the costmap </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer7radius_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer7radius_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer7radius_E"></span><span id="cohan_layers::AgentLayer::radius___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a8838ac8e005d47f70003b51745d77065"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">radius_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer7radius_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10amplitude_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer10amplitude_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer10amplitude_E"></span><span id="cohan_layers::AgentLayer::amplitude___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a5fc416e8a57ea57f34927756eb6c74c2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">amplitude_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10amplitude_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer6covar_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer6covar_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer6covar_E"></span><span id="cohan_layers::AgentLayer::covar___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a8763d4746e35c183bb3a1792d542aeca"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">covar_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer6covar_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer7cutoff_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer7cutoff_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer7cutoff_E"></span><span id="cohan_layers::AgentLayer::cutoff___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a7da870ee93930677a69874e1d0fa32f4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cutoff_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer7cutoff_E" title="Link to this definition"></a><br /></dt>
+<dd><p>parameters for the gaussian </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer13robot_radius_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer13robot_radius_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer13robot_radius_E"></span><span id="cohan_layers::AgentLayer::robot_radius___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a477bdf069b1d186f3d5fc1fcfae7757b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_radius_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer13robot_radius_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer13agent_radius_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer13agent_radius_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer13agent_radius_E"></span><span id="cohan_layers::AgentLayer::agent_radius___double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a23e098bc72c0c79470d4493fe59f1572"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agent_radius_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer13agent_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>radii for the agents </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer3ns_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer3ns_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer3ns_E"></span><span id="cohan_layers::AgentLayer::ns___ss"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a4a1311ca24a93859ac1f536bb46a1845"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer3ns_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer25tracked_agents_sub_topic_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer25tracked_agents_sub_topic_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer25tracked_agents_sub_topic_E"></span><span id="cohan_layers::AgentLayer::tracked_agents_sub_topic___ss"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1aba00f5021c8077f6c9a3d50c2a72611f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tracked_agents_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer25tracked_agents_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer24agents_states_sub_topic_E">
+<span id="_CPPv3N12cohan_layers10AgentLayer24agents_states_sub_topic_E"></span><span id="_CPPv2N12cohan_layers10AgentLayer24agents_states_sub_topic_E"></span><span id="cohan_layers::AgentLayer::agents_states_sub_topic___ss"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a8fdfce94f480552f6ff035745095e674"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_states_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer24agents_states_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ROS namespace and topic names. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-static-functions">Protected Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10Guassian1DEdddd">
+<span id="_CPPv3N12cohan_layers10AgentLayer10Guassian1DEdddd"></span><span id="_CPPv2N12cohan_layers10AgentLayer10Guassian1DEdddd"></span><span id="cohan_layers::AgentLayer::Guassian1D__double.double.double.double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a5ae292ea204553aff2857ac4f84889c4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Guassian1D</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">A</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">varx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10Guassian1DEdddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes a 1D Gaussian value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Input value </p></li>
+<li><p><strong>x0</strong> – Mean of the Gaussian </p></li>
+<li><p><strong>A</strong> – Amplitude of the Gaussian </p></li>
+<li><p><strong>varx</strong> – Variance of the Gaussian </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1D Gaussian value for the given input </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer10Gaussian2DEddddddd">
+<span id="_CPPv3N12cohan_layers10AgentLayer10Gaussian2DEddddddd"></span><span id="_CPPv2N12cohan_layers10AgentLayer10Gaussian2DEddddddd"></span><span id="cohan_layers::AgentLayer::Gaussian2D__double.double.double.double.double.double.double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1af272dd866db7d3befefccdbd5e39a0dd"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Gaussian2D</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">A</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">varx</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vary</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer10Gaussian2DEddddddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes a 2D Gaussian value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Input x-coordinate </p></li>
+<li><p><strong>y</strong> – Input y-coordinate </p></li>
+<li><p><strong>x0</strong> – Mean x-coordinate of the Gaussian </p></li>
+<li><p><strong>y0</strong> – Mean y-coordinate of the Gaussian </p></li>
+<li><p><strong>A</strong> – Amplitude of the Gaussian </p></li>
+<li><p><strong>varx</strong> – Variance in the x-direction </p></li>
+<li><p><strong>vary</strong> – Variance in the y-direction </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>2D Gaussian value for the given inputs </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer17Gaussian2D_skewedEdddddddd">
+<span id="_CPPv3N12cohan_layers10AgentLayer17Gaussian2D_skewedEdddddddd"></span><span id="_CPPv2N12cohan_layers10AgentLayer17Gaussian2D_skewedEdddddddd"></span><span id="cohan_layers::AgentLayer::Gaussian2D_skewed__double.double.double.double.double.double.double.double"></span><span class="target" id="classcohan__layers_1_1AgentLayer_1a8994a864b6896d2726adaada5af5257e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Gaussian2D_skewed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">A</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">varx</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">vary</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">skew_ang</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer17Gaussian2D_skewedEdddddddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Computes a skewed 2D Gaussian value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Input x-coordinate </p></li>
+<li><p><strong>y</strong> – Input y-coordinate </p></li>
+<li><p><strong>x0</strong> – Mean x-coordinate of the Gaussian </p></li>
+<li><p><strong>y0</strong> – Mean y-coordinate of the Gaussian </p></li>
+<li><p><strong>A</strong> – Amplitude of the Gaussian </p></li>
+<li><p><strong>varx</strong> – Variance in the x-direction </p></li>
+<li><p><strong>vary</strong> – Variance in the y-direction </p></li>
+<li><p><strong>skew_ang</strong> – Skew angle for the Gaussian </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Skewed 2D Gaussian value for the given inputs </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVelE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVelE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVelE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AgentPoseVel</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVelE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel8track_idE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel8track_idE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel8track_idE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::track_id__i"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1accbd201e11ad255b88069c7cdbe8ecf6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">track_id</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel8track_idE" title="Link to this definition"></a><br /></dt>
+<dd><p>Unique identifier for the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel4typeE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel4typeE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel4typeE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::type__i"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a8fe631617b2f0ed56f81b90939d0fe71"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel4typeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Type of the agent (e.g., human, robot) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel5stateE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel5stateE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel5stateE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::state__i"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a2ee76c0dcdaf9c4c4c9291279c1fdfaa"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">state</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel5stateE" title="Link to this definition"></a><br /></dt>
+<dd><p>State of the agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel6headerE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel6headerE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel6headerE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::header__std_msgs::Header"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a088c5a789de753b0216ce7c62d0af3a2"></span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Header</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">header</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel6headerE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel4poseE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel4poseE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel4poseE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::pose__geometry_msgs::Pose"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a813024623d94fe2b153615adb4b43f23"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pose</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel4poseE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel8velocityE">
+<span id="_CPPv3N12cohan_layers10AgentLayer12AgentPoseVel8velocityE"></span><span id="_CPPv2N12cohan_layers10AgentLayer12AgentPoseVel8velocityE"></span><span id="cohan_layers::AgentLayer::AgentPoseVel::velocity__geometry_msgs::Twist"></span><span class="target" id="structcohan__layers_1_1AgentLayer_1_1AgentPoseVel_1a38812a572f5705fe9c19379dcc237aec"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">velocity</span></span></span><a class="headerlink" href="#_CPPv4N12cohan_layers10AgentLayer12AgentPoseVel8velocityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 

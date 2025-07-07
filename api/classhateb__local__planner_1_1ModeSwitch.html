@@ -190,10 +190,305 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitchE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitchE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitchE"></span><span id="hateb_local_planner::ModeSwitch"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ModeSwitch</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitchE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class managing planning mode switches in the HATEB local planner. </p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1ModeSwitch"><span class="std std-ref">ModeSwitch</span></a> implements a behavior tree-based decision system for switching between different planning modes (single band, dual band, velocity obstacles, etc.) based on the current situation. It processes information about nearby agents, goals, and passage types to determine the most appropriate planning strategy. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10ModeSwitchEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10ModeSwitchEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10ModeSwitchEv"></span><span id="hateb_local_planner::ModeSwitch::ModeSwitch"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a0f977db12863b680c34f1c909ee55b43"></span><span class="sig-name descname"><span class="n"><span class="pre">ModeSwitch</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10ModeSwitchEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitchD0Ev">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitchD0Ev"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitchD0Ev"></span><span id="hateb_local_planner::ModeSwitch::~ModeSwitch"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1aab035d5b0b57efa54e7786d40cc7233e"></span><span class="sig-name descname"><span class="n"><span class="pre">~ModeSwitch</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitchD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Default destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10initializeERN3ros10NodeHandleERNSt6stringERNSt10shared_ptrIN6agents6AgentsEEERNSt10shared_ptrI7BackoffEE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10initializeERN3ros10NodeHandleERNSt6stringERNSt10shared_ptrIN6agents6AgentsEEERNSt10shared_ptrI7BackoffEE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10initializeERN3ros10NodeHandleERNSt6stringERNSt10shared_ptrIN6agents6AgentsEEERNSt10shared_ptrI7BackoffEE"></span><span id="hateb_local_planner::ModeSwitch::initialize__ros::NodeHandleR.ssR.std::shared_ptr:agents::Agents:R.std::shared_ptr:Backoff:R"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a09bfc26c59e4e794589adbf6f924ea3c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nh</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">xml_path</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classagents_1_1Agents.html#_CPPv4N6agents6AgentsE" title="agents::Agents"><span class="n"><span class="pre">Agents</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">agents_ptr</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classhateb__local__planner_1_1Backoff.html#_CPPv4N19hateb_local_planner7BackoffE" title="hateb_local_planner::Backoff"><span class="n"><span class="pre">Backoff</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">backoff_ptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10initializeERN3ros10NodeHandleERNSt6stringERNSt10shared_ptrIN6agents6AgentsEEERNSt10shared_ptrI7BackoffEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the mode switch with required components. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nh</strong> – ROS node handle </p></li>
+<li><p><strong>xml_path</strong> – Path to the behavior tree XML description </p></li>
+<li><p><strong>agents_ptr</strong> – Pointer to the agents management class </p></li>
+<li><p><strong>backoff_ptr</strong> – Pointer to the backoff behavior handler </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch6tickBTEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch6tickBTEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch6tickBTEv"></span><span id="hateb_local_planner::ModeSwitch::tickBT"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1aa860dc9be20753e5b083966de64f42dd"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tickBT</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch6tickBTEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Executes one tick of the behavior tree. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Status of the behavior tree after the tick </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch7resetBTEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch7resetBTEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch7resetBTEv"></span><span id="hateb_local_planner::ModeSwitch::resetBT"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a0dfa09b1400828f8e485091e20b73056"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetBT</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch7resetBTEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Resets the behavior tree to its initial state. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch5BTreeEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch5BTreeEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch5BTreeEv"></span><span id="hateb_local_planner::ModeSwitch::BTree"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a5488b3a5c2c11127b0815855b59273c7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Tree</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">BTree</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch5BTreeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets a pointer to the behavior tree. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Pointer to the behavior tree instance </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch14tickAndGetModeEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch14tickAndGetModeEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch14tickAndGetModeEv"></span><span id="hateb_local_planner::ModeSwitch::tickAndGetMode"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a8a5a09e84fe7cda0a46b946aab946d96"></span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PlanningMode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tickAndGetMode</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch14tickAndGetModeEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Ticks the behavior tree and returns the resulting planning mode. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The selected planning mode after the tree evaluation </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch13registerNodesEv">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch13registerNodesEv"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch13registerNodesEv"></span><span id="hateb_local_planner::ModeSwitch::registerNodes"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1adaee89986120f308a98eb63c4b4b50c6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">registerNodes</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch13registerNodesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Registers custom nodes with the behavior tree factory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12agentsInfoCBERKN21agent_path_prediction10AgentsInfoE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12agentsInfoCBERKN21agent_path_prediction10AgentsInfoE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12agentsInfoCBERKN21agent_path_prediction10AgentsInfoE"></span><span id="hateb_local_planner::ModeSwitch::agentsInfoCB__agent_path_prediction::AgentsInfoCR"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a271b68f6507cf1a2d792e9ca642d99fd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agentsInfoCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">info_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12agentsInfoCBERKN21agent_path_prediction10AgentsInfoE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for processing agent information updates. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>info_msg</strong> – Message containing updated agent information </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch14goalMoveBaseCBERKN14move_base_msgs18MoveBaseActionGoalE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch14goalMoveBaseCBERKN14move_base_msgs18MoveBaseActionGoalE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch14goalMoveBaseCBERKN14move_base_msgs18MoveBaseActionGoalE"></span><span id="hateb_local_planner::ModeSwitch::goalMoveBaseCB__move_base_msgs::MoveBaseActionGoalCR"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a935d1d5b3440cce005452d8978314dcb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goalMoveBaseCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">move_base_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MoveBaseActionGoal</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">goal_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch14goalMoveBaseCBERKN14move_base_msgs18MoveBaseActionGoalE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for processing new navigation goals. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>goal_msg</strong> – Message containing the new goal </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch16resultMoveBaseCBERKN14move_base_msgs20MoveBaseActionResultE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch16resultMoveBaseCBERKN14move_base_msgs20MoveBaseActionResultE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch16resultMoveBaseCBERKN14move_base_msgs20MoveBaseActionResultE"></span><span id="hateb_local_planner::ModeSwitch::resultMoveBaseCB__move_base_msgs::MoveBaseActionResultCR"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a9209e848aa9ea1547f22f5d0ef866d15"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resultMoveBaseCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">move_base_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">MoveBaseActionResult</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">result_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch16resultMoveBaseCBERKN14move_base_msgs20MoveBaseActionResultE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for processing navigation results. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>result_msg</strong> – Message containing the navigation result </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch9passageCBERKN10cohan_msgs11PassageTypeE">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch9passageCBERKN10cohan_msgs11PassageTypeE"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch9passageCBERKN10cohan_msgs11PassageTypeE"></span><span id="hateb_local_planner::ModeSwitch::passageCB__cohan_msgs::PassageTypeCR"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1ab0784b360be7ad36cacf96246fbfdc2f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">passageCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PassageType</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">passage_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch9passageCBERKN10cohan_msgs11PassageTypeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for processing passage type information. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>passage_msg</strong> – Message containing passage classification </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10updateModeEi">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10updateModeEi"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10updateModeEi"></span><span id="hateb_local_planner::ModeSwitch::updateMode__i"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a4011bbbbf267c3d8f1e1e62bc13e9199"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateMode</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">duration</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10updateModeEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the current planning mode. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>duration</strong> – Optional duration parameter for the update </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch15printTreeStatusEPKN2BT8TreeNodeEi">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch15printTreeStatusEPKN2BT8TreeNodeEi"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch15printTreeStatusEPKN2BT8TreeNodeEi"></span><span id="hateb_local_planner::ModeSwitch::printTreeStatus__BT::TreeNodeCP.i"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a2a237e7d893356b1a26388fae0206c83"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTreeStatus</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TreeNode</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">node</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch15printTreeStatusEPKN2BT8TreeNodeEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch13goal_reached_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch13goal_reached_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch13goal_reached_E"></span><span id="hateb_local_planner::ModeSwitch::goal_reached___b"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a075d65e69586c23fd4b7a420dec8f38a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_reached_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch13goal_reached_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if current goal was reached. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12initialized_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12initialized_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12initialized_E"></span><span id="hateb_local_planner::ModeSwitch::initialized___b"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1aefd4c95fbad1f4ada3f9584441694873"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialized_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12initialized_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if class was properly initialized. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12goal_update_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12goal_update_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12goal_update_E"></span><span id="hateb_local_planner::ModeSwitch::goal_update___b"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a00801aea58ed373499e425b74d648ec6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_update_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12goal_update_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if goal was updated. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch3nh_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch3nh_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch3nh_E"></span><span id="hateb_local_planner::ModeSwitch::nh___ros::NodeHandle"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a3d43361392f44032bdd95fc710fba941"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nh_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch3nh_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ROS node handle. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch16agents_info_sub_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch16agents_info_sub_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch16agents_info_sub_E"></span><span id="hateb_local_planner::ModeSwitch::agents_info_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a4725705ac0c86113b18ea12899f7deb9"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch16agents_info_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for agent information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch9goal_sub_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch9goal_sub_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch9goal_sub_E"></span><span id="hateb_local_planner::ModeSwitch::goal_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a9561b527938c73a065d0530a3deb07ab"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch9goal_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for navigation goals. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch11result_sub_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch11result_sub_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch11result_sub_E"></span><span id="hateb_local_planner::ModeSwitch::result_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a2ccf658d13393576f1b2e9fe2dc6c45e"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">result_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch11result_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for navigation results. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch19passage_detect_sub_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch19passage_detect_sub_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch19passage_detect_sub_E"></span><span id="hateb_local_planner::ModeSwitch::passage_detect_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a0ced43d56004c6e4c369685288a15276"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">passage_detect_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch19passage_detect_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for passage detection. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch18planning_mode_pub_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch18planning_mode_pub_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch18planning_mode_pub_E"></span><span id="hateb_local_planner::ModeSwitch::planning_mode_pub___ros::Publisher"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1abfdf8e5f8d3483247b7c738cfcdacf89"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planning_mode_pub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch18planning_mode_pub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for current planning mode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12backoff_srv_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12backoff_srv_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12backoff_srv_E"></span><span id="hateb_local_planner::ModeSwitch::backoff_srv___ros::ServiceServer"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1ae3df0ce20e3207647c0aaa09464669f2"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceServer</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_srv_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12backoff_srv_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Service server for backoff requests. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch5goal_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch5goal_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch5goal_E"></span><span id="hateb_local_planner::ModeSwitch::goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a866e90b0e30dcb27519a1e8e7d6f911e"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch5goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current navigation goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12agents_info_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12agents_info_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12agents_info_E"></span><span id="hateb_local_planner::ModeSwitch::agents_info___agent_path_prediction::AgentsInfo"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1af7534dad7e4f2842656c53d2ad99a916"></span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12agents_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current agent information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch11result_msg_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch11result_msg_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch11result_msg_E"></span><span id="hateb_local_planner::ModeSwitch::result_msg___actionlib_msgs::GoalStatusArray"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a73809fc1af246719bec801bd3af32582"></span><span class="n"><span class="pre">actionlib_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">GoalStatusArray</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">result_msg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch11result_msg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Latest navigation result. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12bhv_factory_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12bhv_factory_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12bhv_factory_E"></span><span id="hateb_local_planner::ModeSwitch::bhv_factory___BT::BehaviorTreeFactory"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a5b57798d071bd8bba920b10652b72d9f"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BehaviorTreeFactory</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bhv_factory_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12bhv_factory_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Factory for creating BT nodes. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch9bhv_tree_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch9bhv_tree_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch9bhv_tree_E"></span><span id="hateb_local_planner::ModeSwitch::bhv_tree___BT::Tree"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a798d721d79ae54ce1e95b99946bf8363"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Tree</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bhv_tree_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch9bhv_tree_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The behavior tree instance. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10pub_mutex_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10pub_mutex_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10pub_mutex_E"></span><span id="hateb_local_planner::ModeSwitch::pub_mutex___std::mutex"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a16cc375474bd05bb060cfb84ff1bfb5d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pub_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10pub_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex for thread-safe publishing. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch5name_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch5name_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch5name_E"></span><span id="hateb_local_planner::ModeSwitch::name___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a364490ca57c1cdad3c495e1037c468ec"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of this node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10plan_mode_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10plan_mode_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10plan_mode_E"></span><span id="hateb_local_planner::ModeSwitch::plan_mode___hateb_local_planner::PlanningMode"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a9eb0ee5dd415a87bfcb4ebce6450240b"></span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PlanningMode</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">plan_mode_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10plan_mode_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current planning mode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch10mode_info_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch10mode_info_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch10mode_info_E"></span><span id="hateb_local_planner::ModeSwitch::mode_info___ModeInfo"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a9036b519c97c53bd0d63d503498a5781"></span><a class="reference internal" href="structhateb__local__planner_1_1ModeInfo.html#_CPPv4N19hateb_local_planner8ModeInfoE" title="hateb_local_planner::ModeInfo"><span class="n"><span class="pre">ModeInfo</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mode_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch10mode_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Detailed mode information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch12backoff_ptr_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch12backoff_ptr_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch12backoff_ptr_E"></span><span id="hateb_local_planner::ModeSwitch::backoff_ptr___std::shared_ptr:Backoff:"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1ace16e2cba317b19eed1b9c4817a07c4a"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classhateb__local__planner_1_1Backoff.html#_CPPv4N19hateb_local_planner7BackoffE" title="hateb_local_planner::Backoff"><span class="n"><span class="pre">Backoff</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_ptr_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch12backoff_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to backoff behavior handler. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch3ns_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch3ns_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch3ns_E"></span><span id="hateb_local_planner::ModeSwitch::ns___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1ac34ec0926c6715623a693b1c4d35debd"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace of the node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch22agents_info_sub_topic_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch22agents_info_sub_topic_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch22agents_info_sub_topic_E"></span><span id="hateb_local_planner::ModeSwitch::agents_info_sub_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a67e7fc50b4ec4ce156a68a89edb9888e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch22agents_info_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic for agents information. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch15goal_sub_topic_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch15goal_sub_topic_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch15goal_sub_topic_E"></span><span id="hateb_local_planner::ModeSwitch::goal_sub_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1acd3dcf3c8c477f77ea9f894b941d924d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch15goal_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic for robot goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch17result_sub_topic_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch17result_sub_topic_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch17result_sub_topic_E"></span><span id="hateb_local_planner::ModeSwitch::result_sub_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1abaf681100237b726b69d975ec9fd23ea"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">result_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch17result_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic for robot goal result. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner10ModeSwitch18passage_sub_topic_E">
+<span id="_CPPv3N19hateb_local_planner10ModeSwitch18passage_sub_topic_E"></span><span id="_CPPv2N19hateb_local_planner10ModeSwitch18passage_sub_topic_E"></span><span id="hateb_local_planner::ModeSwitch::passage_sub_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1ModeSwitch_1a3831e8aa883e831be5de164c63639e62"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">passage_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner10ModeSwitch18passage_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Topic for passage detection (from invisible humans) </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

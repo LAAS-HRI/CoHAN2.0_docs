@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,123 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiffE">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiffE"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiffE"></span><span id="hateb_local_planner::VertexTimeDiff"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexTimeDiff</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">g2o</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseVertex</span></span><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiffE" title="Link to this definition"></a><br /></dt>
+<dd><p>This class stores and wraps a time difference <span class="math notranslate nohighlight">\( \Delta T \)</span> into a vertex that can be optimized via g2o. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEb">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEb"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEb"></span><span id="hateb_local_planner::VertexTimeDiff::VertexTimeDiff__b"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a906619f97c084787e036122990042b57"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEdb">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEdb"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEdb"></span><span id="hateb_local_planner::VertexTimeDiff::VertexTimeDiff__double.b"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1ab1fb2dea75fcf547a0a8798fa0b0cee8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff14VertexTimeDiffEdb" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct the TimeDiff vertex with a value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dt</strong> – time difference value of the vertex </p></li>
+<li><p><strong>fixed</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, this vertex is considered fixed during optimization [default: <code class="docutils literal notranslate"><span class="pre">false</span></code>] </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiffD0Ev">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiffD0Ev"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiffD0Ev"></span><span id="hateb_local_planner::VertexTimeDiff::~VertexTimeDiff"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1aad2118d239551215249f2caafdb7c10d"></span><span class="sig-name descname"><span class="n"><span class="pre">~VertexTimeDiff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiffD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructs the <a class="reference internal" href="#classhateb__local__planner_1_1VertexTimeDiff"><span class="std std-ref">VertexTimeDiff</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff2dtEv">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff2dtEv"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff2dtEv"></span><span id="hateb_local_planner::VertexTimeDiff::dt"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a54c5f1092662646d2c4cb56d02b2b6aa"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">dt</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff2dtEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the timediff value of the vertex. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
 </div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to dt </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner14VertexTimeDiff2dtEv">
+<span id="_CPPv3NK19hateb_local_planner14VertexTimeDiff2dtEv"></span><span id="_CPPv2NK19hateb_local_planner14VertexTimeDiff2dtEv"></span><span id="hateb_local_planner::VertexTimeDiff::dtC"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1aa049de9d17d87d86754e0c94cb9d1a6d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">dt</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner14VertexTimeDiff2dtEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the timediff value of the vertex (read-only) </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>estimate </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to dt </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff15setToOriginImplEv">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff15setToOriginImplEv"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff15setToOriginImplEv"></span><span id="hateb_local_planner::VertexTimeDiff::setToOriginImpl"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a7c1236008a39ca733ed52043dfc473dd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setToOriginImpl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff15setToOriginImplEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the underlying TimeDiff estimate <span class="math notranslate nohighlight">\( \Delta T \)</span> to default. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff9oplusImplEPKd">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff9oplusImplEPKd"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff9oplusImplEPKd"></span><span id="hateb_local_planner::VertexTimeDiff::oplusImpl__doubleCP"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a026eef69ae5bd181a11bdf46ed49f295"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">oplusImpl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">update</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff9oplusImplEPKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Define the update increment <span class="math notranslate nohighlight">\( \Delta T_{k+1} = \Delta T_k + update \)</span>. A simple addition implements what we want. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>update</strong> – increment that should be added to the previous esimate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner14VertexTimeDiff4readERNSt7istreamE">
+<span id="_CPPv3N19hateb_local_planner14VertexTimeDiff4readERNSt7istreamE"></span><span id="_CPPv2N19hateb_local_planner14VertexTimeDiff4readERNSt7istreamE"></span><span id="hateb_local_planner::VertexTimeDiff::read__isR"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a5e2dd84a1084fde7d6776a0f5f2f1518"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">istream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner14VertexTimeDiff4readERNSt7istreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Read an estimate of <span class="math notranslate nohighlight">\( \Delta T \)</span> from an input stream. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>is</strong> – input stream </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>always <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner14VertexTimeDiff5writeERNSt7ostreamE">
+<span id="_CPPv3NK19hateb_local_planner14VertexTimeDiff5writeERNSt7ostreamE"></span><span id="_CPPv2NK19hateb_local_planner14VertexTimeDiff5writeERNSt7ostreamE"></span><span id="hateb_local_planner::VertexTimeDiff::write__osRC"></span><span class="target" id="classhateb__local__planner_1_1VertexTimeDiff_1a4decd25cf52f88f5e6fffca77eeaee5e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">write</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner14VertexTimeDiff5writeERNSt7ostreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Write the estimate <span class="math notranslate nohighlight">\( \Delta T \)</span> to an output stream. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>os</strong> – output stream </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the export was successful, otherwise <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

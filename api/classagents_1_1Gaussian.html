@@ -190,10 +190,66 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8GaussianE">
+<span id="_CPPv3N6agents8GaussianE"></span><span id="_CPPv2N6agents8GaussianE"></span><span id="agents::Gaussian"></span><span class="target" id="classagents_1_1Gaussian"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Gaussian</span></span></span><a class="headerlink" href="#_CPPv4N6agents8GaussianE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class representing a 1D <a class="reference internal" href="#classagents_1_1Gaussian"><span class="std std-ref">Gaussian</span></a> distribution for probability calculations. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8Gaussian8GaussianEdd">
+<span id="_CPPv3N6agents8Gaussian8GaussianEdd"></span><span id="_CPPv2N6agents8Gaussian8GaussianEdd"></span><span id="agents::Gaussian::Gaussian__double.double"></span><span class="target" id="classagents_1_1Gaussian_1ad81ec7369414c45daf181faebf42246d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Gaussian</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">mean</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cov</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6agents8Gaussian8GaussianEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor for <a class="reference internal" href="#classagents_1_1Gaussian"><span class="std std-ref">Gaussian</span></a> distribution. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mean</strong> – Mean value of the distribution </p></li>
+<li><p><strong>cov</strong> – Covariance value of the distribution </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6agents8Gaussian3pdfEd">
+<span id="_CPPv3NK6agents8Gaussian3pdfEd"></span><span id="_CPPv2NK6agents8Gaussian3pdfEd"></span><span id="agents::Gaussian::pdf__doubleC"></span><span class="target" id="classagents_1_1Gaussian_1a366f2f8a4be0df5b6b902f26a0148260"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pdf</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6agents8Gaussian3pdfEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Evaluates the probability density function at a point. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> – Point at which to evaluate the PDF </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>PDF value at point x </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8Gaussian5mean_E">
+<span id="_CPPv3N6agents8Gaussian5mean_E"></span><span id="_CPPv2N6agents8Gaussian5mean_E"></span><span id="agents::Gaussian::mean___double"></span><span class="target" id="classagents_1_1Gaussian_1ada1f8aa4e47bbae656424a31321ae505"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mean_</span></span></span><a class="headerlink" href="#_CPPv4N6agents8Gaussian5mean_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8Gaussian4cov_E">
+<span id="_CPPv3N6agents8Gaussian4cov_E"></span><span id="_CPPv2N6agents8Gaussian4cov_E"></span><span id="agents::Gaussian::cov___double"></span><span class="target" id="classagents_1_1Gaussian_1af35d30c148ccfa781f28924838c24cbd"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cov_</span></span></span><a class="headerlink" href="#_CPPv4N6agents8Gaussian4cov_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8Gaussian8inv_cov_E">
+<span id="_CPPv3N6agents8Gaussian8inv_cov_E"></span><span id="_CPPv2N6agents8Gaussian8inv_cov_E"></span><span id="agents::Gaussian::inv_cov___double"></span><span class="target" id="classagents_1_1Gaussian_1a66476bf7c62c0a2e608274a805e0fc95"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inv_cov_</span></span></span><a class="headerlink" href="#_CPPv4N6agents8Gaussian8inv_cov_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6agents8Gaussian11norm_const_E">
+<span id="_CPPv3N6agents8Gaussian11norm_const_E"></span><span id="_CPPv2N6agents8Gaussian11norm_const_E"></span><span id="agents::Gaussian::norm_const___double"></span><span class="target" id="classagents_1_1Gaussian_1a783961a3ae7f0ca3ff09b1856f3be546"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">norm_const_</span></span></span><a class="headerlink" href="#_CPPv4N6agents8Gaussian11norm_const_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

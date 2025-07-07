@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -190,10 +191,780 @@
 </ul>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBandE">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBandE"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBandE"></span><span id="hateb_local_planner::TimedElasticBand"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TimedElasticBand</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBandE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class that defines a trajectory modeled as an elastic band with augmented tempoarl information. </p>
+<p><p>All trajectory related methods (initialization, modifying, …) are implemented inside this class.</p>
+<p>Let</p>
+<span class="math notranslate nohighlight">\( Q = \lbrace \mathbf{s}_i \rbrace_{i=0...n},\ n \in \mathbb{N} \)</span><p>be a sequence of poses,</p>
+<p>in which</p>
+<span class="math notranslate nohighlight">\( \mathbf{s}_i = [x_i, y_i, \beta_i]^T \in \mathbb{R}^2 \times S^1 \)</span><p>denotes a single pose of the robot.</p>
+<p>The Timed Elastic Band (TEB) augments this sequence of poses by incorporating time intervals between two consecutive poses, resuting in a sequence of</p>
+<code class="docutils literal notranslate"><span class="pre">n-1</span></code> time intervals <span class="math notranslate nohighlight">\( \Delta T_i \)</span>: <span class="math notranslate nohighlight">\( \tau = \lbrace \Delta T_i \rbrace_{i=0...n-1} \)</span><p>.</p>
+<p>Each time interval (time diff) denotes the time that the robot requires to transit from the current configuration to the next configuration. The tuple of both sequences defines the underlying trajectory.</p>
+</p>
+<p>Poses and time differences are wrapped into a g2o::Vertex class in order to enable the efficient optimization in <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>. <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a> utilizes this Timed_Elastic_band class for representing an optimizable trajectory. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-utility-and-status-methods">Utility and status methods</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand9pose_vec_E">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand9pose_vec_E"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand9pose_vec_E"></span><span id="hateb_local_planner::TimedElasticBand::pose_vec___PoseSequence"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ad1f573fa556da17e5e95ca25fdef06b7"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1adb0456022df4079e7f827f10ee64981a.html#_CPPv4N19hateb_local_planner12PoseSequenceE" title="hateb_local_planner::PoseSequence"><span class="n"><span class="pre">PoseSequence</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pose_vec_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand9pose_vec_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Internal container storing the sequence of optimzable pose vertices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand13timediff_vec_E">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand13timediff_vec_E"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand13timediff_vec_E"></span><span id="hateb_local_planner::TimedElasticBand::timediff_vec___TimeDiffSequence"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a899eeb7fd9c03157610519a338cddb40"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2.html#_CPPv4N19hateb_local_planner16TimeDiffSequenceE" title="hateb_local_planner::TimeDiffSequence"><span class="n"><span class="pre">TimeDiffSequence</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timediff_vec_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand13timediff_vec_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Internal container storing the sequence of optimzable timediff vertices. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEPdi">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEPdi"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEPdi"></span><span id="hateb_local_planner::TimedElasticBand::findClosestTrajectoryPose__Eigen::Ref:Eigen::Vector2dC:CR.doubleP.iC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a7d3b7b55f87d538b6b61275aae6a7117"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">findClosestTrajectoryPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ref_point</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_idx</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEPdi" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the closest point on the trajectory w.r.t. to a provided reference point. </p>
+<p>This function can be useful to find the part of a trajectory that is close to an obstacle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ref_point</strong> – reference point (2D position vector) </p></li>
+<li><p><strong>distance</strong> – <strong>[out]</strong> [optional] the resulting minimum distance </p></li>
+<li><p><strong>begin_idx</strong> – start search at this pose index </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index to the closest pose in the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEEPd">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEEPd"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEEPd"></span><span id="hateb_local_planner::TimedElasticBand::findClosestTrajectoryPose__Eigen::Ref:Eigen::Vector2dC:CR.Eigen::Ref:Eigen::Vector2dC:CR.doublePC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aaa09d18e5408b21d3e5eb38e81869401"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">findClosestTrajectoryPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ref_line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ref_line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEEPd" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the closest point on the trajectory w.r.t. to a provided reference line. </p>
+<p>This function can be useful to find the part of a trajectory that is close to an (line) obstacle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ref_line_start</strong> – start of the reference line (2D position vector) </p></li>
+<li><p><strong>ref_line_end</strong> – end of the reference line (2D position vector) </p></li>
+<li><p><strong>distance</strong> – <strong>[out]</strong> [optional] the resulting minimum distance </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index to the closest pose in the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK16Point2dContainerPd">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK16Point2dContainerPd"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK16Point2dContainerPd"></span><span id="hateb_local_planner::TimedElasticBand::findClosestTrajectoryPose__Point2dContainerCR.doublePC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a5b60e3f3ab7e79f0efa9d03d06a4b8cd"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">findClosestTrajectoryPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vertices</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK16Point2dContainerPd" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the closest point on the trajectory w.r.t. to a provided reference polygon. </p>
+<p>This function can be useful to find the part of a trajectory that is close to an (polygon) obstacle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vertices</strong> – vertex container containing Eigen::Vector2d points (the last and first point are connected) </p></li>
+<li><p><strong>distance</strong> – <strong>[out]</strong> [optional] the resulting minimum distance </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index to the closest pose in the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK8ObstaclePd">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK8ObstaclePd"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK8ObstaclePd"></span><span id="hateb_local_planner::TimedElasticBand::findClosestTrajectoryPose__ObstacleCR.doublePC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a58edf6f82626b1641ed29222b10b6c54"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">findClosestTrajectoryPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">obstacle</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">distance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand25findClosestTrajectoryPoseERK8ObstaclePd" title="Link to this definition"></a><br /></dt>
+<dd><p>Find the closest point on the trajectory w.r.t to a provided obstacle type. </p>
+<p>This function can be useful to find the part of a trajectory that is close to an obstacle. The method is calculates appropriate distance metrics for point, line and polygon obstacles. For all unknown obstacles the centroid is used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obstacle</strong> – Subclass of the <a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> base class </p></li>
+<li><p><strong>distance</strong> – <strong>[out]</strong> [optional] the resulting minimum distance </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Index to the closest pose in the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand9sizePosesEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand9sizePosesEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand9sizePosesEv"></span><span id="hateb_local_planner::TimedElasticBand::sizePosesC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1af129042cb95fb6e6b31b237a216e92a2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sizePoses</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand9sizePosesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the length of the internal pose sequence. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand13sizeTimeDiffsEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand13sizeTimeDiffsEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand13sizeTimeDiffsEv"></span><span id="hateb_local_planner::TimedElasticBand::sizeTimeDiffsC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a65d3e3334d2633d2f91bf31912c6fa74"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sizeTimeDiffs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand13sizeTimeDiffsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the length of the internal timediff sequence. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand6isInitEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand6isInitEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand6isInitEv"></span><span id="hateb_local_planner::TimedElasticBand::isInitC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aeb156e89b12145e5f5fd3baf7f420229"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isInit</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand6isInitEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check whether the trajectory is initialized (nonzero pose and timediff sequences) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand20getSumOfAllTimeDiffsEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand20getSumOfAllTimeDiffsEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand20getSumOfAllTimeDiffsEv"></span><span id="hateb_local_planner::TimedElasticBand::getSumOfAllTimeDiffsC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a565d7369bc06660ef38fdd780cedf9a8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSumOfAllTimeDiffs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand20getSumOfAllTimeDiffsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the total transition time (sum over all time intervals of the timediff sequence) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand24getSumOfTimeDiffsUpToIdxEi">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand24getSumOfTimeDiffsUpToIdxEi"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand24getSumOfTimeDiffsUpToIdxEi"></span><span id="hateb_local_planner::TimedElasticBand::getSumOfTimeDiffsUpToIdx__iC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a7e838ee5e6e3c39b4b36585245e730fc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSumOfTimeDiffsUpToIdx</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand24getSumOfTimeDiffsUpToIdxEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the estimated transition time up to the pose denoted by index. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – Index of the pose up to which the transition times are summed up </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Estimated transition time up to pose index </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand22getAccumulatedDistanceEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand22getAccumulatedDistanceEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand22getAccumulatedDistanceEv"></span><span id="hateb_local_planner::TimedElasticBand::getAccumulatedDistanceC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a49a3df8215ea4bc1f2fbcf5995457aef"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAccumulatedDistance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand22getAccumulatedDistanceEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the length (accumulated euclidean distance) of the trajectory. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand24isTrajectoryInsideRegionEddi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand24isTrajectoryInsideRegionEddi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand24isTrajectoryInsideRegionEddi"></span><span id="hateb_local_planner::TimedElasticBand::isTrajectoryInsideRegion__double.double.i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a15a0f4902db31ab005e61cb826829704"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isTrajectoryInsideRegion</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">radius</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_dist_behind_robot</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">skip_poses</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand24isTrajectoryInsideRegionEddi" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if all trajectory points are contained in a specific region. </p>
+<p>The specific region is a circle around the current robot position (Pose(0)) with given radius <code class="docutils literal notranslate"><span class="pre">radius</span></code>. This method investigates a different radius for points behind the robot if <code class="docutils literal notranslate"><span class="pre">max_dist_behind_robot</span></code> &gt;= 0. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> – radius of the region with the robot position (Pose(0)) as center </p></li>
+<li><p><strong>max_dist_behind_robot</strong> – A separate radius for trajectory points behind the robot, activated if 0 or positive </p></li>
+<li><p><strong>skip_poses</strong> – If &gt;0: the specified number of poses are skipped for the test, e.g. Pose(0), Pose(0+skip_poses+1), Pose(2*skip_poses+2), … are tested. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code>, if all tested trajectory points are inside the specified region, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-access-pose-and-timediff-sequences">Access pose and timediff sequences</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand5posesEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand5posesEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand5posesEv"></span><span id="hateb_local_planner::TimedElasticBand::poses"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a2e513d2cca2bcbed0f9a5733fe421cea"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1adb0456022df4079e7f827f10ee64981a.html#_CPPv4N19hateb_local_planner12PoseSequenceE" title="hateb_local_planner::PoseSequence"><span class="n"><span class="pre">PoseSequence</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">poses</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand5posesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the complete pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand5posesEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand5posesEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand5posesEv"></span><span id="hateb_local_planner::TimedElasticBand::posesC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a81f6f54884c074e6e28bb4f0b27aefea"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1adb0456022df4079e7f827f10ee64981a.html#_CPPv4N19hateb_local_planner12PoseSequenceE" title="hateb_local_planner::PoseSequence"><span class="n"><span class="pre">PoseSequence</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">poses</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand5posesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the complete pose sequence (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const reference to the pose sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand9timediffsEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand9timediffsEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand9timediffsEv"></span><span id="hateb_local_planner::TimedElasticBand::timediffs"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ac97dc3b90ea9512a5afa8c6f48f0136e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2.html#_CPPv4N19hateb_local_planner16TimeDiffSequenceE" title="hateb_local_planner::TimeDiffSequence"><span class="n"><span class="pre">TimeDiffSequence</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">timediffs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand9timediffsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the complete timediff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the dimediff sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand9timediffsEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand9timediffsEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand9timediffsEv"></span><span id="hateb_local_planner::TimedElasticBand::timediffsC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a03d7376cb444adc850930d112583a5bf"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2.html#_CPPv4N19hateb_local_planner16TimeDiffSequenceE" title="hateb_local_planner::TimeDiffSequence"><span class="n"><span class="pre">TimeDiffSequence</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">timediffs</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand9timediffsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the complete timediff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>reference to the dimediff sequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand8TimeDiffEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand8TimeDiffEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand8TimeDiffEi"></span><span id="hateb_local_planner::TimedElasticBand::TimeDiff__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a09a14db7568744389d5a93db03808e0b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">TimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand8TimeDiffEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the time difference at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the time sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal TimeDiffSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reference to the time difference at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand8TimeDiffEi">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand8TimeDiffEi"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand8TimeDiffEi"></span><span id="hateb_local_planner::TimedElasticBand::TimeDiff__iC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ae2a4d90f430654d80afdfd9426131b00"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">TimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand8TimeDiffEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the time difference at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the time sequence (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal TimeDiffSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>const reference to the time difference at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand4PoseEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand4PoseEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand4PoseEi"></span><span id="hateb_local_planner::TimedElasticBand::Pose__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a512b98c5681038804b31d9747f1c149a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">Pose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand4PoseEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the pose at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal PoseSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>reference to the pose at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand4PoseEi">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand4PoseEi"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand4PoseEi"></span><span id="hateb_local_planner::TimedElasticBand::Pose__iC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a297390580f3a675921a2915d98f6b597"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">Pose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand4PoseEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the pose at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the pose sequence (read-only) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal PoseSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>const reference to the pose at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand8BackPoseEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand8BackPoseEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand8BackPoseEv"></span><span id="hateb_local_planner::TimedElasticBand::BackPose"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a754e0c2cae23952c0dd7bb8b6ea55214"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">BackPose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand8BackPoseEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the last <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> in the pose sequence. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand8BackPoseEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand8BackPoseEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand8BackPoseEv"></span><span id="hateb_local_planner::TimedElasticBand::BackPoseC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a7eabda2810a1939193cc6f661f18b601"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">BackPose</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand8BackPoseEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the last <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> in the pose sequence (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand12BackTimeDiffEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand12BackTimeDiffEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand12BackTimeDiffEv"></span><span id="hateb_local_planner::TimedElasticBand::BackTimeDiff"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a1db36891f18451fb3404745affc6b5c9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">BackTimeDiff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand12BackTimeDiffEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the last TimeDiff in the time diff sequence. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16TimedElasticBand12BackTimeDiffEv">
+<span id="_CPPv3NK19hateb_local_planner16TimedElasticBand12BackTimeDiffEv"></span><span id="_CPPv2NK19hateb_local_planner16TimedElasticBand12BackTimeDiffEv"></span><span id="hateb_local_planner::TimedElasticBand::BackTimeDiffC"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ab190b1f66f3c210b6d8969b56ed33a84"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">BackTimeDiff</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16TimedElasticBand12BackTimeDiffEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the last TimeDiff in the time diff sequence (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10PoseVertexEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10PoseVertexEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10PoseVertexEi"></span><span id="hateb_local_planner::TimedElasticBand::PoseVertex__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1adb4522408e61e4d061b7140cdbfb186e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">PoseVertex</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10PoseVertexEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the vertex of a pose at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> for optimization purposes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal PoseSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Weak raw pointer to the pose vertex at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand14TimeDiffVertexEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand14TimeDiffVertexEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand14TimeDiffVertexEi"></span><span id="hateb_local_planner::TimedElasticBand::TimeDiffVertex__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aa48013a5132fd88a0822499be5287642"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexTimeDiff.html#_CPPv4N19hateb_local_planner14VertexTimeDiffE" title="hateb_local_planner::VertexTimeDiff"><span class="n"><span class="pre">VertexTimeDiff</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">TimeDiffVertex</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand14TimeDiffVertexEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Access the vertex of a time difference at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> for optimization purposes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal TimeDiffSequence </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Weak raw pointer to the timediff vertex at pos <code class="docutils literal notranslate"><span class="pre">index</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-append-new-elements-to-the-pose-and-timediff-sequences">Append new elements to the pose and timediff sequences</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseERK7PoseSE2b">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand7addPoseERK7PoseSE2b"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand7addPoseERK7PoseSE2b"></span><span id="hateb_local_planner::TimedElasticBand::addPose__PoseSE2CR.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a532b60e492520918cfc1942d5f94aac5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseERK7PoseSE2b" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a new pose vertex to the back of the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> to push back on the internal PoseSequence </p></li>
+<li><p><strong>fixed</strong> – Mark the pose to be fixed or unfixed during trajectory optimization (important for the <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand7addPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand7addPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb"></span><span id="hateb_local_planner::TimedElasticBand::addPose__Eigen::Ref:Eigen::Vector2dC:CR.double.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aacdd67f4e874513f1496639099d76207"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPose</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseERKN5Eigen3RefIKN5Eigen8Vector2dEEEdb" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a new pose vertex to the back of the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D vector representing the position part </p></li>
+<li><p><strong>theta</strong> – yaw angle representing the orientation part </p></li>
+<li><p><strong>fixed</strong> – Mark the pose to be fixed or unfixed during trajectory optimization (important for the <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseEdddb">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand7addPoseEdddb"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand7addPoseEdddb"></span><span id="hateb_local_planner::TimedElasticBand::addPose__double.double.double.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ac00a9f7b6bdafa86c7c325db69e413b0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand7addPoseEdddb" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a new pose vertex to the back of the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate of the position part </p></li>
+<li><p><strong>y</strong> – y-coordinate of the position part </p></li>
+<li><p><strong>theta</strong> – yaw angle representing the orientation part </p></li>
+<li><p><strong>fixed</strong> – Mark the pose to be fixed or unfixed during trajectory optimization (important for the <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand11addTimeDiffEdb">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand11addTimeDiffEdb"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand11addTimeDiffEdb"></span><span id="hateb_local_planner::TimedElasticBand::addTimeDiff__double.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ad3b961f0890e7cd873ec61e680c6b2fa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fixed</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand11addTimeDiffEdb" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a new time difference vertex to the back of the time diff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dt</strong> – time difference value to push back on the internal TimeDiffSequence </p></li>
+<li><p><strong>fixed</strong> – Mark the pose to be fixed or unfixed during trajectory optimization (important for the <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERK7PoseSE2d">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERK7PoseSE2d"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERK7PoseSE2d"></span><span id="hateb_local_planner::TimedElasticBand::addPoseAndTimeDiff__PoseSE2CR.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a89b8dd681f1417e1e50863e5365cbb54"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPoseAndTimeDiff</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERK7PoseSE2d" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a (pose, timediff) vertex pair to the end of the current trajectory (pose and timediff sequences) </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<p>Since the timediff is defined to connect two consecutive poses, this call is only allowed if there exist already n poses and n-1 timediffs in the sequences (n=1,2,…): therefore add a single pose using <a class="reference internal" href="#classhateb__local__planner_1_1TimedElasticBand_1a532b60e492520918cfc1942d5f94aac5"><span class="std std-ref">addPose()</span></a> first! </p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> to push back on the internal PoseSequence </p></li>
+<li><p><strong>dt</strong> – time difference value to push back on the internal TimeDiffSequence </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERKN5Eigen3RefIKN5Eigen8Vector2dEEEdd">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERKN5Eigen3RefIKN5Eigen8Vector2dEEEdd"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERKN5Eigen3RefIKN5Eigen8Vector2dEEEdd"></span><span id="hateb_local_planner::TimedElasticBand::addPoseAndTimeDiff__Eigen::Ref:Eigen::Vector2dC:CR.double.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a0ae610ac110261b82ac574a9616f3e21"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPoseAndTimeDiff</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffERKN5Eigen3RefIKN5Eigen8Vector2dEEEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a (pose, timediff) vertex pair to the end of the current trajectory (pose and timediff sequences) </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>see <a class="reference internal" href="#classhateb__local__planner_1_1TimedElasticBand_1a89b8dd681f1417e1e50863e5365cbb54"><span class="std std-ref">addPoseAndTimeDiff(const PoseSE2&amp; pose, double dt)</span></a></p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D vector representing the position part </p></li>
+<li><p><strong>theta</strong> – yaw angle representing the orientation part </p></li>
+<li><p><strong>dt</strong> – time difference value to push back on the internal TimeDiffSequence </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffEdddd">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffEdddd"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffEdddd"></span><span id="hateb_local_planner::TimedElasticBand::addPoseAndTimeDiff__double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a105a18339bc26b24f743e051740d855a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addPoseAndTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand18addPoseAndTimeDiffEdddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Append a (pose, timediff) vertex pair to the end of the current trajectory (pose and timediff sequences) </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>see <a class="reference internal" href="#classhateb__local__planner_1_1TimedElasticBand_1a89b8dd681f1417e1e50863e5365cbb54"><span class="std std-ref">addPoseAndTimeDiff(const PoseSE2&amp; pose, double dt)</span></a></p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate of the position part </p></li>
+<li><p><strong>y</strong> – y-coordinate of the position part </p></li>
+<li><p><strong>theta</strong> – yaw angle representing the orientation part </p></li>
+<li><p><strong>dt</strong> – time difference value to push back on the internal TimeDiffSequence </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-insert-new-elements-and-remove-elements-of-the-pose-and-timediff-sequences">Insert new elements and remove elements of the pose and timediff sequences</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiRK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10insertPoseEiRK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10insertPoseEiRK7PoseSE2"></span><span id="hateb_local_planner::TimedElasticBand::insertPose__i.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1ab42e3738fb81f9bdce3eb2b1e745986d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insertPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiRK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Insert a new pose vertex at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> to the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – element position inside the internal PoseSequence </p></li>
+<li><p><strong>pose</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> element to insert into the internal PoseSequence </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiRKN5Eigen3RefIKN5Eigen8Vector2dEEEd">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10insertPoseEiRKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10insertPoseEiRKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="hateb_local_planner::TimedElasticBand::insertPose__i.Eigen::Ref:Eigen::Vector2dC:CR.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aa02be220017a9ea07e0c2c436e624981"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insertPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiRKN5Eigen3RefIKN5Eigen8Vector2dEEEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Insert a new pose vertex at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> to the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – element position inside the internal PoseSequence </p></li>
+<li><p><strong>position</strong> – 2D vector representing the position part </p></li>
+<li><p><strong>theta</strong> – yaw-angle representing the orientation part </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiddd">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10insertPoseEiddd"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10insertPoseEiddd"></span><span id="hateb_local_planner::TimedElasticBand::insertPose__i.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a85bae7b6407c1e41eb516bd0fca5cd83"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insertPose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">theta</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10insertPoseEiddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Insert a new pose vertex at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> to the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – element position inside the internal PoseSequence </p></li>
+<li><p><strong>x</strong> – x-coordinate of the position part </p></li>
+<li><p><strong>y</strong> – y-coordinate of the position part </p></li>
+<li><p><strong>theta</strong> – yaw-angle representing the orientation part </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand14insertTimeDiffEid">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand14insertTimeDiffEid"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand14insertTimeDiffEid"></span><span id="hateb_local_planner::TimedElasticBand::insertTimeDiff__i.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a6b74ce9d742268151c0626438099cf0a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insertTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand14insertTimeDiffEid" title="Link to this definition"></a><br /></dt>
+<dd><p>Insert a new timediff vertex at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> to the timediff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – element position inside the internal TimeDiffSequence </p></li>
+<li><p><strong>dt</strong> – timediff value </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10deletePoseEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10deletePoseEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10deletePoseEi"></span><span id="hateb_local_planner::TimedElasticBand::deletePose__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a36d2b9295e1e8314d57a8232e2e18ac4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deletePose</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10deletePoseEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete pose at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> in the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal PoseSequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand11deletePosesEii">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand11deletePosesEii"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand11deletePosesEii"></span><span id="hateb_local_planner::TimedElasticBand::deletePoses__i.i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a12f6ffe38c80d5e45abfee192a38dd93"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deletePoses</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">number</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand11deletePosesEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete multiple (<code class="docutils literal notranslate"><span class="pre">number</span></code>) poses starting at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> in the pose sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – first element position inside the internal PoseSequence </p></li>
+<li><p><strong>number</strong> – number of elements that should be deleted </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand14deleteTimeDiffEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand14deleteTimeDiffEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand14deleteTimeDiffEi"></span><span id="hateb_local_planner::TimedElasticBand::deleteTimeDiff__i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a13a7d4d29c13fbc96e70c35ba8dc736e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deleteTimeDiff</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand14deleteTimeDiffEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete pose at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> in the timediff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>index</strong> – element position inside the internal TimeDiffSequence </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand15deleteTimeDiffsEii">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand15deleteTimeDiffsEii"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand15deleteTimeDiffsEii"></span><span id="hateb_local_planner::TimedElasticBand::deleteTimeDiffs__i.i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a0fa4471c08f1271d95e885b8a53a40dc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deleteTimeDiffs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">number</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand15deleteTimeDiffsEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Delete multiple (<code class="docutils literal notranslate"><span class="pre">number</span></code>) time differences starting at pos. <code class="docutils literal notranslate"><span class="pre">index</span></code> in the timediff sequence. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – first element position inside the internal TimeDiffSequence </p></li>
+<li><p><strong>number</strong> – number of elements that should be deleted </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-init-the-trajectory">Init the trajectory</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERK7PoseSE2RK7PoseSE2ddib">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERK7PoseSE2RK7PoseSE2ddib"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERK7PoseSE2RK7PoseSE2ddib"></span><span id="hateb_local_planner::TimedElasticBand::initTrajectoryToGoal__PoseSE2CR.PoseSE2CR.double.double.i.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a905235b7cdcbc1c90a84edadcafacc99"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initTrajectoryToGoal</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">goal</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">diststep</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_x</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.5</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">guess_backwards_motion</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERK7PoseSE2RK7PoseSE2ddib" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialize a trajectory between a given start and goal pose. </p>
+<p><p>The implemented algorithm subsamples the straight line between start and goal using a given discretiziation width.</p>
+<p>The discretization width can be defined in the euclidean space using the</p>
+<code class="docutils literal notranslate"><span class="pre">diststep</span></code> parameter. Each time difference between two consecutive poses is initialized to <code class="docutils literal notranslate"><span class="pre">timestep</span></code><p>.</p>
+<p>If the</p>
+<code class="docutils literal notranslate"><span class="pre">diststep</span></code> is chosen to be zero, the resulting trajectory contains the start and goal pose only. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> defining the start of the trajectory </p></li>
+<li><p><strong>goal</strong> – <a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#classhateb__local__planner_1_1PoseSE2"><span class="std std-ref">PoseSE2</span></a> defining the goal of the trajectory (final pose) </p></li>
+<li><p><strong>diststep</strong> – euclidean distance between two consecutive poses (if 0, no intermediate samples are inserted despite min_samples) </p></li>
+<li><p><strong>max_vel_x</strong> – maximum translational velocity used for determining time differences </p></li>
+<li><p><strong>min_samples</strong> – Minimum number of samples that should be initialized at least </p></li>
+<li><p><strong>guess_backwards_motion</strong> – Allow the initialization of backwards oriented trajectories if the goal heading is pointing behind the robot </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if everything was fine, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalEb9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib">
+<span id="_CPPv3I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalE9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib"></span><span id="_CPPv2I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalE9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BidirIter</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Fun</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a4e07b7fde0d57e3c7274f53b6fa7efb2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initTrajectoryToGoal</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalEb9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib" title="hateb_local_planner::TimedElasticBand::initTrajectoryToGoal::BidirIter"><span class="n"><span class="pre">BidirIter</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">path_start</span></span>, <a class="reference internal" href="#_CPPv4I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalEb9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib" title="hateb_local_planner::TimedElasticBand::initTrajectoryToGoal::BidirIter"><span class="n"><span class="pre">BidirIter</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">path_end</span></span>, <a class="reference internal" href="#_CPPv4I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalEb9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib" title="hateb_local_planner::TimedElasticBand::initTrajectoryToGoal::Fun"><span class="n"><span class="pre">Fun</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">fun_position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_theta</span></span>, <span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_acc_x</span></span>, <span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_acc_theta</span></span>, <span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">start_orientation</span></span>, <span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">goal_orientation</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">guess_backwards_motion</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I00EN19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalEb9BidirIter9BidirIter3FunddN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEN5boost8optionalIdEEib" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialize a trajectory from a generic 2D reference path. </p>
+<p><p>The temporal information is determined using a given maximum velocity (2D vector containing the translational and angular velocity).</p>
+<p>A constant velocity profile is implemented.</p>
+
+A possible maximum acceleration is considered if <code class="docutils literal notranslate"><span class="pre">max_acceleration</span></code> param is provided.</p>
+<p><p>Since the orientation is not included in the reference path, it can be provided seperately (e.g. from the robot pose and robot goal).</p>
+<p>Otherwise the goal heading will be used as start and goal orientation.</p>
+
+The orientation along the trajectory will be determined using the connection vector between two consecutive positions of the reference path.</p>
+<p>The reference path is provided using a start and end iterator to a container class. You must provide a unary function that accepts the dereferenced iterator and returns a copy or (const) reference to an Eigen::Vector2d type containing the 2d position.</p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">boost::none</span></code> to skip optional arguments. </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path_start</strong> – start iterator of a generic 2d path </p></li>
+<li><p><strong>path_end</strong> – end iterator of a generic 2d path </p></li>
+<li><p><strong>fun_position</strong> – unary function that returns the Eigen::Vector2d object </p></li>
+<li><p><strong>max_vel_x</strong> – maximum translational velocity used for determining time differences </p></li>
+<li><p><strong>max_vel_theta</strong> – maximum angular velocity used for determining time differences </p></li>
+<li><p><strong>max_acc_x</strong> – specify to satisfy a maxmimum transl. acceleration and decceleration (optional) </p></li>
+<li><p><strong>max_acc_theta</strong> – specify to satisfy a maxmimum angular acceleration and decceleration (optional) </p></li>
+<li><p><strong>start_orientation</strong> – Orientation of the first pose of the trajectory (optional, otherwise use goal heading) </p></li>
+<li><p><strong>goal_orientation</strong> – Orientation of the last pose of the trajectory (optional, otherwise use goal heading) </p></li>
+<li><p><strong>min_samples</strong> – Minimum number of samples that should be initialized at least </p></li>
+<li><p><strong>guess_backwards_motion</strong> – Allow the initialization of backwards oriented trajectories if the goal heading is pointing behind the robot </p></li>
+</ul>
+</dd>
+<dt class="field-even">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>BidirIter</strong> – Bidirectional iterator type </p></li>
+<li><p><strong>Fun</strong> – unyary function that transforms the dereferenced iterator into an Eigen::Vector2d </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true if everything was fine, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERKNSt6vectorIN13geometry_msgs11PoseStampedEEEddbibd">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERKNSt6vectorIN13geometry_msgs11PoseStampedEEEddbibd"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERKNSt6vectorIN13geometry_msgs11PoseStampedEEEddbibd"></span><span id="hateb_local_planner::TimedElasticBand::initTrajectoryToGoal__std::vector:geometry_msgs::PoseStamped:CR.double.double.b.i.b.double"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1af6365e0b31a7199ba115657a4044494a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initTrajectoryToGoal</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">plan</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_theta</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">estimate_orient</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">guess_backwards_motion</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">skip_dist</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand20initTrajectoryToGoalERKNSt6vectorIN13geometry_msgs11PoseStampedEEEddbibd" title="Link to this definition"></a><br /></dt>
+<dd><p>Initialize a trajectory from a reference pose sequence (positions and orientations). </p>
+<p><p>This method initializes the timed elastic band using a pose container (e.g. as local plan from the ros navigation stack).</p>
+<p>The initial time difference between two consecutive poses can be uniformly set via the argument</p>
+<code class="docutils literal notranslate"><span class="pre">dt</span></code>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>plan</strong> – vector of geometry_msgs::PoseStamped </p></li>
+<li><p><strong>max_vel_x</strong> – maximum translational velocity used for determining time differences </p></li>
+<li><p><strong>max_vel_theta</strong> – maximum rotational velocity used for determining time differences </p></li>
+<li><p><strong>estimate_orient</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, calculate orientation using the straight line distance vector between consecutive poses (only copy start and goal orientation; recommended if no orientation data is available). </p></li>
+<li><p><strong>min_samples</strong> – Minimum number of samples that should be initialized at least </p></li>
+<li><p><strong>guess_backwards_motion</strong> – Allow the initialization of backwards oriented trajectories if the goal heading is pointing behind the robot (this parameter is used only if <code class="docutils literal notranslate"><span class="pre">estimate_orient</span></code> is enabled. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if everything was fine, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a90e4e78ffbbaab507e418faa2bb87a80"></span><span class="sig-name descname"><span class="pre">inline</span> <span class="pre">ROS_DEPRECATED</span> <span class="pre">bool</span> <span class="pre">initTEBtoGoal</span> <span class="pre">(const</span> <span class="pre">PoseSE2</span> <span class="pre">&amp;start,</span> <span class="pre">const</span> <span class="pre">PoseSE2</span> <span class="pre">&amp;goal,</span> <span class="pre">double</span> <span class="pre">diststep=0,</span> <span class="pre">double</span> <span class="pre">timestep=1,</span> <span class="pre">int</span> <span class="pre">min_samples=3,</span> <span class="pre">bool</span> <span class="pre">guess_backwards_motion=false)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1acf68150143d9ca9038d3dcfd00c56196"></span><span class="sig-name descname"><span class="pre">template&lt;typename</span> <span class="pre">BidirIter,</span> <span class="pre">typename</span> <span class="pre">Fun&gt;</span> <span class="pre">inline</span> <span class="pre">ROS_DEPRECATED</span> <span class="pre">bool</span> <span class="pre">initTEBtoGoal</span> <span class="pre">(BidirIter</span> <span class="pre">path_start,</span> <span class="pre">BidirIter</span> <span class="pre">path_end,</span> <span class="pre">Fun</span> <span class="pre">fun_position,</span> <span class="pre">double</span> <span class="pre">max_vel_x,</span> <span class="pre">double</span> <span class="pre">max_vel_theta,</span> <span class="pre">boost::optional&lt;</span> <span class="pre">double</span> <span class="pre">&gt;</span> <span class="pre">max_acc_x,</span> <span class="pre">boost::optional&lt;</span> <span class="pre">double</span> <span class="pre">&gt;</span> <span class="pre">max_acc_theta,</span> <span class="pre">boost::optional&lt;</span> <span class="pre">double</span> <span class="pre">&gt;</span> <span class="pre">start_orientation,</span> <span class="pre">boost::optional&lt;</span> <span class="pre">double</span> <span class="pre">&gt;</span> <span class="pre">goal_orientation,</span> <span class="pre">int</span> <span class="pre">min_samples=3,</span> <span class="pre">bool</span> <span class="pre">guess_backwards_motion=false)</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp">
+<span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a50a1fc48e616f6219b6ec3169f752308"></span><span class="sig-name descname"><span class="pre">inline</span> <span class="pre">ROS_DEPRECATED</span> <span class="pre">bool</span> <span class="pre">initTEBtoGoal</span> <span class="pre">(const</span> <span class="pre">std::vector&lt;</span> <span class="pre">geometry_msgs::PoseStamped</span> <span class="pre">&gt;</span> <span class="pre">&amp;plan,</span> <span class="pre">double</span> <span class="pre">dt,</span> <span class="pre">bool</span> <span class="pre">estimate_orient=false,</span> <span class="pre">int</span> <span class="pre">min_samples=3,</span> <span class="pre">bool</span> <span class="pre">guess_backwards_motion=false)</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-update-and-modify-the-trajectory">Update and modify the trajectory</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand17updateAndPruneTEBEN5boost8optionalIRK7PoseSE2EEN5boost8optionalIRK7PoseSE2EEi">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand17updateAndPruneTEBEN5boost8optionalIRK7PoseSE2EEN5boost8optionalIRK7PoseSE2EEi"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand17updateAndPruneTEBEN5boost8optionalIRK7PoseSE2EEN5boost8optionalIRK7PoseSE2EEi"></span><span id="hateb_local_planner::TimedElasticBand::updateAndPruneTEB__boost::optional:PoseSE2CR:.boost::optional:PoseSE2CR:.i"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1aca5d7bbd67a53062d95690efdd76056e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateAndPruneTEB</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">new_start</span></span>, <span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">optional</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">new_goal</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand17updateAndPruneTEBEN5boost8optionalIRK7PoseSE2EEN5boost8optionalIRK7PoseSE2EEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Hot-Start from an existing trajectory with updated start and goal poses. </p>
+<p><p>This method updates a previously optimized trajectory with a new start and/or a new goal pose.</p>
+<p>The current simple implementation cuts of pieces of the trajectory that are already passed due to the new start.</p>
+
+Afterwards the start and goal pose are replaced by the new ones. The resulting discontinuity will not be smoothed. The optimizer has to smooth the trajectory in <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner"><span class="std std-ref">TebOptimalPlanner</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_start</strong> – New start pose (optional) </p></li>
+<li><p><strong>new_goal</strong> – New goal pose (optional) </p></li>
+<li><p><strong>min_samples</strong> – Specify the minimum number of samples that should at least remain in the trajectory </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand10autoResizeEddiib">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand10autoResizeEddiib"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand10autoResizeEddiib"></span><span id="hateb_local_planner::TimedElasticBand::autoResize__double.double.i.i.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a3576adcaec45103edd7e1d0da6b97a7b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">autoResize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt_ref</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt_hysteresis</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_samples</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">fast_mode</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand10autoResizeEddiib" title="Link to this definition"></a><br /></dt>
+<dd><p>Resize the trajectory by removing or inserting a (pose,dt) pair depending on a reference temporal resolution. </p>
+<p>Resizing the trajectory is helpful e.g. for the following scenarios: <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Obstacles requires the teb to be extended in order to
+  satisfy the given discritization width (plan resolution)
+ and to avoid undesirable behavior due to a large/small discretization step widths \f$ \Delta T_i \f$
+  After clearance of obstacles, the teb should (re-) contract to its (time-)optimal version.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If the distance to the goal state is getting smaller, dt is decreasing as well. This leads to a heavily fine-grained discretization in combination with many discrete poses. Thus, the computation time will be/remain high and in addition numerical instabilities can appear (e.g. due to the division by a small <span class="math notranslate nohighlight">\( \Delta T_i \)</span>).</p></li>
+</ul>
+</p>
+<p>The implemented strategy checks all timediffs <span class="math notranslate nohighlight">\( \Delta T_i \)</span> and <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- inserts a new sample if \f$ \Delta T_i &gt; \Delta T_{ref} + \Delta T_{hyst} \f$
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>removes a sample if <span class="math notranslate nohighlight">\( \Delta T_i &lt; \Delta T_{ref} - \Delta T_{hyst} \)</span></p></li>
+</ul>
+</p>
+<p>Each call only one new sample (pose-dt-pair) is inserted or removed. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dt_ref</strong> – reference temporal resolution </p></li>
+<li><p><strong>dt_hysteresis</strong> – hysteresis to avoid oscillations </p></li>
+<li><p><strong>min_samples</strong> – minimum number of samples that should be remain in the trajectory after resizing </p></li>
+<li><p><strong>max_samples</strong> – maximum number of samples that should not be exceeded during resizing </p></li>
+<li><p><strong>fast_mode</strong> – if true, the trajectory is iterated once to insert or erase points; if false the trajectory is repeatedly iterated until no poses are added or removed anymore </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand18setPoseVertexFixedEib">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand18setPoseVertexFixedEib"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand18setPoseVertexFixedEib"></span><span id="hateb_local_planner::TimedElasticBand::setPoseVertexFixed__i.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1abf2497da9c5e1c9f83ceba296e5a0117"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPoseVertexFixed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand18setPoseVertexFixedEib" title="Link to this definition"></a><br /></dt>
+<dd><p>Set a pose vertex at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the pose sequence to be fixed or unfixed during optimization. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – index to the pose vertex </p></li>
+<li><p><strong>status</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, the vertex will be fixed, otherwise unfixed </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand22setTimeDiffVertexFixedEib">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand22setTimeDiffVertexFixedEib"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand22setTimeDiffVertexFixedEib"></span><span id="hateb_local_planner::TimedElasticBand::setTimeDiffVertexFixed__i.b"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a59b9b853592805800d26fcf43b66b64b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setTimeDiffVertexFixed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">status</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand22setTimeDiffVertexFixedEib" title="Link to this definition"></a><br /></dt>
+<dd><p>Set a timediff vertex at pos <code class="docutils literal notranslate"><span class="pre">index</span></code> of the timediff sequence to be fixed or unfixed during optimization. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> – index to the timediff vertex </p></li>
+<li><p><strong>status</strong> – if <code class="docutils literal notranslate"><span class="pre">true</span></code>, the vertex will be fixed, otherwise unfixed </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand21clearTimedElasticBandEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand21clearTimedElasticBandEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand21clearTimedElasticBandEv"></span><span id="hateb_local_planner::TimedElasticBand::clearTimedElasticBand"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a17ecd326ce62af3ac2254f5fb87c8bf9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clearTimedElasticBand</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand21clearTimedElasticBandEv" title="Link to this definition"></a><br /></dt>
+<dd><p>clear all poses and timediffs from the trajectory. The pose and timediff sequences will be empty and <a class="reference internal" href="#classhateb__local__planner_1_1TimedElasticBand_1aeb156e89b12145e5f5fd3baf7f420229"><span class="std std-ref">isInit()</span></a> will return <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBand16TimedElasticBandEv">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBand16TimedElasticBandEv"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBand16TimedElasticBandEv"></span><span id="hateb_local_planner::TimedElasticBand::TimedElasticBand"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1a50e99238a217986bd9b161e05ef8e14b"></span><span class="sig-name descname"><span class="n"><span class="pre">TimedElasticBand</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBand16TimedElasticBandEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct the class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16TimedElasticBandD0Ev">
+<span id="_CPPv3N19hateb_local_planner16TimedElasticBandD0Ev"></span><span id="_CPPv2N19hateb_local_planner16TimedElasticBandD0Ev"></span><span id="hateb_local_planner::TimedElasticBand::~TimedElasticBand"></span><span class="target" id="classhateb__local__planner_1_1TimedElasticBand_1afc52a84ae6d0e596b91d9a7ff5a5eacc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~TimedElasticBand</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16TimedElasticBandD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destruct the class. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

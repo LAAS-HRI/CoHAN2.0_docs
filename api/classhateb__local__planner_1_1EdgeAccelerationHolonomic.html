@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -199,10 +200,49 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomicE">
+<span id="_CPPv3N19hateb_local_planner25EdgeAccelerationHolonomicE"></span><span id="_CPPv2N19hateb_local_planner25EdgeAccelerationHolonomicE"></span><span id="hateb_local_planner::EdgeAccelerationHolonomic"></span><span class="target" id="classhateb__local__planner_1_1EdgeAccelerationHolonomic"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAccelerationHolonomic</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#_CPPv4I_i0EN19hateb_local_planner16BaseTebMultiEdgeE" title="hateb_local_planner::BaseTebMultiEdge"><span class="n"><span class="pre">BaseTebMultiEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">3</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomicE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining the cost function for limiting the translational and rotational acceleration. </p>
+<p>The edge depends on five vertices <span class="math notranslate nohighlight">\( \mathbf{s}_i, \mathbf{s}_{ip1}, \mathbf{s}_{ip2}, \Delta T_i, \Delta T_{ip1} \)</span> and minimizes: <span class="math notranslate nohighlight">\( \min \textrm{penaltyInterval}( [ax, ay, omegadot } ]^T ) \cdot weight \)</span>. <em>ax</em> is calculated using the difference quotient (twice) and the x position parts of all three poses <em>ay</em> is calculated using the difference quotient (twice) and the y position parts of all three poses <em>omegadot</em> is calculated using the difference quotient of the yaw angles followed by a normalization to [-pi, pi]. <em>weight</em> can be set using setInformation() <em>penaltyInterval</em> denotes the penalty function, see <a class="reference internal" href="function_namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710.html#namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710"><span class="std std-ref">penaltyBoundToInterval()</span></a> 
+The dimension of the error / cost vector is 3: the first component represents the translational acceleration (x-dir), the second one the strafing acceleration and the third one the rotational acceleration. <div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner_1ae56d9d6b2080734e948b9e7d21af8551"><span class="std std-ref">TebOptimalPlanner::AddEdgesAcceleration</span></a></p>
 </div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1EdgeAccelerationHolonomicStart.html#classhateb__local__planner_1_1EdgeAccelerationHolonomicStart"><span class="std std-ref">EdgeAccelerationHolonomicStart</span></a></p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal.html#classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal"><span class="std std-ref">EdgeAccelerationHolonomicGoal</span></a></p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not forget to call <a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#classhateb__local__planner_1_1BaseTebMultiEdge_1ae126de1d25032cf83de82823cdcf74bc"><span class="std std-ref">setHATebConfig()</span></a></p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Refer to EdgeAccelerationHolonomicStart() and EdgeAccelerationHolonomicGoal() for defining boundary values! </p>
+</div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomic25EdgeAccelerationHolonomicEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeAccelerationHolonomic25EdgeAccelerationHolonomicEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeAccelerationHolonomic25EdgeAccelerationHolonomicEv"></span><span id="hateb_local_planner::EdgeAccelerationHolonomic::EdgeAccelerationHolonomic"></span><span class="target" id="classhateb__local__planner_1_1EdgeAccelerationHolonomic_1ad2a720309d3beaa7b66bfe2ebfd4d683"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAccelerationHolonomic</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomic25EdgeAccelerationHolonomicEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomic12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeAccelerationHolonomic12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeAccelerationHolonomic12computeErrorEv"></span><span id="hateb_local_planner::EdgeAccelerationHolonomic::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeAccelerationHolonomic_1a9431d1e089346b4ff7e30ff3b529f105"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAccelerationHolonomic12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Actual cost function. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

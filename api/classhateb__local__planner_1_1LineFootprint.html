@@ -199,10 +199,180 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprintE">
+<span id="_CPPv3N19hateb_local_planner13LineFootprintE"></span><span id="_CPPv2N19hateb_local_planner13LineFootprintE"></span><span id="hateb_local_planner::LineFootprint"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LineFootprint</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseFootprintModel.html#_CPPv4N19hateb_local_planner18BaseFootprintModelE" title="hateb_local_planner::BaseFootprintModel"><span class="n"><span class="pre">BaseFootprintModel</span></span></a><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprintE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class that approximates the robot/human with line segment (zero-width) </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint13LineFootprintERKN13geometry_msgs5PointERKN13geometry_msgs5PointE">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint13LineFootprintERKN13geometry_msgs5PointERKN13geometry_msgs5PointE"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint13LineFootprintERKN13geometry_msgs5PointERKN13geometry_msgs5PointE"></span><span id="hateb_local_planner::LineFootprint::LineFootprint__geometry_msgs::PointCR.geometry_msgs::PointCR"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a4cc2938ed3787dd0adc62d38d7faf22c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LineFootprint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint13LineFootprintERKN13geometry_msgs5PointERKN13geometry_msgs5PointE" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the abstract obstacle class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – start coordinates (only x and y) of the line (w.r.t. robot/human center at (0,0)) </p></li>
+<li><p><strong>line_end</strong> – end coordinates (only x and y) of the line (w.r.t. robot/human center at (0,0)) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint13LineFootprintERKN5Eigen8Vector2dERKN5Eigen8Vector2dEKd">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint13LineFootprintERKN5Eigen8Vector2dERKN5Eigen8Vector2dEKd"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint13LineFootprintERKN5Eigen8Vector2dERKN5Eigen8Vector2dEKd"></span><span id="hateb_local_planner::LineFootprint::LineFootprint__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1ab97b8fd72e2b87a667a55c62f401d430"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LineFootprint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_obstacle_dist</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint13LineFootprintERKN5Eigen8Vector2dERKN5Eigen8Vector2dEKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the abstract obstacle class (Eigen Version) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – start coordinates (only x and y) of the line (w.r.t. robot/human center at (0,0)) </p></li>
+<li><p><strong>line_end</strong> – end coordinates (only x and y) of the line (w.r.t. robot/human center at (0,0)) </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprintD0Ev">
+<span id="_CPPv3N19hateb_local_planner13LineFootprintD0Ev"></span><span id="_CPPv2N19hateb_local_planner13LineFootprintD0Ev"></span><span id="hateb_local_planner::LineFootprint::~LineFootprint"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a016f3ba331d76291da35e5571dc2f7bf"></span><span class="sig-name descname"><span class="n"><span class="pre">~LineFootprint</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprintD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint7setLineERKN13geometry_msgs5PointERKN13geometry_msgs5PointE">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint7setLineERKN13geometry_msgs5PointERKN13geometry_msgs5PointE"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint7setLineERKN13geometry_msgs5PointERKN13geometry_msgs5PointE"></span><span id="hateb_local_planner::LineFootprint::setLine__geometry_msgs::PointCR.geometry_msgs::PointCR"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a363d75bf3d38983a643a348bc0e77d8e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLine</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint7setLineERKN13geometry_msgs5PointERKN13geometry_msgs5PointE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set vertices of the contour/footprint. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vertices</strong> – footprint vertices (only x and y) around the robot/human center (0,0) (do not repeat the first and last vertex at the end) </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint7setLineERKN5Eigen8Vector2dERKN5Eigen8Vector2dE">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint7setLineERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint7setLineERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::LineFootprint::setLine__Eigen::Vector2dCR.Eigen::Vector2dCR"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1ae3e5d7f33506d77d1460432baa9ea233"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLine</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint7setLineERKN5Eigen8Vector2dERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set vertices of the contour/footprint (Eigen version) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vertices</strong> – footprint vertices (only x and y) around the robot/human center (0,0) (do not repeat the first and last vertex at the end) </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner13LineFootprint17calculateDistanceERK7PoseSE2PK8Obstacle">
+<span id="_CPPv3NK19hateb_local_planner13LineFootprint17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="_CPPv2NK19hateb_local_planner13LineFootprint17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="hateb_local_planner::LineFootprint::calculateDistance__PoseSE2CR.ObstacleCPC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a513cb63354f96e4e4e864510a0eb444f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner13LineFootprint17calculateDistanceERK7PoseSE2PK8Obstacle" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the distance between the robot/human and an obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the obstacle </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner13LineFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled">
+<span id="_CPPv3NK19hateb_local_planner13LineFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="_CPPv2NK19hateb_local_planner13LineFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="hateb_local_planner::LineFootprint::estimateSpatioTemporalDistance__PoseSE2CR.ObstacleCP.doubleC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a4371c29b86388e99d0ddd40c867db974"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">estimateSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner13LineFootprint30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled" title="Link to this definition"></a><br /></dt>
+<dd><p>Estimate the distance between the robot/human and the predicted location of an obstacle at time t. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – robot/human pose, from which the distance to the obstacle is estimated </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the dynamic obstacle (constant velocity model is assumed) </p></li>
+<li><p><strong>t</strong> – time, for which the predicted distance to the obstacle is calculated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner13LineFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE">
+<span id="_CPPv3NK19hateb_local_planner13LineFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="_CPPv2NK19hateb_local_planner13LineFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="hateb_local_planner::LineFootprint::visualizeModel__PoseSE2CR.std::vector:visualization_msgs::Marker:R.std_msgs::ColorRGBACRC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1aabbddff246923f1b28e7d5526b7ac8f5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualizeModel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">visualization_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Marker</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">markers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ColorRGBA</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">color</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner13LineFootprint14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE" title="Link to this definition"></a><br /></dt>
+<dd><p>Visualize the robot/human using a markers. </p>
+<p>Fill a marker message with all necessary information (type, pose, scale and color). The header, namespace, id and marker lifetime will be overwritten. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>markers</strong> – <strong>[out]</strong> container of marker messages describing the robot/human shape </p></li>
+<li><p><strong>color</strong> – Color of the footprint </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint18getInscribedRadiusEv">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint18getInscribedRadiusEv"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint18getInscribedRadiusEv"></span><span id="hateb_local_planner::LineFootprint::getInscribedRadius"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a0faf871f8784766558d231740a8f14fc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint18getInscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the inscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>inscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner13LineFootprint22getCircumscribedRadiusEv">
+<span id="_CPPv3NK19hateb_local_planner13LineFootprint22getCircumscribedRadiusEv"></span><span id="_CPPv2NK19hateb_local_planner13LineFootprint22getCircumscribedRadiusEv"></span><span id="hateb_local_planner::LineFootprint::getCircumscribedRadiusC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1aa00c54b2f01d5a0f418114d941316c24"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCircumscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner13LineFootprint22getCircumscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the circumscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>circumscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner13LineFootprint16transformToWorldERK7PoseSE2RN5Eigen8Vector2dERN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner13LineFootprint16transformToWorldERK7PoseSE2RN5Eigen8Vector2dERN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner13LineFootprint16transformToWorldERK7PoseSE2RN5Eigen8Vector2dERN5Eigen8Vector2dE"></span><span id="hateb_local_planner::LineFootprint::transformToWorld__PoseSE2CR.Eigen::Vector2dR.Eigen::Vector2dRC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a84cd485406ed8685742a7cec9b92ff6b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformToWorld</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start_world</span></span>, <span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end_world</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner13LineFootprint16transformToWorldERK7PoseSE2RN5Eigen8Vector2dERN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Transforms a line to the world frame manually. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>line_start</strong> – <strong>[out]</strong> line_start_ in the world frame </p></li>
+<li><p><strong>line_end</strong> – <strong>[out]</strong> line_end_ in the world frame </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint11line_start_E">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint11line_start_E"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint11line_start_E"></span><span id="hateb_local_planner::LineFootprint::line_start___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1acb8ba2de6c6a3d024bf086ff79188433"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">line_start_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint11line_start_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint9line_end_E">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint9line_end_E"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint9line_end_E"></span><span id="hateb_local_planner::LineFootprint::line_end___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a18f1f9ebf00e5532d25a36b793126944"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">line_end_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint9line_end_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13LineFootprint18min_obstacle_dist_E">
+<span id="_CPPv3N19hateb_local_planner13LineFootprint18min_obstacle_dist_E"></span><span id="_CPPv2N19hateb_local_planner13LineFootprint18min_obstacle_dist_E"></span><span id="hateb_local_planner::LineFootprint::min_obstacle_dist___doubleC"></span><span class="target" id="classhateb__local__planner_1_1LineFootprint_1a2f838449afae13cdb134ddf1e671f965"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_obstacle_dist_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13LineFootprint18min_obstacle_dist_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

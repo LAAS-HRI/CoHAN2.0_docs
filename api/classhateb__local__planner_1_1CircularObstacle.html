@@ -199,10 +199,312 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacleE">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacleE"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacleE"></span><span id="hateb_local_planner::CircularObstacle"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CircularObstacle</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Implements a 2D circular obstacle (point obstacle plus radius) </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleEv">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle16CircularObstacleEv"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle16CircularObstacleEv"></span><span id="hateb_local_planner::CircularObstacle::CircularObstacle"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a00f50bf65cf08250b50fa5a0ea6c0318"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CircularObstacle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the circular obstacle class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleERKN5Eigen3RefIKN5Eigen8Vector2dEEEd">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle16CircularObstacleERKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle16CircularObstacleERKN5Eigen3RefIKN5Eigen8Vector2dEEEd"></span><span id="hateb_local_planner::CircularObstacle::CircularObstacle__Eigen::Ref:Eigen::Vector2dC:CR.double"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1af2efd02ccd06d8bb3fe58b3a49d3338f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CircularObstacle</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">radius</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleERKN5Eigen3RefIKN5Eigen8Vector2dEEEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct <a class="reference internal" href="#classhateb__local__planner_1_1CircularObstacle"><span class="std std-ref">CircularObstacle</span></a> using a 2d center position vector and radius. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2d position that defines the current obstacle position </p></li>
+<li><p><strong>radius</strong> – radius of the obstacle </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleEddd">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle16CircularObstacleEddd"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle16CircularObstacleEddd"></span><span id="hateb_local_planner::CircularObstacle::CircularObstacle__double.double.double"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a2d7e9c7d4ff804095a1c3f379740aa93"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CircularObstacle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">radius</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle16CircularObstacleEddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct <a class="reference internal" href="#classhateb__local__planner_1_1CircularObstacle"><span class="std std-ref">CircularObstacle</span></a> using x- and y-center-coordinates and radius. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate </p></li>
+<li><p><strong>y</strong> – y-coordinate </p></li>
+<li><p><strong>radius</strong> – radius of the obstacle </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle14checkCollisionERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::CircularObstacle::checkCollision__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a8d07c6c4b981c66c8985fcb2039f65cd"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkCollision</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">point</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle14checkCollisionERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given point collides with the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D reference position that should be checked </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if position is inside the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::CircularObstacle::checkLineIntersection__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a5a4924bb4cac2ddd9abf56ff5f0df310"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkLineIntersection</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given line segment between two points intersects with the obstacle (and additionally keeps a safty distance <code class="docutils literal notranslate"><span class="pre">min_dist</span></code>) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision/intersection free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if given line intersects the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::CircularObstacle::getMinimumDistance__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1af714cb2cdf7c3696de8313c6c4ac3b3e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – 2d reference position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::CircularObstacle::getMinimumDistance__Eigen::Vector2dCR.Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a4215cf7bb77b91f092b136b4d357809c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERK16Point2dContainer">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="hateb_local_planner::CircularObstacle::getMinimumDistance__Point2dContainerCRC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a7d140ef93b5e016f61cddac50fe23879"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle18getMinimumDistanceERK16Point2dContainer" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle15getClosestPointERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::CircularObstacle::getClosestPoint__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a9a8394c65ac93ce789ebb4534ac3d2b6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getClosestPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle15getClosestPointERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the closest point on the boundary of the obstacle w.r.t. a specified reference position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – reference 2d position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>closest point on the obstacle boundary </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::CircularObstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1aa17eef1135001604127b2ad4e372b59e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2d reference position </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::CircularObstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a1d83ddadd32a5bb152c37b2772b8f53f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="hateb_local_planner::CircularObstacle::getMinimumSpatioTemporalDistance__Point2dContainerCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a8b3a85f579c9a30634fba14c5a1e36f3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE"></span><span id="hateb_local_planner::CircularObstacle::predictCentroidConstantVelocity__double.Eigen::Ref:Eigen::Vector2d:C"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1ac4a12b0492daa57a2aadfb381924671a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predictCentroidConstantVelocity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle31predictCentroidConstantVelocityEdN5Eigen3RefIN5Eigen8Vector2dEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Predict position of the centroid assuming a constant velocity model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>t</strong> – <strong>[in]</strong> time in seconds for the prediction (t&gt;=0) </p></li>
+<li><p><strong>position</strong> – <strong>[out]</strong> predicted 2d position of the centroid </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle11getCentroidEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle11getCentroidEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle11getCentroidEv"></span><span id="hateb_local_planner::CircularObstacle::getCentroidC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a0a029d82c1bfdd33a260002a1995f5e4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCentroid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle11getCentroidEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Eigen::Vector2d containing the centroid </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle15getCentroidCplxEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle15getCentroidCplxEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle15getCentroidCplxEv"></span><span id="hateb_local_planner::CircularObstacle::getCentroidCplxC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a3049d47b9084ca57814949f5a9c40eb5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">complex</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCentroidCplx</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle15getCentroidCplxEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle as complex number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>std::complex containing the centroid coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle8positionEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle8positionEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle8positionEv"></span><span id="hateb_local_planner::CircularObstacle::positionC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a7cbac98fd7eb24abf698374fd1ab01c3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle8positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current position of the obstacle (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle8positionEv">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle8positionEv"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle8positionEv"></span><span id="hateb_local_planner::CircularObstacle::position"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a4db1ee4ee4e19dad681aa5c85803babc"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle8positionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current position of the obstacle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle1xEv">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle1xEv"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle1xEv"></span><span id="hateb_local_planner::CircularObstacle::x"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1af15daa0dc791973370ccb81bf406f0b7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle1xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current x-coordinate of the obstacle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle1xEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle1xEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle1xEv"></span><span id="hateb_local_planner::CircularObstacle::xC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1ac61549f6cb1189514617620e9b518877"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle1xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current y-coordinate of the obstacle (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle1yEv">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle1yEv"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle1yEv"></span><span id="hateb_local_planner::CircularObstacle::y"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1adf7884356b07042411e5f9b6387e5a37"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle1yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current x-coordinate of the obstacle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle1yEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle1yEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle1yEv"></span><span id="hateb_local_planner::CircularObstacle::yC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a946b3bd28a8666e868d39ee3c229c1c0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">y</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle1yEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current y-coordinate of the obstacle (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle6radiusEv">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle6radiusEv"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle6radiusEv"></span><span id="hateb_local_planner::CircularObstacle::radius"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1ab4f803620790fa5fbf16d6c5ac1d48b1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">radius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle6radiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current radius of the obstacle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner16CircularObstacle6radiusEv">
+<span id="_CPPv3NK19hateb_local_planner16CircularObstacle6radiusEv"></span><span id="_CPPv2NK19hateb_local_planner16CircularObstacle6radiusEv"></span><span id="hateb_local_planner::CircularObstacle::radiusC"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a581e9ce0a99e94fe7a6acdf617e874e6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">radius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner16CircularObstacle6radiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Return the current radius of the obstacle. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle12toPolygonMsgERN13geometry_msgs7PolygonE">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="hateb_local_planner::CircularObstacle::toPolygonMsg__geometry_msgs::PolygonR"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a653e20732dd2897b7009d21749651154"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toPolygonMsg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Polygon</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle12toPolygonMsgERN13geometry_msgs7PolygonE" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert the obstacle to a polygon message. </p>
+<p>Convert the obstacle to a corresponding polygon msg. Point obstacles have one vertex, lines have two vertices and polygons might are implictly closed such that the start vertex must not be repeated. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – <strong>[out]</strong> the polygon message </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle11setCentroidEdd">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle11setCentroidEdd"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle11setCentroidEdd"></span><span id="hateb_local_planner::CircularObstacle::setCentroid__double.double"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1a67af71dac7f1bdeb34a756f1299e9e77"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCentroid</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle11setCentroidEdd" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle4pos_E">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle4pos_E"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle4pos_E"></span><span id="hateb_local_planner::CircularObstacle::pos___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1ad5b8ddb66a223cf532b212e39de8754d"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pos_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle4pos_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the center position of the <a class="reference internal" href="#classhateb__local__planner_1_1CircularObstacle"><span class="std std-ref">CircularObstacle</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner16CircularObstacle7radius_E">
+<span id="_CPPv3N19hateb_local_planner16CircularObstacle7radius_E"></span><span id="_CPPv2N19hateb_local_planner16CircularObstacle7radius_E"></span><span id="hateb_local_planner::CircularObstacle::radius___double"></span><span class="target" id="classhateb__local__planner_1_1CircularObstacle_1adedb198019942cd2fbd0389512c91fb1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">radius_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner16CircularObstacle7radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Radius of the obstacle. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

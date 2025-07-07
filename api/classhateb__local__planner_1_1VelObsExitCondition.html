@@ -199,10 +199,119 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitConditionE">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitConditionE"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitConditionE"></span><span id="hateb_local_planner::VelObsExitCondition"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VelObsExitCondition</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitConditionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Condition node that checks if an obstacle (human) has stopped in the environment. </p>
+<p>This class implements a behavior tree condition that monitors the velocity state of nearby human agents and determines if any have come to a stop. It is used to detect situations where the robot’s path may be blocked by a stationary human obstacle. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::VelObsExitCondition::VelObsExitCondition__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a595c3695e5187db0902861a98636d970"></span><span class="sig-name descname"><span class="n"><span class="pre">VelObsExitCondition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor for the <a class="reference internal" href="#classhateb__local__planner_1_1VelObsExitCondition"><span class="std std-ref">VelObsExitCondition</span></a> node. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Node configuration containing the input/output ports </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionEv">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionEv"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionEv"></span><span id="hateb_local_planner::VelObsExitCondition::VelObsExitCondition"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a3da5a0c0843539c2a8c40fe6222504a8"></span><span class="sig-name descname"><span class="n"><span class="pre">VelObsExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition19VelObsExitConditionEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitConditionD0Ev">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitConditionD0Ev"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitConditionD0Ev"></span><span id="hateb_local_planner::VelObsExitCondition::~VelObsExitCondition"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1ab27abed36ab08bb456b02f78cc85368e"></span><span class="sig-name descname"><span class="n"><span class="pre">~VelObsExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitConditionD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition4tickEv">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition4tickEv"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition4tickEv"></span><span id="hateb_local_planner::VelObsExitCondition::tick"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a863fe1d3e03c9df2fc7d39867f73431f"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Main execution tick of the condition node. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>NodeStatus SUCCESS if a human has stopped, FAILURE otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition13providedPortsEv"></span><span id="hateb_local_planner::VelObsExitCondition::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a0155387ed345f79142f50984042a9e5c"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines the input and output ports for the condition node. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>PortsList containing the node’s ports configuration </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition15hasHumanStoppedEv">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition15hasHumanStoppedEv"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition15hasHumanStoppedEv"></span><span id="hateb_local_planner::VelObsExitCondition::hasHumanStopped"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a9947e3c4026693b884457351f0f9bdb6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">hasHumanStopped</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition15hasHumanStoppedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if any human agent in the environment has stopped moving. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true if a human has stopped, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition12agents_info_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition12agents_info_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition12agents_info_E"></span><span id="hateb_local_planner::VelObsExitCondition::agents_info___agent_path_prediction::AgentsInfo"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a85e8c9d02054b5f696f608763109884c"></span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition12agents_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current information about all agents in the environment. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition11agents_ptr_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition11agents_ptr_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition11agents_ptr_E"></span><span id="hateb_local_planner::VelObsExitCondition::agents_ptr___std::shared_ptr:agents::Agents:"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a85177a54ba1b52b040f04247300bf50d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classagents_1_1Agents.html#_CPPv4N6agents6AgentsE" title="agents::Agents"><span class="n"><span class="pre">Agents</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_ptr_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition11agents_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the agents management class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition5name_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition5name_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition5name_E"></span><span id="hateb_local_planner::VelObsExitCondition::name___ss"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a67cca4f381872a8917ec0177b283e439"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of this behavior tree node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition17nearest_human_id_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition17nearest_human_id_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition17nearest_human_id_E"></span><span id="hateb_local_planner::VelObsExitCondition::nearest_human_id___i"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1ab0412f6990ac72c985fa27660eb2a5ea"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nearest_human_id_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition17nearest_human_id_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ID of the nearest human agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition8t_stuck_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition8t_stuck_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition8t_stuck_E"></span><span id="hateb_local_planner::VelObsExitCondition::t_stuck___i"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a8f4307042afb3fbaf2b1bf3f7e40cef9"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">t_stuck_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition8t_stuck_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time counter for how long an agent has been stuck. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner19VelObsExitCondition13agents_mutex_E">
+<span id="_CPPv3N19hateb_local_planner19VelObsExitCondition13agents_mutex_E"></span><span id="_CPPv2N19hateb_local_planner19VelObsExitCondition13agents_mutex_E"></span><span id="hateb_local_planner::VelObsExitCondition::agents_mutex___std::mutex"></span><span class="target" id="classhateb__local__planner_1_1VelObsExitCondition_1a6a2794fa3b8be0a0927b89a99290a53e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner19VelObsExitCondition13agents_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex to protect concurrent access to agent data. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

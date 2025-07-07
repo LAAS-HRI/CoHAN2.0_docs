@@ -137,10 +137,28 @@
 </ul>
 <section id="function-documentation">
 <h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN19hateb_local_planner19get_const_referenceERK1TPK1T">
+<span id="_CPPv3I0EN19hateb_local_planner19get_const_referenceEPK1T"></span><span id="_CPPv2I0EN19hateb_local_planner19get_const_referenceEPK1T"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="namespacehateb__local__planner_1a2109332af478b073ef8713bd5c8d3710"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN19hateb_local_planner19get_const_referenceERK1TPK1T" title="hateb_local_planner::get_const_reference::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-prename descclassname"><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">get_const_reference</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN19hateb_local_planner19get_const_referenceERK1TPK1T" title="hateb_local_planner::get_const_reference::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ptr</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN19hateb_local_planner19get_const_referenceERK1TPK1T" title="Link to this definition"></a><br /></dt>
+<dd><p>Helper function that returns the const reference to a value defined by either its raw pointer type or const reference. </p>
+<p>Return a constant reference for boths input variants (pointer or reference). <div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Makes only sense in combination with the overload getConstReference(const T&amp; val). </p>
 </div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ptr</strong> – pointer of type T </p>
+</dd>
+<dt class="field-even">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>T</strong> – arbitrary type </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If <code class="docutils literal notranslate"><span class="pre">T</span></code> is a pointer, return const *T (leading to const T&amp;), otherwise const T&amp; with out pointer-to-ref conversion </p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 

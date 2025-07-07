@@ -199,10 +199,340 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacleE">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacleE"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacleE"></span><span id="hateb_local_planner::PolygonObstacle"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PolygonObstacle</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacleE" title="Link to this definition"></a><br /></dt>
+<dd><p>Implements a polygon obstacle with an arbitrary number of vertices. </p>
+<p>If the polygon has only 2 vertices, than it is considered as a line, otherwise the polygon will always be closed (a connection between the first and the last vertex is included automatically). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-define-the-polygon">Define the polygon</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle8verticesEv">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle8verticesEv"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle8verticesEv"></span><span id="hateb_local_planner::PolygonObstacle::verticesC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1aa2163c7b7110e9e6f3555ea032b9d5fe"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">vertices</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle8verticesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access vertices container (read-only) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle8verticesEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle8verticesEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle8verticesEv"></span><span id="hateb_local_planner::PolygonObstacle::vertices"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ab6212e7f48c7b388291261a020a2e1af"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">vertices</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle8verticesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Access vertices container. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle14pushBackVertexERKN5Eigen3RefIKN5Eigen8Vector2dEEE">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle14pushBackVertexERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle14pushBackVertexERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="hateb_local_planner::PolygonObstacle::pushBackVertex__Eigen::Ref:Eigen::Vector2dC:CR"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ace8a27f9700ae0c51282e1e518eb71da"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pushBackVertex</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vertex</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle14pushBackVertexERKN5Eigen3RefIKN5Eigen8Vector2dEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Add a vertex to the polygon (edge-point) </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>You do not need to close the polygon (do not repeat the first vertex) </p>
+</div>
+</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<p>Do not forget to call <a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1a17f5da81bc9b778b4769319166186061"><span class="std std-ref">finalizePolygon()</span></a> after adding all vertices </p>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>vertex</strong> – 2D point defining a new polygon edge </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle14pushBackVertexEdd">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle14pushBackVertexEdd"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle14pushBackVertexEdd"></span><span id="hateb_local_planner::PolygonObstacle::pushBackVertex__double.double"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1adfba65155bc6fb0968e69de7664f8df3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pushBackVertex</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle14pushBackVertexEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Add a vertex to the polygon (edge-point) </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>You do not need to close the polygon (do not repeat the first vertex) </p>
+</div>
+</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not forget to call <a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1a17f5da81bc9b778b4769319166186061"><span class="std std-ref">finalizePolygon()</span></a> after adding all vertices </p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x-coordinate of the new vertex </p></li>
+<li><p><strong>y</strong> – y-coordinate of the new vertex </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle15finalizePolygonEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle15finalizePolygonEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle15finalizePolygonEv"></span><span id="hateb_local_planner::PolygonObstacle::finalizePolygon"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a17f5da81bc9b778b4769319166186061"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">finalizePolygon</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle15finalizePolygonEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Call finalizePolygon after the polygon is created with the help of <a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1ace8a27f9700ae0c51282e1e518eb71da"><span class="std std-ref">pushBackVertex()</span></a> methods. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle13clearVerticesEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle13clearVerticesEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle13clearVerticesEv"></span><span id="hateb_local_planner::PolygonObstacle::clearVertices"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a3086e001a07be0238274d4a2ab52cf4d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clearVertices</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle13clearVerticesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Clear all vertices (Afterwards the polygon is not valid anymore) </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle10noVerticesEv">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle10noVerticesEv"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle10noVerticesEv"></span><span id="hateb_local_planner::PolygonObstacle::noVerticesC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a809ac7e8f1e6e0158607739170a757f1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">noVertices</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle10noVerticesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the number of vertices defining the polygon (the first vertex is counted once) </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle15PolygonObstacleEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle15PolygonObstacleEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle15PolygonObstacleEv"></span><span id="hateb_local_planner::PolygonObstacle::PolygonObstacle"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ac1ebe79f05206771debec653f89ef991"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PolygonObstacle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle15PolygonObstacleEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the polygon obstacle class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle15PolygonObstacleE16Point2dContainer">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle15PolygonObstacleE16Point2dContainer"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle15PolygonObstacleE16Point2dContainer"></span><span id="hateb_local_planner::PolygonObstacle::PolygonObstacle__Point2dContainer"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a67d39634805c1cd1c72334dcf8fe7aac"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PolygonObstacle</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">vertices</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle15PolygonObstacleE16Point2dContainer" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct polygon obstacle with a list of vertices. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle14checkCollisionERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle14checkCollisionERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::PolygonObstacle::checkCollision__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a4fb0e393397045a1cffa1c55fd7e74f5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkCollision</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">point</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle14checkCollisionERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given point collides with the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2D reference position that should be checked </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if position is inside the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::PolygonObstacle::checkLineIntersection__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a8c4ff26c044b9575bbce5cae7ebb284f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkLineIntersection</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_dist</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle21checkLineIntersectionERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if a given line segment between two points intersects with the obstacle (and additionally keeps a safty distance <code class="docutils literal notranslate"><span class="pre">min_dist</span></code>) </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>we ignore <code class="docutils literal notranslate"><span class="pre">min_dist</span></code> here </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2D point for the end of the reference line </p></li>
+<li><p><strong>min_dist</strong> – Minimum distance allowed to the obstacle to be collision/intersection free </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if given line intersects the region of the obstacle or if the minimum distance is lower than min_dist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumDistance__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1aabdae3ae8dd782d1d94ced5034c3ab49"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – 2d reference position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumDistance__Eigen::Vector2dCR.Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a7269321e19888c5651dded65642548a4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERK16Point2dContainer">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERK16Point2dContainer"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumDistance__Point2dContainerCRC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1aa9231a39bc457c380dc8276c113fd46c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle18getMinimumDistanceERK16Point2dContainer" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the minimum euclidean distance to the obstacle (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle15getClosestPointERKN5Eigen8Vector2dE">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle15getClosestPointERKN5Eigen8Vector2dE"></span><span id="hateb_local_planner::PolygonObstacle::getClosestPoint__Eigen::Vector2dCRC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1aba2767f7dd4d60e142ddea72a8789d72"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getClosestPoint</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle15getClosestPointERKN5Eigen8Vector2dE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the closest point on the boundary of the obstacle w.r.t. a specified reference position. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – reference 2d position </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>closest point on the obstacle boundary </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a839a025234a43e40887553edc2b7ab41"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">position</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (point as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>position</strong> – 2d reference position </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumSpatioTemporalDistance__Eigen::Vector2dCR.Eigen::Vector2dCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1acd0499a11831280859922a6db25e3e4e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line_end</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERKN5Eigen8Vector2dERKN5Eigen8Vector2dEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (line as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_start</strong> – 2d position of the begin of the reference line </p></li>
+<li><p><strong>line_end</strong> – 2d position of the end of the reference line </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd"></span><span id="hateb_local_planner::PolygonObstacle::getMinimumSpatioTemporalDistance__Point2dContainerCR.doubleC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a53e3769caac423620226d206a0f0911d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMinimumSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle32getMinimumSpatioTemporalDistanceERK16Point2dContainerd" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the estimated minimum spatiotemporal distance to the moving obstacle using a constant velocity model (polygon as reference) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>polygon</strong> – Vertices (2D points) describing a closed polygon </p></li>
+<li><p><strong>t</strong> – time, for which the minimum distance to the obstacle is estimated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The nearest possible distance to the obstacle at time t </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle15predictVerticesEdR16Point2dContainer">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle15predictVerticesEdR16Point2dContainer"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle15predictVerticesEdR16Point2dContainer"></span><span id="hateb_local_planner::PolygonObstacle::predictVertices__double.Point2dContainerRC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a45a7aedfab895f3d3919f695c9a60b9c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predictVertices</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span>, <a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pred_vertices</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle15predictVerticesEdR16Point2dContainer" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle11getCentroidEv">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle11getCentroidEv"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle11getCentroidEv"></span><span id="hateb_local_planner::PolygonObstacle::getCentroidC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ad3d8309b5cb4ec59119213606a4c0e46"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getCentroid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle11getCentroidEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Eigen::Vector2d containing the centroid </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner15PolygonObstacle15getCentroidCplxEv">
+<span id="_CPPv3NK19hateb_local_planner15PolygonObstacle15getCentroidCplxEv"></span><span id="_CPPv2NK19hateb_local_planner15PolygonObstacle15getCentroidCplxEv"></span><span id="hateb_local_planner::PolygonObstacle::getCentroidCplxC"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a659d05cfe198739c0bafa2ed97b19e15"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">complex</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCentroidCplx</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner15PolygonObstacle15getCentroidCplxEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get centroid coordinates of the obstacle as complex number. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>std::complex containing the centroid coordinate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle12toPolygonMsgERN13geometry_msgs7PolygonE">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle12toPolygonMsgERN13geometry_msgs7PolygonE"></span><span id="hateb_local_planner::PolygonObstacle::toPolygonMsg__geometry_msgs::PolygonR"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ad51dbe22ccecf14472ca3f24aeb13be6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">toPolygonMsg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Polygon</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">polygon</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle12toPolygonMsgERN13geometry_msgs7PolygonE" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert the obstacle to a polygon message. </p>
+<p>Convert the obstacle to a corresponding polygon msg. Point obstacles have one vertex, lines have two vertices and polygons might are implictly closed such that the start vertex must not be repeated. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>polygon</strong> – <strong>[out]</strong> the polygon message </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle17fixPolygonClosureEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle17fixPolygonClosureEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle17fixPolygonClosureEv"></span><span id="hateb_local_planner::PolygonObstacle::fixPolygonClosure"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ad3249541e53232710d2315802b581e25"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fixPolygonClosure</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle17fixPolygonClosureEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the current polygon contains the first vertex twice (as start and end) and in that case erase the last redundant one. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle12calcCentroidEv">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle12calcCentroidEv"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle12calcCentroidEv"></span><span id="hateb_local_planner::PolygonObstacle::calcCentroid"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1ab374ab9f993a2c2e943052aff01d7e41"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calcCentroid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle12calcCentroidEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the centroid of the polygon (called inside <a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1a17f5da81bc9b778b4769319166186061"><span class="std std-ref">finalizePolygon()</span></a>) </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle9vertices_E">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle9vertices_E"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle9vertices_E"></span><span id="hateb_local_planner::PolygonObstacle::vertices___Point2dContainer"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a10c80a9b6a55e87f14f258a4dce7d186"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vertices_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle9vertices_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store vertices defining the polygon (. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1ace8a27f9700ae0c51282e1e518eb71da"><span class="std std-ref">pushBackVertex</span></a>) </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle9centroid_E">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle9centroid_E"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle9centroid_E"></span><span id="hateb_local_planner::PolygonObstacle::centroid___Eigen::Vector2d"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1adfa647086e493e679107a4989c2586da"></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">centroid_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle9centroid_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the centroid coordinates of the polygon (. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1PolygonObstacle_1ab374ab9f993a2c2e943052aff01d7e41"><span class="std std-ref">calcCentroid</span></a>) </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner15PolygonObstacle10finalized_E">
+<span id="_CPPv3N19hateb_local_planner15PolygonObstacle10finalized_E"></span><span id="_CPPv2N19hateb_local_planner15PolygonObstacle10finalized_E"></span><span id="hateb_local_planner::PolygonObstacle::finalized___b"></span><span class="target" id="classhateb__local__planner_1_1PolygonObstacle_1a09d11a5597f5f4dcae52d5c35c50956f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">finalized_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner15PolygonObstacle10finalized_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flat that keeps track if the polygon was finalized after adding all vertices. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

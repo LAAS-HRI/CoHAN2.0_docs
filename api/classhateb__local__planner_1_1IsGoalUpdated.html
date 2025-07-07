@@ -199,10 +199,76 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdatedE">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdatedE"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdatedE"></span><span id="hateb_local_planner::IsGoalUpdated"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IsGoalUpdated</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdatedE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing a condition node for checking if navigation goal has been updated. </p>
+<p>This class monitors updates to the robot’s navigation goal and provides functionality to detect when a new goal has been set. This is important for handling goal changes during navigation and recovery behaviors. It inherits from BT::ConditionNode to integrate with the behavior tree framework. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::IsGoalUpdated::IsGoalUpdated__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1a9375a71ef2c274a93170f6acdaab57cd"></span><span class="sig-name descname"><span class="n"><span class="pre">IsGoalUpdated</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with condition name and configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Configuration for the behavior tree node </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedEv">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedEv"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedEv"></span><span id="hateb_local_planner::IsGoalUpdated::IsGoalUpdated"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1ac97c87faa7fc89bcff038bb646bf38f5"></span><span class="sig-name descname"><span class="n"><span class="pre">IsGoalUpdated</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdated13IsGoalUpdatedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Deleted default constructor to enforce proper initialization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdatedD0Ev">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdatedD0Ev"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdatedD0Ev"></span><span id="hateb_local_planner::IsGoalUpdated::~IsGoalUpdated"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1a39b5e538557deeb5aa781fe896a2234c"></span><span class="sig-name descname"><span class="n"><span class="pre">~IsGoalUpdated</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdatedD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor for cleanup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdated4tickEv">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdated4tickEv"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdated4tickEv"></span><span id="hateb_local_planner::IsGoalUpdated::tick"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1a3d8a661302ba20b434dfcc314272311d"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdated4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Method called to evaluate if goal has been updated. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SUCCESS if goal has been updated and not in recovery, FAILURE otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdated13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdated13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdated13providedPortsEv"></span><span id="hateb_local_planner::IsGoalUpdated::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1abdeedfd907adbfd10d62a0e81a2c38ae"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdated13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines input ports for condition evaluation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ports list containing goal_update and recovery status as inputs </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner13IsGoalUpdated5name_E">
+<span id="_CPPv3N19hateb_local_planner13IsGoalUpdated5name_E"></span><span id="_CPPv2N19hateb_local_planner13IsGoalUpdated5name_E"></span><span id="hateb_local_planner::IsGoalUpdated::name___ss"></span><span class="target" id="classhateb__local__planner_1_1IsGoalUpdated_1a73f0a0201931f5a3f578f740f9feffd4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner13IsGoalUpdated5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the node. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

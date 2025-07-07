@@ -199,10 +199,82 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughConditionE">
+<span id="_CPPv3N19hateb_local_planner20PassThroughConditionE"></span><span id="_CPPv2N19hateb_local_planner20PassThroughConditionE"></span><span id="hateb_local_planner::PassThroughCondition"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PassThroughCondition</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughConditionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing a condition node for checking passthrough scenarios. </p>
+<p>This class evaluates whether the robot is at a passage situation that requires special handling. It inherits from BT::ConditionNode to integrate with the behavior tree framework. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition20PassThroughConditionERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition20PassThroughConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition20PassThroughConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::PassThroughCondition::PassThroughCondition__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1ab545c4175ece4d6fe5e7f2d78e7f132a"></span><span class="sig-name descname"><span class="n"><span class="pre">PassThroughCondition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition20PassThroughConditionERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with condition name and configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Configuration for the behavior tree node </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition20PassThroughConditionEv">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition20PassThroughConditionEv"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition20PassThroughConditionEv"></span><span id="hateb_local_planner::PassThroughCondition::PassThroughCondition"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1a26ff2a258c1318a5f2dcaef3b4b9af60"></span><span class="sig-name descname"><span class="n"><span class="pre">PassThroughCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition20PassThroughConditionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Deleted default constructor to enforce proper initialization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughConditionD0Ev">
+<span id="_CPPv3N19hateb_local_planner20PassThroughConditionD0Ev"></span><span id="_CPPv2N19hateb_local_planner20PassThroughConditionD0Ev"></span><span id="hateb_local_planner::PassThroughCondition::~PassThroughCondition"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1ac9e43da512606c36f49e1848dea7cf71"></span><span class="sig-name descname"><span class="n"><span class="pre">~PassThroughCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughConditionD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor for cleanup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition4tickEv">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition4tickEv"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition4tickEv"></span><span id="hateb_local_planner::PassThroughCondition::tick"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1afc07dfdf8a321d257a3428ada70ed1be"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Method called to evaluate passage conditions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SUCCESS if in door/pillar passage, FAILURE otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition13providedPortsEv"></span><span id="hateb_local_planner::PassThroughCondition::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1aae3e587181f0f842fc2ff3888743c6d8"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines input port for passage type. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ports list containing passage type as input </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition9psg_type_E">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition9psg_type_E"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition9psg_type_E"></span><span id="hateb_local_planner::PassThroughCondition::psg_type___int8_t"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1a99879af1dc92ce8990b50a30f2059f9d"></span><span class="n"><span class="pre">int8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">psg_type_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition9psg_type_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current passage type being evaluated. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20PassThroughCondition5name_E">
+<span id="_CPPv3N19hateb_local_planner20PassThroughCondition5name_E"></span><span id="_CPPv2N19hateb_local_planner20PassThroughCondition5name_E"></span><span id="hateb_local_planner::PassThroughCondition::name___ss"></span><span class="target" id="classhateb__local__planner_1_1PassThroughCondition_1a8a1fa869b35c42df2409378b86db7114"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20PassThroughCondition5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the node. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

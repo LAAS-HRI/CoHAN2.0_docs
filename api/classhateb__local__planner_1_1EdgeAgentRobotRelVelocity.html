@@ -199,10 +199,30 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocityE">
+<span id="_CPPv3N19hateb_local_planner25EdgeAgentRobotRelVelocityE"></span><span id="_CPPv2N19hateb_local_planner25EdgeAgentRobotRelVelocityE"></span><span id="hateb_local_planner::EdgeAgentRobotRelVelocity"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotRelVelocity"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentRobotRelVelocity</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#_CPPv4I_i0EN19hateb_local_planner16BaseTebMultiEdgeE" title="hateb_local_planner::BaseTebMultiEdge"><span class="n"><span class="pre">BaseTebMultiEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocityE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining a relative velocity constraint between robot and agent trajectories in the optimization graph. </p>
+<p>This edge penalizes configurations where the relative velocity between the robot and an agent exceeds a specified threshold. The cost is computed based on the difference in velocities projected along the direction between the robot and agent, and is penalized if it exceeds cfg_-&gt;hateb.rel_vel_cost_threshold.</p>
+<p>Inherits from <a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#classhateb__local__planner_1_1BaseTebMultiEdge"><span class="std std-ref">BaseTebMultiEdge&lt;1, double&gt;</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocity25EdgeAgentRobotRelVelocityEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeAgentRobotRelVelocity25EdgeAgentRobotRelVelocityEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeAgentRobotRelVelocity25EdgeAgentRobotRelVelocityEv"></span><span id="hateb_local_planner::EdgeAgentRobotRelVelocity::EdgeAgentRobotRelVelocity"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotRelVelocity_1abe676bb5564fe1c0e0dc3fa380bcf2da"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentRobotRelVelocity</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocity25EdgeAgentRobotRelVelocityEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and resize to 6 vertices (robot/agent poses and time diffs). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocity12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeAgentRobotRelVelocity12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeAgentRobotRelVelocity12computeErrorEv"></span><span id="hateb_local_planner::EdgeAgentRobotRelVelocity::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotRelVelocity_1a1857a8a62ffe80a255ce77a175b0a9e6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeAgentRobotRelVelocity12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the error / cost for the edge. </p>
+<p>Calculates the relative velocity between the robot and agent over a time interval, and applies a penalty if the cost exceeds the allowed threshold. The error is stored in _error[0]. </p>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

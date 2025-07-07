@@ -18,6 +18,7 @@
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9a2dae69"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -200,10 +201,1006 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROSE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROSE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROSE"></span><span id="hateb_local_planner::HATebLocalPlannerROS"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HATebLocalPlannerROS</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">nav_core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseLocalPlanner</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">mbf_costmap_core</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CostmapController</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Implements both nav_core::BaseLocalPlanner and mbf_costmap_core::CostmapController abstract interfaces, so the hateb_local_planner plugin can be used both in move_base and move_base_flex (MBF). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-utility-functions/methods">Public utility functions/methods</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12costmap_ros_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS12costmap_ros_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS12costmap_ros_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::costmap_ros___costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a685b9f952f3d2c3abaa8d224fed66d71"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_ros_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12costmap_ros_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the costmap ros wrapper, received from the navigation stack. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8costmap_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS8costmap_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS8costmap_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::costmap___costmap_2d::Costmap2DP"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab11c7fbdc3a2a2bc6f551b1f227e2350"></span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">costmap_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8costmap_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to the 2d costmap (obtained from the costmap ros wrapper) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS3tf_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS3tf_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS3tf_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::tf___tf2_ros::BufferP"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a40b22c137342ae3a262a5a08196d1dfe"></span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">tf_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS3tf_E" title="Link to this definition"></a><br /></dt>
+<dd><p>pointer to tf buffer </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8planner_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS8planner_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS8planner_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::planner___PlannerInterfacePtr"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eab6d86d85a91c28abd4bd600a0531d"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1ae4119254a399f35d2c880803d7ec93b2.html#_CPPv4N19hateb_local_planner19PlannerInterfacePtrE" title="hateb_local_planner::PlannerInterfacePtr"><span class="n"><span class="pre">PlannerInterfacePtr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">planner_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8planner_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Instance of the underlying optimal planner class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10obstacles_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS10obstacles_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS10obstacles_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::obstacles___ObstContainer"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae4abd911038dde8b92f2ba979ff29d7e"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794.html#_CPPv4N19hateb_local_planner13ObstContainerE" title="hateb_local_planner::ObstContainer"><span class="n"><span class="pre">ObstContainer</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">obstacles_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10obstacles_E" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> vector that should be considered during local trajectory optimization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11via_points_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11via_points_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11via_points_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::via_points___ViaPointContainer"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afaa10504e4e805453a08cfe5a4a7373a"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6.html#_CPPv4N19hateb_local_planner17ViaPointContainerE" title="hateb_local_planner::ViaPointContainer"><span class="n"><span class="pre">ViaPointContainer</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">via_points_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11via_points_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Container of via-points that should be considered during local trajectory optimization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22agents_via_points_map_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22agents_via_points_map_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22agents_via_points_map_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::agents_via_points_map___std::map:uint64_t.ViaPointContainer:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aaddb1eb8b78d019e156d8d2518331dff"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">map</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint64_t</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6.html#_CPPv4N19hateb_local_planner17ViaPointContainerE" title="hateb_local_planner::ViaPointContainer"><span class="n"><span class="pre">ViaPointContainer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_via_points_map_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22agents_via_points_map_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Map storing via points for each agent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14visualization_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS14visualization_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS14visualization_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::visualization___TebVisualizationPtr"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1884f3dc2db14cf6cddfd4693f50e565"></span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a189cd7a87216df6bcfef993ad267dd11.html#_CPPv4N19hateb_local_planner19TebVisualizationPtrE" title="hateb_local_planner::TebVisualizationPtr"><span class="n"><span class="pre">TebVisualizationPtr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualization_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14visualization_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Instance of the visualization class (local/global plan, obstacles, …) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14costmap_model_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS14costmap_model_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS14costmap_model_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::costmap_model___boost::shared_ptr:base_local_planner::CostmapModel:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac66184ecc8cc78aed8ad6c1c8e7f005e"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">base_local_planner</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CostmapModel</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_model_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14costmap_model_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Costmap model for collision checking. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS4cfg_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS4cfg_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS4cfg_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::cfg___HATebConfig"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af8b3fe3a4e9f4b79f8b0f9a5a5281909"></span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cfg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS4cfg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Config class that stores and manages all related parameters. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7config_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS7config_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS7config_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::config___HATebLocalPlannerReconfigureConfig"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7d042bd9bb568a4f1b0292b42630e7e2"></span><span class="n"><span class="pre">HATebLocalPlannerReconfigureConfig</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">config_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7config_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Dynamic reconfigure config class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17failure_detector_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS17failure_detector_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS17failure_detector_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::failure_detector___FailureDetector"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa16d9382646d249b407bbd9b1f067ff8"></span><a class="reference internal" href="classhateb__local__planner_1_1FailureDetector.html#_CPPv4N19hateb_local_planner15FailureDetectorE" title="hateb_local_planner::FailureDetector"><span class="n"><span class="pre">FailureDetector</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">failure_detector_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17failure_detector_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Detect if the robot got stucked. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12global_plan_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS12global_plan_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS12global_plan_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::global_plan___std::vector:geometry_msgs::PoseStamped:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af2e7a28cc8e2b8bcb57e1640cab0c7db"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_plan_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12global_plan_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the current global plan. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12odom_helper_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS12odom_helper_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS12odom_helper_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::odom_helper___base_local_planner::OdometryHelperRos"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a188ac69a3f41da13c77bc67cb6c794ee"></span><span class="n"><span class="pre">base_local_planner</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">OdometryHelperRos</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">odom_helper_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12odom_helper_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Provides an interface to receive the current velocity from the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS25costmap_converter_loader_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS25costmap_converter_loader_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS25costmap_converter_loader_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::costmap_converter_loader___pluginlib::ClassLoader:costmap_converter::BaseCostmapToPolygons:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8051145f1962a18587fc6ebbc7d7ed07"></span><span class="n"><span class="pre">pluginlib</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ClassLoader</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseCostmapToPolygons</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_loader_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS25costmap_converter_loader_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Load costmap converter plugins at runtime. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18costmap_converter_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS18costmap_converter_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS18costmap_converter_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::costmap_converter___boost::shared_ptr:costmap_converter::BaseCostmapToPolygons:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a243e19c464d27d9018dc90abe8719f20"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseCostmapToPolygons</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">costmap_converter_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18costmap_converter_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the current costmap_converter. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14dynamic_recfg_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS14dynamic_recfg_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS14dynamic_recfg_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::dynamic_recfg___boost::shared_ptr:dynamic_reconfigure::Server:HATebLocalPlannerReconfigureConfig::"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aef0278fb51cc7e12dc86b1840b2303c2"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">dynamic_reconfigure</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Server</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">HATebLocalPlannerReconfigureConfig</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dynamic_recfg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS14dynamic_recfg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Dynamic reconfigure server to allow config modifications at runtime. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16custom_obst_sub_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16custom_obst_sub_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16custom_obst_sub_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::custom_obst_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5cc5b0b32a2fbaba353bb52684cc072e"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">custom_obst_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16custom_obst_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for custom obstacles received via ObstacleMsg. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_sub_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_sub_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_sub_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::inv_humans_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a56052cb87a706dbbbe14a5c55e4b3e3a"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inv_humans_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for invisible humans data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18custom_obst_mutex_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS18custom_obst_mutex_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS18custom_obst_mutex_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::custom_obst_mutex___boost::mutex"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac86ddda04902a4cb1266f9007b1b2891"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">custom_obst_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18custom_obst_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex that locks the obstacle array (multi-threaded) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16inv_human_mutex_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16inv_human_mutex_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16inv_human_mutex_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::inv_human_mutex___boost::mutex"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a986abfdb3800b34d58549b1965206797"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inv_human_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16inv_human_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex that locks the invisible humans array. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20custom_obstacle_msg_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS20custom_obstacle_msg_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS20custom_obstacle_msg_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::custom_obstacle_msg___costmap_converter::ObstacleArrayMsg"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae1f0398a3ebd77aa2ba9380ad8584cf6"></span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ObstacleArrayMsg</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">custom_obstacle_msg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20custom_obstacle_msg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy of the most recent obstacle message. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_msg_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_msg_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_msg_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::inv_humans_msg___costmap_converter::ObstacleArrayMsg"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4c37a602b58aa5b6a643350a61f42ddb"></span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ObstacleArrayMsg</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">inv_humans_msg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15inv_humans_msg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy of the most recent invisible humans message. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15via_points_sub_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15via_points_sub_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15via_points_sub_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::via_points_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a354a613bbf4133d8b73a4986990d4677"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">via_points_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15via_points_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for custom via-points received via Path msg. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS25custom_via_points_active_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS25custom_via_points_active_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS25custom_via_points_active_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::custom_via_points_active___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af15e750ec52508058d6e3cb2d3f63ce4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">custom_via_points_active_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS25custom_via_points_active_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Keep track whether valid via-points have been received. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16via_point_mutex_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16via_point_mutex_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16via_point_mutex_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::via_point_mutex___boost::mutex"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a33199da4bd6e348e932981752324d4e3"></span><span class="n"><span class="pre">boost</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mutex</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">via_point_mutex_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16via_point_mutex_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Mutex that locks the via_points container (multi-threaded) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11robot_pose_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11robot_pose_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11robot_pose_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_pose___PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b339c3b5bb7df2a7f24fecd8a85aee"></span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_pose_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11robot_pose_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store current robot pose. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11robot_goal_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11robot_goal_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11robot_goal_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_goal___PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad35d49280e04b02533fd3a1f1a48bf54"></span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11robot_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store current robot goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10robot_vel_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS10robot_vel_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS10robot_vel_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_vel___geometry_msgs::Twist"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1adf62da8dab5e0e4ae6aec98c9f64064b"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_vel_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10robot_vel_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store current robot velocities (vx, vy, omega) </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13goal_reached_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13goal_reached_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13goal_reached_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::goal_reached___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1b2e907af6becf9c4036d9fbd11351fc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_reached_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13goal_reached_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store whether the goal is reached or not. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16horizon_reduced_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16horizon_reduced_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16horizon_reduced_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::horizon_reduced___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a640c25b4dd9514a7e2b5027dc4a9fb0b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">horizon_reduced_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16horizon_reduced_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if the planning horizon was temporarily reduced. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22horizon_reduced_stamp_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22horizon_reduced_stamp_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22horizon_reduced_stamp_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::horizon_reduced_stamp___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1acb6eb8281c179f96708b0cad2c89c497"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">horizon_reduced_stamp_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22horizon_reduced_stamp_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time when the horizon was reduced. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS26time_last_infeasible_plan_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS26time_last_infeasible_plan_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS26time_last_infeasible_plan_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::time_last_infeasible_plan___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abaaec55d37760f058eb32eb632fc7846"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">time_last_infeasible_plan_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS26time_last_infeasible_plan_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time stamp of last infeasible plan detection. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20no_infeasible_plans_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS20no_infeasible_plans_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS20no_infeasible_plans_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::no_infeasible_plans___i"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3d1224e1da3f1809e5a1be118978c497"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">no_infeasible_plans_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20no_infeasible_plans_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Number of consecutive infeasible plans. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22time_last_oscillation_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22time_last_oscillation_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22time_last_oscillation_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::time_last_oscillation___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3c966b563a513924d6c583c7ab8807b9"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">time_last_oscillation_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22time_last_oscillation_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time stamp of last oscillation detection. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22last_preferred_rotdir_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22last_preferred_rotdir_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22last_preferred_rotdir_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::last_preferred_rotdir___RotType"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5c019da9fe43249afdc80934c565b57d"></span><a class="reference internal" href="enum_namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0.html#_CPPv4N19hateb_local_planner7RotTypeE" title="hateb_local_planner::RotType"><span class="n"><span class="pre">RotType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_preferred_rotdir_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22last_preferred_rotdir_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store recent preferred turning direction. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS9last_cmd_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS9last_cmd_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS9last_cmd_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::last_cmd___geometry_msgs::Twist"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af00c9f185c72f544e52de9da7c3720a1"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_cmd_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS9last_cmd_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the last control command generated. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15footprint_spec_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15footprint_spec_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15footprint_spec_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::footprint_spec___std::vector:geometry_msgs::Point:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad097c43a79ea4a4cc676841c29aea023"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Point</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">footprint_spec_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15footprint_spec_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store the footprint of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23robot_inscribed_radius_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS23robot_inscribed_radius_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS23robot_inscribed_radius_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_inscribed_radius___double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a782b56423cfb19cde44c9a2df05688c4"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_inscribed_radius_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23robot_inscribed_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The radius of the inscribed circle of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS27robot_circumscribed_radius_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS27robot_circumscribed_radius_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS27robot_circumscribed_radius_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_circumscribed_radius___double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb02aec268cebcb8bbe201a267950452"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_circumscribed_radius_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS27robot_circumscribed_radius_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The radius of the circumscribed circle of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13global_frame_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13global_frame_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13global_frame_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::global_frame___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0c42baabc4ce2add59a85972bcf6da6c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">global_frame_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13global_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The frame in which the controller will run. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17robot_base_frame_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS17robot_base_frame_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS17robot_base_frame_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::robot_base_frame___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a182a331e5e7a9b3ad97555fb85e2a3c7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">robot_base_frame_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17robot_base_frame_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Used as the base frame id of the robot. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12initialized_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS12initialized_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS12initialized_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::initialized___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eb20495fcd0c009b974814874427660"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialized_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12initialized_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag to track proper initialization of this class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22predict_agents_client_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22predict_agents_client_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22predict_agents_client_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::predict_agents_client___ros::ServiceClient"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a859a50b7da4051f1f2256395a3bf4823"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predict_agents_client_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22predict_agents_client_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Client for predicting agent trajectories. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS31reset_agents_prediction_client_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS31reset_agents_prediction_client_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS31reset_agents_prediction_client_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::reset_agents_prediction_client___ros::ServiceClient"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a67dca5ec62e41b06c6cdf50dcc26cddb"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset_agents_prediction_client_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS31reset_agents_prediction_client_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Client for resetting agent predictions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS33publish_predicted_markers_client_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS33publish_predicted_markers_client_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS33publish_predicted_markers_client_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::publish_predicted_markers_client___ros::ServiceClient"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a27bd5955f3e1466b56f98ffab4bcb473"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceClient</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_predicted_markers_client_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS33publish_predicted_markers_client_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Client for publishing prediction markers. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17predict_srv_name_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS17predict_srv_name_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS17predict_srv_name_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::predict_srv_name___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8acd889ddadc37ecac4ddb02f83f9355"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">predict_srv_name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17predict_srv_name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the prediction service. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS26reset_prediction_srv_name_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS26reset_prediction_srv_name_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS26reset_prediction_srv_name_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::reset_prediction_srv_name___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a03f84af3035ca6aa4d7a1121ba5c84ed"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset_prediction_srv_name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS26reset_prediction_srv_name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the reset prediction service. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS24publish_makers_srv_name_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS24publish_makers_srv_name_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS24publish_makers_srv_name_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::publish_makers_srv_name___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0b5a3464f3869fc17c5a754b4f92cfef"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publish_makers_srv_name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS24publish_makers_srv_name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the marker publishing service. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16optimize_server_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16optimize_server_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16optimize_server_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::optimize_server___ros::ServiceServer"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afe8d486f067e88419337bf0396de1b6e"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ServiceServer</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimize_server_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16optimize_server_E" title="Link to this definition"></a><br /></dt>
+<dd><p>optimize service for calling standalone </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15last_call_time_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15last_call_time_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15last_call_time_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::last_call_time___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb61979eca7c7adcdc6481feaa440e2d"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_call_time_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15last_call_time_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time of last service call. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23last_omega_sign_change_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS23last_omega_sign_change_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS23last_omega_sign_change_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::last_omega_sign_change___ros::Time"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a2a13bd8246dde003837701ab0dd947ab"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_omega_sign_change_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23last_omega_sign_change_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Time of last angular velocity sign change. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11last_omega_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11last_omega_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11last_omega_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::last_omega___double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a12c2b3bd2bbee5542a67543d09712e99"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">last_omega_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11last_omega_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Last angular velocity value. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10goal_ctrl_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS10goal_ctrl_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS10goal_ctrl_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::goal_ctrl___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a01398cc9c30a6df635fbb12ae2ac5c5b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">goal_ctrl_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10goal_ctrl_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag for goal control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13reset_states_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13reset_states_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13reset_states_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::reset_states___b"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7b2c534465cf8fba9530525f726529cb"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset_states_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13reset_states_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag for state reset. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7isMode_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS7isMode_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS7isMode_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::isMode___i"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab0d7ea72acd393476af28c7d6578a279"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isMode_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7isMode_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current planning mode. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS5logs_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS5logs_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS5logs_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::logs___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad79e05de056a543b37e36b1422b663aa"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">logs_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS5logs_E" title="Link to this definition"></a><br /></dt>
+<dd><p>System log messages. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11agents_sub_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11agents_sub_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11agents_sub_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::agents_sub___ros::Subscriber"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a04083651f701727d9dea81c17bde49f6"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscriber</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_sub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11agents_sub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Subscriber for tracked agents. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8log_pub_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS8log_pub_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS8log_pub_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::log_pub___ros::Publisher"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4ef082e8687b4185642db2f172ea58d9"></span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">log_pub_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS8log_pub_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Publisher for system logs. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS3ns_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS3ns_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS3ns_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::ns___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6b9c894524e2b6fb8e5c30b8ccf9d0be"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ns_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS3ns_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Namespace for multi-agent support. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS27invisible_humans_sub_topic_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS27invisible_humans_sub_topic_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS27invisible_humans_sub_topic_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::invisible_humans_sub_topic___ss"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa5595efc9f6069d292e6a3018a512873"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">invisible_humans_sub_topic_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS27invisible_humans_sub_topic_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name for invisible humans topic. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11agents_ptr_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11agents_ptr_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11agents_ptr_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::agents_ptr___std::shared_ptr:agents::Agents:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a795dbc5d0902c5d3a6ded2db409b0c5f"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classagents_1_1Agents.html#_CPPv4N6agents6AgentsE" title="agents::Agents"><span class="n"><span class="pre">Agents</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_ptr_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11agents_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to agents management class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12backoff_ptr_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS12backoff_ptr_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS12backoff_ptr_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::backoff_ptr___std::shared_ptr:Backoff:"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b7fa07716eb5fa649c36b7fb2102aa"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classhateb__local__planner_1_1Backoff.html#_CPPv4N19hateb_local_planner7BackoffE" title="hateb_local_planner::Backoff"><span class="n"><span class="pre">Backoff</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_ptr_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS12backoff_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to backoff behavior class. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15bt_mode_switch_E">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15bt_mode_switch_E"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15bt_mode_switch_E"></span><span id="hateb_local_planner::HATebLocalPlannerROS::bt_mode_switch___ModeSwitch"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a70b9c0f97dbddeb367a36de033974071"></span><a class="reference internal" href="classhateb__local__planner_1_1ModeSwitch.html#_CPPv4N19hateb_local_planner10ModeSwitchE" title="hateb_local_planner::ModeSwitch"><span class="n"><span class="pre">ModeSwitch</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_mode_switch_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15bt_mode_switch_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Behavior tree mode switch handler. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS29tfPoseToEigenVector2dTransRotERKN2tf4PoseE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS29tfPoseToEigenVector2dTransRotERKN2tf4PoseE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS29tfPoseToEigenVector2dTransRotERKN2tf4PoseE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::tfPoseToEigenVector2dTransRot__tf::PoseCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6313427bcd8d46599e3c40e27ec338e0"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tfPoseToEigenVector2dTransRot</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Pose</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tf_vel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS29tfPoseToEigenVector2dTransRotERKN2tf4PoseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Transform a tf::Pose type into a Eigen::Vector2d containing the translational and angular velocities. </p>
+<p>Translational velocities (x- and y-coordinates) are combined into a single translational velocity (first component). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tf_vel</strong> – tf::Pose message containing a 1D or 2D translational velocity (x,y) and an angular velocity (yaw-angle) </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Translational and angular velocity combined into an Eigen::Vector2d </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS32getRobotFootprintFromParamServerERKN3ros10NodeHandleERK11HATebConfig">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS32getRobotFootprintFromParamServerERKN3ros10NodeHandleERK11HATebConfig"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS32getRobotFootprintFromParamServerERKN3ros10NodeHandleERK11HATebConfig"></span><span id="hateb_local_planner::HATebLocalPlannerROS::getRobotFootprintFromParamServer__ros::NodeHandleCR.HATebConfigCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a208523a008c0141f7df781a62199b4bd"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491.html#_CPPv4N19hateb_local_planner17FootprintModelPtrE" title="hateb_local_planner::FootprintModelPtr"><span class="n"><span class="pre">FootprintModelPtr</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRobotFootprintFromParamServer</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeHandle</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">nh</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">config</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS32getRobotFootprintFromParamServerERKN3ros10NodeHandleERK11HATebConfig" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the current robot footprint/contour model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nh</strong> – const reference to the local ros::NodeHandle </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Robot footprint model used for optimization </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23makeFootprintFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS23makeFootprintFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS23makeFootprintFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::makeFootprintFromXMLRPC__XmlRpc::XmlRpcValueR.ssCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1e6e6be9d65fadf15bb0d98e5ab2abe8"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#_CPPv4N19hateb_local_planner16Point2dContainerE" title="hateb_local_planner::Point2dContainer"><span class="n"><span class="pre">Point2dContainer</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">makeFootprintFromXMLRPC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">XmlRpc</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">XmlRpcValue</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">footprint_xmlrpc</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">full_param_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23makeFootprintFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the footprint from the given XmlRpcValue. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>This method is copied from costmap_2d/footprint.h, since it is not declared public in all ros distros </p>
 </div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>It is modified in order to return a container of Eigen::Vector2d instead of geometry_msgs::Point </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>footprint_xmlrpc</strong> – should be an array of arrays, where the top-level array should have 3 or more elements, and the sub-arrays should all have exactly 2 elements (x and y coordinates). </p></li>
+<li><p><strong>full_param_name</strong> – this is the full name of the rosparam from which the footprint_xmlrpc value came. It is used only for reporting errors. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>container of vertices describing the polygon </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS19getNumberFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS19getNumberFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS19getNumberFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::getNumberFromXMLRPC__XmlRpc::XmlRpcValueR.ssCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a87d8281386989297ed0a6b98899036d5"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNumberFromXMLRPC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">XmlRpc</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">XmlRpcValue</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">value</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">full_param_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS19getNumberFromXMLRPCERN6XmlRpc11XmlRpcValueERKNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd><p>Get a number from the given XmlRpcValue. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>This method is copied from costmap_2d/footprint.h, since it is not declared public in all ros distros </p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>It is modified in order to return a container of Eigen::Vector2d instead of geometry_msgs::Point </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> – double value type </p></li>
+<li><p><strong>full_param_name</strong> – this is the full name of the rosparam from which the footprint_xmlrpc value came. It is used only for reporting errors. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS34updateObstacleContainerWithCostmapEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS34updateObstacleContainerWithCostmapEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS34updateObstacleContainerWithCostmapEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCostmap"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateObstacleContainerWithCostmap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS34updateObstacleContainerWithCostmapEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal obstacle vector based on occupied costmap cells. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All occupied cells will be added as point obstacles. </p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous obstacles are cleared. </p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43"><span class="std std-ref">updateObstacleContainerWithCostmapConverter</span></a> velocity model) </p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS43updateObstacleContainerWithCostmapConverterEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS43updateObstacleContainerWithCostmapConverterEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS43updateObstacleContainerWithCostmapConverterEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCostmapConverter"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateObstacleContainerWithCostmapConverter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS43updateObstacleContainerWithCostmapConverterEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal obstacle vector based on polygons provided by a costmap_converter plugin. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Requires a loaded costmap_converter plugin. </p>
+</div>
+<div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous obstacles are cleared. </p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e"><span class="std std-ref">updateObstacleContainerWithCostmap</span></a></p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS42updateObstacleContainerWithCustomObstaclesEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS42updateObstacleContainerWithCustomObstaclesEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS42updateObstacleContainerWithCustomObstaclesEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCustomObstacles"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ada6959cf67ea120825f03e9924feab1b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateObstacleContainerWithCustomObstacles</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS42updateObstacleContainerWithCustomObstaclesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal obstacle vector based on custom messages received via subscriber. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous obstacles are NOT cleared. Call this method after other update methods. </p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e"><span class="std std-ref">updateObstacleContainerWithCostmap</span></a>, <a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43"><span class="std std-ref">updateObstacleContainerWithCostmapConverter</span></a></p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS36updateObstacleContainerWithInvHumansEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS36updateObstacleContainerWithInvHumansEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS36updateObstacleContainerWithInvHumansEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithInvHumans"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a28dced56bae5ba6aac266f648782269b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateObstacleContainerWithInvHumans</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS36updateObstacleContainerWithInvHumansEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal obstacle vector based on invisible human messages received via subscriber. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous obstacles are NOT cleared. Call this method after other update methods. </p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e"><span class="std std-ref">updateObstacleContainerWithCostmap</span></a>, <a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43"><span class="std std-ref">updateObstacleContainerWithCostmapConverter</span></a></p>
+</div>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS24updateViaPointsContainerERKNSt6vectorIN13geometry_msgs11PoseStampedEEEd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS24updateViaPointsContainerERKNSt6vectorIN13geometry_msgs11PoseStampedEEEd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS24updateViaPointsContainerERKNSt6vectorIN13geometry_msgs11PoseStampedEEEd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateViaPointsContainer__std::vector:geometry_msgs::PoseStamped:CR.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6168dad3eec679c91bcb5f806e4f22f1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateViaPointsContainer</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_plan</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_separation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS24updateViaPointsContainerERKNSt6vectorIN13geometry_msgs11PoseStampedEEEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal via-point container based on the current reference plan. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous via-points will be cleared. </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transformed_plan</strong> – (local) portion of the global plan (which is already transformed to the planning frame) </p></li>
+<li><p><strong>min_separation</strong> – minimum separation between two consecutive via-points </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS30updateAgentViaPointsContainersERK15AgentPlanVelMapd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS30updateAgentViaPointsContainersERK15AgentPlanVelMapd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS30updateAgentViaPointsContainersERK15AgentPlanVelMapd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::updateAgentViaPointsContainers__AgentPlanVelMapCR.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab5aa6d2f1e7a0e4b5fd16c654bf74968"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateAgentViaPointsContainers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="typedef_namespacehateb__local__planner_1a3b4752a48696bcc63570d62786fb9736.html#_CPPv4N19hateb_local_planner15AgentPlanVelMapE" title="hateb_local_planner::AgentPlanVelMap"><span class="n"><span class="pre">AgentPlanVelMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_agent_plan_vel_map</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_separation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS30updateAgentViaPointsContainersERK15AgentPlanVelMapd" title="Link to this definition"></a><br /></dt>
+<dd><p>Update internal via-point container for human based on the current reference plan. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>All previous via-points will be cleared. </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transformed_plan</strong> – (local) portion of the global plan (which is already transformed to the planning frame) </p></li>
+<li><p><strong>min_separation</strong> – minimum separation between two consecutive via-points </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13reconfigureCBER34HATebLocalPlannerReconfigureConfig8uint32_t">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13reconfigureCBER34HATebLocalPlannerReconfigureConfig8uint32_t"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13reconfigureCBER34HATebLocalPlannerReconfigureConfig8uint32_t"></span><span id="hateb_local_planner::HATebLocalPlannerROS::reconfigureCB__HATebLocalPlannerReconfigureConfigR.uint32_t"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a57f26e9bdc338d1631bf4a4fc2cf0e25"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reconfigureCB</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">HATebLocalPlannerReconfigureConfig</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">config</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13reconfigureCBER34HATebLocalPlannerReconfigureConfig8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for the dynamic_reconfigure node. </p>
+<p>This callback allows to modify parameters dynamically at runtime without restarting the node </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> – Reference to the dynamic reconfigure config </p></li>
+<li><p><strong>level</strong> – Dynamic reconfigure level </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16customObstacleCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16customObstacleCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16customObstacleCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::customObstacleCB__costmap_converter::ObstacleArrayMsg::ConstPtrCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a940d3d184a7e60978766234704bc7dd8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">customObstacleCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ObstacleArrayMsg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">obst_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16customObstacleCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for custom obstacles that are not obtained from the costmap. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>obst_msg</strong> – pointer to the message containing a list of polygon shaped obstacles </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11InvHumansCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS11InvHumansCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS11InvHumansCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::InvHumansCB__costmap_converter::ObstacleArrayMsg::ConstPtrCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af04a946de753b136e99de13911c65d04"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvHumansCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">costmap_converter</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ObstacleArrayMsg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">obst_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS11InvHumansCBERKN17costmap_converter16ObstacleArrayMsg8ConstPtrE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for invisible humans. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>obst_msg</strong> – pointer to the message containing a list of circular obstacles </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17customViaPointsCBERKN8nav_msgs4Path8ConstPtrE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS17customViaPointsCBERKN8nav_msgs4Path8ConstPtrE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS17customViaPointsCBERKN8nav_msgs4Path8ConstPtrE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::customViaPointsCB__nav_msgs::Path::ConstPtrCR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a13197ba03dda06ab99edff237a5b81c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">customViaPointsCB</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">nav_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Path</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConstPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">via_points_msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS17customViaPointsCBERKN8nav_msgs4Path8ConstPtrE" title="Link to this definition"></a><br /></dt>
+<dd><p>Callback for custom via-points. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>via_points_msg</strong> – pointer to the message containing a list of via-points </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS19transformGlobalPlanERKN7tf2_ros6BufferERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringEdR12PlanCombinedPiPN13geometry_msgs16TransformStampedE">
+<span id="_CPPv3NK19hateb_local_planner20HATebLocalPlannerROS19transformGlobalPlanERKN7tf2_ros6BufferERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringEdR12PlanCombinedPiPN13geometry_msgs16TransformStampedE"></span><span id="_CPPv2NK19hateb_local_planner20HATebLocalPlannerROS19transformGlobalPlanERKN7tf2_ros6BufferERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringEdR12PlanCombinedPiPN13geometry_msgs16TransformStampedE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::transformGlobalPlan__tf2_ros::BufferCR.std::vector:geometry_msgs::PoseStamped:CR.geometry_msgs::PoseStampedCR.costmap_2d::Costmap2DCR.ssCR.double.PlanCombinedR.iP.geometry_msgs::TransformStampedPC"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aff5dd1cdb68d114a793400a0ee5a18e5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformGlobalPlan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tf</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_plan</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">costmap</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_frame</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_plan_length</span></span>, <a class="reference internal" href="structhateb__local__planner_1_1PlanCombined.html#_CPPv4N19hateb_local_planner12PlanCombinedE" title="hateb_local_planner::PlanCombined"><span class="n"><span class="pre">PlanCombined</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_plan_combined</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">current_goal_idx</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TransformStamped</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tf_plan_to_global</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS19transformGlobalPlanERKN7tf2_ros6BufferERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringEdR12PlanCombinedPiPN13geometry_msgs16TransformStampedE" title="Link to this definition"></a><br /></dt>
+<dd><p>Transforms the global plan of the robot from the planner frame to the local frame (modified). </p>
+<p>The method replaces transformGlobalPlan as defined in base_local_planner/goal_functions.h such that the index of the current goal pose is returned as well as the transformation between the global plan and the planning frame. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tf</strong> – A reference to a tf buffer </p></li>
+<li><p><strong>global_plan</strong> – The plan to be transformed </p></li>
+<li><p><strong>global_pose</strong> – The global pose of the robot </p></li>
+<li><p><strong>costmap</strong> – A reference to the costmap being used so the window size for transforming can be computed </p></li>
+<li><p><strong>global_frame</strong> – The frame to transform the plan to </p></li>
+<li><p><strong>max_plan_length</strong> – Specify maximum length (cumulative Euclidean distances) of the transformed plan [if &lt;=0: disabled; the length is also bounded by the local costmap size!] </p></li>
+<li><p><strong>transformed_plan</strong> – <strong>[out]</strong> Populated with the transformed plan </p></li>
+<li><p><strong>current_goal_idx</strong> – <strong>[out]</strong> Index of the current (local) goal pose in the global plan </p></li>
+<li><p><strong>tf_plan_to_global</strong> – <strong>[out]</strong> Transformation between the global plan and the global planning frame </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the global plan is transformed, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE">
+<span id="_CPPv3NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE"></span><span id="_CPPv2NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::transformAgentPlan__tf2_ros::BufferCR.geometry_msgs::PoseStampedCR.costmap_2d::Costmap2DCR.ssCR.std::vector:geometry_msgs::PoseWithCovarianceStamped:CR.AgentPlanCombinedR.geometry_msgs::TwistStampedR.tf2::Stamped:tf2::Transform:PC"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a738507bd7a6e2509311006a5d7636760"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transformAgentPlan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tf2</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">robot_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2D</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">costmap</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseWithCovarianceStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">agent_plan</span></span>, <a class="reference internal" href="structhateb__local__planner_1_1AgentPlanCombined.html#_CPPv4N19hateb_local_planner17AgentPlanCombinedE" title="hateb_local_planner::AgentPlanCombined"><span class="n"><span class="pre">AgentPlanCombined</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_agent_plan_combined</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_agent_twist</span></span>, <a class="reference internal" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE" title="hateb_local_planner::HATebLocalPlannerROS::transformAgentPlan::tf2"><span class="n"><span class="pre">tf2</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Stamped</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE" title="hateb_local_planner::HATebLocalPlannerROS::transformAgentPlan::tf2"><span class="n"><span class="pre">tf2</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Transform</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tf_agent_plan_to_global</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS18transformAgentPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERKN10costmap_2d9Costmap2DERKNSt6stringERKNSt6vectorIN13geometry_msgs25PoseWithCovarianceStampedEEER17AgentPlanCombinedRN13geometry_msgs12TwistStampedEPN3tf27StampedIN3tf29TransformEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Transforms the agent plan from the tracker frame to the local frame. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tf</strong> – A reference to a transform listener </p></li>
+<li><p><strong>agent_plan</strong> – The plan to be transformed </p></li>
+<li><p><strong>global_pose</strong> – The global pose of the robot </p></li>
+<li><p><strong>costmap</strong> – A reference to the costmap being used so the window size for transforming can be computed </p></li>
+<li><p><strong>global_frame</strong> – The frame to transform the plan to </p></li>
+<li><p><strong>transformed_agent_plan</strong> – <strong>[out]</strong> Populated with the transformed plan </p></li>
+<li><p><strong>tf_agent_plan_to_global</strong> – <strong>[out]</strong> Transformation between the agent plan and the local planning frame </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the global plan is transformed, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16saturateVelocityERdRdRddddd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS16saturateVelocityERdRdRddddd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS16saturateVelocityERdRdRddddd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::saturateVelocity__doubleR.doubleR.doubleR.double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af625487b054ff67e30d2d58f98b5e2fd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">saturateVelocity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vx</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vy</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">omega</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_x</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_y</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_theta</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_vel_x_backwards</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS16saturateVelocityERdRdRddddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Saturate the translational and angular velocity to given limits. </p>
+<p>The limit of the translational velocity for backwards driving can be changed independently. Do not choose max_vel_x_backwards &lt;= 0. If no backward driving is desired, change the optimization weight for penalizing backwards driving instead. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vx</strong> – <strong>[inout]</strong> The translational velocity that should be saturated. </p></li>
+<li><p><strong>vy</strong> – <strong>[inout]</strong> Strafing velocity which can be nonzero for holonomic robots </p></li>
+<li><p><strong>omega</strong> – <strong>[inout]</strong> The angular velocity that should be saturated. </p></li>
+<li><p><strong>max_vel_x</strong> – Maximum translational velocity for forward driving </p></li>
+<li><p><strong>max_vel_y</strong> – Maximum strafing velocity (for holonomic robots) </p></li>
+<li><p><strong>max_vel_theta</strong> – Maximum (absolute) angular velocity </p></li>
+<li><p><strong>max_vel_x_backwards</strong> – Maximum translational velocity for backwards driving </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20configureBackupModesERNSt6vectorIN13geometry_msgs11PoseStampedEEERi">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS20configureBackupModesERNSt6vectorIN13geometry_msgs11PoseStampedEEERi"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS20configureBackupModesERNSt6vectorIN13geometry_msgs11PoseStampedEEERi"></span><span id="hateb_local_planner::HATebLocalPlannerROS::configureBackupModes__std::vector:geometry_msgs::PoseStamped:R.iR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a948d2b803b94362cfb6804df45830baa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">configureBackupModes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_plan</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">goal_idx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20configureBackupModesERNSt6vectorIN13geometry_msgs11PoseStampedEEERi" title="Link to this definition"></a><br /></dt>
+<dd><p>Validate current parameter values of the footprint for optimization, obstacle distance and the costmap footprint. </p>
+<p>This method prints warnings if validation fails. <div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Currently, we only validate the inscribed radius of the footprints </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opt_inscribed_radius</strong> – Inscribed radius of the RobotFootprintModel for optimization </p></li>
+<li><p><strong>costmap_inscribed_radius</strong> – Inscribed radius of the footprint model used for the costmap </p></li>
+<li><p><strong>min_obst_dist</strong> – desired distance to obstacles </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS21resetAgentsPredictionEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS21resetAgentsPredictionEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS21resetAgentsPredictionEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::resetAgentsPrediction"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5e09ee91583a6aebe92f780c7c06d174"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetAgentsPrediction</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS21resetAgentsPredictionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Reset the prediction state for all tracked agents. </p>
+<p>This method resets the prediction states for all agents being tracked by the planner. It calls the prediction reset service to clear any existing prediction data and prepare for new predictions. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22tickTreeAndUpdatePlansERKN13geometry_msgs11PoseStampedERNSt6vectorI17AgentPlanCombinedEER15AgentPlanVelMap">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS22tickTreeAndUpdatePlansERKN13geometry_msgs11PoseStampedERNSt6vectorI17AgentPlanCombinedEER15AgentPlanVelMap"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS22tickTreeAndUpdatePlansERKN13geometry_msgs11PoseStampedERNSt6vectorI17AgentPlanCombinedEER15AgentPlanVelMap"></span><span id="hateb_local_planner::HATebLocalPlannerROS::tickTreeAndUpdatePlans__geometry_msgs::PoseStampedCR.std::vector:AgentPlanCombined:R.AgentPlanVelMapR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1cc94a8609efdca8201fabbc5096620b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tickTreeAndUpdatePlans</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">robot_pose</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="structhateb__local__planner_1_1AgentPlanCombined.html#_CPPv4N19hateb_local_planner17AgentPlanCombinedE" title="hateb_local_planner::AgentPlanCombined"><span class="n"><span class="pre">AgentPlanCombined</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_agent_plans</span></span>, <a class="reference internal" href="typedef_namespacehateb__local__planner_1a3b4752a48696bcc63570d62786fb9736.html#_CPPv4N19hateb_local_planner15AgentPlanVelMapE" title="hateb_local_planner::AgentPlanVelMap"><span class="n"><span class="pre">AgentPlanVelMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transformed_agent_plan_vel_map</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS22tickTreeAndUpdatePlansERKN13geometry_msgs11PoseStampedERNSt6vectorI17AgentPlanCombinedEER15AgentPlanVelMap" title="Link to this definition"></a><br /></dt>
+<dd><p>Process the behavior tree and update agent plans. </p>
+<p>This method ticks the behavior tree to evaluate the current planning mode and updates the transformed plans for all agents in the environment. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>robot_pose</strong> – Current pose of the robot </p></li>
+<li><p><strong>transformed_agent_plans</strong> – Vector containing the transformed plans for all agents </p></li>
+<li><p><strong>transformed_agent_plan_vel_map</strong> – Map containing agent plans with their velocities </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if plans were successfully updated, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18optimizeStandaloneERN10cohan_msgs8Optimize7RequestERN10cohan_msgs8Optimize8ResponseE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS18optimizeStandaloneERN10cohan_msgs8Optimize7RequestERN10cohan_msgs8Optimize8ResponseE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS18optimizeStandaloneERN10cohan_msgs8Optimize7RequestERN10cohan_msgs8Optimize8ResponseE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::optimizeStandalone__cohan_msgs::Optimize::RequestR.cohan_msgs::Optimize::ResponseR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a11c201897dab9e56e678177f88947c6c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">optimizeStandalone</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Optimize</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Request</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">req</span></span>, <span class="n"><span class="pre">cohan_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Optimize</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Response</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">res</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18optimizeStandaloneERN10cohan_msgs8Optimize7RequestERN10cohan_msgs8Optimize8ResponseE" title="Link to this definition"></a><br /></dt>
+<dd><p>Perform standalone trajectory optimization. </p>
+<p>This method provides a service interface for performing trajectory optimization independently of the main planning loop. Useful for analysis and debugging. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>req</strong> – Service request containing optimization parameters </p></li>
+<li><p><strong>res</strong> – Service response containing optimization results </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if optimization was successful, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE">
+<span id="_CPPv3NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE"></span><span id="_CPPv2NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::lookupTwist__ssCR.ssCR.ros::TimeCR.ros::DurationCR.geometry_msgs::TwistRC"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a583df71bae1e34d805722bf88fd5606a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lookupTwist</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tracking_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">observation_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">time</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Duration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">averaging_interval</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">twist</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE" title="Link to this definition"></a><br /></dt>
+<dd><p>Look up twist information between frames with default reference point. </p>
+<p>Simplified version that uses the origin of tracking_frame as the reference point and observation_frame as the reference frame. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tracking_frame</strong> – The frame being tracked </p></li>
+<li><p><strong>observation_frame</strong> – The frame from which we’re observing </p></li>
+<li><p><strong>time</strong> – The time at which to get the twist </p></li>
+<li><p><strong>averaging_interval</strong> – Time interval over which to average the twist </p></li>
+<li><p><strong>twist</strong> – <strong>[out]</strong> The resulting twist message </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKNSt6stringERKN3tf27Vector3ERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE">
+<span id="_CPPv3NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKNSt6stringERKN3tf27Vector3ERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE"></span><span id="_CPPv2NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKNSt6stringERKN3tf27Vector3ERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::lookupTwist__ssCR.ssCR.ssCR.tf2::Vector3CR.ssCR.ros::TimeCR.ros::DurationCR.geometry_msgs::TwistRC"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a945d5de7dd25e8b8b7805a9f868a7f94"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lookupTwist</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tracking_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">observation_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">reference_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf2</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">reference_point</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">reference_point_frame</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">time</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Duration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">averaging_interval</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">twist</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner20HATebLocalPlannerROS11lookupTwistERKNSt6stringERKNSt6stringERKNSt6stringERKN3tf27Vector3ERKNSt6stringERKN3ros4TimeERKN3ros8DurationERN13geometry_msgs5TwistE" title="Link to this definition"></a><br /></dt>
+<dd><p>Look up twist information between frames with custom reference point. </p>
+<p>This method computes the twist (linear and angular velocity) of one frame relative to another, allowing specification of a custom reference point and frame. It performs the necessary coordinate transformations and averages the motion over the specified time interval.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tracking_frame</strong> – The frame being tracked (whose motion we want to determine) </p></li>
+<li><p><strong>observation_frame</strong> – The frame from which we’re observing </p></li>
+<li><p><strong>reference_frame</strong> – The frame in which the twist should be expressed </p></li>
+<li><p><strong>reference_point</strong> – The point about which the twist should be computed </p></li>
+<li><p><strong>reference_point_frame</strong> – The frame in which the reference point is expressed </p></li>
+<li><p><strong>time</strong> – The time at which to get the twist </p></li>
+<li><p><strong>averaging_interval</strong> – Time interval over which to average the twist </p></li>
+<li><p><strong>twist</strong> – <strong>[out]</strong> The resulting twist message containing linear and angular velocities </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15pruneGlobalPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERNSt6vectorIN13geometry_msgs11PoseStampedEEEd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS15pruneGlobalPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERNSt6vectorIN13geometry_msgs11PoseStampedEEEd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS15pruneGlobalPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERNSt6vectorIN13geometry_msgs11PoseStampedEEEd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::pruneGlobalPlan__tf2_ros::BufferCR.geometry_msgs::PoseStampedCR.std::vector:geometry_msgs::PoseStamped:R.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac80c4ee7bb83924a862bdb234c84a05e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pruneGlobalPlan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tf</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_pose</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_plan</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dist_behind_robot</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS15pruneGlobalPlanERKN7tf2_ros6BufferERKN13geometry_msgs11PoseStampedERNSt6vectorIN13geometry_msgs11PoseStampedEEEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Prune global plan such that already passed poses are cut off. </p>
+<p>The pose of the robot is transformed into the frame of the global plan by taking the most recent tf transform. If no valid transformation can be found, the method returns <code class="docutils literal notranslate"><span class="pre">false</span></code>. The global plan is pruned until the distance to the robot is at least <code class="docutils literal notranslate"><span class="pre">dist_behind_robot</span></code>. If no pose within the specified treshold <code class="docutils literal notranslate"><span class="pre">dist_behind_robot</span></code> can be found, nothing will be pruned and the method returns <code class="docutils literal notranslate"><span class="pre">false</span></code>. <div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Do not choose <code class="docutils literal notranslate"><span class="pre">dist_behind_robot</span></code> too small (not smaller the cellsize of the map), otherwise nothing will be pruned. </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tf</strong> – A reference to a tf buffer </p></li>
+<li><p><strong>global_pose</strong> – The global pose of the robot </p></li>
+<li><p><strong>global_plan</strong> – <strong>[inout]</strong> The plan to be transformed </p></li>
+<li><p><strong>dist_behind_robot</strong> – Distance behind the robot that should be kept [meters] </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the plan is pruned, <code class="docutils literal notranslate"><span class="pre">false</span></code> in case of a transform exception or if no pose cannot be found inside the threshold </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS28estimateLocalGoalOrientationERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedEiRKN13geometry_msgs16TransformStampedEi">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS28estimateLocalGoalOrientationERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedEiRKN13geometry_msgs16TransformStampedEi"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS28estimateLocalGoalOrientationERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedEiRKN13geometry_msgs16TransformStampedEi"></span><span id="hateb_local_planner::HATebLocalPlannerROS::estimateLocalGoalOrientation__std::vector:geometry_msgs::PoseStamped:CR.geometry_msgs::PoseStampedCR.i.geometry_msgs::TransformStampedCR.i"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5a2a4045374c1aba2255fa07b3e5abf4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">estimateLocalGoalOrientation</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">global_plan</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">local_goal</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_goal_idx</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TransformStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tf_plan_to_global</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">moving_average_length</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS28estimateLocalGoalOrientationERKNSt6vectorIN13geometry_msgs11PoseStampedEEERKN13geometry_msgs11PoseStampedEiRKN13geometry_msgs16TransformStampedEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Estimate the orientation of a pose from the global_plan that is treated as a local goal for the local planner. </p>
+<p><p>If the current (local) goal point is not the final one (global) substitute the goal orientation by the angle of the direction vector between the local goal and the subsequent pose of the global plan. This is often helpful, if the global planner does not consider orientations.</p>
+<p>A moving average filter is utilized to smooth the orientation.</p>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>global_plan</strong> – The global plan </p></li>
+<li><p><strong>local_goal</strong> – Current local goal </p></li>
+<li><p><strong>current_goal_idx</strong> – Index of the current (local) goal pose in the global plan </p></li>
+<li><p><strong>tf_plan_to_global</strong> – <strong>[out]</strong> Transformation between the global plan and the global planning frame </p></li>
+<li><p><strong>moving_average_length</strong> – number of future poses of the global plan to be taken into account </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>orientation (yaw-angle) estimate </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS33convertTransRotVelToSteeringAngleEdddd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS33convertTransRotVelToSteeringAngleEdddd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS33convertTransRotVelToSteeringAngleEdddd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::convertTransRotVelToSteeringAngle__double.double.double.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4e5c1761ece81c420c4aae8e6a0efc86"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">convertTransRotVelToSteeringAngle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">omega</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">wheelbase</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_turning_radius</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS33convertTransRotVelToSteeringAngleEdddd" title="Link to this definition"></a><br /></dt>
+<dd><p>Convert translational and rotational velocities to a steering angle of a carlike robot. </p>
+<p>The conversion is based on the following equations:<ul class="simple">
+<li><p>The turning radius is defined by <span class="math notranslate nohighlight">\( R = v/omega \)</span></p></li>
+<li><p>For a car like robot withe a distance L between both axles, the relation is: <span class="math notranslate nohighlight">\( tan(\phi) = L/R \)</span></p></li>
+<li><p>phi denotes the steering angle. <div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>You might provide distances instead of velocities, since the temporal information is not required. </p>
+</div>
+</p></li>
+</ul>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> – translational velocity [m/s] </p></li>
+<li><p><strong>omega</strong> – rotational velocity [rad/s] </p></li>
+<li><p><strong>wheelbase</strong> – distance between both axles (drive shaft and steering axle), the value might be negative for back_wheeled robots </p></li>
+<li><p><strong>min_turning_radius</strong> – Specify a lower bound on the turning radius </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Resulting steering angle in [rad] inbetween [-pi/2, pi/2] </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18validateFootprintsEddd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS18validateFootprintsEddd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS18validateFootprintsEddd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::validateFootprints__double.double.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a055541eed2a1e96191eb65b1eadd60e0"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">validateFootprints</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">opt_inscribed_radius</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">costmap_inscribed_radius</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_obst_dist</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS18validateFootprintsEddd" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::HATebLocalPlannerROS"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af5ea75cd71a48df704cbb9d82ee6b7b5"></span><span class="sig-name descname"><span class="n"><span class="pre">HATebLocalPlannerROS</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the teb plugin. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROSD0Ev">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROSD0Ev"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROSD0Ev"></span><span id="hateb_local_planner::HATebLocalPlannerROS::~HATebLocalPlannerROS"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aeb34861d1418fa998815f3f790840fd1"></span><span class="sig-name descname"><span class="n"><span class="pre">~HATebLocalPlannerROS</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROSD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor of the plugin. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::HATebLocalPlannerROS__ss.tf2_ros::BufferP.costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a903e7360e0c26496753deb1e4fd65893"></span><span class="sig-name descname"><span class="n"><span class="pre">HATebLocalPlannerROS</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tf</span></span>, <span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">costmap_ros</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS20HATebLocalPlannerROSENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10initializeENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS10initializeENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS10initializeENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::initialize__ss.tf2_ros::BufferP.costmap_2d::Costmap2DROSP"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0cdfa0aaa9631bb6ed7599cbe3a2c7d2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="n"><span class="pre">tf2_ros</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">tf</span></span>, <span class="n"><span class="pre">costmap_2d</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Costmap2DROS</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">costmap_ros</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS10initializeENSt6stringEPN7tf2_ros6BufferEPN10costmap_2d12Costmap2DROSE" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the teb plugin. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – The name of the instance </p></li>
+<li><p><strong>tf</strong> – Pointer to a tf buffer </p></li>
+<li><p><strong>costmap_ros</strong> – Cost map representing occupied and free space </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7setPlanERKNSt6vectorIN13geometry_msgs11PoseStampedEEE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS7setPlanERKNSt6vectorIN13geometry_msgs11PoseStampedEEE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS7setPlanERKNSt6vectorIN13geometry_msgs11PoseStampedEEE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::setPlan__std::vector:geometry_msgs::PoseStamped:CR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abe86bd90fb4e35af5c04a4ed3df22c04"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPlan</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">orig_global_plan</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS7setPlanERKNSt6vectorIN13geometry_msgs11PoseStampedEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the plan that the teb local planner is following. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>orig_global_plan</strong> – The plan to pass to the local planner </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the plan was updated successfully, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERN13geometry_msgs5TwistE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERN13geometry_msgs5TwistE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERN13geometry_msgs5TwistE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::computeVelocityCommands__geometry_msgs::TwistR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a842ffe1b1062e4e275a8b2a944521c8a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeVelocityCommands</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cmd_vel</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERN13geometry_msgs5TwistE" title="Link to this definition"></a><br /></dt>
+<dd><p>Given the current position, orientation, and velocity of the robot, compute velocity commands to send to the base. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cmd_vel</strong> – Will be filled with the velocity command to be passed to the robot base </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if a valid trajectory was found, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERKN13geometry_msgs11PoseStampedERKN13geometry_msgs12TwistStampedERN13geometry_msgs12TwistStampedERNSt6stringE">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERKN13geometry_msgs11PoseStampedERKN13geometry_msgs12TwistStampedERN13geometry_msgs12TwistStampedERNSt6stringE"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERKN13geometry_msgs11PoseStampedERKN13geometry_msgs12TwistStampedERN13geometry_msgs12TwistStampedERNSt6stringE"></span><span id="hateb_local_planner::HATebLocalPlannerROS::computeVelocityCommands__geometry_msgs::PoseStampedCR.geometry_msgs::TwistStampedCR.geometry_msgs::TwistStampedR.ssR"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afd88c69de3a652c4f807a984cb2c6f88"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeVelocityCommands</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">velocity</span></span>, <span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TwistStamped</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cmd_vel</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS23computeVelocityCommandsERKN13geometry_msgs11PoseStampedERKN13geometry_msgs12TwistStampedERN13geometry_msgs12TwistStampedERNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd><p>Given the current position, orientation, and velocity of the robot, compute velocity commands to send to the base. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>Extended version for MBF API </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> – the current pose of the robot. </p></li>
+<li><p><strong>velocity</strong> – the current velocity of the robot. </p></li>
+<li><p><strong>cmd_vel</strong> – Will be filled with the velocity command to be passed to the robot base. </p></li>
+<li><p><strong>message</strong> – Optional more detailed outcome as a string </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Result code as described on ExePath action result: SUCCESS = 0 1..9 are reserved as plugin specific non-error results FAILURE = 100 Unspecified failure, only used for old, non-mfb_core based plugins CANCELED = 101 NO_VALID_CMD = 102 PAT_EXCEEDED = 103 COLLISION = 104 OSCILLATION = 105 ROBOT_STUCK = 106 MISSED_GOAL = 107 MISSED_PATH = 108 BLOCKED_PATH = 109 INVALID_PATH = 110 TF_ERROR = 111 NOT_INITIALIZED = 112 INVALID_PLUGIN = 113 INTERNAL_ERROR = 114 121..149 are reserved as plugin specific errors </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::isGoalReached"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1add6df6e714d2f3edd95ff62896dc644a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGoalReached</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the goal pose has been achieved. </p>
+<p>The actual check is performed in <a class="reference internal" href="#classhateb__local__planner_1_1HATebLocalPlannerROS_1a842ffe1b1062e4e275a8b2a944521c8a"><span class="std std-ref">computeVelocityCommands()</span></a>. Only the status flag is checked here. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if achieved, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEdd">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEdd"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEdd"></span><span id="hateb_local_planner::HATebLocalPlannerROS::isGoalReached__double.double"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abdb78309293d859ac26cd7409e01e640"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isGoalReached</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">xy_tolerance</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">yaw_tolerance</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS13isGoalReachedEdd" title="Link to this definition"></a><br /></dt>
+<dd><p>Dummy version to satisfy MBF API. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20HATebLocalPlannerROS6cancelEv">
+<span id="_CPPv3N19hateb_local_planner20HATebLocalPlannerROS6cancelEv"></span><span id="_CPPv2N19hateb_local_planner20HATebLocalPlannerROS6cancelEv"></span><span id="hateb_local_planner::HATebLocalPlannerROS::cancel"></span><span class="target" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5569e435250e5413d8a37f6c32418354"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cancel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20HATebLocalPlannerROS6cancelEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Requests the planner to cancel, e.g. if it takes too much time. </p>
+<p><div class="remark admonition">
+<p class="admonition-title">Remark</p>
+<p>New on MBF API </p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if a cancel has been successfully requested, false if not implemented. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

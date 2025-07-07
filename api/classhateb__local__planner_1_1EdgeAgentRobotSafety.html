@@ -199,10 +199,39 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentRobotSafetyE">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentRobotSafetyE"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentRobotSafetyE"></span><span id="hateb_local_planner::EdgeAgentRobotSafety"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotSafety"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentRobotSafety</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge"><span class="n"><span class="pre">BaseTebBinaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentRobotSafetyE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining a safety constraint between a robot and an agent (e.g., human) in the optimization graph. </p>
+<p>This edge penalizes configurations where the robot and an agent come closer than a specified minimum distance. The cost is computed as a quadratic penalty if the distance between the robot (using its footprint model) and the agent (using its radius) is less than cfg_-&gt;hateb.min_agent_robot_dist. The edge is used to enforce social distancing or collision avoidance between the robot and agents.</p>
+<p>Inherits from <a class="reference internal" href="classhateb__local__planner_1_1BaseTebBinaryEdge.html#classhateb__local__planner_1_1BaseTebBinaryEdge"><span class="std std-ref">BaseTebBinaryEdge&lt;1, double, VertexPose, VertexPose&gt;</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety20EdgeAgentRobotSafetyEv">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentRobotSafety20EdgeAgentRobotSafetyEv"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentRobotSafety20EdgeAgentRobotSafetyEv"></span><span id="hateb_local_planner::EdgeAgentRobotSafety::EdgeAgentRobotSafety"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotSafety_1a35953cc4e30c87c414e556139708de2a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeAgentRobotSafety</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety20EdgeAgentRobotSafetyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and set measurement to zero (unused). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentRobotSafety12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentRobotSafety12computeErrorEv"></span><span id="hateb_local_planner::EdgeAgentRobotSafety::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotSafety_1a76c0e417f206afeeeb0e502db6f0a11f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the error / cost for the edge. </p>
+<p>Calculates the distance between the robot and agent, subtracts the agent radius, and applies a quadratic penalty if the result is below the minimum allowed agent-robot distance. The error is stored in _error[0]. </p>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety4obs_E">
+<span id="_CPPv3N19hateb_local_planner20EdgeAgentRobotSafety4obs_E"></span><span id="_CPPv2N19hateb_local_planner20EdgeAgentRobotSafety4obs_E"></span><span id="hateb_local_planner::EdgeAgentRobotSafety::obs___ObstacleP"></span><span class="target" id="classhateb__local__planner_1_1EdgeAgentRobotSafety_1a2cb8031e36dc6dfcca474ca361155c9f"></span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">obs_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">new</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PointObstacle.html#_CPPv4N19hateb_local_planner13PointObstacleE" title="hateb_local_planner::PointObstacle"><span class="n"><span class="pre">PointObstacle</span></span></a><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20EdgeAgentRobotSafety4obs_E" title="Link to this definition"></a><br /></dt>
+<dd><p><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#classhateb__local__planner_1_1Obstacle"><span class="std std-ref">Obstacle</span></a> pointer used to represent the agent as a point obstacle for distance calculation. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

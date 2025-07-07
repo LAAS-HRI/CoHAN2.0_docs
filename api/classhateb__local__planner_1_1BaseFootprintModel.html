@@ -203,10 +203,102 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18BaseFootprintModelE">
+<span id="_CPPv3N19hateb_local_planner18BaseFootprintModelE"></span><span id="_CPPv2N19hateb_local_planner18BaseFootprintModelE"></span><span id="hateb_local_planner::BaseFootprintModel"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseFootprintModel</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18BaseFootprintModelE" title="Link to this definition"></a><br /></dt>
+<dd><p>Abstract class that defines the interface for footprint/contour models. </p>
+<p>The robot/human model class is currently used in optimization only, since taking the navigation stack footprint into account might be inefficient. The footprint is only used for checking feasibility. </p>
+<p>Subclassed by <a class="reference internal" href="classhateb__local__planner_1_1CircularFootprint.html#classhateb__local__planner_1_1CircularFootprint"><span class="std std-ref">hateb_local_planner::CircularFootprint</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1LineFootprint.html#classhateb__local__planner_1_1LineFootprint"><span class="std std-ref">hateb_local_planner::LineFootprint</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1PointFootprint.html#classhateb__local__planner_1_1PointFootprint"><span class="std std-ref">hateb_local_planner::PointFootprint</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1PolygonFootprint.html#classhateb__local__planner_1_1PolygonFootprint"><span class="std std-ref">hateb_local_planner::PolygonFootprint</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1TwoCirclesFootprint.html#classhateb__local__planner_1_1TwoCirclesFootprint"><span class="std std-ref">hateb_local_planner::TwoCirclesFootprint</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18BaseFootprintModel18BaseFootprintModelEv">
+<span id="_CPPv3N19hateb_local_planner18BaseFootprintModel18BaseFootprintModelEv"></span><span id="_CPPv2N19hateb_local_planner18BaseFootprintModel18BaseFootprintModelEv"></span><span id="hateb_local_planner::BaseFootprintModel::BaseFootprintModel"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1a23994e2593de8cedf5f839058407d8ec"></span><span class="sig-name descname"><span class="n"><span class="pre">BaseFootprintModel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18BaseFootprintModel18BaseFootprintModelEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor of the abstract obstacle class. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18BaseFootprintModelD0Ev">
+<span id="_CPPv3N19hateb_local_planner18BaseFootprintModelD0Ev"></span><span id="_CPPv2N19hateb_local_planner18BaseFootprintModelD0Ev"></span><span id="hateb_local_planner::BaseFootprintModel::~BaseFootprintModel"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1a011c4b6ecc51affad4f90b37330f52ee"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~BaseFootprintModel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18BaseFootprintModelD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner18BaseFootprintModel17calculateDistanceERK7PoseSE2PK8Obstacle">
+<span id="_CPPv3NK19hateb_local_planner18BaseFootprintModel17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="_CPPv2NK19hateb_local_planner18BaseFootprintModel17calculateDistanceERK7PoseSE2PK8Obstacle"></span><span id="hateb_local_planner::BaseFootprintModel::calculateDistance__PoseSE2CR.ObstacleCPC"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1a72b681ecb2473cef98a42bebd4472945"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner18BaseFootprintModel17calculateDistanceERK7PoseSE2PK8Obstacle" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculate the distance between the robot/human and an obstacle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the obstacle </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner18BaseFootprintModel30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled">
+<span id="_CPPv3NK19hateb_local_planner18BaseFootprintModel30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="_CPPv2NK19hateb_local_planner18BaseFootprintModel30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled"></span><span id="hateb_local_planner::BaseFootprintModel::estimateSpatioTemporalDistance__PoseSE2CR.ObstacleCP.doubleC"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1ae162fde4a89a0101cca339a3704e27f1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">estimateSpatioTemporalDistance</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1Obstacle.html#_CPPv4N19hateb_local_planner8ObstacleE" title="hateb_local_planner::Obstacle"><span class="n"><span class="pre">Obstacle</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">obstacle</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">t</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner18BaseFootprintModel30estimateSpatioTemporalDistanceERK7PoseSE2PK8Obstacled" title="Link to this definition"></a><br /></dt>
+<dd><p>Estimate the distance between the robot/human and the predicted location of an obstacle at time t. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – robot/human pose, from which the distance to the obstacle is estimated </p></li>
+<li><p><strong>obstacle</strong> – Pointer to the dynamic obstacle (constant velocity model is assumed) </p></li>
+<li><p><strong>t</strong> – time, for which the predicted distance to the obstacle is calculated </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Euclidean distance to the robot/human </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner18BaseFootprintModel14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE">
+<span id="_CPPv3NK19hateb_local_planner18BaseFootprintModel14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="_CPPv2NK19hateb_local_planner18BaseFootprintModel14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE"></span><span id="hateb_local_planner::BaseFootprintModel::visualizeModel__PoseSE2CR.std::vector:visualization_msgs::Marker:R.std_msgs::ColorRGBACRC"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1adeeb5abf2f50393ed531239758518d5e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">visualizeModel</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">current_pose</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">visualization_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Marker</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">markers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ColorRGBA</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">color</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner18BaseFootprintModel14visualizeModelERK7PoseSE2RNSt6vectorIN18visualization_msgs6MarkerEEERKN8std_msgs9ColorRGBAE" title="Link to this definition"></a><br /></dt>
+<dd><p>Visualize the robot/human using a markers. </p>
+<p>Fill a marker message with all necessary information (type, pose, scale and color). The header, namespace, id and marker lifetime will be overwritten. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>current_pose</strong> – Current robot/human pose </p></li>
+<li><p><strong>markers</strong> – <strong>[out]</strong> container of marker messages describing the robot/human shape </p></li>
+<li><p><strong>color</strong> – Color of the footprint </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner18BaseFootprintModel18getInscribedRadiusEv">
+<span id="_CPPv3N19hateb_local_planner18BaseFootprintModel18getInscribedRadiusEv"></span><span id="_CPPv2N19hateb_local_planner18BaseFootprintModel18getInscribedRadiusEv"></span><span id="hateb_local_planner::BaseFootprintModel::getInscribedRadius"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1a805f1e7b919244211f1deb4f884e06de"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner18BaseFootprintModel18getInscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the inscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>inscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner18BaseFootprintModel22getCircumscribedRadiusEv">
+<span id="_CPPv3NK19hateb_local_planner18BaseFootprintModel22getCircumscribedRadiusEv"></span><span id="_CPPv2NK19hateb_local_planner18BaseFootprintModel22getCircumscribedRadiusEv"></span><span id="hateb_local_planner::BaseFootprintModel::getCircumscribedRadiusC"></span><span class="target" id="classhateb__local__planner_1_1BaseFootprintModel_1af6f9b6e83795e0ccf558d15c69e50e12"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCircumscribedRadius</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner18BaseFootprintModel22getCircumscribedRadiusEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the circumscribed radius of the footprint model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>circumscribed radius </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 

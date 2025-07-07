@@ -199,10 +199,53 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibilityE">
+<span id="_CPPv3N19hateb_local_planner25EdgeStaticAgentVisibilityE"></span><span id="_CPPv2N19hateb_local_planner25EdgeStaticAgentVisibilityE"></span><span id="hateb_local_planner::EdgeStaticAgentVisibility"></span><span class="target" id="classhateb__local__planner_1_1EdgeStaticAgentVisibility"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeStaticAgentVisibility</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#_CPPv4I_i00EN19hateb_local_planner16BaseTebUnaryEdgeE" title="hateb_local_planner::BaseTebUnaryEdge"><span class="n"><span class="pre">BaseTebUnaryEdge</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1VertexPose.html#_CPPv4N19hateb_local_planner10VertexPoseE" title="hateb_local_planner::VertexPose"><span class="n"><span class="pre">VertexPose</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibilityE" title="Link to this definition"></a><br /></dt>
+<dd><p>Edge defining a visibility constraint between a static agent and the robot in the optimization graph. </p>
+<p>This edge penalizes close configurations when the robot is not in the visible region of human. The cost is computed based on the visibility between the static agent and robot, and is used to enforce perception constraints.</p>
+<p>Inherits from <a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#classhateb__local__planner_1_1BaseTebUnaryEdge"><span class="std std-ref">BaseTebUnaryEdge&lt;1, double, VertexPose&gt;</span></a>. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility25EdgeStaticAgentVisibilityEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeStaticAgentVisibility25EdgeStaticAgentVisibilityEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeStaticAgentVisibility25EdgeStaticAgentVisibilityEv"></span><span id="hateb_local_planner::EdgeStaticAgentVisibility::EdgeStaticAgentVisibility"></span><span class="target" id="classhateb__local__planner_1_1EdgeStaticAgentVisibility_1af7d010141d0d47b5e3717a3e6c447252"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EdgeStaticAgentVisibility</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility25EdgeStaticAgentVisibilityEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct edge and set measurement to zero (unused). </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility12computeErrorEv">
+<span id="_CPPv3N19hateb_local_planner25EdgeStaticAgentVisibility12computeErrorEv"></span><span id="_CPPv2N19hateb_local_planner25EdgeStaticAgentVisibility12computeErrorEv"></span><span id="hateb_local_planner::EdgeStaticAgentVisibility::computeError"></span><span class="target" id="classhateb__local__planner_1_1EdgeStaticAgentVisibility_1a5d98a586c9f6f1a8027847f543f0b72c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">computeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility12computeErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute the error / cost for the edge. </p>
+<p>Calculates the visibility between the static agent and robot and applies a penalty if the visibility constraint is violated. The error is stored in _error[0]. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility13setParametersERK11HATebConfigRK7PoseSE2">
+<span id="_CPPv3N19hateb_local_planner25EdgeStaticAgentVisibility13setParametersERK11HATebConfigRK7PoseSE2"></span><span id="_CPPv2N19hateb_local_planner25EdgeStaticAgentVisibility13setParametersERK11HATebConfigRK7PoseSE2"></span><span id="hateb_local_planner::EdgeStaticAgentVisibility::setParameters__HATebConfigCR.PoseSE2CR"></span><span class="target" id="classhateb__local__planner_1_1EdgeStaticAgentVisibility_1ad46ded521db07d3acbcbe5fc5cc1b9f7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setParameters</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">static_agent</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility13setParametersERK11HATebConfigRK7PoseSE2" title="Link to this definition"></a><br /></dt>
+<dd><p>Set parameters for the edge, including configuration and static agent pose. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cfg</strong> – <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> configuration </p></li>
+<li><p><strong>static_agent</strong> – Pose of the static agent </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility13static_agent_E">
+<span id="_CPPv3N19hateb_local_planner25EdgeStaticAgentVisibility13static_agent_E"></span><span id="_CPPv2N19hateb_local_planner25EdgeStaticAgentVisibility13static_agent_E"></span><span id="hateb_local_planner::EdgeStaticAgentVisibility::static_agent___PoseSE2"></span><span class="target" id="classhateb__local__planner_1_1EdgeStaticAgentVisibility_1a567f133380ef816b81b0e6466b6c8011"></span><a class="reference internal" href="classhateb__local__planner_1_1PoseSE2.html#_CPPv4N19hateb_local_planner7PoseSE2E" title="hateb_local_planner::PoseSE2"><span class="n"><span class="pre">PoseSE2</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">static_agent_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner25EdgeStaticAgentVisibility13static_agent_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pose of the static agent used for visibility calculation. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

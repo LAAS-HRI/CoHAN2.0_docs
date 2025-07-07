@@ -137,10 +137,25 @@
 </ul>
 <section id="function-documentation">
 <h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfunction: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
-</div>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner30distance_segment_to_segment_2dERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEE">
+<span id="_CPPv3N19hateb_local_planner30distance_segment_to_segment_2dERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="_CPPv2N19hateb_local_planner30distance_segment_to_segment_2dERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEE"></span><span id="hateb_local_planner::distance_segment_to_segment_2d__Eigen::Ref:Eigen::Vector2dC:CR.Eigen::Ref:Eigen::Vector2dC:CR.Eigen::Ref:Eigen::Vector2dC:CR.Eigen::Ref:Eigen::Vector2dC:CR"></span><span class="target" id="namespacehateb__local__planner_1ac2e2d2432c7bf42cd93079ae086f9b27"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">hateb_local_planner</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">distance_segment_to_segment_2d</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line1_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line1_end</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line2_start</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Ref</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector2d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">line2_end</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner30distance_segment_to_segment_2dERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEERKN5Eigen3RefIKN5Eigen8Vector2dEEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Helper function to calculate the smallest distance between two line segments. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line1_start</strong> – 2D point representing the start of the first line segment </p></li>
+<li><p><strong>line1_end</strong> – 2D point representing the end of the first line segment </p></li>
+<li><p><strong>line2_start</strong> – 2D point representing the start of the second line segment </p></li>
+<li><p><strong>line2_end</strong> – 2D point representing the end of the second line segment </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>smallest distance between both segments </p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 

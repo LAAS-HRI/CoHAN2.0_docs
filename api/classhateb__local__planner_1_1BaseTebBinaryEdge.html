@@ -199,10 +199,64 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE">
+<span id="_CPPv3I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE"></span><span id="_CPPv2I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">D</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">E</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexXi</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VertexXj</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BaseTebBinaryEdge</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">g2o</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">BaseBinaryEdge</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge::D"><span class="n"><span class="pre">D</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge::E"><span class="n"><span class="pre">E</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge::VertexXi"><span class="n"><span class="pre">VertexXi</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="hateb_local_planner::BaseTebBinaryEdge::VertexXj"><span class="n"><span class="pre">VertexXj</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4I_i000EN19hateb_local_planner17BaseTebBinaryEdgeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Base edge connecting two vertices in the TEB optimization problem. </p>
+<p>This edge defines a base edge type for the TEB optimization problem. It is derived from the corresponding g2o base classes augmented with additional information for the dedicated TEB problem (e.g. config). The destructor erases the edge in all attached vertices in order to allow keeping the vertices valid in subsequent g2o optimization calls. Memory of edges should be freed by calling the clearEdge method of the g2o optimizer class. <div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="classhateb__local__planner_1_1BaseTebMultiEdge.html#classhateb__local__planner_1_1BaseTebMultiEdge"><span class="std std-ref">BaseTebMultiEdge</span></a>, <a class="reference internal" href="classhateb__local__planner_1_1BaseTebUnaryEdge.html#classhateb__local__planner_1_1BaseTebUnaryEdge"><span class="std std-ref">BaseTebUnaryEdge</span></a>, g2o::BaseBinaryEdge, g2o::BaseUnaryEdge, g2o::BaseMultiEdge </p>
 </div>
+</p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner17BaseTebBinaryEdge8getErrorEv">
+<span id="_CPPv3N19hateb_local_planner17BaseTebBinaryEdge8getErrorEv"></span><span id="_CPPv2N19hateb_local_planner17BaseTebBinaryEdge8getErrorEv"></span><span id="hateb_local_planner::BaseTebBinaryEdge::getError"></span><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge_1a0c0f4853fd8744194a18775226f9b731"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">ErrorVector</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner17BaseTebBinaryEdge8getErrorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Compute and return error / cost value. </p>
+<p>This method is called by <a class="reference internal" href="classhateb__local__planner_1_1TebOptimalPlanner.html#classhateb__local__planner_1_1TebOptimalPlanner_1aa55295bf6fe8b04a4bda0575d1babe6f"><span class="std std-ref">TebOptimalPlanner::computeCurrentCost</span></a> to obtain the current cost. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>2D Cost / error vector [nh cost, backward drive dir cost]^T </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner17BaseTebBinaryEdge4readERNSt7istreamE">
+<span id="_CPPv3N19hateb_local_planner17BaseTebBinaryEdge4readERNSt7istreamE"></span><span id="_CPPv2N19hateb_local_planner17BaseTebBinaryEdge4readERNSt7istreamE"></span><span id="hateb_local_planner::BaseTebBinaryEdge::read__isR"></span><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge_1a0b775d38f7afb0f63f9156ed241fbe25"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">istream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">is</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner17BaseTebBinaryEdge4readERNSt7istreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Read values from input stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK19hateb_local_planner17BaseTebBinaryEdge5writeERNSt7ostreamE">
+<span id="_CPPv3NK19hateb_local_planner17BaseTebBinaryEdge5writeERNSt7ostreamE"></span><span id="_CPPv2NK19hateb_local_planner17BaseTebBinaryEdge5writeERNSt7ostreamE"></span><span id="hateb_local_planner::BaseTebBinaryEdge::write__osRC"></span><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge_1a85a24cf969c90917f50cb057173527ca"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">write</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">os</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK19hateb_local_planner17BaseTebBinaryEdge5writeERNSt7ostreamE" title="Link to this definition"></a><br /></dt>
+<dd><p>Write values to an output stream. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner17BaseTebBinaryEdge14setHATebConfigERK11HATebConfig">
+<span id="_CPPv3N19hateb_local_planner17BaseTebBinaryEdge14setHATebConfigERK11HATebConfig"></span><span id="_CPPv2N19hateb_local_planner17BaseTebBinaryEdge14setHATebConfigERK11HATebConfig"></span><span id="hateb_local_planner::BaseTebBinaryEdge::setHATebConfig__HATebConfigCR"></span><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge_1abc6ae7a9e1fd02416a4a94cbb785ba19"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setHATebConfig</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cfg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner17BaseTebBinaryEdge14setHATebConfigERK11HATebConfig" title="Link to this definition"></a><br /></dt>
+<dd><p>Assign the <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> class for parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cfg</strong> – <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> class </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner17BaseTebBinaryEdge4cfg_E">
+<span id="_CPPv3N19hateb_local_planner17BaseTebBinaryEdge4cfg_E"></span><span id="_CPPv2N19hateb_local_planner17BaseTebBinaryEdge4cfg_E"></span><span id="hateb_local_planner::BaseTebBinaryEdge::cfg___HATebConfigCP"></span><span class="target" id="classhateb__local__planner_1_1BaseTebBinaryEdge_1af5ba7be337a1f51e8f000255ffd40e71"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#_CPPv4N19hateb_local_planner11HATebConfigE" title="hateb_local_planner::HATebConfig"><span class="n"><span class="pre">HATebConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cfg_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner17BaseTebBinaryEdge4cfg_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Store <a class="reference internal" href="classhateb__local__planner_1_1HATebConfig.html#classhateb__local__planner_1_1HATebConfig"><span class="std std-ref">HATebConfig</span></a> class for parameters. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

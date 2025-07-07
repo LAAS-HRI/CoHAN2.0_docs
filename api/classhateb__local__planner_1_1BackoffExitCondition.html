@@ -199,10 +199,144 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitConditionE">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitConditionE"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitConditionE"></span><span id="hateb_local_planner::BackoffExitCondition"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BackoffExitCondition</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitConditionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing a condition node for managing backoff recovery behavior. </p>
+<p>This class provides functionality to control when to exit the backoff recovery mode. It monitors agent states and recovery progress to determine when to resume normal navigation. It inherits from BT::ConditionNode to integrate with the behavior tree framework. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::BackoffExitCondition::BackoffExitCondition__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a3442c24873d61b414c093ca1adf5deb7"></span><span class="sig-name descname"><span class="n"><span class="pre">BackoffExitCondition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with condition name and configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Configuration for the behavior tree node </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionEv">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionEv"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionEv"></span><span id="hateb_local_planner::BackoffExitCondition::BackoffExitCondition"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a502bd0c88a8babfec36378fb36ceca7e"></span><span class="sig-name descname"><span class="n"><span class="pre">BackoffExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition20BackoffExitConditionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Deleted default constructor to enforce proper initialization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitConditionD0Ev">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitConditionD0Ev"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitConditionD0Ev"></span><span id="hateb_local_planner::BackoffExitCondition::~BackoffExitCondition"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a267aa59811a67eddabd75de5c271c723"></span><span class="sig-name descname"><span class="n"><span class="pre">~BackoffExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitConditionD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor for cleanup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition4tickEv">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition4tickEv"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition4tickEv"></span><span id="hateb_local_planner::BackoffExitCondition::tick"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a1a3faef9c3272d78a34ea6faa6622646"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Method called to evaluate the condition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>SUCCESS if backoff recovery should be exited, FAILURE otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition13providedPortsEv"></span><span id="hateb_local_planner::BackoffExitCondition::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1ad82000f652950f5ac29e69946fe36dba"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines input and output ports for recovery condition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ports list containing agents_info, backoff_ptr, nav_goal, agents_ptr as inputs, and recovery status as output </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition18isRecoveryCompleteEv">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition18isRecoveryCompleteEv"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition18isRecoveryCompleteEv"></span><span id="hateb_local_planner::BackoffExitCondition::isRecoveryComplete"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1aaa828fc6ff2b689238a8f76bb41cce96"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isRecoveryComplete</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition18isRecoveryCompleteEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Checks if the recovery behavior is complete. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True if recovery is complete, false otherwise </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition12agents_info_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition12agents_info_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition12agents_info_E"></span><span id="hateb_local_planner::BackoffExitCondition::agents_info___agent_path_prediction::AgentsInfo"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1ac6656af70df0dfd79fccca5723877a54"></span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition12agents_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Information about agents in the environment. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition13current_goal_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition13current_goal_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition13current_goal_E"></span><span id="hateb_local_planner::BackoffExitCondition::current_goal___geometry_msgs::PoseStamped"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a3d884b88f545538f59fa32cbb5abd9c0"></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PoseStamped</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition13current_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Current navigation goal. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition12backoff_ptr_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition12backoff_ptr_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition12backoff_ptr_E"></span><span id="hateb_local_planner::BackoffExitCondition::backoff_ptr___std::shared_ptr:Backoff:"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1abd80c674ed59305dc5a5a1d0d1bd4bd3"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classhateb__local__planner_1_1Backoff.html#_CPPv4N19hateb_local_planner7BackoffE" title="hateb_local_planner::Backoff"><span class="n"><span class="pre">Backoff</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backoff_ptr_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition12backoff_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to backoff behavior handler. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition11agents_ptr_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition11agents_ptr_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition11agents_ptr_E"></span><span id="hateb_local_planner::BackoffExitCondition::agents_ptr___std::shared_ptr:agents::Agents:"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a5b2676642c4f18b23ffc48dafd83f999"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classagents_1_1Agents.html#_CPPv4N6agents6AgentsE" title="agents::Agents"><span class="n"><span class="pre">Agents</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_ptr_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition11agents_ptr_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Pointer to agents manager. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition12stuck_agent_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition12stuck_agent_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition12stuck_agent_E"></span><span id="hateb_local_planner::BackoffExitCondition::stuck_agent___i"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a404dbf1404ed334241431fe44b2e5c8b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stuck_agent_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition12stuck_agent_E" title="Link to this definition"></a><br /></dt>
+<dd><p>ID of the agent that is stuck. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition9dist_max_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition9dist_max_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition9dist_max_E"></span><span id="hateb_local_planner::BackoffExitCondition::dist_max___double"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a6584776418ae53e5e8f1422bcc3ed89b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_max_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition9dist_max_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum distance threshold. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition5name_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition5name_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition5name_E"></span><span id="hateb_local_planner::BackoffExitCondition::name___ss"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a66051a86b6a9e8f36d46bf41591c8817"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the node. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition8started_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition8started_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition8started_E"></span><span id="hateb_local_planner::BackoffExitCondition::started___b"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a92462621e59ac7b950bcc1066ec8710f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">started_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition8started_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if recovery has started. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition9new_goal_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition9new_goal_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition9new_goal_E"></span><span id="hateb_local_planner::BackoffExitCondition::new_goal___b"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a0128e536dc4a8bcfcb6261fa251ed136"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">new_goal_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition9new_goal_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if a new goal was received. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner20BackoffExitCondition11backed_off_E">
+<span id="_CPPv3N19hateb_local_planner20BackoffExitCondition11backed_off_E"></span><span id="_CPPv2N19hateb_local_planner20BackoffExitCondition11backed_off_E"></span><span id="hateb_local_planner::BackoffExitCondition::backed_off___b"></span><span class="target" id="classhateb__local__planner_1_1BackoffExitCondition_1a234bf9d6782e28c8ffd4000b4592134e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">backed_off_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner20BackoffExitCondition11backed_off_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Flag indicating if robot has backed off. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 

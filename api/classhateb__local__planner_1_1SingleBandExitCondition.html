@@ -199,10 +199,88 @@
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenclass: Cannot find file: /home/runner/work/CoHAN2.0_docs/CoHAN2.0_docs/docs/docs/xml/index.xml</p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitConditionE">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitConditionE"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitConditionE"></span><span id="hateb_local_planner::SingleBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SingleBandExitCondition</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ConditionNode</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitConditionE" title="Link to this definition"></a><br /></dt>
+<dd><p>Class implementing a condition node for checking single band exit criteria. </p>
+<p>This class provides functionality to determine if a single band planning mode should be exited based on agent information and distance thresholds. It inherits from BT::ConditionNode to integrate with the behavior tree framework. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE"></span><span id="hateb_local_planner::SingleBandExitCondition::SingleBandExitCondition__ssCR.BT::NodeConfigurationCR"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1ace6beac8e31a26d78cbb21aca68af5cb"></span><span class="sig-name descname"><span class="n"><span class="pre">SingleBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">condition_name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeConfiguration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">conf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionERKNSt6stringERKN2BT17NodeConfigurationE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor with condition name and configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>condition_name</strong> – Name of the condition node </p></li>
+<li><p><strong>conf</strong> – Configuration for the behavior tree node </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionEv">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionEv"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionEv"></span><span id="hateb_local_planner::SingleBandExitCondition::SingleBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1ab0d2dfecbc29f233d41a37920ca06159"></span><span class="sig-name descname"><span class="n"><span class="pre">SingleBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition23SingleBandExitConditionEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Deleted default constructor to enforce proper initialization. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitConditionD0Ev">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitConditionD0Ev"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitConditionD0Ev"></span><span id="hateb_local_planner::SingleBandExitCondition::~SingleBandExitCondition"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1a7999cacce523847ccefa39ddef79b413"></span><span class="sig-name descname"><span class="n"><span class="pre">~SingleBandExitCondition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitConditionD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Virtual destructor for cleanup. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition4tickEv">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition4tickEv"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition4tickEv"></span><span id="hateb_local_planner::SingleBandExitCondition::tick"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1a0d107ab1e096fb2dd124d80c5e898843"></span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NodeStatus</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tick</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition4tickEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Method called to evaluate the condition. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Status indicating whether condition is met </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition13providedPortsEv">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition13providedPortsEv"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition13providedPortsEv"></span><span id="hateb_local_planner::SingleBandExitCondition::providedPorts"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1a6191fbab8706ea889d1f543d7ad38e5d"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">BT</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">PortsList</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">providedPorts</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition13providedPortsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Defines input ports for condition evaluation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ports list containing agents_info and dist_max as inputs </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition12agents_info_E">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition12agents_info_E"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition12agents_info_E"></span><span id="hateb_local_planner::SingleBandExitCondition::agents_info___agent_path_prediction::AgentsInfo"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1a62e179ae48d241664f6fcc1199aa9ff6"></span><span class="n"><span class="pre">agent_path_prediction</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">AgentsInfo</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">agents_info_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition12agents_info_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Information about agents in the environment. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition9dist_max_E">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition9dist_max_E"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition9dist_max_E"></span><span id="hateb_local_planner::SingleBandExitCondition::dist_max___double"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1ad264f44756822214ab356fb858d55ecd"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dist_max_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition9dist_max_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Maximum distance threshold for band exit condition. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19hateb_local_planner23SingleBandExitCondition5name_E">
+<span id="_CPPv3N19hateb_local_planner23SingleBandExitCondition5name_E"></span><span id="_CPPv2N19hateb_local_planner23SingleBandExitCondition5name_E"></span><span id="hateb_local_planner::SingleBandExitCondition::name___ss"></span><span class="target" id="classhateb__local__planner_1_1SingleBandExitCondition_1a255b5189a0687b2264cf589a99608938"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name_</span></span></span><a class="headerlink" href="#_CPPv4N19hateb_local_planner23SingleBandExitCondition5name_E" title="Link to this definition"></a><br /></dt>
+<dd><p>Name of the condition node. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 
