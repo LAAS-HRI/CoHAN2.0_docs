@@ -1,0 +1,2818 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhateb__local__planner_1_1HATebLocalPlannerROS" kind="class" language="C++" prot="public">
+    <compoundname>hateb_local_planner::HATebLocalPlannerROS</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nav_core::BaseLocalPlanner</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">mbf_costmap_core::CostmapController</basecompoundref>
+    <includes refid="hateb__local__planner__ros_8h" local="no">hateb_local_planner_ros.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Public utility functions/methods</header>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a685b9f952f3d2c3abaa8d224fed66d71" prot="private" static="no" mutable="no">
+        <type>costmap_2d::Costmap2DROS *</type>
+        <definition>costmap_2d::Costmap2DROS* hateb_local_planner::HATebLocalPlannerROS::costmap_ros_</definition>
+        <argsstring></argsstring>
+        <name>costmap_ros_</name>
+        <briefdescription>
+<para>Pointer to the costmap ros wrapper, received from the navigation stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="651" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab11c7fbdc3a2a2bc6f551b1f227e2350" prot="private" static="no" mutable="no">
+        <type>costmap_2d::Costmap2D *</type>
+        <definition>costmap_2d::Costmap2D* hateb_local_planner::HATebLocalPlannerROS::costmap_</definition>
+        <argsstring></argsstring>
+        <name>costmap_</name>
+        <briefdescription>
+<para>Pointer to the 2d costmap (obtained from the costmap ros wrapper) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="652" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a40b22c137342ae3a262a5a08196d1dfe" prot="private" static="no" mutable="no">
+        <type>tf2_ros::Buffer *</type>
+        <definition>tf2_ros::Buffer* hateb_local_planner::HATebLocalPlannerROS::tf_</definition>
+        <argsstring></argsstring>
+        <name>tf_</name>
+        <briefdescription>
+<para>pointer to tf buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="653" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="653" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eab6d86d85a91c28abd4bd600a0531d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1ae4119254a399f35d2c880803d7ec93b2" kindref="member">PlannerInterfacePtr</ref></type>
+        <definition>PlannerInterfacePtr hateb_local_planner::HATebLocalPlannerROS::planner_</definition>
+        <argsstring></argsstring>
+        <name>planner_</name>
+        <briefdescription>
+<para>Instance of the underlying optimal planner class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="656" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="656" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae4abd911038dde8b92f2ba979ff29d7e" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref></type>
+        <definition>ObstContainer hateb_local_planner::HATebLocalPlannerROS::obstacles_</definition>
+        <argsstring></argsstring>
+        <name>obstacles_</name>
+        <briefdescription>
+<para><ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> vector that should be considered during local trajectory optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="657" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afaa10504e4e805453a08cfe5a4a7373a" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" kindref="member">ViaPointContainer</ref></type>
+        <definition>ViaPointContainer hateb_local_planner::HATebLocalPlannerROS::via_points_</definition>
+        <argsstring></argsstring>
+        <name>via_points_</name>
+        <briefdescription>
+<para>Container of via-points that should be considered during local trajectory optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="658" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aaddb1eb8b78d019e156d8d2518331dff" prot="private" static="no" mutable="no">
+        <type>std::map&lt; uint64_t, <ref refid="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" kindref="member">ViaPointContainer</ref> &gt;</type>
+        <definition>std::map&lt;uint64_t, ViaPointContainer&gt; hateb_local_planner::HATebLocalPlannerROS::agents_via_points_map_</definition>
+        <argsstring></argsstring>
+        <name>agents_via_points_map_</name>
+        <briefdescription>
+<para>Map storing via points for each agent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="659" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1884f3dc2db14cf6cddfd4693f50e565" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1a189cd7a87216df6bcfef993ad267dd11" kindref="member">TebVisualizationPtr</ref></type>
+        <definition>TebVisualizationPtr hateb_local_planner::HATebLocalPlannerROS::visualization_</definition>
+        <argsstring></argsstring>
+        <name>visualization_</name>
+        <briefdescription>
+<para>Instance of the visualization class (local/global plan, obstacles, ...) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="660" column="23" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="660" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac66184ecc8cc78aed8ad6c1c8e7f005e" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; base_local_planner::CostmapModel &gt;</type>
+        <definition>boost::shared_ptr&lt;base_local_planner::CostmapModel&gt; hateb_local_planner::HATebLocalPlannerROS::costmap_model_</definition>
+        <argsstring></argsstring>
+        <name>costmap_model_</name>
+        <briefdescription>
+<para>Costmap model for collision checking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="661" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af8b3fe3a4e9f4b79f8b0f9a5a5281909" prot="private" static="no" mutable="no">
+        <type><ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref></type>
+        <definition>HATebConfig hateb_local_planner::HATebLocalPlannerROS::cfg_</definition>
+        <argsstring></argsstring>
+        <name>cfg_</name>
+        <briefdescription>
+<para>Config class that stores and manages all related parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="662" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7d042bd9bb568a4f1b0292b42630e7e2" prot="private" static="no" mutable="no">
+        <type>HATebLocalPlannerReconfigureConfig</type>
+        <definition>HATebLocalPlannerReconfigureConfig hateb_local_planner::HATebLocalPlannerROS::config_</definition>
+        <argsstring></argsstring>
+        <name>config_</name>
+        <briefdescription>
+<para>Dynamic reconfigure config class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="663" column="38" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa16d9382646d249b407bbd9b1f067ff8" prot="private" static="no" mutable="no">
+        <type><ref refid="classhateb__local__planner_1_1FailureDetector" kindref="compound">FailureDetector</ref></type>
+        <definition>FailureDetector hateb_local_planner::HATebLocalPlannerROS::failure_detector_</definition>
+        <argsstring></argsstring>
+        <name>failure_detector_</name>
+        <briefdescription>
+<para>Detect if the robot got stucked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="664" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af2e7a28cc8e2b8bcb57e1640cab0c7db" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::HATebLocalPlannerROS::global_plan_</definition>
+        <argsstring></argsstring>
+        <name>global_plan_</name>
+        <briefdescription>
+<para>Store the current global plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="666" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a188ac69a3f41da13c77bc67cb6c794ee" prot="private" static="no" mutable="no">
+        <type>base_local_planner::OdometryHelperRos</type>
+        <definition>base_local_planner::OdometryHelperRos hateb_local_planner::HATebLocalPlannerROS::odom_helper_</definition>
+        <argsstring></argsstring>
+        <name>odom_helper_</name>
+        <briefdescription>
+<para>Provides an interface to receive the current velocity from the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="668" column="41" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8051145f1962a18587fc6ebbc7d7ed07" prot="private" static="no" mutable="no">
+        <type>pluginlib::ClassLoader&lt; costmap_converter::BaseCostmapToPolygons &gt;</type>
+        <definition>pluginlib::ClassLoader&lt;costmap_converter::BaseCostmapToPolygons&gt; hateb_local_planner::HATebLocalPlannerROS::costmap_converter_loader_</definition>
+        <argsstring></argsstring>
+        <name>costmap_converter_loader_</name>
+        <briefdescription>
+<para>Load costmap converter plugins at runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="670" column="26" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a243e19c464d27d9018dc90abe8719f20" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; costmap_converter::BaseCostmapToPolygons &gt;</type>
+        <definition>boost::shared_ptr&lt;costmap_converter::BaseCostmapToPolygons&gt; hateb_local_planner::HATebLocalPlannerROS::costmap_converter_</definition>
+        <argsstring></argsstring>
+        <name>costmap_converter_</name>
+        <briefdescription>
+<para>Store the current costmap_converter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="671" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aef0278fb51cc7e12dc86b1840b2303c2" prot="private" static="no" mutable="no">
+        <type>boost::shared_ptr&lt; dynamic_reconfigure::Server&lt; HATebLocalPlannerReconfigureConfig &gt; &gt;</type>
+        <definition>boost::shared_ptr&lt;dynamic_reconfigure::Server&lt;HATebLocalPlannerReconfigureConfig&gt; &gt; hateb_local_planner::HATebLocalPlannerROS::dynamic_recfg_</definition>
+        <argsstring></argsstring>
+        <name>dynamic_recfg_</name>
+        <briefdescription>
+<para>Dynamic reconfigure server to allow config modifications at runtime. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="673" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="673" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5cc5b0b32a2fbaba353bb52684cc072e" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::HATebLocalPlannerROS::custom_obst_sub_</definition>
+        <argsstring></argsstring>
+        <name>custom_obst_sub_</name>
+        <briefdescription>
+<para>Subscriber for custom obstacles received via ObstacleMsg. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="675" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a56052cb87a706dbbbe14a5c55e4b3e3a" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::HATebLocalPlannerROS::inv_humans_sub_</definition>
+        <argsstring></argsstring>
+        <name>inv_humans_sub_</name>
+        <briefdescription>
+<para>Subscriber for invisible humans data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="676" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac86ddda04902a4cb1266f9007b1b2891" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex hateb_local_planner::HATebLocalPlannerROS::custom_obst_mutex_</definition>
+        <argsstring></argsstring>
+        <name>custom_obst_mutex_</name>
+        <briefdescription>
+<para>Mutex that locks the obstacle array (multi-threaded) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="677" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="677" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a986abfdb3800b34d58549b1965206797" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex hateb_local_planner::HATebLocalPlannerROS::inv_human_mutex_</definition>
+        <argsstring></argsstring>
+        <name>inv_human_mutex_</name>
+        <briefdescription>
+<para>Mutex that locks the invisible humans array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="678" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae1f0398a3ebd77aa2ba9380ad8584cf6" prot="private" static="no" mutable="no">
+        <type>costmap_converter::ObstacleArrayMsg</type>
+        <definition>costmap_converter::ObstacleArrayMsg hateb_local_planner::HATebLocalPlannerROS::custom_obstacle_msg_</definition>
+        <argsstring></argsstring>
+        <name>custom_obstacle_msg_</name>
+        <briefdescription>
+<para>Copy of the most recent obstacle message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="679" column="39" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4c37a602b58aa5b6a643350a61f42ddb" prot="private" static="no" mutable="no">
+        <type>costmap_converter::ObstacleArrayMsg</type>
+        <definition>costmap_converter::ObstacleArrayMsg hateb_local_planner::HATebLocalPlannerROS::inv_humans_msg_</definition>
+        <argsstring></argsstring>
+        <name>inv_humans_msg_</name>
+        <briefdescription>
+<para>Copy of the most recent invisible humans message. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="680" column="39" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="680" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a354a613bbf4133d8b73a4986990d4677" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::HATebLocalPlannerROS::via_points_sub_</definition>
+        <argsstring></argsstring>
+        <name>via_points_sub_</name>
+        <briefdescription>
+<para>Subscriber for custom via-points received via Path msg. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="682" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af15e750ec52508058d6e3cb2d3f63ce4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::custom_via_points_active_</definition>
+        <argsstring></argsstring>
+        <name>custom_via_points_active_</name>
+        <briefdescription>
+<para>Keep track whether valid via-points have been received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="683" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a33199da4bd6e348e932981752324d4e3" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex hateb_local_planner::HATebLocalPlannerROS::via_point_mutex_</definition>
+        <argsstring></argsstring>
+        <name>via_point_mutex_</name>
+        <briefdescription>
+<para>Mutex that locks the via_points container (multi-threaded) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="684" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b339c3b5bb7df2a7f24fecd8a85aee" prot="private" static="no" mutable="no">
+        <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
+        <definition>PoseSE2 hateb_local_planner::HATebLocalPlannerROS::robot_pose_</definition>
+        <argsstring></argsstring>
+        <name>robot_pose_</name>
+        <briefdescription>
+<para>Store current robot pose. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="686" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad35d49280e04b02533fd3a1f1a48bf54" prot="private" static="no" mutable="no">
+        <type><ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref></type>
+        <definition>PoseSE2 hateb_local_planner::HATebLocalPlannerROS::robot_goal_</definition>
+        <argsstring></argsstring>
+        <name>robot_goal_</name>
+        <briefdescription>
+<para>Store current robot goal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="687" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1adf62da8dab5e0e4ae6aec98c9f64064b" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::Twist</type>
+        <definition>geometry_msgs::Twist hateb_local_planner::HATebLocalPlannerROS::robot_vel_</definition>
+        <argsstring></argsstring>
+        <name>robot_vel_</name>
+        <briefdescription>
+<para>Store current robot velocities (vx, vy, omega) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="688" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1b2e907af6becf9c4036d9fbd11351fc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::goal_reached_</definition>
+        <argsstring></argsstring>
+        <name>goal_reached_</name>
+        <briefdescription>
+<para>Store whether the goal is reached or not. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="689" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a640c25b4dd9514a7e2b5027dc4a9fb0b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::horizon_reduced_</definition>
+        <argsstring></argsstring>
+        <name>horizon_reduced_</name>
+        <briefdescription>
+<para>Flag indicating if the planning horizon was temporarily reduced. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="690" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1acb6eb8281c179f96708b0cad2c89c497" prot="private" static="no" mutable="no">
+        <type>ros::Time</type>
+        <definition>ros::Time hateb_local_planner::HATebLocalPlannerROS::horizon_reduced_stamp_</definition>
+        <argsstring></argsstring>
+        <name>horizon_reduced_stamp_</name>
+        <briefdescription>
+<para>Time when the horizon was reduced. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="691" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abaaec55d37760f058eb32eb632fc7846" prot="private" static="no" mutable="no">
+        <type>ros::Time</type>
+        <definition>ros::Time hateb_local_planner::HATebLocalPlannerROS::time_last_infeasible_plan_</definition>
+        <argsstring></argsstring>
+        <name>time_last_infeasible_plan_</name>
+        <briefdescription>
+<para>Time stamp of last infeasible plan detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="692" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3d1224e1da3f1809e5a1be118978c497" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hateb_local_planner::HATebLocalPlannerROS::no_infeasible_plans_</definition>
+        <argsstring></argsstring>
+        <name>no_infeasible_plans_</name>
+        <briefdescription>
+<para>Number of consecutive infeasible plans. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="693" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3c966b563a513924d6c583c7ab8807b9" prot="private" static="no" mutable="no">
+        <type>ros::Time</type>
+        <definition>ros::Time hateb_local_planner::HATebLocalPlannerROS::time_last_oscillation_</definition>
+        <argsstring></argsstring>
+        <name>time_last_oscillation_</name>
+        <briefdescription>
+<para>Time stamp of last oscillation detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="694" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5c019da9fe43249afdc80934c565b57d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0" kindref="member">RotType</ref></type>
+        <definition>RotType hateb_local_planner::HATebLocalPlannerROS::last_preferred_rotdir_</definition>
+        <argsstring></argsstring>
+        <name>last_preferred_rotdir_</name>
+        <briefdescription>
+<para>Store recent preferred turning direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="695" column="11" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af00c9f185c72f544e52de9da7c3720a1" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::Twist</type>
+        <definition>geometry_msgs::Twist hateb_local_planner::HATebLocalPlannerROS::last_cmd_</definition>
+        <argsstring></argsstring>
+        <name>last_cmd_</name>
+        <briefdescription>
+<para>Store the last control command generated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="696" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad097c43a79ea4a4cc676841c29aea023" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::Point &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::Point&gt; hateb_local_planner::HATebLocalPlannerROS::footprint_spec_</definition>
+        <argsstring></argsstring>
+        <name>footprint_spec_</name>
+        <briefdescription>
+<para>Store the footprint of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="698" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a782b56423cfb19cde44c9a2df05688c4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::robot_inscribed_radius_</definition>
+        <argsstring></argsstring>
+        <name>robot_inscribed_radius_</name>
+        <briefdescription>
+<para>The radius of the inscribed circle of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="699" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb02aec268cebcb8bbe201a267950452" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::robot_circumscribed_radius_</definition>
+        <argsstring></argsstring>
+        <name>robot_circumscribed_radius_</name>
+        <briefdescription>
+<para>The radius of the circumscribed circle of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="700" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0c42baabc4ce2add59a85972bcf6da6c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::global_frame_</definition>
+        <argsstring></argsstring>
+        <name>global_frame_</name>
+        <briefdescription>
+<para>The frame in which the controller will run. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="702" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a182a331e5e7a9b3ad97555fb85e2a3c7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::robot_base_frame_</definition>
+        <argsstring></argsstring>
+        <name>robot_base_frame_</name>
+        <briefdescription>
+<para>Used as the base frame id of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="703" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eb20495fcd0c009b974814874427660" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <briefdescription>
+<para>Flag to track proper initialization of this class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="705" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a859a50b7da4051f1f2256395a3bf4823" prot="private" static="no" mutable="no">
+        <type>ros::ServiceClient</type>
+        <definition>ros::ServiceClient hateb_local_planner::HATebLocalPlannerROS::predict_agents_client_</definition>
+        <argsstring></argsstring>
+        <name>predict_agents_client_</name>
+        <briefdescription>
+<para>Client for predicting agent trajectories. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="708" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a67dca5ec62e41b06c6cdf50dcc26cddb" prot="private" static="no" mutable="no">
+        <type>ros::ServiceClient</type>
+        <definition>ros::ServiceClient hateb_local_planner::HATebLocalPlannerROS::reset_agents_prediction_client_</definition>
+        <argsstring></argsstring>
+        <name>reset_agents_prediction_client_</name>
+        <briefdescription>
+<para>Client for resetting agent predictions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="709" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a27bd5955f3e1466b56f98ffab4bcb473" prot="private" static="no" mutable="no">
+        <type>ros::ServiceClient</type>
+        <definition>ros::ServiceClient hateb_local_planner::HATebLocalPlannerROS::publish_predicted_markers_client_</definition>
+        <argsstring></argsstring>
+        <name>publish_predicted_markers_client_</name>
+        <briefdescription>
+<para>Client for publishing prediction markers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="710" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8acd889ddadc37ecac4ddb02f83f9355" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::predict_srv_name_</definition>
+        <argsstring></argsstring>
+        <name>predict_srv_name_</name>
+        <briefdescription>
+<para>Name of the prediction service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="712" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a03f84af3035ca6aa4d7a1121ba5c84ed" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::reset_prediction_srv_name_</definition>
+        <argsstring></argsstring>
+        <name>reset_prediction_srv_name_</name>
+        <briefdescription>
+<para>Name of the reset prediction service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="713" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0b5a3464f3869fc17c5a754b4f92cfef" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::publish_makers_srv_name_</definition>
+        <argsstring></argsstring>
+        <name>publish_makers_srv_name_</name>
+        <briefdescription>
+<para>Name of the marker publishing service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="714" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afe8d486f067e88419337bf0396de1b6e" prot="private" static="no" mutable="no">
+        <type>ros::ServiceServer</type>
+        <definition>ros::ServiceServer hateb_local_planner::HATebLocalPlannerROS::optimize_server_</definition>
+        <argsstring></argsstring>
+        <name>optimize_server_</name>
+        <briefdescription>
+<para>optimize service for calling standalone </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="716" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb61979eca7c7adcdc6481feaa440e2d" prot="private" static="no" mutable="no">
+        <type>ros::Time</type>
+        <definition>ros::Time hateb_local_planner::HATebLocalPlannerROS::last_call_time_</definition>
+        <argsstring></argsstring>
+        <name>last_call_time_</name>
+        <briefdescription>
+<para>Time of last service call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="717" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a2a13bd8246dde003837701ab0dd947ab" prot="private" static="no" mutable="no">
+        <type>ros::Time</type>
+        <definition>ros::Time hateb_local_planner::HATebLocalPlannerROS::last_omega_sign_change_</definition>
+        <argsstring></argsstring>
+        <name>last_omega_sign_change_</name>
+        <briefdescription>
+<para>Time of last angular velocity sign change. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="718" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a12c2b3bd2bbee5542a67543d09712e99" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::last_omega_</definition>
+        <argsstring></argsstring>
+        <name>last_omega_</name>
+        <briefdescription>
+<para>Last angular velocity value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="719" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a01398cc9c30a6df635fbb12ae2ac5c5b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::goal_ctrl_</definition>
+        <argsstring></argsstring>
+        <name>goal_ctrl_</name>
+        <briefdescription>
+<para>Flag for goal control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="722" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7b2c534465cf8fba9530525f726529cb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::reset_states_</definition>
+        <argsstring></argsstring>
+        <name>reset_states_</name>
+        <briefdescription>
+<para>Flag for state reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="723" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab0d7ea72acd393476af28c7d6578a279" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hateb_local_planner::HATebLocalPlannerROS::isMode_</definition>
+        <argsstring></argsstring>
+        <name>isMode_</name>
+        <briefdescription>
+<para>Current planning mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="725" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad79e05de056a543b37e36b1422b663aa" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::logs_</definition>
+        <argsstring></argsstring>
+        <name>logs_</name>
+        <briefdescription>
+<para>System log messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="727" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a04083651f701727d9dea81c17bde49f6" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::HATebLocalPlannerROS::agents_sub_</definition>
+        <argsstring></argsstring>
+        <name>agents_sub_</name>
+        <briefdescription>
+<para>Subscriber for tracked agents. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="728" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4ef082e8687b4185642db2f172ea58d9" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::HATebLocalPlannerROS::log_pub_</definition>
+        <argsstring></argsstring>
+        <name>log_pub_</name>
+        <briefdescription>
+<para>Publisher for system logs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="729" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="729" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6b9c894524e2b6fb8e5c30b8ccf9d0be" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::ns_</definition>
+        <argsstring></argsstring>
+        <name>ns_</name>
+        <briefdescription>
+<para>Namespace for multi-agent support. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="730" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa5595efc9f6069d292e6a3018a512873" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebLocalPlannerROS::invisible_humans_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>invisible_humans_sub_topic_</name>
+        <briefdescription>
+<para>Name for invisible humans topic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="731" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a795dbc5d0902c5d3a6ded2db409b0c5f" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classagents_1_1Agents" kindref="compound">agents::Agents</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;agents::Agents&gt; hateb_local_planner::HATebLocalPlannerROS::agents_ptr_</definition>
+        <argsstring></argsstring>
+        <name>agents_ptr_</name>
+        <briefdescription>
+<para>Pointer to agents management class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="734" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b7fa07716eb5fa649c36b7fb2102aa" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1Backoff" kindref="compound">Backoff</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Backoff&gt; hateb_local_planner::HATebLocalPlannerROS::backoff_ptr_</definition>
+        <argsstring></argsstring>
+        <name>backoff_ptr_</name>
+        <briefdescription>
+<para>Pointer to backoff behavior class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="735" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a70b9c0f97dbddeb367a36de033974071" prot="private" static="no" mutable="no">
+        <type><ref refid="classhateb__local__planner_1_1ModeSwitch" kindref="compound">ModeSwitch</ref></type>
+        <definition>ModeSwitch hateb_local_planner::HATebLocalPlannerROS::bt_mode_switch_</definition>
+        <argsstring></argsstring>
+        <name>bt_mode_switch_</name>
+        <briefdescription>
+<para>Behavior tree mode switch handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="736" column="14" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6313427bcd8d46599e3c40e27ec338e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector2d</type>
+        <definition>static Eigen::Vector2d hateb_local_planner::HATebLocalPlannerROS::tfPoseToEigenVector2dTransRot</definition>
+        <argsstring>(const tf::Pose &amp;tf_vel)</argsstring>
+        <name>tfPoseToEigenVector2dTransRot</name>
+        <param>
+          <type>const tf::Pose &amp;</type>
+          <declname>tf_vel</declname>
+        </param>
+        <briefdescription>
+<para>Transform a tf::Pose type into a Eigen::Vector2d containing the translational and angular velocities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Translational velocities (x- and y-coordinates) are combined into a single translational velocity (first component). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tf_vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tf::Pose message containing a 1D or 2D translational velocity (x,y) and an angular velocity (yaw-angle) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Translational and angular velocity combined into an Eigen::Vector2d </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="223" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a208523a008c0141f7df781a62199b4bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491" kindref="member">FootprintModelPtr</ref></type>
+        <definition>FootprintModelPtr hateb_local_planner::HATebLocalPlannerROS::getRobotFootprintFromParamServer</definition>
+        <argsstring>(const ros::NodeHandle &amp;nh, const HATebConfig &amp;config)</argsstring>
+        <name>getRobotFootprintFromParamServer</name>
+        <param>
+          <type>const ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> &amp;</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Get the current robot footprint/contour model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to the local ros::NodeHandle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Robot footprint model used for optimization </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="230" column="28" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1308" bodyend="1417"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1e6e6be9d65fadf15bb0d98e5ab2abe8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" kindref="member">Point2dContainer</ref></type>
+        <definition>Point2dContainer hateb_local_planner::HATebLocalPlannerROS::makeFootprintFromXMLRPC</definition>
+        <argsstring>(XmlRpc::XmlRpcValue &amp;footprint_xmlrpc, const std::string &amp;full_param_name)</argsstring>
+        <name>makeFootprintFromXMLRPC</name>
+        <param>
+          <type>XmlRpc::XmlRpcValue &amp;</type>
+          <declname>footprint_xmlrpc</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>full_param_name</declname>
+        </param>
+        <briefdescription>
+<para>Set the footprint from the given XmlRpcValue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>This method is copied from costmap_2d/footprint.h, since it is not declared public in all ros distros </para>
+</simplesect>
+<simplesect kind="remark"><para>It is modified in order to return a container of Eigen::Vector2d instead of geometry_msgs::Point </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>footprint_xmlrpc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>should be an array of arrays, where the top-level array should have 3 or more elements, and the sub-arrays should all have exactly 2 elements (x and y coordinates). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_param_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the full name of the rosparam from which the footprint_xmlrpc value came. It is used only for reporting errors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>container of vertices describing the polygon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="245" column="27" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1419" bodyend="1459"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a87d8281386989297ed0a6b98899036d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::getNumberFromXMLRPC</definition>
+        <argsstring>(XmlRpc::XmlRpcValue &amp;value, const std::string &amp;full_param_name)</argsstring>
+        <name>getNumberFromXMLRPC</name>
+        <param>
+          <type>XmlRpc::XmlRpcValue &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>full_param_name</declname>
+        </param>
+        <briefdescription>
+<para>Get a number from the given XmlRpcValue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>This method is copied from costmap_2d/footprint.h, since it is not declared public in all ros distros </para>
+</simplesect>
+<simplesect kind="remark"><para>It is modified in order to return a container of Eigen::Vector2d instead of geometry_msgs::Point </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double value type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>full_param_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>this is the full name of the rosparam from which the footprint_xmlrpc value came. It is used only for reporting errors. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double value </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="258" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1461" bodyend="1472"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCostmap</definition>
+        <argsstring>()</argsstring>
+        <name>updateObstacleContainerWithCostmap</name>
+        <briefdescription>
+<para>Update internal obstacle vector based on occupied costmap cells. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>All occupied cells will be added as point obstacles. </para>
+</simplesect>
+<simplesect kind="remark"><para>All previous obstacles are cleared. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43" kindref="member">updateObstacleContainerWithCostmapConverter</ref> velocity model) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="270" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="783" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCostmapConverter</definition>
+        <argsstring>()</argsstring>
+        <name>updateObstacleContainerWithCostmapConverter</name>
+        <briefdescription>
+<para>Update internal obstacle vector based on polygons provided by a costmap_converter plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Requires a loaded costmap_converter plugin. </para>
+</simplesect>
+<simplesect kind="remark"><para>All previous obstacles are cleared. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e" kindref="member">updateObstacleContainerWithCostmap</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="279" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="807" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ada6959cf67ea120825f03e9924feab1b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithCustomObstacles</definition>
+        <argsstring>()</argsstring>
+        <name>updateObstacleContainerWithCustomObstacles</name>
+        <briefdescription>
+<para>Update internal obstacle vector based on custom messages received via subscriber. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>All previous obstacles are NOT cleared. Call this method after other update methods. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e" kindref="member">updateObstacleContainerWithCostmap</ref>, <ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43" kindref="member">updateObstacleContainerWithCostmapConverter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="289" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="847" bodyend="898"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a28dced56bae5ba6aac266f648782269b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateObstacleContainerWithInvHumans</definition>
+        <argsstring>()</argsstring>
+        <name>updateObstacleContainerWithInvHumans</name>
+        <briefdescription>
+<para>Update internal obstacle vector based on invisible human messages received via subscriber. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>All previous obstacles are NOT cleared. Call this method after other update methods. </para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e" kindref="member">updateObstacleContainerWithCostmap</ref>, <ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43" kindref="member">updateObstacleContainerWithCostmapConverter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="299" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1478" bodyend="1546"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6168dad3eec679c91bcb5f806e4f22f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateViaPointsContainer</definition>
+        <argsstring>(const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;transformed_plan, double min_separation)</argsstring>
+        <name>updateViaPointsContainer</name>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>transformed_plan</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_separation</declname>
+        </param>
+        <briefdescription>
+<para>Update internal via-point container based on the current reference plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>All previous via-points will be cleared. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transformed_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(local) portion of the global plan (which is already transformed to the planning frame) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_separation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum separation between two consecutive via-points </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="309" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="900" bodyend="920"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab5aa6d2f1e7a0e4b5fd16c654bf74968" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::updateAgentViaPointsContainers</definition>
+        <argsstring>(const AgentPlanVelMap &amp;transformed_agent_plan_vel_map, double min_separation)</argsstring>
+        <name>updateAgentViaPointsContainers</name>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1a3b4752a48696bcc63570d62786fb9736" kindref="member">AgentPlanVelMap</ref> &amp;</type>
+          <declname>transformed_agent_plan_vel_map</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_separation</declname>
+        </param>
+        <briefdescription>
+<para>Update internal via-point container for human based on the current reference plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>All previous via-points will be cleared. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transformed_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(local) portion of the global plan (which is already transformed to the planning frame) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_separation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>minimum separation between two consecutive via-points </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="318" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1548" bodyend="1594"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a57f26e9bdc338d1631bf4a4fc2cf0e25" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::reconfigureCB</definition>
+        <argsstring>(HATebLocalPlannerReconfigureConfig &amp;config, uint32_t level)</argsstring>
+        <name>reconfigureCB</name>
+        <param>
+          <type>HATebLocalPlannerReconfigureConfig &amp;</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Callback for the dynamic_reconfigure node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback allows to modify parameters dynamically at runtime without restarting the node <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the dynamic reconfigure config </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dynamic reconfigure level </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="328" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a940d3d184a7e60978766234704bc7dd8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::customObstacleCB</definition>
+        <argsstring>(const costmap_converter::ObstacleArrayMsg::ConstPtr &amp;obst_msg)</argsstring>
+        <name>customObstacleCB</name>
+        <param>
+          <type>const costmap_converter::ObstacleArrayMsg::ConstPtr &amp;</type>
+          <declname>obst_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for custom obstacles that are not obtained from the costmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obst_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message containing a list of polygon shaped obstacles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="334" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1284" bodyend="1287"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af04a946de753b136e99de13911c65d04" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::InvHumansCB</definition>
+        <argsstring>(const costmap_converter::ObstacleArrayMsg::ConstPtr &amp;obst_msg)</argsstring>
+        <name>InvHumansCB</name>
+        <param>
+          <type>const costmap_converter::ObstacleArrayMsg::ConstPtr &amp;</type>
+          <declname>obst_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for invisible humans. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obst_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message containing a list of circular obstacles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="340" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1716" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a13197ba03dda06ab99edff237a5b81c7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::customViaPointsCB</definition>
+        <argsstring>(const nav_msgs::Path::ConstPtr &amp;via_points_msg)</argsstring>
+        <name>customViaPointsCB</name>
+        <param>
+          <type>const nav_msgs::Path::ConstPtr &amp;</type>
+          <declname>via_points_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for custom via-points. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>via_points_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the message containing a list of via-points </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="347" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1289" bodyend="1306"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aff5dd1cdb68d114a793400a0ee5a18e5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::transformGlobalPlan</definition>
+        <argsstring>(const tf2_ros::Buffer &amp;tf, const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;global_plan, const geometry_msgs::PoseStamped &amp;global_pose, const costmap_2d::Costmap2D &amp;costmap, const std::string &amp;global_frame, double max_plan_length, PlanCombined &amp;transformed_plan_combined, int *current_goal_idx=nullptr, geometry_msgs::TransformStamped *tf_plan_to_global=nullptr) const</argsstring>
+        <name>transformGlobalPlan</name>
+        <param>
+          <type>const tf2_ros::Buffer &amp;</type>
+          <declname>tf</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>global_plan</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>global_pose</declname>
+        </param>
+        <param>
+          <type>const costmap_2d::Costmap2D &amp;</type>
+          <declname>costmap</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>global_frame</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_plan_length</declname>
+        </param>
+        <param>
+          <type><ref refid="structhateb__local__planner_1_1PlanCombined" kindref="compound">PlanCombined</ref> &amp;</type>
+          <declname>transformed_plan_combined</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>current_goal_idx</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>geometry_msgs::TransformStamped *</type>
+          <declname>tf_plan_to_global</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Transforms the global plan of the robot from the planner frame to the local frame (modified). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The method replaces transformGlobalPlan as defined in base_local_planner/goal_functions.h such that the index of the current goal pose is returned as well as the transformation between the global plan and the planning frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a tf buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The plan to be transformed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>costmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the costmap being used so the window size for transforming can be computed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame to transform the plan to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_plan_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify maximum length (cumulative Euclidean distances) of the transformed plan [if &lt;=0: disabled; the length is also bounded by the local costmap size!] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">transformed_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Populated with the transformed plan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">current_goal_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the current (local) goal pose in the global plan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tf_plan_to_global</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation between the global plan and the global planning frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the global plan is transformed, <computeroutput>false</computeroutput> otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="394" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="961" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a738507bd7a6e2509311006a5d7636760" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::transformAgentPlan</definition>
+        <argsstring>(const tf2_ros::Buffer &amp;tf2, const geometry_msgs::PoseStamped &amp;robot_pose, const costmap_2d::Costmap2D &amp;costmap, const std::string &amp;global_frame, const std::vector&lt; geometry_msgs::PoseWithCovarianceStamped &gt; &amp;agent_plan, AgentPlanCombined &amp;transformed_agent_plan_combined, geometry_msgs::TwistStamped &amp;transformed_agent_twist, tf2::Stamped&lt; tf2::Transform &gt; *tf_agent_plan_to_global=nullptr) const</argsstring>
+        <name>transformAgentPlan</name>
+        <param>
+          <type>const tf2_ros::Buffer &amp;</type>
+          <declname>tf2</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>robot_pose</declname>
+        </param>
+        <param>
+          <type>const costmap_2d::Costmap2D &amp;</type>
+          <declname>costmap</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>global_frame</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseWithCovarianceStamped &gt; &amp;</type>
+          <declname>agent_plan</declname>
+        </param>
+        <param>
+          <type><ref refid="structhateb__local__planner_1_1AgentPlanCombined" kindref="compound">AgentPlanCombined</ref> &amp;</type>
+          <declname>transformed_agent_plan_combined</declname>
+        </param>
+        <param>
+          <type>geometry_msgs::TwistStamped &amp;</type>
+          <declname>transformed_agent_twist</declname>
+        </param>
+        <param>
+          <type>tf2::Stamped&lt; tf2::Transform &gt; *</type>
+          <declname>tf_agent_plan_to_global</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Transforms the agent plan from the tracker frame to the local frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a transform listener </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agent_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The plan to be transformed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>costmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the costmap being used so the window size for transforming can be computed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame to transform the plan to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">transformed_agent_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Populated with the transformed plan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tf_agent_plan_to_global</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation between the agent plan and the local planning frame </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the global plan is transformed, <computeroutput>false</computeroutput> otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="413" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1596" bodyend="1714"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af625487b054ff67e30d2d58f98b5e2fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::saturateVelocity</definition>
+        <argsstring>(double &amp;vx, double &amp;vy, double &amp;omega, double max_vel_x, double max_vel_y, double max_vel_theta, double max_vel_x_backwards)</argsstring>
+        <name>saturateVelocity</name>
+        <param>
+          <type>double &amp;</type>
+          <declname>vx</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>vy</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_vel_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_vel_y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_vel_theta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>max_vel_x_backwards</declname>
+        </param>
+        <briefdescription>
+<para>Saturate the translational and angular velocity to given limits. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The limit of the translational velocity for backwards driving can be changed independently. Do not choose max_vel_x_backwards &lt;= 0. If no backward driving is desired, change the optimization weight for penalizing backwards driving instead. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">vx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translational velocity that should be saturated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">vy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Strafing velocity which can be nonzero for holonomic robots </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">omega</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angular velocity that should be saturated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_vel_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum translational velocity for forward driving </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_vel_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum strafing velocity (for holonomic robots) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_vel_theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum (absolute) angular velocity </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_vel_x_backwards</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum translational velocity for backwards driving </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="456" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1141" bodyend="1183"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a948d2b803b94362cfb6804df45830baa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::configureBackupModes</definition>
+        <argsstring>(std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;transformed_plan, int &amp;goal_idx)</argsstring>
+        <name>configureBackupModes</name>
+        <param>
+          <type>std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>transformed_plan</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>goal_idx</declname>
+        </param>
+        <briefdescription>
+<para>Validate current parameter values of the footprint for optimization, obstacle distance and the costmap footprint. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method prints warnings if validation fails. <simplesect kind="remark"><para>Currently, we only validate the inscribed radius of the footprints </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>opt_inscribed_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inscribed radius of the RobotFootprintModel for optimization </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>costmap_inscribed_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inscribed radius of the footprint model used for the costmap </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_obst_dist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>desired distance to obstacles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="490" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1207" bodyend="1282"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5e09ee91583a6aebe92f780c7c06d174" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::resetAgentsPrediction</definition>
+        <argsstring>()</argsstring>
+        <name>resetAgentsPrediction</name>
+        <briefdescription>
+<para>Reset the prediction state for all tracked agents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method resets the prediction states for all agents being tracked by the planner. It calls the prediction reset service to clear any existing prediction data and prepare for new predictions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="502" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1721" bodyend="1731"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1cc94a8609efdca8201fabbc5096620b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::tickTreeAndUpdatePlans</definition>
+        <argsstring>(const geometry_msgs::PoseStamped &amp;robot_pose, std::vector&lt; AgentPlanCombined &gt; &amp;transformed_agent_plans, AgentPlanVelMap &amp;transformed_agent_plan_vel_map)</argsstring>
+        <name>tickTreeAndUpdatePlans</name>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>robot_pose</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structhateb__local__planner_1_1AgentPlanCombined" kindref="compound">AgentPlanCombined</ref> &gt; &amp;</type>
+          <declname>transformed_agent_plans</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehateb__local__planner_1a3b4752a48696bcc63570d62786fb9736" kindref="member">AgentPlanVelMap</ref> &amp;</type>
+          <declname>transformed_agent_plan_vel_map</declname>
+        </param>
+        <briefdescription>
+<para>Process the behavior tree and update agent plans. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method ticks the behavior tree to evaluate the current planning mode and updates the transformed plans for all agents in the environment. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>robot_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transformed_agent_plans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector containing the transformed plans for all agents </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transformed_agent_plan_vel_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map containing agent plans with their velocities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if plans were successfully updated, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="514" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="650" bodyend="781"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a11c201897dab9e56e678177f88947c6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::optimizeStandalone</definition>
+        <argsstring>(cohan_msgs::Optimize::Request &amp;req, cohan_msgs::Optimize::Response &amp;res)</argsstring>
+        <name>optimizeStandalone</name>
+        <param>
+          <type>cohan_msgs::Optimize::Request &amp;</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>cohan_msgs::Optimize::Response &amp;</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Perform standalone trajectory optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method provides a service interface for performing trajectory optimization independently of the main planning loop. Useful for analysis and debugging. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service request containing optimization parameters </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service response containing optimization results </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if optimization was successful, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="525" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1733" bodyend="1937"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a583df71bae1e34d805722bf88fd5606a" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::lookupTwist</definition>
+        <argsstring>(const std::string &amp;tracking_frame, const std::string &amp;observation_frame, const ros::Time &amp;time, const ros::Duration &amp;averaging_interval, geometry_msgs::Twist &amp;twist) const</argsstring>
+        <name>lookupTwist</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tracking_frame</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>observation_frame</declname>
+        </param>
+        <param>
+          <type>const ros::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const ros::Duration &amp;</type>
+          <declname>averaging_interval</declname>
+        </param>
+        <param>
+          <type>geometry_msgs::Twist &amp;</type>
+          <declname>twist</declname>
+        </param>
+        <briefdescription>
+<para>Look up twist information between frames with default reference point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Simplified version that uses the origin of tracking_frame as the reference point and observation_frame as the reference frame. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tracking_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame being tracked </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observation_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame from which we&apos;re observing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time at which to get the twist </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>averaging_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time interval over which to average the twist </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">twist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resulting twist message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="538" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="538" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a945d5de7dd25e8b8b7805a9f868a7f94" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::lookupTwist</definition>
+        <argsstring>(const std::string &amp;tracking_frame, const std::string &amp;observation_frame, const std::string &amp;reference_frame, const tf2::Vector3 &amp;reference_point, const std::string &amp;reference_point_frame, const ros::Time &amp;time, const ros::Duration &amp;averaging_interval, geometry_msgs::Twist &amp;twist) const</argsstring>
+        <name>lookupTwist</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>tracking_frame</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>observation_frame</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>reference_frame</declname>
+        </param>
+        <param>
+          <type>const tf2::Vector3 &amp;</type>
+          <declname>reference_point</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>reference_point_frame</declname>
+        </param>
+        <param>
+          <type>const ros::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const ros::Duration &amp;</type>
+          <declname>averaging_interval</declname>
+        </param>
+        <param>
+          <type>geometry_msgs::Twist &amp;</type>
+          <declname>twist</declname>
+        </param>
+        <briefdescription>
+<para>Look up twist information between frames with custom reference point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method computes the twist (linear and angular velocity) of one frame relative to another, allowing specification of a custom reference point and frame. It performs the necessary coordinate transformations and averages the motion over the specified time interval.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tracking_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame being tracked (whose motion we want to determine) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observation_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame from which we&apos;re observing </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame in which the twist should be expressed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point about which the twist should be computed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reference_point_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The frame in which the reference point is expressed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time at which to get the twist </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>averaging_interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time interval over which to average the twist </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">twist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resulting twist message containing linear and angular velocities </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="560" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="560" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac80c4ee7bb83924a862bdb234c84a05e" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::pruneGlobalPlan</definition>
+        <argsstring>(const tf2_ros::Buffer &amp;tf, const geometry_msgs::PoseStamped &amp;global_pose, std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;global_plan, double dist_behind_robot=1)</argsstring>
+        <name>pruneGlobalPlan</name>
+        <param>
+          <type>const tf2_ros::Buffer &amp;</type>
+          <declname>tf</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>global_pose</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>global_plan</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dist_behind_robot</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Prune global plan such that already passed poses are cut off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The pose of the robot is transformed into the frame of the global plan by taking the most recent tf transform. If no valid transformation can be found, the method returns <computeroutput>false</computeroutput>. The global plan is pruned until the distance to the robot is at least <computeroutput>dist_behind_robot</computeroutput>. If no pose within the specified treshold <computeroutput>dist_behind_robot</computeroutput> can be found, nothing will be pruned and the method returns <computeroutput>false</computeroutput>. <simplesect kind="remark"><para>Do not choose <computeroutput>dist_behind_robot</computeroutput> too small (not smaller the cellsize of the map), otherwise nothing will be pruned. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a tf buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>global_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">global_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The plan to be transformed </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dist_behind_robot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Distance behind the robot that should be kept [meters] </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the plan is pruned, <computeroutput>false</computeroutput> in case of a transform exception or if no pose cannot be found inside the threshold </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="368" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="922" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5a2a4045374c1aba2255fa07b3e5abf4" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::estimateLocalGoalOrientation</definition>
+        <argsstring>(const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;global_plan, const geometry_msgs::PoseStamped &amp;local_goal, int current_goal_idx, const geometry_msgs::TransformStamped &amp;tf_plan_to_global, int moving_average_length=3)</argsstring>
+        <name>estimateLocalGoalOrientation</name>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>global_plan</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>local_goal</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>current_goal_idx</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::TransformStamped &amp;</type>
+          <declname>tf_plan_to_global</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>moving_average_length</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+<para>Estimate the orientation of a pose from the global_plan that is treated as a local goal for the local planner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the current (local) goal point is not the final one (global) substitute the goal orientation by the angle of the direction vector between the local goal and the subsequent pose of the global plan. This is often helpful, if the global planner does not consider orientations. <linebreak/>
+ A moving average filter is utilized to smooth the orientation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>global_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global plan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>local_goal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current local goal </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current_goal_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the current (local) goal pose in the global plan </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">tf_plan_to_global</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation between the global plan and the global planning frame </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>moving_average_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of future poses of the global plan to be taken into account </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>orientation (yaw-angle) estimate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="436" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1098" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4e5c1761ece81c420c4aae8e6a0efc86" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::HATebLocalPlannerROS::convertTransRotVelToSteeringAngle</definition>
+        <argsstring>(double v, double omega, double wheelbase, double min_turning_radius=0)</argsstring>
+        <name>convertTransRotVelToSteeringAngle</name>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>wheelbase</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_turning_radius</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Convert translational and rotational velocities to a steering angle of a carlike robot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The conversion is based on the following equations:<itemizedlist>
+<listitem><para>The turning radius is defined by <formula id="28">$ R = v/omega $</formula></para>
+</listitem><listitem><para>For a car like robot withe a distance L between both axles, the relation is: <formula id="29">$ tan(\phi) = L/R $</formula></para>
+</listitem><listitem><para>phi denotes the steering angle. <simplesect kind="remark"><para>You might provide distances instead of velocities, since the temporal information is not required. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>translational velocity [m/s] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>omega</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rotational velocity [rad/s] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wheelbase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>distance between both axles (drive shaft and steering axle), the value might be negative for back_wheeled robots </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_turning_radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specify a lower bound on the turning radius </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Resulting steering angle in [rad] inbetween [-pi/2, pi/2] </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="476" column="17" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1185" bodyend="1195"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a055541eed2a1e96191eb65b1eadd60e0" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::validateFootprints</definition>
+        <argsstring>(double opt_inscribed_radius, double costmap_inscribed_radius, double min_obst_dist)</argsstring>
+        <name>validateFootprints</name>
+        <param>
+          <type>double</type>
+          <declname>opt_inscribed_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>costmap_inscribed_radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_obst_dist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="492" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="1197" bodyend="1205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1af5ea75cd71a48df704cbb9d82ee6b7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::HATebLocalPlannerROS::HATebLocalPlannerROS</definition>
+        <argsstring>()</argsstring>
+        <name>HATebLocalPlannerROS</name>
+        <briefdescription>
+<para>Default constructor of the teb plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="123" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="75" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1aeb34861d1418fa998815f3f790840fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::HATebLocalPlannerROS::~HATebLocalPlannerROS</definition>
+        <argsstring>() override</argsstring>
+        <name>~HATebLocalPlannerROS</name>
+        <briefdescription>
+<para>Destructor of the plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="128" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a903e7360e0c26496753deb1e4fd65893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::HATebLocalPlannerROS::HATebLocalPlannerROS</definition>
+        <argsstring>(std::string name, tf2_ros::Buffer *tf, costmap_2d::Costmap2DROS *costmap_ros)</argsstring>
+        <name>HATebLocalPlannerROS</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>tf2_ros::Buffer *</type>
+          <declname>tf</declname>
+        </param>
+        <param>
+          <type>costmap_2d::Costmap2DROS *</type>
+          <declname>costmap_ros</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="131" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="88" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0cdfa0aaa9631bb6ed7599cbe3a2c7d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebLocalPlannerROS::initialize</definition>
+        <argsstring>(std::string name, tf2_ros::Buffer *tf, costmap_2d::Costmap2DROS *costmap_ros) override</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>tf2_ros::Buffer *</type>
+          <declname>tf</declname>
+        </param>
+        <param>
+          <type>costmap_2d::Costmap2DROS *</type>
+          <declname>costmap_ros</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the teb plugin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a tf buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>costmap_ros</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cost map representing occupied and free space </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="139" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="111" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abe86bd90fb4e35af5c04a4ed3df22c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::setPlan</definition>
+        <argsstring>(const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;orig_global_plan) override</argsstring>
+        <name>setPlan</name>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>orig_global_plan</declname>
+        </param>
+        <briefdescription>
+<para>Set the plan that the teb local planner is following. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orig_global_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The plan to pass to the local planner </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the plan was updated successfully, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="146" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="265" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a842ffe1b1062e4e275a8b2a944521c8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::computeVelocityCommands</definition>
+        <argsstring>(geometry_msgs::Twist &amp;cmd_vel) override</argsstring>
+        <name>computeVelocityCommands</name>
+        <param>
+          <type>geometry_msgs::Twist &amp;</type>
+          <declname>cmd_vel</declname>
+        </param>
+        <briefdescription>
+<para>Given the current position, orientation, and velocity of the robot, compute velocity commands to send to the base. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cmd_vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be filled with the velocity command to be passed to the robot base </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a valid trajectory was found, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="155" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="289" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1afd88c69de3a652c4f807a984cb2c6f88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t hateb_local_planner::HATebLocalPlannerROS::computeVelocityCommands</definition>
+        <argsstring>(const geometry_msgs::PoseStamped &amp;pose, const geometry_msgs::TwistStamped &amp;velocity, geometry_msgs::TwistStamped &amp;cmd_vel, std::string &amp;message) override</argsstring>
+        <name>computeVelocityCommands</name>
+        <param>
+          <type>const geometry_msgs::PoseStamped &amp;</type>
+          <declname>pose</declname>
+        </param>
+        <param>
+          <type>const geometry_msgs::TwistStamped &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>geometry_msgs::TwistStamped &amp;</type>
+          <declname>cmd_vel</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Given the current position, orientation, and velocity of the robot, compute velocity commands to send to the base. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Extended version for MBF API </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current pose of the robot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>velocity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current velocity of the robot. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd_vel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Will be filled with the velocity command to be passed to the robot base. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional more detailed outcome as a string </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result code as described on ExePath action result: SUCCESS = 0 1..9 are reserved as plugin specific non-error results FAILURE = 100 Unspecified failure, only used for old, non-mfb_core based plugins CANCELED = 101 NO_VALID_CMD = 102 PAT_EXCEEDED = 103 COLLISION = 104 OSCILLATION = 105 ROBOT_STUCK = 106 MISSED_GOAL = 107 MISSED_PATH = 108 BLOCKED_PATH = 109 INVALID_PATH = 110 TF_ERROR = 111 NOT_INITIALIZED = 112 INVALID_PLUGIN = 113 INTERNAL_ERROR = 114 121..149 are reserved as plugin specific errors </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="185" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="299" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1add6df6e714d2f3edd95ff62896dc644a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::isGoalReached</definition>
+        <argsstring>() override</argsstring>
+        <name>isGoalReached</name>
+        <briefdescription>
+<para>Check if the goal pose has been achieved. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual check is performed in <ref refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a842ffe1b1062e4e275a8b2a944521c8a" kindref="member">computeVelocityCommands()</ref>. Only the status flag is checked here. <simplesect kind="return"><para>True if achieved, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="194" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp" bodystart="635" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1abdb78309293d859ac26cd7409e01e640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::isGoalReached</definition>
+        <argsstring>(double xy_tolerance, double yaw_tolerance) override</argsstring>
+        <name>isGoalReached</name>
+        <param>
+          <type>double</type>
+          <declname>xy_tolerance</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yaw_tolerance</declname>
+        </param>
+        <briefdescription>
+<para>Dummy version to satisfy MBF API. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="200" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5569e435250e5413d8a37f6c32418354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::HATebLocalPlannerROS::cancel</definition>
+        <argsstring>() override</argsstring>
+        <name>cancel</name>
+        <briefdescription>
+<para>Requests the planner to cancel, e.g. if it takes too much time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>New on MBF API </para>
+</simplesect>
+<simplesect kind="return"><para>True if a cancel has been successfully requested, false if not implemented. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="208" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implements both nav_core::BaseLocalPlanner and mbf_costmap_core::CostmapController abstract interfaces, so the <ref refid="namespacehateb__local__planner" kindref="compound">hateb_local_planner</ref> plugin can be used both in move_base and move_base_flex (MBF). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>nav_core::BaseLocalPlanner</label>
+      </node>
+      <node id="3">
+        <label>mbf_costmap_core::CostmapController</label>
+      </node>
+      <node id="1">
+        <label>hateb_local_planner::HATebLocalPlannerROS</label>
+        <link refid="classhateb__local__planner_1_1HATebLocalPlannerROS"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>nav_core::BaseLocalPlanner</label>
+      </node>
+      <node id="5">
+        <label>hateb_local_planner::ModeInfo</label>
+        <link refid="structhateb__local__planner_1_1ModeInfo"/>
+      </node>
+      <node id="13">
+        <label>hateb_local_planner::HATebConfig::Optimization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization"/>
+      </node>
+      <node id="8">
+        <label>hateb_local_planner::HATebConfig::GoalTolerance</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance"/>
+      </node>
+      <node id="3">
+        <label>mbf_costmap_core::CostmapController</label>
+      </node>
+      <node id="17">
+        <label>hateb_local_planner::PoseSE2</label>
+        <link refid="classhateb__local__planner_1_1PoseSE2"/>
+      </node>
+      <node id="9">
+        <label>hateb_local_planner::HATebConfig::Trajectory</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Trajectory"/>
+      </node>
+      <node id="4">
+        <label>hateb_local_planner::ModeSwitch</label>
+        <link refid="classhateb__local__planner_1_1ModeSwitch"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mode_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>hateb_local_planner::HATebConfig::Recovery</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Recovery"/>
+      </node>
+      <node id="14">
+        <label>hateb_local_planner::HATebConfig::Robot</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Robot"/>
+      </node>
+      <node id="11">
+        <label>hateb_local_planner::HATebConfig::Obstacles</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles"/>
+      </node>
+      <node id="1">
+        <label>hateb_local_planner::HATebLocalPlannerROS</label>
+        <link refid="classhateb__local__planner_1_1HATebLocalPlannerROS"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>bt_mode_switch_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>cfg_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>failure_detector_</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>robot_goal_</edgelabel>
+          <edgelabel>robot_pose_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>hateb_local_planner::HATebConfig</label>
+        <link refid="classhateb__local__planner_1_1HATebConfig"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>recovery</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>goal_tolerance</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>trajectory</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>hateb</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>obstacles</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>optim</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>robot</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>visualization</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>hateb_local_planner::FailureDetector</label>
+        <link refid="classhateb__local__planner_1_1FailureDetector"/>
+      </node>
+      <node id="15">
+        <label>hateb_local_planner::HATebConfig::Visualization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Visualization"/>
+      </node>
+      <node id="12">
+        <label>hateb_local_planner::HATebConfig::Agent</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Agent"/>
+      </node>
+      <node id="10">
+        <label>hateb_local_planner::HATebConfig::Hateb</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="118" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="118" bodyend="740"/>
+    <listofallmembers>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a795dbc5d0902c5d3a6ded2db409b0c5f" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>agents_ptr_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a04083651f701727d9dea81c17bde49f6" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>agents_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aaddb1eb8b78d019e156d8d2518331dff" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>agents_via_points_map_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b7fa07716eb5fa649c36b7fb2102aa" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>backoff_ptr_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a70b9c0f97dbddeb367a36de033974071" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>bt_mode_switch_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5569e435250e5413d8a37f6c32418354" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>cancel</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af8b3fe3a4e9f4b79f8b0f9a5a5281909" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>cfg_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a842ffe1b1062e4e275a8b2a944521c8a" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>computeVelocityCommands</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1afd88c69de3a652c4f807a984cb2c6f88" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>computeVelocityCommands</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7d042bd9bb568a4f1b0292b42630e7e2" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>config_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a948d2b803b94362cfb6804df45830baa" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>configureBackupModes</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4e5c1761ece81c420c4aae8e6a0efc86" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>convertTransRotVelToSteeringAngle</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab11c7fbdc3a2a2bc6f551b1f227e2350" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>costmap_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a243e19c464d27d9018dc90abe8719f20" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>costmap_converter_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8051145f1962a18587fc6ebbc7d7ed07" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>costmap_converter_loader_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac66184ecc8cc78aed8ad6c1c8e7f005e" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>costmap_model_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a685b9f952f3d2c3abaa8d224fed66d71" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>costmap_ros_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac86ddda04902a4cb1266f9007b1b2891" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>custom_obst_mutex_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5cc5b0b32a2fbaba353bb52684cc072e" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>custom_obst_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae1f0398a3ebd77aa2ba9380ad8584cf6" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>custom_obstacle_msg_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af15e750ec52508058d6e3cb2d3f63ce4" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>custom_via_points_active_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a940d3d184a7e60978766234704bc7dd8" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>customObstacleCB</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a13197ba03dda06ab99edff237a5b81c7" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>customViaPointsCB</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aef0278fb51cc7e12dc86b1840b2303c2" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>dynamic_recfg_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5a2a4045374c1aba2255fa07b3e5abf4" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>estimateLocalGoalOrientation</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa16d9382646d249b407bbd9b1f067ff8" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>failure_detector_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad097c43a79ea4a4cc676841c29aea023" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>footprint_spec_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a87d8281386989297ed0a6b98899036d5" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>getNumberFromXMLRPC</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a208523a008c0141f7df781a62199b4bd" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>getRobotFootprintFromParamServer</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0c42baabc4ce2add59a85972bcf6da6c" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>global_frame_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af2e7a28cc8e2b8bcb57e1640cab0c7db" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>global_plan_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a01398cc9c30a6df635fbb12ae2ac5c5b" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>goal_ctrl_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1b2e907af6becf9c4036d9fbd11351fc" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>goal_reached_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af5ea75cd71a48df704cbb9d82ee6b7b5" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>HATebLocalPlannerROS</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a903e7360e0c26496753deb1e4fd65893" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>HATebLocalPlannerROS</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a640c25b4dd9514a7e2b5027dc4a9fb0b" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>horizon_reduced_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1acb6eb8281c179f96708b0cad2c89c497" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>horizon_reduced_stamp_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0cdfa0aaa9631bb6ed7599cbe3a2c7d2" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>initialize</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eb20495fcd0c009b974814874427660" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>initialized_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a986abfdb3800b34d58549b1965206797" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>inv_human_mutex_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4c37a602b58aa5b6a643350a61f42ddb" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>inv_humans_msg_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a56052cb87a706dbbbe14a5c55e4b3e3a" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>inv_humans_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af04a946de753b136e99de13911c65d04" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>InvHumansCB</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aa5595efc9f6069d292e6a3018a512873" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>invisible_humans_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1add6df6e714d2f3edd95ff62896dc644a" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>isGoalReached</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1abdb78309293d859ac26cd7409e01e640" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>isGoalReached</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab0d7ea72acd393476af28c7d6578a279" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>isMode_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb61979eca7c7adcdc6481feaa440e2d" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>last_call_time_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af00c9f185c72f544e52de9da7c3720a1" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>last_cmd_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a12c2b3bd2bbee5542a67543d09712e99" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>last_omega_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a2a13bd8246dde003837701ab0dd947ab" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>last_omega_sign_change_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5c019da9fe43249afdc80934c565b57d" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>last_preferred_rotdir_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4ef082e8687b4185642db2f172ea58d9" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>log_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad79e05de056a543b37e36b1422b663aa" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>logs_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a583df71bae1e34d805722bf88fd5606a" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>lookupTwist</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a945d5de7dd25e8b8b7805a9f868a7f94" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>lookupTwist</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1e6e6be9d65fadf15bb0d98e5ab2abe8" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>makeFootprintFromXMLRPC</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3d1224e1da3f1809e5a1be118978c497" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>no_infeasible_plans_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6b9c894524e2b6fb8e5c30b8ccf9d0be" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>ns_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae4abd911038dde8b92f2ba979ff29d7e" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>obstacles_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a188ac69a3f41da13c77bc67cb6c794ee" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>odom_helper_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1afe8d486f067e88419337bf0396de1b6e" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>optimize_server_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a11c201897dab9e56e678177f88947c6c" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>optimizeStandalone</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a4eab6d86d85a91c28abd4bd600a0531d" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>planner_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a859a50b7da4051f1f2256395a3bf4823" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>predict_agents_client_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a8acd889ddadc37ecac4ddb02f83f9355" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>predict_srv_name_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ac80c4ee7bb83924a862bdb234c84a05e" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>pruneGlobalPlan</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a0b5a3464f3869fc17c5a754b4f92cfef" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>publish_makers_srv_name_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a27bd5955f3e1466b56f98ffab4bcb473" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>publish_predicted_markers_client_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a57f26e9bdc338d1631bf4a4fc2cf0e25" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>reconfigureCB</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a67dca5ec62e41b06c6cdf50dcc26cddb" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>reset_agents_prediction_client_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a03f84af3035ca6aa4d7a1121ba5c84ed" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>reset_prediction_srv_name_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a7b2c534465cf8fba9530525f726529cb" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>reset_states_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a5e09ee91583a6aebe92f780c7c06d174" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>resetAgentsPrediction</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a182a331e5e7a9b3ad97555fb85e2a3c7" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_base_frame_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1abb02aec268cebcb8bbe201a267950452" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_circumscribed_radius_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ad35d49280e04b02533fd3a1f1a48bf54" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_goal_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a782b56423cfb19cde44c9a2df05688c4" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_inscribed_radius_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ae8b339c3b5bb7df2a7f24fecd8a85aee" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_pose_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1adf62da8dab5e0e4ae6aec98c9f64064b" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>robot_vel_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1af625487b054ff67e30d2d58f98b5e2fd" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>saturateVelocity</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1abe86bd90fb4e35af5c04a4ed3df22c04" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>setPlan</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a40b22c137342ae3a262a5a08196d1dfe" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>tf_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6313427bcd8d46599e3c40e27ec338e0" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>tfPoseToEigenVector2dTransRot</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1cc94a8609efdca8201fabbc5096620b" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>tickTreeAndUpdatePlans</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1abaaec55d37760f058eb32eb632fc7846" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>time_last_infeasible_plan_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a3c966b563a513924d6c583c7ab8807b9" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>time_last_oscillation_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a738507bd7a6e2509311006a5d7636760" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>transformAgentPlan</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aff5dd1cdb68d114a793400a0ee5a18e5" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>transformGlobalPlan</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ab5aa6d2f1e7a0e4b5fd16c654bf74968" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateAgentViaPointsContainers</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a44a2ced17c26d3dbf0c824e12cc0f40e" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateObstacleContainerWithCostmap</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a541c8a6790fa233962f3dcfe96a5ac43" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateObstacleContainerWithCostmapConverter</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1ada6959cf67ea120825f03e9924feab1b" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateObstacleContainerWithCustomObstacles</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a28dced56bae5ba6aac266f648782269b" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateObstacleContainerWithInvHumans</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a6168dad3eec679c91bcb5f806e4f22f1" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>updateViaPointsContainer</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a055541eed2a1e96191eb65b1eadd60e0" prot="protected" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>validateFootprints</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a33199da4bd6e348e932981752324d4e3" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>via_point_mutex_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1afaa10504e4e805453a08cfe5a4a7373a" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>via_points_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a354a613bbf4133d8b73a4986990d4677" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>via_points_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1a1884f3dc2db14cf6cddfd4693f50e565" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>visualization_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebLocalPlannerROS_1aeb34861d1418fa998815f3f790840fd1" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebLocalPlannerROS</scope><name>~HATebLocalPlannerROS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

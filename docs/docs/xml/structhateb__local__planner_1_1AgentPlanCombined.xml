@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structhateb__local__planner_1_1AgentPlanCombined" kind="struct" language="C++" prot="public">
+    <compoundname>hateb_local_planner::AgentPlanCombined</compoundname>
+    <includes refid="visualization_8h" local="no">visualization.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhateb__local__planner_1_1AgentPlanCombined_1ae58baf3c2241d7f55db0f078cec8f143" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t hateb_local_planner::AgentPlanCombined::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="101" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhateb__local__planner_1_1AgentPlanCombined_1affcbadf250b59086ab997c924d5ae606" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::AgentPlanCombined::plan_before</definition>
+        <argsstring></argsstring>
+        <name>plan_before</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="102" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhateb__local__planner_1_1AgentPlanCombined_1ac23fd1eb30ac5cbeaafab8d4e87ca9c5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::AgentPlanCombined::plan_to_optimize</definition>
+        <argsstring></argsstring>
+        <name>plan_to_optimize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="103" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhateb__local__planner_1_1AgentPlanCombined_1a71b8811efb727a44fb4059c81b3b2078" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::AgentPlanCombined::plan_after</definition>
+        <argsstring></argsstring>
+        <name>plan_after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="104" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="100" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="100" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structhateb__local__planner_1_1AgentPlanCombined_1ae58baf3c2241d7f55db0f078cec8f143" prot="public" virt="non-virtual"><scope>hateb_local_planner::AgentPlanCombined</scope><name>id</name></member>
+      <member refid="structhateb__local__planner_1_1AgentPlanCombined_1a71b8811efb727a44fb4059c81b3b2078" prot="public" virt="non-virtual"><scope>hateb_local_planner::AgentPlanCombined</scope><name>plan_after</name></member>
+      <member refid="structhateb__local__planner_1_1AgentPlanCombined_1affcbadf250b59086ab997c924d5ae606" prot="public" virt="non-virtual"><scope>hateb_local_planner::AgentPlanCombined</scope><name>plan_before</name></member>
+      <member refid="structhateb__local__planner_1_1AgentPlanCombined_1ac23fd1eb30ac5cbeaafab8d4e87ca9c5" prot="public" virt="non-virtual"><scope>hateb_local_planner::AgentPlanCombined</scope><name>plan_to_optimize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

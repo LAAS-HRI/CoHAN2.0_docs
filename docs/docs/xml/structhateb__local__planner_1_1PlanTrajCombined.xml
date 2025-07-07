@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structhateb__local__planner_1_1PlanTrajCombined" kind="struct" language="C++" prot="public">
+    <compoundname>hateb_local_planner::PlanTrajCombined</compoundname>
+    <includes refid="visualization_8h" local="no">visualization.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhateb__local__planner_1_1PlanTrajCombined_1adc433f7333aeedf2904fec7a622a3c37" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::PlanTrajCombined::plan_before</definition>
+        <argsstring></argsstring>
+        <name>plan_before</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="82" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhateb__local__planner_1_1PlanTrajCombined_1a2778c75ef1c4ad35596553ce2915a4aa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; cohan_msgs::TrajectoryPoint &gt;</type>
+        <definition>std::vector&lt;cohan_msgs::TrajectoryPoint&gt; hateb_local_planner::PlanTrajCombined::optimized_trajectory</definition>
+        <argsstring></argsstring>
+        <name>optimized_trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="83" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhateb__local__planner_1_1PlanTrajCombined_1a756b95856dfbe4bd70a965f4e7d659f5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; geometry_msgs::PoseStamped &gt;</type>
+        <definition>std::vector&lt;geometry_msgs::PoseStamped&gt; hateb_local_planner::PlanTrajCombined::plan_after</definition>
+        <argsstring></argsstring>
+        <name>plan_after</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="84" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="81" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="81" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structhateb__local__planner_1_1PlanTrajCombined_1a2778c75ef1c4ad35596553ce2915a4aa" prot="public" virt="non-virtual"><scope>hateb_local_planner::PlanTrajCombined</scope><name>optimized_trajectory</name></member>
+      <member refid="structhateb__local__planner_1_1PlanTrajCombined_1a756b95856dfbe4bd70a965f4e7d659f5" prot="public" virt="non-virtual"><scope>hateb_local_planner::PlanTrajCombined</scope><name>plan_after</name></member>
+      <member refid="structhateb__local__planner_1_1PlanTrajCombined_1adc433f7333aeedf2904fec7a622a3c37" prot="public" virt="non-virtual"><scope>hateb_local_planner::PlanTrajCombined</scope><name>plan_before</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

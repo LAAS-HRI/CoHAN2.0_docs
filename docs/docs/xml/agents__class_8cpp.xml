@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="agents__class_8cpp" kind="file" language="C++">
+    <compoundname>agents_class.cpp</compoundname>
+    <includes refid="agents__class_8h" local="no">agent_path_prediction/agents_class.h</includes>
+    <includes local="no">numeric</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>cohan_msgs/AgentPathArray.h</label>
+      </node>
+      <node id="15">
+        <label>cohan_msgs/TrackedSegmentType.h</label>
+      </node>
+      <node id="11">
+        <label>cohan_msgs/AgentTrajectory.h</label>
+      </node>
+      <node id="14">
+        <label>cohan_msgs/TrackedAgents.h</label>
+      </node>
+      <node id="18">
+        <label>numeric</label>
+      </node>
+      <node id="16">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>tf2/utils.h</label>
+      </node>
+      <node id="4">
+        <label>tf2/convert.h</label>
+      </node>
+      <node id="8">
+        <label>costmap_2d/costmap_2d_ros.h</label>
+      </node>
+      <node id="3">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="9">
+        <label>agent_path_prediction/AgentsInfo.h</label>
+      </node>
+      <node id="13">
+        <label>cohan_msgs/StateArray.h</label>
+      </node>
+      <node id="7">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="6">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="2">
+        <label>agent_path_prediction/agents_class.h</label>
+        <link refid="agents__class_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cohan_msgs/AgentTrajectoryArray.h</label>
+      </node>
+      <node id="1">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp</label>
+        <link refid="agents__class_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceagents">agents</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="agents__class_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" prot="public" static="no">
+        <name>AGENTS_SUB_TOPIC</name>
+        <initializer>&quot;/tracked_agents&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="6" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1acbe55d0dbd24b495220a3325ad2e545c" prot="public" static="no">
+        <name>WINDOW_MOVING_AVG</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="7" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1aa0d2168cfd9daf9beddd359f82c58c00" prot="public" static="no">
+        <name>HUM_RADIUS</name>
+        <initializer>0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="8" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1ab69dd643c61be536f4dc344cf7da0be6" prot="public" static="no">
+        <name>ROBOT_RADIUS</name>
+        <initializer>0.35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="9" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1a529958ebd0897c92bb0303e7d2acaf02" prot="public" static="no">
+        <name>PLANNING_RADIUS</name>
+        <initializer>10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="10" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1a863d0922484920c15a9a4a12fad883bf" prot="public" static="no">
+        <name>BASE_LINK_FRAME</name>
+        <initializer>&quot;base_link&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="11" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" prot="public" static="no">
+        <name>MAP_FRAME</name>
+        <initializer>&quot;map&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="12" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="agents__class_8cpp_1af254bb642d35915f7d834ab136458263" prot="public" static="no">
+        <name>ODOM_FRAME</name>
+        <initializer>&quot;odom&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" line="13" column="9" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="agents__class_8h" kindref="compound">agent_path_prediction/agents_class.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configuarable<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AGENTS_SUB_TOPIC<sp/>&quot;/tracked_agents&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WINDOW_MOVING_AVG<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HUM_RADIUS<sp/>0.3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROBOT_RADIUS<sp/>0.35</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLANNING_RADIUS<sp/>10.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BASE_LINK_FRAME<sp/>&quot;base_link&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAP_FRAME<sp/>&quot;map&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ODOM_FRAME<sp/>&quot;odom&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceagents" kindref="compound">agents</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="classagents_1_1Agents_1ac2aee2f5846eaa0a8eaeb9a4c4da00ef" kindref="member">Agents::Agents</ref>()<sp/>:<sp/>initialized_(false)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Throw<sp/>error<sp/>on<sp/>wrong<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>ROS_ERROR(</highlight><highlight class="stringliteral">&quot;The<sp/>Agents<sp/>class<sp/>needs<sp/>tf2_ros::Buffer*<sp/>and<sp/>costmap_2d::Costmap2DROS<sp/>*,<sp/>and<sp/>are<sp/>not<sp/>passed!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">Agents::Agents(tf2_ros::Buffer<sp/>*tf,<sp/>costmap_2d::Costmap2DROS<sp/>*costmap_ros)<sp/>:<sp/>initialized_(false)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>the<sp/>initialize<sp/>class<sp/>to<sp/>start<sp/>things</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!initialized_)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::NodeHandle<sp/>private_nh(</highlight><highlight class="stringliteral">&quot;~&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>params</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>loadRosParamFromNodeHandle(private_nh);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>the<sp/>publisher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>agents_info_pub_<sp/>=<sp/>private_nh.advertise&lt;agent_path_prediction::AgentsInfo&gt;(</highlight><highlight class="stringliteral">&quot;agentsInfo&quot;</highlight><highlight class="normal">,<sp/>10);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>remap<sp/>subscriber<sp/>properly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ns_.empty())<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tracked_agents_sub_topic_<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>ns_<sp/>+<sp/>tracked_agents_sub_topic_;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Subscribers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>tracked_agents_sub_<sp/>=<sp/>private_nh.subscribe(tracked_agents_sub_topic_,<sp/>1,<sp/>&amp;Agents::trackedAgentsCB,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>tf_<sp/>=<sp/>tf;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>costmap_ros_<sp/>=<sp/>costmap_ros;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>costmap_<sp/>=<sp/>costmap_ros_-&gt;getCostmap();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>stuck_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>stuck_agent_id_<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>initialized_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Agents::trackedAgentsCB(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>cohan_msgs::TrackedAgents<sp/>&amp;tracked_agents)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>tracked_agents_<sp/>=<sp/>tracked_agents;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Msg<sp/>for<sp/>publishing<sp/>agents<sp/>info</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>agent_path_prediction::AgentsInfo<sp/>agents_info;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>geometry_msgs::TransformStamped<sp/>transform_stamped;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>base_link<sp/>=<sp/>base_link_frame_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ns_.empty())<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>base_link<sp/>=<sp/>ns_<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal"><sp/>+<sp/>base_link_frame_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>robot<sp/>pose</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>transform_stamped<sp/>=<sp/>tf_-&gt;lookupTransform(map_frame_,<sp/>base_link,<sp/>ros::Time(0),<sp/>ros::Duration(0.5));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>xpos<sp/>=<sp/>transform_stamped.transform.translation.x;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ypos<sp/>=<sp/>transform_stamped.transform.translation.y;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ryaw<sp/>=<sp/>tf2::getYaw(transform_stamped.transform.rotation);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>Eigen::Vector2d<sp/>robot_vec(std::cos(ryaw),<sp/>std::sin(ryaw));</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>geometry_msgs::Pose2D<sp/>robot_pose;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>robot_pose.x<sp/>=<sp/>xpos;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>robot_pose.y<sp/>=<sp/>ypos;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>robot_pose.theta<sp/>=<sp/>ryaw;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>robot<sp/>pose<sp/>to<sp/>the<sp/>info<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>agents_info.robot_pose<sp/>=<sp/>robot_pose;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>agent_vels_.clear();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>visible_agent_ids_.clear();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>agent_still_.clear();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>std::map&lt;double,<sp/>int&gt;<sp/>agent_dist_id_map;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>std::map&lt;int,<sp/>double&gt;<sp/>agents_radii;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>std::map&lt;int,<sp/>agent_path_prediction::HumanInfo&gt;<sp/>humans_info;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;agent<sp/>:<sp/>tracked_agents_.agents)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>agent_path_prediction::HumanInfo<sp/>human_info;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>h_id<sp/>=<sp/>agent.track_id;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>human_info.id<sp/>=<sp/>h_id;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>human_info.name<sp/>=<sp/>agent.name;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agent.type<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agents_radii[h_id]<sp/>=<sp/>human_radius_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agents_radii[h_id]<sp/>=<sp/>robot_radius_;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agents_states_.size()<sp/>&lt;<sp/>tracked_agents_.agents.size())<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>agent<sp/>id<sp/>and<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>human_info.state<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738faac32cdc8f35065d7f69c8d5bc6d85e58" kindref="member">agents::AgentState::NO_STATE</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>class<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agents_states_.find(h_id)<sp/>==<sp/>agents_states_.end())<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_states_[h_id]<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738faac32cdc8f35065d7f69c8d5bc6d85e58" kindref="member">agents::AgentState::NO_STATE</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>h_vels;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_vels_[h_id]<sp/>=<sp/>h_vels;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_nominal_vels_[h_id]<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>geometry_msgs::Pose<sp/>h_pose;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agents_[h_id]<sp/>=<sp/>h_pose;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>h_xpos,<sp/>h_ypos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;segment<sp/>:<sp/>agent.segments)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(segment.type<sp/>==<sp/><ref refid="agents__class_8h_1a191e5a424a0b478c977515d5694610a8" kindref="member">DEFAULT_AGENT_SEGMENT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_[h_id]<sp/>=<sp/>segment.pose.pose;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_xpos<sp/>=<sp/>segment.pose.pose.position.x;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_ypos<sp/>=<sp/>segment.pose.pose.position.y;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Eigen::Vector2d<sp/>rh_vec(h_xpos<sp/>-<sp/>xpos,<sp/>h_ypos<sp/>-<sp/>ypos);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hr_dist<sp/>=<sp/>rh_vec.norm();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>the<sp/>agent<sp/>distance<sp/>to<sp/>robot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>human_info.dist<sp/>=<sp/>hr_dist;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hr_dist<sp/>&lt;<sp/>planning_radius_<sp/>&amp;&amp;<sp/>rh_vec.dot(robot_vec)<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>dist<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_dist_id_map[hr_dist]<sp/>=<sp/>h_id;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_vels_[agent.track_id].push_back(std::hypot(segment.twist.twist.linear.x,<sp/>segment.twist.twist.linear.y));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Human<sp/>state<sp/>update<sp/>--&gt;<sp/>MOVING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((abs(segment.twist.twist.linear.x)<sp/>+<sp/>abs(segment.twist.twist.linear.y)<sp/>+<sp/>abs(segment.twist.twist.angular.z))<sp/>&gt;<sp/><ref refid="agents__class_8h_1afcae8c2a5021b396c0a659ee6dea0466" kindref="member">CALC_EPS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agents_states_.find(h_id)<sp/>!=<sp/>agents_states_.end()<sp/>&amp;&amp;<sp/>agents_states_[h_id]<sp/>!=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa299c9f49213ec1c9d11faf792bf12c19" kindref="member">agents::AgentState::BLOCKED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_states_[h_id]<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" kindref="member">agents::AgentState::MOVING</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>state<sp/>info<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>human_info.state<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" kindref="member">agents::AgentState::MOVING</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>agent_vels_[h_id].size();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>average_vel<sp/>=<sp/>0.0F;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>average_vel<sp/>=<sp/>accumulate(agent_vels_[h_id].begin(),<sp/>agent_vels_[h_id].end(),<sp/>0.0)<sp/>/<sp/>n;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_nominal_vels_[h_id]<sp/>=<sp/>average_vel;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>==<sp/>window_moving_avg_)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_vels_[h_id].erase(agent_vels_[h_id].begin());</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>human<sp/>is<sp/>still<sp/>or<sp/>halted</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prev_agents_.find(h_id)<sp/>!=<sp/>prev_agents_.end())<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>human_move_dist<sp/>=<sp/>std::hypot(h_xpos<sp/>-<sp/>prev_agents_[h_id].position.x,<sp/>h_ypos<sp/>-<sp/>prev_agents_[h_id].position.y);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(human_move_dist<sp/>&lt;<sp/><ref refid="agents__class_8h_1afcae8c2a5021b396c0a659ee6dea0466" kindref="member">CALC_EPS</ref><sp/>&amp;&amp;<sp/>agents_states_.find(h_id)<sp/>!=<sp/>agents_states_.end())<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_still_[h_id]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Human<sp/>state<sp/>update<sp/>--&gt;<sp/>STOPPED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agents_states_[h_id]<sp/>==<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa4b8f376def400d5a5dca2f99e3d2c9bc" kindref="member">agents::AgentState::STOPPED</ref><sp/>||<sp/>agents_states_[h_id]<sp/>==<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" kindref="member">agents::AgentState::MOVING</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>state<sp/>info<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_states_[h_id]<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa4b8f376def400d5a5dca2f99e3d2c9bc" kindref="member">agents::AgentState::STOPPED</ref>;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>human_info.state<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa4b8f376def400d5a5dca2f99e3d2c9bc" kindref="member">agents::AgentState::STOPPED</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_still_[h_id]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_states_[h_id]<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" kindref="member">agents::AgentState::MOVING</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>human_info.state<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" kindref="member">agents::AgentState::MOVING</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>human<sp/>is<sp/>stuck<sp/>and<sp/>update<sp/>the<sp/>angle<sp/>for<sp/>backoff<sp/>recovery</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(h_id<sp/>==<sp/>stuck_agent_id_)<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stuck_<sp/>=<sp/>hr_dist<sp/>&lt;=<sp/>planning_radius_<sp/>&amp;&amp;<sp/>rh_vec.dot(robot_vec)<sp/>&gt;=<sp/>0;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>agents_info.humans.push_back(human_info);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>humans_info[h_id]<sp/>=<sp/>human_info;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>prev_agents_<sp/>=<sp/>agents_;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>ROS_INFO_ONCE(</highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>agents_agents_info,<sp/>%d<sp/>&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)agents_.size());</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>distance<sp/>sorted<sp/>list<sp/>of<sp/>visible<sp/>ids</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>visible_agent_ids_.clear();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;dist_id_map<sp/>:<sp/>agent_dist_id_map)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>visible_agent_ids_.push_back(dist_id_map.second);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>sorted_ids;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(use_simulated_fov_)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/****************<sp/>for<sp/>a<sp/>centralised<sp/>perception<sp/>***************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>sorted_ids<sp/>=<sp/>filterVisibleAgents(agents_,<sp/>visible_agent_ids_,<sp/>agents_radii,<sp/>robot_pose);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>sorted_ids<sp/>=<sp/>visible_agent_ids_;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>agents_info.visible<sp/>=<sp/>sorted_ids;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;f_id<sp/>:<sp/>sorted_ids)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agents_states_[f_id]<sp/>==<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738faac32cdc8f35065d7f69c8d5bc6d85e58" kindref="member">agents::AgentState::NO_STATE</ref><sp/>||<sp/>agents_states_[f_id]<sp/>==<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa967f2038bf86adadd450d66d9c972bb4" kindref="member">agents::AgentState::STATIC</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agents_states_[f_id]<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa967f2038bf86adadd450d66d9c972bb4" kindref="member">agents::AgentState::STATIC</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>humans_info[f_id].state<sp/>=<sp/><ref refid="namespaceagents_1a11caf48a935369da9fb37768e769738fa967f2038bf86adadd450d66d9c972bb4" kindref="member">agents::AgentState::STATIC</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agent_still_.find(f_id)<sp/>!=<sp/>agent_still_.end())<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(agent_still_[f_id])<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_info.still.push_back(f_id);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agents_info.moving.push_back(f_id);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>agents_info.humans.push_back(humans_info[f_id]);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Safety<sp/>step<sp/>for<sp/>agents<sp/>if<sp/>agent_layers<sp/>is<sp/>not<sp/>added<sp/>in<sp/>local<sp/>costmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Adds<sp/>a<sp/>temporary<sp/>costmap<sp/>around<sp/>the<sp/>agents<sp/>to<sp/>let<sp/>planner<sp/>plan<sp/>safe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>trajectories</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(planning_mode_<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>sorted_ids.size()<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>agents_.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinvisible__humans__detection_1ac0e57bfc66ce6a431f5c889b6b1bd52c" kindref="member">geometry_msgs::Point</ref><sp/>v1;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinvisible__humans__detection_1ac0e57bfc66ce6a431f5c889b6b1bd52c" kindref="member">geometry_msgs::Point</ref><sp/>v2;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinvisible__humans__detection_1ac0e57bfc66ce6a431f5c889b6b1bd52c" kindref="member">geometry_msgs::Point</ref><sp/>v3;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceinvisible__humans__detection_1ac0e57bfc66ce6a431f5c889b6b1bd52c" kindref="member">geometry_msgs::Point</ref><sp/>v4;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>sorted_ids[i];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>agent_radius<sp/>=<sp/>agents_radii[idx];</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>v1.x<sp/>=<sp/>agents_[idx].position.x<sp/>-<sp/>agent_radius,<sp/>v1.y<sp/>=<sp/>agents_[idx].position.y<sp/>-<sp/>agent_radius,<sp/>v1.z<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>v2.x<sp/>=<sp/>agents_[idx].position.x<sp/>-<sp/>agent_radius,<sp/>v2.y<sp/>=<sp/>agents_[idx].position.y<sp/>+<sp/>agent_radius,<sp/>v2.z<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>v3.x<sp/>=<sp/>agents_[idx].position.x<sp/>+<sp/>agent_radius,<sp/>v3.y<sp/>=<sp/>agents_[idx].position.y<sp/>+<sp/>agent_radius,<sp/>v3.z<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>v4.x<sp/>=<sp/>agents_[idx].position.x<sp/>+<sp/>agent_radius,<sp/>v4.y<sp/>=<sp/>agents_[idx].position.y<sp/>-<sp/>agent_radius,<sp/>v4.z<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;geometry_msgs::Point&gt;<sp/>agent_pos_costmap;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>transform_stamped<sp/>=<sp/>tf_-&gt;lookupTransform(odom_frame_,<sp/>map_frame_,<sp/>ros::Time(0),<sp/>ros::Duration(0.5));</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tf2::doTransform(v1,<sp/>v1,<sp/>transform_stamped);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tf2::doTransform(v2,<sp/>v2,<sp/>transform_stamped);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tf2::doTransform(v3,<sp/>v3,<sp/>transform_stamped);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tf2::doTransform(v4,<sp/>v4,<sp/>transform_stamped);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_pos_costmap.push_back(v1);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_pos_costmap.push_back(v2);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_pos_costmap.push_back(v3);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_pos_costmap.push_back(v4);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>set_success<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>set_success<sp/>=<sp/>costmap_-&gt;setConvexPolygonCost(agent_pos_costmap,<sp/><ref refid="agents__class_8h_1afe3f51fbc354670e6c61f8e6f9c9b949" kindref="member">COST_OBS</ref>);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>agents_info_pub_.publish(agents_info);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">std::vector&lt;int&gt;<sp/>Agents::filterVisibleAgents(std::map&lt;int,<sp/>geometry_msgs::Pose&gt;<sp/>tr_agents,<sp/>std::vector&lt;int&gt;<sp/>sorted_ids,<sp/>std::map&lt;int,<sp/>double&gt;<sp/>agents_radii,<sp/>geometry_msgs::Pose2D<sp/>robot_pose)<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>filtered_ids;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>xpos<sp/>=<sp/>robot_pose.x;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ypos<sp/>=<sp/>robot_pose.y;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!stuck_)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="agents__class_8h_1aee924ef71b44dac1501d13e25ac2743f" kindref="member">MAX_PTS</ref>;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sorted_ids.size()<sp/>&gt;=<sp/><ref refid="agents__class_8h_1ae24ae7fb28a32df195a4ae13f734c26c" kindref="member">AGENT_NUM_TH</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/><ref refid="agents__class_8h_1ad575de5af7bcfae345fddc8d769e560a" kindref="member">MIN_PTS</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;it<sp/>:<sp/>sorted_ids)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ray<sp/>Tracing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tm_x<sp/>=<sp/>tr_agents[it].position.x;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tm_y<sp/>=<sp/>tr_agents[it].position.y;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>difference<sp/>between<sp/>poses<sp/>along<sp/>x<sp/>and<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dx<sp/>=<sp/>(tm_x<sp/>-<sp/>xpos);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dy<sp/>=<sp/>(tm_y<sp/>-<sp/>ypos);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>step<sp/>size<sp/>in<sp/>each<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dx<sp/>=<sp/>dx<sp/>/<sp/>n;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dy<sp/>=<sp/>dy<sp/>/<sp/>n;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Checking<sp/>using<sp/>raytracing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cell_collision<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>xpos;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>ypos;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>n;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mx;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>my;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>check_rad<sp/>=<sp/>agents_radii[it]<sp/>+<sp/>0.1<sp/>+<sp/>inflation_radius_;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sqrt(((x<sp/>-<sp/>tm_x)<sp/>*<sp/>(x<sp/>-<sp/>tm_x))<sp/>+<sp/>((y<sp/>-<sp/>tm_y)<sp/>*<sp/>(y<sp/>-<sp/>tm_y)))<sp/>&lt;=<sp/>check_rad)<sp/>{</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(costmap_-&gt;worldToMap(x,<sp/>y,<sp/>mx,<sp/>my))<sp/>{</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>cellcost<sp/>=<sp/>costmap_-&gt;getCost(mx,<sp/>my);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(cellcost)<sp/>&gt;<sp/><ref refid="agents__class_8h_1aca429eece4b2ed55d2f38a84031ca6b5" kindref="member">COST_MIN</ref><sp/>&amp;&amp;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(cellcost)<sp/>&lt;<sp/><ref refid="agents__class_8h_1afe3f51fbc354670e6c61f8e6f9c9b949" kindref="member">COST_OBS</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_collision<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>+=<sp/>dx;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>+=<sp/>dy;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!cell_collision)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filtered_ids.push_back(it);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>filtered_ids;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>0;<sp/>it<sp/>&lt;<sp/>2<sp/>&amp;&amp;<sp/>it<sp/>&lt;<sp/>sorted_ids.size();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sorted_ids[it]<sp/>==<sp/>stuck_agent_id_)<sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filtered_ids.push_back(sorted_ids[it]);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>filtered_ids;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Agents::resetAgents()<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>agents_states_.clear();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>agent_nominal_vels_.clear();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/>stuck_agent_id_<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/>stuck_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Agents::loadRosParamFromNodeHandle(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ros::NodeHandle<sp/>&amp;private_nh)<sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;ns&quot;</highlight><highlight class="normal">,<sp/>ns_,<sp/>std::string(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;local_costmap/inflater/inflation_radius&quot;</highlight><highlight class="normal">,<sp/>inflation_radius_,<sp/>0.0);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;planning_mode&quot;</highlight><highlight class="normal">,<sp/>planning_mode_,<sp/>0);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;use_simulated_fov&quot;</highlight><highlight class="normal">,<sp/>use_simulated_fov_,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;window_moving_avg&quot;</highlight><highlight class="normal">,<sp/>window_moving_avg_,<sp/><ref refid="agents__class_8cpp_1acbe55d0dbd24b495220a3325ad2e545c" kindref="member">WINDOW_MOVING_AVG</ref>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;HATebLocalPlannerROS/agent_radius&quot;</highlight><highlight class="normal">,<sp/>human_radius_,<sp/><ref refid="agents__class_8cpp_1aa0d2168cfd9daf9beddd359f82c58c00" kindref="member">HUM_RADIUS</ref>);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;HATebLocalPlannerROS/robot_radius&quot;</highlight><highlight class="normal">,<sp/>robot_radius_,<sp/><ref refid="agents__class_8cpp_1ab69dd643c61be536f4dc344cf7da0be6" kindref="member">ROBOT_RADIUS</ref>);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;tracked_agents_sub_topic&quot;</highlight><highlight class="normal">,<sp/>tracked_agents_sub_topic_,<sp/>std::string(<ref refid="agents__class_8cpp_1aa289a35d77148ac0299dea3bd75fc4d1" kindref="member">AGENTS_SUB_TOPIC</ref>));</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;base_link_frame&quot;</highlight><highlight class="normal">,<sp/>base_link_frame_,<sp/>std::string(<ref refid="agents__class_8cpp_1a863d0922484920c15a9a4a12fad883bf" kindref="member">BASE_LINK_FRAME</ref>));</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;map_frame&quot;</highlight><highlight class="normal">,<sp/>map_frame_,<sp/>std::string(<ref refid="agents__class_8cpp_1ad7a65b9516782c43db8997a8eef5afb3" kindref="member">MAP_FRAME</ref>));</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;odom_frame&quot;</highlight><highlight class="normal">,<sp/>odom_frame_,<sp/>std::string(<ref refid="agents__class_8cpp_1af254bb642d35915f7d834ab136458263" kindref="member">ODOM_FRAME</ref>));</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>private_nh.param(</highlight><highlight class="stringliteral">&quot;planning_radius&quot;</highlight><highlight class="normal">,<sp/>planning_radius_,<sp/><ref refid="agents__class_8cpp_1a529958ebd0897c92bb0303e7d2acaf02" kindref="member">PLANNING_RADIUS</ref>);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>agents</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp"/>
+  </compounddef>
+</doxygen>

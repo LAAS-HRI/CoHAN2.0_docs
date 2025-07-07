@@ -1,0 +1,758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhateb__local__planner_1_1ModeSwitch" kind="class" language="C++" prot="public">
+    <compoundname>hateb_local_planner::ModeSwitch</compoundname>
+    <includes refid="mode__switch_8h" local="no">mode_switch.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a075d65e69586c23fd4b7a420dec8f38a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::ModeSwitch::goal_reached_</definition>
+        <argsstring></argsstring>
+        <name>goal_reached_</name>
+        <briefdescription>
+<para>Flag indicating if current goal was reached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="138" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1aefd4c95fbad1f4ada3f9584441694873" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::ModeSwitch::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <briefdescription>
+<para>Flag indicating if class was properly initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="139" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a00801aea58ed373499e425b74d648ec6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::ModeSwitch::goal_update_</definition>
+        <argsstring></argsstring>
+        <name>goal_update_</name>
+        <briefdescription>
+<para>Flag indicating if goal was updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="140" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a3d43361392f44032bdd95fc710fba941" prot="private" static="no" mutable="no">
+        <type>ros::NodeHandle</type>
+        <definition>ros::NodeHandle hateb_local_planner::ModeSwitch::nh_</definition>
+        <argsstring></argsstring>
+        <name>nh_</name>
+        <briefdescription>
+<para>ROS node handle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="143" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a4725705ac0c86113b18ea12899f7deb9" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::ModeSwitch::agents_info_sub_</definition>
+        <argsstring></argsstring>
+        <name>agents_info_sub_</name>
+        <briefdescription>
+<para>Subscriber for agent information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="144" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a9561b527938c73a065d0530a3deb07ab" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::ModeSwitch::goal_sub_</definition>
+        <argsstring></argsstring>
+        <name>goal_sub_</name>
+        <briefdescription>
+<para>Subscriber for navigation goals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="145" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a2ccf658d13393576f1b2e9fe2dc6c45e" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::ModeSwitch::result_sub_</definition>
+        <argsstring></argsstring>
+        <name>result_sub_</name>
+        <briefdescription>
+<para>Subscriber for navigation results. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="146" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a0ced43d56004c6e4c369685288a15276" prot="private" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::ModeSwitch::passage_detect_sub_</definition>
+        <argsstring></argsstring>
+        <name>passage_detect_sub_</name>
+        <briefdescription>
+<para>Subscriber for passage detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="147" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1abfdf8e5f8d3483247b7c738cfcdacf89" prot="private" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::ModeSwitch::planning_mode_pub_</definition>
+        <argsstring></argsstring>
+        <name>planning_mode_pub_</name>
+        <briefdescription>
+<para>Publisher for current planning mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="148" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1ae3df0ce20e3207647c0aaa09464669f2" prot="private" static="no" mutable="no">
+        <type>ros::ServiceServer</type>
+        <definition>ros::ServiceServer hateb_local_planner::ModeSwitch::backoff_srv_</definition>
+        <argsstring></argsstring>
+        <name>backoff_srv_</name>
+        <briefdescription>
+<para>Service server for backoff requests. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="149" column="22" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a866e90b0e30dcb27519a1e8e7d6f911e" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::PoseStamped</type>
+        <definition>geometry_msgs::PoseStamped hateb_local_planner::ModeSwitch::goal_</definition>
+        <argsstring></argsstring>
+        <name>goal_</name>
+        <briefdescription>
+<para>Current navigation goal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="152" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1af7534dad7e4f2842656c53d2ad99a916" prot="private" static="no" mutable="no">
+        <type>agent_path_prediction::AgentsInfo</type>
+        <definition>agent_path_prediction::AgentsInfo hateb_local_planner::ModeSwitch::agents_info_</definition>
+        <argsstring></argsstring>
+        <name>agents_info_</name>
+        <briefdescription>
+<para>Current agent information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="153" column="37" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a73809fc1af246719bec801bd3af32582" prot="private" static="no" mutable="no">
+        <type>actionlib_msgs::GoalStatusArray</type>
+        <definition>actionlib_msgs::GoalStatusArray hateb_local_planner::ModeSwitch::result_msg_</definition>
+        <argsstring></argsstring>
+        <name>result_msg_</name>
+        <briefdescription>
+<para>Latest navigation result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="154" column="35" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a5b57798d071bd8bba920b10652b72d9f" prot="private" static="no" mutable="no">
+        <type>BT::BehaviorTreeFactory</type>
+        <definition>BT::BehaviorTreeFactory hateb_local_planner::ModeSwitch::bhv_factory_</definition>
+        <argsstring></argsstring>
+        <name>bhv_factory_</name>
+        <briefdescription>
+<para>Factory for creating BT nodes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="157" column="27" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a798d721d79ae54ce1e95b99946bf8363" prot="private" static="no" mutable="no">
+        <type>BT::Tree</type>
+        <definition>BT::Tree hateb_local_planner::ModeSwitch::bhv_tree_</definition>
+        <argsstring></argsstring>
+        <name>bhv_tree_</name>
+        <briefdescription>
+<para>The behavior tree instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="158" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a16cc375474bd05bb060cfb84ff1bfb5d" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex hateb_local_planner::ModeSwitch::pub_mutex_</definition>
+        <argsstring></argsstring>
+        <name>pub_mutex_</name>
+        <briefdescription>
+<para>Mutex for thread-safe publishing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="160" column="14" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a364490ca57c1cdad3c495e1037c468ec" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+<para>Name of this node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="162" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a9eb0ee5dd415a87bfcb4ebce6450240b" prot="private" static="no" mutable="no">
+        <type>hateb_local_planner::PlanningMode</type>
+        <definition>hateb_local_planner::PlanningMode hateb_local_planner::ModeSwitch::plan_mode_</definition>
+        <argsstring></argsstring>
+        <name>plan_mode_</name>
+        <briefdescription>
+<para>Current planning mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="163" column="37" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a9036b519c97c53bd0d63d503498a5781" prot="private" static="no" mutable="no">
+        <type><ref refid="structhateb__local__planner_1_1ModeInfo" kindref="compound">ModeInfo</ref></type>
+        <definition>ModeInfo hateb_local_planner::ModeSwitch::mode_info_</definition>
+        <argsstring></argsstring>
+        <name>mode_info_</name>
+        <briefdescription>
+<para>Detailed mode information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="164" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1ace16e2cba317b19eed1b9c4817a07c4a" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1Backoff" kindref="compound">Backoff</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Backoff&gt; hateb_local_planner::ModeSwitch::backoff_ptr_</definition>
+        <argsstring></argsstring>
+        <name>backoff_ptr_</name>
+        <briefdescription>
+<para>Pointer to backoff behavior handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="166" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1ac34ec0926c6715623a693b1c4d35debd" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::ns_</definition>
+        <argsstring></argsstring>
+        <name>ns_</name>
+        <briefdescription>
+<para>Namespace of the node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="169" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a67e7fc50b4ec4ce156a68a89edb9888e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::agents_info_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>agents_info_sub_topic_</name>
+        <briefdescription>
+<para>Topic for agents information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="170" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1acd3dcf3c8c477f77ea9f894b941d924d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::goal_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>goal_sub_topic_</name>
+        <briefdescription>
+<para>Topic for robot goal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="171" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1abaf681100237b726b69d975ec9fd23ea" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::result_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>result_sub_topic_</name>
+        <briefdescription>
+<para>Topic for robot goal result. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="172" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1ModeSwitch_1a3831e8aa883e831be5de164c63639e62" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::ModeSwitch::passage_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>passage_sub_topic_</name>
+        <briefdescription>
+<para>Topic for passage detection (from invisible humans) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="173" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a0f977db12863b680c34f1c909ee55b43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::ModeSwitch::ModeSwitch</definition>
+        <argsstring>()</argsstring>
+        <name>ModeSwitch</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="51" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1aab035d5b0b57efa54e7786d40cc7233e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::ModeSwitch::~ModeSwitch</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ModeSwitch</name>
+        <briefdescription>
+<para>Default destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="56" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a09bfc26c59e4e794589adbf6f924ea3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::initialize</definition>
+        <argsstring>(ros::NodeHandle &amp;nh, std::string &amp;xml_path, std::shared_ptr&lt; agents::Agents &gt; &amp;agents_ptr, std::shared_ptr&lt; Backoff &gt; &amp;backoff_ptr)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>xml_path</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classagents_1_1Agents" kindref="compound">agents::Agents</ref> &gt; &amp;</type>
+          <declname>agents_ptr</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1Backoff" kindref="compound">Backoff</ref> &gt; &amp;</type>
+          <declname>backoff_ptr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the mode switch with required components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ROS node handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xml_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the behavior tree XML description </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agents_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the agents management class </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backoff_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the backoff behavior handler </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="65" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="53" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1aa860dc9be20753e5b083966de64f42dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus hateb_local_planner::ModeSwitch::tickBT</definition>
+        <argsstring>()</argsstring>
+        <name>tickBT</name>
+        <briefdescription>
+<para>Executes one tick of the behavior tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Status of the behavior tree after the tick </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="71" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="148" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a0dfa09b1400828f8e485091e20b73056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::resetBT</definition>
+        <argsstring>()</argsstring>
+        <name>resetBT</name>
+        <briefdescription>
+<para>Resets the behavior tree to its initial state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="76" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="193" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a5488b3a5c2c11127b0815855b59273c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::Tree *</type>
+        <definition>BT::Tree* hateb_local_planner::ModeSwitch::BTree</definition>
+        <argsstring>()</argsstring>
+        <name>BTree</name>
+        <briefdescription>
+<para>Gets a pointer to the behavior tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to the behavior tree instance </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="82" column="12" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a8a5a09e84fe7cda0a46b946aab946d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hateb_local_planner::PlanningMode</type>
+        <definition>hateb_local_planner::PlanningMode hateb_local_planner::ModeSwitch::tickAndGetMode</definition>
+        <argsstring>()</argsstring>
+        <name>tickAndGetMode</name>
+        <briefdescription>
+<para>Ticks the behavior tree and returns the resulting planning mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The selected planning mode after the tree evaluation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="88" column="37" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="187" bodyend="191"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1adaee89986120f308a98eb63c4b4b50c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::registerNodes</definition>
+        <argsstring>()</argsstring>
+        <name>registerNodes</name>
+        <briefdescription>
+<para>Registers custom nodes with the behavior tree factory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="94" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="200" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a271b68f6507cf1a2d792e9ca642d99fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::agentsInfoCB</definition>
+        <argsstring>(const agent_path_prediction::AgentsInfo &amp;info_msg)</argsstring>
+        <name>agentsInfoCB</name>
+        <param>
+          <type>const agent_path_prediction::AgentsInfo &amp;</type>
+          <declname>info_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for processing agent information updates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>info_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message containing updated agent information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="100" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a935d1d5b3440cce005452d8978314dcb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::goalMoveBaseCB</definition>
+        <argsstring>(const move_base_msgs::MoveBaseActionGoal &amp;goal_msg)</argsstring>
+        <name>goalMoveBaseCB</name>
+        <param>
+          <type>const move_base_msgs::MoveBaseActionGoal &amp;</type>
+          <declname>goal_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for processing new navigation goals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>goal_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message containing the new goal </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="106" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="129" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a9209e848aa9ea1547f22f5d0ef866d15" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::resultMoveBaseCB</definition>
+        <argsstring>(const move_base_msgs::MoveBaseActionResult &amp;result_msg)</argsstring>
+        <name>resultMoveBaseCB</name>
+        <param>
+          <type>const move_base_msgs::MoveBaseActionResult &amp;</type>
+          <declname>result_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for processing navigation results. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message containing the navigation result </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="112" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1ab0784b360be7ad36cacf96246fbfdc2f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::passageCB</definition>
+        <argsstring>(const cohan_msgs::PassageType &amp;passage_msg)</argsstring>
+        <name>passageCB</name>
+        <param>
+          <type>const cohan_msgs::PassageType &amp;</type>
+          <declname>passage_msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback for processing passage type information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>passage_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Message containing passage classification </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="118" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a4011bbbbf267c3d8f1e1e62bc13e9199" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::updateMode</definition>
+        <argsstring>(int duration=0)</argsstring>
+        <name>updateMode</name>
+        <param>
+          <type>int</type>
+          <declname>duration</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Updates the current planning mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional duration parameter for the update </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="124" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp" bodystart="159" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1ModeSwitch_1a2a237e7d893356b1a26388fae0206c83" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::ModeSwitch::printTreeStatus</definition>
+        <argsstring>(const BT::TreeNode *node, int level=0)</argsstring>
+        <name>printTreeStatus</name>
+        <param>
+          <type>const BT::TreeNode *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="126" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="126" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class managing planning mode switches in the HATEB local planner. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classhateb__local__planner_1_1ModeSwitch" kindref="compound">ModeSwitch</ref> implements a behavior tree-based decision system for switching between different planning modes (single band, dual band, velocity obstacles, etc.) based on the current situation. It processes information about nearby agents, goals, and passage types to determine the most appropriate planning strategy. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>hateb_local_planner::ModeInfo</label>
+        <link refid="structhateb__local__planner_1_1ModeInfo"/>
+      </node>
+      <node id="1">
+        <label>hateb_local_planner::ModeSwitch</label>
+        <link refid="classhateb__local__planner_1_1ModeSwitch"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mode_info_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" line="46" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h" bodystart="46" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1af7534dad7e4f2842656c53d2ad99a916" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>agents_info_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a4725705ac0c86113b18ea12899f7deb9" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>agents_info_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a67e7fc50b4ec4ce156a68a89edb9888e" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>agents_info_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a271b68f6507cf1a2d792e9ca642d99fd" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>agentsInfoCB</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1ace16e2cba317b19eed1b9c4817a07c4a" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>backoff_ptr_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1ae3df0ce20e3207647c0aaa09464669f2" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>backoff_srv_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a5b57798d071bd8bba920b10652b72d9f" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>bhv_factory_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a798d721d79ae54ce1e95b99946bf8363" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>bhv_tree_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a5488b3a5c2c11127b0815855b59273c7" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>BTree</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a866e90b0e30dcb27519a1e8e7d6f911e" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goal_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a075d65e69586c23fd4b7a420dec8f38a" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goal_reached_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a9561b527938c73a065d0530a3deb07ab" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goal_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1acd3dcf3c8c477f77ea9f894b941d924d" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goal_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a00801aea58ed373499e425b74d648ec6" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goal_update_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a935d1d5b3440cce005452d8978314dcb" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>goalMoveBaseCB</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a09bfc26c59e4e794589adbf6f924ea3c" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>initialize</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1aefd4c95fbad1f4ada3f9584441694873" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>initialized_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a9036b519c97c53bd0d63d503498a5781" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>mode_info_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a0f977db12863b680c34f1c909ee55b43" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>ModeSwitch</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a364490ca57c1cdad3c495e1037c468ec" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>name_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a3d43361392f44032bdd95fc710fba941" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>nh_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1ac34ec0926c6715623a693b1c4d35debd" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>ns_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a0ced43d56004c6e4c369685288a15276" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>passage_detect_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a3831e8aa883e831be5de164c63639e62" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>passage_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1ab0784b360be7ad36cacf96246fbfdc2f" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>passageCB</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a9eb0ee5dd415a87bfcb4ebce6450240b" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>plan_mode_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1abfdf8e5f8d3483247b7c738cfcdacf89" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>planning_mode_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a2a237e7d893356b1a26388fae0206c83" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>printTreeStatus</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a16cc375474bd05bb060cfb84ff1bfb5d" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>pub_mutex_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1adaee89986120f308a98eb63c4b4b50c6" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>registerNodes</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a0dfa09b1400828f8e485091e20b73056" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>resetBT</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a73809fc1af246719bec801bd3af32582" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>result_msg_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a2ccf658d13393576f1b2e9fe2dc6c45e" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>result_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1abaf681100237b726b69d975ec9fd23ea" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>result_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a9209e848aa9ea1547f22f5d0ef866d15" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>resultMoveBaseCB</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a8a5a09e84fe7cda0a46b946aab946d96" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>tickAndGetMode</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1aa860dc9be20753e5b083966de64f42dd" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>tickBT</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1a4011bbbbf267c3d8f1e1e62bc13e9199" prot="private" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>updateMode</name></member>
+      <member refid="classhateb__local__planner_1_1ModeSwitch_1aab035d5b0b57efa54e7786d40cc7233e" prot="public" virt="non-virtual"><scope>hateb_local_planner::ModeSwitch</scope><name>~ModeSwitch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

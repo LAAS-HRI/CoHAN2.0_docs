@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="single__band__exit__condition_8h" kind="file" language="C++">
+    <compoundname>single_band_exit_condition.h</compoundname>
+    <includes local="no">ros/ros.h</includes>
+    <includes local="no">tf2/utils.h</includes>
+    <includes local="no">agent_path_prediction/AgentsInfo.h</includes>
+    <includes refid="agents__class_8h" local="no">agent_path_prediction/agents_class.h</includes>
+    <includes refid="bt__core_8h" local="no">hateb_local_planner/behavior_tree/bt_core.h</includes>
+    <includedby refid="mode__switch_8h" local="no">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h</includedby>
+    <includedby refid="single__band__exit__condition_8cpp" local="no">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/single_band_exit_condition.cpp</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>cohan_msgs/AgentPathArray.h</label>
+      </node>
+      <node id="1">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/single_band_exit_condition.h</label>
+        <link refid="single__band__exit__condition_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>cohan_msgs/TrackedSegmentType.h</label>
+      </node>
+      <node id="11">
+        <label>cohan_msgs/AgentTrajectory.h</label>
+      </node>
+      <node id="14">
+        <label>cohan_msgs/TrackedAgents.h</label>
+      </node>
+      <node id="16">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>tf2/utils.h</label>
+      </node>
+      <node id="6">
+        <label>tf2/convert.h</label>
+      </node>
+      <node id="18">
+        <label>hateb_local_planner/behavior_tree/bt_core.h</label>
+        <link refid="bt__core_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>costmap_2d/costmap_2d_ros.h</label>
+      </node>
+      <node id="2">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="4">
+        <label>agent_path_prediction/AgentsInfo.h</label>
+      </node>
+      <node id="19">
+        <label>behaviortree_cpp/bt_factory.h</label>
+      </node>
+      <node id="13">
+        <label>cohan_msgs/StateArray.h</label>
+      </node>
+      <node id="8">
+        <label>tf2_ros/transform_listener.h</label>
+      </node>
+      <node id="7">
+        <label>tf2_ros/buffer.h</label>
+      </node>
+      <node id="5">
+        <label>agent_path_prediction/agents_class.h</label>
+        <link refid="agents__class_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>cohan_msgs/AgentTrajectoryArray.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/single_band_exit_condition.h</label>
+        <link refid="single__band__exit__condition_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/mode_switch.h</label>
+        <link refid="mode__switch_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_local_planner_ros.cpp</label>
+        <link refid="hateb__local__planner__ros_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h</label>
+        <link refid="hateb__local__planner__ros_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/mode_switch.cpp</label>
+        <link refid="mode__switch_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/condition/single_band_exit_condition.cpp</label>
+        <link refid="single__band__exit__condition_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classhateb__local__planner_1_1SingleBandExitCondition" prot="public">hateb_local_planner::SingleBandExitCondition</innerclass>
+    <innernamespace refid="namespacehateb__local__planner">hateb_local_planner</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Software<sp/>License<sp/>Agreement<sp/>(BSD<sp/>License)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2025<sp/>LAAS/CNRS</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>copyright<sp/>notice,<sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>disclaimer<sp/>in<sp/>the<sp/>documentation<sp/>and/or<sp/>other<sp/>materials<sp/>provided</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>*<sp/>Neither<sp/>the<sp/>name<sp/>of<sp/>the<sp/>institute<sp/>nor<sp/>the<sp/>names<sp/>of<sp/>its</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>contributors<sp/>may<sp/>be<sp/>used<sp/>to<sp/>endorse<sp/>or<sp/>promote<sp/>products<sp/>derived</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>from<sp/>this<sp/>software<sp/>without<sp/>specific<sp/>prior<sp/>written<sp/>permission.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>&quot;AS<sp/>IS&quot;<sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/><sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/><sp/>COPYRIGHT<sp/>OWNER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/><sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/><sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/><sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/><sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/><sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/><sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Phani<sp/>Teja<sp/>Singamaneni<sp/>(email:ptsingaman@laas.fr)</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/ros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tf2/utils.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>New</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;agent_path_prediction/AgentsInfo.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="agents__class_8h" kindref="compound">agent_path_prediction/agents_class.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="bt__core_8h" kindref="compound">hateb_local_planner/behavior_tree/bt_core.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehateb__local__planner" kindref="compound">hateb_local_planner</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classhateb__local__planner_1_1SingleBandExitCondition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhateb__local__planner_1_1SingleBandExitCondition" kindref="compound">SingleBandExitCondition</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>BT::ConditionNode<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1ab0d2dfecbc29f233d41a37920ca06159" kindref="member">SingleBandExitCondition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>condition_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BT::NodeConfiguration&amp;<sp/>conf);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="classhateb__local__planner_1_1SingleBandExitCondition_1ab0d2dfecbc29f233d41a37920ca06159" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1ab0d2dfecbc29f233d41a37920ca06159" kindref="member">SingleBandExitCondition</ref>()<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1a7999cacce523847ccefa39ddef79b413" kindref="member">~SingleBandExitCondition</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>BT::NodeStatus<sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1a0d107ab1e096fb2dd124d80c5e898843" kindref="member">tick</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classhateb__local__planner_1_1SingleBandExitCondition_1a6191fbab8706ea889d1f543d7ad38e5d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>BT::PortsList<sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1a6191fbab8706ea889d1f543d7ad38e5d" kindref="member">providedPorts</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>action<sp/>has<sp/>a<sp/>single<sp/>input<sp/>port<sp/>called<sp/>&quot;agents_info&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{BT::InputPort&lt;agent_path_prediction::AgentsInfo&gt;(</highlight><highlight class="stringliteral">&quot;agents_info&quot;</highlight><highlight class="normal">),<sp/>BT::InputPort&lt;double&gt;(</highlight><highlight class="stringliteral">&quot;dist_max&quot;</highlight><highlight class="normal">)};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Blackboard<sp/>entries</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classhateb__local__planner_1_1SingleBandExitCondition_1a62e179ae48d241664f6fcc1199aa9ff6" refkind="member"><highlight class="normal"><sp/><sp/>agent_path_prediction::AgentsInfo<sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1a62e179ae48d241664f6fcc1199aa9ff6" kindref="member">agents_info_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="classhateb__local__planner_1_1SingleBandExitCondition_1ad264f44756822214ab356fb858d55ecd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1ad264f44756822214ab356fb858d55ecd" kindref="member">dist_max_</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>name<sp/>of<sp/>the<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classhateb__local__planner_1_1SingleBandExitCondition_1a255b5189a0687b2264cf589a99608938" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classhateb__local__planner_1_1SingleBandExitCondition_1a255b5189a0687b2264cf589a99608938" kindref="member">name_</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hateb_local_planner</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/single_band_exit_condition.h"/>
+  </compounddef>
+</doxygen>

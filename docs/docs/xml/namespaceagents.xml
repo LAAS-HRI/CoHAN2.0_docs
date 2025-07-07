@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceagents" kind="namespace" language="C++">
+    <compoundname>agents</compoundname>
+    <innerclass refid="classagents_1_1AgentPathPrediction" prot="public">agents::AgentPathPrediction</innerclass>
+    <innerclass refid="classagents_1_1Agents" prot="public">agents::Agents</innerclass>
+    <innerclass refid="classagents_1_1Gaussian" prot="public">agents::Gaussian</innerclass>
+    <innerclass refid="classagents_1_1BayesianGoalPrediction" prot="public">agents::BayesianGoalPrediction</innerclass>
+    <innerclass refid="classagents_1_1PredictGoalROS" prot="public">agents::PredictGoalROS</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceagents_1a11caf48a935369da9fb37768e769738f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AgentState</name>
+        <enumvalue id="namespaceagents_1a11caf48a935369da9fb37768e769738faac32cdc8f35065d7f69c8d5bc6d85e58" prot="public">
+          <name>NO_STATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceagents_1a11caf48a935369da9fb37768e769738fa967f2038bf86adadd450d66d9c972bb4" prot="public">
+          <name>STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceagents_1a11caf48a935369da9fb37768e769738fa54f93de7267b580393fb25b89f63c95e" prot="public">
+          <name>MOVING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceagents_1a11caf48a935369da9fb37768e769738fa4b8f376def400d5a5dca2f99e3d2c9bc" prot="public">
+          <name>STOPPED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceagents_1a11caf48a935369da9fb37768e769738fa299c9f49213ec1c9d11faf792bf12c19" prot="public">
+          <name>BLOCKED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum representing the states of an agent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agents_class.h" line="79" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agents_class.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/include/agent_path_prediction/agent_path_prediction.h" line="73" column="1"/>
+  </compounddef>
+</doxygen>

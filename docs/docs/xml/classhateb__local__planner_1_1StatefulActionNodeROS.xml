@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhateb__local__planner_1_1StatefulActionNodeROS" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>hateb_local_planner::StatefulActionNodeROS</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BT::StatefulActionNode</basecompoundref>
+    <derivedcompoundref refid="classhateb__local__planner_1_1SetMode" prot="public" virt="non-virtual">hateb_local_planner::SetMode</derivedcompoundref>
+    <includes refid="bt__core_8h" local="no">bt_core.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classhateb__local__planner_1_1StatefulActionNodeROS_1ab76f9a716b3f82d7fa63e5b05ebda2cc" prot="protected" static="no" mutable="no">
+        <type>ros::NodeHandle &amp;</type>
+        <definition>ros::NodeHandle&amp; hateb_local_planner::StatefulActionNodeROS::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="146" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1afa7e2c97e99dd762daf98af831f57d4a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::StatefulActionNodeROS::StatefulActionNodeROS</definition>
+        <argsstring>(ros::NodeHandle &amp;nh, const std::string &amp;name, const BT::NodeConfiguration &amp;conf)</argsstring>
+        <name>StatefulActionNodeROS</name>
+        <param>
+          <type>ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BT::NodeConfiguration &amp;</type>
+          <declname>conf</declname>
+        </param>
+        <briefdescription>
+<para>Constructor initializes the node with ROS and BT configurations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ROS node handle for communication </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the behavior tree node </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Configuration for the behavior tree node </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="112" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="112" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a6625f29ea05a03d31f4983b87c32fa73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::StatefulActionNodeROS::StatefulActionNodeROS</definition>
+        <argsstring>()=delete</argsstring>
+        <name>StatefulActionNodeROS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="118" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a402b56b9a0143e3e054f7c3e2b43cadc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::StatefulActionNodeROS::~StatefulActionNodeROS</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~StatefulActionNodeROS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="120" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a16bedbc15624933e7d10df17334ed4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus hateb_local_planner::StatefulActionNodeROS::onStart</definition>
+        <argsstring>() override=0</argsstring>
+        <name>onStart</name>
+        <reimplementedby refid="classhateb__local__planner_1_1SetMode_1aa37dbc29dc5058c684fa2143dbd922ca">onStart</reimplementedby>
+        <briefdescription>
+<para>Called when the node starts execution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Status of the node after starting </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="132" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a5e2e443643bb2181e3f0f290d7f46efc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>BT::NodeStatus</type>
+        <definition>BT::NodeStatus hateb_local_planner::StatefulActionNodeROS::onRunning</definition>
+        <argsstring>() override=0</argsstring>
+        <name>onRunning</name>
+        <reimplementedby refid="classhateb__local__planner_1_1SetMode_1a84898dac9ebae8670279f9419a18b6ec">onRunning</reimplementedby>
+        <briefdescription>
+<para>Called during node execution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Current status of the node </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="138" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a8ea0ea6d9f15a0c499d476cad295c9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::StatefulActionNodeROS::onHalted</definition>
+        <argsstring>() override=0</argsstring>
+        <name>onHalted</name>
+        <reimplementedby refid="classhateb__local__planner_1_1SetMode_1a75a1d479f146fbd8f1fe0a4de3f94cd7">onHalted</reimplementedby>
+        <briefdescription>
+<para>Called when the node is halted. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="143" column="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1StatefulActionNodeROS_1a68bca1102f4d75131dabf7f2d6b4a0b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BT::PortsList</type>
+        <definition>static BT::PortsList hateb_local_planner::StatefulActionNodeROS::providedPorts</definition>
+        <argsstring>()</argsstring>
+        <name>providedPorts</name>
+        <briefdescription>
+<para>Defines the input/output ports for the node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of ports including the action_name input port </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="126" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="126" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for stateful action nodes in the behavior tree. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides the foundation for creating ROS-integrated behavior tree nodes that maintain state between executions. It inherits from BT::StatefulActionNode and provides integration with ROS node handles. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>hateb_local_planner::StatefulActionNodeROS</label>
+        <link refid="classhateb__local__planner_1_1StatefulActionNodeROS"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hateb_local_planner::SetMode</label>
+        <link refid="classhateb__local__planner_1_1SetMode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BT::StatefulActionNode</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>hateb_local_planner::StatefulActionNodeROS</label>
+        <link refid="classhateb__local__planner_1_1StatefulActionNodeROS"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BT::StatefulActionNode</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="104" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="104" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1ab76f9a716b3f82d7fa63e5b05ebda2cc" prot="protected" virt="non-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>node_</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a8ea0ea6d9f15a0c499d476cad295c9db" prot="public" virt="pure-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>onHalted</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a5e2e443643bb2181e3f0f290d7f46efc" prot="public" virt="pure-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>onRunning</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a16bedbc15624933e7d10df17334ed4c9" prot="public" virt="pure-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>onStart</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a68bca1102f4d75131dabf7f2d6b4a0b9" prot="public" virt="non-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>providedPorts</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1afa7e2c97e99dd762daf98af831f57d4a" prot="protected" virt="non-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>StatefulActionNodeROS</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a6625f29ea05a03d31f4983b87c32fa73" prot="public" virt="non-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>StatefulActionNodeROS</name></member>
+      <member refid="classhateb__local__planner_1_1StatefulActionNodeROS_1a402b56b9a0143e3e054f7c3e2b43cadc" prot="public" virt="non-virtual"><scope>hateb_local_planner::StatefulActionNodeROS</scope><name>~StatefulActionNodeROS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

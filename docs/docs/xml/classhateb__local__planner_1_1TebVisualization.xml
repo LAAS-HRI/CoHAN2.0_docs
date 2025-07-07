@@ -1,0 +1,1705 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhateb__local__planner_1_1TebVisualization" kind="class" language="C++" prot="public">
+    <compoundname>hateb_local_planner::TebVisualization</compoundname>
+    <includes refid="visualization_8h" local="no">visualization.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Publish to topics</header>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ada8179645d92b45bc78b6951c7f6c471" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::global_plan_pub_</definition>
+        <argsstring></argsstring>
+        <name>global_plan_pub_</name>
+        <briefdescription>
+<para>Publisher for the global plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="339" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a468656ebe472022f1bba46d2c9cdb2ec" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::local_plan_pub_</definition>
+        <argsstring></argsstring>
+        <name>local_plan_pub_</name>
+        <briefdescription>
+<para>Publisher for the local plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="340" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a275223327240424cc26896d79de979cc" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::local_traj_pub_</definition>
+        <argsstring></argsstring>
+        <name>local_traj_pub_</name>
+        <briefdescription>
+<para>Publisher for the local traj. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="341" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a1991bcbc72e1055626b4828a3aee9c62" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agents_global_plans_pub_</definition>
+        <argsstring></argsstring>
+        <name>agents_global_plans_pub_</name>
+        <briefdescription>
+<para>Publisher for the local plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="342" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a484e062b39cb3554594e6d410b6188ee" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agents_local_plans_pub_</definition>
+        <argsstring></argsstring>
+        <name>agents_local_plans_pub_</name>
+        <briefdescription>
+<para>Publisher for the local plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="343" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a6afb6e64809710804a03d2e9df1208d4" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agents_local_trajs_pub_</definition>
+        <argsstring></argsstring>
+        <name>agents_local_trajs_pub_</name>
+        <briefdescription>
+<para>Publisher for the agents local plans. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="344" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a5c5328573dd8077dfc17f215f5fc3dd9" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::teb_poses_pub_</definition>
+        <argsstring></argsstring>
+        <name>teb_poses_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="345" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1afbb8c971dd8c5fc9f1a436994a185ec6" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::teb_fp_poses_pub_</definition>
+        <argsstring></argsstring>
+        <name>teb_fp_poses_pub_</name>
+        <briefdescription>
+<para>Publisher for the trajectory pose sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="345" column="33" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a41d2b763cd4a7936f164d2a863294d24" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agents_tebs_poses_pub_</definition>
+        <argsstring></argsstring>
+        <name>agents_tebs_poses_pub_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="346" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a10dbea3946e9bc2321a1d308c72e7c9d" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agents_tebs_fp_poses_pub_</definition>
+        <argsstring></argsstring>
+        <name>agents_tebs_fp_poses_pub_</name>
+        <briefdescription>
+<para>Publisher for the trajectory pose sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="346" column="41" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1aab245ad11d4ad09de53d2519bc54574a" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::teb_marker_pub_</definition>
+        <argsstring></argsstring>
+        <name>teb_marker_pub_</name>
+        <briefdescription>
+<para>Publisher for visualization markers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="347" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a18bf4574b2158f91acaf7133bf34029f" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::feedback_pub_</definition>
+        <argsstring></argsstring>
+        <name>feedback_pub_</name>
+        <briefdescription>
+<para>Publisher for optimization feedback messages. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="348" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a6fa1ebdad9fd0c664b27423b1c094a87" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::mode_text_pub_</definition>
+        <argsstring></argsstring>
+        <name>mode_text_pub_</name>
+        <briefdescription>
+<para>Publisher for current planner mode text visualization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="349" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a402fafd9f6ceceb235b2d45c6defc5ea" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::robot_traj_time_pub_</definition>
+        <argsstring></argsstring>
+        <name>robot_traj_time_pub_</name>
+        <briefdescription>
+<para>Publisher for robot&apos;s time to goal with optimized trajectory (until end of trajectory) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="350" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ade376828d48c472cf7987dec7bb8fd59" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::robot_path_time_pub_</definition>
+        <argsstring></argsstring>
+        <name>robot_path_time_pub_</name>
+        <briefdescription>
+<para>Publisher for robot&apos;s full time to goal (until goal, using path + traj) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="351" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a7fb8d9931f9a36c5420da0ed0d801469" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::robot_next_pose_pub_</definition>
+        <argsstring></argsstring>
+        <name>robot_next_pose_pub_</name>
+        <briefdescription>
+<para>Publisher for robot&apos;s predicted next pose. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="352" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ae16a9eb03ae282ad18f8207d3cc86d01" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agent_next_pose_pub_</definition>
+        <argsstring></argsstring>
+        <name>agent_next_pose_pub_</name>
+        <briefdescription>
+<para>Publisher for agents&apos; predicted next poses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="353" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ab4f46cf882cabe1a47c87e65e1d372d0" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agent_trajs_time_pub_</definition>
+        <argsstring></argsstring>
+        <name>agent_trajs_time_pub_</name>
+        <briefdescription>
+<para>Publisher for agents&apos; time to goal with optimized trajectory (until end of trajectory) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="354" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a4648917887c17f2a0d3faeb00cbcc1b0" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agent_paths_time_pub_</definition>
+        <argsstring></argsstring>
+        <name>agent_paths_time_pub_</name>
+        <briefdescription>
+<para>Publisher for agents&apos; full time to goal (until goal, using path + traj) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="355" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ace3e82dc52fafb6853e5697191c1c2f6" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agent_marker_pub_</definition>
+        <argsstring></argsstring>
+        <name>agent_marker_pub_</name>
+        <briefdescription>
+<para>Publisher for agent visualization markers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="356" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a2679ac837ab810f174caa5f0cdde437d" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::agent_arrow_pub_</definition>
+        <argsstring></argsstring>
+        <name>agent_arrow_pub_</name>
+        <briefdescription>
+<para>Publisher for agent direction arrow markers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="357" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a7dde8716b87906b495d2a4da6b469d3e" prot="protected" static="no" mutable="no">
+        <type>ros::Subscriber</type>
+        <definition>ros::Subscriber hateb_local_planner::TebVisualization::tracked_agents_sub_</definition>
+        <argsstring></argsstring>
+        <name>tracked_agents_sub_</name>
+        <briefdescription>
+<para>Subscriber for tracked agents data input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="358" column="19" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a74bb9087ff93d11dd65a08c4899578b4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; hateb_local_planner::TebVisualization::vel_robot_</definition>
+        <argsstring></argsstring>
+        <name>vel_robot_</name>
+        <briefdescription>
+<para>Store robot velocity history (for bar visualization) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="359" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a4c35c85e15d92f2660436b0811d4f4b4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; hateb_local_planner::TebVisualization::vel_agent_</definition>
+        <argsstring></argsstring>
+        <name>vel_agent_</name>
+        <briefdescription>
+<para>Store agent velocity history (for bar visualization) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="360" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a724cef064bc9a9e898aa2e9a5601e3f0" prot="protected" static="no" mutable="no">
+        <type>tf::TransformListener</type>
+        <definition>tf::TransformListener hateb_local_planner::TebVisualization::tf_</definition>
+        <argsstring></argsstring>
+        <name>tf_</name>
+        <briefdescription>
+<para>Transform listener for coordinate frame transformations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="361" column="25" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a4500841ae7c7c976b08cd7996aa33c6a" prot="protected" static="no" mutable="no">
+        <type>ros::Publisher</type>
+        <definition>ros::Publisher hateb_local_planner::TebVisualization::ttg_pub_</definition>
+        <argsstring></argsstring>
+        <name>ttg_pub_</name>
+        <briefdescription>
+<para>Publisher for time-to-goal information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="362" column="18" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a547d2dcd85bf88ed8b7c63e878b99ac6" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::TebVisualization::ns_</definition>
+        <argsstring></argsstring>
+        <name>ns_</name>
+        <briefdescription>
+<para>Name space of the robot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="363" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a24d3f19150fd3a0e72fbe2667abeed4d" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::TebVisualization::tracked_agents_sub_topic_</definition>
+        <argsstring></argsstring>
+        <name>tracked_agents_sub_topic_</name>
+        <briefdescription>
+<para>Tracked agents sub topic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="364" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a06deb721942ca2786ad4cd295ac8cf29" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> *</type>
+        <definition>const HATebConfig* hateb_local_planner::TebVisualization::cfg_</definition>
+        <argsstring></argsstring>
+        <name>cfg_</name>
+        <briefdescription>
+<para>Config class that stores and manages all related parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="366" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1aefd9c7353f7cca488c105c794046b8de" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <briefdescription>
+<para>Keeps track about the correct initialization of this class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="367" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a40c4692da58fd44cd81992f100f760ae" prot="protected" static="no" mutable="no">
+        <type>ros::Timer</type>
+        <definition>ros::Timer hateb_local_planner::TebVisualization::clearing_timer_</definition>
+        <argsstring></argsstring>
+        <name>clearing_timer_</name>
+        <briefdescription>
+<para>Timer for periodically clearing old visualization markers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="368" column="14" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a47460cf695b80be9173392fb846c2b54" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_robot_global_plan_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_robot_global_plan_</name>
+        <briefdescription>
+<para>Last publish state of robot&apos;s global plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="370" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a4e1dfbe068f664090ba1be80180fc07e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_robot_local_plan_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_robot_local_plan_</name>
+        <briefdescription>
+<para>Last publish state of robot&apos;s local plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="371" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ab46113e35dec3a8b75312ad73f67dfc2" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_robot_local_plan_poses_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_robot_local_plan_poses_</name>
+        <briefdescription>
+<para>Last publish state of robot&apos;s local plan poses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="372" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a34478d4421ea14275e3d648646708865" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_robot_local_plan_fp_poses_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_robot_local_plan_fp_poses_</name>
+        <briefdescription>
+<para>Last publish state of robot&apos;s local plan footprint poses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="373" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1ac319a63a42ca5ad245f45f453d3830e8" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_agents_global_plans_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_agents_global_plans_</name>
+        <briefdescription>
+<para>Last publish state of agents&apos; global plans. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="374" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a509f6f646b8825f11a470529c1989ab3" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_agents_local_plans_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_agents_local_plans_</name>
+        <briefdescription>
+<para>Last publish state of agents&apos; local plans. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="375" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a200fed97b7b01eadf645b819418cbf04" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_agents_local_plan_poses_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_agents_local_plan_poses_</name>
+        <briefdescription>
+<para>Last publish state of agents&apos; local plan poses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="376" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a50984055158afa68905b8a5b073af971" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::last_publish_agents_local_plan_fp_poses_</definition>
+        <argsstring></argsstring>
+        <name>last_publish_agents_local_plan_fp_poses_</name>
+        <briefdescription>
+<para>Last publish state of agents&apos; local plan footprint poses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="377" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a2e4e98bb5e713cee08e1585fb82f0c7c" prot="protected" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int hateb_local_planner::TebVisualization::last_robot_fp_poses_idx_</definition>
+        <argsstring></argsstring>
+        <name>last_robot_fp_poses_idx_</name>
+        <briefdescription>
+<para>Index of last published robot footprint pose. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="379" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1TebVisualization_1a07aab63a4077418fdc0467a75dadc134" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hateb_local_planner::TebVisualization::last_agent_fp_poses_idx_</definition>
+        <argsstring></argsstring>
+        <name>last_agent_fp_poses_idx_</name>
+        <briefdescription>
+<para>Index of last published agent footprint pose. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="380" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1adf3eb2f50c2e6158a130864ad45562f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishGlobalPlan</definition>
+        <argsstring>(const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;global_plan) const</argsstring>
+        <name>publishGlobalPlan</name>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>global_plan</declname>
+        </param>
+        <briefdescription>
+<para>Publish a given global plan to the ros topic <emphasis></emphasis>../../global_plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>global_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose array describing the global plan </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="144" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a9e0986d46cb93602c44d36cdd5828b07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishAgentGlobalPlans</definition>
+        <argsstring>(const std::vector&lt; AgentPlanCombined &gt; &amp;agents_plans) const</argsstring>
+        <name>publishAgentGlobalPlans</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="structhateb__local__planner_1_1AgentPlanCombined" kindref="compound">AgentPlanCombined</ref> &gt; &amp;</type>
+          <declname>agents_plans</declname>
+        </param>
+        <briefdescription>
+<para>Publish a given agent&apos;s global plan to the ros topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>agents_plans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector comntaining the <ref refid="structhateb__local__planner_1_1AgentPlanCombined" kindref="compound">AgentPlanCombined</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="150" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="155" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1af188ca0ec67db4f84653efdc835f8dcb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishLocalPlan</definition>
+        <argsstring>(const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;local_plan) const</argsstring>
+        <name>publishLocalPlan</name>
+        <param>
+          <type>const std::vector&lt; geometry_msgs::PoseStamped &gt; &amp;</type>
+          <declname>local_plan</declname>
+        </param>
+        <briefdescription>
+<para>Publish a given local plan to the ros topic <emphasis></emphasis>../../local_plan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>local_plan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pose array describing the local plan </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="156" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1abefbdf3aa6e6a5a92273adcfc3db573e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishTrackedAgents</definition>
+        <argsstring>(const cohan_msgs::TrackedAgentsConstPtr &amp;agents)</argsstring>
+        <name>publishTrackedAgents</name>
+        <param>
+          <type>const cohan_msgs::TrackedAgentsConstPtr &amp;</type>
+          <declname>agents</declname>
+        </param>
+        <briefdescription>
+<para>Publish visualization markers for tracked agents in the environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>agents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the tracked agents message containing agent positions, velocities, and properties </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="162" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="644" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1aa4bef46f39bbba65d5c96116cc4eb6f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishLocalPlanAndPoses</definition>
+        <argsstring>(const TimedElasticBand &amp;teb, const BaseFootprintModel &amp;robot_model, double fp_size, const std_msgs::ColorRGBA &amp;color=toColorMsg(0.5, 0.0, 0.8, 0.0))</argsstring>
+        <name>publishLocalPlanAndPoses</name>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref> &amp;</type>
+          <declname>teb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &amp;</type>
+          <declname>robot_model</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fp_size</declname>
+        </param>
+        <param>
+          <type>const std_msgs::ColorRGBA &amp;</type>
+          <declname>color</declname>
+          <defval><ref refid="classhateb__local__planner_1_1TebVisualization_1ad7caaeb12345976f24d99328a3bda9c5" kindref="member">toColorMsg</ref>(0.5, 0.0, 0.8, 0.0)</defval>
+        </param>
+        <briefdescription>
+<para>Publish Timed_Elastic_Band related stuff (local plan, pose sequence). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Given a Timed_Elastic_Band instance, publish the local plan to <emphasis></emphasis>../../local_plan and the pose sequence to <emphasis></emphasis>../../teb_poses. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>teb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to a Timed_Elastic_Band </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="171" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="203" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a77cd1f43ae85629c72f1973750b62434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishAgentLocalPlansAndPoses</definition>
+        <argsstring>(const std::map&lt; uint64_t, TimedElasticBand &gt; &amp;agents_tebs_map, const BaseFootprintModel &amp;agent_model, double fp_size, const std_msgs::ColorRGBA &amp;color=toColorMsg(0.5, 0.0, 0.8, 0.0))</argsstring>
+        <name>publishAgentLocalPlansAndPoses</name>
+        <param>
+          <type>const std::map&lt; uint64_t, <ref refid="classhateb__local__planner_1_1TimedElasticBand" kindref="compound">TimedElasticBand</ref> &gt; &amp;</type>
+          <declname>agents_tebs_map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &amp;</type>
+          <declname>agent_model</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fp_size</declname>
+        </param>
+        <param>
+          <type>const std_msgs::ColorRGBA &amp;</type>
+          <declname>color</declname>
+          <defval><ref refid="classhateb__local__planner_1_1TebVisualization_1ad7caaeb12345976f24d99328a3bda9c5" kindref="member">toColorMsg</ref>(0.5, 0.0, 0.8, 0.0)</defval>
+        </param>
+        <briefdescription>
+<para>Publish local plans and pose sequences for multiple agents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to publishLocalPlanAndPoses but handles multiple agents. Publishes local plans and pose sequences for each agent in the map to their respective ROS topics. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>agents_tebs_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map of agent IDs to their Timed Elastic Band trajectories </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agent_model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The footprint model used for all agents </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fp_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the footprint for visualization </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color to use for visualization markers (RGBA) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="183" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="377" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a4b2cde271caa8b74230aa9ee24e3fe0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishTrajectory</definition>
+        <argsstring>(const PlanTrajCombined &amp;plan_traj_combined)</argsstring>
+        <name>publishTrajectory</name>
+        <param>
+          <type>const <ref refid="structhateb__local__planner_1_1PlanTrajCombined" kindref="compound">PlanTrajCombined</ref> &amp;</type>
+          <declname>plan_traj_combined</declname>
+        </param>
+        <briefdescription>
+<para>Publish a complete trajectory including plan segments before and after optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Publishes visualization of the complete trajectory which includes:<itemizedlist>
+<listitem><para>The plan segment before optimization</para>
+</listitem><listitem><para>The optimized trajectory</para>
+</listitem><listitem><para>The plan segment after optimization <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plan_traj_combined</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Combined plan and trajectory data structure containing all segments </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="195" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="296" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1ad564ecfa87b4dced5b5a4c4040291bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishAgentTrajectories</definition>
+        <argsstring>(const std::vector&lt; AgentPlanTrajCombined &gt; &amp;agents_plans_combined)</argsstring>
+        <name>publishAgentTrajectories</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="structhateb__local__planner_1_1AgentPlanTrajCombined" kindref="compound">AgentPlanTrajCombined</ref> &gt; &amp;</type>
+          <declname>agents_plans_combined</declname>
+        </param>
+        <briefdescription>
+<para>Publish trajectories for multiple agents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Publishes visualization of complete trajectories for multiple agents, each including:<itemizedlist>
+<listitem><para>The plan segment before optimization</para>
+</listitem><listitem><para>The optimized trajectory</para>
+</listitem><listitem><para>The plan segment after optimization <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>agents_plans_combined</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of combined plan and trajectory data for each agent </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="206" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="476" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a03da32ee50134d296b5d92bbc3ff4b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishRobotFootprintModel</definition>
+        <argsstring>(const PoseSE2 &amp;current_pose, const BaseFootprintModel &amp;robot_model, const std::string &amp;ns=&quot;RobotFootprintModel&quot;, const std_msgs::ColorRGBA &amp;color=toColorMsg(0.5, 0.0, 0.8, 0.0))</argsstring>
+        <name>publishRobotFootprintModel</name>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
+          <declname>current_pose</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &amp;</type>
+          <declname>robot_model</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ns</declname>
+          <defval>&quot;RobotFootprintModel&quot;</defval>
+        </param>
+        <param>
+          <type>const std_msgs::ColorRGBA &amp;</type>
+          <declname>color</declname>
+          <defval><ref refid="classhateb__local__planner_1_1TebVisualization_1ad7caaeb12345976f24d99328a3bda9c5" kindref="member">toColorMsg</ref>(0.5, 0.0, 0.8, 0.0)</defval>
+        </param>
+        <briefdescription>
+<para>Publish the visualization of the robot model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>robot_model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subclass of <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace for the marker objects </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Color of the footprint </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="216" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="741" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a7adf0817a78d3a1ee526f28d42e1d2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishInfeasibleRobotPose</definition>
+        <argsstring>(const PoseSE2 &amp;current_pose, const BaseFootprintModel &amp;robot_model)</argsstring>
+        <name>publishInfeasibleRobotPose</name>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1PoseSE2" kindref="compound">PoseSE2</ref> &amp;</type>
+          <declname>current_pose</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &amp;</type>
+          <declname>robot_model</declname>
+        </param>
+        <briefdescription>
+<para>Publish the robot footprints related to infeasible poses. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>current_pose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current pose of the robot </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>robot_model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Subclass of <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="225" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="764" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1aa221459c4a282bbb130bf7f07093d048" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishObstacles</definition>
+        <argsstring>(const ObstContainer &amp;obstacles) const</argsstring>
+        <name>publishObstacles</name>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref> &amp;</type>
+          <declname>obstacles</declname>
+        </param>
+        <briefdescription>
+<para>Publish obstacle positions to the ros topic <emphasis></emphasis>../../teb_markers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obstacles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> container </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="231" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="768" bodyend="910"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1acfe0f9bdd2eb7760c18b625206321172" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishViaPoints</definition>
+        <argsstring>(const std::vector&lt; Eigen::Vector2d, Eigen::aligned_allocator&lt; Eigen::Vector2d &gt; &gt; &amp;via_points, const std::string &amp;ns=&quot;ViaPoints&quot;) const</argsstring>
+        <name>publishViaPoints</name>
+        <param>
+          <type>const std::vector&lt; Eigen::Vector2d, Eigen::aligned_allocator&lt; Eigen::Vector2d &gt; &gt; &amp;</type>
+          <declname>via_points</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ns</declname>
+          <defval>&quot;ViaPoints&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish via-points to the ros topic <emphasis></emphasis>../../teb_markers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>via_points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>via-point container </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="237" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="912" bodyend="942"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a40b9087596923916b103ed54ebc9f9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename GraphType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishGraph</definition>
+        <argsstring>(const GraphType &amp;graph, const std::string &amp;ns_prefix=&quot;Graph&quot;)</argsstring>
+        <name>publishGraph</name>
+        <param>
+          <type>const GraphType &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ns_prefix</declname>
+          <defval>&quot;Graph&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish a boost::adjacency_list (boost&apos;s graph datatype) via markers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Make sure that vertices of the graph contain a member <computeroutput>pos</computeroutput> as <computeroutput>Eigen::Vector2d</computeroutput> type to query metric position values. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Const reference to the boost::adjacency_list (graph) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ns_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace prefix for the marker objects (the strings &quot;Edges&quot; and &quot;Vertices&quot; will be appended) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>GraphType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>boost::graph object in which vertices has the field/member <computeroutput>pos</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="248" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.hpp" bodystart="47" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1ae1b0b3b81d634655283512389a60dd7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BidirIter</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishPathContainer</definition>
+        <argsstring>(BidirIter first, BidirIter last, const std::string &amp;ns=&quot;PathContainer&quot;)</argsstring>
+        <name>publishPathContainer</name>
+        <param>
+          <type>BidirIter</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>BidirIter</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ns</declname>
+          <defval>&quot;PathContainer&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish multiple 2D paths (each path given as a point sequence) from a container class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Provide a std::vector&lt; std::vector&lt; T &gt; &gt; in which T.x() and T.y() exist and std::vector could be individually substituded by std::list / std::deque /...</para>
+<para>A common point-type for object T could be Eigen::Vector2d.</para>
+<para>T could be also a raw pointer std::vector&lt; std::vector&lt; T* &gt; &gt;.</para>
+<para><programlisting><codeline><highlight class="normal"><sp/>typedef<sp/>std::vector&lt;Eigen::Vector2d,<sp/>Eigen::aligned_allocator&lt;Eigen::Vector2d&gt;<sp/>&gt;<sp/>PathType;<sp/>//<sp/>could<sp/>be<sp/>a<sp/>list<sp/>or<sp/>deque<sp/>as<sp/>well<sp/>...</highlight></codeline>
+<codeline><highlight class="normal">std::vector&lt;PathType&gt;<sp/>path_container(2);<sp/>//<sp/>init<sp/>2<sp/>empty<sp/>paths;<sp/>the<sp/>container<sp/>could<sp/>be<sp/>a<sp/>list<sp/>or<sp/>deque<sp/>as<sp/>well<sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/>//<sp/>Fill<sp/>path_container.at(0)<sp/>with<sp/>Eigen::Vector2d<sp/>elements,<sp/>we<sp/>skip<sp/>that<sp/>here</highlight></codeline>
+<codeline><highlight class="normal"><sp/>//<sp/>Fill<sp/>path_container.at(1)<sp/>with<sp/>Eigen::Vector2d<sp/>elements,<sp/>we<sp/>skip<sp/>that<sp/>here</highlight></codeline>
+<codeline><highlight class="normal">publishPathContainer(<sp/>path_container.begin(),<sp/>path_container.end()<sp/>);</highlight></codeline>
+</programlisting></para>
+<para><simplesect kind="remark"><para>Actually the underlying path does not necessarily need to be a Eigen::Vector2d sequence. Eigen::Vector2d can be replaced with any datatype that implement public x() and y() methods.<linebreak/>
+</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bidirectional iterator pointing to the begin of the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bidirectional iterator pointing to the end of the path </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace for the marker objects (the strings &quot;Edges&quot; and &quot;Vertices&quot; will be appended) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BidirIter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bidirectional iterator to a 2D path (sequence of Eigen::Vector2d elements) in a container </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="276" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.hpp" bodystart="172" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a15d8c238abbf9778fe5b000bac1309a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishTebContainer</definition>
+        <argsstring>(const std::vector&lt; boost::shared_ptr&lt; TebOptimalPlanner &gt; &gt; &amp;teb_planner, const std::string &amp;ns=&quot;TebContainer&quot;)</argsstring>
+        <name>publishTebContainer</name>
+        <param>
+          <type>const std::vector&lt; boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> &gt; &gt; &amp;</type>
+          <declname>teb_planner</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>ns</declname>
+          <defval>&quot;TebContainer&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Publish multiple Tebs from a container class (publish as marker message). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>teb_planner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of boost::shared_ptr&lt; TebOptPlannerPtr &gt; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Namespace for the marker objects </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="284" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="944" bodyend="991"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a0b89e2510aa177e5564c9fe5948d5681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishFeedbackMessage</definition>
+        <argsstring>(const std::vector&lt; boost::shared_ptr&lt; TebOptimalPlanner &gt; &gt; &amp;teb_planners, unsigned int selected_trajectory_idx, const ObstContainer &amp;obstacles)</argsstring>
+        <name>publishFeedbackMessage</name>
+        <param>
+          <type>const std::vector&lt; boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> &gt; &gt; &amp;</type>
+          <declname>teb_planners</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>selected_trajectory_idx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref> &amp;</type>
+          <declname>obstacles</declname>
+        </param>
+        <briefdescription>
+<para>Publish a feedback message (multiple trajectory version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The feedback message contains the all planned trajectory candidates (e.g. if planning in distinctive topologies is turned on). Each trajectory is composed of the sequence of poses, the velocity profile and temporal information. The feedback message also contains a list of active obstacles. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>teb_planners</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>container with multiple tebs (resp. their planner instances) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>selected_trajectory_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Idx of the currently selected trajectory in <computeroutput>teb_planners</computeroutput> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obstacles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of obstacles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="296" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="993" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a5e5aa6c64250ce3a95b807c7cb3da43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishFeedbackMessage</definition>
+        <argsstring>(const TebOptimalPlanner &amp;teb_planner, const ObstContainer &amp;obstacles)</argsstring>
+        <name>publishFeedbackMessage</name>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> &amp;</type>
+          <declname>teb_planner</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" kindref="member">ObstContainer</ref> &amp;</type>
+          <declname>obstacles</declname>
+        </param>
+        <briefdescription>
+<para>Publish a feedback message (single trajectory overload) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The feedback message contains the planned trajectory that is composed of the sequence of poses, the velocity profile and temporal information. The feedback message also contains a list of active obstacles. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>teb_planner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the planning instance </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obstacles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Container of obstacles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="307" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="1029" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a766fdde2e8af38147992c1dd0a4b88cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::publishMode</definition>
+        <argsstring>(int Mode)</argsstring>
+        <name>publishMode</name>
+        <param>
+          <type>int</type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="322" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="569" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1ad7caaeb12345976f24d99328a3bda9c5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std_msgs::ColorRGBA</type>
+        <definition>std_msgs::ColorRGBA hateb_local_planner::TebVisualization::toColorMsg</definition>
+        <argsstring>(double a, double r, double g, double b)</argsstring>
+        <name>toColorMsg</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to generate a color message from single values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alpha value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Red value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Green value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Blue value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Color message </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="319" column="30" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="1060" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1abeed1b7e0ff386955e4ee642ddd97afa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::setMarkerColour</definition>
+        <argsstring>(visualization_msgs::Marker &amp;marker, double itr, double n)</argsstring>
+        <name>setMarkerColour</name>
+        <param>
+          <type>visualization_msgs::Marker &amp;</type>
+          <declname>marker</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>itr</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="321" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="715" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a183b88c2bd0b99715510f26e1ce4a9c5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::TebVisualization::printErrorWhenNotInitialized</definition>
+        <argsstring>() const</argsstring>
+        <name>printErrorWhenNotInitialized</name>
+        <briefdescription>
+<para>Small helper function that checks if <ref refid="classhateb__local__planner_1_1TebVisualization_1acd47bf3c4dcc7b2c0e738ab0bc63f4c9" kindref="member">initialize()</ref> has been called and prints an error message if not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if not initialized, <computeroutput>false</computeroutput> if everything is ok </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="329" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="1069" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1a2d2a946873d2f9f3978d74952d3373ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::clearingTimerCB</definition>
+        <argsstring>(const ros::TimerEvent &amp;event)</argsstring>
+        <name>clearingTimerCB</name>
+        <param>
+          <type>const ros::TimerEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Callback function for the clearing timer that removes outdated visualization markers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer event containing timing information about the callback</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+This protected method is called periodically to remove visualization markers that are no longer needed, preventing visualization clutter and memory buildup </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="337" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="1077" bodyend="1159"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1ae0c4bd25168c07bee265b0bf3e25ac2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::TebVisualization::TebVisualization</definition>
+        <argsstring>()</argsstring>
+        <name>TebVisualization</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>do not forget to call <ref refid="classhateb__local__planner_1_1TebVisualization_1acd47bf3c4dcc7b2c0e738ab0bc63f4c9" kindref="member">initialize()</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="119" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1ae60f1d71224702ec05f3248fa352a9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::TebVisualization::TebVisualization</definition>
+        <argsstring>(ros::NodeHandle &amp;nh, const HATebConfig &amp;cfg)</argsstring>
+        <name>TebVisualization</name>
+        <param>
+          <type>ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> &amp;</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Constructor that initializes the class and registers topics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local ros::NodeHandle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to the <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> class for parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="126" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1TebVisualization_1acd47bf3c4dcc7b2c0e738ab0bc63f4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::TebVisualization::initialize</definition>
+        <argsstring>(ros::NodeHandle &amp;nh, const HATebConfig &amp;cfg)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> &amp;</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the class and registers topics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call this function if only the default constructor has been called before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local ros::NodeHandle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to the <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> class for parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="135" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/visualization.cpp" bodystart="82" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Forward Declaration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Visualize stuff from the <ref refid="namespacehateb__local__planner" kindref="compound">hateb_local_planner</ref> </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>hateb_local_planner::HATebConfig::Optimization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization"/>
+      </node>
+      <node id="4">
+        <label>hateb_local_planner::HATebConfig::GoalTolerance</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance"/>
+      </node>
+      <node id="5">
+        <label>hateb_local_planner::HATebConfig::Trajectory</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Trajectory"/>
+      </node>
+      <node id="3">
+        <label>hateb_local_planner::HATebConfig::Recovery</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Recovery"/>
+      </node>
+      <node id="1">
+        <label>hateb_local_planner::TebVisualization</label>
+        <link refid="classhateb__local__planner_1_1TebVisualization"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cfg_</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>hateb_local_planner::HATebConfig::Robot</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Robot"/>
+      </node>
+      <node id="7">
+        <label>hateb_local_planner::HATebConfig::Obstacles</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles"/>
+      </node>
+      <node id="2">
+        <label>hateb_local_planner::HATebConfig</label>
+        <link refid="classhateb__local__planner_1_1HATebConfig"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>recovery</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>goal_tolerance</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>trajectory</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>hateb</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>obstacles</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>optim</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>robot</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>visualization</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>hateb_local_planner::HATebConfig::Visualization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Visualization"/>
+      </node>
+      <node id="8">
+        <label>hateb_local_planner::HATebConfig::Agent</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Agent"/>
+      </node>
+      <node id="6">
+        <label>hateb_local_planner::HATebConfig::Hateb</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="113" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="113" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a2679ac837ab810f174caa5f0cdde437d" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agent_arrow_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ace3e82dc52fafb6853e5697191c1c2f6" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agent_marker_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ae16a9eb03ae282ad18f8207d3cc86d01" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agent_next_pose_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a4648917887c17f2a0d3faeb00cbcc1b0" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agent_paths_time_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ab4f46cf882cabe1a47c87e65e1d372d0" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agent_trajs_time_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a1991bcbc72e1055626b4828a3aee9c62" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agents_global_plans_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a484e062b39cb3554594e6d410b6188ee" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agents_local_plans_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a6afb6e64809710804a03d2e9df1208d4" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agents_local_trajs_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a10dbea3946e9bc2321a1d308c72e7c9d" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agents_tebs_fp_poses_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a41d2b763cd4a7936f164d2a863294d24" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>agents_tebs_poses_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a06deb721942ca2786ad4cd295ac8cf29" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>cfg_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a40c4692da58fd44cd81992f100f760ae" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>clearing_timer_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a2d2a946873d2f9f3978d74952d3373ac" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>clearingTimerCB</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a18bf4574b2158f91acaf7133bf34029f" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>feedback_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ada8179645d92b45bc78b6951c7f6c471" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>global_plan_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1acd47bf3c4dcc7b2c0e738ab0bc63f4c9" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>initialize</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1aefd9c7353f7cca488c105c794046b8de" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>initialized_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a07aab63a4077418fdc0467a75dadc134" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_agent_fp_poses_idx_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ac319a63a42ca5ad245f45f453d3830e8" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_agents_global_plans_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a50984055158afa68905b8a5b073af971" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_agents_local_plan_fp_poses_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a200fed97b7b01eadf645b819418cbf04" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_agents_local_plan_poses_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a509f6f646b8825f11a470529c1989ab3" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_agents_local_plans_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a47460cf695b80be9173392fb846c2b54" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_robot_global_plan_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a4e1dfbe068f664090ba1be80180fc07e" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_robot_local_plan_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a34478d4421ea14275e3d648646708865" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_robot_local_plan_fp_poses_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ab46113e35dec3a8b75312ad73f67dfc2" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_publish_robot_local_plan_poses_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a2e4e98bb5e713cee08e1585fb82f0c7c" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>last_robot_fp_poses_idx_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a468656ebe472022f1bba46d2c9cdb2ec" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>local_plan_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a275223327240424cc26896d79de979cc" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>local_traj_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a6fa1ebdad9fd0c664b27423b1c094a87" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>mode_text_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a547d2dcd85bf88ed8b7c63e878b99ac6" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>ns_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a183b88c2bd0b99715510f26e1ce4a9c5" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>printErrorWhenNotInitialized</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a9e0986d46cb93602c44d36cdd5828b07" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishAgentGlobalPlans</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a77cd1f43ae85629c72f1973750b62434" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishAgentLocalPlansAndPoses</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ad564ecfa87b4dced5b5a4c4040291bfc" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishAgentTrajectories</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a0b89e2510aa177e5564c9fe5948d5681" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishFeedbackMessage</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a5e5aa6c64250ce3a95b807c7cb3da43f" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishFeedbackMessage</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1adf3eb2f50c2e6158a130864ad45562f6" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishGlobalPlan</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a40b9087596923916b103ed54ebc9f9ea" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishGraph</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a7adf0817a78d3a1ee526f28d42e1d2b6" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishInfeasibleRobotPose</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1af188ca0ec67db4f84653efdc835f8dcb" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishLocalPlan</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1aa4bef46f39bbba65d5c96116cc4eb6f2" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishLocalPlanAndPoses</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a766fdde2e8af38147992c1dd0a4b88cd" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishMode</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1aa221459c4a282bbb130bf7f07093d048" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishObstacles</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ae1b0b3b81d634655283512389a60dd7d" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishPathContainer</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a03da32ee50134d296b5d92bbc3ff4b58" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishRobotFootprintModel</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a15d8c238abbf9778fe5b000bac1309a8" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishTebContainer</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1abefbdf3aa6e6a5a92273adcfc3db573e" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishTrackedAgents</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a4b2cde271caa8b74230aa9ee24e3fe0d" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishTrajectory</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1acfe0f9bdd2eb7760c18b625206321172" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>publishViaPoints</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a7fb8d9931f9a36c5420da0ed0d801469" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>robot_next_pose_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ade376828d48c472cf7987dec7bb8fd59" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>robot_path_time_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a402fafd9f6ceceb235b2d45c6defc5ea" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>robot_traj_time_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1abeed1b7e0ff386955e4ee642ddd97afa" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>setMarkerColour</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1afbb8c971dd8c5fc9f1a436994a185ec6" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>teb_fp_poses_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1aab245ad11d4ad09de53d2519bc54574a" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>teb_marker_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a5c5328573dd8077dfc17f215f5fc3dd9" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>teb_poses_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ae0c4bd25168c07bee265b0bf3e25ac2f" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>TebVisualization</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ae60f1d71224702ec05f3248fa352a9ac" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>TebVisualization</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a724cef064bc9a9e898aa2e9a5601e3f0" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>tf_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1ad7caaeb12345976f24d99328a3bda9c5" prot="public" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>toColorMsg</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a7dde8716b87906b495d2a4da6b469d3e" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>tracked_agents_sub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a24d3f19150fd3a0e72fbe2667abeed4d" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>tracked_agents_sub_topic_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a4500841ae7c7c976b08cd7996aa33c6a" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>ttg_pub_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a4c35c85e15d92f2660436b0811d4f4b4" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>vel_agent_</name></member>
+      <member refid="classhateb__local__planner_1_1TebVisualization_1a74bb9087ff93d11dd65a08c4899578b4" prot="protected" virt="non-virtual"><scope>hateb_local_planner::TebVisualization</scope><name>vel_robot_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

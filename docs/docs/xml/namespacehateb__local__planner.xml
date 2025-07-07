@@ -1,0 +1,2049 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacehateb__local__planner" kind="namespace" language="C++">
+    <compoundname>hateb_local_planner</compoundname>
+    <innerclass refid="classhateb__local__planner_1_1Backoff" prot="public">hateb_local_planner::Backoff</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1SetMode" prot="public">hateb_local_planner::SetMode</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1StatefulActionNodeROS" prot="public">hateb_local_planner::StatefulActionNodeROS</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1ModeInfo" prot="public">hateb_local_planner::ModeInfo</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1BackoffExitCondition" prot="public">hateb_local_planner::BackoffExitCondition</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1DualBandExitCondition" prot="public">hateb_local_planner::DualBandExitCondition</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1IsGoalReached" prot="public">hateb_local_planner::IsGoalReached</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1IsGoalUpdated" prot="public">hateb_local_planner::IsGoalUpdated</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PassThroughCondition" prot="public">hateb_local_planner::PassThroughCondition</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1SingleBandExitCondition" prot="public">hateb_local_planner::SingleBandExitCondition</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1VelObsExitCondition" prot="public">hateb_local_planner::VelObsExitCondition</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1BaseFootprintModel" prot="public">hateb_local_planner::BaseFootprintModel</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PointFootprint" prot="public">hateb_local_planner::PointFootprint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1CircularFootprint" prot="public">hateb_local_planner::CircularFootprint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1TwoCirclesFootprint" prot="public">hateb_local_planner::TwoCirclesFootprint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1LineFootprint" prot="public">hateb_local_planner::LineFootprint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PolygonFootprint" prot="public">hateb_local_planner::PolygonFootprint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1BaseTebUnaryEdge" prot="public">hateb_local_planner::BaseTebUnaryEdge</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1BaseTebBinaryEdge" prot="public">hateb_local_planner::BaseTebBinaryEdge</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1BaseTebMultiEdge" prot="public">hateb_local_planner::BaseTebMultiEdge</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAcceleration" prot="public">hateb_local_planner::EdgeAcceleration</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAccelerationStart" prot="public">hateb_local_planner::EdgeAccelerationStart</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAccelerationGoal" prot="public">hateb_local_planner::EdgeAccelerationGoal</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAccelerationHolonomic" prot="public">hateb_local_planner::EdgeAccelerationHolonomic</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAccelerationHolonomicStart" prot="public">hateb_local_planner::EdgeAccelerationHolonomicStart</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAccelerationHolonomicGoal" prot="public">hateb_local_planner::EdgeAccelerationHolonomicGoal</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAgentAgentSafety" prot="public">hateb_local_planner::EdgeAgentAgentSafety</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAgentRobotRelVelocity" prot="public">hateb_local_planner::EdgeAgentRobotRelVelocity</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAgentRobotSafety" prot="public">hateb_local_planner::EdgeAgentRobotSafety</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeAgentRobotVisibility" prot="public">hateb_local_planner::EdgeAgentRobotVisibility</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeDynamicObstacle" prot="public">hateb_local_planner::EdgeDynamicObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeInvisibleHuman" prot="public">hateb_local_planner::EdgeInvisibleHuman</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeKinematicsDiffDrive" prot="public">hateb_local_planner::EdgeKinematicsDiffDrive</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeKinematicsCarlike" prot="public">hateb_local_planner::EdgeKinematicsCarlike</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeObstacle" prot="public">hateb_local_planner::EdgeObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeInflatedObstacle" prot="public">hateb_local_planner::EdgeInflatedObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgePreferRotDir" prot="public">hateb_local_planner::EdgePreferRotDir</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeShortestPath" prot="public">hateb_local_planner::EdgeShortestPath</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeStaticAgentVisibility" prot="public">hateb_local_planner::EdgeStaticAgentVisibility</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeTimeOptimal" prot="public">hateb_local_planner::EdgeTimeOptimal</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeVelocity" prot="public">hateb_local_planner::EdgeVelocity</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeVelocityHolonomic" prot="public">hateb_local_planner::EdgeVelocityHolonomic</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeVelocityHolonomicAgent" prot="public">hateb_local_planner::EdgeVelocityHolonomicAgent</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeVelocityAgent" prot="public">hateb_local_planner::EdgeVelocityAgent</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1EdgeViaPoint" prot="public">hateb_local_planner::EdgeViaPoint</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1VertexPose" prot="public">hateb_local_planner::VertexPose</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1VertexTimeDiff" prot="public">hateb_local_planner::VertexTimeDiff</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1HATebConfig" prot="public">hateb_local_planner::HATebConfig</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1HATebLocalPlannerROS" prot="public">hateb_local_planner::HATebLocalPlannerROS</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1ModeSwitch" prot="public">hateb_local_planner::ModeSwitch</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1Obstacle" prot="public">hateb_local_planner::Obstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PointObstacle" prot="public">hateb_local_planner::PointObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1CircularObstacle" prot="public">hateb_local_planner::CircularObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1LineObstacle" prot="public">hateb_local_planner::LineObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PolygonObstacle" prot="public">hateb_local_planner::PolygonObstacle</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1TebOptimalPlanner" prot="public">hateb_local_planner::TebOptimalPlanner</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PlannerInterface" prot="public">hateb_local_planner::PlannerInterface</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1PoseSE2" prot="public">hateb_local_planner::PoseSE2</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1FailureDetector" prot="public">hateb_local_planner::FailureDetector</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1TimedElasticBand" prot="public">hateb_local_planner::TimedElasticBand</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1PlanTrajCombined" prot="public">hateb_local_planner::PlanTrajCombined</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1PlanCombined" prot="public">hateb_local_planner::PlanCombined</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1AgentPlanTrajCombined" prot="public">hateb_local_planner::AgentPlanTrajCombined</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1AgentPlanCombined" prot="public">hateb_local_planner::AgentPlanCombined</innerclass>
+    <innerclass refid="classhateb__local__planner_1_1TebVisualization" prot="public">hateb_local_planner::TebVisualization</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7fa" prot="public" static="no" strong="no">
+        <type>std::uint8_t</type>
+        <name>PLAN</name>
+        <enumvalue id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7faa920a55168971579d99b33ecbc5a8818d" prot="public">
+          <name>SINGLE_BAND</name>
+          <briefdescription>
+<para>Single elastic band optimization. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7faa2f42651e1382b441e241f275380248f8" prot="public">
+          <name>DUAL_BAND</name>
+          <briefdescription>
+<para>Dual elastic band optimization for robot and human. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7faaa6abe4839659313e448501949a814c22" prot="public">
+          <name>VELOBS</name>
+          <briefdescription>
+<para>Velocity obstacles-based planning. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7faa0e7a6013dfd67753cefe0fbab4c82512" prot="public">
+          <name>BACKOFF</name>
+          <briefdescription>
+<para><ref refid="classhateb__local__planner_1_1Backoff" kindref="compound">Backoff</ref> behavior when stuck. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1abf9d2429f0e193ae1b58a22309f8e7faaf2b794399c666f8c8779e958d7fe6179" prot="public">
+          <name>PASSTHROUGH</name>
+          <briefdescription>
+<para>PassThrough Mode at passages. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Planning mode enumeration Defines different modes of operation for the local planner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="176" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="176" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8a" prot="public" static="no" strong="no">
+        <type>std::uint8_t</type>
+        <name>PREDICTION</name>
+        <enumvalue id="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8aae084372d0f97f6da8cf1b9ef9fc4b28b" prot="public">
+          <name>CONST_VEL</name>
+          <briefdescription>
+<para>Constant velocity prediction. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8aa51415e167991087447c6a0bcaa8663c8" prot="public">
+          <name>BEHIND</name>
+          <briefdescription>
+<para>Predicting the goal as behind the robot. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8aa24daee122289cc15d963dffa694e7566" prot="public">
+          <name>PREDICT</name>
+          <briefdescription>
+<para>Use internal goal prediction scheme. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a9053a9eaf358ea63f7d8f3c651376a8aad6a95a52fdca114b7923c4a52cc38f72" prot="public">
+          <name>EXTERNAL</name>
+          <briefdescription>
+<para>External prediction provided the human goals. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Prediction mode enumeration Defines different strategies for predicting human motion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="188" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="188" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>AgentState</name>
+        <enumvalue id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503a8eaf13f36ff537218a27449e4a36517e" prot="public">
+          <name>NO_STATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503afe6f99ef1ec99efbdc19a9786cf1facc" prot="public">
+          <name>STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503aaf5a690fd5ec6f789dbfc51ec6a891ba" prot="public">
+          <name>MOVING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503a09d4d696b4e935115b9313e3c412509a" prot="public">
+          <name>STOPPED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a1e48cf4ccfab9dcfc0344d64f6e0c503aeecba0068950a2df17c47e851e1eef14" prot="public">
+          <name>BLOCKED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" line="109" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>RotType</name>
+        <enumvalue id="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0a811882fecd5c7618d7099ebbd39ea254" prot="public">
+          <name>left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0a334c4a4c42fdb79d7ebc3e73b517e6f8" prot="public">
+          <name>none</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehateb__local__planner_1a463aa878b6972598ee87204519a60ba0a7c4f29407893c334a6cb7a87bf045c0d" prot="public">
+          <name>right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Symbols for left/none/right rotations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="53" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" prot="public" static="no">
+        <type>std::vector&lt; Eigen::Vector2d, Eigen::aligned_allocator&lt; Eigen::Vector2d &gt; &gt;</type>
+        <definition>using hateb_local_planner::Point2dContainer = typedef std::vector&lt;Eigen::Vector2d, Eigen::aligned_allocator&lt;Eigen::Vector2d&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>Point2dContainer</name>
+        <briefdescription>
+<para>Abbrev. for a container storing 2d points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="51" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &gt;</type>
+        <definition>using hateb_local_planner::FootprintModelPtr = typedef boost::shared_ptr&lt;BaseFootprintModel&gt;</definition>
+        <argsstring></argsstring>
+        <name>FootprintModelPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared obstacle pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="116" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1af2d8ed0e53dff57b1e62bc801c0cd3ad" prot="public" static="no">
+        <type>boost::shared_ptr&lt; const <ref refid="classhateb__local__planner_1_1BaseFootprintModel" kindref="compound">BaseFootprintModel</ref> &gt;</type>
+        <definition>using hateb_local_planner::FootprintModelConstPtr = typedef boost::shared_ptr&lt;const BaseFootprintModel&gt;</definition>
+        <argsstring></argsstring>
+        <name>FootprintModelConstPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared obstacle const pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="118" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a96f5d84de31cd8eeeffbbf5341bac099" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1CircularFootprint" kindref="compound">CircularFootprint</ref> &gt;</type>
+        <definition>using hateb_local_planner::CircularFootprintPtr = typedef boost::shared_ptr&lt;CircularFootprint&gt;</definition>
+        <argsstring></argsstring>
+        <name>CircularFootprintPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" line="295" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/footprint_model.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a6a5674a2ba3b2b0bd64cdd76db2fc7e3" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> &gt;</type>
+        <definition>using hateb_local_planner::ObstaclePtr = typedef boost::shared_ptr&lt;Obstacle&gt;</definition>
+        <argsstring></argsstring>
+        <name>ObstaclePtr</name>
+        <briefdescription>
+<para>Abbrev. for shared obstacle pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="265" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a4e41a52836ef0622157f60b3515bfaa8" prot="public" static="no">
+        <type>boost::shared_ptr&lt; const <ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> &gt;</type>
+        <definition>using hateb_local_planner::ObstacleConstPtr = typedef boost::shared_ptr&lt;const Obstacle&gt;</definition>
+        <argsstring></argsstring>
+        <name>ObstacleConstPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared obstacle const pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="267" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1aa2fd52c70b6b2295dc138647919ea794" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacehateb__local__planner_1a6a5674a2ba3b2b0bd64cdd76db2fc7e3" kindref="member">ObstaclePtr</ref> &gt;</type>
+        <definition>using hateb_local_planner::ObstContainer = typedef std::vector&lt;ObstaclePtr&gt;</definition>
+        <argsstring></argsstring>
+        <name>ObstContainer</name>
+        <briefdescription>
+<para>Abbrev. for containers storing multiple obstacles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" line="269" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/obstacles.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a87928ff56147a2fd4f1a7286b6e4ec17" prot="public" static="no">
+        <type>g2o::BlockSolver&lt; g2o::BlockSolverTraits&lt;-1, -1 &gt; &gt;</type>
+        <definition>using hateb_local_planner::TEBBlockSolver = typedef g2o::BlockSolver&lt;g2o::BlockSolverTraits&lt;-1, -1&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>TEBBlockSolver</name>
+        <briefdescription>
+<para>Typedef for the block solver utilized for optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="92" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1acedc27ee6fa1ed5261dd345d9026ecd5" prot="public" static="no">
+        <type>g2o::LinearSolverCholmod&lt; TEBBlockSolver::PoseMatrixType &gt;</type>
+        <definition>using hateb_local_planner::TEBLinearSolver = typedef g2o::LinearSolverCholmod&lt;TEBBlockSolver::PoseMatrixType&gt;</definition>
+        <argsstring></argsstring>
+        <name>TEBLinearSolver</name>
+        <briefdescription>
+<para>Typedef for the linear solver utilized for optimization. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="95" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1aa1464081de429166488fe52d38f977c6" prot="public" static="no">
+        <type>std::vector&lt; Eigen::Vector2d, Eigen::aligned_allocator&lt; Eigen::Vector2d &gt; &gt;</type>
+        <definition>using hateb_local_planner::ViaPointContainer = typedef std::vector&lt;Eigen::Vector2d, Eigen::aligned_allocator&lt;Eigen::Vector2d&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>ViaPointContainer</name>
+        <briefdescription>
+<para>Typedef for a container storing via-points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="98" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1afc15745e3b35b02461a967b832dcc7ed" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> &gt;</type>
+        <definition>using hateb_local_planner::TebOptimalPlannerPtr = typedef boost::shared_ptr&lt;TebOptimalPlanner&gt;</definition>
+        <argsstring></argsstring>
+        <name>TebOptimalPlannerPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared instances of the <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="848" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1ae4679377680be2798964279774edd095" prot="public" static="no">
+        <type>boost::shared_ptr&lt; const <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> &gt;</type>
+        <definition>using hateb_local_planner::TebOptimalPlannerConstPtr = typedef boost::shared_ptr&lt;const TebOptimalPlanner&gt;</definition>
+        <argsstring></argsstring>
+        <name>TebOptimalPlannerConstPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared const <ref refid="classhateb__local__planner_1_1TebOptimalPlanner" kindref="compound">TebOptimalPlanner</ref> pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="850" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1acab4e8f2d06fd4a9d51fa1d7dccdf60b" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="namespacehateb__local__planner_1afc15745e3b35b02461a967b832dcc7ed" kindref="member">TebOptimalPlannerPtr</ref> &gt;</type>
+        <definition>using hateb_local_planner::TebOptPlannerContainer = typedef std::vector&lt;TebOptimalPlannerPtr&gt;</definition>
+        <argsstring></argsstring>
+        <name>TebOptPlannerContainer</name>
+        <briefdescription>
+<para>Abbrev. for containers storing multiple teb optimal planners. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" line="852" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/optimal_planner.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a88d05bda75770b4a63ec4c1d940372e8" prot="public" static="no">
+        <type>struct { std::vector&lt; geometry_msgs::PoseStamped &gt; plan</type>
+        <definition>using hateb_local_planner::PlanStartVelGoalVel = typedef struct { std::vector&lt;geometry_msgs::PoseStamped&gt; plan</definition>
+        <argsstring></argsstring>
+        <name>PlanStartVelGoalVel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="63" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a3b4752a48696bcc63570d62786fb9736" prot="public" static="no">
+        <type>std::map&lt; uint64_t, <ref refid="namespacehateb__local__planner_1a88d05bda75770b4a63ec4c1d940372e8" kindref="member">PlanStartVelGoalVel</ref> &gt;</type>
+        <definition>using hateb_local_planner::AgentPlanVelMap = typedef std::map&lt;uint64_t, PlanStartVelGoalVel&gt;</definition>
+        <argsstring></argsstring>
+        <name>AgentPlanVelMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="71" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1ae4119254a399f35d2c880803d7ec93b2" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1PlannerInterface" kindref="compound">PlannerInterface</ref> &gt;</type>
+        <definition>using hateb_local_planner::PlannerInterfacePtr = typedef boost::shared_ptr&lt;PlannerInterface&gt;</definition>
+        <argsstring></argsstring>
+        <name>PlannerInterfacePtr</name>
+        <briefdescription>
+<para>Abbrev. for shared instances of <ref refid="classhateb__local__planner_1_1PlannerInterface" kindref="compound">PlannerInterface</ref> or it&apos;s subclasses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="199" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1adb0456022df4079e7f827f10ee64981a" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classhateb__local__planner_1_1VertexPose" kindref="compound">VertexPose</ref> * &gt;</type>
+        <definition>using hateb_local_planner::PoseSequence = typedef std::vector&lt;VertexPose*&gt;</definition>
+        <argsstring></argsstring>
+        <name>PoseSequence</name>
+        <briefdescription>
+<para>Container of poses that represent the spatial part of the trajectory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="56" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a6ee10d61c614b0238212192794ba76a2" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classhateb__local__planner_1_1VertexTimeDiff" kindref="compound">VertexTimeDiff</ref> * &gt;</type>
+        <definition>using hateb_local_planner::TimeDiffSequence = typedef std::vector&lt;VertexTimeDiff*&gt;</definition>
+        <argsstring></argsstring>
+        <name>TimeDiffSequence</name>
+        <briefdescription>
+<para>Container of time differences that define the temporal of the trajectory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" line="58" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/timed_elastic_band.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a189cd7a87216df6bcfef993ad267dd11" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classhateb__local__planner_1_1TebVisualization" kindref="compound">TebVisualization</ref> &gt;</type>
+        <definition>using hateb_local_planner::TebVisualizationPtr = typedef boost::shared_ptr&lt;TebVisualization&gt;</definition>
+        <argsstring></argsstring>
+        <name>TebVisualizationPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared instances of the <ref refid="classhateb__local__planner_1_1TebVisualization" kindref="compound">TebVisualization</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="387" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacehateb__local__planner_1a6179d40b775a55a6fa71681cda5e40c7" prot="public" static="no">
+        <type>boost::shared_ptr&lt; const <ref refid="classhateb__local__planner_1_1TebVisualization" kindref="compound">TebVisualization</ref> &gt;</type>
+        <definition>using hateb_local_planner::TebVisualizationConstPtr = typedef boost::shared_ptr&lt;const TebVisualization&gt;</definition>
+        <argsstring></argsstring>
+        <name>TebVisualizationConstPtr</name>
+        <briefdescription>
+<para>Abbrev. for shared instances of the <ref refid="classhateb__local__planner_1_1TebVisualization" kindref="compound">TebVisualization</ref> (read-only) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" line="390" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/visualization.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehateb__local__planner_1a44e9e507bb08b55ba047f7edcf443643" prot="public" static="no" mutable="no">
+        <type>geometry_msgs::Twist</type>
+        <definition>geometry_msgs::Twist hateb_local_planner::start_vel</definition>
+        <argsstring></argsstring>
+        <name>start_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="65" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehateb__local__planner_1a35ec0b46ee5b97db6df35361841f5bd2" prot="public" static="no" mutable="no">
+        <type>geometry_msgs::Twist</type>
+        <definition>geometry_msgs::Twist hateb_local_planner::goal_vel</definition>
+        <argsstring></argsstring>
+        <name>goal_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="66" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehateb__local__planner_1a646388b7d2c05dbfb029b1b00fd67f23" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hateb_local_planner::nominal_vel</definition>
+        <argsstring></argsstring>
+        <name>nominal_vel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="67" column="10" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehateb__local__planner_1a8be0980eee84fa548e6076bbca9a404c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hateb_local_planner::isMode</definition>
+        <argsstring></argsstring>
+        <name>isMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" line="68" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/planner_interface.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacehateb__local__planner_1a634b06994a4ecb77b1f523162e152c36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class DerivedT</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void hateb_local_planner::RegisterStatefulActionNodeROS</definition>
+        <argsstring>(BT::BehaviorTreeFactory &amp;factory, const std::string &amp;registration_ID, ros::NodeHandle &amp;node_handle)</argsstring>
+        <name>RegisterStatefulActionNodeROS</name>
+        <param>
+          <type>BT::BehaviorTreeFactory &amp;</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>registration_ID</declname>
+        </param>
+        <param>
+          <type>ros::NodeHandle &amp;</type>
+          <declname>node_handle</declname>
+        </param>
+        <briefdescription>
+<para>Registers a stateful action node with the behavior tree factory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This template function creates and registers a builder for derived node types, allowing them to be instantiated by the behavior tree factory.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The behavior tree factory to register with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>registration_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique identifier for the node type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node_handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ROS node handle for communication </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" line="160" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/bt_core.h" bodystart="160" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1af895105afa3bbde12cf912915473fcb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector2d</type>
+        <definition>Eigen::Vector2d hateb_local_planner::closest_point_on_line_segment_2d</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;point, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line_end)</argsstring>
+        <name>closest_point_on_line_segment_2d</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line_end</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to obtain the closest point on a line segment w.r.t. a reference point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the line segment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Closest point on the line segment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="60" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="60" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1adfa76447cf46833d01b4dd5647ecfe86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_point_to_segment_2d</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;point, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line_end)</argsstring>
+        <name>distance_point_to_segment_2d</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line_end</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to calculate the distance between a line segment and a point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the line segment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>minimum distance to a given line segment </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="88" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1aa6390beb4d01c1661e1c7523f74a93b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::check_line_segments_intersection_2d</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line1_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line1_end, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line2_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line2_end, Eigen::Vector2d *intersection=NULL)</argsstring>
+        <name>check_line_segments_intersection_2d</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line1_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line1_end</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line2_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line2_end</declname>
+        </param>
+        <param>
+          <type>Eigen::Vector2d *</type>
+          <declname>intersection</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Helper function to check whether two line segments intersects. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line1_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the first line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line1_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the first line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line2_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the second line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line2_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the second line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">intersection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[optional] Write intersection point to destination (the value is only written, if both lines intersect, e.g. if the function returns <computeroutput>true</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if both line segments intersect </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="101" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="101" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ac2e2d2432c7bf42cd93079ae086f9b27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_segment_to_segment_2d</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line1_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line1_end, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line2_start, const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;line2_end)</argsstring>
+        <name>distance_segment_to_segment_2d</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line1_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line1_end</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line2_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector2d &gt; &amp;</type>
+          <declname>line2_end</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to calculate the smallest distance between two line segments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line1_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the first line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line1_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the first line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line2_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the second line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line2_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the second line segment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>smallest distance between both segments </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="150" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="150" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a3fb251a59ae7588035748ef6afd02519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_point_to_polygon_2d</definition>
+        <argsstring>(const Eigen::Vector2d &amp;point, const Point2dContainer &amp;vertices)</argsstring>
+        <name>distance_point_to_polygon_2d</name>
+        <param>
+          <type>const Eigen::Vector2d &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" kindref="member">Point2dContainer</ref> &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to calculate the smallest distance between a point and a closed polygon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertices describing the closed polygon (the first vertex is not repeated at the end) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>smallest distance between point and polygon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="176" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="176" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ae53d0dcfdd477c66b3ae14cad3100f1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_segment_to_polygon_2d</definition>
+        <argsstring>(const Eigen::Vector2d &amp;line_start, const Eigen::Vector2d &amp;line_end, const Point2dContainer &amp;vertices)</argsstring>
+        <name>distance_segment_to_polygon_2d</name>
+        <param>
+          <type>const Eigen::Vector2d &amp;</type>
+          <declname>line_start</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector2d &amp;</type>
+          <declname>line_end</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" kindref="member">Point2dContainer</ref> &amp;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to calculate the smallest distance between a line segment and a closed polygon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line_start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the start of the line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line_end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2D point representing the end of the line segment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertices describing the closed polygon (the first vertex is not repeated at the end) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>smallest distance between point and polygon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="209" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="209" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a7390a4788c5cdca6fecac1aa7315958e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_polygon_to_polygon_2d</definition>
+        <argsstring>(const Point2dContainer &amp;vertices1, const Point2dContainer &amp;vertices2)</argsstring>
+        <name>distance_polygon_to_polygon_2d</name>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" kindref="member">Point2dContainer</ref> &amp;</type>
+          <declname>vertices1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598" kindref="member">Point2dContainer</ref> &amp;</type>
+          <declname>vertices2</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to calculate the smallest distance between two closed polygons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vertices1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertices describing the first closed polygon (the first vertex is not repeated at the end) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertices describing the second closed polygon (the first vertex is not repeated at the end) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>smallest distance between point and polygon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="241" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="241" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1accc129d7b0acdd86b557bf37bbb0cd15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_distance_line_to_line_3d</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;x1, Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;u, const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;x2, Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;v)</argsstring>
+        <name>calc_distance_line_to_line_3d</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="276" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="276" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ad608f81b0ad730706ceece80d5dac429" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_distance_segment_to_segment3D</definition>
+        <argsstring>(const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;line1_start, Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;line1_end, const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;line2_start, Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;line2_end)</argsstring>
+        <name>calc_distance_segment_to_segment3D</name>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>line1_start</declname>
+        </param>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>line1_end</declname>
+        </param>
+        <param>
+          <type>const Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>line2_start</declname>
+        </param>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::Vector3d &gt; &amp;</type>
+          <declname>line2_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="303" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="303" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a9c95517e3f1a8468a88f3db377831228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VectorType</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_closest_point_to_approach_time</definition>
+        <argsstring>(const VectorType &amp;x1, const VectorType &amp;vel1, const VectorType &amp;x2, const VectorType &amp;vel2)</argsstring>
+        <name>calc_closest_point_to_approach_time</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>vel1</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>vel2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="375" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="375" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a149078819e493c9816eb27d45420fb99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VectorType</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_closest_point_to_approach_distance</definition>
+        <argsstring>(const VectorType &amp;x1, const VectorType &amp;vel1, const VectorType &amp;x2, const VectorType &amp;vel2, double bound_cpa_time=0)</argsstring>
+        <name>calc_closest_point_to_approach_distance</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>vel1</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>vel2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bound_cpa_time</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="391" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="391" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a0fa85a1b4b27c909f8d43a422a63945b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VectorType</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_distance_point_to_line</definition>
+        <argsstring>(const VectorType &amp;point, const VectorType &amp;line_base, const VectorType &amp;line_dir)</argsstring>
+        <name>calc_distance_point_to_line</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>line_base</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>line_dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="406" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="406" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a0c118ac06a1f7d66fd756bfe4a8a7d1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VectorType</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::calc_distance_point_to_segment</definition>
+        <argsstring>(const VectorType &amp;point, const VectorType &amp;line_start, const VectorType &amp;line_end)</argsstring>
+        <name>calc_distance_point_to_segment</name>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>line_start</declname>
+        </param>
+        <param>
+          <type>const VectorType &amp;</type>
+          <declname>line_end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" line="422" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h" bodystart="422" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundToInterval</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundToInterval</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Linear penalty function for bounding <computeroutput>var</computeroutput> to the interval <formula id="21">$ -a &lt; var &lt; a $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower and upper absolute bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1a15250529ebfe9fe310c0e0dc62617472" kindref="member">penaltyBoundToIntervalDerivative</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Penalty / cost value that is nonzero if the constraint is not satisfied </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="58" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1affb0ebd0746958b63ff8a9481d5686e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundToInterval</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;b, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundToInterval</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Linear penalty function for bounding <computeroutput>var</computeroutput> to the interval <formula id="22">$ a &lt; var &lt; b $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upper bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1a15250529ebfe9fe310c0e0dc62617472" kindref="member">penaltyBoundToIntervalDerivative</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Penalty / cost value that is nonzero if the constraint is not satisfied </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="77" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ab0d8f17ad8f685bedc4aaf2ea24a47f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromBelow</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundFromBelow</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Linear penalty function for bounding <computeroutput>var</computeroutput> from below: <formula id="23">$ a &lt; var $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1a0bba69036c01261cfb3a0a0a4901ff5c" kindref="member">penaltyBoundFromBelowDerivative</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Penalty / cost value that is nonzero if the constraint is not satisfied </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="95" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ae7a3f92de1df6ab7ba7cce0a3c30aa50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromAbove</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundFromAbove</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="102" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="102" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a15250529ebfe9fe310c0e0dc62617472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundToIntervalDerivative</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundToIntervalDerivative</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Derivative of the linear penalty function for bounding <computeroutput>var</computeroutput> to the interval <formula id="21">$ -a &lt; var &lt; a $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower and upper absolute bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710" kindref="member">penaltyBoundToInterval</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Derivative of the penalty function w.r.t. <computeroutput>var</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="117" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="117" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1aebe24da4ec2cf8d7e9e4d0ddc667200a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundToIntervalDerivative</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;b, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundToIntervalDerivative</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Derivative of the linear penalty function for bounding <computeroutput>var</computeroutput> to the interval <formula id="22">$ a &lt; var &lt; b $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upper bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1a94ada7ff1cf4c2ece889d82f15b01710" kindref="member">penaltyBoundToInterval</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Derivative of the penalty function w.r.t. <computeroutput>var</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="136" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a0bba69036c01261cfb3a0a0a4901ff5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromBelowDerivative</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundFromBelowDerivative</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Derivative of the linear penalty function for bounding <computeroutput>var</computeroutput> from below: <formula id="23">$ a &lt; var $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar that should be bounded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>safty margin (move bound to the interior of the interval) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacehateb__local__planner_1ab0d8f17ad8f685bedc4aaf2ea24a47f1" kindref="member">penaltyBoundFromBelow</ref> </para>
+</simplesect>
+<simplesect kind="return"><para>Derivative of the penalty function w.r.t. <computeroutput>var</computeroutput> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="154" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="154" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a803bab130c6e16215b0ddd8cb03fb1a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromBelowExp</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon, const double &amp;mul)</argsstring>
+        <name>penaltyBoundFromBelowExp</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>mul</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="161" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="161" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1af2b6c3c0d8dc4e84e5059ecb0bfb57ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromBelowNonLinear</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundFromBelowNonLinear</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="172" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="172" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1ac0fc0ad9921b131015538d3d29ec4f75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::penaltyBoundFromBelowQuad</definition>
+        <argsstring>(const double &amp;var, const double &amp;a, const double &amp;epsilon)</argsstring>
+        <name>penaltyBoundFromBelowQuad</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" line="183" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/penalties.h" bodystart="183" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a2ae8764bdacddaee9b80a5866db3b9b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::is_close</definition>
+        <argsstring>(double a, double b, double epsilon=1e-4)</argsstring>
+        <name>is_close</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+          <defval>1e-4</defval>
+        </param>
+        <briefdescription>
+<para>Check whether two variables (double) are close to each other. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first value to compare </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second value to compare </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>precision threshold </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if |a-b| &lt; epsilon, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="62" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a9d8ed497f13dd817219467f6851caf61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::average_angles</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;angles)</argsstring>
+        <name>average_angles</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>angles</declname>
+        </param>
+        <briefdescription>
+<para>Return the average angle of an arbitrary number of given angles [rad]. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector containing all angles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>average / mean angle, that is normalized to [-pi, pi] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="69" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="69" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1aef51438998773bdbcaed0119e2a62a4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hateb_local_planner::smaller_than_abs</definition>
+        <argsstring>(double i, double j)</argsstring>
+        <name>smaller_than_abs</name>
+        <param>
+          <type>double</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Small helper function: check if |a|&lt;|b|. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="83" column="13" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a39af8f619a3185d081cde50624f5dfa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::fast_sigmoid</definition>
+        <argsstring>(double x)</argsstring>
+        <name>fast_sigmoid</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Calculate a fast approximation of a sigmoid function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The following function is implemented: <formula id="30">$ x / (1 + |x|) $</formula> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the argument of the function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="90" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1af0d33026d8646b389f2a76addd252325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double hateb_local_planner::center_radians</definition>
+        <argsstring>(double angle)</argsstring>
+        <name>center_radians</name>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="92" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a6b283a25ac83d84e4340dc2e25fa6f20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename P1</type>
+          </param>
+          <param>
+            <type>typename P2</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::distance_points2d</definition>
+        <argsstring>(const P1 &amp;point1, const P2 &amp;point2)</argsstring>
+        <name>distance_points2d</name>
+        <param>
+          <type>const P1 &amp;</type>
+          <declname>point1</declname>
+        </param>
+        <param>
+          <type>const P2 &amp;</type>
+          <declname>point2</declname>
+        </param>
+        <briefdescription>
+<para>Calculate Euclidean distance between two 2D point datatypes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object containing fields x and y </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object containing fields x and y </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Euclidean distance: ||point2-point1|| </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="109" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a93d058c71c6324fe929db8d83d7fa43a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename V1</type>
+          </param>
+          <param>
+            <type>typename V2</type>
+          </param>
+        </templateparamlist>
+        <type>double</type>
+        <definition>double hateb_local_planner::cross2d</definition>
+        <argsstring>(const V1 &amp;v1, const V2 &amp;v2)</argsstring>
+        <name>cross2d</name>
+        <param>
+          <type>const V1 &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>const V2 &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the 2d cross product (returns length of the resulting vector along the z-axis in 3d) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object containing public methods x() and y() </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object containing fields x() and y() </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>magnitude that would result in the 3D case (along the z-axis) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="120" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a2109332af478b073ef8713bd5c8d3710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T&amp; hateb_local_planner::get_const_reference</definition>
+        <argsstring>(const T *ptr)</argsstring>
+        <name>get_const_reference</name>
+        <param>
+          <type>const T *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Helper function that returns the const reference to a value defined by either its raw pointer type or const reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a constant reference for boths input variants (pointer or reference). <simplesect kind="remark"><para>Makes only sense in combination with the overload getConstReference(const T&amp; val). </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer of type T </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbitrary type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If <computeroutput>T</computeroutput> is a pointer, return const *T (leading to const T&amp;), otherwise const T&amp; with out pointer-to-ref conversion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="134" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehateb__local__planner_1a5f616f565ae6d41403359464581ddaaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T&amp; hateb_local_planner::get_const_reference</definition>
+        <argsstring>(const T &amp;val, typename boost::disable_if&lt; boost::is_pointer&lt; T &gt; &gt;::type *dummy=0)</argsstring>
+        <name>get_const_reference</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>typename boost::disable_if&lt; boost::is_pointer&lt; T &gt; &gt;::type *</type>
+          <declname>dummy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Helper function that returns the const reference to a value defined by either its raw pointer type or const reference. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a constant reference for boths input variants (pointer or reference). <simplesect kind="remark"><para>Makes only sense in combination with the overload getConstReference(const T* val). </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dummy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SFINAE helper variable </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arbitrary type </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If <computeroutput>T</computeroutput> is a pointer, return const *T (leading to const T&amp;), otherwise const T&amp; with out pointer-to-ref conversion </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" line="149" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/misc.h" bodystart="149" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/backoff.h" line="52" column="1"/>
+  </compounddef>
+</doxygen>

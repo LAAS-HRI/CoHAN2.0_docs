@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhateb__local__planner_1_1HATebConfig" kind="class" language="C++" prot="public">
+    <compoundname>hateb_local_planner::HATebConfig</compoundname>
+    <includes refid="hateb__config_8h" local="no">hateb_config.h</includes>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Agent" prot="public">hateb_local_planner::HATebConfig::Agent</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance" prot="public">hateb_local_planner::HATebConfig::GoalTolerance</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb" prot="public">hateb_local_planner::HATebConfig::Hateb</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles" prot="public">hateb_local_planner::HATebConfig::Obstacles</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization" prot="public">hateb_local_planner::HATebConfig::Optimization</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Recovery" prot="public">hateb_local_planner::HATebConfig::Recovery</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Robot" prot="public">hateb_local_planner::HATebConfig::Robot</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Trajectory" prot="public">hateb_local_planner::HATebConfig::Trajectory</innerclass>
+    <innerclass refid="structhateb__local__planner_1_1HATebConfig_1_1Visualization" prot="public">hateb_local_planner::HATebConfig::Visualization</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a2921801e707b0d9214baf48aaf829e50" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebConfig::ns_</definition>
+        <argsstring></argsstring>
+        <name>ns_</name>
+        <briefdescription>
+<para>Namespace of the planner, used for topic, service and parameter names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="62" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a2e0d10775dd34f5326525f5a394ef1a3" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebConfig::odom_topic</definition>
+        <argsstring></argsstring>
+        <name>odom_topic</name>
+        <briefdescription>
+<para>Topic name of the odometry message, provided by the robot driver or simulator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="63" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1aab837855d879246e75679018ac66655c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string hateb_local_planner::HATebConfig::map_frame</definition>
+        <argsstring></argsstring>
+        <name>map_frame</name>
+        <briefdescription>
+<para>Global planning frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="64" column="15" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a4852da2319b1e625f751dc771e35313a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1acb633f39a551ef9e0a25c9e1134ae491" kindref="member">FootprintModelPtr</ref></type>
+        <definition>FootprintModelPtr hateb_local_planner::HATebConfig::robot_model</definition>
+        <argsstring></argsstring>
+        <name>robot_model</name>
+        <briefdescription>
+<para>model of the robot&apos;s footprint </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="66" column="21" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a1e83960102cc75c1876b830b69a97076" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehateb__local__planner_1a96f5d84de31cd8eeeffbbf5341bac099" kindref="member">CircularFootprintPtr</ref></type>
+        <definition>CircularFootprintPtr hateb_local_planner::HATebConfig::human_model</definition>
+        <argsstring></argsstring>
+        <name>human_model</name>
+        <briefdescription>
+<para>model of the agent&apos;s footprint </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="67" column="24" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a43510bba0e334b07ae145e289af7363d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hateb_local_planner::HATebConfig::planning_mode</definition>
+        <argsstring></argsstring>
+        <name>planning_mode</name>
+        <briefdescription>
+<para>Planning mode (autonomous vs human-aware) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="69" column="7" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a66f7d8f18503575290b9e27dc81c9fd1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Trajectory" kindref="compound">hateb_local_planner::HATebConfig::Trajectory</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Trajectory hateb_local_planner::HATebConfig::trajectory</definition>
+        <argsstring></argsstring>
+        <name>trajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="97" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a7453a4721bc6ae407a6a8354c0bada97" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Robot" kindref="compound">hateb_local_planner::HATebConfig::Robot</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Robot hateb_local_planner::HATebConfig::robot</definition>
+        <argsstring></argsstring>
+        <name>robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="115" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a59b5f0b0ce9c78b67f4c0240cdd096a7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Agent" kindref="compound">hateb_local_planner::HATebConfig::Agent</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Agent hateb_local_planner::HATebConfig::agent</definition>
+        <argsstring></argsstring>
+        <name>agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="131" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a774f415f6af2158f151285083ecf0129" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance" kindref="compound">hateb_local_planner::HATebConfig::GoalTolerance</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::GoalTolerance hateb_local_planner::HATebConfig::goal_tolerance</definition>
+        <argsstring></argsstring>
+        <name>goal_tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="139" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a8c6e938912d08245988e7e9e822bb781" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles" kindref="compound">hateb_local_planner::HATebConfig::Obstacles</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Obstacles hateb_local_planner::HATebConfig::obstacles</definition>
+        <argsstring></argsstring>
+        <name>obstacles</name>
+        <briefdescription>
+<para><ref refid="classhateb__local__planner_1_1Obstacle" kindref="compound">Obstacle</ref> related parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="164" column="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a162e554b1458c4a47c8f5d93c8285589" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization" kindref="compound">hateb_local_planner::HATebConfig::Optimization</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Optimization hateb_local_planner::HATebConfig::optim</definition>
+        <argsstring></argsstring>
+        <name>optim</name>
+        <briefdescription>
+<para><ref refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization" kindref="compound">Optimization</ref> related parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="214" column="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1af59ebc08ba1da01cb166b76483ac5f89" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb" kindref="compound">hateb_local_planner::HATebConfig::Hateb</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Hateb hateb_local_planner::HATebConfig::hateb</definition>
+        <argsstring></argsstring>
+        <name>hateb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="230" column="9"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1a50d1daf2f7da03c3b5b48737a924099d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Recovery" kindref="compound">hateb_local_planner::HATebConfig::Recovery</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Recovery hateb_local_planner::HATebConfig::recovery</definition>
+        <argsstring></argsstring>
+        <name>recovery</name>
+        <briefdescription>
+<para>Parameters related to recovery and backup strategies. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="241" column="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1aa06ecc9c7cd1340e7ece987a25b18d9b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structhateb__local__planner_1_1HATebConfig_1_1Visualization" kindref="compound">hateb_local_planner::HATebConfig::Visualization</ref></type>
+        <definition>struct hateb_local_planner::HATebConfig::Visualization hateb_local_planner::HATebConfig::visualization</definition>
+        <argsstring></argsstring>
+        <name>visualization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="254" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhateb__local__planner_1_1HATebConfig_1ade14e80c40dad843b3e8a56272d359ab" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex hateb_local_planner::HATebConfig::config_mutex_</definition>
+        <argsstring></argsstring>
+        <name>config_mutex_</name>
+        <briefdescription>
+<para>Mutex for config accesses and changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="464" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1a3137cc9fd23e69847512d739f15ac374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hateb_local_planner::HATebConfig::HATebConfig</definition>
+        <argsstring>()</argsstring>
+        <name>HATebConfig</name>
+        <briefdescription>
+<para>Construct the <ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> using default values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>If the <bold>rosparam</bold> server or/and <bold>dynamic_reconfigure</bold> (rqt_reconfigure) node are used, the default variables will be overwritten: <linebreak/>
+ E.g. if <emphasis>base_local_planner</emphasis> is utilized as plugin for the navigation stack, the initialize() method will register a dynamic_reconfigure server. A subset (not all but most) of the parameters are considered for dynamic modifications. All parameters considered by the dynamic_reconfigure server (and their <bold>default</bold> values) are set in <emphasis>PROJECT_SRC/cfg/HATebLocalPlannerReconfigure.cfg</emphasis>. <linebreak/>
+ In addition the rosparam server can be queried to get parameters e.g. defiend in a launch file. The plugin source (or a possible binary source) can call <ref refid="classhateb__local__planner_1_1HATebConfig_1a9e2899f20427243b8865c4463d1faff3" kindref="member">loadRosParamFromNodeHandle()</ref> to update the parameters. In <emphasis>summary</emphasis>, default parameters are loaded in the following order (the right one overrides the left ones): <linebreak/>
+ <bold><ref refid="classhateb__local__planner_1_1HATebConfig" kindref="compound">HATebConfig</ref> Constructor defaults &lt;&lt; dynamic_reconfigure defaults &lt;&lt; rosparam server defaults</bold> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="269" column="3" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="269" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1a9e2899f20427243b8865c4463d1faff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebConfig::loadRosParamFromNodeHandle</definition>
+        <argsstring>(const ros::NodeHandle &amp;nh)</argsstring>
+        <name>loadRosParamFromNodeHandle</name>
+        <param>
+          <type>const ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+<para>Load parmeters from the ros param server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to the local ros::NodeHandle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="432" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_config.cpp" bodystart="47" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1a7db4cf8fa64da1918c96a76350c99b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebConfig::reconfigure</definition>
+        <argsstring>(HATebLocalPlannerReconfigureConfig &amp;cfg)</argsstring>
+        <name>reconfigure</name>
+        <param>
+          <type>HATebLocalPlannerReconfigureConfig &amp;</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Reconfigure parameters from the dynamic_reconfigure config. Change parameters dynamically (e.g. with <computeroutput>rosrun rqt_reconfigure rqt_reconfigure</computeroutput>). A reconfigure server needs to be instantiated that calls this method in it&apos;s callback. In case of the plugin <emphasis><ref refid="namespacehateb__local__planner" kindref="compound">hateb_local_planner</ref></emphasis> default values are defined in <emphasis>PROJECT_SRC/cfg/HATebLocalPlannerReconfigure.cfg</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Config class autogenerated by dynamic_reconfigure according to the cfg-file mentioned above. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="442" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_config.cpp" bodystart="205" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1ac8d6773971b7c23ace6e20581011eaaa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebConfig::checkParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>checkParameters</name>
+        <briefdescription>
+<para>Check parameters and print warnings in case of discrepancies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Call this method whenever parameters are changed using public interfaces to inform the user about some improper uses. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="450" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_config.cpp" bodystart="346" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1a9642a12072a2cf296475ca9e46c7e429" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hateb_local_planner::HATebConfig::checkDeprecated</definition>
+        <argsstring>(const ros::NodeHandle &amp;nh) const</argsstring>
+        <name>checkDeprecated</name>
+        <param>
+          <type>const ros::NodeHandle &amp;</type>
+          <declname>nh</declname>
+        </param>
+        <briefdescription>
+<para>Check if some deprecated parameters are found and print warnings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const reference to the local ros::NodeHandle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="456" column="8" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/hateb_config.cpp" bodystart="405" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classhateb__local__planner_1_1HATebConfig_1a0325419503353c2a700f20c836858dd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::mutex &amp;</type>
+        <definition>boost::mutex&amp; hateb_local_planner::HATebConfig::configMutex</definition>
+        <argsstring>()</argsstring>
+        <name>configMutex</name>
+        <briefdescription>
+<para>Return the internal config mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="461" column="16" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="461" bodyend="461"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Config class for the <ref refid="namespacehateb__local__planner" kindref="compound">hateb_local_planner</ref> and its components. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>hateb_local_planner::HATebConfig::Optimization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Optimization"/>
+      </node>
+      <node id="3">
+        <label>hateb_local_planner::HATebConfig::GoalTolerance</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1GoalTolerance"/>
+      </node>
+      <node id="4">
+        <label>hateb_local_planner::HATebConfig::Trajectory</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Trajectory"/>
+      </node>
+      <node id="2">
+        <label>hateb_local_planner::HATebConfig::Recovery</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Recovery"/>
+      </node>
+      <node id="9">
+        <label>hateb_local_planner::HATebConfig::Robot</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Robot"/>
+      </node>
+      <node id="6">
+        <label>hateb_local_planner::HATebConfig::Obstacles</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Obstacles"/>
+      </node>
+      <node id="1">
+        <label>hateb_local_planner::HATebConfig</label>
+        <link refid="classhateb__local__planner_1_1HATebConfig"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>recovery</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>goal_tolerance</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>trajectory</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>hateb</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>obstacles</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>optim</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>robot</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>visualization</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>hateb_local_planner::HATebConfig::Visualization</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Visualization"/>
+      </node>
+      <node id="7">
+        <label>hateb_local_planner::HATebConfig::Agent</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Agent"/>
+      </node>
+      <node id="5">
+        <label>hateb_local_planner::HATebConfig::Hateb</label>
+        <link refid="structhateb__local__planner_1_1HATebConfig_1_1Hateb"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" line="60" column="1" bodyfile="/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_config.h" bodystart="60" bodyend="465"/>
+    <listofallmembers>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a59b5f0b0ce9c78b67f4c0240cdd096a7" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>agent</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a9642a12072a2cf296475ca9e46c7e429" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>checkDeprecated</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1ac8d6773971b7c23ace6e20581011eaaa" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>checkParameters</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1ade14e80c40dad843b3e8a56272d359ab" prot="private" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>config_mutex_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a0325419503353c2a700f20c836858dd3" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>configMutex</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a774f415f6af2158f151285083ecf0129" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>goal_tolerance</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1af59ebc08ba1da01cb166b76483ac5f89" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>hateb</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a3137cc9fd23e69847512d739f15ac374" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>HATebConfig</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a1e83960102cc75c1876b830b69a97076" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>human_model</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a9e2899f20427243b8865c4463d1faff3" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>loadRosParamFromNodeHandle</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1aab837855d879246e75679018ac66655c" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>map_frame</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a2921801e707b0d9214baf48aaf829e50" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>ns_</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a8c6e938912d08245988e7e9e822bb781" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>obstacles</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a2e0d10775dd34f5326525f5a394ef1a3" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>odom_topic</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a162e554b1458c4a47c8f5d93c8285589" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>optim</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a43510bba0e334b07ae145e289af7363d" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>planning_mode</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a7db4cf8fa64da1918c96a76350c99b30" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>reconfigure</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a50d1daf2f7da03c3b5b48737a924099d" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>recovery</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a7453a4721bc6ae407a6a8354c0bada97" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>robot</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a4852da2319b1e625f751dc771e35313a" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>robot_model</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1a66f7d8f18503575290b9e27dc81c9fd1" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>trajectory</name></member>
+      <member refid="classhateb__local__planner_1_1HATebConfig_1aa06ecc9c7cd1340e7ece987a25b18d9b" prot="public" virt="non-virtual"><scope>hateb_local_planner::HATebConfig</scope><name>visualization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

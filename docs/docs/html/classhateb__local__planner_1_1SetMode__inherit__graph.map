@@ -1,0 +1,5 @@
+<map id="hateb_local_planner::SetMode" name="hateb_local_planner::SetMode">
+<area shape="rect" id="node1" title="Class implementing a behavior tree action node to set planning mode." alt="" coords="20,169,173,211"/>
+<area shape="rect" id="node2" href="$classhateb__local__planner_1_1StatefulActionNodeROS.html" title="Base class for stateful action nodes in the behavior tree." alt="" coords="5,80,188,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="11,5,183,32"/>
+</map>

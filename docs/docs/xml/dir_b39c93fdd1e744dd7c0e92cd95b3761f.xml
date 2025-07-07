@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b39c93fdd1e744dd7c0e92cd95b3761f" kind="dir">
+    <compoundname>/home/ptsingaman/ros_ws/CoHAN2.0/src</compoundname>
+    <innerdir refid="dir_d6b9a670e8114a7626bb8013eb2a3ac2">/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction</innerdir>
+    <innerdir refid="dir_72dde95032b0ddc48690e3e511a565ed">/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers</innerdir>
+    <innerdir refid="dir_8c8bc5f3d0880c17523774d5389b7441">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner</innerdir>
+    <innerdir refid="dir_791d380041cd8eae9be0c858861caa0c">/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection</innerdir>
+    <innerdir refid="dir_cf846cc469fce6ebd650243ef2ad6bff">/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ptsingaman/ros_ws/CoHAN2.0/src/"/>
+  </compounddef>
+</doxygen>
