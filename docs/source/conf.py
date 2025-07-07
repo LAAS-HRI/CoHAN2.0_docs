@@ -40,7 +40,7 @@ html_baseurl = 'https://LAAS-HRI.github.io/CoHAN2.0_docs/'
 
 import os
 import sys
-from exhale.utils import makeCustomSpecificationsMapping
+# from exhale.utils import makeCustomSpecificationsMapping
 sys.path.insert(0, os.path.abspath('.'))
 
 extensions = ['breathe']
