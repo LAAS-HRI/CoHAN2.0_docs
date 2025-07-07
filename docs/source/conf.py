@@ -36,7 +36,7 @@ def setup(app):
 # }
 
 # For GitHub Pages
-html_baseurl = 'https://LAAS-HRI.github.io/CoHAN2.0_docs/'
+html_baseurl = 'https://laas-hri.github.io/CoHAN2.0_docs/'
 
 import os
 import sys
