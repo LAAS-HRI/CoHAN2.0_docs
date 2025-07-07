@@ -4,7 +4,7 @@
 File edge_shortest_path.h
 =========================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types>` (``/hateb_local_planner/include/hateb_local_planner/g2o_types``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File edge_shortest_path.h
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_shortest_path.h``)
+Definition (``/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_shortest_path.h``)
 ------------------------------------------------------------------------------------------------------------------------------------
 
 

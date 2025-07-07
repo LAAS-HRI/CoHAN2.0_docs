@@ -4,7 +4,7 @@
 Program Listing for File recovery_behaviors.cpp
 ===============================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_recovery_behaviors.cpp>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/recovery_behaviors.cpp``)
+|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_recovery_behaviors.cpp>` (``/hateb_local_planner/src/recovery_behaviors.cpp``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

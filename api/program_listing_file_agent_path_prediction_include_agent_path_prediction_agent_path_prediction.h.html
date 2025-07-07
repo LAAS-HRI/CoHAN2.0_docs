@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File agent_path_prediction.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://laas-hri.github.io/CoHAN2.0_docs/api/program_listing_file_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File agent_path_prediction.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-agent-path-prediction-h">
+<span id="program-listing-file-agent-path-prediction-include-agent-path-prediction-agent-path-prediction-h"></span><h1>Program Listing for File agent_path_prediction.h<a class="headerlink" href="#program-listing-for-file-agent-path-prediction-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_agent_path_prediction_include_agent_path_prediction_agent_path_prediction.h.html#file-agent-path-prediction-include-agent-path-prediction-agent-path-prediction-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">agent_path_prediction/include/agent_path_prediction/agent_path_prediction.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> * Copyright (c) 2020 LAAS/CNRS</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Authors: Phani Teja Singamaneni</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#ifndef AGENT_PATH_PREDICTION_H_</span>
+<span class="cp">#define AGENT_PATH_PREDICTION_H_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentGoal.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentPathPredictionConfig.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentPose.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentPosePredict.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/PredictedGoal.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/PredictedGoals.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/agents_class.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/predict_goal.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/Config.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/DoubleParameter.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/IntParameter.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/Reconfigure.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/server.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;nav_msgs/GetPlan.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ros/ros.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/Empty.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/SetBool.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/Trigger.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf/transform_listener.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;visualization_msgs/MarkerArray.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+
+<span class="c1">// Some fixed parameters</span>
+<span class="cp">#define ANG_VEL_EPS 0.001</span>
+<span class="cp">#define MAX_AGENT_MARKERS 1000</span>
+<span class="cp">#define MIN_MARKER_LIFETIME 1.0</span>
+<span class="cp">#define MINIMUM_COVARIANCE_MARKERS 0.1</span>
+<span class="cp">#define RECALC_DIST 0.5</span>
+<span class="cp">#define DEFAULT_AGENT_PART cohan_msgs::TrackedSegmentType::TORSO</span>
+<span class="cp">#define NODE_NAME &quot;agent_path_prediction&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="p">{</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">AgentPathPrediction</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">AgentPathPrediction</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+
+<span class="w">  </span><span class="o">~</span><span class="n">AgentPathPrediction</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initialize</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setParams</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">velobs_mul</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">velobs_min_rad</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">velobs_max_rad</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">velobs_max_rad_time</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">velobs_use_ang</span><span class="p">);</span>
+
+<span class="w"> </span><span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="c1">// Structs</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">AgentPathVel</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">id</span><span class="p">;</span><span class="w">                                   </span><span class="c1">// Agent ID</span>
+<span class="w">    </span><span class="n">nav_msgs</span><span class="o">::</span><span class="n">Path</span><span class="w"> </span><span class="n">path</span><span class="p">;</span><span class="w">                           </span><span class="c1">// Predicted path for the agent</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistWithCovariance</span><span class="w"> </span><span class="n">start_vel</span><span class="p">;</span><span class="w">  </span><span class="c1">// Initial velocity of the agent</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">AgentStartPoseVel</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">id</span><span class="p">;</span><span class="w">                             </span><span class="c1">// Agent ID</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="n">pose</span><span class="p">;</span><span class="w">         </span><span class="c1">// Initial pose of the agent</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistWithCovariance</span><span class="w"> </span><span class="n">vel</span><span class="p">;</span><span class="w">  </span><span class="c1">// Initial velocity of the agent</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="c1">// ROS Publishers and Subscribers</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Publisher</span><span class="w"> </span><span class="n">predicted_agents_pub_</span><span class="p">;</span><span class="w">  </span><span class="c1">// Publisher for predicted agent paths</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Publisher</span><span class="w"> </span><span class="n">front_pose_pub_</span><span class="p">;</span><span class="w">        </span><span class="c1">// Publisher for front pose information</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">tracked_agents_sub_</span><span class="p">;</span><span class="w">   </span><span class="c1">// Subscriber for tracked agents information</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">external_paths_sub_</span><span class="p">;</span><span class="w">   </span><span class="c1">// Subscriber for external path information</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">predicted_goal_sub_</span><span class="p">;</span><span class="w">   </span><span class="c1">// Subscriber for predicted goals</span>
+
+<span class="w">  </span><span class="c1">// ROS Services</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceServer</span><span class="w"> </span><span class="n">predict_agents_server_</span><span class="p">;</span><span class="w">             </span><span class="c1">// Server for agent prediction service</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceServer</span><span class="w"> </span><span class="n">set_goal_srv_</span><span class="p">;</span><span class="w">                      </span><span class="c1">// Server for setting agent goals</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceServer</span><span class="w"> </span><span class="n">reset_prediction_services_server_</span><span class="p">;</span><span class="w">  </span><span class="c1">// Server for resetting predictions</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceClient</span><span class="w"> </span><span class="n">get_plan_client_</span><span class="p">;</span><span class="w">                   </span><span class="c1">// Client for getting navigation plans</span>
+
+<span class="w">  </span><span class="c1">// Transform listener</span>
+<span class="w">  </span><span class="n">tf</span><span class="o">::</span><span class="n">TransformListener</span><span class="w"> </span><span class="n">tf_</span><span class="p">;</span><span class="w">  </span><span class="c1">// Transform listener for coordinate transformations</span>
+
+<span class="w">  </span><span class="c1">// subscriber callbacks</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">trackedAgentsCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">TrackedAgents</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tracked_agents</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">externalPathsCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">external_paths</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">predictedGoalCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">PredictedGoals</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">predicted_goal</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Service callbacks</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgents</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgentsVelObs</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgentsExternal</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgentsBehind</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgentsGoal</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">predictAgentsFromPaths</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPosePredict</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">AgentPathVel</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">path_vels</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">setGoal</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentGoal</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentGoal</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">resetPredictionSrvs</span><span class="p">(</span><span class="n">std_srvs</span><span class="o">::</span><span class="n">Empty</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">std_srvs</span><span class="o">::</span><span class="n">Empty</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// dynamic reconfigure variables</span>
+<span class="w">  </span><span class="n">dynamic_reconfigure</span><span class="o">::</span><span class="n">Server</span><span class="o">&lt;</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPathPredictionConfig</span><span class="o">&gt;</span><span class="w"> </span><span class="o">*</span><span class="n">dsrv_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">reconfigureCB</span><span class="p">(</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPathPredictionConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">level</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Internal Methods</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">loadRosParamFromNodeHandle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="o">&amp;</span><span class="n">private_nh</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">nav_msgs</span><span class="o">::</span><span class="n">Path</span><span class="w"> </span><span class="nf">setFixedPath</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">start_pose</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">prunePath</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">begin_index</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pose</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseWithCovarianceStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">path</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">transformPoseTwist</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">TrackedAgents</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tracked_agents</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint64_t</span><span class="w"> </span><span class="o">&amp;</span><span class="n">agent_id</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">to_frame</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pose</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">twist</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">checkdist</span><span class="p">(</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="n">agent</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="n">robot</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">agent</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">agent</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Properties</span>
+<span class="w">  </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">TrackedAgents</span><span class="w"> </span><span class="n">tracked_agents_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">AgentPathArray</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="n">external_paths_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">PredictedGoals</span><span class="w"> </span><span class="n">predicted_goals_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentPose</span><span class="o">&gt;</span><span class="w"> </span><span class="n">external_goals_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">AgentPathVel</span><span class="o">&gt;</span><span class="w"> </span><span class="n">path_vels_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">path_vels_pos_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">PredictedPoses</span><span class="o">&gt;</span><span class="w"> </span><span class="n">last_predicted_poses_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">uint64_t</span><span class="p">,</span><span class="w"> </span><span class="kt">size_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">last_prune_indices_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">uint64_t</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">last_markers_size_map_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">visualization_msgs</span><span class="o">::</span><span class="n">MarkerArray</span><span class="w"> </span><span class="n">predicted_agents_markers_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">tracked_agents_sub_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">external_paths_sub_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">predict_service_name_</span><span class="p">,</span><span class="w"> </span><span class="n">predicted_agents_markers_pub_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">get_plan_srv_name_</span><span class="p">,</span>
+<span class="w">      </span><span class="n">predicted_goal_topic_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">robot_frame_id_</span><span class="p">,</span><span class="w"> </span><span class="n">map_frame_id_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">velobs_mul_</span><span class="p">,</span><span class="w"> </span><span class="n">velobs_min_rad_</span><span class="p">,</span><span class="w"> </span><span class="n">velobs_max_rad_</span><span class="p">,</span><span class="w"> </span><span class="n">velobs_max_rad_time_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">agent_dist_behind_robot_</span><span class="p">,</span><span class="w"> </span><span class="n">agent_angle_behind_robot_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">velobs_use_ang_</span><span class="p">,</span><span class="w"> </span><span class="n">check_path_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">publish_markers_</span><span class="p">,</span><span class="w"> </span><span class="n">showing_markers_</span><span class="p">,</span>
+<span class="w">      </span><span class="n">got_new_agent_paths_</span><span class="p">,</span><span class="w"> </span><span class="n">got_external_goal_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">default_agent_part_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Transform</span><span class="w"> </span><span class="n">behind_pose_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ns_</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace agents</span>
+
+<span class="cp">#endif  </span><span class="c1">// AGENT_PATH_PREDICTION_H_</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

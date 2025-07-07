@@ -4,7 +4,7 @@
 Program Listing for File invisible_humans_detection.cpp
 =======================================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_src_invisible_humans_detection.cpp>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/src/invisible_humans_detection.cpp``)
+|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_src_invisible_humans_detection.cpp>` (``/invisible_humans_detection/src/invisible_humans_detection.cpp``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

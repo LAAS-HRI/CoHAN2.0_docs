@@ -3,7 +3,7 @@
 Define AGENT_DIST_BEHIND_ROBOT
 ==============================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agent_path_prediction.cpp`
+- Defined in :ref:`file_agent_path_prediction_src_agent_path_prediction.cpp`
 
 
 Define Documentation

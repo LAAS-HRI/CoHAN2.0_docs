@@ -3,7 +3,7 @@
 Function rviz_path_array::validateFloats
 ========================================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.cpp`
+- Defined in :ref:`file_rviz_path_array_src_patharray_display.cpp`
 
 
 Function Documentation

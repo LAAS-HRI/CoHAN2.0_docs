@@ -3,7 +3,7 @@
 Function hateb_local_planner::check_line_segments_intersection_2d
 =================================================================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_distance_calculations.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_distance_calculations.h`
 
 
 Function Documentation

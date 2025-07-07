@@ -4,7 +4,7 @@
 Program Listing for File predict_goal_ros.cpp
 =============================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_predict_goal_ros.cpp>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/predict_goal_ros.cpp``)
+|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_predict_goal_ros.cpp>` (``/agent_path_prediction/src/predict_goal_ros.cpp``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

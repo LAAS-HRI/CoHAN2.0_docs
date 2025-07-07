@@ -4,7 +4,7 @@
 File invisible_humans_detection.cpp
 ===================================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_src>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/src``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_invisible_humans_detection_src>` (``/invisible_humans_detection/src``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File invisible_humans_detection.cpp
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/invisible_humans_detection/src/invisible_humans_detection.cpp``)
+Definition (``/invisible_humans_detection/src/invisible_humans_detection.cpp``)
 -------------------------------------------------------------------------------------------------------------------
 
 

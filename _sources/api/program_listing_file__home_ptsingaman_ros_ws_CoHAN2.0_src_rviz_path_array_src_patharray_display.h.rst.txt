@@ -4,7 +4,7 @@
 Program Listing for File patharray_display.h
 ============================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/rviz_path_array/src/patharray_display.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file__home_ptsingaman_ros_ws_CoHAN2.0_src_rviz_path_array_src_patharray_display.h>` (``/rviz_path_array/src/patharray_display.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 

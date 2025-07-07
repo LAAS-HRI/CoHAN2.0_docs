@@ -3,7 +3,7 @@
 Define MAP_FRAME
 ================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agents_class.cpp`
+- Defined in :ref:`file_agent_path_prediction_src_agents_class.cpp`
 
 
 Define Documentation

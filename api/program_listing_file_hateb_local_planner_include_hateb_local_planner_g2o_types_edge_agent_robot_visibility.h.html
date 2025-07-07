@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File edge_agent_robot_visibility.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://laas-hri.github.io/CoHAN2.0_docs/api/program_listing_file_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_visibility.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File edge_agent_robot_visibility.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_visibility.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-edge-agent-robot-visibility-h">
+<span id="program-listing-file-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-robot-visibility-h"></span><h1>Program Listing for File edge_agent_robot_visibility.h<a class="headerlink" href="#program-listing-for-file-edge-agent-robot-visibility-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_agent_robot_visibility.h.html#file-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-agent-robot-visibility-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">hateb_local_planner/include/hateb_local_planner/g2o_types/edge_agent_robot_visibility.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2020 LAAS/CNRS</span>
+<span class="cm"> * All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Redistribution and use  in source  and binary  forms,  with or without</span>
+<span class="cm"> * modification, are permitted provided that the following conditions are</span>
+<span class="cm"> * met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   1. Redistributions of source code must retain the above copyright notice,</span>
+<span class="cm"> *      this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   2. Redistributions in binary form must reproduce the above copyright</span>
+<span class="cm"> *      notice, this list of conditions and the following disclaimer in the</span>
+<span class="cm"> *      documentation and/or other materials provided with the distribution.</span>
+<span class="cm"> *</span>
+<span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span>
+<span class="cm"> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span>
+<span class="cm"> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span>
+<span class="cm"> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span>
+<span class="cm"> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span>
+<span class="cm"> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span>
+<span class="cm"> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span>
+<span class="cm"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> * POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Notes:</span>
+<span class="cm"> * The following class is derived from a class defined by the</span>
+<span class="cm"> * g2o-framework. g2o is licensed under the terms of the BSD License.</span>
+<span class="cm"> * Refer to the base class source for detailed licensing information.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Author: Phani Teja Singamaneni</span>
+<span class="cm"> */</span>
+
+<span class="cp">#ifndef EDGE_AGENT_ROBOT_VISIBILITY_H_</span>
+<span class="cp">#define EDGE_AGENT_ROBOT_VISIBILITY_H_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/base_teb_edges.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/penalties.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/vertex_pose.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/hateb_config.h&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">hateb_local_planner</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAgentRobotVisibility</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebBinaryEdge</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="n">VertexPose</span><span class="p">,</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAgentRobotVisibility</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">setMeasurement</span><span class="p">(</span><span class="mf">0.</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setParameters() on EdgeAgentRobotVisibility()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">robot_bandpt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">*</span><span class="n">agent_bandpt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="w"> </span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">d_rtoh</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agent_bandpt</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">robot_bandpt</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">d_htor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_bandpt</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">agent_bandpt</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">agent_look_at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">cos</span><span class="p">(</span><span class="n">agent_bandpt</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()),</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">agent_bandpt</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())};</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">robot_look_at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">cos</span><span class="p">(</span><span class="n">robot_bandpt</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()),</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">robot_bandpt</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())};</span>
+
+<span class="w">    </span><span class="c1">// calculate the angle between human heading and direction vector from human to robot</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">delta_psi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">acos</span><span class="p">(</span><span class="n">agent_look_at</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">d_htor</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">agent_look_at</span><span class="p">.</span><span class="n">norm</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">d_htor</span><span class="p">.</span><span class="n">norm</span><span class="p">())));</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">c_visibility</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Dot product of headings</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">ang</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agent_look_at</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">robot_look_at</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Apply the cost if the robot is not within the FOV of human</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">delta_psi</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">agent</span><span class="p">.</span><span class="n">fov</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">M_PI</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">180</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ang</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">c_visibility</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">((</span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">d_rtoh</span><span class="p">.</span><span class="n">x</span><span class="p">(),</span><span class="w"> </span><span class="mi">2</span><span class="p">))))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">d_rtoh</span><span class="p">.</span><span class="n">y</span><span class="p">(),</span><span class="w"> </span><span class="mi">2</span><span class="p">)))));</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">c_visibility</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundFromAbove</span><span class="p">(</span><span class="n">c_visibility</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">hateb</span><span class="p">.</span><span class="n">visibility_cost_threshold</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAgentRobotVisibility::computeError() _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="p">};</span><span class="w">  </span><span class="c1">// namespace hateb_local_planner</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

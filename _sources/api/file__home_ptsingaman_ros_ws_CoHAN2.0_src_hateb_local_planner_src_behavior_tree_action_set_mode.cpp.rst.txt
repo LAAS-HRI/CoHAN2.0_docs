@@ -4,7 +4,7 @@
 File set_mode.cpp
 =================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_behavior_tree_action>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/action``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_behavior_tree_action>` (``/hateb_local_planner/src/behavior_tree/action``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File set_mode.cpp
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/src/behavior_tree/action/set_mode.cpp``)
+Definition (``/hateb_local_planner/src/behavior_tree/action/set_mode.cpp``)
 ---------------------------------------------------------------------------------------------------------------
 
 

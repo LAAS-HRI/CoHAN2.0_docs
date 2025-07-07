@@ -3,7 +3,7 @@
 Class PoseSE2
 =============
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_pose_se2.h`
+- Defined in :ref:`file_hateb_local_planner_include_hateb_local_planner_pose_se2.h`
 
 
 Class Documentation

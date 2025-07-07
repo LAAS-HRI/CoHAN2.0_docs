@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File mode_switch.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://laas-hri.github.io/CoHAN2.0_docs/api/program_listing_file_hateb_local_planner_include_hateb_local_planner_mode_switch.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File mode_switch.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file_hateb_local_planner_include_hateb_local_planner_mode_switch.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-mode-switch-h">
+<span id="program-listing-file-hateb-local-planner-include-hateb-local-planner-mode-switch-h"></span><h1>Program Listing for File mode_switch.h<a class="headerlink" href="#program-listing-for-file-mode-switch-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_hateb_local_planner_include_hateb_local_planner_mode_switch.h.html#file-hateb-local-planner-include-hateb-local-planner-mode-switch-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">hateb_local_planner/include/hateb_local_planner/mode_switch.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef MODE_SWITCH_HH_</span>
+<span class="cp">#define MODE_SWITCH_HH_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/agents_class.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ros/ros.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;behaviortree_cpp/bt_factory.h&quot;</span>
+
+<span class="c1">// Messages</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;actionlib_msgs/GoalStatusArray.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentsInfo.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cohan_msgs/PassageType.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/Pose.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/PlanningMode.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;move_base_msgs/MoveBaseActionGoal.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;move_base_msgs/MoveBaseActionResult.h&gt;</span>
+
+<span class="c1">// BT Nodes</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/action/set_mode.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/bt_core.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/backoff_exit_condition.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/dual_band_exit_condition.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/is_goal_reached.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/is_goal_updated.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/passthrough_condition.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/single_band_exit_condition.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/behavior_tree/condition/vel_obs_exit_condition.h&gt;</span>
+
+<span class="c1">// Backoff recovery mechanism</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/backoff.h&gt;</span>
+
+<span class="c1">// Stdlib</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;mutex&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">hateb_local_planner</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ModeSwitch</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">ModeSwitch</span><span class="p">();</span>
+
+<span class="w">  </span><span class="o">~</span><span class="n">ModeSwitch</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="o">&amp;</span><span class="w"> </span><span class="n">nh</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">xml_path</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">agents</span><span class="o">::</span><span class="n">Agents</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">agents_ptr</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Backoff</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">backoff_ptr</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">BT</span><span class="o">::</span><span class="n">NodeStatus</span><span class="w"> </span><span class="nf">tickBT</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetBT</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">BT</span><span class="o">::</span><span class="n">Tree</span><span class="o">*</span><span class="w"> </span><span class="nf">BTree</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="o">&amp;</span><span class="n">bhv_tree_</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">hateb_local_planner</span><span class="o">::</span><span class="n">PlanningMode</span><span class="w"> </span><span class="nf">tickAndGetMode</span><span class="p">();</span>
+
+<span class="w"> </span><span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">registerNodes</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">agentsInfoCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentsInfo</span><span class="o">&amp;</span><span class="w"> </span><span class="n">info_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">goalMoveBaseCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">move_base_msgs</span><span class="o">::</span><span class="n">MoveBaseActionGoal</span><span class="o">&amp;</span><span class="w"> </span><span class="n">goal_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">resultMoveBaseCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">move_base_msgs</span><span class="o">::</span><span class="n">MoveBaseActionResult</span><span class="o">&amp;</span><span class="w"> </span><span class="n">result_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">passageCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">PassageType</span><span class="o">&amp;</span><span class="w"> </span><span class="n">passage_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateMode</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">printTreeStatus</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">BT</span><span class="o">::</span><span class="n">TreeNode</span><span class="o">*</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">indent</span><span class="p">(</span><span class="n">level</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">indent</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">node</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">toStr</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">status</span><span class="p">())</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">control</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">BT</span><span class="o">::</span><span class="n">ControlNode</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">node</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">control</span><span class="o">-&gt;</span><span class="n">childrenCount</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printTreeStatus</span><span class="p">(</span><span class="n">control</span><span class="o">-&gt;</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="w"> </span><span class="n">level</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Status flags</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">goal_reached_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">initialized_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">goal_update_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// ROS communication members</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="n">nh_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">agents_info_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">goal_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">result_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">passage_detect_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Publisher</span><span class="w"> </span><span class="n">planning_mode_pub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceServer</span><span class="w"> </span><span class="n">backoff_srv_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// State information</span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="n">goal_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentsInfo</span><span class="w"> </span><span class="n">agents_info_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">actionlib_msgs</span><span class="o">::</span><span class="n">GoalStatusArray</span><span class="w"> </span><span class="n">result_msg_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Behavior Tree components</span>
+<span class="w">  </span><span class="n">BT</span><span class="o">::</span><span class="n">BehaviorTreeFactory</span><span class="w"> </span><span class="n">bhv_factory_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">BT</span><span class="o">::</span><span class="n">Tree</span><span class="w"> </span><span class="n">bhv_tree_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">pub_mutex_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">hateb_local_planner</span><span class="o">::</span><span class="n">PlanningMode</span><span class="w"> </span><span class="n">plan_mode_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ModeInfo</span><span class="w"> </span><span class="n">mode_info_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Backoff</span><span class="o">&gt;</span><span class="w"> </span><span class="n">backoff_ptr_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Params for namespace and subscription topics</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ns_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">agents_info_sub_topic_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">goal_sub_topic_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">result_sub_topic_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">passage_sub_topic_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace hateb_local_planner</span>
+<span class="cp">#endif  </span><span class="c1">// MODE_SWITCH_HH_</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

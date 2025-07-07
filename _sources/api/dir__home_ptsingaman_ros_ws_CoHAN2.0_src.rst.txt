@@ -10,7 +10,7 @@ Directory src
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-*Directory path:* ``/home/ptsingaman/ros_ws/CoHAN2.0/src``
+*Directory path:* ````
 
 Subdirectories
 --------------

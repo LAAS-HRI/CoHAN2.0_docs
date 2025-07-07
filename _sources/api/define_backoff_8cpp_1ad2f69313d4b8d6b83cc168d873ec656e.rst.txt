@@ -3,7 +3,7 @@
 Define CURRENT_GOAL_TOPIC_NAME
 ==============================
 
-- Defined in :ref:`file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_src_backoff.cpp`
+- Defined in :ref:`file_hateb_local_planner_src_backoff.cpp`
 
 
 Define Documentation

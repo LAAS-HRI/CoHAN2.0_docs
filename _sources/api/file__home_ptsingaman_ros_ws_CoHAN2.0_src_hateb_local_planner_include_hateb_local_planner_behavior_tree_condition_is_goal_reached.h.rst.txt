@@ -4,7 +4,7 @@
 File is_goal_reached.h
 ======================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_behavior_tree_condition>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_behavior_tree_condition>` (``/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File is_goal_reached.h
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/is_goal_reached.h``)
+Definition (``/hateb_local_planner/include/hateb_local_planner/behavior_tree/condition/is_goal_reached.h``)
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 

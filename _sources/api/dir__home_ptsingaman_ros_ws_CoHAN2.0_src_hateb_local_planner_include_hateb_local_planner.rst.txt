@@ -5,12 +5,12 @@ Directory hateb_local_planner
 =============================
 
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include>` (``/hateb_local_planner/include``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
 
-*Directory path:* ``/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner``
+*Directory path:* ``/hateb_local_planner/include/hateb_local_planner``
 
 Subdirectories
 --------------

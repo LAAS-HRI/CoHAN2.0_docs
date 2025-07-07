@@ -4,7 +4,7 @@
 File agent_visibility_layer.h
 =============================
 
-|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_cohan_layers_include_cohan_layers>` (``/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers``)
+|exhale_lsh| :ref:`Parent directory <dir__home_ptsingaman_ros_ws_CoHAN2.0_src_cohan_layers_include_cohan_layers>` (``/cohan_layers/include/cohan_layers``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,7 +13,7 @@ File agent_visibility_layer.h
    :local:
    :backlinks: none
 
-Definition (``/home/ptsingaman/ros_ws/CoHAN2.0/src/cohan_layers/include/cohan_layers/agent_visibility_layer.h``)
+Definition (``/cohan_layers/include/cohan_layers/agent_visibility_layer.h``)
 ----------------------------------------------------------------------------------------------------------------
 
 
