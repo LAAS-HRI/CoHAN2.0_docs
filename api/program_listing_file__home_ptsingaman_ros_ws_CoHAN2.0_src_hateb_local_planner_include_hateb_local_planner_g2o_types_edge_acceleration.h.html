@@ -1,0 +1,599 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File edge_acceleration.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_acceleration.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File edge_acceleration.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_acceleration.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-edge-acceleration-h">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-acceleration-h"></span><h1>Program Listing for File edge_acceleration.h<a class="headerlink" href="#program-listing-for-file-edge-acceleration-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_g2o_types_edge_acceleration.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-g2o-types-edge-acceleration-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/g2o_types/edge_acceleration.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Copyright (c) 2016,</span>
+<span class="cm"> *  TU Dortmund - Institute of Control Theory and Systems Engineering.</span>
+<span class="cm"> *  All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Notes:</span>
+<span class="cm"> * The following class is derived from a class defined by the</span>
+<span class="cm"> * g2o-framework. g2o is licensed under the terms of the BSD License.</span>
+<span class="cm"> * Refer to the base class source for detailed licensing information.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Author: Christoph Rösmann</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#ifndef EDGE_ACCELERATION_H_</span>
+<span class="cp">#define EDGE_ACCELERATION_H_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/Twist.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/base_teb_edges.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/penalties.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/vertex_pose.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/g2o_types/vertex_timediff.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/hateb_config.h&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">hateb_local_planner</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAcceleration</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAcceleration</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig on EdgeAcceleration()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose3</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dist1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">norm</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dist2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">norm</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">angle_diff1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">angle_diff2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose3</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">trajectory</span><span class="p">.</span><span class="n">exact_arc_length</span><span class="p">)</span><span class="w">  </span><span class="c1">// use exact arc length instead of Euclidean approximation</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle_diff1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">angle_diff1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+<span class="w">        </span><span class="n">dist1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">angle_diff1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w">  </span><span class="c1">// actual arg length!</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">angle_diff2</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">angle_diff2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+<span class="w">        </span><span class="n">dist2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">angle_diff2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w">  </span><span class="c1">// actual arg length!</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// consider directions</span>
+<span class="w">    </span><span class="n">vel1</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">fast_sigmoid</span><span class="p">(</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">diff1</span><span class="p">.</span><span class="n">x</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">y</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())));</span>
+<span class="w">    </span><span class="n">vel2</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">fast_sigmoid</span><span class="p">(</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">diff2</span><span class="p">.</span><span class="n">x</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">y</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())));</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">());</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle_diff1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle_diff2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">());</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAcceleration::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAcceleration::computeError() rotational: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="cp">#ifdef USE_ANALYTIC_JACOBI</span>
+<span class="cp">#if 0</span>
+<span class="c">  /*</span>
+<span class="c">   * @brief Jacobi matrix of the cost function specified in computeError().</span>
+<span class="c">   */</span>
+<span class="c">  void linearizeOplus() {</span>
+<span class="c">    ROS_ASSERT_MSG(cfg_, &quot;You must call setHATebConfig on EdgeAcceleration()&quot;);</span>
+<span class="c">    const VertexPointXY* conf1 = static_cast&lt;const VertexPointXY*&gt;(_vertices[0]);</span>
+<span class="c">    const VertexPointXY* conf2 = static_cast&lt;const VertexPointXY*&gt;(_vertices[1]);</span>
+<span class="c">    const VertexPointXY* conf3 = static_cast&lt;const VertexPointXY*&gt;(_vertices[2]);</span>
+<span class="c">    const VertexTimeDiff* deltaT1 = static_cast&lt;const VertexTimeDiff*&gt;(_vertices[3]);</span>
+<span class="c">    const VertexTimeDiff* deltaT2 = static_cast&lt;const VertexTimeDiff*&gt;(_vertices[4]);</span>
+<span class="c">    const VertexOrientation* angle1 = static_cast&lt;const VertexOrientation*&gt;(_vertices[5]);</span>
+<span class="c">    const VertexOrientation* angle2 = static_cast&lt;const VertexOrientation*&gt;(_vertices[6]);</span>
+<span class="c">    const VertexOrientation* angle3 = static_cast&lt;const VertexOrientation*&gt;(_vertices[7]);</span>
+
+<span class="c">    Eigen::Vector2d deltaS1 = conf2-&gt;estimate() - conf1-&gt;estimate();</span>
+<span class="c">    Eigen::Vector2d deltaS2 = conf3-&gt;estimate() - conf2-&gt;estimate();</span>
+<span class="c">    double dist1 = deltaS1.norm();</span>
+<span class="c">    double dist2 = deltaS2.norm();</span>
+
+<span class="c">    double sum_time = deltaT1-&gt;estimate() + deltaT2-&gt;estimate();</span>
+<span class="c">    double sum_time_inv = 1 / sum_time;</span>
+<span class="c">    double dt1_inv = 1 / deltaT1-&gt;estimate();</span>
+<span class="c">    double dt2_inv = 1 / deltaT2-&gt;estimate();</span>
+<span class="c">    double aux0 = 2 / sum_time_inv;</span>
+<span class="c">    double aux1 = dist1 * deltaT1-&gt;estimate();</span>
+<span class="c">    double aux2 = dist2 * deltaT2-&gt;estimate();</span>
+
+<span class="c">    double vel1 = dist1 * dt1_inv;</span>
+<span class="c">    double vel2 = dist2 * dt2_inv;</span>
+<span class="c">    double omega1 = g2o::normalize_theta(angle2-&gt;estimate() - angle1-&gt;estimate()) * dt1_inv;</span>
+<span class="c">    double omega2 = g2o::normalize_theta(angle3-&gt;estimate() - angle2-&gt;estimate()) * dt2_inv;</span>
+<span class="c">    double acc = (vel2 - vel1) * aux0;</span>
+<span class="c">    double omegadot = (omega2 - omega1) * aux0;</span>
+<span class="c">    double aux3 = -acc / 2;</span>
+<span class="c">    double aux4 = -omegadot / 2;</span>
+
+<span class="c">    double dev_border_acc = penaltyBoundToIntervalDerivative(acc, HATebConfig.robot_acceleration_max_trans, optimizationConfig.optimization_boundaries_epsilon,</span>
+<span class="c">                                                             optimizationConfig.optimization_boundaries_scale, optimizationConfig.optimization_boundaries_order);</span>
+<span class="c">    double dev_border_omegadot = penaltyBoundToIntervalDerivative(omegadot, HATebConfig.robot_acceleration_max_rot, optimizationConfig.optimization_boundaries_epsilon,</span>
+<span class="c">                                                                  optimizationConfig.optimization_boundaries_scale, optimizationConfig.optimization_boundaries_order);</span>
+
+<span class="c">    _jacobianOplus[0].resize(2, 2);  // conf1</span>
+<span class="c">    _jacobianOplus[1].resize(2, 2);  // conf2</span>
+<span class="c">    _jacobianOplus[2].resize(2, 2);  // conf3</span>
+<span class="c">    _jacobianOplus[3].resize(2, 1);  // deltaT1</span>
+<span class="c">    _jacobianOplus[4].resize(2, 1);  // deltaT2</span>
+<span class="c">    _jacobianOplus[5].resize(2, 1);  // angle1</span>
+<span class="c">    _jacobianOplus[6].resize(2, 1);  // angle2</span>
+<span class="c">    _jacobianOplus[7].resize(2, 1);  // angle3</span>
+
+<span class="c">    if (aux1 == 0) aux1 = 1e-20;</span>
+<span class="c">    if (aux2 == 0) aux2 = 1e-20;</span>
+
+<span class="c">    if (dev_border_acc != 0) {</span>
+<span class="c">      // TODO: double aux = aux0 * dev_border_acc;</span>
+<span class="c">      // double aux123 = aux / aux1;</span>
+<span class="c">      _jacobianOplus[0](0, 0) = aux0 * deltaS1[0] / aux1 * dev_border_acc;                         // acc x1</span>
+<span class="c">      _jacobianOplus[0](0, 1) = aux0 * deltaS1[1] / aux1 * dev_border_acc;                         // acc y1</span>
+<span class="c">      _jacobianOplus[1](0, 0) = -aux0 * (deltaS1[0] / aux1 + deltaS2[0] / aux2) * dev_border_acc;  // acc x2</span>
+<span class="c">      _jacobianOplus[1](0, 1) = -aux0 * (deltaS1[1] / aux1 + deltaS2[1] / aux2) * dev_border_acc;  // acc y2</span>
+<span class="c">      _jacobianOplus[2](0, 0) = aux0 * deltaS2[0] / aux2 * dev_border_acc;                         // acc x3</span>
+<span class="c">      _jacobianOplus[2](0, 1) = aux0 * deltaS2[1] / aux2 * dev_border_acc;                         // acc y3</span>
+<span class="c">      _jacobianOplus[2](0, 0) = 0;</span>
+<span class="c">      _jacobianOplus[2](0, 1) = 0;</span>
+<span class="c">      _jacobianOplus[3](0, 0) = aux0 * (aux3 + vel1 * dt1_inv) * dev_border_acc;  // acc deltaT1</span>
+<span class="c">      _jacobianOplus[4](0, 0) = aux0 * (aux3 - vel2 * dt2_inv) * dev_border_acc;  // acc deltaT2</span>
+<span class="c">    } else {</span>
+<span class="c">      _jacobianOplus[0](0, 0) = 0;  // acc x1</span>
+<span class="c">      _jacobianOplus[0](0, 1) = 0;  // acc y1</span>
+<span class="c">      _jacobianOplus[1](0, 0) = 0;  // acc x2</span>
+<span class="c">      _jacobianOplus[1](0, 1) = 0;  // acc y2</span>
+<span class="c">      _jacobianOplus[2](0, 0) = 0;  // acc x3</span>
+<span class="c">      _jacobianOplus[2](0, 1) = 0;  // acc y3</span>
+<span class="c">      _jacobianOplus[3](0, 0) = 0;  // acc deltaT1</span>
+<span class="c">      _jacobianOplus[4](0, 0) = 0;  // acc deltaT2</span>
+<span class="c">    }</span>
+
+<span class="c">    if (dev_border_omegadot != 0) {</span>
+<span class="c">      _jacobianOplus[3](1, 0) = aux0 * (aux4 + omega1 * dt1_inv) * dev_border_omegadot;  // omegadot deltaT1</span>
+<span class="c">      _jacobianOplus[4](1, 0) = aux0 * (aux4 - omega2 * dt2_inv) * dev_border_omegadot;  // omegadot deltaT2</span>
+<span class="c">      _jacobianOplus[5](1, 0) = aux0 * dt1_inv * dev_border_omegadot;                    // omegadot angle1</span>
+<span class="c">      _jacobianOplus[6](1, 0) = -aux0 * (dt1_inv + dt2_inv) * dev_border_omegadot;       // omegadot angle2</span>
+<span class="c">      _jacobianOplus[7](1, 0) = aux0 * dt2_inv * dev_border_omegadot;                    // omegadot angle3</span>
+<span class="c">    } else {</span>
+<span class="c">      _jacobianOplus[3](1, 0) = 0;  // omegadot deltaT1</span>
+<span class="c">      _jacobianOplus[4](1, 0) = 0;  // omegadot deltaT2</span>
+<span class="c">      _jacobianOplus[5](1, 0) = 0;  // omegadot angle1</span>
+<span class="c">      _jacobianOplus[6](1, 0) = 0;  // omegadot angle2</span>
+<span class="c">      _jacobianOplus[7](1, 0) = 0;  // omegadot angle3</span>
+<span class="c">    }</span>
+
+<span class="c">    _jacobianOplus[0](1, 0) = 0;  // omegadot x1</span>
+<span class="c">    _jacobianOplus[0](1, 1) = 0;  // omegadot y1</span>
+<span class="c">    _jacobianOplus[1](1, 0) = 0;  // omegadot x2</span>
+<span class="c">    _jacobianOplus[1](1, 1) = 0;  // omegadot y2</span>
+<span class="c">    _jacobianOplus[2](1, 0) = 0;  // omegadot x3</span>
+<span class="c">    _jacobianOplus[2](1, 1) = 0;  // omegadot y3</span>
+<span class="c">    _jacobianOplus[5](0, 0) = 0;  // acc angle1</span>
+<span class="c">    _jacobianOplus[6](0, 0) = 0;  // acc angle2</span>
+<span class="c">    _jacobianOplus[7](0, 0) = 0;  // acc angle3</span>
+<span class="c">  }</span>
+<span class="cp">#endif</span>
+<span class="cp">#endif</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAccelerationStart</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAccelerationStart</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">_measurement</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig() and setStartVelocity() on EdgeAccelerationStart()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">norm</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">trajectory</span><span class="p">.</span><span class="n">exact_arc_length</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">angle_diff</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+<span class="w">      </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">angle_diff</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w">  </span><span class="c1">// actual arg length!</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// consider directions</span>
+<span class="w">    </span><span class="n">vel2</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">fast_sigmoid</span><span class="p">(</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())));</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationStart::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationStart::computeError() rotational: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">setInitialVelocity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vel_start</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vel_start</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAccelerationGoal</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAccelerationGoal</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">_measurement</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig() and setGoalVelocity() on EdgeAccelerationGoal()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose_goal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose_goal</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">norm</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">trajectory</span><span class="p">.</span><span class="n">exact_arc_length</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kt">double</span><span class="w"> </span><span class="n">radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">angle_diff</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">));</span>
+<span class="w">      </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fabs</span><span class="p">(</span><span class="n">angle_diff</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">radius</span><span class="p">);</span><span class="w">  </span><span class="c1">// actual arg length!</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// consider directions</span>
+<span class="w">    </span><span class="n">vel1</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">fast_sigmoid</span><span class="p">(</span><span class="mi">100</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())));</span>
+
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">angle_diff</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationGoal::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationGoal::computeError() rotational: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">setGoalVelocity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vel_goal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vel_goal</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAccelerationHolonomic</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAccelerationHolonomic</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig on EdgeAcceleration()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">3</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose3</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">cos_theta2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">sin_theta2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+
+<span class="w">    </span><span class="c1">// transform pose2 into robot frame pose1 (inverse 2d rotation matrix)</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff1</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="w">    </span><span class="c1">// transform pose3 into robot frame pose2 (inverse 2d rotation matrix)</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p2_dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">sin_theta2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p2_dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">sin_theta2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff2</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p2_dx</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p2_dy</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dt12</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_x</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt12</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt12</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt1</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose3</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt2</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt12</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAcceleration::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAcceleration::computeError() strafing: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAcceleration::computeError() rotational: _error[2]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAccelerationHolonomicStart</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAccelerationHolonomicStart</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">_measurement</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig() and setStartVelocity() on EdgeAccelerationStart()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+
+<span class="w">    </span><span class="c1">// transform pose2 into robot frame pose1 (inverse 2d rotation matrix)</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_x</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_y</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose2</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose1</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationStart::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationStart::computeError() strafing: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationStart::computeError() rotational: _error[2]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">setInitialVelocity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vel_start</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vel_start</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">EdgeAccelerationHolonomicGoal</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">BaseTebMultiEdge</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EdgeAccelerationHolonomicGoal</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">    </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">resize</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">computeError</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">cfg_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">_measurement</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;You must call setHATebConfig() and setGoalVelocity() on EdgeAccelerationGoal()&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">pose_goal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexPose</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="o">*</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">VertexTimeDiff</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">_vertices</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+
+<span class="w">    </span><span class="c1">// VELOCITY &amp; ACCELERATION</span>
+
+<span class="w">    </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pose_goal</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">());</span>
+
+<span class="w">    </span><span class="c1">// transform pose2 into robot frame pose1 (inverse 2d rotation matrix)</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">sin_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">x</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">cos_theta1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diff</span><span class="p">.</span><span class="n">y</span><span class="p">());</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dx</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel1_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p1_dy</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">vel2_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_x</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_lin_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">vel2_y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">vel1_y</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_x</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_lin_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_y</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ANGULAR ACCELERATION</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g2o</span><span class="o">::</span><span class="n">normalize_theta</span><span class="p">(</span><span class="n">pose_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">pose_pre_goal</span><span class="o">-&gt;</span><span class="n">theta</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">omega2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_measurement</span><span class="o">-&gt;</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">acc_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">omega2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">omega1</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">dt</span><span class="o">-&gt;</span><span class="n">dt</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">penaltyBoundToInterval</span><span class="p">(</span><span class="n">acc_rot</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">robot</span><span class="p">.</span><span class="n">acc_lim_theta</span><span class="p">,</span><span class="w"> </span><span class="n">cfg_</span><span class="o">-&gt;</span><span class="n">optim</span><span class="p">.</span><span class="n">penalty_epsilon</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationGoal::computeError() translational: _error[0]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationGoal::computeError() strafing: _error[1]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">ROS_ASSERT_MSG</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">isfinite</span><span class="p">(</span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span><span class="w"> </span><span class="s">&quot;EdgeAccelerationGoal::computeError() rotational: _error[2]=%f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">_error</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">setGoalVelocity</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="o">&amp;</span><span class="w"> </span><span class="n">vel_goal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">_measurement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vel_goal</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="p">};</span><span class="w">  </span><span class="c1">// namespace hateb_local_planner</span>
+
+<span class="cp">#endif </span><span class="cm">/* EDGE_ACCELERATION_H_ */</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

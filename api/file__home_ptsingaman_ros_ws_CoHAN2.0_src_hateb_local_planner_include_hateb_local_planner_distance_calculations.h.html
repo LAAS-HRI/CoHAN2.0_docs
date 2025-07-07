@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File distance_calculations.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_distance_calculations.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">File distance_calculations.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_distance_calculations.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-distance-calculations-h">
+<span id="file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-distance-calculations-h"></span><h1>File distance_calculations.h<a class="headerlink" href="#file-distance-calculations-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="dir__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner.html#dir-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner</span></code>)</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-distance-calculations-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#functions" id="id5">Functions</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+</ul>
+</nav>
+<section id="definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-distance-calculations-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/distance_calculations.h</span></code>)<a class="headerlink" href="#definition-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-distance-calculations-h" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_distance_calculations.h.html">Program Listing for File distance_calculations.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Eigen/Core</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hateb_local_planner/misc.h</span></code> (<a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_misc.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-misc-h"><span class="std std-ref">File misc.h</span></a>)</p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_obstacles.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-obstacles-h"><span class="std std-ref">File obstacles.h</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_hateb_local_planner.html#namespace-hateb-local-planner"><span class="std std-ref">Namespace hateb_local_planner</span></a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a149078819e493c9816eb27d45420fb99.html#exhale-function-namespacehateb-local-planner-1a149078819e493c9816eb27d45420fb99"><span class="std std-ref">Template Function hateb_local_planner::calc_closest_point_to_approach_distance</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a9c95517e3f1a8468a88f3db377831228.html#exhale-function-namespacehateb-local-planner-1a9c95517e3f1a8468a88f3db377831228"><span class="std std-ref">Template Function hateb_local_planner::calc_closest_point_to_approach_time</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1accc129d7b0acdd86b557bf37bbb0cd15.html#exhale-function-namespacehateb-local-planner-1accc129d7b0acdd86b557bf37bbb0cd15"><span class="std std-ref">Function hateb_local_planner::calc_distance_line_to_line_3d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a0fa85a1b4b27c909f8d43a422a63945b.html#exhale-function-namespacehateb-local-planner-1a0fa85a1b4b27c909f8d43a422a63945b"><span class="std std-ref">Template Function hateb_local_planner::calc_distance_point_to_line</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a0c118ac06a1f7d66fd756bfe4a8a7d1c.html#exhale-function-namespacehateb-local-planner-1a0c118ac06a1f7d66fd756bfe4a8a7d1c"><span class="std std-ref">Template Function hateb_local_planner::calc_distance_point_to_segment</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1ad608f81b0ad730706ceece80d5dac429.html#exhale-function-namespacehateb-local-planner-1ad608f81b0ad730706ceece80d5dac429"><span class="std std-ref">Function hateb_local_planner::calc_distance_segment_to_segment3D</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1aa6390beb4d01c1661e1c7523f74a93b2.html#exhale-function-namespacehateb-local-planner-1aa6390beb4d01c1661e1c7523f74a93b2"><span class="std std-ref">Function hateb_local_planner::check_line_segments_intersection_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1af895105afa3bbde12cf912915473fcb1.html#exhale-function-namespacehateb-local-planner-1af895105afa3bbde12cf912915473fcb1"><span class="std std-ref">Function hateb_local_planner::closest_point_on_line_segment_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a3fb251a59ae7588035748ef6afd02519.html#exhale-function-namespacehateb-local-planner-1a3fb251a59ae7588035748ef6afd02519"><span class="std std-ref">Function hateb_local_planner::distance_point_to_polygon_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1adfa76447cf46833d01b4dd5647ecfe86.html#exhale-function-namespacehateb-local-planner-1adfa76447cf46833d01b4dd5647ecfe86"><span class="std std-ref">Function hateb_local_planner::distance_point_to_segment_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1a7390a4788c5cdca6fecac1aa7315958e.html#exhale-function-namespacehateb-local-planner-1a7390a4788c5cdca6fecac1aa7315958e"><span class="std std-ref">Function hateb_local_planner::distance_polygon_to_polygon_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1ae53d0dcfdd477c66b3ae14cad3100f1d.html#exhale-function-namespacehateb-local-planner-1ae53d0dcfdd477c66b3ae14cad3100f1d"><span class="std std-ref">Function hateb_local_planner::distance_segment_to_polygon_2d</span></a></p></li>
+<li><p><a class="reference internal" href="function_namespacehateb__local__planner_1ac2e2d2432c7bf42cd93079ae086f9b27.html#exhale-function-namespacehateb-local-planner-1ac2e2d2432c7bf42cd93079ae086f9b27"><span class="std std-ref">Function hateb_local_planner::distance_segment_to_segment_2d</span></a></p></li>
+</ul>
+</section>
+<section id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_namespacehateb__local__planner_1aada6c9abcaa246f092095786ca9bf598.html#exhale-typedef-namespacehateb-local-planner-1aada6c9abcaa246f092095786ca9bf598"><span class="std std-ref">Typedef hateb_local_planner::Point2dContainer</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

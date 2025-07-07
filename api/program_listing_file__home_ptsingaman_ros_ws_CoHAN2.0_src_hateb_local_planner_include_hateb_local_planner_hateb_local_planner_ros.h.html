@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File hateb_local_planner_ros.h &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_hateb_local_planner_ros.h.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File hateb_local_planner_ros.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_hateb_local_planner_ros.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-hateb-local-planner-ros-h">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-hateb-local-planner-ros-h"></span><h1>Program Listing for File hateb_local_planner_ros.h<a class="headerlink" href="#program-listing-for-file-hateb-local-planner-ros-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_hateb_local_planner_include_hateb_local_planner_hateb_local_planner_ros.h.html#file-home-ptsingaman-ros-ws-cohan2-0-src-hateb-local-planner-include-hateb-local-planner-hateb-local-planner-ros-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/hateb_local_planner/include/hateb_local_planner/hateb_local_planner_ros.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*********************************************************************</span>
+<span class="cm"> *</span>
+<span class="cm"> * Software License Agreement (BSD License)</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Copyright (c) 2016</span>
+<span class="cm"> *  TU Dortmund - Institute of Control Theory and Systems Engineering.</span>
+<span class="cm"> *  All rights reserved.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Redistribution and use in source and binary forms, with or without</span>
+<span class="cm"> *  modification, are permitted provided that the following conditions</span>
+<span class="cm"> *  are met:</span>
+<span class="cm"> *</span>
+<span class="cm"> *   * Redistributions of source code must retain the above copyright</span>
+<span class="cm"> *     notice, this list of conditions and the following disclaimer.</span>
+<span class="cm"> *   * Redistributions in binary form must reproduce the above</span>
+<span class="cm"> *     copyright notice, this list of conditions and the following</span>
+<span class="cm"> *     disclaimer in the documentation and/or other materials provided</span>
+<span class="cm"> *     with the distribution.</span>
+<span class="cm"> *   * Neither the name of the institute nor the names of its</span>
+<span class="cm"> *     contributors may be used to endorse or promote products derived</span>
+<span class="cm"> *     from this software without specific prior written permission.</span>
+<span class="cm"> *</span>
+<span class="cm"> *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS</span>
+<span class="cm"> *  &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</span>
+<span class="cm"> *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span>
+<span class="cm"> *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE</span>
+<span class="cm"> *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</span>
+<span class="cm"> *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</span>
+<span class="cm"> *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<span class="cm"> *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="cm"> *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</span>
+<span class="cm"> *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN</span>
+<span class="cm"> *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span>
+<span class="cm"> *  POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Author: Christoph Rösmann</span>
+<span class="cm"> * Modified by: Phani Teja Singamaneni</span>
+<span class="cm"> *********************************************************************/</span>
+
+<span class="cp">#ifndef HATEB_LOCAL_PLANNER_ROS_H_</span>
+<span class="cp">#define HATEB_LOCAL_PLANNER_ROS_H_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ros/ros.h&gt;</span>
+
+<span class="c1">// base local planner base class and utilities</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;base_local_planner/costmap_model.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;base_local_planner/goal_functions.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;base_local_planner/odometry_helper_ros.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;mbf_costmap_core/costmap_controller.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;nav_core/base_local_planner.h&gt;</span>
+
+<span class="c1">// timed-elastic-band related classes</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/optimal_planner.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/recovery_behaviors.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/visualization.h&gt;</span>
+
+<span class="c1">// message types</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cohan_msgs/Optimize.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;costmap_converter/ObstacleMsg.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/Point.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/PoseStamped.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;nav_msgs/Odometry.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;nav_msgs/Path.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_msgs/String.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;visualization_msgs/Marker.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;visualization_msgs/MarkerArray.h&gt;</span>
+
+<span class="c1">// agent data</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/AgentPosePredict.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/PredictedGoal.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/agent_path_prediction.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cohan_msgs/StateArray.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/Empty.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/SetBool.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/Trigger.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/TriggerRequest.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;std_srvs/TriggerResponse.h&gt;</span>
+
+<span class="c1">// transforms</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;eigen_conversions/eigen_msg.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2/convert.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2/impl/utils.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2/utils.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2_eigen/tf2_eigen.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2_geometry_msgs/tf2_geometry_msgs.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2_ros/buffer.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;tf2_ros/transform_listener.h&gt;</span>
+
+<span class="c1">// costmap</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;costmap_2d/costmap_2d_ros.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;costmap_converter/costmap_converter_interface.h&gt;</span>
+
+<span class="c1">// dynamic reconfigure</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;dynamic_reconfigure/server.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/HATebLocalPlannerReconfigureConfig.h&gt;</span>
+
+<span class="c1">// boost classes</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/bind.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/shared_ptr.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;boost/smart_ptr/shared_ptr.hpp&gt;</span>
+
+<span class="c1">// Backoff recovery</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/backoff.h&gt;</span>
+
+<span class="c1">// Behavior Tree and Mode Switch</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;hateb_local_planner/mode_switch.h&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">hateb_local_planner</span><span class="w"> </span><span class="p">{</span>
+<span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">AgentState</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kt">uint8_t</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">NO_STATE</span><span class="p">,</span><span class="w"> </span><span class="n">STATIC</span><span class="p">,</span><span class="w"> </span><span class="n">MOVING</span><span class="p">,</span><span class="w"> </span><span class="n">STOPPED</span><span class="p">,</span><span class="w"> </span><span class="n">BLOCKED</span><span class="w"> </span><span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">HATebLocalPlannerROS</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">nav_core</span><span class="o">::</span><span class="n">BaseLocalPlanner</span><span class="p">,</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">mbf_costmap_core</span><span class="o">::</span><span class="n">CostmapController</span><span class="w"> </span><span class="p">{</span>
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">HATebLocalPlannerROS</span><span class="p">();</span>
+
+<span class="w">  </span><span class="o">~</span><span class="n">HATebLocalPlannerROS</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// CPP wrapper for the planner</span>
+<span class="w">  </span><span class="n">HATebLocalPlannerROS</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">tf</span><span class="p">,</span><span class="w"> </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initialize</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">tf</span><span class="p">,</span><span class="w"> </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">setPlan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">orig_global_plan</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">computeVelocityCommands</span><span class="p">(</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cmd_vel</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="nf">computeVelocityCommands</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">pose</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">velocity</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">cmd_vel</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isGoalReached</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isGoalReached</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">xy_tolerance</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">yaw_tolerance</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">isGoalReached</span><span class="p">();</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">cancel</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
+
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="nf">tfPoseToEigenVector2dTransRot</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">tf</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tf_vel</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">FootprintModelPtr</span><span class="w"> </span><span class="nf">getRobotFootprintFromParamServer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nh</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">HATebConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="n">Point2dContainer</span><span class="w"> </span><span class="nf">makeFootprintFromXMLRPC</span><span class="p">(</span><span class="n">XmlRpc</span><span class="o">::</span><span class="n">XmlRpcValue</span><span class="w"> </span><span class="o">&amp;</span><span class="n">footprint_xmlrpc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">full_param_name</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">getNumberFromXMLRPC</span><span class="p">(</span><span class="n">XmlRpc</span><span class="o">::</span><span class="n">XmlRpcValue</span><span class="w"> </span><span class="o">&amp;</span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">full_param_name</span><span class="p">);</span>
+
+
+<span class="w"> </span><span class="k">protected</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">updateObstacleContainerWithCostmap</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateObstacleContainerWithCostmapConverter</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateObstacleContainerWithCustomObstacles</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateObstacleContainerWithInvHumans</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateViaPointsContainer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_plan</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min_separation</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">updateAgentViaPointsContainers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AgentPlanVelMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_agent_plan_vel_map</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min_separation</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">reconfigureCB</span><span class="p">(</span><span class="n">HATebLocalPlannerReconfigureConfig</span><span class="w"> </span><span class="o">&amp;</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">level</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">customObstacleCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">ObstacleArrayMsg</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">obst_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">InvHumansCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">ObstacleArrayMsg</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">obst_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">customViaPointsCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">nav_msgs</span><span class="o">::</span><span class="n">Path</span><span class="o">::</span><span class="n">ConstPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">via_points_msg</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">pruneGlobalPlan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tf</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_pose</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_plan</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">dist_behind_robot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">transformGlobalPlan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tf</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_plan</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_pose</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2D</span><span class="w"> </span><span class="o">&amp;</span><span class="n">costmap</span><span class="p">,</span>
+<span class="w">                           </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_frame</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_plan_length</span><span class="p">,</span><span class="w"> </span><span class="n">PlanCombined</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_plan_combined</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">current_goal_idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">,</span>
+<span class="w">                           </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="o">*</span><span class="n">tf_plan_to_global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">transformAgentPlan</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tf2</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">robot_pose</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2D</span><span class="w"> </span><span class="o">&amp;</span><span class="n">costmap</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_frame</span><span class="p">,</span>
+<span class="w">                          </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseWithCovarianceStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">agent_plan</span><span class="p">,</span><span class="w"> </span><span class="n">AgentPlanCombined</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_agent_plan_combined</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TwistStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_agent_twist</span><span class="p">,</span><span class="w"> </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Transform</span><span class="o">&gt;</span><span class="w"> </span><span class="o">*</span><span class="n">tf_agent_plan_to_global</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">estimateLocalGoalOrientation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">global_plan</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">local_goal</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">current_goal_idx</span><span class="p">,</span>
+<span class="w">                                             </span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tf_plan_to_global</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">moving_average_length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">saturateVelocity</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vx</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="n">vy</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="n">omega</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_vel_x</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_vel_y</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_vel_theta</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_vel_x_backwards</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">convertTransRotVelToSteeringAngle</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">omega</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">wheelbase</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min_turning_radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">configureBackupModes</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_plan</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">goal_idx</span><span class="p">);</span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">validateFootprints</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">opt_inscribed_radius</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">costmap_inscribed_radius</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min_obst_dist</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Agent Prediction reset</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetAgentsPrediction</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">tickTreeAndUpdatePlans</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="w"> </span><span class="o">&amp;</span><span class="n">robot_pose</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">AgentPlanCombined</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_agent_plans</span><span class="p">,</span><span class="w"> </span><span class="n">AgentPlanVelMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">transformed_agent_plan_vel_map</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">optimizeStandalone</span><span class="p">(</span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">Optimize</span><span class="o">::</span><span class="n">Request</span><span class="w"> </span><span class="o">&amp;</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">Optimize</span><span class="o">::</span><span class="n">Response</span><span class="w"> </span><span class="o">&amp;</span><span class="n">res</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">lookupTwist</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="o">&amp;</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="o">&amp;</span><span class="n">averaging_interval</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="w"> </span><span class="o">&amp;</span><span class="n">twist</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// ref point is origin of tracking_frame, ref_frame = obs_frame</span>
+<span class="w">    </span><span class="n">lookupTwist</span><span class="p">(</span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="n">averaging_interval</span><span class="p">,</span><span class="w"> </span><span class="n">twist</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">lookupTwist</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">reference_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="o">&amp;</span><span class="n">reference_point</span><span class="p">,</span>
+<span class="w">                   </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="n">reference_point_frame</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="o">&amp;</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="o">&amp;</span><span class="n">averaging_interval</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="w"> </span><span class="o">&amp;</span><span class="n">twist</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">latest_time</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">target_time</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">CompactFrameID</span><span class="w"> </span><span class="n">target_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">_lookupFrameNumber</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">strip_leading_slash</span><span class="p">(</span><span class="n">tracking_frame</span><span class="p">));</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">CompactFrameID</span><span class="w"> </span><span class="n">source_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">_lookupFrameNumber</span><span class="p">(</span><span class="n">tf</span><span class="o">::</span><span class="n">strip_leading_slash</span><span class="p">(</span><span class="n">observation_frame</span><span class="p">));</span>
+<span class="w">    </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">_getLatestCommonTime</span><span class="p">(</span><span class="n">source_id</span><span class="p">,</span><span class="w"> </span><span class="n">target_id</span><span class="p">,</span><span class="w"> </span><span class="n">latest_time</span><span class="p">,</span><span class="w"> </span><span class="k">nullptr</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">target_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">latest_time</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">target_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">time</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">end_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">target_time</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">averaging_interval</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">latest_time</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">start_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">max</span><span class="p">(</span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="p">().</span><span class="n">fromSec</span><span class="p">(</span><span class="mf">.00001</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">averaging_interval</span><span class="p">,</span><span class="w"> </span><span class="n">end_time</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">averaging_interval</span><span class="p">;</span><span class="w">  </span><span class="c1">// don&#39;t collide with zero</span>
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="n">corrected_averaging_interval</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end_time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start_time</span><span class="p">;</span><span class="w">                                                </span><span class="c1">// correct for the possiblity that start time was</span>
+<span class="w">                                                                                                                       </span><span class="c1">// truncated above.</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="n">start_msg</span><span class="p">;</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="n">end_msg</span><span class="p">;</span>
+<span class="w">    </span><span class="n">start_msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="n">start_time</span><span class="p">);</span>
+<span class="w">    </span><span class="n">end_msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">observation_frame</span><span class="p">,</span><span class="w"> </span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="n">end_time</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Transform</span><span class="o">&gt;</span><span class="w"> </span><span class="n">start</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Transform</span><span class="o">&gt;</span><span class="w"> </span><span class="n">end</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">fromMsg</span><span class="p">(</span><span class="n">start_msg</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">fromMsg</span><span class="p">(</span><span class="n">end_msg</span><span class="p">,</span><span class="w"> </span><span class="n">end</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Matrix3x3</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="p">.</span><span class="n">getBasis</span><span class="p">().</span><span class="n">inverse</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">end</span><span class="p">.</span><span class="n">getBasis</span><span class="p">();</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Quaternion</span><span class="w"> </span><span class="n">quat_temp</span><span class="p">;</span>
+<span class="w">    </span><span class="n">temp</span><span class="p">.</span><span class="n">getRotation</span><span class="p">(</span><span class="n">quat_temp</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span><span class="p">.</span><span class="n">getBasis</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">quat_temp</span><span class="p">.</span><span class="n">getAxis</span><span class="p">();</span>
+<span class="w">    </span><span class="n">tfScalar</span><span class="w"> </span><span class="n">ang</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">quat_temp</span><span class="p">.</span><span class="n">getAngle</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">delta_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getX</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getX</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">delta_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getY</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getY</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">delta_z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">end</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getZ</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">getZ</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">twist_vel</span><span class="p">((</span><span class="n">delta_x</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">corrected_averaging_interval</span><span class="p">.</span><span class="n">toSec</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">delta_y</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">corrected_averaging_interval</span><span class="p">.</span><span class="n">toSec</span><span class="p">(),</span><span class="w"> </span><span class="p">(</span><span class="n">delta_z</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">corrected_averaging_interval</span><span class="p">.</span><span class="n">toSec</span><span class="p">());</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">twist_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">ang</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">corrected_averaging_interval</span><span class="p">.</span><span class="n">toSec</span><span class="p">());</span>
+
+<span class="w">    </span><span class="c1">// This is a twist w/ reference frame in observation_frame  and reference</span>
+<span class="w">    </span><span class="c1">// point is in the tracking_frame at the origin (at start_time)</span>
+
+<span class="w">    </span><span class="c1">// correct for the position of the reference frame</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Transform</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inverse</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">fromMsg</span><span class="p">(</span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">reference_frame</span><span class="p">,</span><span class="w"> </span><span class="n">tracking_frame</span><span class="p">,</span><span class="w"> </span><span class="n">target_time</span><span class="p">),</span><span class="w"> </span><span class="n">inverse</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">out_rot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inverse</span><span class="p">.</span><span class="n">getBasis</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">twist_rot</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">out_vel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inverse</span><span class="p">.</span><span class="n">getBasis</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">twist_vel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">inverse</span><span class="p">.</span><span class="n">getOrigin</span><span class="p">().</span><span class="n">cross</span><span class="p">(</span><span class="n">out_rot</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Rereference the twist about a new reference point</span>
+<span class="w">    </span><span class="c1">// Start by computing the original reference point in the reference frame:</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rp_orig</span><span class="p">(</span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">target_time</span><span class="p">,</span><span class="w"> </span><span class="n">tracking_frame</span><span class="p">);</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="n">reference_frame_trans</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">fromMsg</span><span class="p">(</span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">reference_frame</span><span class="p">,</span><span class="w"> </span><span class="n">rp_orig</span><span class="p">.</span><span class="n">frame_id_</span><span class="p">,</span><span class="w"> </span><span class="n">rp_orig</span><span class="p">.</span><span class="n">stamp_</span><span class="p">),</span><span class="w"> </span><span class="n">reference_frame_trans</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PointStamped</span><span class="w"> </span><span class="n">rp_orig_msg</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">toMsg</span><span class="p">(</span><span class="n">rp_orig</span><span class="p">,</span><span class="w"> </span><span class="n">rp_orig_msg</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">rp_orig_msg</span><span class="p">,</span><span class="w"> </span><span class="n">rp_orig_msg</span><span class="p">,</span><span class="w"> </span><span class="n">reference_frame_trans</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// convert the requrested reference point into the right frame</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Stamped</span><span class="o">&lt;</span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rp_desired</span><span class="p">(</span><span class="n">reference_point</span><span class="p">,</span><span class="w"> </span><span class="n">target_time</span><span class="p">,</span><span class="w"> </span><span class="n">reference_point_frame</span><span class="p">);</span>
+<span class="w">    </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PointStamped</span><span class="w"> </span><span class="n">rp_desired_msg</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">toMsg</span><span class="p">(</span><span class="n">rp_desired</span><span class="p">,</span><span class="w"> </span><span class="n">rp_desired_msg</span><span class="p">);</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">rp_desired_msg</span><span class="p">,</span><span class="w"> </span><span class="n">rp_desired_msg</span><span class="p">,</span><span class="w"> </span><span class="n">reference_frame_trans</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// compute the delta</span>
+<span class="w">    </span><span class="n">tf2</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">delta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rp_desired</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">rp_orig</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Correct for the change in reference point</span>
+<span class="w">    </span><span class="n">out_vel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_vel</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">out_rot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">delta</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// out_rot unchanged</span>
+
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">    printf(&quot;KDL: Rotation %f %f %f, Translation:%f %f %f\n&quot;,</span>
+<span class="cm">         out_rot.x(),out_rot.y(),out_rot.z(),</span>
+<span class="cm">         out_vel.x(),out_vel.y(),out_vel.z());</span>
+<span class="cm">  */</span>
+
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_vel</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_vel</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_vel</span><span class="p">.</span><span class="n">z</span><span class="p">();</span>
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_rot</span><span class="p">.</span><span class="n">x</span><span class="p">();</span>
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_rot</span><span class="p">.</span><span class="n">y</span><span class="p">();</span>
+<span class="w">    </span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">out_rot</span><span class="p">.</span><span class="n">z</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w"> </span><span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="c1">// Definition of member variables</span>
+
+<span class="w">  </span><span class="c1">// external objects (store weak pointers)</span>
+<span class="w">  </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2D</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">tf_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// internal objects (memory management owned)</span>
+<span class="w">  </span><span class="n">PlannerInterfacePtr</span><span class="w"> </span><span class="n">planner_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ObstContainer</span><span class="w"> </span><span class="n">obstacles_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ViaPointContainer</span><span class="w"> </span><span class="n">via_points_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">uint64_t</span><span class="p">,</span><span class="w"> </span><span class="n">ViaPointContainer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agents_via_points_map_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TebVisualizationPtr</span><span class="w"> </span><span class="n">visualization_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">base_local_planner</span><span class="o">::</span><span class="n">CostmapModel</span><span class="o">&gt;</span><span class="w"> </span><span class="n">costmap_model_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">HATebConfig</span><span class="w"> </span><span class="n">cfg_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">HATebLocalPlannerReconfigureConfig</span><span class="w"> </span><span class="n">config_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">FailureDetector</span><span class="w"> </span><span class="n">failure_detector_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">PoseStamped</span><span class="o">&gt;</span><span class="w"> </span><span class="n">global_plan_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">base_local_planner</span><span class="o">::</span><span class="n">OdometryHelperRos</span><span class="w"> </span><span class="n">odom_helper_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">pluginlib</span><span class="o">::</span><span class="n">ClassLoader</span><span class="o">&lt;</span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">BaseCostmapToPolygons</span><span class="o">&gt;</span><span class="w"> </span><span class="n">costmap_converter_loader_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">BaseCostmapToPolygons</span><span class="o">&gt;</span><span class="w"> </span><span class="n">costmap_converter_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">dynamic_reconfigure</span><span class="o">::</span><span class="n">Server</span><span class="o">&lt;</span><span class="n">HATebLocalPlannerReconfigureConfig</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">dynamic_recfg_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">custom_obst_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">inv_humans_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">custom_obst_mutex_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">inv_human_mutex_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">ObstacleArrayMsg</span><span class="w"> </span><span class="n">custom_obstacle_msg_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">costmap_converter</span><span class="o">::</span><span class="n">ObstacleArrayMsg</span><span class="w"> </span><span class="n">inv_humans_msg_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">via_points_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">custom_via_points_active_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">via_point_mutex_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">PoseSE2</span><span class="w"> </span><span class="n">robot_pose_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">PoseSE2</span><span class="w"> </span><span class="n">robot_goal_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="w"> </span><span class="n">robot_vel_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">goal_reached_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">horizon_reduced_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">horizon_reduced_stamp_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">time_last_infeasible_plan_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">no_infeasible_plans_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">time_last_oscillation_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">RotType</span><span class="w"> </span><span class="n">last_preferred_rotdir_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Twist</span><span class="w"> </span><span class="n">last_cmd_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&gt;</span><span class="w"> </span><span class="n">footprint_spec_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">robot_inscribed_radius_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">robot_circumscribed_radius_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">global_frame_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">robot_base_frame_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">initialized_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Agent prediction services and related variables</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceClient</span><span class="w"> </span><span class="n">predict_agents_client_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceClient</span><span class="w"> </span><span class="n">reset_agents_prediction_client_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceClient</span><span class="w"> </span><span class="n">publish_predicted_markers_client_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">predict_srv_name_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">reset_prediction_srv_name_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">publish_makers_srv_name_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">ServiceServer</span><span class="w"> </span><span class="n">optimize_server_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">last_call_time_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="n">last_omega_sign_change_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">last_omega_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Planning control flags</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">goal_ctrl_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">reset_states_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">isMode_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">logs_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Subscriber</span><span class="w"> </span><span class="n">agents_sub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ros</span><span class="o">::</span><span class="n">Publisher</span><span class="w"> </span><span class="n">log_pub_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">ns_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">invisible_humans_sub_topic_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Helper class instances</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">agents</span><span class="o">::</span><span class="n">Agents</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agents_ptr_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Backoff</span><span class="o">&gt;</span><span class="w"> </span><span class="n">backoff_ptr_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">ModeSwitch</span><span class="w"> </span><span class="n">bt_mode_switch_</span><span class="p">;</span>
+
+<span class="w"> </span><span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">EIGEN_MAKE_ALIGNED_OPERATOR_NEW</span>
+<span class="p">};</span>
+
+<span class="p">};</span><span class="w">  </span><span class="c1">// end namespace hateb_local_planner</span>
+
+<span class="cp">#endif  </span><span class="c1">// HATEB_LOCAL_PLANNER_ROS_H_</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

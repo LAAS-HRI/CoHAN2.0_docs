@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File agents_class.cpp &mdash; CoHAN2.0  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=40d87414" />
+
+  
+    <link rel="canonical" href="https://LAAS-HRI.github.io/CoHAN2.0_docs/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agents_class.cpp.html" />
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CoHAN2.0
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../home.html">CoHAN2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Usage Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mode_switching.html">Mode Switching and Behavior Trees</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_sim.html">CoHAN Sim</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_root.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cohan_msgs.html">CoHAN_Msgs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Version History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CoHAN2.0</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Program Listing for File agents_class.cpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/program_listing_file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agents_class.cpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-agents-class-cpp">
+<span id="program-listing-file-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agents-class-cpp"></span><h1>Program Listing for File agents_class.cpp<a class="headerlink" href="#program-listing-for-file-agents-class-cpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file__home_ptsingaman_ros_ws_CoHAN2.0_src_agent_path_prediction_src_agents_class.cpp.html#file-home-ptsingaman-ros-ws-cohan2-0-src-agent-path-prediction-src-agents-class-cpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">/home/ptsingaman/ros_ws/CoHAN2.0/src/agent_path_prediction/src/agents_class.cpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;agent_path_prediction/agents_class.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;numeric&gt;</span>
+
+<span class="c1">// Configuarable parameters</span>
+<span class="cp">#define AGENTS_SUB_TOPIC &quot;/tracked_agents&quot;</span>
+<span class="cp">#define WINDOW_MOVING_AVG 5</span>
+<span class="cp">#define HUM_RADIUS 0.3</span>
+<span class="cp">#define ROBOT_RADIUS 0.35</span>
+<span class="cp">#define PLANNING_RADIUS 10.0</span>
+<span class="cp">#define BASE_LINK_FRAME &quot;base_link&quot;</span>
+<span class="cp">#define MAP_FRAME &quot;map&quot;</span>
+<span class="cp">#define ODOM_FRAME &quot;odom&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="p">{</span>
+
+<span class="n">Agents</span><span class="o">::</span><span class="n">Agents</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">initialized_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Throw error on wrong initialization</span>
+<span class="w">  </span><span class="n">ROS_ERROR</span><span class="p">(</span><span class="s">&quot;The Agents class needs tf2_ros::Buffer* and costmap_2d::Costmap2DROS *, and are not passed!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">Agents</span><span class="o">::</span><span class="n">Agents</span><span class="p">(</span><span class="n">tf2_ros</span><span class="o">::</span><span class="n">Buffer</span><span class="w"> </span><span class="o">*</span><span class="n">tf</span><span class="p">,</span><span class="w"> </span><span class="n">costmap_2d</span><span class="o">::</span><span class="n">Costmap2DROS</span><span class="w"> </span><span class="o">*</span><span class="n">costmap_ros</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">initialized_</span><span class="p">(</span><span class="nb">false</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// call the initialize class to start things</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">initialized_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="n">private_nh</span><span class="p">(</span><span class="s">&quot;~&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Get params</span>
+<span class="w">    </span><span class="n">loadRosParamFromNodeHandle</span><span class="p">(</span><span class="n">private_nh</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Initialize the publisher</span>
+<span class="w">    </span><span class="n">agents_info_pub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">private_nh</span><span class="p">.</span><span class="n">advertise</span><span class="o">&lt;</span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentsInfo</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;agentsInfo&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Need to remap subscriber properly</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ns_</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">tracked_agents_sub_topic_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">tracked_agents_sub_topic_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Subscribers</span>
+<span class="w">    </span><span class="n">tracked_agents_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">private_nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="n">tracked_agents_sub_topic_</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">Agents</span><span class="o">::</span><span class="n">trackedAgentsCB</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Initialize variables</span>
+<span class="w">    </span><span class="n">tf_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf</span><span class="p">;</span>
+<span class="w">    </span><span class="n">costmap_ros_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_ros</span><span class="p">;</span>
+<span class="w">    </span><span class="n">costmap_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_ros_</span><span class="o">-&gt;</span><span class="n">getCostmap</span><span class="p">();</span>
+<span class="w">    </span><span class="n">stuck_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">    </span><span class="n">stuck_agent_id_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">    </span><span class="n">initialized_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">Agents</span><span class="o">::</span><span class="n">trackedAgentsCB</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">cohan_msgs</span><span class="o">::</span><span class="n">TrackedAgents</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tracked_agents</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">tracked_agents_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tracked_agents</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Msg for publishing agents info</span>
+<span class="w">  </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">AgentsInfo</span><span class="w"> </span><span class="n">agents_info</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">TransformStamped</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">base_link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">base_link_frame_</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">ns_</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">base_link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ns_</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">base_link_frame_</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Get the robot pose</span>
+<span class="w">  </span><span class="n">transform_stamped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">map_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">base_link</span><span class="p">,</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="p">(</span><span class="mf">0.5</span><span class="p">));</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">translation</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ypos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">translation</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ryaw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf2</span><span class="o">::</span><span class="n">getYaw</span><span class="p">(</span><span class="n">transform_stamped</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">rotation</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="nf">robot_vec</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">cos</span><span class="p">(</span><span class="n">ryaw</span><span class="p">),</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">sin</span><span class="p">(</span><span class="n">ryaw</span><span class="p">));</span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose2D</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">;</span>
+<span class="w">  </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xpos</span><span class="p">;</span>
+<span class="w">  </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ypos</span><span class="p">;</span>
+<span class="w">  </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">theta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ryaw</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Add robot pose to the info message</span>
+<span class="w">  </span><span class="n">agents_info</span><span class="p">.</span><span class="n">robot_pose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">agent_vels_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">  </span><span class="n">visible_agent_ids_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">  </span><span class="n">agent_still_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agent_dist_id_map</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agents_radii</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">HumanInfo</span><span class="o">&gt;</span><span class="w"> </span><span class="n">humans_info</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">agent</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">tracked_agents_</span><span class="p">.</span><span class="n">agents</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">agent_path_prediction</span><span class="o">::</span><span class="n">HumanInfo</span><span class="w"> </span><span class="n">human_info</span><span class="p">;</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">h_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agent</span><span class="p">.</span><span class="n">track_id</span><span class="p">;</span>
+<span class="w">    </span><span class="n">human_info</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h_id</span><span class="p">;</span>
+<span class="w">    </span><span class="n">human_info</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agent</span><span class="p">.</span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agent</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">agents_radii</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">human_radius_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">agents_radii</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_radius_</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agents_states_</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tracked_agents_</span><span class="p">.</span><span class="n">agents</span><span class="p">.</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Add the agent id and state</span>
+<span class="w">      </span><span class="n">human_info</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">NO_STATE</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// Update the class variable</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agents_states_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">h_id</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">NO_STATE</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">h_vels</span><span class="p">;</span>
+<span class="w">      </span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h_vels</span><span class="p">;</span>
+<span class="w">      </span><span class="n">agent_nominal_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="n">h_pose</span><span class="p">;</span>
+<span class="w">      </span><span class="n">agents_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h_pose</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// double h_xpos, h_ypos;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">segment</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">agent</span><span class="p">.</span><span class="n">segments</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">segment</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">DEFAULT_AGENT_SEGMENT</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">agents_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segment</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">pose</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">h_xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segment</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">h_ypos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">segment</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector2d</span><span class="w"> </span><span class="nf">rh_vec</span><span class="p">(</span><span class="n">h_xpos</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">xpos</span><span class="p">,</span><span class="w"> </span><span class="n">h_ypos</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ypos</span><span class="p">);</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">hr_dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rh_vec</span><span class="p">.</span><span class="n">norm</span><span class="p">();</span>
+<span class="w">        </span><span class="c1">// Add the agent distance to robot</span>
+<span class="w">        </span><span class="n">human_info</span><span class="p">.</span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hr_dist</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hr_dist</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">planning_radius_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rh_vec</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">robot_vec</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// Update the dist map</span>
+<span class="w">          </span><span class="n">agent_dist_id_map</span><span class="p">[</span><span class="n">hr_dist</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h_id</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">agent</span><span class="p">.</span><span class="n">track_id</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">segment</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">segment</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span><span class="p">));</span>
+
+<span class="w">        </span><span class="c1">// Human state update --&gt; MOVING</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">abs</span><span class="p">(</span><span class="n">segment</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">segment</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">linear</span><span class="p">.</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abs</span><span class="p">(</span><span class="n">segment</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">twist</span><span class="p">.</span><span class="n">angular</span><span class="p">.</span><span class="n">z</span><span class="p">))</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">CALC_EPS</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agents_states_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">h_id</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">.</span><span class="n">end</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">BLOCKED</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">MOVING</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// Update the state info message</span>
+<span class="w">            </span><span class="n">human_info</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">MOVING</span><span class="p">;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">size</span><span class="p">();</span>
+<span class="w">        </span><span class="kt">float</span><span class="w"> </span><span class="n">average_vel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0F</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">average_vel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">accumulate</span><span class="p">(</span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="mf">0.0</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">agent_nominal_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">average_vel</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">window_moving_avg_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">erase</span><span class="p">(</span><span class="n">agent_vels_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">begin</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Check if the human is still or halted</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">prev_agents_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">h_id</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">prev_agents_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="kt">double</span><span class="w"> </span><span class="n">human_move_dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">h_xpos</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prev_agents_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">h_ypos</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prev_agents_</span><span class="p">[</span><span class="n">h_id</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">human_move_dist</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">CALC_EPS</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">h_id</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">agent_still_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+
+<span class="w">            </span><span class="c1">// Human state update --&gt; STOPPED</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STOPPED</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">MOVING</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">              </span><span class="c1">// Update the state info message</span>
+<span class="w">              </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STOPPED</span><span class="p">;</span>
+<span class="w">              </span><span class="n">human_info</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STOPPED</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">          </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">agent_still_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">            </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">MOVING</span><span class="p">;</span>
+<span class="w">            </span><span class="n">human_info</span><span class="p">.</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">MOVING</span><span class="p">;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// Check if the human is stuck and update the angle for backoff recovery</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">h_id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">stuck_agent_id_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">stuck_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hr_dist</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">planning_radius_</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rh_vec</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">robot_vec</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// agents_info.humans.push_back(human_info);</span>
+<span class="w">        </span><span class="n">humans_info</span><span class="p">[</span><span class="n">h_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">human_info</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">prev_agents_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">ROS_INFO_ONCE</span><span class="p">(</span><span class="s">&quot;Number of agents_agents_info, %d &quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">agents_</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+
+<span class="w">  </span><span class="c1">// Get the distance sorted list of visible ids</span>
+<span class="w">  </span><span class="n">visible_agent_ids_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">dist_id_map</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">agent_dist_id_map</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">visible_agent_ids_</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">dist_id_map</span><span class="p">.</span><span class="n">second</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">use_simulated_fov_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/**************** for a centralised perception ***************/</span>
+<span class="w">    </span><span class="n">sorted_ids</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filterVisibleAgents</span><span class="p">(</span><span class="n">agents_</span><span class="p">,</span><span class="w"> </span><span class="n">visible_agent_ids_</span><span class="p">,</span><span class="w"> </span><span class="n">agents_radii</span><span class="p">,</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">sorted_ids</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">visible_agent_ids_</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">agents_info</span><span class="p">.</span><span class="n">visible</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">f_id</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agents_states_</span><span class="p">[</span><span class="n">f_id</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">NO_STATE</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">f_id</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STATIC</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">agents_states_</span><span class="p">[</span><span class="n">f_id</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STATIC</span><span class="p">;</span>
+<span class="w">      </span><span class="n">humans_info</span><span class="p">[</span><span class="n">f_id</span><span class="p">].</span><span class="n">state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents</span><span class="o">::</span><span class="n">AgentState</span><span class="o">::</span><span class="n">STATIC</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agent_still_</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">f_id</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">agent_still_</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">agent_still_</span><span class="p">[</span><span class="n">f_id</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">agents_info</span><span class="p">.</span><span class="n">still</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">f_id</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">agents_info</span><span class="p">.</span><span class="n">moving</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">f_id</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">agents_info</span><span class="p">.</span><span class="n">humans</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">humans_info</span><span class="p">[</span><span class="n">f_id</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Safety step for agents if agent_layers is not added in local costmap</span>
+<span class="w">  </span><span class="c1">// Adds a temporary costmap around the agents to let planner plan safe</span>
+<span class="w">  </span><span class="c1">// trajectories</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">planning_mode_</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">agents_</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">v1</span><span class="p">;</span>
+<span class="w">      </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">v2</span><span class="p">;</span>
+<span class="w">      </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">v3</span><span class="p">;</span>
+<span class="w">      </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">v4</span><span class="p">;</span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">idx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">agent_radius</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_radii</span><span class="p">[</span><span class="n">idx</span><span class="p">];</span>
+<span class="w">      </span><span class="n">v1</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v1</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">v2</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v2</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v2</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">v3</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v3</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v3</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">v4</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v4</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_</span><span class="p">[</span><span class="n">idx</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">agent_radius</span><span class="p">,</span><span class="w"> </span><span class="n">v4</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+
+<span class="w">      </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Point</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agent_pos_costmap</span><span class="p">;</span>
+
+<span class="w">      </span><span class="n">transform_stamped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tf_</span><span class="o">-&gt;</span><span class="n">lookupTransform</span><span class="p">(</span><span class="n">odom_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">map_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">Duration</span><span class="p">(</span><span class="mf">0.5</span><span class="p">));</span>
+<span class="w">      </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="n">v1</span><span class="p">,</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">);</span>
+<span class="w">      </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="n">v2</span><span class="p">,</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">);</span>
+<span class="w">      </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">v3</span><span class="p">,</span><span class="w"> </span><span class="n">v3</span><span class="p">,</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">);</span>
+<span class="w">      </span><span class="n">tf2</span><span class="o">::</span><span class="n">doTransform</span><span class="p">(</span><span class="n">v4</span><span class="p">,</span><span class="w"> </span><span class="n">v4</span><span class="p">,</span><span class="w"> </span><span class="n">transform_stamped</span><span class="p">);</span>
+
+<span class="w">      </span><span class="n">agent_pos_costmap</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v1</span><span class="p">);</span>
+<span class="w">      </span><span class="n">agent_pos_costmap</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v2</span><span class="p">);</span>
+<span class="w">      </span><span class="n">agent_pos_costmap</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v3</span><span class="p">);</span>
+<span class="w">      </span><span class="n">agent_pos_costmap</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">v4</span><span class="p">);</span>
+
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">set_success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">      </span><span class="n">set_success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_</span><span class="o">-&gt;</span><span class="n">setConvexPolygonCost</span><span class="p">(</span><span class="n">agent_pos_costmap</span><span class="p">,</span><span class="w"> </span><span class="n">COST_OBS</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">agents_info_pub_</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">agents_info</span><span class="p">);</span>
+<span class="p">};</span><span class="w">  </span><span class="c1">// namespace agents</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Agents</span><span class="o">::</span><span class="n">filterVisibleAgents</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tr_agents</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">agents_radii</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">Pose2D</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">filtered_ids</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">xpos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">ypos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">robot_pose</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">stuck_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MAX_PTS</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sorted_ids</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">AGENT_NUM_TH</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MIN_PTS</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="n">it</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Ray Tracing</span>
+<span class="w">      </span><span class="kt">double</span><span class="w"> </span><span class="n">tm_x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr_agents</span><span class="p">[</span><span class="n">it</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">      </span><span class="kt">double</span><span class="w"> </span><span class="n">tm_y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tr_agents</span><span class="p">[</span><span class="n">it</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">;</span>
+<span class="w">      </span><span class="c1">// Get the difference between poses along x and y</span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">tm_x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">xpos</span><span class="p">);</span>
+<span class="w">      </span><span class="k">auto</span><span class="w"> </span><span class="n">dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">tm_y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ypos</span><span class="p">);</span>
+<span class="w">      </span><span class="c1">// Define step size in each direction</span>
+<span class="w">      </span><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dx</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">      </span><span class="n">dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dy</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+
+<span class="w">      </span><span class="c1">// Checking using raytracing</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">cell_collision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">      </span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xpos</span><span class="p">;</span>
+<span class="w">      </span><span class="kt">double</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ypos</span><span class="p">;</span>
+
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mx</span><span class="p">;</span>
+<span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">my</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">check_rad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">agents_radii</span><span class="p">[</span><span class="n">it</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">inflation_radius_</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sqrt</span><span class="p">(((</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">tm_x</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">tm_x</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">tm_y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">tm_y</span><span class="p">)))</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">check_rad</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">costmap_</span><span class="o">-&gt;</span><span class="n">worldToMap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">mx</span><span class="p">,</span><span class="w"> </span><span class="n">my</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">auto</span><span class="w"> </span><span class="n">cellcost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">costmap_</span><span class="o">-&gt;</span><span class="n">getCost</span><span class="p">(</span><span class="n">mx</span><span class="p">,</span><span class="w"> </span><span class="n">my</span><span class="p">);</span>
+<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="kt">int</span><span class="p">)(</span><span class="n">cellcost</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">COST_MIN</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">cellcost</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">COST_OBS</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cell_collision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">          </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
+<span class="w">          </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">cell_collision</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">filtered_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">it</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">filtered_ids</span><span class="p">;</span>
+
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">sorted_ids</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sorted_ids</span><span class="p">[</span><span class="n">it</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">stuck_agent_id_</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">filtered_ids</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">sorted_ids</span><span class="p">[</span><span class="n">it</span><span class="p">]);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">filtered_ids</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">Agents</span><span class="o">::</span><span class="n">resetAgents</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Reset the variables</span>
+<span class="w">  </span><span class="n">agents_states_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">  </span><span class="n">agent_nominal_vels_</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">  </span><span class="n">stuck_agent_id_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">  </span><span class="n">stuck_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">Agents</span><span class="o">::</span><span class="n">loadRosParamFromNodeHandle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ros</span><span class="o">::</span><span class="n">NodeHandle</span><span class="w"> </span><span class="o">&amp;</span><span class="n">private_nh</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;ns&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ns_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;local_costmap/inflater/inflation_radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">inflation_radius_</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;planning_mode&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">planning_mode_</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;use_simulated_fov&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">use_simulated_fov_</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;window_moving_avg&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">window_moving_avg_</span><span class="p">,</span><span class="w"> </span><span class="n">WINDOW_MOVING_AVG</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;HATebLocalPlannerROS/agent_radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">human_radius_</span><span class="p">,</span><span class="w"> </span><span class="n">HUM_RADIUS</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;HATebLocalPlannerROS/robot_radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">robot_radius_</span><span class="p">,</span><span class="w"> </span><span class="n">ROBOT_RADIUS</span><span class="p">);</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;tracked_agents_sub_topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tracked_agents_sub_topic_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">AGENTS_SUB_TOPIC</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;base_link_frame&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">base_link_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">BASE_LINK_FRAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;map_frame&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">map_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">MAP_FRAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;odom_frame&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odom_frame_</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">ODOM_FRAME</span><span class="p">));</span>
+<span class="w">  </span><span class="n">private_nh</span><span class="p">.</span><span class="n">param</span><span class="p">(</span><span class="s">&quot;planning_radius&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">planning_radius_</span><span class="p">,</span><span class="w"> </span><span class="n">PLANNING_RADIUS</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace agents</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Phani Teja Singamaneni.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
