@@ -93,7 +93,7 @@ Functions
 
 - :ref:`exhale_function_namespacehateb__local__planner_1affb0ebd0746958b63ff8a9481d5686e0`
 
-- :ref:`exhale_function_namespacehateb__local__planner_1a15250529ebfe9fe310c0e0dc62617472`
-
 - :ref:`exhale_function_namespacehateb__local__planner_1aebe24da4ec2cf8d7e9e4d0ddc667200a`
+
+- :ref:`exhale_function_namespacehateb__local__planner_1a15250529ebfe9fe310c0e0dc62617472`
 

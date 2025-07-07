@@ -25,4 +25,3 @@ Class Documentation
    :protected-members:
    :undoc-members:
    :private-members:
-   :private-members:

@@ -1,6 +1,0 @@
-<map id="/home/ptsingaman/ros_ws/cohan2.1/src/hateb_local_planner/src/behavior_tree/condition" name="/home/ptsingaman/ros_ws/cohan2.1/src/hateb_local_planner/src/behavior_tree/condition">
-<area shape="rect" id="node1" href="dir_e223905f7a26517e9d5a7625055ff576.html" title="condition" alt="" coords="31,52,113,100"/>
-<area shape="rect" id="node2" href="dir_d20487b4fc1ff50672c36f71ec30a4ce.html" title="include" alt="" coords="36,148,108,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000019_000010.html" title="10" alt="" coords="72,122,89,137"/>
-<area shape="rect" id="clust1" href="dir_d172b13c4e144cbdeae4a3c6e4c99b2f.html" title="behavior_tree" alt="" coords="16,16,128,111"/>
-</map>
