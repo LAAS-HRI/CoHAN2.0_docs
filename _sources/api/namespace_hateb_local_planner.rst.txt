@@ -9,7 +9,7 @@ Namespace hateb_local_planner
    :local:
    :backlinks: none
 
-
+ 
 Classes
 -------
 
